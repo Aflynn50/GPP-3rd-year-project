@@ -1,6 +1,10 @@
+open Printf
+
 let _ =
-  let lexbuf = Lexing.from_channel stdin in
-  while true do
-    let result = Parser.main Lexer.token lexbuf in
-      print_string result; print_newline(); flush stdout
-  done
+  let gdl = "rules.gdl" and pl = "rules.pl" in
+    let ic = open_in gdl and oc = open_out pl in
+      let lexbuf = Lexing.from_channel ic in
+      while true do
+        let result = Parser.main Lexer.token lexbuf in
+        fprintf oc "%s\n" result; flush oc; close_in ic
+      done

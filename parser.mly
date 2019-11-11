@@ -22,7 +22,11 @@ clause :
   | OPEN rule CLOSE                     { $2 };
   
 rule: 
-    IMPLIES OPEN fact CLOSE conditions  { String.concat "" [$3; " :-\n    "; $5] };
+    IMPLIES conclusion conditions       { String.concat "" [$2; " :-\n    "; $3] };
+
+conclusion :
+    OPEN fact CLOSE                     { $2 }
+  | IDENT                               { $1 } ;
 
 conditions :
   | OPEN fact CLOSE conditions          { String.concat ",\n    " [$2; $4] }
