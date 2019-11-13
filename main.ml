@@ -6,5 +6,5 @@ let _ =
       let lexbuf = Lexing.from_channel ic in
       while true do
         let result = Parser.main Lexer.token lexbuf in
-        fprintf oc "%s\n" result; flush oc; close_in ic
+        close_in ic; Printf.fprintf oc "%s\n" result; close_out oc;
       done
