@@ -30,8 +30,9 @@ conclusion :
 
 conditions :
   | OPEN fact CLOSE conditions          { String.concat ",\n    " [$2; $4] }
-  | OPEN fact CLOSE                     { $2 } ;
-
+  | OPEN fact CLOSE                     { $2 } 
+  | IDENT conditions                    { String.concat ",\n    " [$1; $2] }
+  | IDENT                               { $1 };
 
 fact :
     IDENT terms                         { String.concat "" [$1; "("; $2; ")"] };
