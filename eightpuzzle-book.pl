@@ -4,14 +4,14 @@ min(A, B, Min) :- A < B -> Min = A ; Min = B.
 
 
 % swap is true if mandist to cell is one
-dif(A,B,D) :-
+diff(A,B,D) :-
     D is A-B, D>=0,!
     ;
     D is B-A.
 
 mandist(X1,Y1,X2,Y2,D) :-
-    dif(X1,X2,Dx),
-    dif(Y1,Y2,Dy),
+    diff(X1,X2,Dx),
+    diff(Y1,Y2,Dy),
     D is Dx+Dy.
 
 s(B1,B2,1) :-
@@ -55,6 +55,18 @@ cell(3, 1, 2),
 cell(3, 2, 1),
 cell(3, 3, b)]).
 
+start1([
+cell(1, 1, 1),
+cell(1, 2, 2),
+cell(1, 3, 3),
+cell(2, 1, 4),
+cell(2, 2, 5),
+cell(2, 3, 6),
+cell(3, 1, 7),
+cell(3, 2, b),
+cell(3, 3, 8)]).
+
+
 inorder([
 cell(1, 1, 1),
 cell(1, 2, 2),
@@ -90,8 +102,8 @@ totdist([cell(X1,Y1,V)|T],N) :-
     
 seq(B,[],0).
 
-seq(B,[cell(2,2,V)|T],N) :-!,
-	dif(V,b),
+seq(B,[cell(2,2,V)|T],N) :-
+	dif(V,b),!,
 	seq(B,T,N1),
 	N is N1 + 1.
 
@@ -106,16 +118,15 @@ seq(B,[cell(X1,Y1,V)|T],N) :-
 	N is S + N1.
 
 
-score(C,B,S) :- 
-	member(C,B),
-	S = 0,
-	!.
+score(C,B,S) :-
+	member(C,B),!,
+	S = 0.
 
 score(C,B,2) :- !.
 
 propsucc(8,0) :- !.
-propsucc(X,Y) :- 
-	Y is X + 1,!.
+propsucc(X,Y) :-
+	!,Y is X + 1.
 
 clocksucc(1,1,1,2).
 clocksucc(1,2,1,3).
