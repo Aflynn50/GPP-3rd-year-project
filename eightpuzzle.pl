@@ -111,6 +111,41 @@ showsol([P|L]) :-
     nl,write('---'),nl,
     showboard(P).
 
+trace_goal([B],Step) :-!,
+    nl,nl,
+    write('background:'),nl,
+    trace_board(B,0),
+    format('\ttrue_step(~w)',[Step]),nl,
+    write('---'),nl,nl,
+    write('positives:'),nl,
+    write('\tgoal(robot, 100)'),nl,nl,
+    write('---').
+
+trace_goal([B|T],Step) :-
+    nl,nl,
+    write('background:'),nl,
+    trace_board(B,0),
+    format('\ttrue_step(~w)',[Step]),nl,
+    write('---'),nl,nl,
+    write('positives:'),nl,
+    write('\tgoal(robot, 0)'),nl,nl,
+    write('---'),
+    Step1 is Step + 1,
+    trace_goal(T,Step1).
+
+trace_board([],Pos).
+
+trace_board([V|T],Pos) :-
+    coord(Pos,X-Y),
+    format('\ttrue_cell(~w,~w,~w)', [X,Y,V]),nl,
+    Pos1 is Pos + 1,
+    trace_board(T,Pos1).
+
+write_trace_to_file(List) :-
+    append('trace_goal.dat'),
+    trace_goal(List,0),
+    told.
+
 
 % Best first
 bestfirst(Start,Solution) :-
