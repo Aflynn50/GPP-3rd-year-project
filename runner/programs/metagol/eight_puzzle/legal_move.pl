@@ -1,0 +1,6 @@
+
+true.
+
+% learning legal_move/4
+% clauses: 1
+% clauses: 2

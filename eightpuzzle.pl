@@ -1,3 +1,5 @@
+:- include('eightpuzzle-IO.pl').
+
 start([8,7,6,5,4,3,2,1,b]).
 test1([8,2,6,5,b,3,7,1,4]).
 test2([1,2,3,4,5,6,7,b,8]).
@@ -42,6 +44,29 @@ s(B1,B2,1) :-
     neighbor(BI,NI),
     swap(BI,NI,B1,B2).
 
+% Random player
+
+random_player(B,Path) :-
+    random_player_lim(B,Path,50).
+
+random_player_lim(B,[B],0) :- !.
+
+random_player_lim(B,[B],_T) :-
+    goal(B), !.
+
+random_player_lim(B1,[B1|Path],T) :-
+    findall(B2,s(B1,B2,1),Ss),
+    length(Ss,L),
+    L1 is L - 1,
+    random_between(0,L1,R),
+    write(R),
+    write(L),
+    nth0(R,Ss,B3),
+    T1 is T - 1,
+    random_player_lim(B3,Path,T1).
+
+
+% Huristics
 
 totdist(L,Goal,N) :-
     totdist1(L,Goal,N,0).
@@ -91,61 +116,6 @@ h(B,H) :-
     outofpos(B,Goal,N,0),
     H is D + (2*N).
 
-showboard([A,B,C,D,E,F,G,H,I]) :-
-    showline([A,B,C]),
-    showline([D,E,F]),
-    showline([G,H,I]).
-
-showline([X,Y,Z]) :-
-    showcell(X),
-    showcell(Y),
-    showcell(Z),nl.
-
-showcell(V) :-
-    write(V),write(" ").
-
-showsol([]).
-
-showsol([P|L]) :-
-    showsol(L),
-    nl,write('---'),nl,
-    showboard(P).
-
-trace_goal([B],Step) :-!,
-    nl,nl,
-    write('background:'),nl,
-    trace_board(B,0),
-    format('\ttrue_step(~w)',[Step]),nl,
-    write('---'),nl,nl,
-    write('positives:'),nl,
-    write('\tgoal(robot, 100)'),nl,nl,
-    write('---').
-
-trace_goal([B|T],Step) :-
-    nl,nl,
-    write('background:'),nl,
-    trace_board(B,0),
-    format('\ttrue_step(~w)',[Step]),nl,
-    write('---'),nl,nl,
-    write('positives:'),nl,
-    write('\tgoal(robot, 0)'),nl,nl,
-    write('---'),
-    Step1 is Step + 1,
-    trace_goal(T,Step1).
-
-trace_board([],Pos).
-
-trace_board([V|T],Pos) :-
-    coord(Pos,X-Y),
-    format('\ttrue_cell(~w,~w,~w)', [X,Y,V]),nl,
-    Pos1 is Pos + 1,
-    trace_board(T,Pos1).
-
-write_trace_to_file(List) :-
-    append('trace_goal.dat'),
-    trace_goal(List,0),
-    told.
-
 
 % Best first
 bestfirst(Start,Solution) :-
@@ -176,14 +146,14 @@ expand(_,t(_,_,[]),_,_,never,_) :- !.
 expand(_,Tree,Bound,Tree,no,_) :-
     f(Tree,F), F > Bound.
     
-continue(_,_,_,_,yes,yes,Sol).
+continue(_,_,_,_,yes,yes,_Sol).
 
-continue(P,t(N,F/G,[T1 |Ts]), Bound, Tree1, no, Solved, Sol) :-
+continue(P,t(N,_F/G,[T1 |Ts]), Bound, Tree1, no, Solved, Sol) :-
     insert(T1,Ts,NTs),
     bestf(NTs,F1),
     expand(P,t(N,F1/G,NTs),Bound,Tree1,Solved,Sol).
 
-continue(P,t(N,F/G,[_|Ts]),Bound,Tree1,never,Solved,Sol) :-
+continue(P,t(N,_F/G,[_|Ts]),Bound,Tree1,never,Solved,Sol) :-
     bestf(Ts,F1),
     expand(P,t(N,F1/G,Ts),Bound,Tree1,Solved,Sol).
 
