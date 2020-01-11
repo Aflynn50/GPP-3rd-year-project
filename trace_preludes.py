@@ -338,11 +338,18 @@ t_terminal = """atoms:
 ---
 """
 
-files = [open('runner/data/train/trace_goal.dat', 'w'),open('runner/data/train/trace_legal.dat', 'w'),open('runner/data/train/trace_next.dat', 'w'),open('runner/data/train/trace_terminal.dat', 'w')]
-files[0].write(t_goal + '\n' + static)
-files[1].write(t_legal + '\n' + static)
-files[2].write(t_next + '\n' + static)
-files[3].write(t_terminal + '\n' + static)
-for file in files:
-	file.close
+def write_preludes(use):
+	files = [open('eightpuzzle-traces/goal_' + use + '.dat', 'w'),
+		open('eightpuzzle-traces/legal_' + use + '.dat', 'w'),
+		open('eightpuzzle-traces/next_' + use + '.dat', 'w'),
+		open('eightpuzzle-traces/terminal_' + use + '.dat', 'w')]
+	files[0].write(t_goal + '\n' + static)
+	files[1].write(t_legal + '\n' + static)
+	files[2].write(t_next + '\n' + static)
+	files[3].write(t_terminal + '\n' + static)
+	for file in files:
+		file.close
+
+write_preludes('train')
+write_preludes('test')
 	

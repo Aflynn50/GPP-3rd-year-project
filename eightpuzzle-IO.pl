@@ -145,16 +145,55 @@ trace_board([V|T],Pos) :-
     Pos1 is Pos + 1,
     trace_board(T,Pos1).
 
-write_trace_to_file(List) :-
-    append('runner/data/train/eight_puzzle_goal_train'),
+write_trace_to_file(Use,List) :-
+    string_concat(Use,".dat",Ending),
+    string_concat("eightpuzzle-traces/goal_",Ending,F1s),
+    atom_string(F1,F1s),
+    append(F1),
     trace_goal(List,0),
     told,
-    append('runner/data/train/eight_puzzle_legal_train'),
+    string_concat("eightpuzzle-traces/legal_",Ending,F2s),
+    atom_string(F2,F2s),
+    append(F2),
     trace_legal(List,0),
     told,
-    append('runner/data/train/eight_puzzle_next_train'),
+    string_concat("eightpuzzle-traces/next_",Ending,F3s),
+    atom_string(F3,F3s),
+    append(F3),
     trace_next(List,0),
     told,
-    append('runner/data/train/eight_puzzle_terminal_train'),
+    string_concat("eightpuzzle-traces/terminal_",Ending,F4s),
+    atom_string(F4,F4s),
+    append(F4),
     trace_terminal(List,0),
     told.
+
+
+bestsols(Path) :-
+    start(B),
+    bestfirst(B,Path).
+
+randiter(0,[]).
+
+randiter(N,[Path|T]) :-
+    start(B),
+    random_player(B,Path),
+    N1 is N - 1,
+    randiter(N1,T).
+
+%40?
+genopt :-
+    findnsols(30,P,bestsols(P),L3),
+    length(L1,15),
+    append(L1,L2,L3),
+    maplist(write_trace_to_file('train'),L1),
+    maplist(write_trace_to_file('test'),L2).
+
+    
+%30?
+genrand :-
+    randiter(30,L3),
+    length(L1,15),
+    append(L1,L2,L3),
+    maplist(write_trace_to_file('train'),L1),
+    maplist(write_trace_to_file('test'),L2).

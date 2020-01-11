@@ -3,4 +3,6 @@ This repo contains variouse files for my third year project. At the time of writ
 ## Running eight puzzle
 Use swipl and try something like ```start(B),bestfirst(B,Sol),showsol(Sol).```
 ## Generalting traces
-Use swipl and run ```start(B),bestfirst(B,Sol),write_trace_to_file(Sol).```. This will put the traces into the runner at runner/data/train/eight_puzzle
+Run the python trace preludes file to clear out the old traces and generate the prelude. Use swipl and run ```start(B),bestfirst(B,Sol),write_trace_to_file(Sol).```. This will put the traces into the runner at runner/data/train/eight_puzzle
+
+```swipl -s prologtest.pl -g goal2 -g goal1 -t halt```

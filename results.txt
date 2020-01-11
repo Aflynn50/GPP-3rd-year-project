@@ -1,0 +1,12 @@
+
+Train: Opt - Test: Opt
+metagol 51 0
+aleph 64 0
+eight_puzzle next 56
+eight_puzzle goal 97
+eight_puzzle legal 54
+eight_puzzle terminal 48
+eight_puzzle next 55
+eight_puzzle goal 50
+eight_puzzle legal 50
+eight_puzzle terminal 50

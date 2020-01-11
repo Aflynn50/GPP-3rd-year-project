@@ -59,8 +59,6 @@ random_player_lim(B1,[B1|Path],T) :-
     length(Ss,L),
     L1 is L - 1,
     random_between(0,L1,R),
-    write(R),
-    write(L),
     nth0(R,Ss,B3),
     T1 is T - 1,
     random_player_lim(B3,Path,T1).

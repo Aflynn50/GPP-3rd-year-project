@@ -132,7 +132,7 @@ def print_results(system):
     print(system.name, int(np.mean(scores)*100), perfectly_correct(scores))
 
 
-systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
+systems = [metagol.Metagol(),aleph.Aleph()] #,specialised_ilasp.SPECIALISED_ILASP()]
 
 arg = sys.argv[1]
 if arg == 'parse':
