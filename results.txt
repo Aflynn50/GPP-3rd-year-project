@@ -1,12 +1,44 @@
 
 Train: Opt - Test: Opt
 metagol 51 0
-aleph 64 0
+aleph 63 0
 eight_puzzle next 56
-eight_puzzle goal 97
+eight_puzzle goal 94
+eight_puzzle legal 54
+eight_puzzle terminal 48
+
+Train: Rand - Test: Opt
+metagol 51 0
+aleph 63 0
+eight_puzzle next 56
+eight_puzzle goal 94
 eight_puzzle legal 54
 eight_puzzle terminal 48
 eight_puzzle next 55
 eight_puzzle goal 50
 eight_puzzle legal 50
 eight_puzzle terminal 50
+
+Train: Opt - Test: Rand
+metagol 63 1
+aleph 65 0
+eight_puzzle next 50
+eight_puzzle goal 59
+eight_puzzle legal 50
+eight_puzzle terminal 99
+eight_puzzle next 55
+eight_puzzle goal 50
+eight_puzzle legal 50
+eight_puzzle terminal 100
+
+Train: Rand - Test: Rand
+metagol 63 1
+aleph 71 1
+eight_puzzle next 55
+eight_puzzle goal 59
+eight_puzzle legal 70
+eight_puzzle terminal 100
+eight_puzzle next 55
+eight_puzzle goal 50
+eight_puzzle legal 50
+eight_puzzle terminal 100
