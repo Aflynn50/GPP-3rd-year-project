@@ -115,8 +115,9 @@ trace_terminal([B|T],Step) :-
     write('background:'),nl,
     background_board(B,Step),nl,
     write('---'),nl,nl,
-    write('positives:'),nl,nl,
-    (goal(B) -> nl,write('\tterminal()')),
+    write('positives:'),
+    (goal(B) -> nl,write('\tterminal()');true),
+    nl,nl,
     write('---'),
     Step1 is Step + 1,
     trace_terminal(T,Step1).
