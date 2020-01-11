@@ -171,9 +171,19 @@ randiter(N,[Path|T]) :-
     N1 is N - 1,
     randiter(N1,T).
 
+reverse([],Z,Z).
+reverse([H|T],Z,Acc) :- reverse(T,Z,[H|Acc]).
+
+maprev([],R).
+maprev([H|T],[RH|RT]) :-
+    reverse(H,RH,[]),
+    maprev(T,RT).
+
+
 %40?
 genopt :-
-    findnsols(50,P,bestsols(P),L3),
+    findnsols(50,P,bestsols(P),L),
+    maprev(L,L3),
     length(L1,25),
     append(L1,L2,L3),
     maplist(write_trace_to_file('train'),L1),

@@ -19,6 +19,7 @@ mv eightpuzzle-traces/legal_test.dat runner/data/test/eight_puzzle_legal_test.da
 mv eightpuzzle-traces/next_test.dat runner/data/test/eight_puzzle_next_test.dat
 mv eightpuzzle-traces/terminal_test.dat runner/data/test/eight_puzzle_terminal_test.dat
 cd runner
+python3 runner.py parse
 python3 runner.py train
 python3 runner.py test
 printf "Train: Opt - Test: Opt\n" >> ../results.txt
@@ -32,6 +33,7 @@ mv eightpuzzle-traces/legal_train.dat runner/data/train/eight_puzzle_legal_train
 mv eightpuzzle-traces/next_train.dat runner/data/train/eight_puzzle_next_train.dat
 mv eightpuzzle-traces/terminal_train.dat runner/data/train/eight_puzzle_terminal_train.dat
 cd runner
+python3 runner.py parse
 python3 runner.py train
 python3 runner.py Test
 printf "\nTrain: Rand - Test: Opt\n" >> ../results.txt
@@ -42,6 +44,7 @@ swap runner/data/train/eight_puzzle_legal_train.dat runner/data/test/eight_puzzl
 swap runner/data/train/eight_puzzle_next_train.dat runner/data/test/eight_puzzle_next_test.dat
 swap runner/data/train/eight_puzzle_terminal_train.dat runner/data/test/eight_puzzle_terminal_test.dat
 cd runner
+python3 runner.py parse
 python3 runner.py train
 python3 runner.py test
 printf "\nTrain: Opt - Test: Rand\n" >> ../results.txt
@@ -52,6 +55,7 @@ mv eightpuzzle-traces/legal_test.dat runner/data/train/eight_puzzle_legal_train.
 mv eightpuzzle-traces/next_test.dat runner/data/train/eight_puzzle_next_train.dat
 mv eightpuzzle-traces/terminal_test.dat runner/data/train/eight_puzzle_terminal_train.dat
 cd runner
+python3 runner.py parse
 python3 runner.py train
 python3 runner.py test
 printf "\nTrain: Rand - Test: Rand\n" >> ../results.txt
