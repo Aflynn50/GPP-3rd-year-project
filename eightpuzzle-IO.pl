@@ -182,8 +182,8 @@ genopt :-
     
 %30?
 genrand :-
-    randiter(150,L3),
-    length(L1,75),
+    randiter(200,L3),
+    length(L1,100),
     append(L1,L2,L3),
     maplist(write_trace_to_file('train'),L1),
     maplist(write_trace_to_file('test'),L2).
