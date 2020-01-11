@@ -173,8 +173,8 @@ randiter(N,[Path|T]) :-
 
 %40?
 genopt :-
-    findnsols(30,P,bestsols(P),L3),
-    length(L1,15),
+    findnsols(50,P,bestsols(P),L3),
+    length(L1,25),
     append(L1,L2,L3),
     maplist(write_trace_to_file('train'),L1),
     maplist(write_trace_to_file('test'),L2).
@@ -182,8 +182,8 @@ genopt :-
     
 %30?
 genrand :-
-    randiter(30,L3),
-    length(L1,15),
+    randiter(150,L3),
+    length(L1,75),
     append(L1,L2,L3),
     maplist(write_trace_to_file('train'),L1),
     maplist(write_trace_to_file('test'),L2).
