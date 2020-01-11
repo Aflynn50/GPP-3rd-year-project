@@ -9,7 +9,7 @@ function swap()
 echo "" > results.txt
 python3 trace_preludes.py
 #CHANGE BACK
-swipl -s eightpuzzle.pl -g genrand -t halt --stack_limit=4g
+swipl -s eightpuzzle.pl -g genopt -t halt --stack_limit=4g
 mv eightpuzzle-traces/goal_train.dat runner/data/train/eight_puzzle_goal_train.dat
 mv eightpuzzle-traces/legal_train.dat runner/data/train/eight_puzzle_legal_train.dat
 mv eightpuzzle-traces/next_train.dat runner/data/train/eight_puzzle_next_train.dat
