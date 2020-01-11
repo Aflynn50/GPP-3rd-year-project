@@ -26,14 +26,7 @@ showsol([P|L]) :-
     nl,write('---'),nl,
     showboard(P).
 
-trace_goal([B],Step) :-!,
-    nl,nl,
-    write('background:'),nl,
-    background_board(B,Step),
-    write('---'),nl,nl,
-    write('positives:'),nl,
-    write('\tgoal(robot, 100)'),nl,nl,
-    write('---').
+trace_goal([],_Step) :- !.
 
 trace_goal([B|T],Step) :-
     nl,nl,
@@ -41,7 +34,8 @@ trace_goal([B|T],Step) :-
     background_board(B,Step),
     write('---'),nl,nl,
     write('positives:'),nl,
-    write('\tgoal(robot, 0)'),nl,nl,
+    (goal(B) -> write('\tgoal(robot, 100)') ; write('\tgoal(robot, 0)')),
+    nl,nl,
     write('---'),
     Step1 is Step + 1,
     trace_goal(T,Step1).
@@ -113,14 +107,8 @@ trace_next([B1,B2|T],Step) :-
     trace_next([B2|T],Step1).
 
 
-trace_terminal([B],Step) :-!,
-    nl,nl,
-    write('background:'),nl,
-    background_board(B,Step),nl,
-    write('---'),nl,nl,
-    write('positives:'),nl,
-    write('\tterminal()'),nl,nl,
-    write('---').
+trace_terminal([],_Step) :- !.
+
 
 trace_terminal([B|T],Step) :-
     nl,nl,
@@ -128,6 +116,7 @@ trace_terminal([B|T],Step) :-
     background_board(B,Step),nl,
     write('---'),nl,nl,
     write('positives:'),nl,nl,
+    (goal(B) -> nl,write('\tterminal()')),
     write('---'),
     Step1 is Step + 1,
     trace_terminal(T,Step1).
