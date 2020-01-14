@@ -174,7 +174,7 @@ randiter(N,[Path|T]) :-
 reverse([],Z,Z).
 reverse([H|T],Z,Acc) :- reverse(T,Z,[H|Acc]).
 
-maprev([],R).
+maprev([],_R).
 maprev([H|T],[RH|RT]) :-
     reverse(H,RH,[]),
     maprev(T,RT).

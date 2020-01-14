@@ -6,6 +6,11 @@ eight_puzzle next 56
 eight_puzzle goal 94
 eight_puzzle legal 54
 eight_puzzle terminal 48
+eight_puzzle next 55
+eight_puzzle goal 50
+eight_puzzle legal 50
+eight_puzzle terminal 50
+
 
 Train: Rand - Test: Opt
 metagol 51 0
