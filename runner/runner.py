@@ -10,6 +10,7 @@ from os.path import isfile, join
 from multiprocessing import Pool
 import config as cfg
 import sys
+from tabulate import tabulate
 
 def game_names(path):
     # return ['minimal_decay']
@@ -112,7 +113,7 @@ def perfectly_correct(xs):
     return sum(1 for x in xs if int(x) == 1)
 
 def print_results_(args):
-    (system, game) = args
+    (system, game, doprint) = args
     inpath='exp/{}/test/{}/'.format(system.name, game)
     sub_targets=targets(inpath)
     scores = []
@@ -122,14 +123,28 @@ def print_results_(args):
             if sub_target.startswith(target):
                 resultsf='results/{}/{}/{}.pl'.format(system.name,game,sub_target)
                 target_scores += res_parser(resultsf)
-        print(game,target,int(balanced_acc(target_scores)*100))
+        if doprint:
+            print(game,target,int(balanced_acc(target_scores)*100))
         scores.append(balanced_acc(target_scores))
     return scores
 
 def print_results(system):
-    args = [(system, game) for game in game_names('data/test')]
-    scores = [score for scores in parmap(print_results_, args) for score in scores]
+
+
+    args = [(system, game, True) for game in game_names('data/test')]
+    scores = [score for scores in map(print_results_, args) for score in scores]
+    print('/n/n' + str(scores) + '/n/n')
     print(system.name, int(np.mean(scores)*100), perfectly_correct(scores))
+
+
+def print_nice():
+    headers = ['Predicate'] + list(map(lambda x : x.name, systems))
+    data = [['next','goal','legal','terminal']]
+    for system in systems:
+        args = [(system, game, False) for game in game_names('data/test')]
+        data += list(map(lambda x: list(map((lambda y:  int(y * 100)),x)), [print_results_(arg) for arg in args]))
+    print(tabulate(list(zip(*data)),headers=headers))
+
 
 
 systems = [metagol.Metagol(),aleph.Aleph()] #,specialised_ilasp.SPECIALISED_ILASP()]
@@ -143,3 +158,5 @@ if arg == 'test':
     list(map(do_test,systems))
 if arg == 'results':
     list(map(print_results,systems))
+if arg == 'nice_results':
+    print_nice()
