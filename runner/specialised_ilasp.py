@@ -34,6 +34,7 @@ class SPECIALISED_ILASP:
             try:
                 subprocess.run(cmd.split(' '),timeout=cfg.learning_timeout,stdout=f)
             except subprocess.TimeoutExpired:
+                print("ILASP Timed out")
                 pass
 
             map(os.remove, glob.glob("out_{}{}*".format(target, game)))

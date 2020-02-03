@@ -1,6 +1,7 @@
 import aleph
 import metagol
 import specialised_ilasp
+import ilasp
 import os
 import multiprocessing
 import signal
@@ -133,7 +134,6 @@ def print_results(system):
 
     args = [(system, game, True) for game in game_names('data/test')]
     scores = [score for scores in map(print_results_, args) for score in scores]
-    print('/n/n' + str(scores) + '/n/n')
     print(system.name, int(np.mean(scores)*100), perfectly_correct(scores))
 
 
@@ -147,14 +147,15 @@ def print_nice():
 
 
 
-systems = [metagol.Metagol(),aleph.Aleph()] #,specialised_ilasp.SPECIALISED_ILASP()]
+#systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
+systems = [specialised_ilasp.SPECIALISED_ILASP()]
 
 arg = sys.argv[1]
 if arg == 'parse':
     list(map(parse,systems))
 if arg == 'train':
     list(map(train,systems))
-if arg == 'test':
+if arg == 'test':   
     list(map(do_test,systems))
 if arg == 'results':
     list(map(print_results,systems))

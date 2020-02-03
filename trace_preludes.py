@@ -338,18 +338,20 @@ t_terminal = """atoms:
 ---
 """
 
-def write_preludes(use):
-	files = [open('eightpuzzle-traces/goal_' + use + '.dat', 'w'),
-		open('eightpuzzle-traces/legal_' + use + '.dat', 'w'),
-		open('eightpuzzle-traces/next_' + use + '.dat', 'w'),
-		open('eightpuzzle-traces/terminal_' + use + '.dat', 'w')]
-	files[0].write(t_goal + '\n' + static)
-	files[1].write(t_legal + '\n' + static)
-	files[2].write(t_next + '\n' + static)
-	files[3].write(t_terminal + '\n' + static)
-	for file in files:
-		file.close
+def write_prelude(file,pred):
+	with open(file,'w') as f:
+		if pred=="goal":
+			f.write(t_goal + '\n' + static)
+		elif pred=="legal":
+			f.write(t_legal + '\n' + static)
+		elif pred=="next":
+			f.write(t_next + '\n' + static)
+		elif pred=="terminal":
+			f.write(t_terminal + '\n' + static)
+		f.close()
 
-write_preludes('train')
-write_preludes('test')
-	
+if __name__ == "__main__":
+	write_prelude('eightpuzzle-traces/goal_' + use + '.dat')
+	write_prelude('eightpuzzle-traces/legal_' + use + '.dat')
+	write_prelude('eightpuzzle-traces/next_' + use + '.dat')
+	write_prelude('eightpuzzle-traces/terminal_' + use + '.dat')
