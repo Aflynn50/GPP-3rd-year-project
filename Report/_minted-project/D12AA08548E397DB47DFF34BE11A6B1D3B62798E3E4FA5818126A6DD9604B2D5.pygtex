@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{totdist}\PYG{p}{(}\PYG{n+nv}{L}\PYG{p}{,}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{n+nv}{N}\PYG{p}{)} \PYG{p}{:\PYGZhy{}}
+    \PYG{n+nf}{totdist1}\PYG{p}{(}\PYG{n+nv}{L}\PYG{p}{,}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{n+nv}{N}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{).}
+
+\PYG{n+nf}{totdist1}\PYG{p}{([],}\PYG{k}{\PYGZus{}}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{k}{\PYGZus{}}\PYG{n+nv}{Pos}\PYG{p}{).}
+
+\PYG{n+nf}{totdist1}\PYG{p}{([}\PYG{l+s+sAtom}{b}\PYG{p}{|}\PYG{n+nv}{T}\PYG{p}{],}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{n+nv}{N}\PYG{p}{,}\PYG{n+nv}{Pos}\PYG{p}{)} \PYG{p}{:\PYGZhy{}}
+    \PYG{p}{!,}\PYG{n+nv}{Pos1} \PYG{o}{is} \PYG{n+nv}{Pos} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,}
+    \PYG{n+nf}{totdist1}\PYG{p}{(}\PYG{n+nv}{T}\PYG{p}{,}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{n+nv}{N}\PYG{p}{,}\PYG{n+nv}{Pos1}\PYG{p}{).}
+
+\PYG{n+nf}{totdist1}\PYG{p}{([}\PYG{n+nv}{V}\PYG{p}{|}\PYG{n+nv}{T}\PYG{p}{],}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{n+nv}{N}\PYG{p}{,}\PYG{n+nv}{Pos}\PYG{p}{)} \PYG{p}{:\PYGZhy{}}
+    \PYG{n+nf}{nth0}\PYG{p}{(}\PYG{n+nv}{I}\PYG{p}{,}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{n+nv}{V}\PYG{p}{),}
+    \PYG{n+nf}{coord}\PYG{p}{(}\PYG{n+nv}{Pos}\PYG{p}{,}\PYG{n+nv}{X1}\PYG{o}{\PYGZhy{}}\PYG{n+nv}{Y1}\PYG{p}{),}
+    \PYG{n+nf}{coord}\PYG{p}{(}\PYG{n+nv}{I}\PYG{p}{,}\PYG{n+nv}{X2}\PYG{o}{\PYGZhy{}}\PYG{n+nv}{Y2}\PYG{p}{),}
+    \PYG{n+nf}{mandist}\PYG{p}{(}\PYG{n+nv}{X1}\PYG{o}{\PYGZhy{}}\PYG{n+nv}{Y1}\PYG{p}{,}\PYG{n+nv}{X2}\PYG{o}{\PYGZhy{}}\PYG{n+nv}{Y2}\PYG{p}{,}\PYG{n+nv}{D}\PYG{p}{),}
+    \PYG{n+nv}{Pos1} \PYG{o}{is} \PYG{n+nv}{Pos} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,}
+    \PYG{n+nf}{totdist1}\PYG{p}{(}\PYG{n+nv}{T}\PYG{p}{,}\PYG{n+nv}{Goal}\PYG{p}{,}\PYG{n+nv}{N1}\PYG{p}{,}\PYG{n+nv}{Pos1}\PYG{p}{),}
+    \PYG{n+nv}{N} \PYG{o}{is} \PYG{n+nv}{N1} \PYG{o}{+} \PYG{n+nv}{D}\PYG{p}{.}
+\end{Verbatim}

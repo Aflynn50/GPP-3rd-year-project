@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{s}\PYG{p}{(}\PYG{n+nv}{B1}\PYG{p}{,}\PYG{n+nv}{B2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{:\PYGZhy{}}
+    \PYG{n+nf}{member}\PYG{p}{(}\PYG{n+nv}{N}\PYG{p}{,}\PYG{n+nv}{B1}\PYG{p}{),}
+    \PYG{n+nf}{nth0}\PYG{p}{(}\PYG{n+nv}{NI}\PYG{p}{,}\PYG{n+nv}{B1}\PYG{p}{,}\PYG{n+nv}{N}\PYG{p}{),}
+    \PYG{n+nf}{blank\PYGZus{}pos}\PYG{p}{(}\PYG{n+nv}{B1}\PYG{p}{,}\PYG{n+nv}{BI}\PYG{p}{),}
+    \PYG{n+nf}{neighbor}\PYG{p}{(}\PYG{n+nv}{BI}\PYG{p}{,}\PYG{n+nv}{NI}\PYG{p}{),}
+    \PYG{n+nf}{swap}\PYG{p}{(}\PYG{n+nv}{BI}\PYG{p}{,}\PYG{n+nv}{NI}\PYG{p}{,}\PYG{n+nv}{B1}\PYG{p}{,}\PYG{n+nv}{B2}\PYG{p}{).}
+\end{Verbatim}

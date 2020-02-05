@@ -1,0 +1,262 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{float,graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{minted}
+\usepackage{mathrsfs}
+\usepackage[lined,boxruled]{algorithm2e}\usepackage{color}
+\usepackage[english]{babel}
+
+\usemintedstyle{friendly}
+
+\begin{document}
+\title{\Large{\textbf{Inducing Game Rules from Varying Quality Game Play}}}
+\author{Alastair Flynn}
+\maketitle
+\chapter{Abstract}
+When learning programs in Inductive Logic Programming (ILP) optimisations to the dataset used to train the systems can often be as effective as improvements to the systems themselves. General Game Playing (GGP) is a framework in which an artificial intelligence program is required to play a variety of games successfully. The framework includes repositories of game descriptions. The Inductive General Game Playing (IGGP) problem challenges ILP systems to learn the rules of a game from observation of gameplay. Existing work on IGGP has always assumed that the game player being observed makes random moves. To address this limitation, in this paper we analyse the effect of using optimal verses random gameplay traces as well as the effect of varying the number of traces in the training set. The General Game Playing competition winner in 2014, Sancho, is used to generate optimal game traces for a large number of games and the systems, Metagol, Aleph and ILASP are trained and tested with combinations of optimal and random data. Our results show...
+\chapter{Introduction}
+General Game Playing (GGP) is a framework in which artificial intelligence programs are required to play a large number of games successfully.\cite{Genesereth/GGPOverview} Games in the framework range in both number of players and complexity; from the single player Eight Puzzle to the six player Chinese Checkers, and from Rock Paper Scissors to Chess\cite{GGP-Website}. Every year the GGP competition takes place, aiming to find the best GGP program. A consequence of this framework is large repositories of game descriptions written in the Game Description Language (GDL), a logic programming language built for describing games as state machines\cite{GDL_Spec}. 
+GIVE EXAMPLE OF GDL GAME
+These game descriptions provide a perfect setting for an instance of the ILP problem. In Inductive Logic Programming machine learning systems are tasked with learning logic programs given some background knowledge and a set of values for which the programs are true of false\cite{Muggleton/ILP}. In his 2019 paper Andrew Croppers paper \cite{Cropper/IGGP} defines the Inductive General Game Playing (IGGP) problem; given a set of gameplay observations the goal is to induce the rules of the game.
+GIVE EXAMPLE OF IGGP PROBLEM
+In this paper we use the IGGP framework to evaluate the ability of ILP agents to correctly induce the rules of a game given different sets of gameplay observations - optimal gameplay verses random gameplay. So far no work has been done on how the observations given as training data to the systems affect their ability to learn games.
+In machine learning the probably approximately correct learning framework (PAC) is a mathematical model that can be applied to machine learning systems for analysis. It gives an upper bound on the number of training examples needed for a learner to probably (with probability at least $[1-\delta]$) learn a hypothesis that is approximately (within error $\epsilon$)correct\cite{Mitchell/MachineLearing}. In section ? we test to find the number of examples beyond which the reduction in $\epsilon$ and $\delta$ becomes negligible.
+We would expect models trained on the same distribution as they are tested on the perform the best since it is generally accepted that the accuracy of a model increases the closer the test data distribution is to the training data distribution.\cite{Mitchell/MachineLearing}. However, Gonzales \cite{Gonzalez/MismatchedOutperform} suggests that a system trained on a different domain to the one it is tested can outperform a system trained and tested on the same domain. In his 2010 paper Ben-David shows that training data taken from multiple different domains can in fact give lower error on testing data that traning data taken from any single domain, including the testing domain \cite{Ben-David/DifferentDomains}. It is not clear in our case what selection of training data will result in the most effect learning. We will train the ILP systems on different combinations of optimal and random data as well as testing them on each individually. In section ? we test to find the optimal selection of distributions to take our training data from.
+
+\subsubsection{Contributions}
+\begin{itemize}
+\item We evaluate ILP systems ability to synthesise correct programs using the IGGP framework with both optimal gameplay data and random gameplay data
+\item We evaluate ILP systems ability to synthesise correct programs with different numbers of gameplay observations
+\end{itemize}
+
+\chapter{Related work}
+\section{Machine learning}
+?
+
+(in PAC) The cardinality of this example set must be at most a polynomial function of the size of the vocabulary used in constructing hypotheses.
+
+More examples allows for longer programs therefore better programs?
+
+\section{ILP}\label{sec:ILP}
+Inductive logic programming is a form of machine learning that uses logic programming to represent examples, background knowledge, and learned programs\cite{Cropper/EfficientLearning}. To learn the program is supplied with positive examples, negative examples and the background knowledge. In the general inductive setting we are provided with three languages.
+\begin{itemize}
+\item $\mathcal{L}_O$: the language of observations (positive and negative examples)
+\item $\mathcal{L}_B$: the language of background knowledge
+\item $\mathcal{L}_H$: the language of hypotheses 
+\end{itemize}
+The general inductive problem is as follows: given a consistent set of examples or observations $O \subseteq \mathcal{L}_O$ and consistent background knowledge $B \subseteq \mathcal{L}_B$ find an hypothesis $H \in \mathcal{L}_H$ such that \[B \wedge H \vDash O\] \cite{Muggleton/ILP}
+That is that the generated hypothesis and the background knowledge imply the positive examples and not imply the negative examples.
+
+Example task (grandparent relation)
+
+ILP systems generally regard ILP as a search problem. The search space is the set of well formed hypothesis. Often a set of inference rules are applied to the starting hypothesis, the new hypothesise are then pruned and expanded according to how often $B \wedge H \vDash O$ in the observations $O$. When all the observations are implied then a correct program has been found.
+\subsection{Metagol?}
+?Should I add a section on how metagol works here as an example?
+
+
+To evaluate ILP systems the learning tasks they are given need to be small enough that it is feasible for them to learn the programs, but also diverse enough that we test the full capability of the system. The Inductive general game playing framework provides this. To understand IGGP we first need to explain the General game playing framework.
+\section{GGP}
+General game playing is a framework for evaluating an agenet's general intelligence accross a wide range of tasks \cite{Cropper/IGGP}. The idea is that agents are able to accept declarative descriptions of arbitrary games at run time and are able to use such descriptions to play those games effectively. All the games are finite, discrete, deterministic
+multi-player games of complete information. The games can vary in number of players, dimensions and complexy. For example games such as rock paper scissons have 0 dimensions and only 10 rules in the given GGP ruleset, more complex games such as checkers has 52 rules and is 2 dimensional. There are also single player games such as eight-puzzle or Fizz Buzz. The agents play games selected from an exsisting database which lists their descriptions described in the Game Description Language (GDL). GDL is a language based on first order logic described in section \ref{sec:GDL}. The list of games along with their descriptions is available online\cite{GGP-Website}. Matches in the GGP framework take place through an online framework called the Gamemaster. The agents connect to an online Game Manager (part of the Gamemaster) service which arbitrates indavidual matches. The connecting agents send several pieces of information to the Game Manger incliding a game that is already know by the manager and the required number of players. The match can then be started by pressing a start button, when pressed the agents will recive a \textit{Start} message including the role of the player (e.g. black or white in chess) and a description on the game in GDL. The Game Manger communicates all instructions to the players through HTTP\cite{Genesereth/GGPOverview}.
+In 2005 an annual International General Game Playing Competition (IGGPC) was set up which still runs to this day. Each year hopeful participants pit GGP agents against one another to find the best one. The competitors take part in a series of rounds of increasing complexity. The agent that wins the most games in these rounds is the winner. The 2014 winner Sancho is used in this paper to generate optimal game traces for the IGGP task. The Game description language is used in the IGGP as an example of the rules to learn and the rules to use when generating examples. It is a type of logical programming language.
+\section{Logical Programming}
+Logic programming is a programming paradigm based on formal logic. Programs are made up of facts and rules. Rules are made up of two parts: the head and the body. They can be read as logical implications where the conjunction of all the elements in the body imply the head. The syntax is different for different logical programming languages but the head is usually written before the body. A fact is simply a rule without a body, that is, a statement that is taken as true. The compiler takes queries and returns weather they are true of false. If there are free variables in the query the compiler assigns them values for which the query is true. Logical programming is good for symbolic non-numeric computation. It is well suited to solving problems that involve well defined objects and relations between them, such as a GGP game.
+\subsection{GDL}\label{sec:GDL}
+Game definition language is the formal language used in the GGP competition to specify the rules of the games.\cite{GDL_Spec} It is suited to specifying game rules because:
+\begin{itemize}
+\item It is a purely declarative language
+\item It has restrictions to ensure that all questions of logical entailment are decidable
+\item There are some reserved words, which tailor the language to the task of defining games
+\end{itemize}
+These descriptions define the games in terms of a set of true facts capturing the information needed to give the following predicates:
+\begin{itemize}
+\item The initial game state
+\item The goal state
+\item The terminal state
+\end{itemize}
+In addition, logical rules are used to describe the following:
+\begin{itemize}
+\item The legal moves for a given player and state
+\item The next state for a given player state and move
+\item The termination and goal conditions
+\end{itemize}
+In the IGGP problem the tasks are the rules for the goal, the next state, the legal states and the terminal state.
+\section{IGGP}
+The IGGP problem uses the GDL game descriptions from the GGP framework to construct the IGGP dataset containing 50 games. The IGGP problem itself is described in section \ref{sec:LogicalSetting}. A machanism is also provided by Andrew Cropper et al. \cite{Cropper/IGGP} to turn the GGP games into new IGGP tasks. This mechanism has been modified and added to to generate optimal traces.
+\section{Prolog}
+Prolog is one of the most popular and well used logical programming languages. The syntax in Prolog for rules and facts is fairly intuitive. A simple fact might be \mintinline{Prolog}{son(bob,alice).}. This tells us that the atom \mintinline{Prolog}{alice} relates the atom \mintinline{Prolog}{bob} in the \mintinline{Prolog}{son} relation. A rule is written \mintinline{Prolog}{parent(X,Y) :- son(Y,X)} which means if we have the relation son of Y and X then X relates Y in parent. The symbol :- is the same as reverse implication ($\Leftarrow$). We can query a program in the Prolog environment. If we typed in "\mintinline{Prolog}{parent(alice,bob).}" then it would return true because we have \mintinline{Prolog}{son(bob,alice)} and the rule which tells us that if X is a son of Y else then Y is a parent of X so \mintinline{Prolog}{alice} is a parent of \mintinline{Prolog}{bob}. Predicates can be conjoined with the comma "," (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y), c(Z,Y)}). Disjunction is expressed with the semicolon ";" (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y) ; c(Z,Y)}.
+
+Prolog answers queries using a process know as proof seach and unification. The unification process is similar to logical unification, two terms unify if they are the same term or if they contain variables that can be instantiated with terms in such a way that the new terms are equal. For example the terms \mintinline{Prolog}{name(bob).} and \mintinline{Prolog}{name(X).} will unify with \mintinline{Prolog}{X = bob}. The Prolog ISO defines the Herbrand Algorithm for unification \cite{PrologISO}. A Prolog query is a set of goals. The Prolog System decides weather they are satisfiable or not. When a query is asked the of the Prolog system it executes something similar to the following algorithm. The exact implementations vary among Prolog systems however they are all roughly this algorithm. 
+\begin{algorithm}
+\SetKwInOut{Input}{Input}
+\SetKwProg{Fn}{Function}{}{}
+\Input{A list of goals $GoalList = G_1,G_2,...,G_M$}
+\Fn{\textbf{execute} (Program, GoalList, Success):}{
+	\If{$empty(GoalList)$}{$Success \leftarrow true$}{
+		\While{\textbf{not} empty($GoalList$)}{
+			$\textit{Goal} \leftarrow head(GoalList)$\;
+			$OtherGoals \leftarrow tail(GoalList)$\;
+			$Satisfied \leftarrow false$\;
+			\While{\textbf{not} Satisfied and there are more clauses in the program}{
+				Let next clause in the program be $H \vdash B_1,...,B_n$\;
+				Construct a variant of this clause $H' \vdash B_1',...,B_n'$\;
+				$match(Goal,H',MatchOK,Instant)$\;
+				\If{$MatchOK$}{
+					$NewGoals \leftarrow append([B_1',...,B_n'],OtherGoals)$\;
+					$NewGoals \leftarrow substitue(Instant,NewGoals)$\;
+					$execute(Program,NewGoals,$\textit{Satisfied}$)$\;
+				}
+			}
+		$Success \leftarrow$ \textit{Satisfied};\;
+		}
+	}
+} 	 
+\caption{Execute Prolog Goals}
+\end{algorithm}
+
+the program listing is wearched for a term to unify with. The listing is searched in the order it is written in. When Prolog finds a matching rule it then attempts to sequentially unify the terms of the body using the same method. If the rule has no body then the variables are assigned and the terms unify. If Prolog fails to unify two terms then it backtracks, assignes differnt values to \cite{Bratko}
+
+\chapter{Logical setting}\label{LogicalSetting}
+    - What precisely is the problem?
+    - You can paraphrase a lot from the IGGP paper
+
+The IGGP problem is defined in Andrew Croppers paper Inductive general game playing \cite{Cropper/IGGP}. Much like the problem of ILP \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
+\begin{itemize}
+\item $\mathscr{E}$ the language of examples (observations)
+\item $\mathscr{B}$ the language of background knowledge
+\item $\mathscr{H}$ the language of hypotheses
+\end{itemize} Each of these languages can be see as a subset of those described in \ref{sec:ILP}. All the predicates involved in the task are taken from the GDL descriptions of games in the Stanford GGP* library. A lot of the atoms in the descriptions are not function-free, that is, they are nested predicates. For example \mintinline{Prolog}{true(count(9))}. We flatten all of these to single, non nested predicates, i.e. \mintinline{Prolog}{true_count(9)}. This is done because some ILP systems do not support function symbols. We can therefore assume that both $\mathscr{E}$ and $\mathscr{B}$ are function-free. The language of hypotheses $\mathscr{H}$ can be assumed to consist of datalog programs with stratified negation as described here\cite{Kenneth}. Stratified negation is not necessary but in practice allows significantly more concise programs, and thus often makes the learning task computationally easier. We first define an IGGP input the use it to define the IGGP problem. An IGGP input needs to capture the idea of an observation about a game. The input is based on the general input for the Logical induction problem of section \ref{sec:ILP} since this is a sub problem of it. 
+
+\textbf{The IGGP Input:} An input $\Delta$ is a set of triples $\{(B_i,E_i^+,E_i^-)\}_m^{i=1}$ where
+\begin{itemize}
+\item $B_i \subset \mathcal{B}$ represents background knowledge
+\item $E_i^+ \subseteq \mathscr{E}$ and $E_i^- \subseteq \mathscr{E}$ represent positive and negative examples respectively
+\end{itemize}
+An IGGP input forms the IGGP problem:
+
+\textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \vDash E_i^+$ and
+$H \cup B_i \nvDash E_i^−$
+
+In this paper the aim is to experiment how different ILP systems preform at this problem given optimal traces verses how they preform with random traces. That is varying the contents of $B \subseteq \mathscr{B}$. Experiments will also be preformed to determine the effect of varying the size of the input set $|\Delta|$.
+    
+\chapter{Implementations}
+\section{Eight Puzzle}
+To write an optimal player for Eight Puzzle I decide to use an approach based on best first search. 
+\subsection{Best first search}
+Best first search generates a graph of the game states, expanding the most promising nodes first according to a heuristic for how close to the goal state the current state is. When the goal node is reached the search gives the path from the root node to it, i.e. the list of moves made to get to the goal.
+Since Best first search is a well know and often used algorithm in Prolog we decided to use a standard implmentation from Bratko\cite{Bratko}. This decision was made to avoid needless mistakes and inefficiency that would have come with a new independent implementation of this algorithm.
+
+Best First search is a generic algorithm that needs certain problem specific predicates to be implemented for it to function. These predicates are:
+\begin{itemize}
+\item \textbf{The successor predicate - }\mintinline{Prolog}{s(Node,Node1,Cost)}: This predicate is true if there is an arc costing \mintinline{Prolog}{Cost} between state \mintinline{Prolog}{Node} and state \mintinline{Prolog}{Node1}. In Eight Puzzle we set the cost of all arcs to be 1.
+\item \textbf{The Goal predicate - }\mintinline{Prolog}{goal(Node)}: This is true if the state \mintinline{Prolog}{Node} is a goal state.
+\item \textbf{The heuristic - }\mintinline{Prolog}{h(Node,H)}: This is a relation that relates a state \mintinline{Prolog}{Node} to a value \mintinline{Prolog}{H} that is a heuristic for how close to the state is to the goal state.
+\end{itemize}
+To represent the board I decided to use a 9 element list with \mintinline{Prolog}{b} representing the blank tile INSERT IMAGE OF GOAL BOARD \mint{Prolog}{[1,2,3,4,5,6,7,8,b]}.
+I defined some useful helper predicates to start with. The Manhatten distance between two tiles between two tiles is the difference in X coordinates plus the difference in Y coordinates, I wrote a predicate to calculate this relation:
+\begin{minted}{Prolog}
+mandist(X1-Y1,X2-Y2,D) :-
+    diff(X1,X2,Dx),
+    diff(Y1,Y2,Dy),
+    D is Dx+Dy.
+\end{minted}
+I also wrote predicates to calculate the coordinates of a tile from its position in the list, one that relates two tiles if they are next to each other on the grid and one that gives the position in the list of the blank tile.
+\subsubsection{Successor}
+To define the successor predicate I decided the best way to do it was to relate two boards by swapping the blank tile with its neighbours. I first wrote a function swap:
+\begin{minted}{Prolog}
+swap(I,J,L1,L3) :-
+   same_length(L1,L3),
+   append(BeforeI,[AtI|PastI],L1),
+   append(BeforeI,[AtJ|PastI],L2),
+   append(BeforeJ,[AtJ|PastJ],L2),
+   append(BeforeJ,[AtI|PastJ],L3),
+   length(BeforeI,I),
+   length(BeforeJ,J).
+\end{minted}
+This function only uses built in predicates that all do the obvious thing. In the first two appends this rule takes L1 and replaces the element I with the element J to make list L2 then in the second two takes list L2 and replaces J with I to make list L3. The variable AtI and AtJ will be instantiated with the elements at index I and J because of the restriction on the length of the sublist before them at the end of the rule.
+The successor function is defined as:
+\begin{minted}{Prolog}
+s(B1,B2,1) :-
+    member(N,B1),
+    nth0(NI,B1,N),
+    blank_pos(B1,BI),
+    neighbor(BI,NI),
+    swap(BI,NI,B1,B2).
+\end{minted}
+Since all arc (move) costs in my version of Eight Puzzle are 1 the predicate is only true when Cost is 1. \mintinline{Prolog}{member(N,B1)} is true when N is a member of B1. Here it restricts N to values on the board. \mintinline{Prolog}{nth0(NI,B1,N)} sets NI to the index of the value N in the list B1, i.e. it tells us the position on the board of the value we are considering. \mintinline{Prolog}{blank_pos(B1,BI)} sets BI to the position on the board of the blank. \mintinline{Prolog}{neighbor(BI,NI)} is true if the positions BI and NI are next to each other on the board. If all of these are true we then instantiate B2 with the new board by swapping the blank and its neighbour.
+\subsubsection{Goal}
+Defining the goal was actually very simple, I added the predicate: \mint{Prolog}{goal([1,2,3,4,5,6,7,8,b])}
+\noindent This is all that is needed to define the goal state.
+\subsubsection{Heuristic}
+A good heuristic for Eight Puzzle needs to capture an estimate of the distance of the current state from the goal. I initially decided to use the sum of the Manhattan distances of each tile from its position in the goal state. To calculate this I wrote a predicate \mintinline{Prolog}{totdist(L,Goal,N)} which relates a board L, a goal Goal and the sum of the Manhattan distances N.
+\begin{minted}{Prolog}
+totdist(L,Goal,N) :-
+    totdist1(L,Goal,N,0).
+
+totdist1([],_Goal,0,_Pos).
+
+totdist1([b|T],Goal,N,Pos) :-
+    !,Pos1 is Pos + 1,
+    totdist1(T,Goal,N,Pos1).
+
+totdist1([V|T],Goal,N,Pos) :-
+    nth0(I,Goal,V),
+    coord(Pos,X1-Y1),
+    coord(I,X2-Y2),
+    mandist(X1-Y1,X2-Y2,D),
+    Pos1 is Pos + 1,
+    totdist1(T,Goal,N1,Pos1),
+    N is N1 + D.
+\end{minted}
+My implementation of this predicate iterates through the list working out the Manhattan distance for each tile. When iterating through the list the way to keep track of how far through it you are (the position on the board you are currently looking at) is use a separate variable as a counter. Here I used Pos.
+After testing my program with this heuristic I found that it took about 6 seconds to come up with the first solution. I decided that I could probably do better if I had another heuristic that I combined with the Manhattan distance. I decided to use the number of tiles that were out of the row and/or column they were in. I wrote a predicate \mintinline{Prolog}{outofpos(B,Goal,N,Pos)} that relates the board and the goal to the number of tiles out column plus the number of tiles out of row.
+\begin{minted}{Prolog}
+outofpos([],_Goal,0,_Pos).
+
+outofpos([b|T],Goal,N,Pos) :- !,
+    Pos1 is Pos + 1,
+    outofpos(T,Goal,N,Pos1).
+
+outofpos([V|T],Goal,N,Pos) :-
+    coord(Pos,X1-Y1),
+    nth0(PosG,Goal,V),
+    coord(PosG,X2-Y2),
+    Pos1 is Pos + 1,
+    outofpos(T,Goal,N1,Pos1),
+    (   xandy(X1 = X2, Y1 = Y2) ->
+        N is N1
+    ;   xory(X1 = X2, Y1 = Y2) ->
+        N is N1 + 1
+    ;   N is N1 + 2	
+    ).
+    
+xandy(X,Y) :- X,Y.
+xory(X,Y) :- X;Y.
+\end{minted}
+This predicate iterates through the board and for each tile looks at the place it is on the goal board and checks which coordinates match. If both match then it is the right column and row so the total remains the same, otherwise it is incremented. I eventually found that the heuristic the worked the fastest was Manhattan distance total + 2 * number of tiles out of position. I wrote this predicate for the heuristic:
+\begin{minted}{Prolog}
+h(B,H) :-
+    goal(Goal),
+    totdist(B,Goal,D),
+    outofpos(B,Goal,N,0),
+    H is D + (2*N).
+\end{minted}
+
+\section{Noughts and crosses}
+\chapter{Experiments}
+\section{Optimal Play vs Random with fixed sample size}
+\section{Mixed datasets (50/50 random and optimal)}
+\subsection{Results}
+\begin{center}
+\begin{tabular}{| l | l | l | l | l |}
+\hline
+Training Data & Testing Data & Predicate & Metagol & Aleph \\ \hline
+\end{tabular}
+\end{center}
+\section{Optimal Play vs Random with varying sample size}
+\bibliography{project}
+\bibliographystyle{plain}
+\end{document}
