@@ -1,8 +1,11 @@
 import json
 import os
+from shutil import rmtree
 from prelude_copyer import print_preludes
 from pathlib import Path
 directory = "/home/aflynn50/ggp-saved-matches/"
+train_dir = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/data/train/"
+test_dir = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/data/test/"
 
 def format_pred(pred):
     p1 = pred.strip().split(' ')
@@ -61,12 +64,20 @@ def terminal(output_file,states):
         output.close()
 
 
-for filename in os.listdir(directory):
-    print_preludes()
+try:
+    rmtree(train_dir)
+except FileNotFoundError:
+    pass
+try:
+    rmtree(test_dir)
+except FileNotFoundError:
+    pass
+os.makedirs(train_dir)
+os.makedirs(test_dir)
+for filename in os.listdir(directory):  
     if filename.endswith(".json"):
         with open(directory + filename) as f:
             raw_data = json.load(f) # raw_data is a dict
-
         states = []
         for state_string in raw_data['states']:
             s1 = state_string.split(") (")
@@ -94,10 +105,16 @@ for filename in os.listdir(directory):
                     lmoves.append(l3)
             legals.append(lmoves)
 
-
-        next("test1_next.dat",states,moves)
-        goal("test1_goal.dat",states)
-        legal("test1_legal.dat",states,legals)
-        terminal("test1_terminal.dat",states)
-    else:
-        continue
+        game_name = raw_data['gameName'].lower().replace(" ", "_")
+        print_preludes(hastocontain=game_name)
+        for dat_file in os.listdir(train_dir):
+            for direc in [train_dir+dat_file, test_dir+dat_file]:
+                if game_name in dat_file:
+                    if "next" in dat_file:
+                        next(direc,states,moves)
+                    if "goal" in dat_file:
+                        goal(direc,states)
+                    if "legal" in dat_file:
+                        legal(direc,states,legals)
+                    if "terminal" in dat_file:
+                        terminal(direc,states)

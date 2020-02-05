@@ -148,7 +148,7 @@ def print_nice():
 
 
 #systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
-systems = [specialised_ilasp.SPECIALISED_ILASP()]
+systems = [aleph.Aleph()]
 
 arg = sys.argv[1]
 if arg == 'parse':
