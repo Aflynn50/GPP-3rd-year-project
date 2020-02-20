@@ -18,13 +18,23 @@
 \chapter{Abstract}
 When learning programs in Inductive Logic Programming (ILP) optimisations to the dataset used to train the systems can often be as effective as improvements to the systems themselves. General Game Playing (GGP) is a framework in which an artificial intelligence program is required to play a variety of games successfully. The framework includes repositories of game descriptions. The Inductive General Game Playing (IGGP) problem challenges ILP systems to learn the rules of a game from observation of gameplay. Existing work on IGGP has always assumed that the game player being observed makes random moves. To address this limitation, in this paper we analyse the effect of using optimal verses random gameplay traces as well as the effect of varying the number of traces in the training set. The General Game Playing competition winner in 2014, Sancho, is used to generate optimal game traces for a large number of games and the systems, Metagol, Aleph and ILASP are trained and tested with combinations of optimal and random data. Our results show...
 \chapter{Introduction}
-General Game Playing (GGP) is a framework in which artificial intelligence programs are required to play a large number of games successfully.\cite{Genesereth/GGPOverview} Games in the framework range in both number of players and complexity; from the single player Eight Puzzle to the six player Chinese Checkers, and from Rock Paper Scissors to Chess\cite{GGP-Website}. Every year the GGP competition takes place, aiming to find the best GGP program. A consequence of this framework is large repositories of game descriptions written in the Game Description Language (GDL), a logic programming language built for describing games as state machines\cite{GDL_Spec}. 
+General Game Playing (GGP) is a framework in which artificial intelligence programs are required to play a large number of games successfully.\cite{Genesereth/GGPOverview} Games in the framework range in both number of players and complexity; from the single player Eight Puzzle to the six player Chinese Checkers, and from Rock Paper Scissors to Chess\cite{GGP-Website}. Every year the GGP competition takes place, aiming to find the best GGP program. A consequence of this framework is large repositories of game descriptions written in the Game Description Language (GDL), a logic programming language built for describing games as state machines\cite{GDL_Spec}. A logic programming language being any that is mainly based on formal logic such as Prolog. 
+
 GIVE EXAMPLE OF GDL GAME
-These game descriptions provide a perfect setting for an instance of the ILP problem. In Inductive Logic Programming machine learning systems are tasked with learning logic programs given some background knowledge and a set of values for which the programs are true of false\cite{Muggleton/ILP}. In his 2019 paper Andrew Croppers paper \cite{Cropper/IGGP} defines the Inductive General Game Playing (IGGP) problem; given a set of gameplay observations the goal is to induce the rules of the game.
+
+These GDL game descriptions form the basis for the Inductive General Game Playing (IGGP) problem. In his 2019 paper Andrew Croppers paper \cite{Cropper/IGGP} defines the IGGP problem; given a set of gameplay observations the goal is to induce the rules of the game. The games are those from the GGP competition problem set, given in GDL, meaning they are widely varied in complexity. A way of solving this problem is Inductive Logic Programming (ILP).
+
+In Inductive Logic Programming, machine learning systems are tasked with learning logic programs given some background knowledge and a set of values for which the programs are true of false. The ILP system will derive a hypothesis, a logic program that when combined with the background knowledge, entails all of the positive and none of the negative examples\cite{Muggleton/ILP}. In the IGGP paper it is shown that the problem is hard for current ILP systems, with on average only 40\% of the rules being learned by the best performing systems.
+
 GIVE EXAMPLE OF IGGP PROBLEM
-In this paper we use the IGGP framework to evaluate the ability of ILP agents to correctly induce the rules of a game given different sets of gameplay observations - optimal gameplay verses random gameplay. So far no work has been done on how the observations given as training data to the systems affect their ability to learn games.
+
+In this paper we try and increase the success rate of the ILP systems. We use the IGGP framework to evaluate the ability of ILP agents to correctly induce the rules of a game given different sets of gameplay observations - optimal gameplay verses random gameplay as well as combinations of the two. So far no work has been done on how the observations given as training data to the systems affect their ability to learn games. It is not obvious whether random or optimal gameplay would be best. When learning the rules of chess would a human rather watch moves being made randomly, or a match between two grandmasters? It is not an easy question to answer. Both situations will result in a restricted view of the game, with curtain situations never occurring in each one. It is possible watching both types of play viewed together would give a better understanding which is why we test on a mixture of optimal and random traces together.
+
+We would also expect models trained on the same distribution as they are tested on to perform best since it is generally accepted that the accuracy of a model increases the closer the test data distribution is to the training data distribution.\cite{Mitchell/MachineLearing}. However, Gonzales \cite{Gonzalez/MismatchedOutperform} suggests that a system trained on a different domain to the one it is tested can outperform a system trained and tested on the same domain. In his 2010 paper Ben-David shows that training data taken from multiple different domains can in fact give lower error on testing data that traning data taken from any single domain, including the testing domain \cite{Ben-David/DifferentDomains}. It is not clear in our case what selection of training data will result in the most effect learning.
+
 In machine learning the probably approximately correct learning framework (PAC) is a mathematical model that can be applied to machine learning systems for analysis. It gives an upper bound on the number of training examples needed for a learner to probably (with probability at least $[1-\delta]$) learn a hypothesis that is approximately (within error $\epsilon$)correct\cite{Mitchell/MachineLearing}. In section ? we test to find the number of examples beyond which the reduction in $\epsilon$ and $\delta$ becomes negligible.
-We would expect models trained on the same distribution as they are tested on the perform the best since it is generally accepted that the accuracy of a model increases the closer the test data distribution is to the training data distribution.\cite{Mitchell/MachineLearing}. However, Gonzales \cite{Gonzalez/MismatchedOutperform} suggests that a system trained on a different domain to the one it is tested can outperform a system trained and tested on the same domain. In his 2010 paper Ben-David shows that training data taken from multiple different domains can in fact give lower error on testing data that traning data taken from any single domain, including the testing domain \cite{Ben-David/DifferentDomains}. It is not clear in our case what selection of training data will result in the most effect learning. We will train the ILP systems on different combinations of optimal and random data as well as testing them on each individually. In section ? we test to find the optimal selection of distributions to take our training data from.
+
+We will train the ILP systems on different combinations of optimal and random data as well as testing them on each individually. In section ? we test to find the optimal selection of distributions to take our training data from.
 
 \subsubsection{Contributions}
 \begin{itemize}
@@ -34,7 +44,7 @@ We would expect models trained on the same distribution as they are tested on th
 
 \chapter{Related work}
 \section{Machine learning}
-?
+Machine learning theory contains a lot of work on the general setting of the problem we are considering, specifically, it covers how the relation between the training data and the testing data can affect the accuracy of the hypothesis as well as how the amount of training data can affect the result. In this paper 
 
 (in PAC) The cardinality of this example set must be at most a polynomial function of the size of the vocabulary used in constructing hypotheses.
 
@@ -140,7 +150,13 @@ An IGGP input forms the IGGP problem:
 \textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \vDash E_i^+$ and
 $H \cup B_i \nvDash E_i^−$
 
-In this paper the aim is to experiment how different ILP systems preform at this problem given optimal traces verses how they preform with random traces. That is varying the contents of $B \subseteq \mathscr{B}$. Experiments will also be preformed to determine the effect of varying the size of the input set $|\Delta|$.
+
+\subsubsection{Problem Setting}
+Let the accuracy of a set $I$ of ILP systems in problem setting be defined as the mean of the percentage accuracy of each of them when tested on a given set of examples.
+
+- Given an set of ILP systems $I$, for what selection of game traces $\Delta$ combined from an optimal gameplay distribution and a random gameplay distribution are the systems most accurate when solving the IGGP problem. The accuracy of $I$ when solving the IGGP problem will be tested by evaluating each $i \in I$ with data taken from a 50/50 combination of both optimal and random distributions.
+
+We will also be investigating how the size of the trace set $|\Delta|$ affects the accuracy of the hypothesis $H$.
     
 \chapter{Implementations}
 \section{Eight Puzzle}
