@@ -1,0 +1,401 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1431830528 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2749), pid=909, tid=0x00007f131ee6b700
+#
+# JRE version:  (8.0_202-b08) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.202-b08 mixed mode linux-amd64 compressed oops)
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f131800e800):  JavaThread "Unknown thread" [_thread_in_vm, id=911, stack(0x00007f131ed6c000,0x00007f131ee6c000)]
+
+Stack: [0x00007f131ed6c000,0x00007f131ee6c000],  sp=0x00007f131ee6a570,  free space=1017k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xad33a5]  VMError::report_and_die()+0x2e5
+V  [libjvm.so+0x4e04c7]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*)+0x67
+V  [libjvm.so+0x910290]  os::pd_commit_memory(char*, unsigned long, unsigned long, bool)+0x100
+V  [libjvm.so+0x9078bf]  os::commit_memory(char*, unsigned long, unsigned long, bool)+0x1f
+V  [libjvm.so+0x98c686]  PSVirtualSpace::expand_by(unsigned long)+0x56
+V  [libjvm.so+0x97cf3c]  PSOldGen::initialize(ReservedSpace, unsigned long, char const*, int)+0x8c
+V  [libjvm.so+0x2bcfce]  AdjoiningGenerations::AdjoiningGenerations(ReservedSpace, GenerationSizer*, unsigned long)+0x2fe
+V  [libjvm.so+0x93abb2]  ParallelScavengeHeap::initialize()+0x222
+V  [libjvm.so+0xa96fca]  Universe::initialize_heap()+0x16a
+V  [libjvm.so+0xa972b3]  universe_init()+0x33
+V  [libjvm.so+0x632110]  init_globals()+0x50
+V  [libjvm.so+0xa799e9]  Threads::create_vm(JavaVMInitArgs*, bool*)+0x409
+V  [libjvm.so+0x6d7c8f]  JNI_CreateJavaVM+0x4f
+C  [libjli.so+0x7ee4]  JavaMain+0x84
+C  [libpthread.so.0+0x76db]  start_thread+0xdb
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00007f131800e800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=911, stack(0x00007f131ed6c000,0x00007f131ee6c000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000006c0000000, size: 4096 MB, Compressed Oops mode: Non-zero based:0x00000006bffff000, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:11 6454312                            /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/bin/java
+00600000-00601000 r--p 00000000 08:11 6454312                            /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/bin/java
+00601000-00602000 rw-p 00001000 08:11 6454312                            /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/bin/java
+02087000-020a8000 rw-p 00000000 00:00 0                                  [heap]
+715580000-76ab00000 ---p 00000000 00:00 0 
+76ab00000-795580000 rw-p 00000000 00:00 0 
+795580000-7c0000000 ---p 00000000 00:00 0 
+7f1307d7c000-7f1308011000 rw-p 00000000 00:00 0 
+7f1308011000-7f1308566000 ---p 00000000 00:00 0 
+7f1308566000-7f13086bc000 rw-p 00000000 00:00 0 
+7f13086bc000-7f1308811000 ---p 00000000 00:00 0 
+7f1308811000-7f130881c000 rw-p 00000000 00:00 0 
+7f130881c000-7f1308bd2000 ---p 00000000 00:00 0 
+7f1308bd2000-7f1308e42000 rwxp 00000000 00:00 0 
+7f1308e42000-7f1317bd2000 ---p 00000000 00:00 0 
+7f1317bd2000-7f1317bed000 r-xp 00000000 08:11 6460025                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libzip.so
+7f1317bed000-7f1317dec000 ---p 0001b000 08:11 6460025                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libzip.so
+7f1317dec000-7f1317ded000 r--p 0001a000 08:11 6460025                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libzip.so
+7f1317ded000-7f1317dee000 rw-p 0001b000 08:11 6460025                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libzip.so
+7f1317dee000-7f1317df9000 r-xp 00000000 08:11 4199182                    /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f1317df9000-7f1317ff8000 ---p 0000b000 08:11 4199182                    /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f1317ff8000-7f1317ff9000 r--p 0000a000 08:11 4199182                    /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f1317ff9000-7f1317ffa000 rw-p 0000b000 08:11 4199182                    /lib/x86_64-linux-gnu/libnss_files-2.27.so
+7f1317ffa000-7f1318000000 rw-p 00000000 00:00 0 
+7f1318000000-7f1318039000 rw-p 00000000 00:00 0 
+7f1318039000-7f131c000000 ---p 00000000 00:00 0 
+7f131c038000-7f131c04f000 r-xp 00000000 08:11 4199176                    /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f131c04f000-7f131c24e000 ---p 00017000 08:11 4199176                    /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f131c24e000-7f131c24f000 r--p 00016000 08:11 4199176                    /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f131c24f000-7f131c250000 rw-p 00017000 08:11 4199176                    /lib/x86_64-linux-gnu/libnsl-2.27.so
+7f131c250000-7f131c252000 rw-p 00000000 00:00 0 
+7f131c252000-7f131c25d000 r-xp 00000000 08:11 4199193                    /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f131c25d000-7f131c45c000 ---p 0000b000 08:11 4199193                    /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f131c45c000-7f131c45d000 r--p 0000a000 08:11 4199193                    /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f131c45d000-7f131c45e000 rw-p 0000b000 08:11 4199193                    /lib/x86_64-linux-gnu/libnss_nis-2.27.so
+7f131c45e000-7f131c466000 r-xp 00000000 08:11 4199178                    /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f131c466000-7f131c666000 ---p 00008000 08:11 4199178                    /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f131c666000-7f131c667000 r--p 00008000 08:11 4199178                    /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f131c667000-7f131c668000 rw-p 00009000 08:11 4199178                    /lib/x86_64-linux-gnu/libnss_compat-2.27.so
+7f131c668000-7f131c672000 r-xp 00000000 08:11 6460034                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libinstrument.so
+7f131c672000-7f131c871000 ---p 0000a000 08:11 6460034                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libinstrument.so
+7f131c871000-7f131c872000 r--p 00009000 08:11 6460034                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libinstrument.so
+7f131c872000-7f131c873000 rw-p 0000a000 08:11 6460034                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libinstrument.so
+7f131c873000-7f131c89f000 r-xp 00000000 08:11 6460019                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libjava.so
+7f131c89f000-7f131ca9e000 ---p 0002c000 08:11 6460019                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libjava.so
+7f131ca9e000-7f131ca9f000 r--p 0002b000 08:11 6460019                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libjava.so
+7f131ca9f000-7f131caa1000 rw-p 0002c000 08:11 6460019                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libjava.so
+7f131caa1000-7f131caae000 r-xp 00000000 08:11 6460024                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libverify.so
+7f131caae000-7f131ccad000 ---p 0000d000 08:11 6460024                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libverify.so
+7f131ccad000-7f131ccaf000 r--p 0000c000 08:11 6460024                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libverify.so
+7f131ccaf000-7f131ccb0000 rw-p 0000e000 08:11 6460024                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/libverify.so
+7f131ccb0000-7f131ccb7000 r-xp 00000000 08:11 4199233                    /lib/x86_64-linux-gnu/librt-2.27.so
+7f131ccb7000-7f131ceb6000 ---p 00007000 08:11 4199233                    /lib/x86_64-linux-gnu/librt-2.27.so
+7f131ceb6000-7f131ceb7000 r--p 00006000 08:11 4199233                    /lib/x86_64-linux-gnu/librt-2.27.so
+7f131ceb7000-7f131ceb8000 rw-p 00007000 08:11 4199233                    /lib/x86_64-linux-gnu/librt-2.27.so
+7f131ceb8000-7f131d055000 r-xp 00000000 08:11 4199155                    /lib/x86_64-linux-gnu/libm-2.27.so
+7f131d055000-7f131d254000 ---p 0019d000 08:11 4199155                    /lib/x86_64-linux-gnu/libm-2.27.so
+7f131d254000-7f131d255000 r--p 0019c000 08:11 4199155                    /lib/x86_64-linux-gnu/libm-2.27.so
+7f131d255000-7f131d256000 rw-p 0019d000 08:11 4199155                    /lib/x86_64-linux-gnu/libm-2.27.so
+7f131d256000-7f131df3e000 r-xp 00000000 08:11 6460000                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/server/libjvm.so
+7f131df3e000-7f131e13d000 ---p 00ce8000 08:11 6460000                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/server/libjvm.so
+7f131e13d000-7f131e1d3000 r--p 00ce7000 08:11 6460000                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/server/libjvm.so
+7f131e1d3000-7f131e204000 rw-p 00d7d000 08:11 6460000                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/amd64/server/libjvm.so
+7f131e204000-7f131e23f000 rw-p 00000000 00:00 0 
+7f131e23f000-7f131e426000 r-xp 00000000 08:11 4199092                    /lib/x86_64-linux-gnu/libc-2.27.so
+7f131e426000-7f131e626000 ---p 001e7000 08:11 4199092                    /lib/x86_64-linux-gnu/libc-2.27.so
+7f131e626000-7f131e62a000 r--p 001e7000 08:11 4199092                    /lib/x86_64-linux-gnu/libc-2.27.so
+7f131e62a000-7f131e62c000 rw-p 001eb000 08:11 4199092                    /lib/x86_64-linux-gnu/libc-2.27.so
+7f131e62c000-7f131e630000 rw-p 00000000 00:00 0 
+7f131e630000-7f131e633000 r-xp 00000000 08:11 4199115                    /lib/x86_64-linux-gnu/libdl-2.27.so
+7f131e633000-7f131e832000 ---p 00003000 08:11 4199115                    /lib/x86_64-linux-gnu/libdl-2.27.so
+7f131e832000-7f131e833000 r--p 00002000 08:11 4199115                    /lib/x86_64-linux-gnu/libdl-2.27.so
+7f131e833000-7f131e834000 rw-p 00003000 08:11 4199115                    /lib/x86_64-linux-gnu/libdl-2.27.so
+7f131e834000-7f131e84b000 r-xp 00000000 08:11 6459759                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/lib/amd64/jli/libjli.so
+7f131e84b000-7f131ea4a000 ---p 00017000 08:11 6459759                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/lib/amd64/jli/libjli.so
+7f131ea4a000-7f131ea4b000 r--p 00016000 08:11 6459759                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/lib/amd64/jli/libjli.so
+7f131ea4b000-7f131ea4c000 rw-p 00017000 08:11 6459759                    /home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/lib/amd64/jli/libjli.so
+7f131ea4c000-7f131ea66000 r-xp 00000000 08:11 4199225                    /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f131ea66000-7f131ec65000 ---p 0001a000 08:11 4199225                    /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f131ec65000-7f131ec66000 r--p 00019000 08:11 4199225                    /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f131ec66000-7f131ec67000 rw-p 0001a000 08:11 4199225                    /lib/x86_64-linux-gnu/libpthread-2.27.so
+7f131ec67000-7f131ec6b000 rw-p 00000000 00:00 0 
+7f131ec6b000-7f131ec92000 r-xp 00000000 08:11 4199064                    /lib/x86_64-linux-gnu/ld-2.27.so
+7f131ed6b000-7f131ed6c000 ---p 00000000 00:00 0 
+7f131ed6c000-7f131ed6f000 ---p 00000000 00:00 0 
+7f131ed6f000-7f131ee6e000 rw-p 00000000 00:00 0 
+7f131ee86000-7f131ee8e000 rw-s 00000000 08:11 4325698                    /tmp/hsperfdata_aflynn50/909
+7f131ee8e000-7f131ee8f000 rw-p 00000000 00:00 0 
+7f131ee8f000-7f131ee90000 r--p 00000000 00:00 0 
+7f131ee90000-7f131ee92000 rw-p 00000000 00:00 0 
+7f131ee92000-7f131ee93000 r--p 00027000 08:11 4199064                    /lib/x86_64-linux-gnu/ld-2.27.so
+7f131ee93000-7f131ee94000 rw-p 00028000 08:11 4199064                    /lib/x86_64-linux-gnu/ld-2.27.so
+7f131ee94000-7f131ee95000 rw-p 00000000 00:00 0 
+7ffe5f62b000-7ffe5f64d000 rw-p 00000000 00:00 0                          [stack]
+7ffe5f76c000-7ffe5f76f000 r--p 00000000 00:00 0                          [vvar]
+7ffe5f76f000-7ffe5f771000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xms2g -Xmx4g -javaagent:/snap/intellij-idea-community/197/lib/idea_rt.jar=34447:/snap/intellij-idea-community/197/bin -Dfile.encoding=UTF-8 
+java_command: org.ggp.base.apps.player.Player
+java_class_path (initial): /home/aflynn50/Documents/Uni/Third-year-project/Repos/ggp-base-sancho/bin:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/charsets.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/deploy.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/cldrdata.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/dnsns.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/jaccess.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/jfxrt.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/localedata.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/nashorn.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/sunec.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/sunjce_provider.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/sunpkcs11.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/ext/zipfs.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/javaws.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/jce.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/jfr.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/jfxswt.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/jsse.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/management-agent.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/plugin.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/resources.jar:/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/jre/lib/rt.jar:/home/aflynn50/Documents/Uni/Third-year-project/Repos/ggp-base-sancho/src/external/FlyingSaucer/core-renderer.jar:/home/aflynn50/Documents/Uni/Third-year-project/Repos/ggp-base-sancho/src/external/JTidy/Tidy.jar:/home/afl
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/home/aflynn50/.cargo/bin:/home/aflynn50/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+USERNAME=aflynn50
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xad3ce0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xad3ce0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x90b6f0], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGINT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGTERM: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.04
+DISTRIB_CODENAME=bionic
+DISTRIB_DESCRIPTION="Ubuntu 18.04.3 LTS"
+
+uname:Linux 4.15.0-74-generic #84-Ubuntu SMP Thu Dec 19 08:06:28 UTC 2019 x86_64
+libc:glibc 2.27 NPTL 2.27 
+rlimit: STACK 8192k, CORE 0k, NPROC 30561, NOFILE 1048576, AS infinity
+load average:2.12 4.59 3.07
+
+/proc/meminfo:
+MemTotal:        7868628 kB
+MemFree:          264304 kB
+MemAvailable:     708016 kB
+Buffers:           89088 kB
+Cached:          1309356 kB
+SwapCached:         4380 kB
+Active:          5983660 kB
+Inactive:        1250856 kB
+Active(anon):    5706624 kB
+Inactive(anon):   900704 kB
+Active(file):     277036 kB
+Inactive(file):   350152 kB
+Unevictable:          80 kB
+Mlocked:              80 kB
+SwapTotal:       2097148 kB
+SwapFree:            984 kB
+Dirty:                36 kB
+Writeback:             0 kB
+AnonPages:       5833352 kB
+Mapped:           540116 kB
+Shmem:            771188 kB
+Slab:             158024 kB
+SReclaimable:      71380 kB
+SUnreclaim:        86644 kB
+KernelStack:       21844 kB
+PageTables:       106360 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6031460 kB
+Committed_AS:   19082660 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      432240 kB
+DirectMap2M:     7653376 kB
+DirectMap1G:     1048576 kB
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0-3
+cpu_memory_nodes: 0
+active_processor_count: 4
+cpu_quota: -1
+cpu_period: 100000
+cpu_shares: -1
+memory_limit_in_bytes: -1
+memory_and_swap_limit_in_bytes: -2
+memory_soft_limit_in_bytes: -1
+memory_usage_in_bytes: 7407783936
+memory_max_usage_in_bytes: 109961216
+
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 3192.825
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5188.33
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 3192.816
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5188.33
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 3198.851
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5188.33
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 3198.238
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5188.33
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 7868628k(263140k free), swap 2097148k(984k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for linux-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 12:40:22 by "java_re" with gcc 7.3.0
+
+time: Fri Jan 17 13:56:22 2020
+timezone: GMT
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
