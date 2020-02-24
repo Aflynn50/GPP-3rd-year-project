@@ -15,8 +15,9 @@
 \title{\Large{\textbf{Inducing Game Rules from Varying Quality Game Play}}}
 \author{Alastair Flynn}
 \maketitle
-\chapter{Abstract}
+\begin{abstract}
 When learning programs in Inductive Logic Programming (ILP) optimisations to the dataset used to train the systems can often be as effective as improvements to the systems themselves. General Game Playing (GGP) is a framework in which an artificial intelligence program is required to play a variety of games successfully. The framework includes repositories of game descriptions. The Inductive General Game Playing (IGGP) problem challenges ILP systems to learn the rules of a game from observation of gameplay. Existing work on IGGP has always assumed that the game player being observed makes random moves. To address this limitation, in this paper we analyse the effect of using optimal verses random gameplay traces as well as the effect of varying the number of traces in the training set. The General Game Playing competition winner in 2014, Sancho, is used to generate optimal game traces for a large number of games and the systems, Metagol, Aleph and ILASP are trained and tested with combinations of optimal and random data. Our results show...
+\end{abstract}
 \chapter{Introduction}
 General Game Playing (GGP) is a framework in which artificial intelligence programs are required to play a large number of games successfully.\cite{Genesereth/GGPOverview} Games in the framework range in both number of players and complexity; from the single player Eight Puzzle to the six player Chinese Checkers, and from Rock Paper Scissors to Chess\cite{GGP-Website}. Every year the GGP competition takes place, aiming to find the best GGP program. A consequence of this framework is large repositories of game descriptions written in the Game Description Language (GDL), a logic programming language built for describing games as state machines\cite{GDL_Spec}. A logic programming language being any that is mainly based on formal logic such as Prolog. 
 

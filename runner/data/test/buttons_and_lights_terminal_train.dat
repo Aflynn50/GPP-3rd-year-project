@@ -1,0 +1,65 @@
+
+
+background:
+	true_()
+
+---
+
+positives:
+
+---
+
+background:
+	true_()
+
+---
+
+positives:
+
+---
+
+background:
+	true_()
+
+---
+
+positives:
+
+---
+
+background:
+	true_q()
+
+---
+
+positives:
+
+---
+
+background:
+	true_r()
+
+---
+
+positives:
+
+---
+
+background:
+	true_r()
+
+---
+
+positives:
+
+---
+
+background:
+	true_p(r)
+
+---
+
+positives:
+	terminal()
+
+---

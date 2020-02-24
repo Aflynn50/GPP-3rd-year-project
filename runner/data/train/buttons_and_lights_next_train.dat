@@ -1,0 +1,94 @@
+atoms:
+	next(1)
+	next(2)
+	next(3)
+	next(4)
+	next(5)
+	next(6)
+	next(7)
+	next(p)
+	next(q)
+	next(r)
+
+---
+
+statics:
+	input(robot, a)
+	input(robot, b)
+	input(robot, c)
+	role(robot)
+	successor(1, 2)
+	successor(2, 3)
+	successor(3, 4)
+	successor(4, 5)
+	successor(5, 6)
+	successor(6, 7)
+
+---
+
+
+background:
+	does_a()
+	true_()
+
+---
+
+positives:
+	next_()
+
+---
+
+background:
+	does_b()
+	true_()
+
+---
+
+positives:
+	next_()
+
+---
+
+background:
+	does_a()
+	true_()
+
+---
+
+positives:
+	next_q()
+
+---
+
+background:
+	does_c()
+	true_q()
+
+---
+
+positives:
+	next_r()
+
+---
+
+background:
+	does_b()
+	true_r()
+
+---
+
+positives:
+	next_r()
+
+---
+
+background:
+	does_a()
+	true_r()
+
+---
+
+positives:
+	next_p(r)
+
+---

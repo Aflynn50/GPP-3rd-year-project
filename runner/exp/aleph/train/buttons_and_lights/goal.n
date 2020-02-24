@@ -1,0 +1,7 @@
+goal(1,robot,100).
+goal(2,robot,100).
+goal(3,robot,100).
+goal(4,robot,100).
+goal(5,robot,100).
+goal(6,robot,100).
+goal(7,robot,0).

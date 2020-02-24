@@ -1,0 +1,85 @@
+
+
+background:
+	true_()
+
+---
+
+positives:
+	legal_a(robot)
+	legal_b(robot)
+	legal_c(robot)
+
+---
+
+background:
+	true_()
+
+---
+
+positives:
+	legal_a(robot)
+	legal_b(robot)
+	legal_c(robot)
+
+---
+
+background:
+	true_()
+
+---
+
+positives:
+	legal_a(robot)
+	legal_b(robot)
+	legal_c(robot)
+
+---
+
+background:
+	true_q()
+
+---
+
+positives:
+	legal_a(robot)
+	legal_b(robot)
+	legal_c(robot)
+
+---
+
+background:
+	true_r()
+
+---
+
+positives:
+	legal_a(robot)
+	legal_b(robot)
+	legal_c(robot)
+
+---
+
+background:
+	true_r()
+
+---
+
+positives:
+	legal_a(robot)
+	legal_b(robot)
+	legal_c(robot)
+
+---
+
+background:
+	true_p(r)
+
+---
+
+positives:
+	legal_a(robot)
+	legal_b(robot)
+	legal_c(robot)
+
+---

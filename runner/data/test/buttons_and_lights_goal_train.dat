@@ -1,0 +1,71 @@
+
+
+background:
+	true_()
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_()
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_()
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_q()
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_r()
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_r()
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_p(r)
+
+---
+
+positives:
+	goal(robot, 100)
+
+---

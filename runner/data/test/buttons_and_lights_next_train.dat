@@ -1,0 +1,67 @@
+
+
+background:
+	does_a()
+	true_()
+
+---
+
+positives:
+	next_()
+
+---
+
+background:
+	does_b()
+	true_()
+
+---
+
+positives:
+	next_()
+
+---
+
+background:
+	does_a()
+	true_()
+
+---
+
+positives:
+	next_q()
+
+---
+
+background:
+	does_c()
+	true_q()
+
+---
+
+positives:
+	next_r()
+
+---
+
+background:
+	does_b()
+	true_r()
+
+---
+
+positives:
+	next_r()
+
+---
+
+background:
+	does_a()
+	true_r()
+
+---
+
+positives:
+	next_p(r)
+
+---
