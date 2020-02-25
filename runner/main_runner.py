@@ -35,6 +35,7 @@ def gen_games(repetitions):
         num_players = get_num_roles(game)
         server_runner = get_server(game,num_players)
         player_runners = [get_player(x) for x in range(num_players)]
+        print(server_runner)
         for repetition in range(repetitions):
             playerps = [subprocess.Popen(p) for p in player_runners]
             time.sleep(3)
