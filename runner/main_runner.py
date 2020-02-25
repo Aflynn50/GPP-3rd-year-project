@@ -10,7 +10,7 @@ def gen_games(repetitions):
 	game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
 	for game in game_list:
 		for repetition in range(repetitions):
-			subprocess.Popen(player_runner) #,stdout=subprocess.DEVNULL)
+			#subprocess.Popen(player_runner) #,stdout=subprocess.DEVNULL)
 			subprocess.run(server_runner) #,stdout=subprocess.DEVNULL)
 
 
