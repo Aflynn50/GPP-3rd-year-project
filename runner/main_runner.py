@@ -14,11 +14,9 @@ def gen_games(repetitions):
 			#subprocess.Popen(player_runner) #,stdout=subprocess.DEVNULL)
 			subprocess.run(server_runner, shell=True) #,stdout=subprocess.DEVNULL)
 
-
-
 # arg 1 = action e.g. gen_games
 # arg 2 for gen_games in no. of traces to gen for each game
 arg = sys.argv[1]
 if arg == 'gen_games':
-	gen_games(int(sys.argv[2]))
+    gen_games(int(sys.argv[2]))
 
