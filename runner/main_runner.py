@@ -29,7 +29,8 @@ def gen_games(repetitions):
     
     r = requests.get("http://games.ggp.org/stanford/games/")
     game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
-    for game in [game_list[0]]:
+    print(game_list)
+    for game in game_list[0:2]:
         server_runner = get_server(game)
         player_runners = [get_player(x) for x in range(get_num_roles(game))]
         for repetition in range(repetitions):
