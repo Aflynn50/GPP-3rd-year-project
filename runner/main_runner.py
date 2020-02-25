@@ -11,7 +11,7 @@ def gen_games(repetitions):
 	for game in game_list:
 		for repetition in range(repetitions):
 			subprocess.Popen(player_runner) #,stdout=subprocess.DEVNULL)
-			subprocess.Popen(server_runner) #,stdout=subprocess.DEVNULL)
+			subprocess.run(server_runner) #,stdout=subprocess.DEVNULL)
 
 
 
