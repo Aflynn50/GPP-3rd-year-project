@@ -29,7 +29,7 @@ public final class GameServerRunner
     "Args: <Tournament name> <Repo> <Game key> <Start> <Play> <Limit>\n" +
     "      <Player1Host> <Player1Port> <Player1Name> [<Player2><><>...]\n";
 
-  private static final int NUM_FIXED_ARGS = 7;
+  private static final int NUM_FIXED_ARGS = 6;
 
   /**
    * Run a single match directly from the command line.  It takes the following
@@ -42,9 +42,8 @@ public final class GameServerRunner
    * - args[3] = start clock, in seconds
    * - args[4] = play clock, in seconds
    * - args[5] = move limit
-   * - args[6] = repetitions
-   * - args[7,8,9] = host, port, name for player 1
-   * - args[10,11,12] = host, port, name for player 2 etc...
+   * - args[6,7,8] = host, port, name for player 1
+   * - args[9,10,11] = host, port, name for player 2 etc...
    *
    * @throws IOException
    * @throws InterruptedException
@@ -67,7 +66,6 @@ public final class GameServerRunner
     int startClock = Integer.valueOf(args[3]);
     int playClock = Integer.valueOf(args[4]);
     int moveLimit = Integer.valueOf(args[5]);
-    int repetitions = Integer.valueOf(args[6]);
     if ((args.length - NUM_FIXED_ARGS) % 3 != 0)
     {
       throw new RuntimeException("Invalid number of player arguments of the form host/port/name.");
