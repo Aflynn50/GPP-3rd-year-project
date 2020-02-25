@@ -31,8 +31,9 @@ def gen_games(repetitions):
     game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
     print(game_list)
     for game in game_list[0:2]:
-        server_runner = get_server(game)
-        player_runners = [get_player(x) for x in range(get_num_roles(game))]
+        num_players = get_num_roles(game)
+        server_runner = get_server(game,num_players)
+        player_runners = [get_player(x) for x in range(num_players)]
         for repetition in range(repetitions):
             playerps = [subprocess.Popen(p) for p in player_runners]
             serverp = subprocess.Popen(server_runner) 
