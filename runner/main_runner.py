@@ -13,7 +13,7 @@ def gen_games(repetitions):
     r = requests.get("http://games.ggp.org/stanford/games/")
     game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
     print(game_list)
-    for game in [game_list[0]]:
+    for game in game_list[0:2]:
         server_runner = get_server(game)
         for repetition in range(repetitions):
             p1 = subprocess.Popen(player_runner) #,stdout=subprocess.DEVNULL)
