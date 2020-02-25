@@ -1,3 +1,4 @@
+import time
 import requests
 import subprocess
 import sys
@@ -36,10 +37,12 @@ def gen_games(repetitions):
         player_runners = [get_player(x) for x in range(num_players)]
         for repetition in range(repetitions):
             playerps = [subprocess.Popen(p) for p in player_runners]
+            time.sleep(3)
             serverp = subprocess.Popen(server_runner) 
+            serverp.wait()
+            print("server finished for iteration " + str(repetition) + " of game " + game)
             for p in playerps:
                 p.wait()
-            serverp.wait()
     print("all done")
 
 # arg 1 = action e.g. gen_games
