@@ -29,7 +29,7 @@ public final class GameServerRunner
     "Args: <Tournament name> <Repo> <Game key> <Start> <Play> <Limit>\n" +
     "      <Player1Host> <Player1Port> <Player1Name> [<Player2><><>...]\n";
 
-  private static final int NUM_FIXED_ARGS = 6;
+  private static final int NUM_FIXED_ARGS = 7;
 
   /**
    * Run a single match directly from the command line.  It takes the following
@@ -42,8 +42,9 @@ public final class GameServerRunner
    * - args[3] = start clock, in seconds
    * - args[4] = play clock, in seconds
    * - args[5] = move limit
-   * - args[6,7,8] = host, port, name for player 1
-   * - args[9,10,11] = host, port, name for player 2 etc...
+   * - args[6] = repetitions
+   * - args[7,8,9] = host, port, name for player 1
+   * - args[10,11,12] = host, port, name for player 2 etc...
    *
    * @throws IOException
    * @throws InterruptedException
@@ -66,6 +67,7 @@ public final class GameServerRunner
     int startClock = Integer.valueOf(args[3]);
     int playClock = Integer.valueOf(args[4]);
     int moveLimit = Integer.valueOf(args[5]);
+    int repetitions = Integer.valueOf(args[6]);
     if ((args.length - NUM_FIXED_ARGS) % 3 != 0)
     {
       throw new RuntimeException("Invalid number of player arguments of the form host/port/name.");
@@ -91,60 +93,60 @@ public final class GameServerRunner
                                  gameKey + ": " + hostNames.size() + " vs " +
                                  expectedRoles);
     }
-    Match match = new Match(matchName, -1, startClock, playClock, moveLimit, game);
-    match.setPlayerNamesFromHost(playerNames);
-
-    // Actually run the match, using the desired configuration.
-    GameServer server = new GameServer(match, hostNames, portNumbers);
-    server.run();
-    server.join();
-
-    // Open up the directory for this tournament.
-    // Create a "scores" file if none exists.
-    File f = new File(tourneyName);
-    if (!f.exists())
-    {
-      f.mkdir();
-      f = new File(tourneyName + "/scores");
-      f.createNewFile();
-    }
-
-    // Open up the XML file for this match, and save the match there.
-    f = new File(tourneyName + "/" + matchName + ".xml");
-    if (f.exists())
-      f.delete();
-    BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-    bw.write(match.toXML());
-    bw.flush();
-    bw.close();
-
-    // Open up the JSON file for this match, and save the match there.
-    f = new File(tourneyName + "/" + matchName + ".json");
-    if (f.exists())
-      f.delete();
-    bw = new BufferedWriter(new FileWriter(f));
-    bw.write(match.toJSON());
-    bw.flush();
-    bw.close();
-
-    // Save the goals in the "/scores" file for the tournament.
-    bw = new BufferedWriter(new FileWriter(tourneyName + "/scores", true));
-    List<Integer> goals = server.getGoals();
-    String goalStr = "";
-    String playerStr = "";
-    for (int i = 0; i < goals.size(); i++)
-    {
-      Integer goal = server.getGoals().get(i);
-      goalStr += Integer.toString(goal);
-      playerStr += playerNames.get(i);
-      if (i != goals.size() - 1)
-      {
-        playerStr += ",";
-        goalStr += ",";
-      }
-    }
-    bw.write(playerStr + "=" + goalStr);
-    bw.flush();
-    bw.close();
+    
+    
+	Match match = new Match(matchName, -1, startClock, playClock, moveLimit, game);
+	match.setPlayerNamesFromHost(playerNames);
+	
+	// Actually run the match, using the desired configuration.
+	GameServer server = new GameServer(match, hostNames, portNumbers);
+	server.run();
+	server.join();
+	
+	// Open up the directory for this tournament.
+	// Create a "scores" file if none exists.
+	File f = new File(tourneyName);
+	if (!f.exists())
+	{
+	  f.mkdir();
+	  f = new File(tourneyName + "/scores");
+	  f.createNewFile();
+	}
+	
+	f = new File(tourneyName + "/" + gameKey);
+	if (!f.exists())
+	{
+	  f.mkdir();
+	}
+	
+	// Open up the JSON file for this match, and save the match there.
+	f = new File(tourneyName + "/" + gameKey + "/" + matchName + ".json");
+	if (f.exists())
+	  f.delete();
+	BufferedWriter bw = new BufferedWriter(new FileWriter(f));
+	bw.write(match.toJSON());
+	bw.flush();
+	bw.close();
+	  
+	// Save the goals in the "/scores" file for the tournament.
+	bw = new BufferedWriter(new FileWriter(tourneyName + "/" + gameKey + "/scores", true));
+	List<Integer> goals = server.getGoals();
+	String goalStr = "";
+	String playerStr = "";
+	for (int i = 0; i < goals.size(); i++)
+	{
+	  Integer goal = server.getGoals().get(i);
+	  goalStr += Integer.toString(goal);
+	  playerStr += playerNames.get(i);
+	  if (i != goals.size() - 1)
+	  {
+	    playerStr += ",";
+	    goalStr += ",";
+	  }
+	}
+	bw.write(playerStr + "=" + goalStr);
+	bw.flush();
+	bw.close();
+    
   }
 }
