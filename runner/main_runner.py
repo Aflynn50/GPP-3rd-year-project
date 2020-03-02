@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import time
 import requests
 import subprocess
@@ -35,10 +37,9 @@ def gen_games(repetitions):
         num_players = get_num_roles(game)
         server_runner = get_server(game,num_players)
         player_runners = [get_player(x) for x in range(num_players)]
-        print(server_runner)
         for repetition in range(repetitions):
-            playerps = [subprocess.Popen(p) for p in player_runners]
-            time.sleep(10)
+            playerps = [subprocess.Popen(p,stdout=subprocess.DEVNULL) for p in player_runners]
+            time.sleep(20)
             serverp = subprocess.Popen(server_runner)
             serverp.wait()
             print("server finished for iteration " + str(repetition+1) + " of game " + game)
@@ -48,6 +49,8 @@ def gen_games(repetitions):
                 except subprocess.TimeoutExpired:
                     print("Player didn't die")
                     p.kill()
+            k = Popen(["pkill", "-f" server_runner[0]])
+            k.wait()
             print("players finished for iteration " + str(repetition) + " of game " + game)
     print("all done")
 
