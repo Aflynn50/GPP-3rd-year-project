@@ -43,7 +43,9 @@ def gen_games(repetitions):
             serverp.wait()
             print("server finished for iteration " + str(repetition) + " of game " + game)
             for p in playerps:
-                p.wait()
+                p.wait(2)
+                p.kill()
+            print("players finished for iteration " + str(repetition) + " of game " + game)
     print("all done")
 
 # arg 1 = action e.g. gen_games
