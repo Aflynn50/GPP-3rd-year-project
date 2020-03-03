@@ -28,7 +28,7 @@ positives:
 ---
 
 background:
-	true_q()
+	true_p()
 
 ---
 
@@ -37,7 +37,7 @@ positives:
 ---
 
 background:
-	true_r()
+	true_p()
 
 ---
 
@@ -46,7 +46,7 @@ positives:
 ---
 
 background:
-	true_r()
+	true_6()
 
 ---
 
@@ -55,7 +55,7 @@ positives:
 ---
 
 background:
-	true_p(r)
+	true_p(q)
 
 ---
 

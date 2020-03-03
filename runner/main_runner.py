@@ -10,7 +10,7 @@ import os
 import runner
 
 torny_name = "optimaltraces"
-data_file = "/home/alastairflynn50_gmail_com/GPP-3rd-year-project/runner/data/"
+runner_dir = "/home/alastairflynn50_gmail_com/GPP-3rd-year-project/runner/"
 
 def get_server(game,num_players):
     players = []
@@ -55,13 +55,12 @@ def gen_games(repetitions):
                     p.kill()
             k = subprocess.Popen(["pkill", "-f", server_runner[0]])
             k.wait()
-            print("players finished for iteration " + str(repetition+1) + " of game " + game + " at " time.strftime("%d %b %H:%M:%S", time.gmtime()))
+            print("players finished for iteration " + str(repetition+1) + " of game " + game + " at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
     print("all done")
 
 def move_json_files():
-    game_traces = os.getcwd() + '/'
-    data_file = os.getcwd() +
-    jsontotrace.convert(game_traces,data_file)
+    game_traces = os.getcwd() + '/' + torny_name + '/'
+    jsontotrace.convert(game_traces,runner_dir)
 
 def run_ilp():
     runner.parse_train_and_test()
@@ -80,4 +79,4 @@ if arg == 'test':
         print(get_num_roles(game))
 if arg == 'train':
     move_json_files()
-    run_ilp()
+    #run_ilp()

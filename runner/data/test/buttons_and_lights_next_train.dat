@@ -29,39 +29,39 @@ background:
 ---
 
 positives:
-	next_q()
+	next_p()
 
 ---
 
 background:
 	does_c()
-	true_q()
+	true_p()
 
 ---
 
 positives:
-	next_r()
+	next_p()
 
 ---
 
 background:
 	does_b()
-	true_r()
+	true_p()
 
 ---
 
 positives:
-	next_r()
+	next_6()
 
 ---
 
 background:
 	does_a()
-	true_r()
+	true_6()
 
 ---
 
 positives:
-	next_p(r)
+	next_p(q)
 
 ---

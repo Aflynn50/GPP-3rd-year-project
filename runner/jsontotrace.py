@@ -62,10 +62,11 @@ def terminal(output_file,states):
         output.close()
 
 
-def convert(matches_dir, data_dir): # both should have ending slash
+def convert(matches_dir, runner_dir): # both should have ending slash
     directory = matches_dir
-    train_dir = matches_dir + "train/"
-    test_dir = matches_dir + "test/"
+    train_dir = runner_dir + "data/train/"
+    test_dir = runner_dir + "data/test/"
+    prelude_dir = runner_dir + "preludes/"
     try:
         rmtree(train_dir)
     except FileNotFoundError:
@@ -108,7 +109,7 @@ def convert(matches_dir, data_dir): # both should have ending slash
                 legals.append(lmoves)
 
             game_name = raw_data['gameName'].lower().replace(" ", "_")
-            print_preludes(hastocontain=game_name)
+            print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)
             for dat_file in os.listdir(train_dir):
                 for direc in [train_dir+dat_file, test_dir+dat_file]:
                     if game_name in dat_file:
@@ -122,4 +123,4 @@ def convert(matches_dir, data_dir): # both should have ending slash
                             terminal(direc,states)
 
 if __name__ == "__main__":
-    convert("/home/aflynn50/ggp-saved-matches/","/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/data/")
+    convert("/home/aflynn50/ggp-saved-matches/","/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/")
