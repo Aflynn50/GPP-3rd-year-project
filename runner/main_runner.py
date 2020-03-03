@@ -42,16 +42,16 @@ def gen_games(repetitions):
             time.sleep(20)
             serverp = subprocess.Popen(server_runner)
             serverp.wait()
-            print("server finished for iteration " + str(repetition+1) + " of game " + game)
+            print("server finished for iteration " + str(repetition+1) + " of game " + game + " at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
             for p in playerps:
                 try:
                     p.wait(2)
                 except subprocess.TimeoutExpired:
                     print("Player didn't die")
                     p.kill()
-            k = Popen(["pkill", "-f" server_runner[0]])
+            k = subprocess.Popen(["pkill", "-f", server_runner[0]])
             k.wait()
-            print("players finished for iteration " + str(repetition) + " of game " + game)
+            print("players finished for iteration " + str(repetition+1) + " of game " + game + " at " time.strftime("%d %b %H:%M:%S", time.gmtime()))
     print("all done")
 
 # arg 1 = action e.g. gen_games
