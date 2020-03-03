@@ -1,10 +1,10 @@
-:- determination(legal/3,my_successor/3).
-:- determination(legal/3,my_true_/1).
-:- determination(legal/3,my_true_r/1).
 :- determination(legal/3,my_true_p/2).
 :- determination(legal/3,role/2).
-:- determination(legal/3,my_true_q/1).
 :- determination(legal/3,my_input/3).
+:- determination(legal/3,my_true_q/1).
+:- determination(legal/3,my_true_/1).
+:- determination(legal/3,my_successor/3).
+:- determination(legal/3,my_true_r/1).
 my_true_(1).
 my_input(1,robot,a).
 my_input(1,robot,b).

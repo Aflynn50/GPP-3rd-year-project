@@ -1,10 +1,6 @@
 import os
 
-source_dir = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/preludes/"
-dest_dir_train = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/data/train/"
-dest_dir_test = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/data/test/"
-
-def print_preludes(hastocontain=""):
+def print_preludes(source_dir, dest_dir_train, dest_dir_test, hastocontain=""):
 	for filename in os.listdir(source_dir):
 		if filename.endswith(".dat") and (hastocontain in filename):
 			with open(source_dir + filename, 'r') as source:
@@ -23,3 +19,9 @@ def print_preludes(hastocontain=""):
 							if dash_cnt == 2:
 								break
 					dest.write(line)
+if __name__ == "__main__":
+        source_dir = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/preludes/"
+        dest_dir_train = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/data/train/"
+        dest_dir_test = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/data/test/"
+        print_preludes(source_dir,dest_dir_train,dest_dir_test)
+

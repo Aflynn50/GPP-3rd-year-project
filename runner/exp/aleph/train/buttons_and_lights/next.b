@@ -1,12 +1,12 @@
-:- determination(next/2,my_successor/3).
 :- determination(next/2,does_c/1).
-:- determination(next/2,my_true_/1).
-:- determination(next/2,my_true_r/1).
 :- determination(next/2,role/2).
-:- determination(next/2,my_true_q/1).
-:- determination(next/2,does_b/1).
-:- determination(next/2,my_input/3).
 :- determination(next/2,does_a/1).
+:- determination(next/2,my_input/3).
+:- determination(next/2,my_true_q/1).
+:- determination(next/2,my_true_/1).
+:- determination(next/2,my_successor/3).
+:- determination(next/2,does_b/1).
+:- determination(next/2,my_true_r/1).
 does_a(1).
 my_true_(1).
 my_input(1,robot,a).
