@@ -40,7 +40,7 @@ public class MachineSpecificConfiguration
     /**
      * Whether to bind CPU-intensive threads to vCPUs.
      */
-    USE_AFFINITY(true),
+    USE_AFFINITY(false),
 
     /**
      * Safety margin for submitting moves, in milliseconds.
@@ -84,7 +84,7 @@ public class MachineSpecificConfiguration
     DISABLE_GREEDY_ROLLOUTS(false),
 
     /**
-     * Whether to disable A* for puzzles.
+     * Whether to disable A* for 	es.
      */
     DISABLE_A_STAR(false),
 
