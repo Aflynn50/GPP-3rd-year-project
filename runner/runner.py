@@ -34,15 +34,21 @@ def parmap(func,jobs):
 
 def parse_(args):
     (system,game) = args
-    for stage in ['train','test']:
-        outpath='exp/{}/{}/{}/'.format(system.name,stage,game)
-        mkdir(outpath)
-        for target in ['next','goal','legal','terminal']:
-            datafile='data/{0}/{1}_{2}_{0}.dat'.format(stage,game,target)
-            if stage == 'train':
-                system.parse_train(datafile,outpath,game,target)
-            else:
-                system.parse_test(datafile,outpath,game,target)
+    try:
+        for stage in ['train','test']:
+            outpath='exp/{}/{}/{}/'.format(system.name,stage,game)
+            mkdir(outpath)
+            for target in ['next','goal','legal','terminal']:
+                datafile='data/{0}/{1}_{2}_{0}.dat'.format(stage,game,target)
+                if stage == 'train':
+                    system.parse_train(datafile,outpath,game,target)
+                else:
+                    system.parse_test(datafile,outpath,game,target)
+    except ValueError as e:
+        print(game)
+        print(target)
+        raise e
+
 
 def parse(system):
     parmap(parse_,list((system,game) for game in game_names('data/train')))
