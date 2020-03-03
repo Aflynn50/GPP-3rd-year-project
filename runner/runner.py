@@ -145,19 +145,24 @@ def print_nice():
         data += list(map(lambda x: list(map((lambda y:  int(y * 100)),x)), [print_results_(arg) for arg in args]))
     print(tabulate(list(zip(*data)),headers=headers))
 
-
-
-#systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
-systems = [aleph.Aleph()]
-
-arg = sys.argv[1]
-if arg == 'parse':
+def parse_train_and_test():
+    systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse,systems))
-if arg == 'train':
     list(map(train,systems))
-if arg == 'test':   
     list(map(do_test,systems))
-if arg == 'results':
-    list(map(print_results,systems))
-if arg == 'nice_results':
-    print_nice()
+
+if __name__ == "__main__":
+    systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
+    #systems = [aleph.Aleph()]
+
+    arg = sys.argv[1]
+    if arg == 'parse':
+        list(map(parse,systems))
+    if arg == 'train':
+        list(map(train,systems))
+    if arg == 'test':   
+        list(map(do_test,systems))
+    if arg == 'results':
+        list(map(print_results,systems))
+    if arg == 'nice_results':
+        print_nice()
