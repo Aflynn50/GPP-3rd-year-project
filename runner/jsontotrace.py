@@ -133,7 +133,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
            
             states = list(map(parse_state,raw_data['states']))
 
-            moves = list(map(lambda x: parse_moves(raw_data['roles'],x), raw_data['moves']))
+            moves = list(map(lambda x: parse_move(raw_data['roles'],x), raw_data['moves']))
 
             legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
 
