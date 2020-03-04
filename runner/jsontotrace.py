@@ -42,6 +42,18 @@ def parse_legal(roles, legal_moves):
                 raise Exception
     return legals
 
+def parse_move(roles,move):
+    moves = []
+    for role_num in range(len(roles)):
+        tokenised = (move[role_num]).split(" ")
+        if tokenised[0] == "(":
+            s = tokenised[1:-1]
+            moves.append("does_" + s[0] + '(' + roles[role_num] + "," + ",".join(s[1:]) + ')')
+        else:
+            moves.append("does(" + roles[role_num] + "," + move[role_num] + ")")
+    return moves
+
+
 def format_pred(pred,s):
     if "(" in s:
         return pred + '_' + s
@@ -121,9 +133,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
            
             states = list(map(parse_state,raw_data['states']))
 
-            m1 = list(map(lambda x: x[0].strip("(").strip(")"), raw_data['moves']))
-            m2 = list(map(format_pred,m1))
-            moves = list(map(lambda x: "does_"+ x, m2))
+            moves = list(map(lambda x: parse_moves(raw_data['roles'],x), raw_data['moves']))
 
             legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
 
