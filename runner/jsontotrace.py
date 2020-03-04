@@ -42,17 +42,23 @@ def parse_legal(roles, legal_moves):
                 raise Exception
     return legals
 
+def format_pred(pred,s):
+    if "(" in s:
+        return pred + '_' + s
+    else:
+        return pred + '(' + s + ')'
+
 def format_state(pred,state):
-    return "\n\t".join(list(map(lambda x: pred + x, state)))
+    return "\n\t".join(list(map(lambda x: format_pred(pred,x), state)))
 
 def next(output_file,states,moves):
     with open(output_file, 'a') as output:
         for i in range(0,len(states)-1):
             output.write('\n\nbackground:\n\t')
             output.write(moves[i] + "\n\t")
-            output.write(format_state("true_",states[i]))
+            output.write(format_state("true",states[i]))
             output.write("\n\n---\n\npositives:\n\t")
-            output.write(format_state("next_",states[i+1]))
+            output.write(format_state("next",states[i+1]))
             output.write("\n\n---")
         output.close()
     
@@ -60,7 +66,7 @@ def goal(output_file,states):
     with open(output_file, 'a') as output:
         for i in range(0,len(states)):
             output.write('\n\nbackground:\n\t')
-            output.write(format_state("true_",states[i]))
+            output.write(format_state("true",states[i]))
             output.write("\n\n---\n\npositives:\n\t")
             if i == len(states)-1:#do this properly
                 output.write("goal(robot, 100)")
@@ -76,7 +82,7 @@ def legal(output_file,states,legall):
     with open(output_file, 'a') as output:
         for i in range(0,len(legall)):
             output.write('\n\nbackground:\n\t')
-            output.write(format_state("true_",states[i]))
+            output.write(format_state("true",states[i]))
             output.write("\n\n---\n\npositives:\n\t")
             output.write("\n\t".join(legall[i]))
             output.write("\n\n---")
@@ -86,7 +92,7 @@ def terminal(output_file,states):
     with open(output_file, 'a') as output:
         for i in range(0,len(states)):
             output.write('\n\nbackground:\n\t')
-            output.write(format_state("true_",states[i]))
+            output.write(format_state("true",states[i]))
             output.write("\n\n---\n\npositives:")
             if i == len(states)-1:
                 output.write("\n\tterminal()")
