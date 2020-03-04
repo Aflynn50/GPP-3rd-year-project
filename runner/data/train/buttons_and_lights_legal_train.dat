@@ -26,9 +26,9 @@ background:
 ---
 
 positives:
-	legal_a(robot)
-	legal_b(robot)
-	legal_c(robot)
+	legal(robot,a)
+	legal(robot,b)
+	legal(robot,c)
 
 ---
 
@@ -39,9 +39,9 @@ background:
 ---
 
 positives:
-	legal_a(robot)
-	legal_b(robot)
-	legal_c(robot)
+	legal(robot,a)
+	legal(robot,b)
+	legal(robot,c)
 
 ---
 
@@ -52,9 +52,9 @@ background:
 ---
 
 positives:
-	legal_a(robot)
-	legal_b(robot)
-	legal_c(robot)
+	legal(robot,a)
+	legal(robot,b)
+	legal(robot,c)
 
 ---
 
@@ -66,9 +66,9 @@ background:
 ---
 
 positives:
-	legal_a(robot)
-	legal_b(robot)
-	legal_c(robot)
+	legal(robot,a)
+	legal(robot,b)
+	legal(robot,c)
 
 ---
 
@@ -80,9 +80,9 @@ background:
 ---
 
 positives:
-	legal_a(robot)
-	legal_b(robot)
-	legal_c(robot)
+	legal(robot,a)
+	legal(robot,b)
+	legal(robot,c)
 
 ---
 
@@ -94,9 +94,9 @@ background:
 ---
 
 positives:
-	legal_a(robot)
-	legal_b(robot)
-	legal_c(robot)
+	legal(robot,a)
+	legal(robot,b)
+	legal(robot,c)
 
 ---
 
@@ -109,8 +109,8 @@ background:
 ---
 
 positives:
-	legal_a(robot)
-	legal_b(robot)
-	legal_c(robot)
+	legal(robot,a)
+	legal(robot,b)
+	legal(robot,c)
 
 ---

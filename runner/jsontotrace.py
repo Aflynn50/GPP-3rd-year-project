@@ -28,6 +28,20 @@ def parse_state(state_string):
             atoms += [tok]
     return atoms
 
+def parse_legal(roles, legal_moves):
+    legals = []
+    for role_num in range(len(legal_moves)):
+        for move in legal_moves[role_num]:
+            tokenised = move.split(" ")
+            if tokenised[0] == "(":
+                s = tokenised[1:-1]
+                legals.append("legal_" + s[0] + '(' + roles[role_num] + "," + ",".join(s[1:]) + ')')
+            elif len(tokenised) == 1:
+                legals.append("legal(" + roles[role_num] + "," + move + ")")
+            else:
+                raise Exception
+    return legals
+
 def format_state(pred,state):
     return "\n\t".join(list(map(lambda x: pred + x, state)))
 
@@ -105,19 +119,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
             m2 = list(map(format_pred,m1))
             moves = list(map(lambda x: "does_"+ x, m2))
 
-            legals = []
-            for legall in raw_data['legalMoves']:
-                lmoves = []
-                for player_num in range(len(legall)):
-                    for lmove in legall[player_num]:
-                        if lmove == "noop":
-                            l3 = "legal(" + raw_data['roles'][player_num] + ", noop)"
-                        else: 
-                            l1 = lmove.strip("(").strip(")").strip().split(" ")
-                            l2 = ["legal_" + l1[0]] + [raw_data['roles'][player_num]] + l1[1:]
-                            l3 = l2[0] + '(' + ",".join(l2[1:]) + ')'
-                        lmoves.append(l3)
-                legals.append(lmoves)
+            legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
 
             game_name = raw_data['gameName'].lower().replace(" ", "_")
             print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)
