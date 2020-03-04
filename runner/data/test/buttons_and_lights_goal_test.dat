@@ -17,3 +17,85 @@ statics:
 	successor(6, 7)
 
 ---
+
+
+background:
+	true_1
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_2
+	true_p
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_3
+	true_q
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_p
+	true_q
+	true_4
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_p
+	true_r
+	true_5
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_6
+	true_r
+	true_q
+
+---
+
+positives:
+	goal(robot, 0)
+
+---
+
+background:
+	true_7
+	true_p
+	true_r
+	true_q
+
+---
+
+positives:
+	goal(robot, 100)
+
+---

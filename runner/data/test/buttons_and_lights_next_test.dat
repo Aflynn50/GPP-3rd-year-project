@@ -25,3 +25,89 @@ statics:
 	successor(6, 7)
 
 ---
+
+
+background:
+	does_a()
+	true_1
+
+---
+
+positives:
+	next_2
+	next_p
+
+---
+
+background:
+	does_b()
+	true_2
+	true_p
+
+---
+
+positives:
+	next_3
+	next_q
+
+---
+
+background:
+	does_a()
+	true_3
+	true_q
+
+---
+
+positives:
+	next_p
+	next_q
+	next_4
+
+---
+
+background:
+	does_c()
+	true_p
+	true_q
+	true_4
+
+---
+
+positives:
+	next_p
+	next_r
+	next_5
+
+---
+
+background:
+	does_b()
+	true_p
+	true_r
+	true_5
+
+---
+
+positives:
+	next_6
+	next_r
+	next_q
+
+---
+
+background:
+	does_a()
+	true_6
+	true_r
+	true_q
+
+---
+
+positives:
+	next_7
+	next_p
+	next_r
+	next_q
+
+---

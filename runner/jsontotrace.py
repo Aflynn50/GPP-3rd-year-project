@@ -10,6 +10,24 @@ def format_pred(pred):
     p2 = p1[0] + '(' + ",".join(p1[1:]) + ')'
     return p2
 
+def parse_state(state_string):
+    tokenised = state_string[2:-2].split(" ")
+    atoms = []
+    inbracket = False
+    for tok in tokenised:
+        if inbracket:
+            if tok == ")":
+                atoms.append(s[0] + '(' + ",".join(s[1:]) + ')')
+                inbracket = False
+            else:
+                s.append(tok)
+        elif tok == "(":
+            inbracket = True
+            s = []
+        else:
+            atoms += [tok]
+    return atoms
+
 def format_state(pred,state):
     return "\n\t".join(list(map(lambda x: pred + x, state)))
 
@@ -61,7 +79,6 @@ def terminal(output_file,states):
             output.write("\n\n---")
         output.close()
 
-
 def convert(matches_dir, runner_dir): # both should have ending slash
     directory = matches_dir
     train_dir = runner_dir + "data/train/"
@@ -81,14 +98,8 @@ def convert(matches_dir, runner_dir): # both should have ending slash
         if filename.endswith(".json"):
             with open(directory + filename) as f:
                 raw_data = json.load(f) # raw_data is a dict
-            states = []
-            for state_string in raw_data['states']:
-                s1 = state_string.split(") (")
-                s2 = [s1[0][3:]] + s1[1:]
-                s3 = s2[:-1] + [s2[-1][:-3]]
-                state_list = list(map(format_pred, s3))
-                state_list.sort()
-                states.append(state_list)
+           
+            states = list(map(parse_state,raw_data['states']))
 
             m1 = list(map(lambda x: x[0].strip("(").strip(")"), raw_data['moves']))
             m2 = list(map(format_pred,m1))
@@ -97,7 +108,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
             legals = []
             for legall in raw_data['legalMoves']:
                 lmoves = []
-                for player_num in range(len(legall)):  
+                for player_num in range(len(legall)):
                     for lmove in legall[player_num]:
                         if lmove == "noop":
                             l3 = "legal(" + raw_data['roles'][player_num] + ", noop)"
@@ -110,8 +121,9 @@ def convert(matches_dir, runner_dir): # both should have ending slash
 
             game_name = raw_data['gameName'].lower().replace(" ", "_")
             print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)
-            for dat_file in os.listdir(train_dir):
-                for direc in [train_dir+dat_file, test_dir+dat_file]:
+            for train_or_test_dir in [train_dir, test_dir]:
+                for dat_file in os.listdir(train_or_test_dir):
+                    direc = train_or_test_dir + dat_file
                     if game_name in dat_file:
                         if "next" in dat_file:
                             next(direc,states,moves)
