@@ -67,7 +67,7 @@ def next(output_file,states,moves):
     with open(output_file, 'a') as output:
         for i in range(0,len(states)-1):
             output.write('\n\nbackground:\n\t')
-            output.write(moves[i] + "\n\t")
+            output.write("\n\t".join(moves[i]) + "\n\t")
             output.write(format_state("true",states[i]))
             output.write("\n\n---\n\npositives:\n\t")
             output.write(format_state("next",states[i+1]))
