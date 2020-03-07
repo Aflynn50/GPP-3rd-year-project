@@ -56,7 +56,7 @@ def parse_move(roles,move):
 def parse_goal(roles,goals):
     goal = []
     for role_num in range(len(roles)):
-        goal.append("goal(" + roles[role_num] + "," + goals[role_num] + ")")
+        goal.append("goal(" + roles[role_num] + "," + str(goals[role_num]) + ")")
     return goal
 
 def format_pred(pred,s):
@@ -80,6 +80,8 @@ def next(output_file,states,moves):
         output.close()
     
 def goal(output_file,states,goals):
+    if len(states) != len(goals):
+        raise Exception('len(states) != len(goals) with output file ' + output_file)
     with open(output_file, 'a') as output:
         for i in range(0,len(states)):
             output.write('\n\nbackground:\n\t')
@@ -92,7 +94,7 @@ def goal(output_file,states,goals):
 
 def legal(output_file,states,legall):
     if len(legall) != len(states):
-        raise Exception('len(legal) != len(states)') 
+        raise Exception('len(legal) != len(states) with output file ' + output_file) 
     with open(output_file, 'a') as output:
         for i in range(0,len(legall)):
             output.write('\n\nbackground:\n\t')
@@ -139,7 +141,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
 
             legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
 
-            goals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['goalHistory']))
+            goals = list(map(lambda x: parse_goal(raw_data['roles'],x), raw_data['goalHistory']))
 
             game_name = raw_data['gameName'].lower().replace(" ", "_")
             print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)
@@ -150,7 +152,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
                         if "next" in dat_file:
                             next(direc,states,moves)
                         if "goal" in dat_file:
-                            goal(direc,states)
+                            goal(direc,states,goals)
                         if "legal" in dat_file:
                             legal(direc,states,legals)
                         if "terminal" in dat_file:
