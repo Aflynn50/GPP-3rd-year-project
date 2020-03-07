@@ -90,6 +90,11 @@ public final class GameServer extends Thread implements Subject
 	}
     
     match.appendLegalMoves(legalMoves);
+    try {
+		match.appendGoals(stateMachine.getGoals(currentState));
+	} catch (GoalDefinitionException e) {
+		e.printStackTrace();
+	}
     
 
     observers = new ArrayList<>();

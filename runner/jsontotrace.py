@@ -81,6 +81,8 @@ def next(output_file,states,moves):
     
 def goal(output_file,states,goals):
     if len(states) != len(goals):
+        print(len(states))
+        print(len(goals))
         raise Exception('len(states) != len(goals) with output file ' + output_file)
     with open(output_file, 'a') as output:
         for i in range(0,len(states)):
