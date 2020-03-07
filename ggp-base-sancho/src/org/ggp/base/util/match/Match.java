@@ -56,6 +56,7 @@ public final class Match
   private final Game                   theGame;
   private final List<List<GdlTerm>>    moveHistory;
   private final	List<List<List<GdlTerm>>>  legalMoveHistory;
+  private final List<List<Integer>>	   goalHistory;
   private final List<Set<GdlSentence>> stateHistory;
   private final List<List<String>>     errorHistory;
   private final List<Date>             stateTimeHistory;
@@ -96,6 +97,7 @@ public final class Match
 
     this.moveHistory = new ArrayList<>();
     this.legalMoveHistory = new ArrayList<>();
+    this.goalHistory = new ArrayList<>();
     this.stateHistory = new ArrayList<>();
     this.stateTimeHistory = new ArrayList<>();
     this.errorHistory = new ArrayList<>();
@@ -150,6 +152,11 @@ public final class Match
       theMoves.add(m.getContents());
     }
     appendMoves(theMoves);
+  }
+  
+  public void appendGoals(List<Integer> theGoalValues)
+  {
+    goalHistory.add(theGoalValues);
   }
   
   public void appendLegalMoves(List<List<Move>> moves)
@@ -241,6 +248,7 @@ public final class Match
       {
         theJSON.put("goalValues", goalValues);
       }
+      theJSON.put("goalHistory", goalHistory);
       theJSON.put("previewClock", previewClock);
       theJSON.put("startClock", startClock);
       theJSON.put("playClock", playClock);

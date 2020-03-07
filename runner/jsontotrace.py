@@ -53,6 +53,11 @@ def parse_move(roles,move):
             moves.append("does(" + roles[role_num] + "," + move[role_num] + ")")
     return moves
 
+def parse_goal(roles,goals):
+    goal = []
+    for role_num in range(len(roles)):
+        goal.append("goal(" + roles[role_num] + "," + goals[role_num] + ")")
+    return goal
 
 def format_pred(pred,s):
     if "(" in s:
@@ -74,16 +79,13 @@ def next(output_file,states,moves):
             output.write("\n\n---")
         output.close()
     
-def goal(output_file,states):
+def goal(output_file,states,goals):
     with open(output_file, 'a') as output:
         for i in range(0,len(states)):
             output.write('\n\nbackground:\n\t')
             output.write(format_state("true",states[i]))
             output.write("\n\n---\n\npositives:\n\t")
-            if i == len(states)-1:#do this properly
-                output.write("goal(robot, 100)")
-            else:
-                output.write("goal(robot, 0)")
+            output.write("\n\t".join(goals[i]))
             output.write("\n\n---")
         output.close()
 
@@ -136,6 +138,8 @@ def convert(matches_dir, runner_dir): # both should have ending slash
             moves = list(map(lambda x: parse_move(raw_data['roles'],x), raw_data['moves']))
 
             legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
+
+            goals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['goalHistory']))
 
             game_name = raw_data['gameName'].lower().replace(" ", "_")
             print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)

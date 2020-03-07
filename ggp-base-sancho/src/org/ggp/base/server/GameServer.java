@@ -211,6 +211,7 @@ public final class GameServer extends Thread implements Subject
         match.appendLegalMoves(legalMoves);
         match.appendMoves2(previousMoves);
         match.appendState(currentState.getContents());
+        match.appendGoals(stateMachine.getGoals(currentState));
         appendErrorsToMatchDescription();
 
         if (match.isMoveLimitExceeded())
