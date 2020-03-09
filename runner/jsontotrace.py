@@ -132,33 +132,36 @@ def convert(matches_dir, runner_dir): # both should have ending slash
         pass
     os.makedirs(train_dir)
     os.makedirs(test_dir)
-    for filename in os.listdir(directory):  
-        if filename.endswith(".json"):
-            with open(directory + filename) as f:
-                raw_data = json.load(f) # raw_data is a dict
-           
-            states = list(map(parse_state,raw_data['states']))
 
-            moves = list(map(lambda x: parse_move(raw_data['roles'],x), raw_data['moves']))
 
-            legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
+    for (root, dirs, files) in os.walk(directory):
+        for fname in files:
+            filename = os.path.join(root, fname)
+            if filename.endswith(".json"):
+                with open(filename) as f:
+                    raw_data = json.load(f) # raw_data is a dict
+                states = list(map(parse_state,raw_data['states']))
 
-            goals = list(map(lambda x: parse_goal(raw_data['roles'],x), raw_data['goalHistory']))
+                moves = list(map(lambda x: parse_move(raw_data['roles'],x), raw_data['moves']))
 
-            game_name = raw_data['gameName'].lower().replace(" ", "_")
-            print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)
-            for train_or_test_dir in [train_dir, test_dir]:
-                for dat_file in os.listdir(train_or_test_dir):
-                    direc = train_or_test_dir + dat_file
-                    if game_name in dat_file:
-                        if "next" in dat_file:
-                            next(direc,states,moves)
-                        if "goal" in dat_file:
-                            goal(direc,states,goals)
-                        if "legal" in dat_file:
-                            legal(direc,states,legals)
-                        if "terminal" in dat_file:
-                            terminal(direc,states)
+                legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
+
+                goals = list(map(lambda x: parse_goal(raw_data['roles'],x), raw_data['goalHistory']))
+
+                game_name = raw_data['gameName'].lower().replace(" ", "_")
+                print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)
+                for train_or_test_dir in [train_dir, test_dir]:
+                    for dat_file in os.listdir(train_or_test_dir):
+                        direc = train_or_test_dir + dat_file
+                        if game_name in dat_file:
+                            if "next" in dat_file:
+                                next(direc,states,moves)
+                            if "goal" in dat_file:
+                                goal(direc,states,goals)
+                            if "legal" in dat_file:
+                                legal(direc,states,legals)
+                            if "terminal" in dat_file:
+                                terminal(direc,states)
 
 if __name__ == "__main__":
     convert("/home/aflynn50/ggp-saved-matches/","/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/")
