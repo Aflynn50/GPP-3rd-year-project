@@ -63,10 +63,13 @@ def move_json_files():
     jsontotrace.convert(game_traces,runner_dir)
 
 def run_ilp():
-    #runner.parse_train_and_test()
+    runner.parse_train_and_test()
     with open(torny_name + "_results.txt",'a') as f:
         f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
-        f.write(runner.print_nice(latex=True) + '\n')
+        res = runner.print_nice(latex=True)
+        for sys_name, res_table in res:
+            f.write(sys_name + '\n')
+            f.write(res_table + '\n')
     
 
 
@@ -82,5 +85,5 @@ if arg == 'test':
         print(game)
         print(get_num_roles(game))
 if arg == 'train':
-    #move_json_files()
+    move_json_files()
     run_ilp()
