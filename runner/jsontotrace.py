@@ -137,6 +137,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
     for (root, dirs, files) in os.walk(directory):
         for fname in files:
             filename = os.path.join(root, fname)
+            print(filename)
             if filename.endswith(".json"):
                 with open(filename) as f:
                     raw_data = json.load(f) # raw_data is a dict

@@ -144,7 +144,7 @@ def print_results(system):
 
 
 def print_nice():
-    headers = ['Predicate'] + list(map(lambda x : x.name, systems))
+    headers = ['Predicate'] + [game for game in game_names('data/test')]+ list(map(lambda x : x.name, systems))
     data = [['next','goal','legal','terminal']]
     for system in systems:
         args = [(system, game, False) for game in game_names('data/test')]

@@ -1,5 +1,5 @@
 {
-  "Solver": "clingo version 5.3.0",
+  "Solver": "clingo version 5.4.0",
   "Input": [
     "results/specialised_ilasp/buttons_and_lights/goal.pl_test"
   ],
@@ -8,7 +8,7 @@
       "Witnesses": [
         {
           "Value": [
-            "int(0)", "int(100)", "agent(robot)", "goal(robot,0)", "prop(p)", "prop(q)", "prop(r)", "prop(1)", "prop(2)", "prop(3)", "prop(4)", "prop(5)", "prop(6)", "prop(7)", "true(5)", "true(q)", "input(robot,a)", "input(robot,b)", "input(robot,c)", "role(robot)", "successor(1,2)", "successor(2,3)", "successor(3,4)", "successor(4,5)", "successor(5,6)", "successor(6,7)", "action(a)", "action(b)", "action(c)"
+            "prop(p)", "prop(q)", "prop(r)", "prop(1)", "prop(2)", "prop(3)", "prop(4)", "prop(5)", "prop(6)", "prop(7)", "int(0)", "int(100)", "agent(robot)", "true(r)", "true(p)", "true(q)", "true(7)", "successor(1,2)", "successor(2,3)", "successor(3,4)", "successor(4,5)", "successor(5,6)", "successor(6,7)", "goal(robot,100)", "input(robot,a)", "input(robot,b)", "input(robot,c)", "role(robot)", "action(a)", "action(b)", "action(c)"
           ]
         }
       ]
@@ -21,7 +21,7 @@
   },
   "Calls": 1,
   "Time": {
-    "Total": 0.001,
+    "Total": 0.013,
     "Solve": 0.000,
     "Model": 0.000,
     "Unsat": 0.000,

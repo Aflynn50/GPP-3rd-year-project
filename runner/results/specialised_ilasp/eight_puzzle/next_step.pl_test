@@ -98,17 +98,17 @@ tile(7).
 tile(8).
 tile(b).
 % example
-does_move(robot,1,1).
-true_cell(1,1,8).
-true_cell(2,1,b).
-true_cell(3,1,4).
-true_cell(1,2,6).
-true_cell(2,2,3).
-true_cell(3,2,7).
-true_cell(1,3,5).
-true_cell(2,3,2).
-true_cell(3,3,1).
-true_step(49).
+does_move(robot,3,3).
+true_cell(2,1,4).
+true_cell(3,1,7).
+true_cell(1,1,1).
+true_cell(2,3,6).
+true_cell(2,2,5).
+true_cell(1,3,3).
+true_cell(1,2,2).
+true_cell(3,3,8).
+true_cell(3,2,b).
+true_step(29).
 % types
 agent(
 
@@ -207,5 +207,6 @@ score_int( 100).
 
 
 
+next_step(V0) :- successor(V10, V0), true_step(V10), time_step(V0), score_int(V0), time_step(V10), score_int(V10).
 
 

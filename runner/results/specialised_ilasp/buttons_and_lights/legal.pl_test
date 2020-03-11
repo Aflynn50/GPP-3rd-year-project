@@ -9,9 +9,10 @@ successor(4, 5).
 successor(5, 6).
 successor(6, 7).
 % example
-true(7).
-true(p).
 true(r).
+true(p).
+true(q).
+true(7).
 % types
 prop(
 

@@ -61,13 +61,23 @@ my_successor(7,3,4).
 my_successor(7,4,5).
 my_successor(7,5,6).
 my_successor(7,6,7).
-my_true_(1).
-my_true_(2).
-my_true_(3).
-my_true_p(7,r).
-my_true_q(4).
-my_true_r(5).
-my_true_r(6).
+my_true(1,1).
+my_true(2,2).
+my_true(2,p).
+my_true(3,3).
+my_true(3,q).
+my_true(4,4).
+my_true(4,r).
+my_true(5,5).
+my_true(5,p).
+my_true(5,r).
+my_true(6,6).
+my_true(6,q).
+my_true(6,r).
+my_true(7,7).
+my_true(7,p).
+my_true(7,q).
+my_true(7,r).
 neg(legal(1,robot,a)).
 neg(legal(1,robot,b)).
 neg(legal(1,robot,c)).
@@ -91,44 +101,35 @@ neg(legal(7,robot,b)).
 neg(legal(7,robot,c)).
 not_my_input(A,B,C) :- \+ my_input(A,B,C).
 not_my_successor(A,B,C) :- \+ my_successor(A,B,C).
-not_my_true_(A) :- \+ my_true_(A).
-not_my_true_p(A,B) :- \+ my_true_p(A,B).
-not_my_true_q(A) :- \+ my_true_q(A).
-not_my_true_r(A) :- \+ my_true_r(A).
+not_my_true(A,B) :- \+ my_true(A,B).
 not_role(A,B) :- \+ role(A,B).
-pos(legal_a(1,robot)).
-pos(legal_a(2,robot)).
-pos(legal_a(3,robot)).
-pos(legal_a(4,robot)).
-pos(legal_a(5,robot)).
-pos(legal_a(6,robot)).
-pos(legal_a(7,robot)).
-pos(legal_b(1,robot)).
-pos(legal_b(2,robot)).
-pos(legal_b(3,robot)).
-pos(legal_b(4,robot)).
-pos(legal_b(5,robot)).
-pos(legal_b(6,robot)).
-pos(legal_b(7,robot)).
-pos(legal_c(1,robot)).
-pos(legal_c(2,robot)).
-pos(legal_c(3,robot)).
-pos(legal_c(4,robot)).
-pos(legal_c(5,robot)).
-pos(legal_c(6,robot)).
-pos(legal_c(7,robot)).
+pos(legal(1,robot,a)).
+pos(legal(1,robot,b)).
+pos(legal(1,robot,c)).
+pos(legal(2,robot,a)).
+pos(legal(2,robot,b)).
+pos(legal(2,robot,c)).
+pos(legal(3,robot,a)).
+pos(legal(3,robot,b)).
+pos(legal(3,robot,c)).
+pos(legal(4,robot,a)).
+pos(legal(4,robot,b)).
+pos(legal(4,robot,c)).
+pos(legal(5,robot,a)).
+pos(legal(5,robot,b)).
+pos(legal(5,robot,c)).
+pos(legal(6,robot,a)).
+pos(legal(6,robot,b)).
+pos(legal(6,robot,c)).
+pos(legal(7,robot,a)).
+pos(legal(7,robot,b)).
+pos(legal(7,robot,c)).
 prim(my_input/3).
 prim(my_successor/3).
-prim(my_true_/1).
-prim(my_true_p/2).
-prim(my_true_q/1).
-prim(my_true_r/1).
+prim(my_true/2).
 prim(not_my_input/3).
 prim(not_my_successor/3).
-prim(not_my_true_/1).
-prim(not_my_true_p/2).
-prim(not_my_true_q/1).
-prim(not_my_true_r/1).
+prim(not_my_true/2).
 prim(not_role/2).
 prim(role/2).
 role(1,robot).

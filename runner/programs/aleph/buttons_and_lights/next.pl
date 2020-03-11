@@ -1,6 +1,12 @@
-next_(1).
-next_(2).
-next_q(3).
-next_r(4).
-next_r(5).
-next_p(6,r).
+next(1,p).
+next(A,B) :-
+   my_successor(A,A,B).
+next(2,q).
+next(3,r).
+next(4,r).
+next(4,p).
+next(5,r).
+next(5,q).
+next(6,r).
+next(6,q).
+next(6,p).
