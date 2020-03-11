@@ -136,20 +136,19 @@ def print_results_(args):
     return scores
 
 def print_results(system):
-
-
     args = [(system, game, True) for game in game_names('data/test')]
     scores = [score for scores in map(print_results_, args) for score in scores]
     print(system.name, int(np.mean(scores)*100), perfectly_correct(scores))
 
 
-def print_nice():
-    headers = ['Predicate'] + [game for game in game_names('data/test')]+ list(map(lambda x : x.name, systems))
-    data = [['next','goal','legal','terminal']]
+def print_latex(): # outputs a seperate graph for each system
     for system in systems:
+        data = [['next','goal','legal','terminal']]
         args = [(system, game, False) for game in game_names('data/test')]
         data += list(map(lambda x: list(map((lambda y:  int(y * 100)),x)), [print_results_(arg) for arg in args]))
-    print(tabulate(list(zip(*data)),headers=headers))
+        headers = ['predicate'] + [game for game in game_names('data/test')]
+        print(system)
+        print(tabulate(list(zip(*data)),headers=headers)) #,tablefmt="latex"))
 
 def parse_train_and_test():
     systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
@@ -170,5 +169,5 @@ if __name__ == "__main__":
         list(map(do_test,systems))
     if arg == 'results':
         list(map(print_results,systems))
-    if arg == 'nice_results':
-        print_nice()
+    if arg == 'latex_results':
+        print_latex()
