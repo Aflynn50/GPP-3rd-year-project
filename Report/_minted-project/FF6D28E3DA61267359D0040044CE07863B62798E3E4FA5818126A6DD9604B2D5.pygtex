@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{swap}\PYG{p}{(}\PYG{n+nv}{I}\PYG{p}{,}\PYG{n+nv}{J}\PYG{p}{,}\PYG{n+nv}{L1}\PYG{p}{,}\PYG{n+nv}{L3}\PYG{p}{)} \PYG{p}{:\PYGZhy{}}
+   \PYG{n+nf}{same\PYGZus{}length}\PYG{p}{(}\PYG{n+nv}{L1}\PYG{p}{,}\PYG{n+nv}{L3}\PYG{p}{),}
+   \PYG{n+nf}{append}\PYG{p}{(}\PYG{n+nv}{BeforeI}\PYG{p}{,[}\PYG{n+nv}{AtI}\PYG{p}{|}\PYG{n+nv}{PastI}\PYG{p}{],}\PYG{n+nv}{L1}\PYG{p}{),}
+   \PYG{n+nf}{append}\PYG{p}{(}\PYG{n+nv}{BeforeI}\PYG{p}{,[}\PYG{n+nv}{AtJ}\PYG{p}{|}\PYG{n+nv}{PastI}\PYG{p}{],}\PYG{n+nv}{L2}\PYG{p}{),}
+   \PYG{n+nf}{append}\PYG{p}{(}\PYG{n+nv}{BeforeJ}\PYG{p}{,[}\PYG{n+nv}{AtJ}\PYG{p}{|}\PYG{n+nv}{PastJ}\PYG{p}{],}\PYG{n+nv}{L2}\PYG{p}{),}
+   \PYG{n+nf}{append}\PYG{p}{(}\PYG{n+nv}{BeforeJ}\PYG{p}{,[}\PYG{n+nv}{AtI}\PYG{p}{|}\PYG{n+nv}{PastJ}\PYG{p}{],}\PYG{n+nv}{L3}\PYG{p}{),}
+   \PYG{n+nf}{length}\PYG{p}{(}\PYG{n+nv}{BeforeI}\PYG{p}{,}\PYG{n+nv}{I}\PYG{p}{),}
+   \PYG{n+nf}{length}\PYG{p}{(}\PYG{n+nv}{BeforeJ}\PYG{p}{,}\PYG{n+nv}{J}\PYG{p}{).}
+\end{Verbatim}

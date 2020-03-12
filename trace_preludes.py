@@ -355,3 +355,7 @@ if __name__ == "__main__":
 	write_prelude('eightpuzzle-traces/legal_' + use + '.dat')
 	write_prelude('eightpuzzle-traces/next_' + use + '.dat')
 	write_prelude('eightpuzzle-traces/terminal_' + use + '.dat')
+	
+	
+	
+	

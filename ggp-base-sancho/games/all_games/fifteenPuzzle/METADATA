@@ -1,6 +1,0 @@
-{
-  "gameName": "Fifteen Puzzle",
-  "rulesheet": "fifteenPuzzle.kif",
-  "stylesheet": "fifteenPuzzle.xsl",
-  "user_interface": "fifteenPuzzle.js"
-}
