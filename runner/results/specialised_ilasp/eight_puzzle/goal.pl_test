@@ -207,5 +207,6 @@ score_int( 100).
 
 
 goal(V0, V1) :- V1 = 0, agent(V0), time_step(V1), score_int(V1).
+goal(V0, V1) :- true_cell(V10, V10, V10), agent(V0), score_int(V1), pos(V10), cell_type(V10), time_step(V10), score_int(V10).
 
 

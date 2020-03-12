@@ -46,10 +46,15 @@ def get_num_roles(game):
             roles += 1
     return roles
 
-def gen_games(repetitions,optimal=True):
+def gen_games(game_type,repetitions):
+    if game_type == 'optimal':
+        optimal = True
+    elif game_type == 'random':
+        optimal = False
+    else:
+        raise Exception("bad game type (optimal or random)")
     r = requests.get("http://games.ggp.org/stanford/games/")
     game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
-    print(game_list)
     for game in game_list:
         num_players = get_num_roles(game)
         server_runner = get_server(game,num_players,optimal=optimal)
@@ -71,19 +76,24 @@ def gen_games(repetitions,optimal=True):
             print("players finished for iteration " + str(repetition+1) + " of game " + game + " at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
     print("all done")
 
-def move_json_files():
-    for tourney_name in tourney_names:
-        game_traces = os.getcwd() + '/' + tourney_name + '/'
-        jsontotrace.convert(game_traces,runner_dir)
-
-def run_ilp(game_type):
-    runner.parse_train_and_test()
+def move_json_files(game_type):
     if game_type == 'optimal':
         tourney_name = tourney_names[0]
     elif game_type == 'random':
         tourney_name = tourney_names[1]
     else:
         raise Exception("bad game type (optimal or random)")
+    game_traces = os.getcwd() + '/' + tourney_name + '/'
+    jsontotrace.convert(game_traces,runner_dir)
+
+def run_ilp(game_type):
+    if game_type == 'optimal':
+        tourney_name = tourney_names[0]
+    elif game_type == 'random':
+        tourney_name = tourney_names[1]
+    else:
+        raise Exception("bad game type (optimal or random)")
+    runner.parse_train_and_test()
     with open(tourney_name + "_results.txt",'a') as f:
         f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
         res = runner.print_nice(latex=True)
@@ -94,10 +104,11 @@ def run_ilp(game_type):
 
 
 # arg 1 = action e.g. gen_games
-# arg 2 for gen_games in no. of traces to gen for each game 
+# arg 2 = game type, optimal or random
+# arg 3 for gen_games in no. of traces to gen for each game 
 arg = sys.argv[1]
 if arg == 'gen_games':
-    gen_games(int(sys.argv[2]))
+    gen_games(sys.argv[2], int(sys.argv[3]))
 if arg == 'test':
     r = requests.get("http://games.ggp.org/stanford/games/")
     game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
@@ -105,7 +116,5 @@ if arg == 'test':
         print(game)
         print(get_num_roles(game))
 if arg == 'train':
+    move_json_files(sys.argv[2])
     run_ilp(sys.argv[2])
-if arg == 'convert_json':
-    move_json_files()
-    

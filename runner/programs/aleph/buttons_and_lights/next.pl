@@ -1,6 +1,6 @@
-next(1,p).
 next(A,B) :-
    my_successor(A,A,B).
+next(1,p).
 next(2,q).
 next(3,r).
 next(4,r).

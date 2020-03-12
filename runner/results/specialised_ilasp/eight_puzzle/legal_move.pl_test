@@ -206,9 +206,8 @@ score_int( 100).
 
 
 
-legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V9, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
-legal_move(V0, V1, V2) :- successor(V8, V7), true_step(V1), true_cell(V1, V2, V8), V1 = 2, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8).
-legal_move(V0, V1, V2) :- successor(V9, V1), true_cell(V9, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
-legal_move(V0, V1, V2) :- true_cell(V1, V9, V3), not true_step(V9), V2 = 2, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V52, V1), true_cell(V2, V9, V1), not true_step(V52), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9), time_step(V52), score_int(V52).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V8), not true_step(V52), V8 = 4, V52 = 0, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), time_step(V52), score_int(V52).
+legal_move(V0, V1, V2) :- successor(V2, V1), true_cell(V1, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3).
 
 

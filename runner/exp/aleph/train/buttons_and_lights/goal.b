@@ -1,6 +1,6 @@
-:- determination(goal/3,my_successor/3).
 :- determination(goal/3,my_true/2).
 :- determination(goal/3,role/2).
+:- determination(goal/3,my_successor/3).
 :- determination(goal/3,my_input/3).
 my_true(1,1).
 my_input(1,robot,a).
