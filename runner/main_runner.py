@@ -56,6 +56,7 @@ def gen_games(game_type,repetitions):
     r = requests.get("http://games.ggp.org/stanford/games/")
     game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
     for game in game_list:
+        print('/n' + "Starting " + game + '/n at' + time.strftime("%d %b %H:%M:%S", time.gmtime()))
         num_players = get_num_roles(game)
         server_runner = get_server(game,num_players,optimal=optimal)
         player_runners = [get_player(x,optimal=optimal) for x in range(num_players)]
@@ -64,16 +65,15 @@ def gen_games(game_type,repetitions):
             time.sleep(20)
             serverp = subprocess.Popen(server_runner)
             serverp.wait()
-            print("server finished for iteration " + str(repetition+1) + " of game " + game + " at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
             for p in playerps:
                 try:
                     p.wait(2)
                 except subprocess.TimeoutExpired:
-                    print("Player didn't die")
+                    print("Player didn't die for iteration " + str(repetition+1) + " of game " + game + " at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
                     p.kill()
             k = subprocess.Popen(["pkill", "-f", server_runner[0]])
             k.wait()
-            print("players finished for iteration " + str(repetition+1) + " of game " + game + " at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
+        print("The game " + game + " finished at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
     print("all done")
 
 def move_json_files(game_type):

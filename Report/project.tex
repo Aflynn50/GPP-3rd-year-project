@@ -52,6 +52,32 @@ Let the accuracy of a set $I$ of ILP systems in problem setting be defined as th
 
 We will also be investigating how the size of the trace set $|\Delta|$ affects the accuracy of the hypothesis $H$.
 
+\subsection{Sancho}
+To generate optimal gameplay we decided that the best approach was to use a previous winner of the GGP competition. Since the aim of the competition is to find the program that performs best at the set of games used in the IGGP problem we conclude that there is no better way to generate a comprehensive set of game traces. The winner of the 2014 GGP competition 'Sancho' was selected \footnote{http://ggp.stanford.edu/iggpc/winners.php accessed on 12/03/2020} since they are the most recent winner to have published their code \footnote{http://sanchoggp.github.io/sancho-ggp/ access 12/03/2020}. Some small modifications to the information logged by the game server are made but otherwise the code is unchanged.
+
+The core of Sancho is the Monte Carlo tree search (MCTS) algorithm.
+
+\subsubsection{Monte Carlo Tree Search}
+Given a game state the basic MCTS will return the most promising next move. The algorithm achives this by simulating random playouts of the game many times. The technique was developed for computer Go but has since been applied to play a wide range of games effectively including board games and video games\cite{Silver/MCTS}\cite{Chaslot/MCTS}. 
+
+The use of random simulation to evaluate game states is a powerful tool. Information about the game such as heuristics for evaluating non terminal states are not needed at all, the rules of the game are enough on their own. In the case of the GGP problem this is ideal. The rules of the game are only revealed shortly before the game is played meaning deriving effective heuristics is a hard problem. 
+
+In our case all games being played are sequential, finite and discrete so we only need to consider MCTS for this case.
+%say why it is good for this
+
+% possibly put in a diagram of game tree
+The MCTS is a tree search algorithm, the tree being searched is the game tree. A game tree being a tree made up of nodes representing states of the game and the children of each node being all the states that can be moved to from that state. The leaves of this tree are the terminal states. The search is a sequence of traversals of the game tree. A traversal is a path that starts at the root node and continues down until it reaches a node that has at least one unvisited child. One of these unvisited children are then chosen to be the start state for a simulation of the rest of the game. The simulation chooses random moves, playing the game out to a terminal state. The result of the simulation is propagated back from the node it started at all the way to the root node to update statistics attached to each node. These statistics are used to choose future paths to traverse so more promising moves are investigated more.
+
+Exactly how the tree search algorithm chooses new nodes to simulate is where the complexity lies. The node chosen by traversal of the tree should strike a balance between exploiting promising nodes and exploring nodes with few simulations. The Upper Confidence Bound for trees algorithm was designed to do exactly this\cite{Kocsis/UCT}. The algorithm chooses a child node for each state based on the UTC formula. The formulae can be written as: \[UTC(v_i) = \frac{Q(v_i)}{N(v_i)} + c\sqrt{\frac{ln(N(v_i))}{N(v_i)}}\] Where we have:
+\begin{itemize}
+\item $v_i$ is node $v$ after move $i$
+\item $Q(v)$ is the number of winning simulations that have taken place below it
+\item $N(v)$ is the number of simulations that have taken place below it
+\end{itemize}
+The function is the sum of two components. $\frac{Q(v_i)}{N(v_i)}$ is called the exploitation component. It is a ratio of winning to loosing simulation that resulted from making this move. This encourages traversal of promising nodes that have a high win rate. However, if only this factor was used the algorithm would quickly find a winning node and only explore that hence we need a second component: the exploration factor. $c\sqrt{\frac{ln(N(v_i))}{N(v_i)}}$ favours nodes that have not yet been explored. The value c is a constant that balances the two components, it can be adjusted depending on the use case.
+
+
+
 \chapter{Implementations}
 \section{Eight Puzzle}
 To write an optimal player for Eight Puzzle I decide to use an approach based on best first search.
