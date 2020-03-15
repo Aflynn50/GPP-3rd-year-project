@@ -4,4 +4,4 @@ goal(3,robot,0).
 goal(4,robot,0).
 goal(5,robot,0).
 goal(6,robot,0).
-goal(7,robot,100).
+goal(7,robot,0).
