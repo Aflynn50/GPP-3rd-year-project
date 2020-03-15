@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.3)  15 MAR 2020 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.3)  15 MAR 2020 14:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -652,24 +652,9 @@ B2D5.pygtex)
 (./_minted-project/A92DDF460D1E1A478CCDE5BF292AFC443B62798E3E4FA5818126A6DD9604
 B2D5.pygtex [17]) [18]
 Chapter 5.
+[19
 
-Overfull \hbox (929.06989pt too wide) in paragraph at lines 196--226
-[][]
- []
-
-
-Overfull \hbox (911.44507pt too wide) in paragraph at lines 196--226
-[]
- []
-
-
-Overfull \hbox (911.44507pt too wide) in paragraph at lines 196--226
-[] 
- []
-
-(./project.bbl [19
-
-] [20]
+] [20] (./project.bbl [21]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
@@ -679,9 +664,9 @@ Missing character: There is no ” in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [21
+ [22
 
-]) [22] (./project.aux)
+]) [23] (./project.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -691,7 +676,7 @@ runsystem(rm project.pyg)...executed.
 Here is how much of TeX's memory you used:
  6657 strings out of 492982
  122627 string characters out of 6134897
- 245111 words of memory out of 5000000
+ 246111 words of memory out of 5000000
  9954 multiletter control sequences out of 15000+600000
  15683 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -712,10 +697,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on project.pdf (24 pages, 214935 bytes).
+Output written on project.pdf (25 pages, 215623 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 154 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
