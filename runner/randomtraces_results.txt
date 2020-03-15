@@ -1,34 +1,79 @@
-13 Mar 22:04:22
+15 Mar 13:57:03
 metagol
-\begin{tabular}{lrrrrrrrrrrrrrrrrrrr}
+\begin{tabular}{lrrrr}
 \hline
- predicate   &   alquerque &   asylum &   battle\_of\_numbers &   breakthrough &   buttons\_and\_lights &   duikoshi &   eight\_puzzle &   freeforall &   hexforthree &   horseshoe &   hunter &   knights\_tour &   kono &   pentago &   pilgrimage &   rainbow &   sudoku &   sukoshi &   untwisty\_corridor \\
+ game               &   next &   goal &   legal &   terminal \\
 \hline
- next        &          51 &       50 &                  54 &             50 &                   50 &         50 &             55 &           54 &            51 &          57 &       52 &             50 &     52 &        51 &           50 &        50 &       50 &        50 &                  62 \\
- goal        &          50 &       50 &                  50 &             50 &                   50 &         50 &             50 &           50 &            50 &          50 &       50 &             50 &     50 &        50 &           50 &        50 &       50 &        50 &                  50 \\
- legal       &          50 &       50 &                  50 &             50 &                   50 &         50 &             50 &           50 &            50 &          50 &       50 &             50 &     50 &        50 &           50 &        50 &       50 &        50 &                  50 \\
- terminal    &         100 &      100 &                 100 &            100 &                  100 &        100 &            100 &          100 &           100 &         100 &      100 &            100 &    100 &        50 &          100 &       100 &       50 &       100 &                 100 \\
+ alquerque          &     51 &     50 &      50 &        100 \\
+ asylum             &     50 &     50 &      50 &        100 \\
+ battle\_of\_numbers  &     54 &     50 &      50 &        100 \\
+ breakthrough       &     50 &     50 &      50 &        100 \\
+ buttons\_and\_lights &     50 &     50 &      50 &        100 \\
+ duikoshi           &     50 &     50 &      50 &        100 \\
+ eight\_puzzle       &     55 &     50 &      50 &        100 \\
+ freeforall         &     54 &     50 &      50 &        100 \\
+ hexforthree        &     51 &     50 &      50 &        100 \\
+ horseshoe          &     57 &     50 &      50 &        100 \\
+ hunter             &     52 &     50 &      50 &        100 \\
+ knights\_tour       &     50 &     50 &      50 &        100 \\
+ kono               &     52 &     50 &      50 &        100 \\
+ pentago            &     51 &     50 &      50 &         50 \\
+ pilgrimage         &     50 &     50 &      50 &        100 \\
+ rainbow            &     50 &     50 &      50 &        100 \\
+ sudoku             &     50 &     50 &      50 &         50 \\
+ sukoshi            &     50 &     50 &      50 &        100 \\
+ untwisty\_corridor  &     62 &     50 &      50 &        100 \\
 \hline
 \end{tabular}
 aleph
-\begin{tabular}{lrrrrrrrrrrrrrrrrrrr}
+\begin{tabular}{lrrrr}
 \hline
- predicate   &   alquerque &   asylum &   battle\_of\_numbers &   breakthrough &   buttons\_and\_lights &   duikoshi &   eight\_puzzle &   freeforall &   hexforthree &   horseshoe &   hunter &   knights\_tour &   kono &   pentago &   pilgrimage &   rainbow &   sudoku &   sukoshi &   untwisty\_corridor \\
+ game               &   next &   goal &   legal &   terminal \\
 \hline
- next        &          56 &       52 &                  68 &             51 &                  100 &         90 &             96 &           98 &            67 &          93 &       95 &             98 &     94 &        98 &           97 &        93 &       95 &        87 &                 100 \\
- goal        &          95 &       99 &                  98 &             75 &                   75 &         83 &             99 &           98 &            99 &          97 &       98 &             99 &     98 &        83 &           98 &        75 &       75 &        75 &                  75 \\
- legal       &          50 &       50 &                  76 &             50 &                   50 &         90 &             84 &           76 &            72 &          97 &       99 &             99 &     95 &        98 &           83 &        70 &       50 &        90 &                  50 \\
- terminal    &         100 &      100 &                 100 &            100 &                  100 &        100 &            100 &          100 &           100 &         100 &      100 &            100 &    100 &       100 &          100 &       100 &      100 &       100 &                 100 \\
+ alquerque          &     56 &     95 &      50 &        100 \\
+ asylum             &     52 &     99 &      50 &        100 \\
+ battle\_of\_numbers  &     68 &     98 &      76 &        100 \\
+ breakthrough       &     51 &     75 &      50 &        100 \\
+ buttons\_and\_lights &    100 &     75 &      50 &        100 \\
+ duikoshi           &     90 &     83 &      90 &        100 \\
+ eight\_puzzle       &     96 &     99 &      84 &        100 \\
+ freeforall         &     98 &     98 &      76 &        100 \\
+ hexforthree        &     67 &     99 &      72 &        100 \\
+ horseshoe          &     93 &     97 &      97 &        100 \\
+ hunter             &     95 &     98 &      99 &        100 \\
+ knights\_tour       &     98 &     99 &      99 &        100 \\
+ kono               &     94 &     98 &      95 &        100 \\
+ pentago            &     98 &     83 &      98 &        100 \\
+ pilgrimage         &     97 &     98 &      83 &        100 \\
+ rainbow            &     93 &     75 &      70 &        100 \\
+ sudoku             &     95 &     75 &      50 &        100 \\
+ sukoshi            &     87 &     75 &      90 &        100 \\
+ untwisty\_corridor  &    100 &     75 &      50 &        100 \\
 \hline
 \end{tabular}
 specialised_ilasp
-\begin{tabular}{lrrrrrrrrrrrrrrrrrrr}
+\begin{tabular}{lrrrr}
 \hline
- predicate   &   alquerque &   asylum &   battle\_of\_numbers &   breakthrough &   buttons\_and\_lights &   duikoshi &   eight\_puzzle &   freeforall &   hexforthree &   horseshoe &   hunter &   knights\_tour &   kono &   pentago &   pilgrimage &   rainbow &   sudoku &   sukoshi &   untwisty\_corridor \\
+ game               &   next &   goal &   legal &   terminal \\
 \hline
- next        &          46 &       69 &                  54 &             56 &                  100 &         85 &             96 &           76 &            83 &          93 &       71 &             83 &     83 &        99 &           92 &        87 &       84 &      -100 &                 100 \\
- goal        &          90 &       99 &                  97 &             50 &                   50 &         66 &             98 &           71 &           100 &          95 &       99 &             98 &     97 &        42 &           96 &        50 &       50 &        50 &                  50 \\
- legal       &          99 &       83 &                  88 &            100 &                    0 &         60 &             75 &           85 &           100 &          96 &       83 &             95 &     98 &        83 &           89 &        27 &       10 &        81 &                   0 \\
- terminal    &         100 &      100 &                 100 &             50 &                  100 &        100 &            100 &          100 &           100 &         100 &      100 &            100 &    100 &       100 &           96 &       100 &      100 &       100 &                -100 \\
+ alquerque          &     46 &     90 &      99 &        100 \\
+ asylum             &     69 &     99 &      83 &        100 \\
+ battle\_of\_numbers  &     54 &     97 &      88 &        100 \\
+ breakthrough       &     56 &     50 &     100 &         50 \\
+ buttons\_and\_lights &    100 &     50 &       0 &        100 \\
+ duikoshi           &     85 &     66 &      60 &        100 \\
+ eight\_puzzle       &     96 &     98 &      75 &        100 \\
+ freeforall         &     76 &     71 &      85 &        100 \\
+ hexforthree        &     83 &    100 &     100 &        100 \\
+ horseshoe          &     93 &     95 &      96 &        100 \\
+ hunter             &     71 &     99 &      83 &        100 \\
+ knights\_tour       &     83 &     98 &      95 &        100 \\
+ kono               &     83 &     97 &      98 &        100 \\
+ pentago            &     99 &     42 &      83 &        100 \\
+ pilgrimage         &     92 &     96 &      89 &         96 \\
+ rainbow            &     87 &     50 &      27 &        100 \\
+ sudoku             &     84 &     50 &      10 &        100 \\
+ sukoshi            &   -100 &     50 &      81 &        100 \\
+ untwisty\_corridor  &    100 &     50 &       0 &       -100 \\
 \hline
 \end{tabular}
