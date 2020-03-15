@@ -14,6 +14,13 @@ Ivan Bratko.
 \newblock {\em Prolog Programming for Artificial Intelligence, 4th Edition}.
 \newblock Addison-Wesley, 2012.
 
+\bibitem{Chaslot/MCTS}
+Guillaume Chaslot, Sander Bakkes, Istvan Szita, and Pieter Spronck.
+\newblock Monte-carlo tree search: {A} new framework for game {AI}.
+\newblock In {\em Proceedings of the Fourth Artificial Intelligence and
+  Interactive Digital Entertainment Conference, October 22-24, 2008, Stanford,
+  California, {USA}}, 2008.
+
 \bibitem{Cropper/IGGP}
 Andrew Cropper, Richard Evans, and Mark Law.
 \newblock Inductive general game playing.
@@ -42,6 +49,13 @@ ISO/IEC.
 \newblock ISO 13211-1:1995, International Organization for Standardization,
   Geneva, Switzerland, 1995.
 
+\bibitem{Kocsis/UCT}
+Levente Kocsis and Csaba Szepesv{\'{a}}ri.
+\newblock Bandit based monte-carlo planning.
+\newblock In {\em Machine Learning: {ECML} 2006, 17th European Conference on
+  Machine Learning, Berlin, Germany, September 18-22, 2006, Proceedings}, pages
+  282--293, 2006.
+
 \bibitem{Mitchell/MachineLearing}
 Tom~M. Mitchell.
 \newblock {\em Machine learning, International Edition}.
@@ -61,5 +75,14 @@ Kenneth~A. Ross.
 \newblock Modular stratification and magic sets for datalog programs with
   negation.
 \newblock {\em J. {ACM}}, 41(6):1216--1266, 1994.
+
+\bibitem{Silver/MCTS}
+David Silver, Aja Huang, Chris~J. Maddison, Arthur Guez, Laurent Sifre, George
+  van~den Driessche, Julian Schrittwieser, Ioannis Antonoglou, Vedavyas
+  Panneershelvam, Marc Lanctot, Sander Dieleman, Dominik Grewe, John Nham, Nal
+  Kalchbrenner, Ilya Sutskever, Timothy~P. Lillicrap, Madeleine Leach, Koray
+  Kavukcuoglu, Thore Graepel, and Demis Hassabis.
+\newblock Mastering the game of go with deep neural networks and tree search.
+\newblock {\em Nature}, 529(7587):484--489, 2016.
 
 \end{thebibliography}

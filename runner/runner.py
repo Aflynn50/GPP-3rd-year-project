@@ -155,6 +155,25 @@ def print_nice(latex=False): # outputs a seperate graph for each system
     if latex:
         return ret
 
+def print_nice2(latex=False): # outputs a seperate graph for each system
+    ret = []
+    headers = ['game', 'predicate'] + [s.name for s in systems] 
+    for game in game_names('data/test'):
+        args = [(system, game, False) for system in systems]
+        # print_res_ returns a list of scores: [1,2,3,4]
+        # got 3 of these, one for each sys
+        # zip them to get triple of next, terminal... for each system
+        # 
+        data = []
+        scores_per_sys = [list(map(lambda y:  int(y * 100), print_results_(arg))) for arg in args]
+        scores_per_pred = list(zip(*([[game,game,game,game],['next','goal','legal','terminal']]+ scores_per_sys)))
+        table += scores_per_pred
+    ret = tabulate(table,headers=headers,tablefmt="latex")
+    if latex:
+        return ret
+    else: 
+        print(ret)
+
 def parse_train_and_test():
     systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse,systems))
@@ -175,4 +194,4 @@ if __name__ == "__main__":
     if arg == 'results':
         list(map(print_results,systems))
     if arg == 'nice_results':
-        print_nice()
+        print_nice2()
