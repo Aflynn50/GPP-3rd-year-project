@@ -144,13 +144,17 @@ def print_results(system):
 def print_nice(latex=False): # outputs a seperate graph for each system
     ret = []
     for system in systems:
-        data = [['next','goal','legal','terminal']]
+        headers = ['game','next','goal','legal','terminal']
+
+
         args = [(system, game, False) for game in game_names('data/test')]
-        data += list(map(lambda x: list(map((lambda y:  int(y * 100)),x)), [print_results_(arg) for arg in args]))
-        headers = ['predicate'] + [game for game in game_names('data/test')]
+        scores = [[arg[1]] + list(map(lambda y:  int(y * 100), print_results_(arg))) for arg in args]
+
+        #data += list(map(lambda x: list(map((lambda y:  int(y * 100)),x)), [print_results_(arg) for arg in args]))
+        #headers = ['predicate'] + [game for game in game_names('data/test')]
         if not latex:
-            print(system)
-            print(tabulate(list(zip(*data)),headers=headers))
+            print(system.name)
+            print(tabulate(scores),headers=headers)
         else:
             ret.append((system.name, tabulate(list(zip(*data)),headers=headers,tablefmt="latex")))
     if latex:

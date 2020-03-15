@@ -3,6 +3,7 @@
 /runner/data
 /runner/results
 /runner/logs
+/runner/programs
 /my-files
 *.pyc
 /ggp-base-sancho/bin
