@@ -110,11 +110,13 @@ arg = sys.argv[1]
 if arg == 'gen_games':
     gen_games(sys.argv[2], int(sys.argv[3]))
 if arg == 'test':
-    r = requests.get("http://games.ggp.org/stanford/games/")
-    game_list = list(map(lambda x : x.strip('"') ,r.text.strip('[').strip(']').split(',')))
-    for game in game_list:
-        print(game)
-        print(get_num_roles(game))
+    tourney_name = 'random'
+    with open(tourney_name + "_results.txt",'a') as f:
+        f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
+        res = runner.print_nice(latex=True)
+        for sys_name, res_table in res:
+            f.write(sys_name + '\n')
+            f.write(res_table + '\n')
 if arg == 'train':
     move_json_files(sys.argv[2])
     run_ilp(sys.argv[2])
