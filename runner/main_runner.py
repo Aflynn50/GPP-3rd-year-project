@@ -9,7 +9,7 @@ import re
 import os
 import runner
 
-tourney_names = ["optimaltraces","randomtraces"]
+tourney_names = ["optimaltraces_iggp","randomtraces_iggp"]
 optimal = True
 runner_dir = "/home/alastairflynn50_gmail_com/GPP-3rd-year-project/runner/"
 
