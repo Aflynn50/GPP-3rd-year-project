@@ -172,6 +172,9 @@ def print_nice(latex=False):
     else: 
         print(tabulate(table,headers=headers))
 
+def print_pgfplot():
+    pass
+
 def parse_train_and_test():
     systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse,systems))

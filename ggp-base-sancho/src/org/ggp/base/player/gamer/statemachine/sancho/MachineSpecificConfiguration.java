@@ -199,10 +199,6 @@ public class MachineSpecificConfiguration
         System.err.println("Missing/invalid machine-specific configuration for " + lComputerName);
       }
     }
-    else
-    {
-      System.err.println("Failed to identify computer name - no environment variable COMPUTERNAME or HOSTNAME");
-    }
   }
 
   /**

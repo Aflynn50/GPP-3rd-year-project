@@ -10,6 +10,8 @@ import java.util.List;
 import org.ggp.base.server.GameServer;
 import org.ggp.base.util.game.CloudGameRepository;
 import org.ggp.base.util.game.Game;
+import org.ggp.base.util.game.GameRepository;
+import org.ggp.base.util.game.LocalGameRepository;
 import org.ggp.base.util.match.Match;
 import org.ggp.base.util.statemachine.Role;
 import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
@@ -62,7 +64,20 @@ public final class GameServerRunner
     String tourneyName = args[0];
     String repoName = args[1];
     String gameKey = args[2];
-    Game game = new CloudGameRepository(repoName).getGame(gameKey);
+    
+    
+    GameRepository theSelectedRepository;
+    
+	if (repoName.equals("local"))
+    {
+      theSelectedRepository = new LocalGameRepository();
+    }
+    else
+    {
+      theSelectedRepository = new CloudGameRepository(repoName);
+    }
+    
+    Game game = theSelectedRepository.getGame(gameKey);
     int startClock = Integer.valueOf(args[3]);
     int playClock = Integer.valueOf(args[4]);
     int moveLimit = Integer.valueOf(args[5]);
