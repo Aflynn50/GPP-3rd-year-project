@@ -16,7 +16,7 @@ optimal = True
 runner_dir = git_root + "runner/"
 cp_pre = git_root + "ggp-base-sancho/src/external/"
 local_games_dir = git_root + "ggp-base-sancho/games/games/"
-local_games = next(os.walk(local_games_dir)[1]
+local_games = next(os.walk(local_games_dir))[1]
 
 
 def get_server(game,num_players,optimal=True):
