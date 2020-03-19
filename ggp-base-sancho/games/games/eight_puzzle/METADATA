@@ -1,0 +1,5 @@
+{
+  "gameName": "eight_puzzle",
+
+  "rulesheet": "eight_puzzle.kif",
+}
