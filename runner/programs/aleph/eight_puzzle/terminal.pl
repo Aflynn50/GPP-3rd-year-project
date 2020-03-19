@@ -1,1 +1,1 @@
-terminal(51).
+terminal(31).

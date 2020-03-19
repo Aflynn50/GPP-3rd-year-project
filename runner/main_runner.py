@@ -97,9 +97,7 @@ def run_ilp(game_type):
     with open(tourney_name + "_results.txt",'a') as f:
         f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
         res = runner.print_nice(latex=True)
-        for sys_name, res_table in res:
-            f.write(sys_name + '\n')
-            f.write(res_table + '\n')
+        f.write(res)
     
 
 
@@ -110,13 +108,11 @@ arg = sys.argv[1]
 if arg == 'gen_games':
     gen_games(sys.argv[2], int(sys.argv[3]))
 if arg == 'test':
-    tourney_name = 'random'
+    tourney_name = 'optimal'
     with open(tourney_name + "_results.txt",'a') as f:
         f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
         res = runner.print_nice(latex=True)
-        for sys_name, res_table in res:
-            f.write(sys_name + '\n')
-            f.write(res_table + '\n')
+        f.write(res)
 if arg == 'train':
     move_json_files(sys.argv[2])
     run_ilp(sys.argv[2])
