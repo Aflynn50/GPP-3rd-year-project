@@ -2,16 +2,23 @@
 %\ac{Use paragraphs}
 
 \section{GGP}
-General game playing is a framework for evaluating an agenet's general intelligence accross a wide range of tasks \cite{Cropper/IGGP}. The idea is that agents are able to accept declarative descriptions of arbitrary games at run time and are able to use such descriptions to play those games effectively. All the games are finite, discrete, deterministicmulti-player games of complete information. The games can vary in number of players, dimensions and complexy. For example games such as rock paper scissons have 0 dimensions and only 10 rules in the given GGP ruleset, more complex games such as checkers has 52 rules and is 2 dimensional. There are also single player games such as eight-puzzle or Fizz Buzz. The agents play games selected from an exsisting database which lists their descriptions described in the Game Description Language (GDL). GDL is a language based on first order logic described in section \ref{sec:GDL}. The list of games along with their descriptions is available online\cite{GGP-Website}. Matches in the GGP framework take place through an online framework called the Gamemaster. The agents connect to an online Game Manager (part of the Gamemaster) service which arbitrates indavidual matches. The connecting agents send several pieces of information to the Game Manger incliding a game that is already know by the manager and the required number of players. The match can then be started by pressing a start button, when pressed the agents will recive a \textit{Start} message including the role of the player (e.g. black or white in chess) and a description on the game in GDL. The Game Manger communicates all instructions to the players through HTTP\cite{Genesereth/GGPOverview}.
 
-In 2005 an annual International General Game Playing Competition (IGGPC) was set up which still runs to this day. Each year hopeful participants pit GGP agents against one another to find the best one. The competitors take part in a series of rounds of increasing complexity. The agent that wins the most games in these rounds is the winner. The 2014 winner Sancho is used in this paper to generate optimal game traces for the IGGP task. The Game description language is used in the IGGP as an example of the rules to learn and the rules to use when generating examples. It is a type of logical programming language.
+General game playing is a framework for evaluating an agenet's general intelligence accross a wide range of tasks \cite{Cropper/IGGP}. The idea is that agents are able to accept declarative descriptions of arbitrary games at run time and are able to use such descriptions to play those games effectively. All the games are finite, discrete, deterministic multi-player games of complete information. The games also vary in number of players, dimensions and complexy. For example games such as rock paper scissons have 0 dimensions and only 10 rules in the given GGP ruleset, more complex games such as checkers has 52 rules and are 2 dimensional. There are also single player games such as Eight Puzzle or Fizz Buzz.
+
+The agents play games selected at random. They are send a listing of the rules descirbed in the Game Description Language (GDL). GDL is a language based on first order logic described in section \ref{sec:GDL}. The list of games along with their descriptions are available online \footnote{http://ggp.stanford.edu/iggpc/ accessed on 17/03/2020}. Matches in the GGP framework take place through an online framework called the Gamemaster. The agents connect to an online Game Manager (part of the Gamemaster) service which arbitrates indavidual matches. The connecting agents send several pieces of information to the Game Manger incliding a game that is already know by the manager and the required number of players. The match can then be started by pressing a start button, when pressed the agents will recive a \textit{Start} message including the role of the player (e.g. black or white in chess) and a description on the game in GDL. The Game Manger communicates all instructions to the players through HTTP\cite{Genesereth/GGPOverview}.
+
+In 2005 an annual International General Game Playing Competition (IGGPC) was set up which still runs to this day\cite{Kowalski/GGP}. Each year hopeful participants pit GGP agents against one another to determine the most effective system. The competitors take part in a series of rounds of increasing complexity. The agent that wins the most games in these rounds is declared victorious. The 2014 winner Sancho is used in this paper to generate optimal game traces for the IGGP task. The game descriptions written in GDL used in the GGP competition can be used as ideal rule sets for systems in Inductive General Game Playing (IGGP) to generate. The descriptions of the games used in GGP are not necessarily minimal so it is possible that an ILP system could generate a more concise ruleset the the GGP descriptions.
 
 \subsection{GDL}\label{sec:GDL}
-Game definition language is the formal language used in the GGP competition to specify the rules of the games.\cite{GDL_Spec} It is suited to specifying game rules because:
+Game definition language is the formal language used in the GGP competition to specify the rules of the games.\cite{GDL_Spec} The language is based off logical programming languages such as Prolog and is in fact a logical programming language itself. 
+\subsubsection{Logical Programming}
+Logic programming is a programming paradigm based on formal logic. Programs are made up of facts and rules. Rules are made up of two parts: the head and the body. They can be read as logical implications where the conjunction of all the elements in the body imply the head. The syntax is different for different logical programming languages but the head is usually written before the body. A fact is simply a rule without a body, that is, a statement that is taken as true. The compiler takes queries and returns weather they are true of false. If there are free variables in the query the compiler assigns them values for which the query is true. Logical programming is good for symbolic non-numeric computation. It is well suited to solving problems that involve well defined objects and relations between them, such as a GGP game.
+\subsubsection{Usefulness of GDL}
+The game description language was designed specifically to represent finite, discrete, deterministic multi-player games of complete information. It is suited to specifying game rules because:
 \begin{itemize}
 \item It is a purely declarative language
 \item It has restrictions to ensure that all questions of logical entailment are decidable
-\item There are some reserved words, which tailor the language to the task of defining games
+\item There are some reserved words (such as \textit{terminal} or \textit{goal}), which tailor the language to the task of defining games
 \end{itemize}
 These descriptions define the games in terms of a set of true facts capturing the information needed to give the following predicates:
 \begin{itemize}
@@ -25,14 +32,8 @@ In addition, logical rules are used to describe the following:
 \item The next state for a given player state and move
 \item The termination and goal conditions
 \end{itemize}
-In the IGGP problem the tasks are the rules for the goal, the next state, the legal states and the terminal state.
-
-
-\section{Logical Programming}
-Logic programming is a programming paradigm based on formal logic. Programs are made up of facts and rules. Rules are made up of two parts: the head and the body. They can be read as logical implications where the conjunction of all the elements in the body imply the head. The syntax is different for different logical programming languages but the head is usually written before the body. A fact is simply a rule without a body, that is, a statement that is taken as true. The compiler takes queries and returns weather they are true of false. If there are free variables in the query the compiler assigns them values for which the query is true. Logical programming is good for symbolic non-numeric computation. It is well suited to solving problems that involve well defined objects and relations between them, such as a GGP game.
-
-
-
+In the IGGP problem the given task is to generate the rules for the goal, the next state, the legal states and the terminal state.
+%more examples?
 
 \section{Prolog}
 Prolog is one of the most popular and well used logical programming languages. The syntax in Prolog for rules and facts is fairly intuitive. A simple fact might be \mintinline{Prolog}{son(bob,alice).}. This tells us that the atom \mintinline{Prolog}{alice} relates the atom \mintinline{Prolog}{bob} in the \mintinline{Prolog}{son} relation. A rule is written \mintinline{Prolog}{parent(X,Y) :- son(Y,X)} which means if we have the relation son of Y and X then X relates Y in parent. The symbol :- is the same as reverse implication ($\Leftarrow$). We can query a program in the Prolog environment. If we typed in "\mintinline{Prolog}{parent(alice,bob).}" then it would return true because we have \mintinline{Prolog}{son(bob,alice)} and the rule which tells us that if X is a son of Y else then Y is a parent of X so \mintinline{Prolog}{alice} is a parent of \mintinline{Prolog}{bob}. Predicates can be conjoined with the comma "," (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y), c(Z,Y)}). Disjunction is expressed with the semicolon ";" (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y) ; c(Z,Y)}.
@@ -69,7 +70,9 @@ the program listing is wearched for a term to unify with. The listing is searche
 
 
 \section{IGGP}
-The IGGP problem uses the GDL game descriptions from the GGP framework to construct the IGGP dataset containing 50 games. The IGGP problem itself is described in section \ref{sec:LogicalSetting}. A machanism is also provided by Andrew Cropper et al. \cite{Cropper/IGGP} to turn the GGP games into new IGGP tasks. This mechanism has been modified and added to to generate optimal traces.
+The Inductive General Game Playing (IGGP) problem is an inversion of the GGP problem. Rather than using game rules to generate gameplay the learner must learn the rules of the game by watching others play. The learner is given a set of game traces and is tasked with using them to induce (learn) the rules of the game that could have produced the traces\cite{Cropper/IGGP}.
+
+The IGGP dataset, also given in the same paper as the definition of the problem contains a set of 50 games written in GDL for learning. The IGGP problem itself is described in section \ref{sec:LogicalSetting}. A mechanism is also provided to turn these GDL game descriptions into new IGGP tasks. In this paper we modify the mechanism to generate optimal traces.
 
 
 \section{ILP}\label{sec:ILP}
