@@ -72,10 +72,9 @@ the program listing is wearched for a term to unify with. The listing is searche
 \section{IGGP}
 The Inductive General Game Playing (IGGP) problem is an inversion of the GGP problem. Rather than using game rules to generate gameplay the learner must learn the rules of the game by watching others play. The learner is given a set of game traces and is tasked with using them to induce (learn) the rules of the game that could have produced the traces\cite{Cropper/IGGP}.
 
-The IGGP dataset, also given in the same paper as the definition of the problem contains a set of 50 games written in GDL for learning. The IGGP problem itself is described in section \ref{sec:LogicalSetting}. A mechanism is also provided to turn these GDL game descriptions into new IGGP tasks. In this paper we modify the mechanism to generate optimal traces.
+The task itself is based on the Inductive logic programming problem.
 
-
-\section{ILP}\label{sec:ILP}
+\subsection{ILP}\label{sec:ILP}
 Inductive logic programming is a form of machine learning that uses logic programming to represent examples, background knowledge, and learned programs\cite{Cropper/EfficientLearning}. To learn the program is supplied with positive examples, negative examples and the background knowledge. In the general inductive setting we are provided with three languages.
 \begin{itemize}
 \item $\mathcal{L}_O$: the language of observations (positive and negative examples)
@@ -88,6 +87,20 @@ That is that the generated hypothesis and the background knowledge imply the pos
 Example task (grandparent relation)
 
 ILP systems generally regard ILP as a search problem. The search space is the set of well formed hypothesis. Often a set of inference rules are applied to the starting hypothesis, the new hypothesise are then pruned and expanded according to how often $B \wedge H \vDash O$ in the observations $O$. When all the observations are implied then a correct program has been found.
+
+\subsection{Back to IGGP}
+
+In IGGP we also have the idea of background knowledge and positive or negative observations. All three are given in the form of a set of ground atoms. The task is to come up with a rule that, when combined with the background knowledge, implies all of the positive examples and none of the negative examples. An example of a typical IGGP problem is given below
+
+%Show example IGGP task
+
+The IGGP problem itself is described in section \ref{sec:LogicalSetting}.
+
+The IGGP dataset, also given in the same paper as the definition of the problem. It is a collection of 50 games, specified in GDL. The purpose of this database is to standardises the set of games used in the IGGP problem to allow for results to be easily compared. It is in fact the set of games that this paper is based on. 
+A mechanism is also provided by the authors to turn these GDL game descriptions in the set into new IGGP tasks. This method plays the games randomly to generate the observations. In this paper we modify the mechanism to generate optimal game traces.
+
+
+
 
 
 
