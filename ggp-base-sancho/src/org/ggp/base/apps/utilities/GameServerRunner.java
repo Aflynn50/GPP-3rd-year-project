@@ -160,6 +160,10 @@ public final class GameServerRunner
 	bw.write(playerStr + "=" + goalStr);
 	bw.flush();
 	bw.close();
-    
+	if (theSelectedRepository instanceof LocalGameRepository)
+    {
+		((LocalGameRepository)theSelectedRepository).cleanUp();
+    }
+
   }
 }
