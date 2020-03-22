@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -212,16 +213,25 @@ public final class GameServer extends Thread implements Subject
         currentState = stateMachine.getNextState(currentState, previousMoves);
         
         try {
-    		legalMoves = getLegalMoves();
-    		match.appendLegalMoves(legalMoves);
-    	} catch (MoveDefinitionException e) {
-    		List<List<Move>> emptyList = new ArrayList<>();
-    		match.appendLegalMoves(emptyList);
-    	}        
+          legalMoves = getLegalMoves();
+          match.appendLegalMoves(legalMoves);
+        } catch (MoveDefinitionException e) {
+        	System.out.println("Legal move exception");
+        }        
         
         match.appendMoves2(previousMoves);
         match.appendState(currentState.getContents());
         match.appendGoals(stateMachine.getGoals(currentState));
+        
+        try {
+    		match.appendGoals(stateMachine.getGoals(currentState));
+    	} catch (GoalDefinitionException e) {
+    		List<Integer> emptyList = new ArrayList<>(match.getNumPlayers()); 
+            for(int i=0; i < match.getNumPlayers(); i++){
+                emptyList.add(0);
+            }
+    		match.appendGoals(emptyList);
+    	}
         appendErrorsToMatchDescription();
 
         if (match.isMoveLimitExceeded())
