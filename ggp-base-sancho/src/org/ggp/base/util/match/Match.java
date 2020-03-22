@@ -208,6 +208,11 @@ public final class Match
   {
     this.isAborted = true;
   }
+  
+  public int getNumPlayers()
+  {
+	return numRoles;
+  }
 
   /* Complex accessors */
 
