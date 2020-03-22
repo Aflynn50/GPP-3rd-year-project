@@ -1,0 +1,5 @@
+{
+  "gameName": "sudoku",
+
+  "rulesheet": "sudoku.kif",
+}

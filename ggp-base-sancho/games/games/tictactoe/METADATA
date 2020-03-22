@@ -1,0 +1,5 @@
+{
+  "gameName": "tictactoe",
+
+  "rulesheet": "tictactoe.kif",
+}

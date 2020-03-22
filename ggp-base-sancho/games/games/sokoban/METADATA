@@ -1,0 +1,5 @@
+{
+  "gameName": "sokoban",
+
+  "rulesheet": "sokoban.kif",
+}
