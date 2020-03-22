@@ -61,7 +61,10 @@ def gen_games(game_type,repetitions):
         raise Exception("bad game type (optimal or random)")
     global local_games
     print(local_games)
-    local_games = local_games[10:]
+    local_games = local_games[19:]
+    local_games.remove('minimal_even')
+    local_games.remove('scissors_paper_stone')
+    local_games.remove('minimal_decay')
     for game in local_games:
         print('\n' + "Starting " + game + ' at ' + time.strftime("%d %b %H:%M:%S", time.gmtime()) + "\n")
         num_players = get_num_roles(game)
