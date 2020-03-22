@@ -86,15 +86,21 @@ public final class GameServer extends Thread implements Subject
     match.appendState(currentState.getContents());
     try {
 		legalMoves = getLegalMoves();
+		match.appendLegalMoves(legalMoves);
 	} catch (MoveDefinitionException e) {
 		e.printStackTrace();
 	}
     
     match.appendLegalMoves(legalMoves);
+    
     try {
 		match.appendGoals(stateMachine.getGoals(currentState));
 	} catch (GoalDefinitionException e) {
-		e.printStackTrace();
+		List<Integer> emptyList = new ArrayList<>(match.getNumPlayers()); 
+        for(int i=0; i < match.getNumPlayers(); i++){
+            emptyList.add(0);
+        }
+		match.appendGoals(emptyList);
 	}
     
 
@@ -221,7 +227,6 @@ public final class GameServer extends Thread implements Subject
         
         match.appendMoves2(previousMoves);
         match.appendState(currentState.getContents());
-        match.appendGoals(stateMachine.getGoals(currentState));
         
         try {
     		match.appendGoals(stateMachine.getGoals(currentState));
