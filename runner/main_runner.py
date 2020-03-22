@@ -10,10 +10,10 @@ import os
 import runner
 
 tourney_names = ["optimaltraces_iggp","randomtraces_iggp"]
-#git_root = "/home/alastairflynn50_gmail_com/GPP-3rd-year-project/"
-#java = "/home/alastairflynn50_gmail_com/jdk1.8.0_202/bin/java"
-git_root = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/"
-java = "/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/bin/java"
+git_root = "/home/alastairflynn50_gmail_com/GPP-3rd-year-project/"
+java = "/home/alastairflynn50_gmail_com/jdk1.8.0_202/bin/java"
+#git_root = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/"
+#java = "/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/bin/java"
 optimal = True
 runner_dir = git_root + "runner/"
 cp_pre = git_root + "ggp-base-sancho/src/external/"
@@ -59,12 +59,12 @@ def gen_games(game_type,repetitions):
         optimal = False
     else:
         raise Exception("bad game type (optimal or random)")
-    
+    global local_games
     print(local_games)
+    local_games = local_games[10:]
     for game in local_games:
         print('\n' + "Starting " + game + ' at ' + time.strftime("%d %b %H:%M:%S", time.gmtime()) + "\n")
         num_players = get_num_roles(game)
-        print("number of players is " + str(num_players))
         server_runner = get_server(game,num_players,optimal=optimal)
         player_runners = [get_player(x,optimal=optimal) for x in range(num_players)]
         for repetition in range(repetitions):
