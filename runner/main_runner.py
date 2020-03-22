@@ -115,11 +115,8 @@ arg = sys.argv[1]
 if arg == 'gen_games':
     gen_games(sys.argv[2], int(sys.argv[3]))
 if arg == 'test':
-    tourney_name = 'optimal'
-    with open(tourney_name + "_results.txt",'a') as f:
-        f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
-        res = runner.print_nice(latex=True)
-        f.write(res)
+    for game in local_games:
+        print(str(get_num_roles(game)) + "  " + game)
 if arg == 'train':
     move_json_files(sys.argv[2])
     run_ilp(sys.argv[2])

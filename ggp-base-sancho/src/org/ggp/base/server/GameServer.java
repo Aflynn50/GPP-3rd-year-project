@@ -211,9 +211,14 @@ public final class GameServer extends Thread implements Subject
         notifyObservers(new ServerNewMovesEvent(previousMoves));
         currentState = stateMachine.getNextState(currentState, previousMoves);
         
-        legalMoves = getLegalMoves();
+        try {
+    		legalMoves = getLegalMoves();
+    		match.appendLegalMoves(legalMoves);
+    	} catch (MoveDefinitionException e) {
+    		List<List<Move>> emptyList = new ArrayList<>();
+    		match.appendLegalMoves(emptyList);
+    	}        
         
-        match.appendLegalMoves(legalMoves);
         match.appendMoves2(previousMoves);
         match.appendState(currentState.getContents());
         match.appendGoals(stateMachine.getGoals(currentState));
