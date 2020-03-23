@@ -172,7 +172,7 @@ def print_nice(latex=False):
     else: 
         print(tabulate(table,headers=headers))
 
-def print_pgfplot():
+def print_pgfplot(): # print plain table
     pass
 
 def parse_train_and_test():

@@ -29,7 +29,7 @@
     - What precisely is the problem?
     - You can paraphrase a lot from the IGGP paper
 
-The IGGP problem is defined in Andrew Croppers paper Inductive general game playing \cite{Cropper/IGGP}. Much like the problem of ILP \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
+The IGGP problem is defined in the 2019 paper Inductive General Game Playing \cite{Cropper/IGGP}. Much like the problem of ILP \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
 \begin{itemize}
 \item $\mathscr{E}$ the language of examples (observations)
 \item $\mathscr{B}$ the language of background knowledge
@@ -83,6 +83,12 @@ Sancho makes a few modifications to MCTS\footnote{https://sanchoggp.blogspot.com
 In GGP matches a period of time before the match is given in which to do pre match calculations. Sancho uses this period to derive basic heuristics and optimise the value of $c$ in the formulae. A heuristic should take a game state or move and return a value based on how promising that state or move is in relation to the goal state. To take the heuristics into account when choosing the next state to explore each node (state) $v$ is seeded with a heuristic value on creation.
 
 The identification of possible heuristics takes place in two stages. The first of these is static analysis of the game rules. This static analysis identifies possible heuristics that can be applied to the current game. These include things like piece capture: if certain rules indicate capture of a piece these can be selected against, or numeric quantity detection: a number in the state acts as a heuristic (like number of coins a player has). The second stage is simulation of the game. Many (possibly tens of thousands) of full simulations of the game are run. After the simulations are complete a correlation coefficient is calculated between each candidate heuristic's observed values and the eventual score achieved in the game. Those heuristics that show correlation above a fixed threshold are then enabled, and will be used during play.
+
+\chapter{ILP systems used}
+We use three ILP systems to compare the effects of different learning data, Metagol, Aleph and ILASP. All three systems use different approaches the ILP problem.
+\section{Metagol}
+\section{ALEPH}
+\section{ILASP}
 \chapter{Implementations}
 \section{Eight Puzzle}
 To write an optimal player for Eight Puzzle I decide to use an approach based on best first search.
