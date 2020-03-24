@@ -1,26 +1,40 @@
 \begin{abstract}
 
 %\ac{GGP is ....}
-General Game Playing (GGP) is a framework in which an artificial intelligence program is required to play a variety of games successfully. The framework includes repositories of game descriptions written in a logic programming language. These game descriptions can be used separately as an interesting Inductive Logic Programming problem.	
-%\ac{more, why is it interesting?}
+General Game Playing (GGP) is a framework in which an artificial intelligence program is required to play a variety of games successfully.
+The framework includes repositories of game descriptions written in a logic programming language.
+\ac{Need to better explain what GGP is. }
+\ac{Why is GGP interesting?}
 
 %\ac{IGGP is ....}
-The Inductive General Game Playing (IGGP) problem challenges ILP systems to learn these GGP game rules by watching the game being played. This challenge motivates investigation into ways to better induce general rules from specific examples and provides a good test bed for existing ILP systems.
+\ac{The Inductive General Game Playing (IGGP) problem challenges ILP systems to learn these GGP game rules by watching the game being played.
+The above statement is precise. You could use a different ML approach (as we do in the IGGP paper).}
+In other words, IGGP is the problem of inducing general game rules from specific game observations.
+\ac{Why is IGGP interesting? Why is it challenging?}
+
+\ac{One promising approach to IGGP is inductive logic programming, a form of ML ....}
+\ac{talk very briefly about ILP used in IGGP}
+
+% These game descriptions can be used separately as an interesting Inductive Logic Programming problem.
+% examples and provides a good test bed for existing ILP systems.
+
 %\ac{more, why is it interesting?}
 
-%\ac{However, a limitation of existing work is ....}	
+%\ac{However, a limitation of existing work is ....}
 Existing work on IGGP has always assumed that the game player being observed makes random moves. This is not representative of how a human learns to play a game, to learn to play chess we watch someone who is playing to win.
-%\ac{more, why is it interesting?}
+\ac{emphasise this limitation more, why is your work interesting? why should anyone care?}
 
 %\ac{To address this limitation we, .....}
 To address this limitation, in this paper we analyse the effect of using optimal verses random gameplay traces as well as the effect of varying the number of traces in the training set.
 
-We use the General Game Playing competition winner in 2014, Sancho, to generate optimal game traces for a large number of games and the systems, Metagol, Aleph and ILASP are trained and tested with combinations of optimal and random data.
+We use Sancho, the 2014 GGP competition winner, to generate optimal game traces for a large number of games.
+We then use the ILP systems, Metagol, Aleph and ILASP to induce game rules from the traces.
+\ac{are trained and tested with combinations of optimal and random data. <- be very clear what you do}
 %\ac{Write with an active voice 'We use Sacho ...'}
 
-%\ac{Our results show ....}
+\ac{Our results show [can fill in later]}
 
-%\ac{The implication of this work is ....}
+\ac{The implications of this work are [can fill in later]}
 
 
 
