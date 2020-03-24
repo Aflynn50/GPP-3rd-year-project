@@ -13,11 +13,12 @@
 \newcommand{\ac}[1]{\textcolor{red}{AC: #1}}
 \newcommand{\af}[1]{\textcolor{blue}{AF: #1}}
 
-\pgfplotsset{width=10cm,compat=1.9} 
+\pgfplotsset{width=10cm,compat=1.9}
 \usemintedstyle{friendly}
 
 \begin{document}
-\title{\Large{\textbf{Inducing Game Rules from Varying Quality Game Play}}}
+\title{\Large{\textbf{Inducing game rules from varying quality game play}}}
+% \title{\Large{\textbf{Inductive general game playing with varying quality game play}}}
 \author{Alastair Flynn}
 \maketitle
 
@@ -43,8 +44,8 @@ The IGGP problem is defined in the 2019 paper Inductive General Game Playing \ci
 \end{itemize}
 An IGGP input forms the IGGP problem:
 
-\textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \vDash E_i^+$ and
-$H \cup B_i \nvDash E_i^−$
+\textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \models E_i^+$ and
+$H \cup B_i \models E_i^-$.
 
 
 \subsubsection{Problem Setting}
@@ -60,9 +61,9 @@ To generate optimal gameplay we decided that the best approach was to use a prev
 The core of Sancho is the Monte Carlo tree search (MCTS) algorithm.
 
 \subsubsection{Monte Carlo Tree Search}
-Given a game state the basic MCTS will return the most promising next move. The algorithm achives this by simulating random playouts of the game many times. The technique was developed for computer Go but has since been applied to play a wide range of games effectively including board games and video games\cite{Silver/MCTS}\cite{Chaslot/MCTS}. 
+Given a game state the basic MCTS will return the most promising next move. The algorithm achives this by simulating random playouts of the game many times. The technique was developed for computer Go but has since been applied to play a wide range of games effectively including board games and video games\cite{Silver/MCTS}\cite{Chaslot/MCTS}.
 
-The use of random simulation to evaluate game states is a powerful tool. Information about the game such as heuristics for evaluating non terminal states are not needed at all, the rules of the game are enough on their own. In the case of the GGP problem this is ideal. The rules of the game are only revealed shortly before the game is played meaning deriving effective heuristics is a hard problem. 
+The use of random simulation to evaluate game states is a powerful tool. Information about the game such as heuristics for evaluating non terminal states are not needed at all, the rules of the game are enough on their own. In the case of the GGP problem this is ideal. The rules of the game are only revealed shortly before the game is played meaning deriving effective heuristics is a hard problem.
 
 In our case all games being played are sequential, finite and discrete so we only need to consider MCTS for this case.
 %say why it is good for this
@@ -382,11 +383,11 @@ specialised ilasp
 	anchor=north,legend columns=-1},
 	ybar interval=0.7,
 ]
-\addplot 
+\addplot
 	coordinates {(2012,408184) (2011,408348)
 		 (2010,414870) (2009,412156)};
-\addplot 
-	coordinates {(2012,388950) (2011,393007) 
+\addplot
+	coordinates {(2012,388950) (2011,393007)
 		(2010,398449) (2009,395972)};
 \legend{Men,Women}
 \end{axis}
