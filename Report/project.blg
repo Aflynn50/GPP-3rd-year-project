@@ -18,45 +18,45 @@ Too many commas in name 1 of "Nathaniel Love, Timothy Hinrichs, David Haley, Eri
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Nathaniel Love, Timothy Hinrichs, David Haley, Eric Schkufza, Michael Genesereth" for entry GDL_Spec
 while executing---line 1090 of file plain.bst
-You've used 15 entries,
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            607 strings with 6876 characters,
-and the built_in function-call counts, 5067 in all, are:
-= -- 480
-> -- 277
+            624 strings with 7287 characters,
+and the built_in function-call counts, 5844 in all, are:
+= -- 556
+> -- 304
 < -- 2
-+ -- 112
-- -- 96
-* -- 375
-:= -- 860
-add.period$ -- 43
-call.type$ -- 15
-change.case$ -- 91
++ -- 123
+- -- 104
+* -- 419
+:= -- 994
+add.period$ -- 52
+call.type$ -- 18
+change.case$ -- 104
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 171
-empty$ -- 382
-format.name$ -- 96
-if$ -- 1028
+cite$ -- 19
+duplicate$ -- 206
+empty$ -- 454
+format.name$ -- 104
+if$ -- 1190
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 14
-newline$ -- 75
-num.names$ -- 28
-pop$ -- 98
+int.to.str$ -- 18
+missing$ -- 17
+newline$ -- 90
+num.names$ -- 34
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 78
+purify$ -- 88
 quote$ -- 0
-skip$ -- 121
+skip$ -- 144
 stack$ -- 0
-substring$ -- 289
-swap$ -- 26
+substring$ -- 329
+swap$ -- 30
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 68
 warning$ -- 1
-while$ -- 45
-width$ -- 17
-write$ -- 157
+while$ -- 53
+width$ -- 20
+write$ -- 189
 (There were 6 error messages)

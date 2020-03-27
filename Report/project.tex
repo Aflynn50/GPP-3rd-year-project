@@ -88,7 +88,29 @@ The identification of possible heuristics takes place in two stages. The first o
 \chapter{ILP systems used}
 We use three ILP systems to compare the effects of different learning data, Metagol, Aleph and ILASP. All three systems use different approaches the ILP problem.
 \section{Metagol}
+
 \section{ALEPH}
+Aleph is an Prolog variant of the ILP system Progol \cite{Muggleton/Aleph}. As input, like any other ILP system, Aleph takes positive and negative examples represented as a set of facts. It also requires \textit{mode declarations} and \textit{determinations} which are specific to Aleph. Mode declarations specify the type of the inputs and outputs of each predicate used e.g. \texttt{plus(+integer,+integer,-integer)} where \texttt{+} signifies an input and \texttt{-} an output.
+Determinations specify which predicates can go in the body of a hypothesis. These determinations take the form of pairs of predicates, the first being the head of the clause and the second a predicate that can appear in its body.
+
+For each predicate we would like to learn in the IGGP problem we give Aleph the determinations consisting of every target predicate (next,goal and legal) paired with every background predicate (which are specific to each game). Luckily there has been some work to induce mode declarations from the determinations \cite{McCreath/Meta-extraction} so we do not need to come up with our own mode declarations.
+
+A basic outline of the Aleph algorithm is taken from the aleph website \footnote{http://www.cs.ox.ac.uk/activities/programinduction/Aleph/aleph.html accessed 26/03/2020}:
+\begin{enumerate}
+\item Select an example to be generalised. If none exist, stop, otherwise proceed to the
+next step.
+\item Construct the most specific clause (also known as the bottom clause \cite{Muggleton/Aleph}) that entails
+the example selected and is within language restrictions provided.
+\item Search for a clause more general than the bottom clause. This step is done by search-
+ing for some subset of the literals in the bottom clause that has the 'best' score.
+\item The clause with the best score is added to the current theory and all the examples
+made redundant are removed. Return to step 1.
+\end{enumerate}
+
+Mode declarations and determinations are used in step 2 of this procedure to bound the hypothesis space. Only predicates that are mentioned in the determinations of the hypothesis and are of the correct type are tried. The bottom clause constructed is the most specific clause that entails the example. Therefore a clause with the same head and any subset of the predicates of the body will be more general than the bottom clause. Aleph only considers these generalisations of this bottom clause. The search space is therefore bounded by $2^n$ with $n$ being the number of predicates in the bottom clause.
+
+By default Aleph preforms a bounded breath first search on all the possible rules, enumerating shorter clauses before longer clauses. The search is bounded by several parameters such as maximum clause size and maximum proof depth. The best score is selected as the one with the best $P - N$ value where $P$ is the number of positive rules entailed by the hypothesis and $N$ is the number of negative rules entailed. For this paper we will use Aleph with the default settings.
+
 \section{ILASP}
 \chapter{Implementations}
 \section{Eight Puzzle}
