@@ -13,11 +13,12 @@
 \newcommand{\ac}[1]{\textcolor{red}{AC: #1}}
 \newcommand{\af}[1]{\textcolor{blue}{AF: #1}}
 
-\pgfplotsset{width=10cm,compat=1.9} 
+\pgfplotsset{width=10cm,compat=1.9}
 \usemintedstyle{friendly}
 
 \begin{document}
-\title{\Large{\textbf{Inducing Game Rules from Varying Quality Game Play}}}
+\title{\Large{\textbf{Inducing game rules from varying quality game play}}}
+% \title{\Large{\textbf{Inductive general game playing with varying quality game play}}}
 \author{Alastair Flynn}
 \maketitle
 
@@ -29,7 +30,7 @@
     - What precisely is the problem?
     - You can paraphrase a lot from the IGGP paper
 
-The IGGP problem is defined in Andrew Croppers paper Inductive general game playing \cite{Cropper/IGGP}. Much like the problem of ILP \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
+The IGGP problem is defined in the 2019 paper Inductive General Game Playing \cite{Cropper/IGGP}. Much like the problem of ILP \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
 \begin{itemize}
 \item $\mathscr{E}$ the language of examples (observations)
 \item $\mathscr{B}$ the language of background knowledge
@@ -43,8 +44,8 @@ The IGGP problem is defined in Andrew Croppers paper Inductive general game play
 \end{itemize}
 An IGGP input forms the IGGP problem:
 
-\textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \vDash E_i^+$ and
-$H \cup B_i \nvDash E_i^−$
+\textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \models E_i^+$ and
+$H \cup B_i \models E_i^-$.
 
 
 \subsubsection{Problem Setting}
@@ -60,9 +61,9 @@ To generate optimal gameplay we decided that the best approach was to use a prev
 The core of Sancho is the Monte Carlo tree search (MCTS) algorithm.
 
 \subsubsection{Monte Carlo Tree Search}
-Given a game state the basic MCTS will return the most promising next move. The algorithm achives this by simulating random playouts of the game many times. The technique was developed for computer Go but has since been applied to play a wide range of games effectively including board games and video games\cite{Silver/MCTS}\cite{Chaslot/MCTS}. 
+Given a game state the basic MCTS will return the most promising next move. The algorithm achives this by simulating random playouts of the game many times. The technique was developed for computer Go but has since been applied to play a wide range of games effectively including board games and video games\cite{Silver/MCTS}\cite{Chaslot/MCTS}.
 
-The use of random simulation to evaluate game states is a powerful tool. Information about the game such as heuristics for evaluating non terminal states are not needed at all, the rules of the game are enough on their own. In the case of the GGP problem this is ideal. The rules of the game are only revealed shortly before the game is played meaning deriving effective heuristics is a hard problem. 
+The use of random simulation to evaluate game states is a powerful tool. Information about the game such as heuristics for evaluating non terminal states are not needed at all, the rules of the game are enough on their own. In the case of the GGP problem this is ideal. The rules of the game are only revealed shortly before the game is played meaning deriving effective heuristics is a hard problem.
 
 In our case all games being played are sequential, finite and discrete so we only need to consider MCTS for this case.
 %say why it is good for this
@@ -83,6 +84,12 @@ Sancho makes a few modifications to MCTS\footnote{https://sanchoggp.blogspot.com
 In GGP matches a period of time before the match is given in which to do pre match calculations. Sancho uses this period to derive basic heuristics and optimise the value of $c$ in the formulae. A heuristic should take a game state or move and return a value based on how promising that state or move is in relation to the goal state. To take the heuristics into account when choosing the next state to explore each node (state) $v$ is seeded with a heuristic value on creation.
 
 The identification of possible heuristics takes place in two stages. The first of these is static analysis of the game rules. This static analysis identifies possible heuristics that can be applied to the current game. These include things like piece capture: if certain rules indicate capture of a piece these can be selected against, or numeric quantity detection: a number in the state acts as a heuristic (like number of coins a player has). The second stage is simulation of the game. Many (possibly tens of thousands) of full simulations of the game are run. After the simulations are complete a correlation coefficient is calculated between each candidate heuristic's observed values and the eventual score achieved in the game. Those heuristics that show correlation above a fixed threshold are then enabled, and will be used during play.
+
+\chapter{ILP systems used}
+We use three ILP systems to compare the effects of different learning data, Metagol, Aleph and ILASP. All three systems use different approaches the ILP problem.
+\section{Metagol}
+\section{ALEPH}
+\section{ILASP}
 \chapter{Implementations}
 \section{Eight Puzzle}
 To write an optimal player for Eight Puzzle I decide to use an approach based on best first search.
@@ -376,11 +383,11 @@ specialised ilasp
 	anchor=north,legend columns=-1},
 	ybar interval=0.7,
 ]
-\addplot 
+\addplot
 	coordinates {(2012,408184) (2011,408348)
 		 (2010,414870) (2009,412156)};
-\addplot 
-	coordinates {(2012,388950) (2011,393007) 
+\addplot
+	coordinates {(2012,388950) (2011,393007)
 		(2010,398449) (2009,395972)};
 \legend{Men,Women}
 \end{axis}
