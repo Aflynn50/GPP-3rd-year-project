@@ -90,7 +90,7 @@ We use three ILP systems to compare the effects of different learning data, Meta
 \section{Metagol}
 
 \section{ALEPH}
-Aleph is an Prolog variant of the ILP system Progol \cite{Muggleton/Aleph}. As input, like any other ILP system, Aleph takes positive and negative examples represented as a set of facts. It also requires \textit{mode declarations} and \textit{determinations} which are specific to Aleph. Mode declarations specify the type of the inputs and outputs of each predicate used e.g. \texttt{plus(+integer,+integer,-integer)} where \texttt{+} signifies an input and \texttt{-} an output.
+Aleph is an Prolog variant of the ILP system Progol \cite{Muggleton/Aleph}. As input, like any other ILP system, Aleph takes positive and negative examples represented as a set of facts along with the background knowledge. It also requires \textit{mode declarations} and \textit{determinations} which are specific to Aleph. Mode declarations specify the type of the inputs and outputs of each predicate used e.g. \texttt{plus(+integer,+integer,-integer)} where \texttt{+} signifies an input and \texttt{-} an output.
 Determinations specify which predicates can go in the body of a hypothesis. These determinations take the form of pairs of predicates, the first being the head of the clause and the second a predicate that can appear in its body.
 
 For each predicate we would like to learn in the IGGP problem we give Aleph the determinations consisting of every target predicate (next,goal and legal) paired with every background predicate (which are specific to each game). Luckily there has been some work to induce mode declarations from the determinations \cite{McCreath/Meta-extraction} so we do not need to come up with our own mode declarations.

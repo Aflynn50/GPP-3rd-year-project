@@ -168,7 +168,7 @@ def print_nice(latex=False):
         scores_per_pred = list(zip(*([[game,game,game,game],['next','goal','legal','terminal']]+ scores_per_sys)))
         table += scores_per_pred
     if latex:
-        return tabulate(table,headers=headers,tablefmt="latex")
+        return tabulate(table,headers=headers,tablefmt="plain")
     else: 
         print(tabulate(table,headers=headers))
 
@@ -196,3 +196,5 @@ if __name__ == "__main__":
         list(map(print_results,systems))
     if arg == 'nice_results':
         print_nice()
+    if arg == 'latex':
+        print(print_nice(latex=True))
