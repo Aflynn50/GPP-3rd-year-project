@@ -17,5 +17,5 @@
 /Report/project.blg
 /Report/project.aux
 /Report/project.dvi
-/Report/project.log
+/Report/*.log
 /Report/project.synctex.gz
