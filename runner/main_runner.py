@@ -38,7 +38,7 @@ def get_player(num, optimal=True): # first player in num 0
         name = "Sancho"
     else:
         name = "RandomGamer"
-    return [java, "-Dfile.encoding=UTF-8", "-classpath", git_root + "ggp-base-sancho/bin:" + cp_pre + "FlyingSaucer/core-renderer.jar:" + cp_pre + "JTidy/Tidy.jar:" + cp_pre + "JGoodiesForms/forms-1.2.1.jar:" + cp_pre + "Clojure:" + cp_pre + "Clojure/clojure.jar:" + cp_pre + "JFreeChart/jcommon-1.0.17.jar:" + cp_pre + "JFreeChart/jfreechart-1.0.14.jar:" + cp_pre + "Guava/guava-14.0.1.jar:" + cp_pre + "reflections/reflections-0.9.9-RC1.jar:" + cp_pre + "javassist/javassist.jar:" + cp_pre + "JNA/jna-4.1.0.jar:" + cp_pre + "JNA/jna-platform-4.1.0.jar:" + cp_pre + "Disruptor/disruptor-3.2.1.jar:" + cp_pre + "Log4J/log4j-api-2.0-rc1.jar:" + cp_pre + "Log4J/log4j-core-2.0-rc1.jar:/home/alastairflynn50_gmail_com/GPP-3rd-year-project/ggp-base-sancho/data/cfg:" + cp_pre + "Commons/commons-compress-1.8.1/commons-compress-1.8.1.jar:" + cp_pre + "Commons/commons-codec-1.9/commons-codec-1.9.jar:" + cp_pre + "Lucene/lucene-core-4.8.1.jar:" + cp_pre + "Commons/commons-configuration-1.10/commons-configuration-1.10.jar:" + cp_pre + "Commons/commons-lang-2.6/commons-lang-2.6.jar:" + cp_pre + "Commons/commons-logging-1.1.3/commons-logging-1.1.3.jar:" + cp_pre + "JUnit/hamcrest-core-1.3.jar:" + cp_pre + "JUnit/junit-4.11.jar:" + cp_pre + "Trove/trove-3.1a1.jar", "org.ggp.base.apps.player.PlayerRunner", "9147", name]
+    return [java, "-Xms1024M", "-Dfile.encoding=UTF-8", "-classpath", git_root + "ggp-base-sancho/bin:" + cp_pre + "FlyingSaucer/core-renderer.jar:" + cp_pre + "JTidy/Tidy.jar:" + cp_pre + "JGoodiesForms/forms-1.2.1.jar:" + cp_pre + "Clojure:" + cp_pre + "Clojure/clojure.jar:" + cp_pre + "JFreeChart/jcommon-1.0.17.jar:" + cp_pre + "JFreeChart/jfreechart-1.0.14.jar:" + cp_pre + "Guava/guava-14.0.1.jar:" + cp_pre + "reflections/reflections-0.9.9-RC1.jar:" + cp_pre + "javassist/javassist.jar:" + cp_pre + "JNA/jna-4.1.0.jar:" + cp_pre + "JNA/jna-platform-4.1.0.jar:" + cp_pre + "Disruptor/disruptor-3.2.1.jar:" + cp_pre + "Log4J/log4j-api-2.0-rc1.jar:" + cp_pre + "Log4J/log4j-core-2.0-rc1.jar:/home/alastairflynn50_gmail_com/GPP-3rd-year-project/ggp-base-sancho/data/cfg:" + cp_pre + "Commons/commons-compress-1.8.1/commons-compress-1.8.1.jar:" + cp_pre + "Commons/commons-codec-1.9/commons-codec-1.9.jar:" + cp_pre + "Lucene/lucene-core-4.8.1.jar:" + cp_pre + "Commons/commons-configuration-1.10/commons-configuration-1.10.jar:" + cp_pre + "Commons/commons-lang-2.6/commons-lang-2.6.jar:" + cp_pre + "Commons/commons-logging-1.1.3/commons-logging-1.1.3.jar:" + cp_pre + "JUnit/hamcrest-core-1.3.jar:" + cp_pre + "JUnit/junit-4.11.jar:" + cp_pre + "Trove/trove-3.1a1.jar", "org.ggp.base.apps.player.PlayerRunner", "9147", name]
 
 
 def get_num_roles(game):
@@ -61,10 +61,6 @@ def gen_games(game_type,repetitions):
         raise Exception("bad game type (optimal or random)")
     global local_games
     print(local_games)
-    local_games = local_games[19:]
-    local_games.remove('minimal_even')
-    local_games.remove('scissors_paper_stone')
-    local_games.remove('minimal_decay')
     for game in local_games:
         print('\n' + "Starting " + game + ' at ' + time.strftime("%d %b %H:%M:%S", time.gmtime()) + "\n")
         num_players = get_num_roles(game)

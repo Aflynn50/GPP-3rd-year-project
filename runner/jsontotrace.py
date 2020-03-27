@@ -96,7 +96,9 @@ def goal(output_file,states,goals):
 
 def legal(output_file,states,legall):
     if len(legall) != len(states):
-        raise Exception('len(legal) != len(states) with output file ' + output_file) 
+        newlen = min(len(legall),len(states))
+        legall = legall[:newlen]
+        states = states[:newlen]
     with open(output_file, 'a') as output:
         for i in range(0,len(legall)):
             output.write('\n\nbackground:\n\t')
