@@ -395,6 +395,7 @@ specialised ilasp
 \hline
 \end{tabular}
 
+		
 \begin{tikzpicture}
 \begin{axis}[
 	x tick label style={
@@ -405,16 +406,15 @@ specialised ilasp
 	anchor=north,legend columns=-1},
 	ybar interval=0.7,
 ]
-\addplot
+\addplot 
 	coordinates {(2012,408184) (2011,408348)
 		 (2010,414870) (2009,412156)};
-\addplot
-	coordinates {(2012,388950) (2011,393007)
+\addplot 
+	coordinates {(2012,388950) (2011,393007) 
 		(2010,398449) (2009,395972)};
 \legend{Men,Women}
 \end{axis}
 \end{tikzpicture}
-
 \section{Optimal Play vs Random with varying sample size}
 \bibliography{project}
 \bibliographystyle{plain}
