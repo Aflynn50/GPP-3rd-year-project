@@ -160,11 +160,8 @@ def print_nice(latex=False):
     headers = ['game', 'predicate'] + [s.name for s in systems] 
     for game in game_names('data/test'):
         args = [(system, game, False) for system in systems]
-        # print_res_ returns a list of scores: [1,2,3,4]
-        # got 3 of these, one for each sys
-        # zip them to get triple of next, terminal... for each system
-        # 
         scores_per_sys = [list(map(lambda y:  int(y * 100), print_results_(arg))) for arg in args]
+
         scores_per_pred = list(zip(*([[game,game,game,game],['next','goal','legal','terminal']]+ scores_per_sys)))
         table += scores_per_pred
     if latex:
@@ -172,8 +169,13 @@ def print_nice(latex=False):
     else: 
         print(tabulate(table,headers=headers))
 
-def print_pgfplot(): # print plain table
-    pass
+def get_system_scores():
+    sys_scores = []
+    for system in systems:
+        args = [(system, game, False) for game in game_names('data/test')]
+        scores = [score for scores in map(print_results_, args) for score in scores]
+        sys_scores.append((system.name, int(np.mean(scores)*100), perfectly_correct(scores)))
+    return sys_scores
 
 def parse_train_and_test():
     systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
