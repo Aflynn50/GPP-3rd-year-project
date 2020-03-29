@@ -1,0 +1,96 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- agent(V0), pos(V1), dir(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- succ(V1, V6), agent(V0), pos(V1), dir(V2), pos(V6).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- quadrant(V1), agent(V0), pos(V1), dir(V2).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- true_cellholds(V1, V4, V5, V0), agent(V0), pos(V1), dir(V2), pos(V4), pos(V5).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- true_placecontrol(V9), true_cellholds(V1, V4, V5, V0), agent(V0), pos(V1), dir(V2), pos(V4), pos(V5), agent(V9).
+}
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- true_placecontrol(V9), true_cellholds(V7, V3, V4, V0), agent(V0), pos(V1), dir(V2), pos(V3), pos(V4), pos(V7), agent(V9).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- succ(V1, V7), true_placecontrol(V9), not true_placecontrol(V0), agent(V0), pos(V1), dir(V2), pos(V7), agent(V9).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- succ(V1, V7), true_placecontrol(V9), V9 = black, agent(V0), pos(V1), dir(V2), pos(V7), agent(V9).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- quadrant(V1), true_placecontrol(V9), true_cellholds(V7, V3, V4, V0), agent(V0), pos(V1), dir(V2), pos(V3), pos(V4), pos(V7), agent(V9).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- quadrant(V1), true_placecontrol(V9), not true_placecontrol(V0), agent(V0), pos(V1), dir(V2), agent(V9).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- quadrant(V1), true_placecontrol(V9), V9 = black, agent(V0), pos(V1), dir(V2), agent(V9).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+legal_rotate(V0, V1, V2) :- globalindex(V1, V3, V4, V7, V5), true_placecontrol(V9), true_cellholds(V7, V3, V4, V0), agent(V0), pos(V1), dir(V2), pos(V3), pos(V4), pos(V5), pos(V7), agent(V9).
+}
+inc: 2; exc: 10

@@ -1,0 +1,15 @@
+next_captures(1,1).
+next_captures(2,1).
+next_captures(3,2).
+next_captures(4,2).
+next_captures(5,2).
+next_captures(6,3).
+next_captures(7,3).
+next_captures(8,3).
+next_captures(9,3).
+next_captures(10,4).
+next_captures(11,5).
+next_captures(12,6).
+next_captures(13,7).
+next_captures(14,8).
+next_captures(15,9).

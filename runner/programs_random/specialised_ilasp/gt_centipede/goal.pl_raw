@@ -1,0 +1,181 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- V0 = black, agent(V0), int(V1).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- V1 = 10, agent(V0), int(V1).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+goal(V0, V1) :- succ(V13, V14), succ(V1, V13), V0 = black, agent(V0), int(V1), int(V13), int(V14).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- V0 = black, V1 = 0, agent(V0), int(V1).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_dir(V23, V24), V23 = c, V24 = right, agent(V0), int(V1).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V26, V26, V23), V23 = c, V26 = 1, agent(V0), int(V1).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_dir(V23, V24), V0 = black, V23 = c, V24 = right, agent(V0), int(V1).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V26, V26, V23), V0 = black, V23 = c, V26 = 1, agent(V0), int(V1).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- succ(V13, V14), succ(V1, V13), true_dir(V23, V24), V23 = c, V24 = right, agent(V0), int(V1), int(V13), int(V14).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- succ(V13, V14), succ(V1, V13), true_at(V26, V26, V23), V23 = c, V26 = 1, agent(V0), int(V1), int(V13), int(V14).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_dir(V23, V24), V1 = 0, V23 = c, V24 = right, agent(V0), int(V1).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V26, V26, V23), V1 = 0, V23 = c, V26 = 1, agent(V0), int(V1).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_dir(V23, V24), V0 = black, V1 = 0, V23 = c, V24 = right, agent(V0), int(V1).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+goal(V0, V1) :- V0 = black, V1 = 10, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V26, V26, V23), V0 = black, V1 = 0, V23 = c, V26 = 1, agent(V0), int(V1).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+goal(V0, V1) :- true_dir(V23, V24), V0 = black, V1 = 10, V23 = c, V24 = left, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V26, V26, V23), V0 = black, V1 = 0, V23 = c, V26 = 1, agent(V0), int(V1).
+}
+inc: 2; exc: 16
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+goal(V0, V1) :- true_dir(V23, V24), V0 = black, V1 = 10, V23 = c, V24 = left, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V26, V26, V23), V0 = black, V1 = 0, V23 = c, V26 = 1, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V25, V26, V27), V1 = 10, V25 = 3, V26 = 1, V27 = x, agent(V0), int(V1).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+goal(V0, V1) :- true_dir(V23, V24), V0 = black, V1 = 10, V23 = c, V24 = left, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V26, V26, V23), V0 = black, V1 = 0, V23 = c, V26 = 1, agent(V0), int(V1).
+goal(V0, V1) :- true_at(V28, V29, V30), V1 = 10, V28 = 2, V29 = 8, V30 = o, agent(V0), int(V1).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+UNSATISFIABLE

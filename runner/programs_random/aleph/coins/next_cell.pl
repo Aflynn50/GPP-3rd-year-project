@@ -1,0 +1,16 @@
+next_cell(1,4,twocoins).
+next_cell(1,5,onecoin).
+next_cell(1,6,onecoin).
+next_cell(1,2,onecoin).
+next_cell(1,1,onecoin).
+next_cell(1,8,onecoin).
+next_cell(1,7,zerocoins).
+next_cell(1,3,onecoin).
+next_cell(2,4,twocoins).
+next_cell(2,6,onecoin).
+next_cell(2,2,onecoin).
+next_cell(2,1,onecoin).
+next_cell(2,8,onecoin).
+next_cell(2,7,zerocoins).
+next_cell(2,5,zerocoins).
+next_cell(2,3,twocoins).

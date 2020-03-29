@@ -124,15 +124,21 @@ def print_results_(args):
     inpath='exp/{}/test/{}/'.format(system.name, game)
     sub_targets=targets(inpath)
     scores = []
-    for target in ['next','goal','legal','terminal']:
+    for target in ['next','goal','legal']: #,'terminal']:
         target_scores=[]
         for sub_target in sub_targets:
             if sub_target.startswith(target):
                 resultsf='results/{}/{}/{}.pl'.format(system.name,game,sub_target)
                 target_scores += res_parser(resultsf)
-        if doprint:
-            print(game,target,int(balanced_acc(target_scores)*100))
-        scores.append(balanced_acc(target_scores))
+        bal_acc = balanced_acc(target_scores)
+        if bal_acc >= 0:
+            if doprint:
+                print(game,target,int(bal_acc*100))
+            scores.append(bal_acc)
+        else:
+            if doprint:
+                print(game,target,"error")
+            scores.append(0.5)
     return scores
 
 def print_results(system):
@@ -169,14 +175,6 @@ def print_nice(latex=False):
     else: 
         print(tabulate(table,headers=headers))
 
-def get_system_scores():
-    sys_scores = []
-    for system in systems:
-        args = [(system, game, False) for game in game_names('data/test')]
-        scores = [score for scores in map(print_results_, args) for score in scores]
-        sys_scores.append((system.name, int(np.mean(scores)*100), perfectly_correct(scores)))
-    return sys_scores
-
 def parse_train_and_test():
     systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse,systems))
@@ -200,3 +198,5 @@ if __name__ == "__main__":
         print_nice()
     if arg == 'latex':
         print(print_nice(latex=True))
+    if arg == 'scores':
+        list(map(print,get_system_scores()))

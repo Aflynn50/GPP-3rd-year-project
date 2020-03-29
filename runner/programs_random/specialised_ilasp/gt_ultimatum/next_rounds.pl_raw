@@ -1,0 +1,36 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_rounds(V0) :- index(V0), int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_rounds(V0) :- sum(V1, V0, V1), index(V0), int(V0), int(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_rounds(V0) :- sum(V0, V0, V5), index(V0), int(V0), index(V5), int(V5).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_rounds(V0) :- sum(V1, V0, V2), V1 = 99, index(V0), int(V0), int(V1), int(V2).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3

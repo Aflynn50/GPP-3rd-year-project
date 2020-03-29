@@ -1,0 +1,10 @@
+next_offered(1,0,10).
+next_offered(3,2,8).
+next_offered(5,3,7).
+next_offered(7,4,6).
+next_offered(9,4,6).
+next_offered(11,0,10).
+next_offered(13,1,9).
+next_offered(15,8,2).
+next_offered(17,9,1).
+next_offered(19,9,1).

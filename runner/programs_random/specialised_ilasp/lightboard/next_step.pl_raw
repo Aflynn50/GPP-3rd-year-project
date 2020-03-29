@@ -1,0 +1,49 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_step(V0) :- pos(V0), int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_step(V0) :- successor(V0, V7), pos(V0), int(V0), pos(V7), int(V7).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_step(V0) :- does_toggle(V9, V7, V0), pos(V0), int(V0), pos(V7), int(V7), agent(V9).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_step(V0) :- successor(V6, V5), successor(V0, V6), pos(V0), int(V0), pos(V5), int(V5), pos(V6), int(V6).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_step(V0) :- successor(V7, V0), true_step(V7), pos(V0), int(V0), pos(V7), int(V7).
+}
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_step(V0) :- successor(V1, V0), true_step(V1), int(V0), pos(V1), int(V1).
+}
+Finished

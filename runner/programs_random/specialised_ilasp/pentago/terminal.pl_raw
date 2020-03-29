@@ -1,0 +1,5878 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_cellholds(V5, V0, V2, V8), pos(V0), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_cellholds(V5, V1, V1, V8), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_cellholds(V0, V0, V2, V8), pos(V0), pos(V2), agent(V8).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_cellholds(V0, V2, V0, V9), pos(V0), pos(V2), agent(V9).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- true_cellholds(V2, V2, V2, V9), pos(V2), agent(V9).
+}
+inc: 0; exc: 6
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 7
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+terminal :- succ(V2, V0), true_cellholds(V2, V0, V0, V9), pos(V0), pos(V2), agent(V9).
+}
+inc: 0; exc: 8
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+terminal :- add(V0, V0, V4), true_cellholds(V2, V0, V2, V8), pos(V0), pos(V2), pos(V4), agent(V8).
+}
+inc: 0; exc: 9
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+terminal :- succ(V2, V0), true_cellholds(V5, V0, V2, V8), true_cellholds(V0, V2, V2, V9), pos(V0), pos(V2), pos(V5), agent(V8), agent(V9).
+}
+inc: 0; exc: 10
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V2, V1, V9), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8), agent(V9).
+}
+inc: 0; exc: 11
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 12
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 13
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 14
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 15
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 16
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 17
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 18
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 19
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 20
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 21
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 22
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 23
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 24
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 25
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 26
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 27
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 28
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 29
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 30
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 31
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 32
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 33
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 34
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 35
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 36
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 37
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 38
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 39
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 40
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 41
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 42
+--------------------------------------------
+Iteration 43:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 43
+--------------------------------------------
+Iteration 44:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 44
+--------------------------------------------
+Iteration 45:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 45
+--------------------------------------------
+Iteration 46:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 46
+--------------------------------------------
+Iteration 47:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 47
+--------------------------------------------
+Iteration 48:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 48
+--------------------------------------------
+Iteration 49:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 49
+--------------------------------------------
+Iteration 50:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 50
+--------------------------------------------
+Iteration 51:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 51
+--------------------------------------------
+Iteration 52:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 52
+--------------------------------------------
+Iteration 53:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 53
+--------------------------------------------
+Iteration 54:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 54
+--------------------------------------------
+Iteration 55:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 55
+--------------------------------------------
+Iteration 56:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 56
+--------------------------------------------
+Iteration 57:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 57
+--------------------------------------------
+Iteration 58:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 58
+--------------------------------------------
+Iteration 59:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 59
+--------------------------------------------
+Iteration 60:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 60
+--------------------------------------------
+Iteration 61:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 61
+--------------------------------------------
+Iteration 62:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 62
+--------------------------------------------
+Iteration 63:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 63
+--------------------------------------------
+Iteration 64:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 64
+--------------------------------------------
+Iteration 65:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 65
+--------------------------------------------
+Iteration 66:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 66
+--------------------------------------------
+Iteration 67:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 67
+--------------------------------------------
+Iteration 68:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 68
+--------------------------------------------
+Iteration 69:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 69
+--------------------------------------------
+Iteration 70:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 70
+--------------------------------------------
+Iteration 71:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 71
+--------------------------------------------
+Iteration 72:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 72
+--------------------------------------------
+Iteration 73:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 73
+--------------------------------------------
+Iteration 74:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 74
+--------------------------------------------
+Iteration 75:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 75
+--------------------------------------------
+Iteration 76:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 76
+--------------------------------------------
+Iteration 77:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 77
+--------------------------------------------
+Iteration 78:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 78
+--------------------------------------------
+Iteration 79:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 79
+--------------------------------------------
+Iteration 80:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 80
+--------------------------------------------
+Iteration 81:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 81
+--------------------------------------------
+Iteration 82:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 82
+--------------------------------------------
+Iteration 83:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 83
+--------------------------------------------
+Iteration 84:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 84
+--------------------------------------------
+Iteration 85:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 85
+--------------------------------------------
+Iteration 86:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 86
+--------------------------------------------
+Iteration 87:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 87
+--------------------------------------------
+Iteration 88:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 88
+--------------------------------------------
+Iteration 89:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V2, V8), true_cellholds(V5, V1, V1, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 89
+--------------------------------------------
+Iteration 90:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 90
+--------------------------------------------
+Iteration 91:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 91
+--------------------------------------------
+Iteration 92:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 92
+--------------------------------------------
+Iteration 93:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 93
+--------------------------------------------
+Iteration 94:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 94
+--------------------------------------------
+Iteration 95:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 95
+--------------------------------------------
+Iteration 96:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 96
+--------------------------------------------
+Iteration 97:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V0, V1, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 97
+--------------------------------------------
+Iteration 98:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V1, V9), true_cellholds(V0, V1, V0, V9), pos(V0), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 98
+--------------------------------------------
+Iteration 99:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 99
+--------------------------------------------
+Iteration 100:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 100
+--------------------------------------------
+Iteration 101:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 101
+--------------------------------------------
+Iteration 102:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 102
+--------------------------------------------
+Iteration 103:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 103
+--------------------------------------------
+Iteration 104:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 104
+--------------------------------------------
+Iteration 105:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 105
+--------------------------------------------
+Iteration 106:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 106
+--------------------------------------------
+Iteration 107:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 107
+--------------------------------------------
+Iteration 108:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 108
+--------------------------------------------
+Iteration 109:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 109
+--------------------------------------------
+Iteration 110:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 110
+--------------------------------------------
+Iteration 111:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 111
+--------------------------------------------
+Iteration 112:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 112
+--------------------------------------------
+Iteration 113:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 113
+--------------------------------------------
+Iteration 114:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 114
+--------------------------------------------
+Iteration 115:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 115
+--------------------------------------------
+Iteration 116:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 116
+--------------------------------------------
+Iteration 117:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 117
+--------------------------------------------
+Iteration 118:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 118
+--------------------------------------------
+Iteration 119:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 119
+--------------------------------------------
+Iteration 120:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 120
+--------------------------------------------
+Iteration 121:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 121
+--------------------------------------------
+Iteration 122:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 122
+--------------------------------------------
+Iteration 123:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 123
+--------------------------------------------
+Iteration 124:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 124
+--------------------------------------------
+Iteration 125:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 125
+--------------------------------------------
+Iteration 126:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 126
+--------------------------------------------
+Iteration 127:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 127
+--------------------------------------------
+Iteration 128:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 128
+--------------------------------------------
+Iteration 129:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 129
+--------------------------------------------
+Iteration 130:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 130
+--------------------------------------------
+Iteration 131:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 131
+--------------------------------------------
+Iteration 132:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 132
+--------------------------------------------
+Iteration 133:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 133
+--------------------------------------------
+Iteration 134:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 134
+--------------------------------------------
+Iteration 135:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 135
+--------------------------------------------
+Iteration 136:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 136
+--------------------------------------------
+Iteration 137:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 137
+--------------------------------------------
+Iteration 138:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 138
+--------------------------------------------
+Iteration 139:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 139
+--------------------------------------------
+Iteration 140:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 140
+--------------------------------------------
+Iteration 141:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 141
+--------------------------------------------
+Iteration 142:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 142
+--------------------------------------------
+Iteration 143:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 143
+--------------------------------------------
+Iteration 144:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 144
+--------------------------------------------
+Iteration 145:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 145
+--------------------------------------------
+Iteration 146:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 146
+--------------------------------------------
+Iteration 147:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 147
+--------------------------------------------
+Iteration 148:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 148
+--------------------------------------------
+Iteration 149:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 149
+--------------------------------------------
+Iteration 150:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 150
+--------------------------------------------
+Iteration 151:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 151
+--------------------------------------------
+Iteration 152:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 152
+--------------------------------------------
+Iteration 153:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 153
+--------------------------------------------
+Iteration 154:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 154
+--------------------------------------------
+Iteration 155:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 155
+--------------------------------------------
+Iteration 156:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 156
+--------------------------------------------
+Iteration 157:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 157
+--------------------------------------------
+Iteration 158:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 158
+--------------------------------------------
+Iteration 159:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 159
+--------------------------------------------
+Iteration 160:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 160
+--------------------------------------------
+Iteration 161:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 161
+--------------------------------------------
+Iteration 162:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 162
+--------------------------------------------
+Iteration 163:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 163
+--------------------------------------------
+Iteration 164:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 164
+--------------------------------------------
+Iteration 165:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 165
+--------------------------------------------
+Iteration 166:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 166
+--------------------------------------------
+Iteration 167:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 167
+--------------------------------------------
+Iteration 168:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 168
+--------------------------------------------
+Iteration 169:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 169
+--------------------------------------------
+Iteration 170:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 170
+--------------------------------------------
+Iteration 171:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 171
+--------------------------------------------
+Iteration 172:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 172
+--------------------------------------------
+Iteration 173:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 173
+--------------------------------------------
+Iteration 174:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 174
+--------------------------------------------
+Iteration 175:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 175
+--------------------------------------------
+Iteration 176:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 176
+--------------------------------------------
+Iteration 177:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 177
+--------------------------------------------
+Iteration 178:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 178
+--------------------------------------------
+Iteration 179:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 179
+--------------------------------------------
+Iteration 180:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 180
+--------------------------------------------
+Iteration 181:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 181
+--------------------------------------------
+Iteration 182:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 182
+--------------------------------------------
+Iteration 183:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 183
+--------------------------------------------
+Iteration 184:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 184
+--------------------------------------------
+Iteration 185:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 185
+--------------------------------------------
+Iteration 186:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 186
+--------------------------------------------
+Iteration 187:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 187
+--------------------------------------------
+Iteration 188:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 188
+--------------------------------------------
+Iteration 189:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 189
+--------------------------------------------
+Iteration 190:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 190
+--------------------------------------------
+Iteration 191:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 191
+--------------------------------------------
+Iteration 192:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 192
+--------------------------------------------
+Iteration 193:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 193
+--------------------------------------------
+Iteration 194:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 194
+--------------------------------------------
+Iteration 195:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 195
+--------------------------------------------
+Iteration 196:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 196
+--------------------------------------------
+Iteration 197:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 197
+--------------------------------------------
+Iteration 198:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 198
+--------------------------------------------
+Iteration 199:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 199
+--------------------------------------------
+Iteration 200:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 200
+--------------------------------------------
+Iteration 201:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 201
+--------------------------------------------
+Iteration 202:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 202
+--------------------------------------------
+Iteration 203:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 203
+--------------------------------------------
+Iteration 204:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 204
+--------------------------------------------
+Iteration 205:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 205
+--------------------------------------------
+Iteration 206:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 206
+--------------------------------------------
+Iteration 207:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 207
+--------------------------------------------
+Iteration 208:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 208
+--------------------------------------------
+Iteration 209:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 209
+--------------------------------------------
+Iteration 210:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 210
+--------------------------------------------
+Iteration 211:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 211
+--------------------------------------------
+Iteration 212:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 212
+--------------------------------------------
+Iteration 213:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 213
+--------------------------------------------
+Iteration 214:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 214
+--------------------------------------------
+Iteration 215:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 215
+--------------------------------------------
+Iteration 216:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 216
+--------------------------------------------
+Iteration 217:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 217
+--------------------------------------------
+Iteration 218:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 218
+--------------------------------------------
+Iteration 219:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 219
+--------------------------------------------
+Iteration 220:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 220
+--------------------------------------------
+Iteration 221:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 221
+--------------------------------------------
+Iteration 222:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 222
+--------------------------------------------
+Iteration 223:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 223
+--------------------------------------------
+Iteration 224:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 224
+--------------------------------------------
+Iteration 225:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 225
+--------------------------------------------
+Iteration 226:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 226
+--------------------------------------------
+Iteration 227:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 227
+--------------------------------------------
+Iteration 228:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 228
+--------------------------------------------
+Iteration 229:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 229
+--------------------------------------------
+Iteration 230:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 230
+--------------------------------------------
+Iteration 231:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 231
+--------------------------------------------
+Iteration 232:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 232
+--------------------------------------------
+Iteration 233:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 233
+--------------------------------------------
+Iteration 234:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 234
+--------------------------------------------
+Iteration 235:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 235
+--------------------------------------------
+Iteration 236:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 236
+--------------------------------------------
+Iteration 237:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 237
+--------------------------------------------
+Iteration 238:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 238
+--------------------------------------------
+Iteration 239:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 239
+--------------------------------------------
+Iteration 240:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 240
+--------------------------------------------
+Iteration 241:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 241
+--------------------------------------------
+Iteration 242:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 242
+--------------------------------------------
+Iteration 243:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 243
+--------------------------------------------
+Iteration 244:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 244
+--------------------------------------------
+Iteration 245:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 245
+--------------------------------------------
+Iteration 246:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 246
+--------------------------------------------
+Iteration 247:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 247
+--------------------------------------------
+Iteration 248:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 248
+--------------------------------------------
+Iteration 249:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 249
+--------------------------------------------
+Iteration 250:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 250
+--------------------------------------------
+Iteration 251:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 251
+--------------------------------------------
+Iteration 252:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 252
+--------------------------------------------
+Iteration 253:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 253
+--------------------------------------------
+Iteration 254:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 254
+--------------------------------------------
+Iteration 255:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 255
+--------------------------------------------
+Iteration 256:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 256
+--------------------------------------------
+Iteration 257:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 257
+--------------------------------------------
+Iteration 258:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 258
+--------------------------------------------
+Iteration 259:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 259
+--------------------------------------------
+Iteration 260:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 260
+--------------------------------------------
+Iteration 261:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 261
+--------------------------------------------
+Iteration 262:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 262
+--------------------------------------------
+Iteration 263:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 263
+--------------------------------------------
+Iteration 264:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 264
+--------------------------------------------
+Iteration 265:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 265
+--------------------------------------------
+Iteration 266:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 266
+--------------------------------------------
+Iteration 267:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 267
+--------------------------------------------
+Iteration 268:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 268
+--------------------------------------------
+Iteration 269:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 269
+--------------------------------------------
+Iteration 270:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 270
+--------------------------------------------
+Iteration 271:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 271
+--------------------------------------------
+Iteration 272:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 272
+--------------------------------------------
+Iteration 273:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 273
+--------------------------------------------
+Iteration 274:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 274
+--------------------------------------------
+Iteration 275:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 275
+--------------------------------------------
+Iteration 276:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 276
+--------------------------------------------
+Iteration 277:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 277
+--------------------------------------------
+Iteration 278:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 278
+--------------------------------------------
+Iteration 279:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 279
+--------------------------------------------
+Iteration 280:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 280
+--------------------------------------------
+Iteration 281:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 281
+--------------------------------------------
+Iteration 282:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 282
+--------------------------------------------
+Iteration 283:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 283
+--------------------------------------------
+Iteration 284:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 284
+--------------------------------------------
+Iteration 285:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 285
+--------------------------------------------
+Iteration 286:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 286
+--------------------------------------------
+Iteration 287:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 287
+--------------------------------------------
+Iteration 288:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 288
+--------------------------------------------
+Iteration 289:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 289
+--------------------------------------------
+Iteration 290:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 290
+--------------------------------------------
+Iteration 291:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 291
+--------------------------------------------
+Iteration 292:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 292
+--------------------------------------------
+Iteration 293:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 293
+--------------------------------------------
+Iteration 294:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 294
+--------------------------------------------
+Iteration 295:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 295
+--------------------------------------------
+Iteration 296:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 296
+--------------------------------------------
+Iteration 297:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 297
+--------------------------------------------
+Iteration 298:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 298
+--------------------------------------------
+Iteration 299:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 299
+--------------------------------------------
+Iteration 300:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 300
+--------------------------------------------
+Iteration 301:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 301
+--------------------------------------------
+Iteration 302:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 302
+--------------------------------------------
+Iteration 303:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 303
+--------------------------------------------
+Iteration 304:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 304
+--------------------------------------------
+Iteration 305:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 305
+--------------------------------------------
+Iteration 306:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 306
+--------------------------------------------
+Iteration 307:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 307
+--------------------------------------------
+Iteration 308:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 308
+--------------------------------------------
+Iteration 309:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 309
+--------------------------------------------
+Iteration 310:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 310
+--------------------------------------------
+Iteration 311:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 311
+--------------------------------------------
+Iteration 312:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 312
+--------------------------------------------
+Iteration 313:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V2, V0, V8), true_cellholds(V1, V2, V2, V8), pos(V0), pos(V1), pos(V2), pos(V5), agent(V8).
+}
+inc: 0; exc: 313
+--------------------------------------------
+Iteration 314:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 314
+--------------------------------------------
+Iteration 315:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 315
+--------------------------------------------
+Iteration 316:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 316
+--------------------------------------------
+Iteration 317:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 317
+--------------------------------------------
+Iteration 318:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 318
+--------------------------------------------
+Iteration 319:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 319
+--------------------------------------------
+Iteration 320:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 320
+--------------------------------------------
+Iteration 321:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 321
+--------------------------------------------
+Iteration 322:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 322
+--------------------------------------------
+Iteration 323:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 323
+--------------------------------------------
+Iteration 324:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 324
+--------------------------------------------
+Iteration 325:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 325
+--------------------------------------------
+Iteration 326:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 326
+--------------------------------------------
+Iteration 327:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 327
+--------------------------------------------
+Iteration 328:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 328
+--------------------------------------------
+Iteration 329:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 329
+--------------------------------------------
+Iteration 330:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 330
+--------------------------------------------
+Iteration 331:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 331
+--------------------------------------------
+Iteration 332:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 332
+--------------------------------------------
+Iteration 333:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 333
+--------------------------------------------
+Iteration 334:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 334
+--------------------------------------------
+Iteration 335:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 335
+--------------------------------------------
+Iteration 336:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 336
+--------------------------------------------
+Iteration 337:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 337
+--------------------------------------------
+Iteration 338:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 338
+--------------------------------------------
+Iteration 339:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 339
+--------------------------------------------
+Iteration 340:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 340
+--------------------------------------------
+Iteration 341:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 341
+--------------------------------------------
+Iteration 342:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 342
+--------------------------------------------
+Iteration 343:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 343
+--------------------------------------------
+Iteration 344:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 344
+--------------------------------------------
+Iteration 345:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 345
+--------------------------------------------
+Iteration 346:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 346
+--------------------------------------------
+Iteration 347:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 347
+--------------------------------------------
+Iteration 348:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 348
+--------------------------------------------
+Iteration 349:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 349
+--------------------------------------------
+Iteration 350:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 350
+--------------------------------------------
+Iteration 351:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 351
+--------------------------------------------
+Iteration 352:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 352
+--------------------------------------------
+Iteration 353:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 353
+--------------------------------------------
+Iteration 354:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 354
+--------------------------------------------
+Iteration 355:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 355
+--------------------------------------------
+Iteration 356:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 356
+--------------------------------------------
+Iteration 357:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 357
+--------------------------------------------
+Iteration 358:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 358
+--------------------------------------------
+Iteration 359:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 359
+--------------------------------------------
+Iteration 360:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 360
+--------------------------------------------
+Iteration 361:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 361
+--------------------------------------------
+Iteration 362:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 362
+--------------------------------------------
+Iteration 363:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 363
+--------------------------------------------
+Iteration 364:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 364
+--------------------------------------------
+Iteration 365:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 365
+--------------------------------------------
+Iteration 366:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 366
+--------------------------------------------
+Iteration 367:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 367
+--------------------------------------------
+Iteration 368:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 368
+--------------------------------------------
+Iteration 369:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 369
+--------------------------------------------
+Iteration 370:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 370
+--------------------------------------------
+Iteration 371:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 371
+--------------------------------------------
+Iteration 372:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 372
+--------------------------------------------
+Iteration 373:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 373
+--------------------------------------------
+Iteration 374:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 374
+--------------------------------------------
+Iteration 375:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 375
+--------------------------------------------
+Iteration 376:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 376
+--------------------------------------------
+Iteration 377:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 377
+--------------------------------------------
+Iteration 378:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 378
+--------------------------------------------
+Iteration 379:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 379
+--------------------------------------------
+Iteration 380:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 380
+--------------------------------------------
+Iteration 381:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 381
+--------------------------------------------
+Iteration 382:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 382
+--------------------------------------------
+Iteration 383:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 383
+--------------------------------------------
+Iteration 384:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 384
+--------------------------------------------
+Iteration 385:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 385
+--------------------------------------------
+Iteration 386:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 386
+--------------------------------------------
+Iteration 387:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 387
+--------------------------------------------
+Iteration 388:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 388
+--------------------------------------------
+Iteration 389:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 389
+--------------------------------------------
+Iteration 390:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 390
+--------------------------------------------
+Iteration 391:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 391
+--------------------------------------------
+Iteration 392:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 392
+--------------------------------------------
+Iteration 393:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 393
+--------------------------------------------
+Iteration 394:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 394
+--------------------------------------------
+Iteration 395:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 395
+--------------------------------------------
+Iteration 396:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 396
+--------------------------------------------
+Iteration 397:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 397
+--------------------------------------------
+Iteration 398:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 398
+--------------------------------------------
+Iteration 399:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 399
+--------------------------------------------
+Iteration 400:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 400
+--------------------------------------------
+Iteration 401:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 401
+--------------------------------------------
+Iteration 402:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 402
+--------------------------------------------
+Iteration 403:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 403
+--------------------------------------------
+Iteration 404:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 404
+--------------------------------------------
+Iteration 405:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 405
+--------------------------------------------
+Iteration 406:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 406
+--------------------------------------------
+Iteration 407:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 407
+--------------------------------------------
+Iteration 408:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 408
+--------------------------------------------
+Iteration 409:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 409
+--------------------------------------------
+Iteration 410:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 410
+--------------------------------------------
+Iteration 411:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 411
+--------------------------------------------
+Iteration 412:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 412
+--------------------------------------------
+Iteration 413:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 413
+--------------------------------------------
+Iteration 414:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 414
+--------------------------------------------
+Iteration 415:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 415
+--------------------------------------------
+Iteration 416:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 416
+--------------------------------------------
+Iteration 417:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 417
+--------------------------------------------
+Iteration 418:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 418
+--------------------------------------------
+Iteration 419:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 419
+--------------------------------------------
+Iteration 420:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 420
+--------------------------------------------
+Iteration 421:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 421
+--------------------------------------------
+Iteration 422:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 422
+--------------------------------------------
+Iteration 423:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 423
+--------------------------------------------
+Iteration 424:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 424
+--------------------------------------------
+Iteration 425:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 425
+--------------------------------------------
+Iteration 426:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 426
+--------------------------------------------
+Iteration 427:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 427
+--------------------------------------------
+Iteration 428:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 428
+--------------------------------------------
+Iteration 429:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 429
+--------------------------------------------
+Iteration 430:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 430
+--------------------------------------------
+Iteration 431:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 431
+--------------------------------------------
+Iteration 432:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 432
+--------------------------------------------
+Iteration 433:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 433
+--------------------------------------------
+Iteration 434:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 434
+--------------------------------------------
+Iteration 435:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 435
+--------------------------------------------
+Iteration 436:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 436
+--------------------------------------------
+Iteration 437:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 437
+--------------------------------------------
+Iteration 438:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 438
+--------------------------------------------
+Iteration 439:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 439
+--------------------------------------------
+Iteration 440:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 440
+--------------------------------------------
+Iteration 441:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 441
+--------------------------------------------
+Iteration 442:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 442
+--------------------------------------------
+Iteration 443:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 443
+--------------------------------------------
+Iteration 444:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 444
+--------------------------------------------
+Iteration 445:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 445
+--------------------------------------------
+Iteration 446:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 446
+--------------------------------------------
+Iteration 447:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 447
+--------------------------------------------
+Iteration 448:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 448
+--------------------------------------------
+Iteration 449:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 449
+--------------------------------------------
+Iteration 450:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 450
+--------------------------------------------
+Iteration 451:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 451
+--------------------------------------------
+Iteration 452:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 452
+--------------------------------------------
+Iteration 453:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 453
+--------------------------------------------
+Iteration 454:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 454
+--------------------------------------------
+Iteration 455:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 455
+--------------------------------------------
+Iteration 456:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 456
+--------------------------------------------
+Iteration 457:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 457
+--------------------------------------------
+Iteration 458:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 458
+--------------------------------------------
+Iteration 459:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 459
+--------------------------------------------
+Iteration 460:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 460
+--------------------------------------------
+Iteration 461:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 461
+--------------------------------------------
+Iteration 462:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 462
+--------------------------------------------
+Iteration 463:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 463
+--------------------------------------------
+Iteration 464:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 464
+--------------------------------------------
+Iteration 465:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 465
+--------------------------------------------
+Iteration 466:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 466
+--------------------------------------------
+Iteration 467:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 467
+--------------------------------------------
+Iteration 468:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 468
+--------------------------------------------
+Iteration 469:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 469
+--------------------------------------------
+Iteration 470:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 470
+--------------------------------------------
+Iteration 471:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 471
+--------------------------------------------
+Iteration 472:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 472
+--------------------------------------------
+Iteration 473:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 473
+--------------------------------------------
+Iteration 474:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 474
+--------------------------------------------
+Iteration 475:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 475
+--------------------------------------------
+Iteration 476:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 476
+--------------------------------------------
+Iteration 477:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 477
+--------------------------------------------
+Iteration 478:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 478
+--------------------------------------------
+Iteration 479:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 479
+--------------------------------------------
+Iteration 480:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 480
+--------------------------------------------
+Iteration 481:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 481
+--------------------------------------------
+Iteration 482:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 482
+--------------------------------------------
+Iteration 483:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 483
+--------------------------------------------
+Iteration 484:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 484
+--------------------------------------------
+Iteration 485:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 485
+--------------------------------------------
+Iteration 486:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 486
+--------------------------------------------
+Iteration 487:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 487
+--------------------------------------------
+Iteration 488:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 488
+--------------------------------------------
+Iteration 489:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 489
+--------------------------------------------
+Iteration 490:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 490
+--------------------------------------------
+Iteration 491:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 491
+--------------------------------------------
+Iteration 492:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 492
+--------------------------------------------
+Iteration 493:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 493
+--------------------------------------------
+Iteration 494:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 494
+--------------------------------------------
+Iteration 495:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 495
+--------------------------------------------
+Iteration 496:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 496
+--------------------------------------------
+Iteration 497:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 497
+--------------------------------------------
+Iteration 498:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 498
+--------------------------------------------
+Iteration 499:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 499
+--------------------------------------------
+Iteration 500:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 500
+--------------------------------------------
+Iteration 501:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 501
+--------------------------------------------
+Iteration 502:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 502
+--------------------------------------------
+Iteration 503:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 503
+--------------------------------------------
+Iteration 504:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 504
+--------------------------------------------
+Iteration 505:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 505
+--------------------------------------------
+Iteration 506:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 506
+--------------------------------------------
+Iteration 507:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 507
+--------------------------------------------
+Iteration 508:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 508
+--------------------------------------------
+Iteration 509:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 509
+--------------------------------------------
+Iteration 510:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 510
+--------------------------------------------
+Iteration 511:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 511
+--------------------------------------------
+Iteration 512:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 512
+--------------------------------------------
+Iteration 513:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 513
+--------------------------------------------
+Iteration 514:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 514
+--------------------------------------------
+Iteration 515:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 515
+--------------------------------------------
+Iteration 516:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 516
+--------------------------------------------
+Iteration 517:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 517
+--------------------------------------------
+Iteration 518:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 518
+--------------------------------------------
+Iteration 519:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 519
+--------------------------------------------
+Iteration 520:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 520
+--------------------------------------------
+Iteration 521:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 521
+--------------------------------------------
+Iteration 522:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 522
+--------------------------------------------
+Iteration 523:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 523
+--------------------------------------------
+Iteration 524:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 524
+--------------------------------------------
+Iteration 525:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 525
+--------------------------------------------
+Iteration 526:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 526
+--------------------------------------------
+Iteration 527:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 527
+--------------------------------------------
+Iteration 528:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 528
+--------------------------------------------
+Iteration 529:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 529
+--------------------------------------------
+Iteration 530:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 530
+--------------------------------------------
+Iteration 531:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 531
+--------------------------------------------
+Iteration 532:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 532
+--------------------------------------------
+Iteration 533:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 533
+--------------------------------------------
+Iteration 534:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 534
+--------------------------------------------
+Iteration 535:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 535
+--------------------------------------------
+Iteration 536:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 536
+--------------------------------------------
+Iteration 537:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 537
+--------------------------------------------
+Iteration 538:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 538
+--------------------------------------------
+Iteration 539:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 539
+--------------------------------------------
+Iteration 540:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 540
+--------------------------------------------
+Iteration 541:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 541
+--------------------------------------------
+Iteration 542:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 542
+--------------------------------------------
+Iteration 543:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 543
+--------------------------------------------
+Iteration 544:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 544
+--------------------------------------------
+Iteration 545:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 545
+--------------------------------------------
+Iteration 546:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 546
+--------------------------------------------
+Iteration 547:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 547
+--------------------------------------------
+Iteration 548:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 548
+--------------------------------------------
+Iteration 549:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 549
+--------------------------------------------
+Iteration 550:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 550
+--------------------------------------------
+Iteration 551:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 551
+--------------------------------------------
+Iteration 552:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 552
+--------------------------------------------
+Iteration 553:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 553
+--------------------------------------------
+Iteration 554:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 554
+--------------------------------------------
+Iteration 555:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 555
+--------------------------------------------
+Iteration 556:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 556
+--------------------------------------------
+Iteration 557:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 557
+--------------------------------------------
+Iteration 558:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 558
+--------------------------------------------
+Iteration 559:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 559
+--------------------------------------------
+Iteration 560:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 560
+--------------------------------------------
+Iteration 561:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 561
+--------------------------------------------
+Iteration 562:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 562
+--------------------------------------------
+Iteration 563:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 563
+--------------------------------------------
+Iteration 564:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 564
+--------------------------------------------
+Iteration 565:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 565
+--------------------------------------------
+Iteration 566:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 566
+--------------------------------------------
+Iteration 567:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 567
+--------------------------------------------
+Iteration 568:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 568
+--------------------------------------------
+Iteration 569:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 569
+--------------------------------------------
+Iteration 570:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 570
+--------------------------------------------
+Iteration 571:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 571
+--------------------------------------------
+Iteration 572:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 572
+--------------------------------------------
+Iteration 573:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 573
+--------------------------------------------
+Iteration 574:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 574
+--------------------------------------------
+Iteration 575:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 575
+--------------------------------------------
+Iteration 576:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 576
+--------------------------------------------
+Iteration 577:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 577
+--------------------------------------------
+Iteration 578:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 578
+--------------------------------------------
+Iteration 579:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 579
+--------------------------------------------
+Iteration 580:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 580
+--------------------------------------------
+Iteration 581:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 581
+--------------------------------------------
+Iteration 582:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 582
+--------------------------------------------
+Iteration 583:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 583
+--------------------------------------------
+Iteration 584:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 584
+--------------------------------------------
+Iteration 585:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 585
+--------------------------------------------
+Iteration 586:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 586
+--------------------------------------------
+Iteration 587:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 587
+--------------------------------------------
+Iteration 588:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 588
+--------------------------------------------
+Iteration 589:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 589
+--------------------------------------------
+Iteration 590:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 590
+--------------------------------------------
+Iteration 591:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 591
+--------------------------------------------
+Iteration 592:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 592
+--------------------------------------------
+Iteration 593:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 593
+--------------------------------------------
+Iteration 594:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 594
+--------------------------------------------
+Iteration 595:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 595
+--------------------------------------------
+Iteration 596:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 596
+--------------------------------------------
+Iteration 597:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 597
+--------------------------------------------
+Iteration 598:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 598
+--------------------------------------------
+Iteration 599:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 599
+--------------------------------------------
+Iteration 600:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 600
+--------------------------------------------
+Iteration 601:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 601
+--------------------------------------------
+Iteration 602:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 602
+--------------------------------------------
+Iteration 603:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 603
+--------------------------------------------
+Iteration 604:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 604
+--------------------------------------------
+Iteration 605:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 605
+--------------------------------------------
+Iteration 606:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 606
+--------------------------------------------
+Iteration 607:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 607
+--------------------------------------------
+Iteration 608:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 608
+--------------------------------------------
+Iteration 609:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 609
+--------------------------------------------
+Iteration 610:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 610
+--------------------------------------------
+Iteration 611:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 611
+--------------------------------------------
+Iteration 612:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 612
+--------------------------------------------
+Iteration 613:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 613
+--------------------------------------------
+Iteration 614:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 614
+--------------------------------------------
+Iteration 615:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 615
+--------------------------------------------
+Iteration 616:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 616
+--------------------------------------------
+Iteration 617:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 617
+--------------------------------------------
+Iteration 618:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 618
+--------------------------------------------
+Iteration 619:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 619
+--------------------------------------------
+Iteration 620:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 620
+--------------------------------------------
+Iteration 621:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 621
+--------------------------------------------
+Iteration 622:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 622
+--------------------------------------------
+Iteration 623:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 623
+--------------------------------------------
+Iteration 624:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 624
+--------------------------------------------
+Iteration 625:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 625
+--------------------------------------------
+Iteration 626:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 626
+--------------------------------------------
+Iteration 627:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 627
+--------------------------------------------
+Iteration 628:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 628
+--------------------------------------------
+Iteration 629:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 629
+--------------------------------------------
+Iteration 630:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 630
+--------------------------------------------
+Iteration 631:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 631
+--------------------------------------------
+Iteration 632:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 632
+--------------------------------------------
+Iteration 633:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 633
+--------------------------------------------
+Iteration 634:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 634
+--------------------------------------------
+Iteration 635:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 635
+--------------------------------------------
+Iteration 636:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 636
+--------------------------------------------
+Iteration 637:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 637
+--------------------------------------------
+Iteration 638:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 638
+--------------------------------------------
+Iteration 639:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 639
+--------------------------------------------
+Iteration 640:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 640
+--------------------------------------------
+Iteration 641:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 641
+--------------------------------------------
+Iteration 642:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 642
+--------------------------------------------
+Iteration 643:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 643
+--------------------------------------------
+Iteration 644:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 644
+--------------------------------------------
+Iteration 645:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 645
+--------------------------------------------
+Iteration 646:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 646
+--------------------------------------------
+Iteration 647:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 647
+--------------------------------------------
+Iteration 648:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 648
+--------------------------------------------
+Iteration 649:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 649
+--------------------------------------------
+Iteration 650:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 650
+--------------------------------------------
+Iteration 651:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 651
+--------------------------------------------
+Iteration 652:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 652
+--------------------------------------------
+Iteration 653:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 653
+--------------------------------------------
+Iteration 654:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 654
+--------------------------------------------
+Iteration 655:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 655
+--------------------------------------------
+Iteration 656:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 656
+--------------------------------------------
+Iteration 657:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 657
+--------------------------------------------
+Iteration 658:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 658
+--------------------------------------------
+Iteration 659:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 659
+--------------------------------------------
+Iteration 660:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 660
+--------------------------------------------
+Iteration 661:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 661
+--------------------------------------------
+Iteration 662:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 662
+--------------------------------------------
+Iteration 663:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 663
+--------------------------------------------
+Iteration 664:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 664
+--------------------------------------------
+Iteration 665:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 665
+--------------------------------------------
+Iteration 666:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 666
+--------------------------------------------
+Iteration 667:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 667
+--------------------------------------------
+Iteration 668:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 668
+--------------------------------------------
+Iteration 669:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 669
+--------------------------------------------
+Iteration 670:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 670
+--------------------------------------------
+Iteration 671:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 671
+--------------------------------------------
+Iteration 672:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 672
+--------------------------------------------
+Iteration 673:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 673
+--------------------------------------------
+Iteration 674:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 674
+--------------------------------------------
+Iteration 675:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 675
+--------------------------------------------
+Iteration 676:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 676
+--------------------------------------------
+Iteration 677:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 677
+--------------------------------------------
+Iteration 678:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 678
+--------------------------------------------
+Iteration 679:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 679
+--------------------------------------------
+Iteration 680:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 680
+--------------------------------------------
+Iteration 681:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 681
+--------------------------------------------
+Iteration 682:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 682
+--------------------------------------------
+Iteration 683:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 683
+--------------------------------------------
+Iteration 684:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 684
+--------------------------------------------
+Iteration 685:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 685
+--------------------------------------------
+Iteration 686:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 686
+--------------------------------------------
+Iteration 687:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 687
+--------------------------------------------
+Iteration 688:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 688
+--------------------------------------------
+Iteration 689:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 689
+--------------------------------------------
+Iteration 690:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 690
+--------------------------------------------
+Iteration 691:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 691
+--------------------------------------------
+Iteration 692:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 692
+--------------------------------------------
+Iteration 693:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 693
+--------------------------------------------
+Iteration 694:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 694
+--------------------------------------------
+Iteration 695:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 695
+--------------------------------------------
+Iteration 696:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 696
+--------------------------------------------
+Iteration 697:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 697
+--------------------------------------------
+Iteration 698:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 698
+--------------------------------------------
+Iteration 699:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 699
+--------------------------------------------
+Iteration 700:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 700
+--------------------------------------------
+Iteration 701:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 701
+--------------------------------------------
+Iteration 702:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 702
+--------------------------------------------
+Iteration 703:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 703
+--------------------------------------------
+Iteration 704:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 704
+--------------------------------------------
+Iteration 705:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 705
+--------------------------------------------
+Iteration 706:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 706
+--------------------------------------------
+Iteration 707:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 707
+--------------------------------------------
+Iteration 708:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 708
+--------------------------------------------
+Iteration 709:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 709
+--------------------------------------------
+Iteration 710:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 710
+--------------------------------------------
+Iteration 711:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 711
+--------------------------------------------
+Iteration 712:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 712
+--------------------------------------------
+Iteration 713:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 713
+--------------------------------------------
+Iteration 714:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 714
+--------------------------------------------
+Iteration 715:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 715
+--------------------------------------------
+Iteration 716:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 716
+--------------------------------------------
+Iteration 717:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 717
+--------------------------------------------
+Iteration 718:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 718
+--------------------------------------------
+Iteration 719:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 719
+--------------------------------------------
+Iteration 720:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 720
+--------------------------------------------
+Iteration 721:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 721
+--------------------------------------------
+Iteration 722:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 722
+--------------------------------------------
+Iteration 723:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 723
+--------------------------------------------
+Iteration 724:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 724
+--------------------------------------------
+Iteration 725:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 725
+--------------------------------------------
+Iteration 726:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 726
+--------------------------------------------
+Iteration 727:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 727
+--------------------------------------------
+Iteration 728:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 728
+--------------------------------------------
+Iteration 729:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 729
+--------------------------------------------
+Iteration 730:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 730
+--------------------------------------------
+Iteration 731:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 731
+--------------------------------------------
+Iteration 732:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 732
+--------------------------------------------
+Iteration 733:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 733
+--------------------------------------------
+Iteration 734:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 734
+--------------------------------------------
+Iteration 735:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 735
+--------------------------------------------
+Iteration 736:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 736
+--------------------------------------------
+Iteration 737:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 737
+--------------------------------------------
+Iteration 738:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 738
+--------------------------------------------
+Iteration 739:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 739
+--------------------------------------------
+Iteration 740:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 740
+--------------------------------------------
+Iteration 741:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 741
+--------------------------------------------
+Iteration 742:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 742
+--------------------------------------------
+Iteration 743:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 743
+--------------------------------------------
+Iteration 744:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 744
+--------------------------------------------
+Iteration 745:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 745
+--------------------------------------------
+Iteration 746:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 746
+--------------------------------------------
+Iteration 747:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 747
+--------------------------------------------
+Iteration 748:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 748
+--------------------------------------------
+Iteration 749:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 749
+--------------------------------------------
+Iteration 750:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 750
+--------------------------------------------
+Iteration 751:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 751
+--------------------------------------------
+Iteration 752:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 752
+--------------------------------------------
+Iteration 753:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 753
+--------------------------------------------
+Iteration 754:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 754
+--------------------------------------------
+Iteration 755:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 755
+--------------------------------------------
+Iteration 756:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 756
+--------------------------------------------
+Iteration 757:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 757
+--------------------------------------------
+Iteration 758:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 758
+--------------------------------------------
+Iteration 759:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 759
+--------------------------------------------
+Iteration 760:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 760
+--------------------------------------------
+Iteration 761:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 761
+--------------------------------------------
+Iteration 762:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 762
+--------------------------------------------
+Iteration 763:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 763
+--------------------------------------------
+Iteration 764:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 764
+--------------------------------------------
+Iteration 765:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 765
+--------------------------------------------
+Iteration 766:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 766
+--------------------------------------------
+Iteration 767:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 767
+--------------------------------------------
+Iteration 768:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 768
+--------------------------------------------
+Iteration 769:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 769
+--------------------------------------------
+Iteration 770:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 770
+--------------------------------------------
+Iteration 771:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 771
+--------------------------------------------
+Iteration 772:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 772
+--------------------------------------------
+Iteration 773:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 773
+--------------------------------------------
+Iteration 774:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 774
+--------------------------------------------
+Iteration 775:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 775
+--------------------------------------------
+Iteration 776:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 776
+--------------------------------------------
+Iteration 777:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 777
+--------------------------------------------
+Iteration 778:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 778
+--------------------------------------------
+Iteration 779:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 779
+--------------------------------------------
+Iteration 780:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 780
+--------------------------------------------
+Iteration 781:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 781
+--------------------------------------------
+Iteration 782:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 782
+--------------------------------------------
+Iteration 783:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 783
+--------------------------------------------
+Iteration 784:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 784
+--------------------------------------------
+Iteration 785:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 785
+--------------------------------------------
+Iteration 786:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 786
+--------------------------------------------
+Iteration 787:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 787
+--------------------------------------------
+Iteration 788:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 788
+--------------------------------------------
+Iteration 789:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 789
+--------------------------------------------
+Iteration 790:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 790
+--------------------------------------------
+Iteration 791:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 791
+--------------------------------------------
+Iteration 792:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 792
+--------------------------------------------
+Iteration 793:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 793
+--------------------------------------------
+Iteration 794:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 794
+--------------------------------------------
+Iteration 795:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 795
+--------------------------------------------
+Iteration 796:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 796
+--------------------------------------------
+Iteration 797:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 797
+--------------------------------------------
+Iteration 798:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 798
+--------------------------------------------
+Iteration 799:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 799
+--------------------------------------------
+Iteration 800:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 800
+--------------------------------------------
+Iteration 801:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 801
+--------------------------------------------
+Iteration 802:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 802
+--------------------------------------------
+Iteration 803:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 803
+--------------------------------------------
+Iteration 804:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 804
+--------------------------------------------
+Iteration 805:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 805
+--------------------------------------------
+Iteration 806:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 806
+--------------------------------------------
+Iteration 807:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 807
+--------------------------------------------
+Iteration 808:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 808
+--------------------------------------------
+Iteration 809:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 809
+--------------------------------------------
+Iteration 810:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 810
+--------------------------------------------
+Iteration 811:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 811
+--------------------------------------------
+Iteration 812:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 812
+--------------------------------------------
+Iteration 813:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 813
+--------------------------------------------
+Iteration 814:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 814
+--------------------------------------------
+Iteration 815:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 815
+--------------------------------------------
+Iteration 816:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 816
+--------------------------------------------
+Iteration 817:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 817
+--------------------------------------------
+Iteration 818:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 818
+--------------------------------------------
+Iteration 819:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 819
+--------------------------------------------
+Iteration 820:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 820
+--------------------------------------------
+Iteration 821:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 821
+--------------------------------------------
+Iteration 822:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 822
+--------------------------------------------
+Iteration 823:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 823
+--------------------------------------------
+Iteration 824:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 824
+--------------------------------------------
+Iteration 825:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 825
+--------------------------------------------
+Iteration 826:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 826
+--------------------------------------------
+Iteration 827:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 827
+--------------------------------------------
+Iteration 828:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 828
+--------------------------------------------
+Iteration 829:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 829
+--------------------------------------------
+Iteration 830:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 830
+--------------------------------------------
+Iteration 831:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 831
+--------------------------------------------
+Iteration 832:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 832
+--------------------------------------------
+Iteration 833:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 833
+--------------------------------------------
+Iteration 834:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 834
+--------------------------------------------
+Iteration 835:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 835
+--------------------------------------------
+Iteration 836:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 836
+--------------------------------------------
+Iteration 837:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 837
+--------------------------------------------
+Iteration 838:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 838
+--------------------------------------------
+Iteration 839:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_placecontrol(V8), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}

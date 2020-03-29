@@ -1,0 +1,12 @@
+next_control(1,green).
+next_control(2,blue).
+next_control(3,red).
+next_control(4,green).
+next_control(5,blue).
+next_control(6,red).
+next_control(7,green).
+next_control(8,blue).
+next_control(9,red).
+next_control(10,green).
+next_control(11,blue).
+next_control(12,red).

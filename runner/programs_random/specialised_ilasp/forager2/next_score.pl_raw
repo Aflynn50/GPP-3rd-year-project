@@ -1,0 +1,171 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_score(V0) :- int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_score(V0) :- world_succ(V1, V0), int(V0), int(V1).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_score(V0) :- world_max(V0), int(V0).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_score(V0) :- world_max(V0), int(V0).
+next_score(V0) :- succ(V5, V6), true_time(V5), int(V0), int(V5), int(V6).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_score(V0) :- world_succ(V2, V0), true_at(V1, V2, V17), true_at(V2, V1, V22), not red_object(V17), int(V0), int(V1), int(V2), obj(V17), obj(V22).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_score(V0) :- world_max(V0), int(V0).
+next_score(V0) :- world_succ(V0, V1), succ(V5, V6), true_time(V5), int(V0), int(V1), int(V5), int(V6).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_score(V0) :- world_succ(V1, V0), player_object(V17), true_at(V1, V2, V17), int(V0), int(V1), int(V2), obj(V17).
+next_score(V0) :- world_succ(V0, V1), succ(V5, V6), true_time(V5), int(V0), int(V1), int(V5), int(V6).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_score(V0) :- world_succ(V1, V0), player_object(V17), true_at(V1, V2, V17), int(V0), int(V1), int(V2), obj(V17).
+next_score(V0) :- world_succ(V0, V1), player_object(V17), true_at(V1, V2, V17), int(V0), int(V1), int(V2), obj(V17).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_score(V0) :- world_succ(V1, V0), player_object(V17), true_at(V1, V2, V17), int(V0), int(V1), int(V2), obj(V17).
+next_score(V0) :- world_succ(V2, V0), succ(V0, V1), true_at(V1, V2, V17), not red_object(V17), int(V0), int(V1), int(V2), obj(V17).
+}
+inc: 2; exc: 7
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_score(V0) :- succ(V9, V8), true_time(V9), V0 = 4, int(V0), int(V8), int(V9).
+next_score(V0) :- true_score(V0), not true_time(V5), V5 = 9, int(V0), int(V5).
+}
+inc: 3; exc: 7
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_score(V0) :- true_score(V0), not true_time(V5), V5 = 9, int(V0), int(V5).
+next_score(V0) :- world_succ(V0, V1), succ(V1, V2), not true_score(V2), not true_time(V6), V6 = 10, int(V0), int(V1), int(V2), int(V6).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_score(V0) :- true_score(V0), not true_time(V5), V5 = 9, int(V0), int(V5).
+next_score(V0) :- world_succ(V0, V1), player_object(V17), true_score(V1), true_at(V1, V4, V17), int(V0), int(V1), int(V4), obj(V17).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_score(V0) :- succ(V9, V8), true_time(V9), V0 = 4, int(V0), int(V8), int(V9).
+next_score(V0) :- true_score(V0), not true_time(V5), V5 = 9, int(V0), int(V5).
+next_score(V0) :- world_succ(V0, V1), true_time(V1), int(V0), int(V1).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_score(V0) :- true_score(V0), not true_time(V0), not true_time(V5), V5 = 9, int(V0), int(V5).
+next_score(V0) :- world_succ(V4, V3), player_object(V17), true_score(V1), true_at(V1, V4, V17), true_at(V0, V3, V16), int(V0), int(V1), int(V3), int(V4), obj(V16), obj(V17).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_score(V0) :- succ(V9, V8), true_time(V9), not true_time(V0), V0 = 4, int(V0), int(V8), int(V9).
+next_score(V0) :- world_succ(V1, V2), world_succ(V3, V0), world_succ(V4, V3), player_object(V17), true_at(V1, V4, V17), int(V0), int(V1), int(V2), int(V3), int(V4), obj(V17).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_score(V0) :- world_max(V0), true_time(V6), V6 = 10, int(V0), int(V6).
+next_score(V0) :- succ(V9, V8), true_time(V9), not true_time(V0), V0 = 4, int(V0), int(V8), int(V9).
+next_score(V0) :- world_succ(V0, V1), true_time(V1), int(V0), int(V1).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_score(V0) :- true_score(V0), not true_time(V0), not true_time(V5), V5 = 9, int(V0), int(V5).
+next_score(V0) :- world_succ(V0, V1), red_object(V12), player_object(V17), true_at(V1, V4, V17), true_at(V1, V4, V12), int(V0), int(V1), int(V4), obj(V12), obj(V17).
+}
+inc: 4; exc: 13
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_score(V0) :- true_score(V0), not true_time(V0), not true_time(V5), V5 = 9, int(V0), int(V5).
+next_score(V0) :- world_succ(V0, V1), player_object(V17), true_at(V1, V4, V17), true_at(V1, V4, V19), not player_object(V19), int(V0), int(V1), int(V4), obj(V17), obj(V19).
+}
+Finished

@@ -1,0 +1,41 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- world_succ(V0, V1), true_score(V0), int(V0), int(V1).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- player_object(V17), true_at(V1, V3, V17), V3 = 2, int(V1), int(V3), obj(V17).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- world_max(V1), true_at(V1, V3, V17), V3 = 2, int(V1), int(V3), obj(V17).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- world_max(V1), true_at(V1, V3, V17), not true_time(V10), V3 = 2, V10 = 0, int(V1), int(V3), int(V10), obj(V17).
+}
+Finished

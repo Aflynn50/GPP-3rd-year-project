@@ -9,7 +9,7 @@ import re
 import os
 import runner
 
-tourney_names = ["eight_core_optimaltraces_iggp","eight_core_randomtraces_iggp"]
+tourney_names = ["optimaltraces_iggp","randomtraces_iggp"]
 git_root = "/home/alastairflynn50_gmail_com/GPP-3rd-year-project/"
 java = "/home/alastairflynn50_gmail_com/jdk1.8.0_202/bin/java"
 #git_root = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/"
@@ -100,15 +100,10 @@ def run_ilp(game_type):
     else:
         raise Exception("bad game type (optimal or random)")
     runner.parse_train_and_test()
-    with open(tourney_name + "_results.txt",'a') as f:
+    with open("eight_core_" + tourney_name + "_results.txt",'a') as f:
         f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
         res = runner.print_nice(latex=True)
-        f.write(res)
-        f.write('\n\n\n')
-        scores = get_system_scores()
-        for trip in scores:
-            f.write("{} {} {}\n".format(*trip))
-    
+        f.write(res)   
 
 
 # arg 1 = action e.g. gen_games
