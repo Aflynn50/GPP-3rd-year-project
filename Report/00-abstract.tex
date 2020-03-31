@@ -5,18 +5,16 @@ The framework includes repositories of these game descriptions written in a logi
 
 
 The Inductive General Game Playing (IGGP) problem challenges machine learning systems to learn these GGP game rules by watching the game being played.
-%\ac{The above statement is precise. You could use a different ML approach (as we do in the IGGP paper).}
+\ac{The above statement is precise. You could use a different ML approach (as we do in the IGGP paper).}
 In other words, IGGP is the problem of inducing general game rules from specific game observations. Inductive Logic Programming (ILP), a subsection of ML has proved to be a promising approach to this problem though it has been shown that it is still a hard problem for ILP systems. In this regard IGGP motivates future research in ILP.
 
-Existing work on IGGP has always assumed that the game player being observed makes random moves. This is not representative of how a human learns to play a game, to learn to play chess we watch someone who is playing to win. 
-\ac{emphasise this limitation more, why is your work interesting? why should anyone care?}
+Existing work on IGGP has always assumed that the game player being observed makes random moves. This is not representative of how a human learns to play a game, to learn to play chess we watch someone who is playing to win. With random gameplay a lot situation that would normally be encountered  when humans play are not present. It may be the case that some games rules do not come into effect unless the game gets to a certain state such as castling in checkers or in connect 4 not being able to put a counter into a full column. Rules of games are designed with good play in mind so it would make sense that a good player of the game would invoke more cases of the rules.
 
 To address this limitation, in this paper we analyse the effect of using optimal verses random gameplay traces as well as the effect of varying the number of traces in the training set.
 
 We use Sancho, the 2014 GGP competition winner, to generate optimal game traces for a large number of games.
 We then use the ILP systems, Metagol, Aleph and ILASP to induce game rules from the traces.
-\ac{are trained and tested with combinations of optimal and random data. <- be very clear what you do}
-%\ac{Write with an active voice 'We use Sacho ...'}
+We train and test the systems on all combinations of optimal and random data. We also vary the volume of training data.
 
 \ac{Our results show [can fill in later]}
 

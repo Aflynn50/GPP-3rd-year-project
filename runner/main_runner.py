@@ -118,3 +118,5 @@ if arg == 'test':
 if arg == 'train':
     move_json_files(sys.argv[2])
     run_ilp(sys.argv[2])
+if arg == 'move_json':
+    move_json_files(sys.argv[2])

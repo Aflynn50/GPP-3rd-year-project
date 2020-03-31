@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
@@ -27,6 +28,8 @@ public class VizContainerPanel extends JPanel
     try
     {
       ByteArrayOutputStream bos = new ByteArrayOutputStream();
+      File outputfile = new File("mybigimage.png");
+      ImageIO.write(backimage, "png", outputfile);
       ImageIO.write(backimage, "png", bos);
       compressed = bos.toByteArray();
       imageWritten = true;
