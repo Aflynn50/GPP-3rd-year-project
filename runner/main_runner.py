@@ -82,7 +82,7 @@ def gen_games(game_type,repetitions):
         print("The game " + game + " finished at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
     print("all done")
 
-def move_json_files(game_type):
+def move_json_files(game_type,test_only=False):
     if game_type == 'optimal':
         tourney_name = tourney_names[0]
     elif game_type == 'random':
@@ -90,7 +90,7 @@ def move_json_files(game_type):
     else:
         raise Exception("bad game type (optimal or random)")
     game_traces = os.getcwd() + '/' + tourney_name + '/'
-    jsontotrace.convert(game_traces,runner_dir)
+    jsontotrace.convert(game_traces,runner_dir,test_only=test_only)
 
 def run_ilp(game_type):
     if game_type == 'optimal':
@@ -118,5 +118,5 @@ if arg == 'test':
 if arg == 'train':
     move_json_files(sys.argv[2])
     run_ilp(sys.argv[2])
-if arg == 'move_json':
-    move_json_files(sys.argv[2])
+if arg == 'move_json_test':
+    move_json_files(sys.argv[2],test_only=True)

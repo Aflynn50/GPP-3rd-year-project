@@ -119,7 +119,7 @@ def terminal(output_file,states):
             output.write("\n\n---")
         output.close()
 
-def convert(matches_dir, runner_dir): # both should have ending slash
+def convert(matches_dir, runner_dir, test_only=False): # both should have ending slash
     directory = matches_dir
     train_dir = runner_dir + "data/train/"
     test_dir = runner_dir + "data/test/"
@@ -134,11 +134,14 @@ def convert(matches_dir, runner_dir): # both should have ending slash
         pass
     os.makedirs(train_dir)
     os.makedirs(test_dir)
-
-    print("only doing test dir")
-
+    if test_only:
+        print("only doing test dir")
     #for train_or_test_dir in [train_dir, test_dir]:
-    for train_or_test_dir in [test_dir]:
+    if test_only:
+        trace_dirs = [test_dir]:
+    else:
+        trace_dirs = [train_dir, test_dir]
+    for train_or_test_dir in trace_dirs:
         for (root, dirs, files) in os.walk(directory):
             for fname in files:
                 filename = os.path.join(root, fname)
@@ -154,7 +157,7 @@ def convert(matches_dir, runner_dir): # both should have ending slash
                     goals = list(map(lambda x: parse_goal(raw_data['roles'],x), raw_data['goalHistory']))
 
                     game_name = raw_data['gameName'].lower().replace(" ", "_")
-                    print_preludes(prelude_dir, train_dir, test_dir,hastocontain=game_name)   
+                    print_preludes(prelude_dir, train_or_test_dir, hastocontain=game_name) 
                     for dat_file in os.listdir(train_or_test_dir):
                         direc = train_or_test_dir + dat_file
                         if game_name in dat_file:
