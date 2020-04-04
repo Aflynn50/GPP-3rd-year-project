@@ -119,8 +119,7 @@ def terminal(output_file,states):
             output.write("\n\n---")
         output.close()
 
-def convert(matches_dir, runner_dir, test_only=False): # both should have ending slash
-    directory = matches_dir
+def convert(matches_dirs, runner_dir, train_or_test=""): # both should have ending slash
     train_dir = runner_dir + "data/train/"
     test_dir = runner_dir + "data/test/"
     prelude_dir = runner_dir + "preludes/"
@@ -135,48 +134,55 @@ def convert(matches_dir, runner_dir, test_only=False): # both should have ending
     os.makedirs(train_dir)
     os.makedirs(test_dir)
     print("only doing 5 new traces")
-    if test_only:
+    if train_or_test == 'test':
         print("only doing test dir")
     #for train_or_test_dir in [train_dir, test_dir]:
-    if test_only:
+    if train_or_test == 'test':
         trace_dirs = [test_dir]
+    elif train_or_test == 'train':
+        trace_dirs = [train_dir]
     else:
         trace_dirs = [train_dir, test_dir]
     for train_or_test_dir in trace_dirs:
-        game_count_dict = {}
-        for game_name in os.listdir(matches_dir):
+        init_game_count_dict = {}
+        for game_name in os.listdir(matches_dirs[0]):
             print_preludes(prelude_dir, train_or_test_dir, hastocontain=game_name)
-            game_count_dict[game_name] = 0
-        for (root, dirs, files) in os.walk(directory):
-            for fname in files:
-                filename = os.path.join(root, fname)
-                if filename.endswith(".json") & (os.path.getmtime(filename) > 1585400000):
-                    with open(filename) as f:
-                        raw_data = json.load(f) # raw_data is a dict
-                    
-                    game_name = raw_data['gameName'].lower().replace(" ", "_")
-                    game_count_dict[game_name] = game_count_dict[game_name] + 1
-                    if game_count_dict[game_name] > 5: # remove this is not testing only - this is the number of games to test on
-                        break
-                    states = list(map(parse_state,raw_data['states']))
+            init_game_count_dict[game_name] = 0
+        for directory in matches_dirs:
+            game_count_dict = init_game_count_dict
+            for (root, dirs, files) in os.walk(directory):
+                for fname in files:
+                    filename = os.path.join(root, fname)
+                    if filename.endswith(".json") & (os.path.getmtime(filename) < 1585400000): # get old files
+                        with open(filename) as f:
+                            raw_data = json.load(f) # raw_data is a dict
+                        
+                        game_name = raw_data['gameName'].lower().replace(" ", "_")
+                        game_count_dict[game_name] = game_count_dict[game_name] + 1
+                        if (train_or_test == 'test') && (game_count_dict[game_name] > 5): # only use 5 examples for testing
+                            break
+                        if (len(matches_dirs) > 1) && (game_count_dict[game_name] > 8): # put in 8 from rand and 8 from opt
+                            break
 
-                    moves = list(map(lambda x: parse_move(raw_data['roles'],x), raw_data['moves']))
+                        states = list(map(parse_state,raw_data['states']))
 
-                    legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
+                        moves = list(map(lambda x: parse_move(raw_data['roles'],x), raw_data['moves']))
 
-                    goals = list(map(lambda x: parse_goal(raw_data['roles'],x), raw_data['goalHistory']))
+                        legals = list(map(lambda x: parse_legal(raw_data['roles'],x), raw_data['legalMoves']))
 
-                    for dat_file in os.listdir(train_or_test_dir):
-                        if game_name in dat_file:
-                            direc = train_or_test_dir + dat_file
-                            if "next" in dat_file:
-                                next(direc,states,moves)
-                            if "goal" in dat_file:
-                                goal(direc,states,goals)
-                            if "legal" in dat_file:
-                                legal(direc,states,legals)
-                            if "terminal" in dat_file:
-                                terminal(direc,states)
+                        goals = list(map(lambda x: parse_goal(raw_data['roles'],x), raw_data['goalHistory']))
+
+                        for dat_file in os.listdir(train_or_test_dir):
+                            if game_name in dat_file:
+                                direc = train_or_test_dir + dat_file
+                                if "next" in dat_file:
+                                    next(direc,states,moves)
+                                if "goal" in dat_file:
+                                    goal(direc,states,goals)
+                                if "legal" in dat_file:
+                                    legal(direc,states,legals)
+                                if "terminal" in dat_file:
+                                    terminal(direc,states)
 
 if __name__ == "__main__":
     convert("/home/aflynn50/ggp-saved-matches/","/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/runner/")

@@ -181,12 +181,11 @@ def print_nice(latex=False):
     else: 
         print(tabulate(table,headers=headers))
 
-def parse_train_and_test():
+def parse_and_train():
     systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse,systems))
     list(map(train,systems))
-    list(map(do_test,systems))
-
+    
 def parse_and_test():
     systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse_test_only,systems))

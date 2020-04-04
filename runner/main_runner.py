@@ -82,25 +82,30 @@ def gen_games(game_type,repetitions):
         print("The game " + game + " finished at " + time.strftime("%d %b %H:%M:%S", time.gmtime()))
     print("all done")
 
-def move_json_files(game_type,test_only=False):
+def move_json_files(game_type,train_or_test=""):
     if game_type == 'optimal':
-        tourney_name = tourney_names[0]
+        game_trace_folders = [os.getcwd() + '/' + tourney_names[0] + '/']
     elif game_type == 'random':
-        tourney_name = tourney_names[1]
-    else:
-        raise Exception("bad game type (optimal or random)")
-    game_traces = os.getcwd() + '/' + tourney_name + '/'
-    jsontotrace.convert(game_traces,runner_dir,test_only=test_only)
+        game_trace_folders = [os.getcwd() + '/' + tourney_names[1] + '/']
+    elif gmae_type == 'mixed':
+        game_trace_folders = [os.getcwd() + '/' + tourney_names[1] + '/', os.getcwd() + '/' + tourney_names[0] + '/']
 
-def run_ilp(game_type):
+    else:
+        raise Exception("bad game type (optimal or random)")
+    jsontotrace.convert(game_trace_folders,runner_dir,train_or_test=train_or_test)
+
+def run_train(game_type):
+    move_json_files(game_type,train_or_test='train')
     if game_type == 'optimal':
         tourney_name = tourney_names[0]
     elif game_type == 'random':
         tourney_name = tourney_names[1]
+    elif game_type == 'mixed':
+        tourney_name = 'mixed'
     else:
         raise Exception("bad game type (optimal or random)")
-    runner.parse_train_and_test()
-    with open("eight_core_" + tourney_name + "_results.txt",'a') as f:
+    runner.parse_and_train()
+    with open(tourney_name + "_results.txt",'a') as f:
         f.write(time.strftime("%d %b %H:%M:%S", time.gmtime()) + '\n')
         res = runner.print_nice(latex=True)
         f.write(res)   
@@ -113,11 +118,10 @@ arg = sys.argv[1]
 if arg == 'gen_games':
     gen_games(sys.argv[2], int(sys.argv[3]))
 if arg == 'train':
-    move_json_files(sys.argv[2])
-    run_ilp(sys.argv[2])
+    run_train(sys.argv[2])
 if arg == 'test_on':
-    move_json_files(sys.argv[2],test_only=True)
+    move_json_files(sys.argv[2],train_or_test='test')
     runner.parse_and_test()
 if arg == 'json':
-    move_json_files(sys.argv[2],test_only=True)
+    move_json_files(sys.argv[2],train_or_test='train')
 
