@@ -14,7 +14,6 @@ import sys
 from tabulate import tabulate
 
 def game_names(path):
-    # return ['minimal_decay']
    return sorted(set('_'.join(f.split('_')[:-2]) for f in listdir(path) if isfile(join(path, f)) and f.endswith('.dat')))
 
 def mkdir(path):
@@ -33,9 +32,13 @@ def parmap(func,jobs):
     return p.map(func,jobs)
 
 def parse_(args):
-    (system,game) = args
+    (system,game,test_only) = args
+    if test_only:
+        stages = ['test']
+    else:
+        stages = ['train','test']
     try:
-        for stage in ['train','test']:
+        for stage in stages:
             outpath='exp/{}/{}/{}/'.format(system.name,stage,game)
             mkdir(outpath)
             for target in ['next','goal','legal','terminal']:
@@ -51,7 +54,10 @@ def parse_(args):
 
 
 def parse(system):
-    parmap(parse_,list((system,game) for game in game_names('data/train')))
+    parmap(parse_,list((system,game,False) for game in game_names('data/train')))
+
+def parse_test_only(system):
+    parmap(parse_,list((system,game,True) for game in game_names('data/test')))
 
 def train_(args):
     (system,game,target) = args
@@ -83,7 +89,7 @@ def do_test_(args):
         system.do_test(dataf,programf,resultsf)
 
 def do_test(system):
-    parmap(do_test_,list((system,game) for game in sorted(game_names('data/train'))))
+    parmap(do_test_,list((system,game) for game in sorted(game_names('data/test'))))
 
 # results is a list of (predication,label) pairs
 # seems a bit cumbersome
@@ -180,6 +186,13 @@ def parse_train_and_test():
     list(map(parse,systems))
     list(map(train,systems))
     list(map(do_test,systems))
+
+def parse_and_test():
+    systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
+    list(map(parse_test_only,systems))
+    list(map(do_test,systems))
+    
+
 
 systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
 #systems = [aleph.Aleph()]

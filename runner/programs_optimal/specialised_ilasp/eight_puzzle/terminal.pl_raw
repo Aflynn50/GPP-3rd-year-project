@@ -1,0 +1,27 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_cell(V8, V8, V8), pos(V8), cell_type(V8), time_step(V8), score_int(V8).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_step(V31), V31 = 30, time_step(V31), score_int(V31).
+}
+Finished

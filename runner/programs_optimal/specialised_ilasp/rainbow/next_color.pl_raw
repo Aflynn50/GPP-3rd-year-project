@@ -1,0 +1,43 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_color(V0, V1) :- pos(V0), hue(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_color(V0, V1) :- does_mark(V2, V0, V1), pos(V0), hue(V1), agent(V2).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_color(V0, V1) :- does_mark(V2, V7, V1), pos(V0), hue(V1), agent(V2), pos(V7).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_color(V0, V1) :- does_mark(V2, V7, V1), V0 = r6, pos(V0), hue(V1), agent(V2), pos(V7).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_color(V0, V1) :- true_color(V0, V1), pos(V0), hue(V1).
+next_color(V0, V1) :- does_mark(V2, V0, V1), pos(V0), hue(V1), agent(V2).
+}
+Finished

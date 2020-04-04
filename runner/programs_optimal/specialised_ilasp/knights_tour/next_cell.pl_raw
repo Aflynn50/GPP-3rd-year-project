@@ -1,0 +1,76 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V1, V2) :- pos(V0), int(V0), pos(V1), int(V1), mark(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V1, V2) :- scoreMap(V0, V9), pos(V0), int(V0), pos(V1), int(V1), mark(V2), pos(V9), int(V9).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V1, V2) :- row(V1), pos(V0), int(V0), pos(V1), int(V1), mark(V2).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V1, V2) :- knightMove(V9, V1, V13, V0), pos(V0), int(V0), pos(V1), int(V1), mark(V2), pos(V9), int(V9), pos(V13), int(V13).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V1, V2) :- knightMove(V9, V1, V13, V0), pos(V0), int(V0), pos(V1), int(V1), mark(V2), pos(V9), int(V9), pos(V13), int(V13).
+next_cell(V0, V0, V1) :- scoreMap(V0, V16), pos(V0), int(V0), mark(V1), pos(V16), int(V16).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V1, V2) :- add(V0, V54, V1, V11), pos(V0), int(V0), pos(V1), int(V1), mark(V2), pos(V11), int(V11), add_arg(V54).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_move(V52, V50, V50, V0, V1), pos(V0), int(V0), pos(V1), int(V1), mark(V2), pos(V50), int(V50), agent(V52).
+next_cell(V0, V0, V1) :- scoreMap(V0, V16), pos(V0), int(V0), mark(V1), pos(V16), int(V16).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_cell(V0, V1, V2) :- scoreMap(V50, V1), true_cell(V50, V50, V2), pos(V0), int(V0), pos(V1), int(V1), mark(V2), pos(V50), int(V50).
+next_cell(V0, V0, V1) :- scoreMap(V0, V16), pos(V0), int(V0), mark(V1), pos(V16), int(V16).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_place(V2, V0, V1), row(V0), col(V1), int(V1), agent(V2).
+}
+inc: 2; exc: 7

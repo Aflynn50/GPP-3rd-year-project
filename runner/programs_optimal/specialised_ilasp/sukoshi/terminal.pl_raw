@@ -1,0 +1,28 @@
+%parsed
+Iteration 0:
+solving
+H = {
+erminal :- true_step(V10), V10 = 20, int(V10).
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_cell(V1, V2, V2), pos(V1), mark(V1), pos(V2), mark(V2).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_cell(V2, V2, V1), pos(V1), mark(V1), pos(V2), mark(V2).
+}
+Finished

@@ -1,0 +1,147 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_year_first_player(V0) :- agent(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_year_first_player(V0) :- true_year_first_player(V0), agent(V0).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_year_first_player(V0) :- true_control(V0), agent(V0).
+}
+inc: 2; exc: 1
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_year_first_player(V0) :- true_year_first_player(V0), agent(V0).
+next_year_first_player(V0) :- true_ripe(V87, V49, V49), agent(V0), pos(V49), int(V49), agent(V87).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_year_first_player(V0) :- true_year_first_player(V0), agent(V0).
+next_year_first_player(V0) :- true_ripe(V0, V71, V60), agent(V0), pos(V60), int(V60), pos(V71), int(V71).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_year_first_player(V0) :- true_year_first_player(V0), agent(V0).
+next_year_first_player(V0) :- true_control(V0), not true_season(V84), V84 = summer, agent(V0), season_type(V84).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_year_first_player(V0) :- does_harvest_row(V0, V71), agent(V0), pos(V71), int(V71).
+next_year_first_player(V0) :- true_year_first_player(V0), agent(V0).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_year_first_player(V0) :- does_harvest_row(V0, V71), agent(V0), pos(V71), int(V71).
+next_year_first_player(V0) :- true_year_first_player(V0), true_season(V83), V83 = winter, agent(V0), season_type(V83).
+}
+inc: 3; exc: 5
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_year_first_player(V0) :- does_plow_col(V0, V49), agent(V0), pos(V49), int(V49).
+next_year_first_player(V0) :- does_harvest_row(V0, V71), agent(V0), pos(V71), int(V71).
+next_year_first_player(V0) :- true_plowed(V0, V49, V49), agent(V0), pos(V49), int(V49).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+inc: 3; exc: 6
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_year_first_player(V0) :- does_harvest_row(V0, V71), agent(V0), pos(V71), int(V71).
+next_year_first_player(V0) :- succ(V82, V81), true_year_first_player(V0), true_score(V0, V82), agent(V0), pos(V81), int(V81), int(V82).
+}
+inc: 4; exc: 6
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_year_first_player(V0) :- does_harvest_row(V0, V71), agent(V0), pos(V71), int(V71).
+next_year_first_player(V0) :- true_year_first_player(V0), not true_season(V86), V86 = fall, agent(V0), season_type(V86).
+}
+inc: 5; exc: 6
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_year_first_player(V0) :- does_harvest_row(V0, V71), agent(V0), pos(V71), int(V71).
+next_year_first_player(V0) :- true_year_first_player(V0), not true_step(V16), V16 = 7, agent(V0), int(V16).
+}
+inc: 6; exc: 6
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_year_first_player(V0) :- true_ripe(V0, V49, V60), true_control(V0), agent(V0), pos(V49), int(V49), pos(V60), int(V60).
+next_year_first_player(V0) :- not true_step(V16), V0 = red, V16 = 7, agent(V0), int(V16).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+inc: 4; exc: 7
+inc: 5; exc: 7
+inc: 6; exc: 7
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_year_first_player(V0) :- true_ripe(V0, V71, V60), true_control(V0), agent(V0), pos(V60), int(V60), pos(V71), int(V71).
+next_year_first_player(V0) :- true_year_first_player(V0), not true_step(V16), V16 = 7, agent(V0), int(V16).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+inc: 4; exc: 8
+inc: 5; exc: 8
+inc: 6; exc: 8
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_year_first_player(V0) :- true_year_first_player(V0), not true_season(V86), V86 = fall, agent(V0), season_type(V86).
+next_year_first_player(V0) :- true_ripe(V0, V71, V60), true_control(V0), agent(V0), pos(V60), int(V60), pos(V71), int(V71).
+}
+Finished

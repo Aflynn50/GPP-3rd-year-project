@@ -1,0 +1,133 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V0, V1) :- pos(V0), mark(V1).
+os(V1), mark(V1), mark(V2).
+}
+next_cell(V0, V0, V1) :- pos(V0), mark(V1).
+os(V1), mark(V1), mark(V2).
+
+role(white).
+role(black).
+input_mark(white, 3, 3).
+input_mark(white, 3, 2).
+input_mark(white, 3, 1).
+input_mark(white, 2, 3).
+input_mark(white, 2, 2).
+input_mark(white, 2, 1).
+input_mark(white, 1, 3).
+input_mark(white, 1, 2).
+input_mark(white, 1, 1).
+input_mark(black, 3, 3).
+input_mark(black, 3, 2).
+input_mark(black, 3, 1).
+input_mark(black, 2, 3).
+input_mark(black, 2, 2).
+input_mark(black, 2, 1).
+input_mark(black, 1, 3).
+input_mark(black, 1, 2).
+input_mark(black, 1, 1).
+input(white, noop).
+input(black, noop).
+index(3).
+index(2).
+index(1).
+
+
+
+
+
+
+
+
+
+
+
+
+
+type(agent, white).
+agent(white).
+
+type(agent, black).
+agent(black).
+
+type(mark, x).
+mark(x).
+
+type(mark, o).
+mark(o).
+
+type(mark, b).
+mark(b).
+
+type(pos, 1).
+pos(1).
+
+type(pos, 2).
+pos(2).
+
+type(pos, 3).
+pos(3).
+
+type(score, 0).
+score(0).
+
+type(score, 50).
+score(50).
+
+type(score, 100).
+score(100).
+
+type(action, noop).
+action(noop).
+
+
+true_control(white).
+true_cell(3, 3, b).
+true_cell(3, 2, b).
+true_cell(3, 1, b).
+true_cell(2, 3, b).
+true_cell(2, 2, b).
+true_cell(2, 1, b).
+true_cell(1, 3, b).
+true_cell(1, 2, b).
+true_cell(1, 1, b).
+does_mark(white, 1, 3).
+does(black, noop).
+inc(0) :- not next_cell(3, 3, b).
+inc(1) :- not next_cell(3, 2, b).
+inc(2) :- not next_cell(3, 1, b).
+inc(3) :- not next_cell(2, 3, b).
+inc(4) :- not next_cell(2, 2, b).
+inc(5) :- not next_cell(2, 1, b).
+inc(6) :- not next_cell(1, 3, x).
+inc(7) :- not next_cell(1, 2, b).
+inc(8) :- not next_cell(1, 1, b).
+exc(0) :- next_cell(3, 3, x).
+exc(1) :- next_cell(3, 3, o).
+exc(2) :- next_cell(3, 2, x).
+exc(3) :- next_cell(3, 2, o).
+exc(4) :- next_cell(3, 1, x).
+exc(5) :- next_cell(3, 1, o).
+exc(6) :- next_cell(2, 3, x).
+exc(7) :- next_cell(2, 3, o).
+exc(8) :- next_cell(2, 2, x).
+exc(9) :- next_cell(2, 2, o).
+exc(10) :- next_cell(2, 1, x).
+exc(11) :- next_cell(2, 1, o).
+exc(12) :- next_cell(1, 3, o).
+exc(13) :- next_cell(1, 3, b).
+exc(14) :- next_cell(1, 2, x).
+exc(15) :- next_cell(1, 2, o).
+exc(16) :- next_cell(1, 1, x).
+exc(17) :- next_cell(1, 1, o).
+#show inc/1.
+#show exc/1.
+

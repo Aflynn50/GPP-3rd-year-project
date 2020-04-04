@@ -1,0 +1,28 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_mark(V0, V1, V1) :- agent(V0), pos(V1).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_mark(V0, V1, V2) :- agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 1
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_control(V0), agent(V0), pos(V1), pos(V2).
+}
+Finished

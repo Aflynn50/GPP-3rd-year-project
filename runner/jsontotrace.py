@@ -134,20 +134,30 @@ def convert(matches_dir, runner_dir, test_only=False): # both should have ending
         pass
     os.makedirs(train_dir)
     os.makedirs(test_dir)
+    print("only doing 5 new traces")
     if test_only:
         print("only doing test dir")
     #for train_or_test_dir in [train_dir, test_dir]:
     if test_only:
-        trace_dirs = [test_dir]:
+        trace_dirs = [test_dir]
     else:
         trace_dirs = [train_dir, test_dir]
     for train_or_test_dir in trace_dirs:
+        game_count_dict = {}
+        for game_name in os.listdir(matches_dir):
+            print_preludes(prelude_dir, train_or_test_dir, hastocontain=game_name)
+            game_count_dict[game_name] = 0
         for (root, dirs, files) in os.walk(directory):
             for fname in files:
                 filename = os.path.join(root, fname)
-                if filename.endswith(".json"):
+                if filename.endswith(".json") & (os.path.getmtime(filename) > 1585400000):
                     with open(filename) as f:
                         raw_data = json.load(f) # raw_data is a dict
+                    
+                    game_name = raw_data['gameName'].lower().replace(" ", "_")
+                    game_count_dict[game_name] = game_count_dict[game_name] + 1
+                    if game_count_dict[game_name] > 5: # remove this is not testing only - this is the number of games to test on
+                        break
                     states = list(map(parse_state,raw_data['states']))
 
                     moves = list(map(lambda x: parse_move(raw_data['roles'],x), raw_data['moves']))
@@ -156,11 +166,9 @@ def convert(matches_dir, runner_dir, test_only=False): # both should have ending
 
                     goals = list(map(lambda x: parse_goal(raw_data['roles'],x), raw_data['goalHistory']))
 
-                    game_name = raw_data['gameName'].lower().replace(" ", "_")
-                    print_preludes(prelude_dir, train_or_test_dir, hastocontain=game_name) 
                     for dat_file in os.listdir(train_or_test_dir):
-                        direc = train_or_test_dir + dat_file
                         if game_name in dat_file:
+                            direc = train_or_test_dir + dat_file
                             if "next" in dat_file:
                                 next(direc,states,moves)
                             if "goal" in dat_file:

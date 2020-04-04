@@ -1,0 +1,589 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V1) :- pos(V0), cell_value(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- succ(V0, V4), pos(V0), cell_value(V1), pos(V4).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), pos(V0), cell_value(V1), pos(V7), agent(V9).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- succ(V7, V6), succ(V0, V7), pos(V0), cell_value(V1), pos(V6), pos(V7).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+}
+inc: 3; exc: 5
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+}
+inc: 4; exc: 5
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+}
+inc: 5; exc: 5
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 4, pos(V0), cell_value(V1).
+}
+inc: 6; exc: 5
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 3, pos(V0), cell_value(V1).
+}
+inc: 7; exc: 5
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- succ(V4, V2), succ(V5, V4), succ(V6, V5), succ(V0, V6), pos(V0), cell_value(V1), pos(V2), pos(V4), pos(V5), pos(V6).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+inc: 3; exc: 6
+inc: 4; exc: 6
+inc: 5; exc: 6
+inc: 6; exc: 6
+inc: 7; exc: 6
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 3, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V0), pos(V0), cell_value(V1).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+inc: 4; exc: 7
+inc: 5; exc: 7
+inc: 6; exc: 7
+inc: 7; exc: 7
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- succ(V6, V5), succ(V7, V6), succ(V8, V7), succ(V0, V8), true_cell(V3, V1), pos(V0), cell_value(V1), pos(V3), pos(V5), pos(V6), pos(V7), pos(V8).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+inc: 4; exc: 8
+inc: 5; exc: 8
+inc: 6; exc: 8
+inc: 7; exc: 8
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), V1 = twocoins, pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- succ(V6, V5), succ(V7, V6), succ(V8, V7), succ(V0, V8), true_cell(V3, V1), pos(V0), cell_value(V1), pos(V3), pos(V5), pos(V6), pos(V7), pos(V8).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+inc: 4; exc: 9
+inc: 5; exc: 9
+inc: 6; exc: 9
+inc: 7; exc: 9
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), V1 = twocoins, pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_step(V0), pos(V0), cell_value(V1).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+inc: 4; exc: 10
+inc: 5; exc: 10
+inc: 6; exc: 10
+inc: 7; exc: 10
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V7), V1 = zerocoins, pos(V0), cell_value(V1), pos(V7), agent(V9).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), V1 = twocoins, pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+}
+inc: 8; exc: 10
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V5, V0), V1 = twocoins, pos(V0), cell_value(V1), pos(V5), agent(V9).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+}
+inc: 9; exc: 10
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 7, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+inc: 5; exc: 11
+inc: 6; exc: 11
+inc: 7; exc: 11
+inc: 8; exc: 11
+inc: 9; exc: 11
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 7, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+}
+inc: 10; exc: 11
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 6, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+inc: 5; exc: 12
+inc: 6; exc: 12
+inc: 7; exc: 12
+inc: 8; exc: 12
+inc: 9; exc: 12
+inc: 10; exc: 12
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 4, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+inc: 5; exc: 13
+inc: 6; exc: 13
+inc: 7; exc: 13
+inc: 8; exc: 13
+inc: 9; exc: 13
+inc: 10; exc: 13
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 3, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+inc: 6; exc: 14
+inc: 7; exc: 14
+inc: 8; exc: 14
+inc: 9; exc: 14
+inc: 10; exc: 14
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 3, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+}
+inc: 11; exc: 14
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V5, V1), not true_step(V5), V0 = 3, pos(V0), cell_value(V1), pos(V5).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+inc: 6; exc: 15
+inc: 7; exc: 15
+inc: 8; exc: 15
+inc: 9; exc: 15
+inc: 10; exc: 15
+inc: 11; exc: 15
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, pos(V0), cell_value(V1), pos(V3).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+inc: 5; exc: 16
+inc: 6; exc: 16
+inc: 7; exc: 16
+inc: 8; exc: 16
+inc: 9; exc: 16
+inc: 10; exc: 16
+inc: 11; exc: 16
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+}
+inc: 12; exc: 16
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+inc: 5; exc: 17
+inc: 6; exc: 17
+inc: 7; exc: 17
+inc: 8; exc: 17
+inc: 9; exc: 17
+inc: 10; exc: 17
+inc: 11; exc: 17
+inc: 12; exc: 17
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 8, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 7, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V0), true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- does_jump(V9, V3, V0), V1 = twocoins, pos(V0), cell_value(V1), pos(V3), agent(V9).
+}
+inc: 13; exc: 17
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_step(V7), true_cell(V7, V1), V0 = 7, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+}
+inc: 14; exc: 17
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 6, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V7, V1), V0 = 7, V7 = 2, pos(V0), cell_value(V1), pos(V7).
+}
+inc: 15; exc: 17
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V7, V1), V0 = 7, V7 = 2, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_step(V6), true_cell(V6, V1), V0 = 6, pos(V0), cell_value(V1), pos(V6).
+}
+inc: 16; exc: 17
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V7, V1), V0 = 7, V7 = 2, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_step(V6), true_cell(V6, V1), V0 = 6, pos(V0), cell_value(V1), pos(V6).
+}
+inc: 17; exc: 17
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 4, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V7, V1), V0 = 7, V7 = 2, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V6, V1), V0 = 6, V6 = 3, pos(V0), cell_value(V1), pos(V6).
+}
+inc: 17; exc: 17
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V7, V1), V0 = 7, V7 = 2, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V6, V1), V0 = 6, V6 = 3, pos(V0), cell_value(V1), pos(V6).
+next_cell(V0, V1) :- succ(V6, V0), true_cell(V6, V1), V0 = 4, pos(V0), cell_value(V1), pos(V6).
+}
+inc: 18; exc: 17
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), V0 = 1, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V7, V1), V0 = 7, V7 = 2, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V6, V1), V0 = 6, V6 = 3, pos(V0), cell_value(V1), pos(V6).
+next_cell(V0, V1) :- true_cell(V4, V1), V0 = 4, V4 = 6, pos(V0), cell_value(V1), pos(V4).
+}
+inc: 19; exc: 17
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+next_cell(V0, V1) :- V0 = 5, V1 = zerocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V0 = 2, V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- true_cell(V5, V1), V0 = 3, V5 = 5, pos(V0), cell_value(V1), pos(V5).
+next_cell(V0, V1) :- succ(V2, V0), true_cell(V2, V1), V0 = 8, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- true_cell(V7, V1), V0 = 7, V7 = 2, pos(V0), cell_value(V1), pos(V7).
+next_cell(V0, V1) :- true_cell(V6, V1), V0 = 6, V6 = 3, pos(V0), cell_value(V1), pos(V6).
+next_cell(V0, V1) :- true_cell(V4, V1), V0 = 4, V4 = 6, pos(V0), cell_value(V1), pos(V4).
+next_cell(V0, V1) :- true_cell(V3, V1), V0 = 1, V3 = 8, pos(V0), cell_value(V1), pos(V3).
+}
+Finished
