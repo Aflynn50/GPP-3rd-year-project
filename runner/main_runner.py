@@ -87,7 +87,7 @@ def move_json_files(game_type,train_or_test=""):
         game_trace_folders = [os.getcwd() + '/' + tourney_names[0] + '/']
     elif game_type == 'random':
         game_trace_folders = [os.getcwd() + '/' + tourney_names[1] + '/']
-    elif gmae_type == 'mixed':
+    elif game_type == 'mixed':
         game_trace_folders = [os.getcwd() + '/' + tourney_names[1] + '/', os.getcwd() + '/' + tourney_names[0] + '/']
 
     else:
