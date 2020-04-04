@@ -1,0 +1,27 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- succ(V10, V11), true_step(V11), int(V10), int(V11).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_step(V11), V11 = 30, int(V11).
+}
+Finished

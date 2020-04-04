@@ -1,0 +1,11 @@
+next_score(1,5).
+next_score(2,6).
+next_score(3,6).
+next_score(4,7).
+next_score(5,7).
+next_score(6,8).
+next_score(7,8).
+next_score(8,8).
+next_score(9,8).
+next_score(10,8).
+next_score(11,9).

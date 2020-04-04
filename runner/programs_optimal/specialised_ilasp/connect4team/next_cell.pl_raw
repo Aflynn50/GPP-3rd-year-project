@@ -1,0 +1,1072 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V1, V2) :- pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V0), pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V1), pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V1, V2) :- V1 = 1, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V0), y(V1), pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 6
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 7
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V1), does_drop(V2, V0), pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 8
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+}
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V5), succ(V1, V5), does_drop(V2, V0), pos(V0), pos(V1), agent(V2), pos(V5).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- V1 = 2, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- V2 = blue, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- y(V0), V1 = 2, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- y(V0), V2 = blue, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- y(V1), true_cell(V0, V6, V10), pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- y(V1), V2 = blue, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+}
+inc: 2; exc: 16
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 2, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V0), y(V1), V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V1), does_drop(V2, V0), V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V5), succ(V1, V5), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V5).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V0), y(V5), succ(V1, V5), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V5).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V5), succ(V1, V5), does_drop(V2, V0), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V5).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+next_cell(V0, V1, V2) :- V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+next_cell(V0, V1, V2) :- y(V0), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+inc: 2; exc: 27
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_control(V2), true_cell(V0, V6, V10), pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+}
+inc: 3; exc: 27
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+}
+inc: 4; exc: 27
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- V1 = 3, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+inc: 2; exc: 28
+inc: 3; exc: 28
+inc: 4; exc: 28
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V6, V5), true_cell(V0, V5, V13), pos(V0), pos(V1), agent(V2), pos(V5), pos(V6), agent(V13).
+}
+inc: 0; exc: 29
+inc: 1; exc: 29
+inc: 2; exc: 29
+inc: 3; exc: 29
+inc: 4; exc: 29
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 30
+inc: 1; exc: 30
+inc: 2; exc: 30
+inc: 3; exc: 30
+inc: 4; exc: 30
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- y(V0), V1 = 3, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 31
+inc: 1; exc: 31
+inc: 2; exc: 31
+inc: 3; exc: 31
+inc: 4; exc: 31
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V1, V0), true_control(V2), pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 32
+inc: 1; exc: 32
+inc: 2; exc: 32
+inc: 3; exc: 32
+inc: 4; exc: 32
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V1, V0), true_cell(V0, V5, V13), pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 33
+inc: 1; exc: 33
+inc: 2; exc: 33
+inc: 3; exc: 33
+inc: 4; exc: 33
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V1, V0), does_drop(V2, V0), pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 34
+inc: 1; exc: 34
+inc: 2; exc: 34
+inc: 3; exc: 34
+inc: 4; exc: 34
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V1, V0), V2 = orange, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 35
+inc: 1; exc: 35
+inc: 2; exc: 35
+inc: 3; exc: 35
+inc: 4; exc: 35
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 36
+inc: 1; exc: 36
+inc: 2; exc: 36
+inc: 3; exc: 36
+inc: 4; exc: 36
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 37
+inc: 1; exc: 37
+inc: 2; exc: 37
+inc: 3; exc: 37
+inc: 4; exc: 37
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V10), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 38
+inc: 1; exc: 38
+inc: 2; exc: 38
+inc: 3; exc: 38
+inc: 4; exc: 38
+--------------------------------------------
+Iteration 43:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 5; exc: 38
+--------------------------------------------
+Iteration 44:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V0 = 5, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 39
+inc: 1; exc: 39
+inc: 2; exc: 39
+inc: 3; exc: 39
+inc: 4; exc: 39
+inc: 5; exc: 39
+--------------------------------------------
+Iteration 45:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 40
+inc: 1; exc: 40
+inc: 2; exc: 40
+inc: 3; exc: 40
+inc: 4; exc: 40
+inc: 5; exc: 40
+--------------------------------------------
+Iteration 46:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V2 = cyan, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 41
+inc: 1; exc: 41
+inc: 2; exc: 41
+inc: 3; exc: 41
+inc: 4; exc: 41
+inc: 5; exc: 41
+--------------------------------------------
+Iteration 47:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), does(V13, V14), V1 = 1, V13 = blue, pos(V0), pos(V1), agent(V2), agent(V13), action(V14).
+}
+inc: 0; exc: 42
+inc: 1; exc: 42
+inc: 2; exc: 42
+inc: 3; exc: 42
+inc: 4; exc: 42
+inc: 5; exc: 42
+--------------------------------------------
+Iteration 48:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- team(V12, V2), team(V12, V13), true_cell(V4, V6, V13), true_cell(V4, V1, V10), V6 = 2, pos(V0), pos(V1), agent(V2), pos(V4), pos(V6), agent(V10), temp(V12), agent(V13).
+}
+inc: 0; exc: 43
+inc: 1; exc: 43
+inc: 2; exc: 43
+inc: 3; exc: 43
+inc: 4; exc: 43
+inc: 5; exc: 43
+--------------------------------------------
+Iteration 49:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- y(V0), V2 = cyan, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 44
+inc: 1; exc: 44
+inc: 2; exc: 44
+inc: 3; exc: 44
+inc: 4; exc: 44
+inc: 5; exc: 44
+--------------------------------------------
+Iteration 50:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- y(V1), V0 = 5, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 45
+inc: 1; exc: 45
+inc: 2; exc: 45
+inc: 3; exc: 45
+inc: 4; exc: 45
+inc: 5; exc: 45
+--------------------------------------------
+Iteration 51:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- succ(V4, V0), true_cell(V4, V5, V11), pos(V0), pos(V1), agent(V2), pos(V4), pos(V5), agent(V11).
+}
+inc: 0; exc: 46
+inc: 1; exc: 46
+inc: 2; exc: 46
+inc: 3; exc: 46
+inc: 4; exc: 46
+inc: 5; exc: 46
+--------------------------------------------
+Iteration 52:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- succ(V4, V0), true_cell(V4, V1, V10), pos(V0), pos(V1), agent(V2), pos(V4), agent(V10).
+}
+inc: 0; exc: 47
+inc: 1; exc: 47
+inc: 2; exc: 47
+inc: 3; exc: 47
+inc: 4; exc: 47
+inc: 5; exc: 47
+--------------------------------------------
+Iteration 53:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- succ(V5, V4), true_cell(V4, V5, V11), pos(V0), pos(V1), agent(V2), pos(V4), pos(V5), agent(V11).
+}
+inc: 0; exc: 48
+inc: 1; exc: 48
+inc: 2; exc: 48
+inc: 3; exc: 48
+inc: 4; exc: 48
+inc: 5; exc: 48
+--------------------------------------------
+Iteration 54:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_control(V2), true_cell(V0, V5, V13), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+}
+inc: 6; exc: 48
+--------------------------------------------
+Iteration 55:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- V1 = 3, V2 = orange, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 49
+inc: 1; exc: 49
+inc: 2; exc: 49
+inc: 3; exc: 49
+inc: 4; exc: 49
+inc: 5; exc: 49
+inc: 6; exc: 49
+--------------------------------------------
+Iteration 56:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- y(V0), succ(V1, V0), V2 = orange, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 50
+inc: 1; exc: 50
+inc: 2; exc: 50
+inc: 3; exc: 50
+inc: 4; exc: 50
+inc: 5; exc: 50
+inc: 6; exc: 50
+--------------------------------------------
+Iteration 57:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- y(V0), V1 = 3, V2 = orange, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 51
+inc: 1; exc: 51
+inc: 2; exc: 51
+inc: 3; exc: 51
+inc: 4; exc: 51
+inc: 5; exc: 51
+inc: 6; exc: 51
+--------------------------------------------
+Iteration 58:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 52
+inc: 1; exc: 52
+inc: 2; exc: 52
+inc: 3; exc: 52
+inc: 4; exc: 52
+inc: 5; exc: 52
+inc: 6; exc: 52
+--------------------------------------------
+Iteration 59:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V13, V0), V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 7; exc: 52
+--------------------------------------------
+Iteration 60:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 53
+inc: 1; exc: 53
+inc: 2; exc: 53
+inc: 3; exc: 53
+inc: 4; exc: 53
+inc: 5; exc: 53
+inc: 6; exc: 53
+inc: 7; exc: 53
+--------------------------------------------
+Iteration 61:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 54
+inc: 1; exc: 54
+inc: 2; exc: 54
+inc: 3; exc: 54
+inc: 4; exc: 54
+inc: 5; exc: 54
+inc: 6; exc: 54
+inc: 7; exc: 54
+--------------------------------------------
+Iteration 62:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- y(V1), true_control(V12), V12 = cyan, pos(V0), pos(V1), agent(V2), agent(V12).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 55
+inc: 1; exc: 55
+inc: 2; exc: 55
+inc: 3; exc: 55
+inc: 4; exc: 55
+inc: 5; exc: 55
+inc: 6; exc: 55
+inc: 7; exc: 55
+--------------------------------------------
+Iteration 63:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- true_control(V12), V1 = 1, V12 = cyan, pos(V0), pos(V1), agent(V2), agent(V12).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 56
+inc: 1; exc: 56
+inc: 2; exc: 56
+inc: 3; exc: 56
+inc: 4; exc: 56
+inc: 5; exc: 56
+inc: 6; exc: 56
+inc: 7; exc: 56
+--------------------------------------------
+Iteration 64:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- y(V0), y(V1), V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 57
+inc: 1; exc: 57
+inc: 2; exc: 57
+inc: 3; exc: 57
+inc: 4; exc: 57
+inc: 5; exc: 57
+inc: 6; exc: 57
+inc: 7; exc: 57
+--------------------------------------------
+Iteration 65:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- y(V0), true_cell(V4, V1, V10), V2 = cyan, pos(V0), pos(V1), agent(V2), pos(V4), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 58
+inc: 1; exc: 58
+inc: 2; exc: 58
+inc: 3; exc: 58
+inc: 4; exc: 58
+inc: 5; exc: 58
+inc: 6; exc: 58
+inc: 7; exc: 58
+--------------------------------------------
+Iteration 66:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- y(V1), does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 59
+inc: 1; exc: 59
+inc: 2; exc: 59
+inc: 3; exc: 59
+inc: 4; exc: 59
+inc: 5; exc: 59
+inc: 6; exc: 59
+inc: 7; exc: 59
+--------------------------------------------
+Iteration 67:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- y(V0), true_control(V12), V1 = 1, V12 = cyan, pos(V0), pos(V1), agent(V2), agent(V12).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 60
+inc: 1; exc: 60
+inc: 2; exc: 60
+inc: 3; exc: 60
+inc: 4; exc: 60
+inc: 5; exc: 60
+inc: 6; exc: 60
+inc: 7; exc: 60
+--------------------------------------------
+Iteration 68:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- y(V4), succ(V0, V4), true_control(V12), V1 = 1, V12 = cyan, pos(V0), pos(V1), agent(V2), pos(V4), agent(V12).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 61
+inc: 1; exc: 61
+inc: 2; exc: 61
+inc: 3; exc: 61
+inc: 4; exc: 61
+inc: 5; exc: 61
+inc: 6; exc: 61
+inc: 7; exc: 61
+--------------------------------------------
+Iteration 69:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- team(V12, V2), team(V12, V13), succ(V1, V6), true_cell(V4, V6, V13), pos(V0), pos(V1), agent(V2), pos(V4), pos(V6), temp(V12), agent(V13).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 62
+inc: 1; exc: 62
+inc: 2; exc: 62
+inc: 3; exc: 62
+inc: 4; exc: 62
+inc: 5; exc: 62
+inc: 6; exc: 62
+inc: 7; exc: 62
+--------------------------------------------
+Iteration 70:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- y(V3), succ(V0, V3), true_cell(V4, V1, V10), V2 = cyan, pos(V0), pos(V1), agent(V2), pos(V3), pos(V4), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 63
+inc: 1; exc: 63
+inc: 2; exc: 63
+inc: 3; exc: 63
+inc: 4; exc: 63
+inc: 5; exc: 63
+inc: 6; exc: 63
+inc: 7; exc: 63
+--------------------------------------------
+Iteration 71:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- y(V6), succ(V1, V6), does_drop(V2, V0), V0 = 5, pos(V0), pos(V1), agent(V2), pos(V6).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 64
+inc: 1; exc: 64
+inc: 2; exc: 64
+inc: 3; exc: 64
+inc: 4; exc: 64
+inc: 5; exc: 64
+inc: 6; exc: 64
+inc: 7; exc: 64
+--------------------------------------------
+Iteration 72:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- y(V0), team(V12, V2), team(V12, V13), succ(V1, V6), true_cell(V4, V6, V13), pos(V0), pos(V1), agent(V2), pos(V4), pos(V6), temp(V12), agent(V13).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 65
+inc: 1; exc: 65
+inc: 2; exc: 65
+inc: 3; exc: 65
+inc: 4; exc: 65
+inc: 5; exc: 65
+inc: 6; exc: 65
+inc: 7; exc: 65
+--------------------------------------------
+Iteration 73:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- team(V12, V2), team(V12, V13), succ(V4, V0), succ(V1, V6), true_cell(V4, V6, V13), pos(V0), pos(V1), agent(V2), pos(V4), pos(V6), temp(V12), agent(V13).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 0; exc: 66
+inc: 1; exc: 66
+inc: 2; exc: 66
+inc: 3; exc: 66
+inc: 4; exc: 66
+inc: 5; exc: 66
+inc: 6; exc: 66
+inc: 7; exc: 66
+--------------------------------------------
+Iteration 74:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+}
+inc: 8; exc: 66
+--------------------------------------------
+Iteration 75:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V12), V0 = 5, pos(V0), pos(V1), agent(V2), pos(V6), agent(V12).
+}
+inc: 0; exc: 67
+inc: 1; exc: 67
+inc: 2; exc: 67
+inc: 3; exc: 67
+inc: 4; exc: 67
+inc: 5; exc: 67
+inc: 6; exc: 67
+inc: 7; exc: 67
+inc: 8; exc: 67
+--------------------------------------------
+Iteration 76:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- succ(V4, V0), true_control(V2), true_cell(V4, V1, V13), pos(V0), pos(V1), agent(V2), pos(V4), agent(V13).
+}
+inc: 0; exc: 68
+inc: 1; exc: 68
+inc: 2; exc: 68
+inc: 3; exc: 68
+inc: 4; exc: 68
+inc: 5; exc: 68
+inc: 6; exc: 68
+inc: 7; exc: 68
+inc: 8; exc: 68
+--------------------------------------------
+Iteration 77:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- succ(V4, V0), true_cell(V4, V1, V13), does_drop(V2, V0), pos(V0), pos(V1), agent(V2), pos(V4), agent(V13).
+}
+inc: 0; exc: 69
+inc: 1; exc: 69
+inc: 2; exc: 69
+inc: 3; exc: 69
+inc: 4; exc: 69
+inc: 5; exc: 69
+inc: 6; exc: 69
+inc: 7; exc: 69
+inc: 8; exc: 69
+--------------------------------------------
+Iteration 78:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- team(V11, V12), succ(V6, V1), true_control(V2), true_cell(V0, V6, V12), V11 = cold, pos(V0), pos(V1), agent(V2), pos(V6), temp(V11), agent(V12).
+}
+inc: 0; exc: 70
+inc: 1; exc: 70
+inc: 2; exc: 70
+inc: 3; exc: 70
+inc: 4; exc: 70
+inc: 5; exc: 70
+inc: 6; exc: 70
+inc: 7; exc: 70
+inc: 8; exc: 70
+--------------------------------------------
+Iteration 79:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- team(V11, V12), succ(V6, V1), true_cell(V0, V6, V12), does_drop(V2, V0), V11 = cold, pos(V0), pos(V1), agent(V2), pos(V6), temp(V11), agent(V12).
+}
+inc: 9; exc: 70
+--------------------------------------------
+Iteration 80:
+solving
+H = {
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- y(V1), true_cell(V0, V5, V10), V0 = 5, pos(V0), pos(V1), agent(V2), pos(V5), agent(V10).
+}
+inc: 0; exc: 71
+inc: 1; exc: 71
+inc: 2; exc: 71
+inc: 3; exc: 71
+inc: 4; exc: 71
+inc: 5; exc: 71
+inc: 6; exc: 71
+inc: 7; exc: 71
+inc: 8; exc: 71
+inc: 9; exc: 71
+--------------------------------------------
+Iteration 81:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- succ(V5, V1), true_cell(V0, V5, V13), does_drop(V2, V0), V1 = 3, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V12), true_cell(V4, V1, V13), true_cell(V4, V6, V2), pos(V0), pos(V1), agent(V2), pos(V4), pos(V6), agent(V12), agent(V13).
+}
+inc: 0; exc: 72
+inc: 1; exc: 72
+inc: 2; exc: 72
+inc: 3; exc: 72
+inc: 4; exc: 72
+inc: 5; exc: 72
+inc: 6; exc: 72
+inc: 7; exc: 72
+inc: 8; exc: 72
+inc: 9; exc: 72
+--------------------------------------------
+Iteration 82:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V6, V5), input_move(V2, V4, V1, V4, V6), int(V0), int(V1), agent(V2), int(V4), int(V5), int(V6).
+}
+inc: 10; exc: 72
+--------------------------------------------
+Iteration 83:
+solving
+H = {
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- team(V11, V12), succ(V6, V1), true_cell(V0, V6, V12), does_drop(V2, V0), V11 = cold, pos(V0), pos(V1), agent(V2), pos(V6), temp(V11), agent(V12).
+next_cell(V0, V1, V2) :- y(V0), succ(V4, V0), succ(V1, V4), V2 = blue, pos(V0), pos(V1), agent(V2), pos(V4).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+}
+inc: 0; exc: 73
+inc: 1; exc: 73
+inc: 2; exc: 73
+inc: 3; exc: 73
+inc: 4; exc: 73
+inc: 5; exc: 73
+inc: 6; exc: 73
+inc: 7; exc: 73
+inc: 8; exc: 73
+inc: 9; exc: 73
+inc: 10; exc: 73
+--------------------------------------------
+Iteration 84:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V6, V10), V1 = 2, V2 = blue, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10).
+next_cell(V0, V1, V2) :- does_drop(V2, V0), V1 = 1, V2 = cyan, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V1, V0), succ(V5, V1), true_cell(V0, V5, V13), V2 = orange, pos(V0), pos(V1), agent(V2), pos(V5), agent(V13).
+next_cell(V0, V1, V2) :- V0 = 4, V1 = 1, V2 = red, pos(V0), pos(V1), agent(V2).
+next_cell(V0, V1, V2) :- succ(V6, V1), true_cell(V0, V6, V12), does_drop(V2, V0), does(V10, V14), V10 = orange, pos(V0), pos(V1), agent(V2), pos(V6), agent(V10), agent(V12), action(V14).
+}
+inc: 10; exc: 73

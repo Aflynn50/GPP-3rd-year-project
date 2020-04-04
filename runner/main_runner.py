@@ -112,11 +112,12 @@ def run_ilp(game_type):
 arg = sys.argv[1]
 if arg == 'gen_games':
     gen_games(sys.argv[2], int(sys.argv[3]))
-if arg == 'test':
-    for game in local_games:
-        print(str(get_num_roles(game)) + "  " + game)
 if arg == 'train':
     move_json_files(sys.argv[2])
     run_ilp(sys.argv[2])
-if arg == 'move_json_test':
+if arg == 'test_on':
     move_json_files(sys.argv[2],test_only=True)
+    runner.parse_and_test()
+if arg == 'json':
+    move_json_files(sys.argv[2],test_only=True)
+

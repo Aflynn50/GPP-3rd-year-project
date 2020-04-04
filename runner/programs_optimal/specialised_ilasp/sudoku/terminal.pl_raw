@@ -1,0 +1,55 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_cell(V1, V1, V8, V8, V8), pos(V1), mark(V1), pos(V8), mark(V8).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_cell(V1, V1, V1, V1, V5), V5 = 6, pos(V1), mark(V1), mark(V5).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_cell(V1, V1, V1, V8, V2), V2 = 9, pos(V1), mark(V1), mark(V2), pos(V8), mark(V8).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_cell(V1, V1, V8, V1, V7), V7 = 4, pos(V1), mark(V1), mark(V7), pos(V8), mark(V8).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- true_cell(V8, V1, V8, V1, V6), V6 = 5, pos(V1), mark(V1), mark(V6), pos(V8), mark(V8).
+}
+inc: 0; exc: 6
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+terminal :- true_cell(V8, V9, V8, V9, V3), V3 = 8, mark(V3), pos(V8), mark(V8), pos(V9), mark(V9).
+}
+Finished

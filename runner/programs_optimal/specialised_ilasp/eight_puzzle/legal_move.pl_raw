@@ -1,0 +1,588 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_move(V0, V1, V2) :- agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- successor(V1, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+}
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- successor(V1, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V6, V5), successor(V7, V6), successor(V8, V7), successor(V1, V8), true_cell(V9, V2, V5), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V5), time_step(V5), score_int(V5), cell_type(V6), time_step(V6), score_int(V6), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V1) :- true_step(V8), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 2; exc: 7
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V1) :- successor(V8, V1), true_step(V8), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 2; exc: 8
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V1) :- successor(V9, V8), true_step(V8), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 3; exc: 8
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V9, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 4; exc: 8
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_cell(V8, V8, V9), not true_step(V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 5; exc: 8
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V1, V1, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V1) :- true_cell(V8, V8, V9), not true_step(V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+inc: 4; exc: 9
+inc: 5; exc: 9
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V9, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_step(V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+inc: 4; exc: 10
+inc: 5; exc: 10
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V1, V8), true_cell(V1, V9, V8), true_cell(V1, V2, V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_cell(V8, V8, V9), not true_step(V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+inc: 5; exc: 11
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V1, V8), true_cell(V1, V9, V8), true_cell(V1, V2, V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_cell(V8, V8, V9), not true_step(V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), true_cell(V2, V2, V8), not true_step(V8), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+inc: 5; exc: 12
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_cell(V8, V8, V9), not true_step(V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), true_cell(V2, V2, V8), not true_step(V8), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8).
+}
+inc: 6; exc: 12
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V1, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), true_cell(V1, V1, V8), not true_step(V8), V2 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8).
+}
+inc: 7; exc: 12
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V5, V4), true_cell(V2, V2, V5), not true_step(V5), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), cell_type(V5), time_step(V5), score_int(V5).
+}
+inc: 8; exc: 12
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V9, V2), true_step(V9), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V1), V2 = 2, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), not true_step(V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+inc: 5; exc: 13
+inc: 6; exc: 13
+inc: 7; exc: 13
+inc: 8; exc: 13
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_cell(V8, V8, V9), not true_step(V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V5, V4), true_cell(V2, V9, V1), true_cell(V1, V1, V5), not true_step(V4), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), cell_type(V5), time_step(V5), score_int(V5), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+inc: 6; exc: 14
+inc: 7; exc: 14
+inc: 8; exc: 14
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V9, V1), true_step(V9), V2 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_step(V2), V1 = 2, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+inc: 6; exc: 15
+inc: 7; exc: 15
+inc: 8; exc: 15
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_cell(V8, V8, V9), true_cell(V8, V1, V7), not true_step(V9), not true_step(V7), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V7), time_step(V7), score_int(V7), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V5, V4), true_cell(V1, V9, V2), true_cell(V2, V2, V5), not true_step(V4), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), cell_type(V5), time_step(V5), score_int(V5), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 9; exc: 15
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V1, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V5, V4), true_cell(V1, V1, V5), not true_step(V5), V2 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), cell_type(V5), time_step(V5), score_int(V5).
+legal_move(V0, V1, V2) :- true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+inc: 5; exc: 16
+inc: 6; exc: 16
+inc: 7; exc: 16
+inc: 8; exc: 16
+inc: 9; exc: 16
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), not true_step(V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V1, V1, V9), not true_step(V9), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+}
+inc: 10; exc: 16
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V5, V4), true_cell(V1, V9, V2), true_cell(V2, V2, V5), not true_step(V4), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), cell_type(V5), time_step(V5), score_int(V5), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V9, V1, V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+inc: 5; exc: 17
+inc: 6; exc: 17
+inc: 7; exc: 17
+inc: 8; exc: 17
+inc: 9; exc: 17
+inc: 10; exc: 17
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V1, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V5, V4), true_cell(V1, V9, V2), true_cell(V2, V2, V5), not true_step(V4), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), cell_type(V5), time_step(V5), score_int(V5), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V9, V2, V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+inc: 5; exc: 18
+inc: 6; exc: 18
+inc: 7; exc: 18
+inc: 8; exc: 18
+inc: 9; exc: 18
+inc: 10; exc: 18
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V2), not true_step(V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- successor(V9, V8), true_step(V9), true_cell(V9, V1, V8), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V1, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+inc: 5; exc: 19
+inc: 6; exc: 19
+inc: 7; exc: 19
+inc: 8; exc: 19
+inc: 9; exc: 19
+inc: 10; exc: 19
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), successor(V9, V2), true_cell(V2, V9, V7), not true_step(V2), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), not true_step(V1), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+inc: 5; exc: 20
+inc: 6; exc: 20
+inc: 7; exc: 20
+inc: 8; exc: 20
+inc: 9; exc: 20
+inc: 10; exc: 20
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), successor(V9, V2), true_cell(V2, V9, V7), not true_step(V2), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 11; exc: 20
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- successor(V9, V1), true_cell(V9, V9, V2), V2 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 12; exc: 20
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), successor(V9, V2), true_cell(V2, V9, V7), not true_step(V2), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V8), V8 = 4, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+inc: 5; exc: 21
+inc: 6; exc: 21
+inc: 7; exc: 21
+inc: 8; exc: 21
+inc: 9; exc: 21
+inc: 10; exc: 21
+inc: 11; exc: 21
+inc: 12; exc: 21
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V5, V4), true_cell(V2, V9, V1), true_cell(V1, V1, V5), not true_step(V4), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), cell_type(V5), time_step(V5), score_int(V5), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- successor(V9, V1), true_cell(V9, V9, V2), V2 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V8), true_cell(V2, V9, V8), V1 = 1, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+inc: 5; exc: 22
+inc: 6; exc: 22
+inc: 7; exc: 22
+inc: 8; exc: 22
+inc: 9; exc: 22
+inc: 10; exc: 22
+inc: 11; exc: 22
+inc: 12; exc: 22
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V9, V2), true_step(V9), V1 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V1, V9, V2), true_cell(V9, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_step(V8), V8 = 4, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+inc: 5; exc: 23
+inc: 6; exc: 23
+inc: 7; exc: 23
+inc: 8; exc: 23
+inc: 9; exc: 23
+inc: 10; exc: 23
+inc: 11; exc: 23
+inc: 12; exc: 23
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V8), true_cell(V1, V1, V8), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8).
+legal_move(V0, V1, V2) :- successor(V9, V8), successor(V2, V1), true_cell(V9, V1, V8), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- true_cell(V1, V8, V8), true_cell(V9, V9, V2), V2 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), pos(V8), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), true_step(V8), true_cell(V9, V1, V7), not true_step(V2), V9 = 2, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+inc: 6; exc: 24
+inc: 7; exc: 24
+inc: 8; exc: 24
+inc: 9; exc: 24
+inc: 10; exc: 24
+inc: 11; exc: 24
+inc: 12; exc: 24
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V1, V8), true_cell(V1, V9, V8), true_cell(V1, V2, V9), true_cell(V9, V9, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- successor(V9, V1), true_cell(V9, V9, V2), V2 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V2, V8), true_cell(V2, V9, V8), true_cell(V2, V1, V9), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+inc: 6; exc: 25
+inc: 7; exc: 25
+inc: 8; exc: 25
+inc: 9; exc: 25
+inc: 10; exc: 25
+inc: 11; exc: 25
+inc: 12; exc: 25
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V9, V1), true_cell(V2, V1, V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V2, V1, V1), not true_step(V2), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2).
+legal_move(V0, V1, V2) :- successor(V1, V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V1, V2), true_step(V9), V9 = 3, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- successor(V9, V1), true_cell(V9, V9, V2), V2 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V8, V7), successor(V2, V8), true_step(V8), true_cell(V9, V1, V7), V9 = 2, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+inc: 2; exc: 26
+inc: 3; exc: 26
+inc: 4; exc: 26
+inc: 5; exc: 26
+inc: 6; exc: 26
+inc: 7; exc: 26
+inc: 8; exc: 26
+inc: 9; exc: 26
+inc: 10; exc: 26
+inc: 11; exc: 26
+inc: 12; exc: 26
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V1, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V2, V8), true_cell(V1, V1, V8), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8).
+legal_move(V0, V1, V2) :- true_cell(V2, V9, V1), true_cell(V9, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- successor(V9, V8), true_step(V9), true_cell(V9, V1, V8), V2 = 1, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- successor(V9, V1), true_cell(V9, V9, V2), V2 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V8), true_cell(V2, V9, V8), true_cell(V2, V1, V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 13; exc: 26
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+legal_move(V0, V1, V2) :- successor(V2, V9), true_cell(V9, V9, V3), V1 = 3, V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V1, V2, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V9), true_cell(V2, V1, V3), V3 = b, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V3), time_step(V3), score_int(V3), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_cell(V2, V9, V1), true_cell(V9, V9, V4), not true_step(V1), V4 = 8, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V4), time_step(V4), score_int(V4), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V2) :- true_step(V8), true_cell(V2, V9, V8), true_cell(V2, V1, V9), agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), pos(V2), cell_type(V2), time_step(V2), score_int(V2), cell_type(V8), time_step(V8), score_int(V8), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+legal_move(V0, V1, V1) :- successor(V1, V9), true_step(V7), V7 = 4, agent(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V7), time_step(V7), score_int(V7), pos(V9), cell_type(V9), time_step(V9), score_int(V9).
+}
+inc: 14; exc: 26

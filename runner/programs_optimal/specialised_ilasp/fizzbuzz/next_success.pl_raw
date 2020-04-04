@@ -1,0 +1,41 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_success(V0) :- int(V0), word(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_success(V0) :- succ(V31, V0), int(V0), word(V0), score(V31), int(V31), word(V31).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_success(V0) :- minus(V14, V15, V0), int(V0), word(V0), int(V14), word(V14), score(V15), int(V15), word(V15).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_success(V0) :- divisible(V15, V0), int(V0), word(V0), score(V15), int(V15), word(V15).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_success(V0) :- true_count(V0), int(V0), word(V0).
+}
+Finished

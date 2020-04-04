@@ -1,7 +1,7 @@
 import os
 
 def print_preludes(source_dir, dest_dir, hastocontain=""):
-	train_or_test = dest_dir.split('/')[-1]
+	train_or_test = dest_dir.split('/')[-2]
 	for filename in os.listdir(source_dir):
 		if filename.endswith(".dat") and (hastocontain in filename):
 			with open(source_dir + filename, 'r') as source:

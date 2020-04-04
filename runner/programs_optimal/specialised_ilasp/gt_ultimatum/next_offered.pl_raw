@@ -1,0 +1,41 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_offered(V0, V1) :- index(V0), int(V0), index(V1), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_offered(V0, V1) :- sum(V0, V1, V21), index(V0), int(V0), index(V1), int(V1), index(V21), int(V21).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_offered(V0, V1) :- does_offer(V101, V1), index(V0), int(V0), index(V1), int(V1), agent(V101).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_offered(V0, V1) :- sum(V0, V1, V21), sum(V12, V12, V21), index(V0), int(V0), index(V1), int(V1), index(V12), int(V12), index(V21), int(V21).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_offered(V0, V1) :- sum(V18, V1, V0), V18 = 8, index(V0), int(V0), index(V1), int(V1), index(V18), int(V18).
+}
+inc: 0; exc: 5
