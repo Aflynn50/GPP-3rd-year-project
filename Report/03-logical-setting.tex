@@ -1,0 +1,27 @@
+\chapter{Logical setting}\label{LogicalSetting}
+
+The IGGP problem is defined in the 2019 paper Inductive General Game Playing \cite{Cropper/IGGP}. Much like the problem of ILP \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
+\begin{itemize}
+\item $\mathscr{E}$ the language of examples (observations)
+\item $\mathscr{B}$ the language of background knowledge
+\item $\mathscr{H}$ the language of hypotheses
+\end{itemize} Each of these languages can be see as a subset of those described in \ref{sec:ILP}. All the predicates involved in the task are taken from the GDL descriptions of games in the Stanford GGP* library. A lot of the atoms in the descriptions are not function-free, that is, they are nested predicates. For example \mintinline{Prolog}{true(count(9))}. We flatten all of these to single, non nested predicates, i.e. \mintinline{Prolog}{true_count(9)}. This is done because some ILP systems do not support function symbols. We can therefore assume that both $\mathscr{E}$ and $\mathscr{B}$ are function-free. The language of hypotheses $\mathscr{H}$ can be assumed to consist of datalog programs with stratified negation as described here\cite{Kenneth}. Stratified negation is not necessary but in practice allows significantly more concise programs, and thus often makes the learning task computationally easier. We first define an IGGP input the use it to define the IGGP problem. An IGGP input needs to capture the idea of an observation about a game. The input is based on the general input for the Logical induction problem of section \ref{sec:ILP} since this is a sub problem of it.
+
+\textbf{The IGGP Input:} An input $\Delta$ is a set of triples $\{(B_i,E_i^+,E_i^-)\}_m^{i=1}$ where
+\begin{itemize}
+\item $B_i \subset \mathcal{B}$ represents background knowledge
+\item $E_i^+ \subseteq \mathscr{E}$ and $E_i^- \subseteq \mathscr{E}$ represent positive and negative examples respectively
+\end{itemize}
+An IGGP input forms the IGGP problem:
+
+\textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \models E_i^+$ and
+$H \cup B_i \not\models E_i^-$.
+
+
+\subsubsection{Problem Setting}
+Let the accuracy of a set $I$ of ILP systems in problem setting be defined as the mean of the percentage accuracy of each of them when tested on a given set of examples.
+
+Given an set of ILP systems $I$, for what selection of game traces $\Delta$ combined from an optimal gameplay distribution and a random gameplay distribution are the systems most accurate when solving the IGGP problem. The accuracy of $I$ when solving the IGGP problem will be tested by evaluating each $i \in I$ with data taken from a 50/50 combination of both optimal and random distributions.
+
+Also given a set of ILP systems $I$, and a gameplay distribution $G$ how does the number of training samples $|\Delta|$ taken from $G$ affect the accuracy of the hypothesis $H$ for each $i \in I$ when tested on $G$.
+

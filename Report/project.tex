@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,10pt]{report}
 \usepackage{float,graphicx}
 \usepackage{amsfonts}
 \usepackage{amsthm}
@@ -7,6 +7,7 @@
 \usepackage{minted}
 \usepackage{mathrsfs}
 \usepackage{pgfplots}
+\usepackage{mdframed}
 \usepackage[lined,boxruled]{algorithm2e}\usepackage{color}
 \usepackage[english]{babel}
 
@@ -15,7 +16,8 @@
 
 \pgfplotsset{width=10cm,compat=1.9}
 \usemintedstyle{friendly}
-
+\BeforeBeginEnvironment{minted}{\begin{mdframed}}
+\AfterEndEnvironment{minted}{\end{mdframed}}
 \begin{document}
 \title{\Large{\textbf{Inducing game rules from varying quality game play}}}
 % \title{\Large{\textbf{Inductive general game playing with varying quality game play}}}
@@ -25,37 +27,11 @@
 \input{00-abstract}
 \input{01-intro}
 \input{02-related}
-
-\chapter{Logical setting}\label{LogicalSetting}
-    - What precisely is the problem?
-    - You can paraphrase a lot from the IGGP paper
-
-The IGGP problem is defined in the 2019 paper Inductive General Game Playing \cite{Cropper/IGGP}. Much like the problem of ILP \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
-\begin{itemize}
-\item $\mathscr{E}$ the language of examples (observations)
-\item $\mathscr{B}$ the language of background knowledge
-\item $\mathscr{H}$ the language of hypotheses
-\end{itemize} Each of these languages can be see as a subset of those described in \ref{sec:ILP}. All the predicates involved in the task are taken from the GDL descriptions of games in the Stanford GGP* library. A lot of the atoms in the descriptions are not function-free, that is, they are nested predicates. For example \mintinline{Prolog}{true(count(9))}. We flatten all of these to single, non nested predicates, i.e. \mintinline{Prolog}{true_count(9)}. This is done because some ILP systems do not support function symbols. We can therefore assume that both $\mathscr{E}$ and $\mathscr{B}$ are function-free. The language of hypotheses $\mathscr{H}$ can be assumed to consist of datalog programs with stratified negation as described here\cite{Kenneth}. Stratified negation is not necessary but in practice allows significantly more concise programs, and thus often makes the learning task computationally easier. We first define an IGGP input the use it to define the IGGP problem. An IGGP input needs to capture the idea of an observation about a game. The input is based on the general input for the Logical induction problem of section \ref{sec:ILP} since this is a sub problem of it.
-
-\textbf{The IGGP Input:} An input $\Delta$ is a set of triples $\{(B_i,E_i^+,E_i^-)\}_m^{i=1}$ where
-\begin{itemize}
-\item $B_i \subset \mathcal{B}$ represents background knowledge
-\item $E_i^+ \subseteq \mathscr{E}$ and $E_i^- \subseteq \mathscr{E}$ represent positive and negative examples respectively
-\end{itemize}
-An IGGP input forms the IGGP problem:
-
-\textbf{The IGGP Problem:} Given an IGGP input $\Delta$, the IGGP problem is to return a hypothesis $H \in \mathscr{H}$ such that for all $(B_i,E_i^+,E_i^-) \in \Delta$ it holds that $H \cup B_i \models E_i^+$ and
-$H \cup B_i \models E_i^-$.
+\input{03-logical-setting}
 
 
-\subsubsection{Problem Setting}
-Let the accuracy of a set $I$ of ILP systems in problem setting be defined as the mean of the percentage accuracy of each of them when tested on a given set of examples.
 
-- Given an set of ILP systems $I$, for what selection of game traces $\Delta$ combined from an optimal gameplay distribution and a random gameplay distribution are the systems most accurate when solving the IGGP problem. The accuracy of $I$ when solving the IGGP problem will be tested by evaluating each $i \in I$ with data taken from a 50/50 combination of both optimal and random distributions.
-
-We will also be investigating how the size of the trace set $|\Delta|$ affects the accuracy of the hypothesis $H$.
-
-\subsection{Sancho}
+\section{Sancho}
 To generate optimal gameplay we decided that the best approach was to use a previous winner of the GGP competition. Since the aim of the competition is to find the program that performs best at the set of games used in the IGGP problem we conclude that there is no better way to generate a comprehensive set of game traces. The winner of the 2014 GGP competition 'Sancho' was selected \footnote{http://ggp.stanford.edu/iggpc/winners.php accessed on 12/03/2020} since they are the most recent winner to have published their code \footnote{http://sanchoggp.github.io/sancho-ggp/ access 12/03/2020}. Some small modifications to the information logged by the game server are made but otherwise the code is unchanged.
 
 The core of Sancho is the Monte Carlo tree search (MCTS) algorithm.
@@ -85,6 +61,14 @@ In GGP matches a period of time before the match is given in which to do pre mat
 
 The identification of possible heuristics takes place in two stages. The first of these is static analysis of the game rules. This static analysis identifies possible heuristics that can be applied to the current game. These include things like piece capture: if certain rules indicate capture of a piece these can be selected against, or numeric quantity detection: a number in the state acts as a heuristic (like number of coins a player has). The second stage is simulation of the game. Many (possibly tens of thousands) of full simulations of the game are run. After the simulations are complete a correlation coefficient is calculated between each candidate heuristic's observed values and the eventual score achieved in the game. Those heuristics that show correlation above a fixed threshold are then enabled, and will be used during play.
 
+\subsection{Other aspects of Sancho}
+Monte carlo simulations are used for a large number of the games available however Sancho identifies games that can be solved more efficiently in other ways. Any single player game in the GGP dataset can be analyised using puzzle solving techniques. 
+\subsubsection{Puzzle Solving}
+A single player game in the GGP dataset is neciserally a deterministic game of complete information. This is due to the constraints of the Game Description Language, it is not possible to express anything more. This gives the constraint that any solution found in a playout of the game will always remain valid since the game is completely deterministic. Sancho identifies these single player games and attempts to derive huristics. Where an obviouse goal state exsists a distance metric such as the hamming distance between two states can be applied. A* search can then be used to find optimal solutions. For some games, such as eight puzzle the hamming distance is an admisable huristic so sancho finds an optimal solution.
+
+Sancho also does static analysis of the game rules. It determins game predicates that if true mean the goal will never be true in any proceding state as well as predicates that garentee that the goal will be true in a future state. An example of this is a game such as untwisty corridor (the game is effecitvly a maze where if you immidiatly lose if you step off a 'safe' path). If the safe path is left then the goal can never be reached so any state not on the safe path is avoided.
+
+\af{Talk about why this makes sancho good for this task}
 \chapter{ILP systems used}
 We use three ILP systems to compare the effects of different learning data, Metagol, Aleph and ILASP. All three systems use different approaches the ILP problem.
 \section{Metagol}
@@ -134,10 +118,25 @@ Mode declarations and determinations are used in step 2 of this procedure to bou
 By default Aleph preforms a bounded breath first search on all the possible rules, enumerating shorter clauses before longer clauses. The search is bounded by several parameters such as maximum clause size and maximum proof depth. The best score is selected as the one with the best $P - N$ value where $P$ is the number of positive rules entailed by the hypothesis and $N$ is the number of negative rules entailed. For this paper we will use Aleph with the default settings.
 
 \section{ILASP}
-\cite{MarkLaw/Thesis}\cite{MarkLaw/ILASP2}\cite{MarkLaw/OG-ILASP}\cite{ILASP-Manuel}
-ILASP is an ILP system based on Answer Set Programming (ASP). An introduction to ASP can be found here \cite{Corapi/ASP}.
 
+ILASP is an ILP system based on Answer Set Programming (ASP). An introduction to ASP can be found here \cite{Corapi/ASP}. ILASP uses a subset of ASP that is defined in these papers\cite{ILASP-Manuel}\cite{MarkLaw/OG-ILASP}\cite{MarkLaw/Thesis} The ILASP process effectively generates all possible rules of a certain length, turns the problem into an ASP problem that adds a predicate to each rule allowing it to be active or inactive. It then uses the ASP solver clingo\cite{Clingo}  to check which rules should be active if the program is to be consistent with the positive and the negation of the negative examples\cite{MarkLaw/OG-ILASP}\cite{MarkLaw/Thesis}. In this paper we use a version of ILASP based on ILASP2i\cite{MarkLaw/ILASP2i} which was developed with the IGGP problem in mind\cite{Cropper/IGGP}. As one input ILASP takes a hypothesis search space, i.e. the set of all hypotheses to be considered. This is constructed using the type signatures given for each problem that are provided in the IGGP dataset.
 
+An ILASP task is defined as a tuple $T = \langle B,S_M,E^+E^-\rangle$ where $B$ is the background knowledge, $S_M$ is the hypothesis space, and $E^+$ and $E^-$ are the positive and negative examples. The ILASP procedure is given in algorithm \ref{alg:ILASP}. 
+\begin{algorithm}[H]\label{alg:ILASP}
+	\SetAlgoLined
+	$n$ = 0\;
+	solutions = []\;
+	\While{solutions.empty}{
+		$S^N$ = all possible hypotheses of length $N$ from $S_M$ \;
+		$ns$ = all subsets of $S^N$ that imply $E^-$ (Using an ASP solver)\;
+		$vs$ = the set of rules that for each set of rules in $ns$ imply false if exactly those rules are active\;
+		solutions = all subsets of $S^N$ that imply $E^+$ and satisfy $vs$ (using asp solver)\;
+		$n$ = $n$ + 1\;
+	}
+	\caption{ILASP outline}
+\end{algorithm}
+
+The approaches used by ILASP have proved to be well suited to the IGGP task \cite{Cropper/IGGP}. We expect it to do well in the experiments conducted.
 \chapter{Implementations}
 \section{Eight Puzzle}
 To write an optimal player for Eight Puzzle I decide to use an approach based on best first search.
@@ -242,7 +241,7 @@ h(B,H) :-
 \end{minted}
 
 \section{Noughts and crosses}
-\chapter{Experiments}
+\chapter{Experiments}\label{sec:experiments}
 \section{Optimal Play vs Random with fixed sample size}
 \section{Mixed datasets (50/50 random and optimal)}
 \subsection{Results}
@@ -293,6 +292,7 @@ Training Data & Testing Data & Predicate & Metagol & Aleph \\ \hline
 \end{axis}
 \end{tikzpicture}
 \section{Optimal Play vs Random with varying sample size}
+\chapter{Results}
 \bibliography{project}
 \bibliographystyle{plain}
 \end{document}

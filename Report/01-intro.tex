@@ -5,13 +5,32 @@ General Game Playing (GGP) is a framework in which artificial intelligence progr
 The GGP framework includes a large database of games. In a GGP match games from these databases are selected at random and sent to the competitors. The games are specified in the Game Description Language (GDL), a logic programming language built for describing games as state machines\cite{GDL_Spec}. A logic programming language being any that is mainly based on formal logic, such as Prolog.
 
 
+\begin{figure}[ht]
+	\centering
+	\fbox{\includegraphics[width=0.7\linewidth]{GGP-Games.png}}
+	\caption{A selection of games from the GGP competition. From the top right: \textit{checkers}, \textit{chinese checkers}, \textit{chess}, \textit{tic tac toe}, \textit{rubix cube} and \textit{eight puzzle}}
+\end{figure}
 
-\ac{give an example of a GGP game}
+\begin{listing}[ht]
+\begin{minted}[fontsize=\footnotesize]{text}
+(succ 0  1)
+(succ 1  2)
+(succ 2  3)
+(beats scissors paper)
+(beats paper stone)
+(beats stone scissors)
+(<= (legal ?p scissors) (player ?p))
+(<= (legal ?p paper) (player ?p))
+(<= (legal ?p stone) (player ?p))
+(<= (draws ?p) (does ?p ?a) (does ?q ?a) (distinct ?p ?q))
+(<= (wins ?p) (does ?p ?a1) (does ?q ?a2) (distinct ?p ?q) (beats ?a1 ?a2))
+(<= (loses ?p) (does ?p ?a1) (does ?q ?a2) (distinct ?p ?q) (beats ?a2 ?a1))
+\end{minted}
+\caption{A sample of rules from the GDL description of Rock Paper Scissors. The $?$ indicates a variable and $<=$ indicates an implication with the first expression after being the head and the conjugation of the rest making up the body}
+\end{listing}
 
 
 These GDL game descriptions form the basis for the Inductive General Game Playing (IGGP) problem. The task is an inversion of the GGP problem. Rather than taking game rules and using them to play the game in IGGP the aim is to learn the rules from observations of gameplay, similar to how a human might work out the rules of a game by watching someone play it. Cropper et al. define the IGGP problem in their 2019 paper; given a set of gameplay observations the goal is to induce the rules of the game\cite{Cropper/IGGP}. The games used in IGGP are those from the GGP competition problem set, specified in GDL, meaning they are widely varied in complexity.
-
-\ac{give an example of a IGGP problem}
 
 \af{GIVE EXAMPLE OF IGGP PROBLEM}
 
@@ -22,41 +41,24 @@ However, the existing work has limitations. All existing work has assumed that t
 
 It is not obvious whether random or optimal gameplay would be best. When learning the rules of chess would a human rather watch moves being made randomly, or a match between two grandmasters? It is not an easy question to answer. Both situations will result in a restricted view of the game, with certain situations never occurring in each one. This is not only a dilemma in the context of learning game rules. For example, teaching a self driving car to navigate roads requires training it on examples of driving. We would clearly not train it on optimal Formula One quality driving and neither would we train it on random movement of the car. The question to be asked is what is the ideal level of training data to use to best teach a system the rules you want it to learn. In this paper, we try to help give some insight into this fundamental question. Specifically, we ask the following research questions:
 
-\ac{
-I really like this paragraph and your example.
-I suggest expanding on it a little bit.
-You could try to make the statement broader by saying that the problem of the quality of examples is not limited to just game playing.
-For instance, if we are teaching cars to drive, we could clearly not train them on optimal formula 1 quality driving.
-Likewise, we would not train them on random driving.
-Where does the sweetspot lie?
-In this paper, we try to help give some insight into such a fundamental question.
-Specifically, we ask the following research questions:
-}
-
 \begin{description}
-\item[Q1] Does varying the quality of game traces influence the ability for learners to solve the IGGP problems? Specifically, does the quality of game place affect predictive accuracy?
-\item[Q2] Does varying the amount of game traces influence the ability for learners to solve the IGGP problems? Specifically, does the quality of game place affect predictive accuracy?
+\item[Q1] Does varying the quality of game traces influence the ability for learners to solve the IGGP problems? Specifically, does the quality of game play affect predictive accuracy?
+\item[Q2] Does varying the amount of game traces influence the ability for learners to solve the IGGP problems? Specifically, does the quality of game play affect predictive accuracy?
 \item[Q3] Can we improve the performance of a learner by mixing the quality of traces?
 \end{description}
 
-Ideally the generated rules would be compared directly against the rules in the GDL game descriptions. We would take the generated rule and see for what percentage of all possible game states the reference rule and the learned rule gave the same output. Unfortunately we do not have the computational resources to do this with a lot of the games such as checkers which has a state-space complexity of roughly $5.0 \cdot 10^{20}$\cite{Horssen/Checkers} and sudoku which exceeds $6.6 \cdot 10^{21}$\cite{Felgenhauer/Suduko}. Instead we will test the learned programs on both optimal and random data of the same quality used in training.
+We will train a range of ILP systems that each use a different approach to the problem on different sets of training data. The results for Q1 will be the most interesting as it is not clear what the expected outcome is. Q2 is an easier question to answer, it is generally accepted that for machine learning problems the more training data you have the better the predictive accuracy of the ML system. We ask this question to get some insight into how much the predictive accuracy is affected by the training set size. Often in ILP only a small amount of training data is needed, adding more data may not significantly affect accuracy \cite{Muggleton/ILP}. The third question is an interesting one. Intuitively greater diversity in the training data should give a result closer to the rule that generated the data. However if a learner is trained on random data and only tested on random data we would expect this to perform better than a learner trained on random data then tested on a mix of optimal and random data. This question thus highlights an issue we face: how do we test the learned game rules?
 
-\ac{you should comment on these as to link to the next paragraph, e.g. why are you asking them? Are the answers obvious? If not, why (the why is the following paragraph)}
+Ideally the generated rules would be compared directly against the rules in the GDL game descriptions. We would take the generated rule and see for what percentage of all possible game states the reference rule and the learned rule gave the same output. Unfortunately we do not have the computational resources to do this with a lot of the games having too many possible states such as checkers which has a state-space complexity of roughly $5.0 \cdot 10^{20}$\cite{Horssen/Checkers} and sudoku which exceeds $6.6 \cdot 10^{21}$\cite{Felgenhauer/Suduko}. Instead we will test the learned programs on both optimal and random data of the same quality used in training. \af{and maybe a combination as well}
 
-We would also expect models trained on the same distribution as they are tested on to perform best since it is generally accepted that the accuracy of a model increases the closer the test data distribution is to the training data distribution.\cite{Mitchell/MachineLearing}. However, Gonzales \cite{Gonzalez/MismatchedOutperform} suggests that a system trained on a different domain to the one it is tested can outperform a system trained and tested on the same domain. In his 2010 paper Ben-David shows that training data taken from multiple different domains can in fact give lower error on testing data that traning data taken from any single domain, including the testing domain \cite{Ben-David/DifferentDomains}. It is not clear in our case what selection of training data will result in the most effect learning.
-\ac{this paragraph is good and is very interesting. I suggest slightly expanding on each reference to give the reader more intuition about those works}.
+We would also expect models trained on the same distribution as they are tested on to perform best since it is generally accepted that the accuracy of a model increases the closer the test data distribution is to the training data distribution \cite{Mitchell/MachineLearing}. However, Gonzales and Abu-Mostafa\cite{Gonzalez/MismatchedOutperform} suggest that a system trained on a different domain to the one it is tested can outperform a system trained and tested on the same domain. Given a test distribution there exsists a duel distribution that, when used to train, gives better results. The duel distribution gives a lower out-of-sample\footnote{out-of-sample data is data that is not in the training set} error than using the test distribution. This duel distribution can be thought of as the point in the input space where the least out-of-sample error occurs\cite{Gonzalez/MismatchedOutperform}. As well as optimising the single training distribution we can take data from multiple distinct distributions. Ben-David et. al. show that training data taken from multiple different domains can in fact give lower error on testing data that traning data taken from any single domain, including the testing domain \cite{Ben-David/DifferentDomains}. It is not clear in our case what selection of training data will result in the most effect learning.
 
-In machine learning the probably approximately correct learning framework (PAC) is a mathematical model that can be applied to machine learning systems for analysis. It gives an upper bound on the number of training examples needed for a learner to probably (with probability at least $[1-\delta]$) learn a hypothesis that is approximately (within error $\epsilon$)correct\cite{Mitchell/MachineLearing}. In section ? we test to find the number of examples beyond which the reduction in $\epsilon$ and $\delta$ becomes negligible.
-\ac{you can cut this paragraph}
+To help answer questions 1-3, we make the following contributions:
 
-\ac{To help answer questions 1-3, we make the following contributions:}
-
-\ac{This part is vital. Make it clear and precise what you have done. As I said before, this bullet pointed list is one of the key parts of your report}
 \subsubsection{Contributions}
 \begin{itemize}
-\item \ac{We implement a system to play GGP games at (1) random, (2) world-leading, and (3) optimal levels. (Section \ref{somesection})}
+\item We implement a system to play GGP games at (1) random, \af{(2) world-leading}, and (3) optimal levels. (Section \ref{sec:experiments})
 \item We transform the GGP traces to IGGP problems
-\item We train the ILP systems \ac{what ILP systems}?on different combinations of optimal and random data as well as testing them on each individually (Section \ref{somesection})
-
-\item We experimentally explore the research questions (Q1, Q2, and Q3). Our results show ...
+\item We train the ILP systems Metagol, Aleph and ILASP on different combinations of optimal and random data as well as testing them on each individually (Section \ref{sec:experiments})
+\item We train the ILP systems on differing amounts of traces and test to ascertain the effect this has on the accuracy of the predicted results
 \end{itemize}

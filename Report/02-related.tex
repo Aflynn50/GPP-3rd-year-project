@@ -65,13 +65,13 @@ Prolog answers queries using a process know as proof seach and unification. The 
 \caption{Execute Prolog Goals}
 \end{algorithm}
 
-the program listing is wearched for a term to unify with. The listing is searched in the order it is written in. When Prolog finds a matching rule it then attempts to sequentially unify the terms of the body using the same method. If the rule has no body then the variables are assigned and the terms unify. If Prolog fails to unify two terms then it backtracks, assignes differnt values to \cite{Bratko}
+the program listing is wearched for a term to unify with. The listing is searched in the order it is written in. When Prolog finds a matching rule it then attempts to sequentially unify the terms of the body using the same method. If the rule has no body then the variables are assigned and the terms unify. If Prolog fails to unify two terms then it backtracks, assignes the last variable a differnt values. This continues until a proof is found or all possibilities have been exauseted\cite{Bratko}.
 
 
 \section{IGGP}
-The Inductive General Game Playing (IGGP) problem is an inversion of the GGP problem. Rather than using game rules to generate gameplay the learner must learn the rules of the game by watching others play. The learner is given a set of game traces and is tasked with using them to induce (learn) the rules of the game that could have produced the traces\cite{Cropper/IGGP}.
+The Inductive General Game Playing (IGGP) problem is an inversion of the GGP problem. Rather than using game rules to generate gameplay the learner must learn the rules of the game by watching others play. The learner is given a set of game traces and is tasked with using them to induce (learn) the rules of the game that could have produced the traces\cite{Cropper/IGGP}. IGGP was designed as a way of benchmarking machine learning systems.
 
-The task itself is based on the Inductive logic programming problem.
+The definition of task itself is based on the Inductive logic programming problem.
 
 \subsection{ILP}\label{sec:ILP}
 Inductive logic programming is a form of machine learning that uses logic programming to represent examples, background knowledge, and learned programs\cite{Cropper/EfficientLearning}. To learn the program is supplied with positive examples, negative examples and the background knowledge. In the general inductive setting we are provided with three languages.
@@ -83,13 +83,13 @@ Inductive logic programming is a form of machine learning that uses logic progra
 The general inductive problem is as follows: given a consistent set of examples or observations $O \subseteq \mathcal{L}_O$ and consistent background knowledge $B \subseteq \mathcal{L}_B$ find an hypothesis $H \in \mathcal{L}_H$ such that \[B \wedge H \vDash O\] \cite{Muggleton/ILP}
 That is that the generated hypothesis and the background knowledge imply the positive examples and not imply the negative examples.
 
-Example task (grandparent relation)
+\af{Example task (grandparent relation)}
 
 ILP systems generally regard ILP as a search problem. The search space is the set of well formed hypothesis. Often a set of inference rules are applied to the starting hypothesis, the new hypothesise are then pruned and expanded according to how often $B \wedge H \vDash O$ in the observations $O$. When all the observations are implied then a correct program has been found.
 
 \subsection{Back to IGGP}
 
-In IGGP we also have the idea of background knowledge and positive or negative observations. All three are given in the form of a set of ground atoms. The task is to come up with a rule that, when combined with the background knowledge, implies all of the positive examples and none of the negative examples. An example of a typical IGGP problem is given below
+In IGGP we also have the idea of background knowledge and positive or negative observations. The task is given as a triple $\{(B,E^+,E^-)\}$. The positive examples $E^+$, the negative examples  $E^-$ and the background knowledge $B$. Similar to the Inductive logic programming problem the learner \ref{sec:ILP} has to come up with a hypothesis $H$ such that $H$ and the background knowledge imply all the positive examples but none of the negative examples, that is $H \cup B \models E^+$ and $H \cup B \not\models E_i^-$. All three are given in the form of a set of ground atoms, that is they do not contain any free variables.The background knowledge of a task consists of all the rules of the GDL game description that do not concern the predicate being learned. For example in Rock Paper Scissors this would be the facts that give which item beats which (i.e. that scissors beat paper). An example of a typical IGGP problem is given below
 
 %Show example IGGP task
 
@@ -103,19 +103,11 @@ A mechanism is also provided by the authors to turn these GDL game descriptions 
 
 
 
-\section{Machine learning}
-Machine learning theory contains a lot of work on the general setting of the problem we are considering, specifically, it covers how the relation between the training data and the testing data can affect the accuracy of the hypothesis as well as how the amount of training data can affect the result. In this paper
-
-(in PAC) The cardinality of this example set must be at most a polynomial function of the size of the vocabulary used in constructing hypotheses.
-
-More examples allows for longer programs therefore better programs?
 
 
 
-\subsection{Metagol?}
-?Should I add a section on how metagol works here as an example?
 
 
-To evaluate ILP systems the learning tasks they are given need to be small enough that it is feasible for them to learn the programs, but also diverse enough that we test the full capability of the system. The Inductive general game playing framework provides this. To understand IGGP we first need to explain the General game playing framework.
+%To evaluate ILP systems the learning tasks they are given need to be small enough that it is feasible for them to learn the programs, but also diverse enough that we test the full capability of the system. The Inductive general game playing framework provides this. To understand IGGP we first need to explain the General game playing framework.
 
 
