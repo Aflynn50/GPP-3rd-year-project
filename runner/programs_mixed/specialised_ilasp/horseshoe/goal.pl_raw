@@ -1,0 +1,237 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), mark(V0), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- not true_control(V0), agent(V0), mark(V0), int(V1).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- V1 = 100, agent(V0), mark(V0), int(V1).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- succ(V6, V5), true_step(V5), agent(V0), mark(V0), int(V1), int(V5), int(V6).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), V5 = 7, agent(V0), mark(V0), int(V1), int(V5).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V26, V22), V22 = red, V26 = b, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V26).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V26, V22), true_cell(V27, V22), V26 = b, V27 = a, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V26), pos(V27).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- not true_control(V0), V1 = 100, agent(V0), mark(V0), int(V1).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- succ(V6, V5), true_step(V5), V0 = black, agent(V0), mark(V0), int(V1), int(V5), int(V6).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- succ(V6, V5), true_step(V5), V1 = 100, agent(V0), mark(V0), int(V1), int(V5), int(V6).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), not true_control(V0), V5 = 7, agent(V0), mark(V0), int(V1), int(V5).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), V1 = 100, V5 = 7, agent(V0), mark(V0), int(V1), int(V5).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), true_cell(V26, V22), V5 = 7, V26 = b, agent(V0), mark(V0), int(V1), int(V5), agent(V22), mark(V22), pos(V26).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V25, V0), true_cell(V26, V22), V22 = red, V25 = c, V26 = b, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V25), pos(V26).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- input_move(V22, V26, V27), true_control(V22), true_cell(V26, V22), true_cell(V27, V22), V27 = a, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V26), pos(V27).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- succ(V6, V5), true_step(V5), V0 = black, V1 = 100, agent(V0), mark(V0), int(V1), int(V5), int(V6).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), not true_control(V0), V1 = 100, V5 = 7, agent(V0), mark(V0), int(V1), int(V5).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V26, V22), V1 = 100, V22 = red, V26 = b, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V26).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), true_cell(V24, V28), V5 = 7, V24 = d, V28 = blank, agent(V0), mark(V0), int(V1), int(V5), pos(V24), mark(V28).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), true_cell(V26, V22), not true_control(V0), V5 = 7, V26 = b, agent(V0), mark(V0), int(V1), int(V5), agent(V22), mark(V22), pos(V26).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_step(V5), true_cell(V26, V22), V1 = 100, V5 = 7, V26 = b, agent(V0), mark(V0), int(V1), int(V5), agent(V22), mark(V22), pos(V26).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V26, V22), true_cell(V27, V22), V0 = black, V26 = b, V27 = a, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V26), pos(V27).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V26, V22), true_cell(V27, V22), V1 = 100, V26 = b, V27 = a, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V26), pos(V27).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V24, V28), not true_control(V0), V0 = black, V24 = d, V28 = blank, agent(V0), mark(V0), int(V1), pos(V24), mark(V28).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), mark(V0), int(V1).
+goal(V0, V1) :- true_cell(V26, V22), V0 = black, V1 = 100, V22 = red, V26 = b, agent(V0), mark(V0), int(V1), agent(V22), mark(V22), pos(V26).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+UNSATISFIABLE

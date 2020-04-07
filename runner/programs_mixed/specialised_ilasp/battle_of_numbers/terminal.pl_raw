@@ -1,0 +1,43 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- stepcount(V17, V16), true_step(V16), step_int(V16), step_int(V17).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_step(V16), V16 = 35, step_int(V16).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- orthogonal(V1, V1, V1, V0), true_cell(V1, V0, V0, V41), number(V0), step_int(V0), number(V1), step_int(V1), agent(V41).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- succ(V0, V1), true_cell(V0, V1, V1, V41), number(V0), step_int(V0), number(V1), step_int(V1), agent(V41).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4

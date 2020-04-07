@@ -1,0 +1,55 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_jump(V0, V1, V1, V2, V2, V3, V3) :- agent(V0), cell_type(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_jump(V0, V1, V1, V2, V2, V3, V3) :- vertical(V4, V3, V4, V4), agent(V0), cell_type(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_jump(V0, V1, V1, V2, V2, V3, V3) :- vertical(V4, V2, V4, V3), agent(V0), cell_type(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_jump(V0, V1, V1, V2, V2, V3, V3) :- vertical(V4, V1, V4, V2), agent(V0), cell_type(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_jump(V0, V1, V1, V2, V2, V3, V3) :- triplet(V4, V3, V4, V2, V4, V1), agent(V0), cell_type(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_jump(V0, V1, V1, V2, V2, V3, V3) :- slash(V4, V2, V3, V3), agent(V0), cell_type(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4).
+}
+inc: 0; exc: 6
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_jump(V0, V1, V1, V2, V2, V3, V3) :- slash(V3, V1, V2, V2), agent(V0), cell_type(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3).
+}
+inc: 0; exc: 7

@@ -1,0 +1,202 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V0, V0, V0, V1) :- pos(V0), mark(V0), mark(V1).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 2; exc: 0
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 3; exc: 0
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 4; exc: 0
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V2, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2).
+}
+inc: 5; exc: 0
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 6; exc: 0
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 7; exc: 0
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V1, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2).
+}
+inc: 8; exc: 0
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 9; exc: 0
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 10; exc: 0
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V1, V1, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 11; exc: 0
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 12; exc: 0
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V0, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 13; exc: 0
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V0, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V1, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 14; exc: 0
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V0, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V1, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V2, V3) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 0; exc: 1
+inc: 1; exc: 1
+inc: 2; exc: 1
+inc: 3; exc: 1
+inc: 4; exc: 1
+inc: 5; exc: 1
+inc: 6; exc: 1
+inc: 7; exc: 1
+inc: 8; exc: 1
+inc: 9; exc: 1
+inc: 10; exc: 1
+inc: 11; exc: 1
+inc: 12; exc: 1
+inc: 13; exc: 1
+inc: 14; exc: 1
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- true_cell(V0, V0, V1, V2, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- true_cell(V0, V0, V1, V2, V2), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V0, V3) :- true_cell(V0, V0, V1, V2, V2), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V1, V3) :- true_cell(V0, V1, V2, V1, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 15; exc: 1
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- true_cell(V0, V0, V1, V2, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- true_cell(V0, V1, V0, V2, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V0, V3) :- true_cell(V0, V0, V1, V2, V2), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V1, V3) :- true_cell(V0, V1, V2, V1, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 16; exc: 1
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- true_cell(V0, V0, V1, V2, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- true_cell(V0, V0, V1, V2, V2), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V1, V3) :- true_cell(V0, V1, V2, V1, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V0, V3) :- true_cell(V0, V1, V2, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 17; exc: 1
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_cell(V0, V0, V1, V2, V3) :- true_cell(V0, V0, V1, V2, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V0, V2, V3) :- true_cell(V0, V1, V0, V2, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V1, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V1, V3) :- true_cell(V0, V1, V2, V1, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V2, V3) :- true_cell(V0, V0, V0, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+next_cell(V0, V1, V2, V0, V3) :- true_cell(V0, V1, V2, V0, V3), pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2), mark(V3).
+}
+inc: 18; exc: 1

@@ -1,0 +1,111 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), score(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), score(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), score(V1).
+goal(V0, V1) :- successor(V2, V3), true_step(V3), agent(V0), score(V1), int(V2), int(V3).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), score(V1).
+goal(V0, V1) :- true_step(V3), V3 = 8, agent(V0), score(V1), int(V3).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), score(V1).
+goal(V0, V1) :- true(V18), V18 = q8, agent(V0), score(V1), prop(V18).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+goal(V0, V1) :- successor(V9, V8), true_step(V9), V1 = 0, agent(V0), score(V1), int(V8), int(V9).
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+}
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+goal(V0, V1) :- not true(V20), V1 = 0, V20 = q2, agent(V0), score(V1), prop(V20).
+}
+inc: 3; exc: 4
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+goal(V0, V1) :- not true(V21), V1 = 0, V21 = q3, agent(V0), score(V1), prop(V21).
+}
+inc: 4; exc: 4
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+goal(V0, V1) :- not true(V22), V1 = 0, V22 = q4, agent(V0), score(V1), prop(V22).
+}
+inc: 5; exc: 4
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+goal(V0, V1) :- not true(V23), V1 = 0, V23 = q5, agent(V0), score(V1), prop(V23).
+}
+inc: 6; exc: 4
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+goal(V0, V1) :- not true(V24), V1 = 0, V24 = q6, agent(V0), score(V1), prop(V24).
+}
+inc: 7; exc: 4
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+goal(V0, V1) :- not true(V25), V1 = 0, V25 = q7, agent(V0), score(V1), prop(V25).
+}
+inc: 8; exc: 4
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+goal(V0, V1) :- true(V18), V1 = 100, V18 = q8, agent(V0), score(V1), prop(V18).
+goal(V0, V1) :- not true(V26), V1 = 0, V26 = q8, agent(V0), score(V1), prop(V26).
+}
+Finished

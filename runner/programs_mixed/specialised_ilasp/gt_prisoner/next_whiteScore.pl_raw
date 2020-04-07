@@ -1,0 +1,337 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_whiteScore(V0) :- int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), int(V0).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), int(V0).
+next_whiteScore(V0) :- V0 = 3, int(V0).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), int(V0).
+next_whiteScore(V0) :- succ(V100, V99), true_rounds(V99), int(V0), int(V99), int(V100).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), int(V0).
+next_whiteScore(V0) :- succ(V68, V57), succ(V0, V68), true_blackScore(V57), int(V0), int(V57), int(V68).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_whiteScore(V0) :- true_rounds(V0), int(V0).
+next_whiteScore(V0) :- succ(V68, V57), succ(V0, V68), true_blackScore(V57), int(V0), int(V57), int(V68).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_whiteScore(V0) :- true_blackScore(V0), int(V0).
+next_whiteScore(V0) :- succ(V68, V57), succ(V0, V68), true_blackScore(V57), int(V0), int(V57), int(V68).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), true_rounds(V0), int(V0).
+next_whiteScore(V0) :- succ(V68, V57), succ(V0, V68), true_blackScore(V57), int(V0), int(V57), int(V68).
+}
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), true_rounds(V0), int(V0).
+next_whiteScore(V0) :- succ(V99, V89), true_rounds(V89), V0 = 3, int(V0), int(V89), int(V99).
+}
+inc: 3; exc: 6
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), true_rounds(V0), int(V0).
+next_whiteScore(V0) :- succ(V99, V89), true_rounds(V89), V0 = 3, int(V0), int(V89), int(V99).
+next_whiteScore(V0) :- V0 = 6, int(V0).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), true_rounds(V67), int(V0), int(V56), int(V67).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), true_rounds(V0), int(V0).
+next_whiteScore(V0) :- succ(V99, V89), true_rounds(V89), V0 = 3, int(V0), int(V89), int(V99).
+next_whiteScore(V0) :- succ(V89, V78), true_whiteScore(V78), int(V0), int(V78), int(V89).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), true_rounds(V0), int(V0).
+next_whiteScore(V0) :- succ(V99, V89), true_rounds(V89), V0 = 3, int(V0), int(V89), int(V99).
+next_whiteScore(V0) :- true_rounds(V67), V67 = 4, int(V0), int(V67).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+}
+inc: 4; exc: 11
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V23, V0), succ(V34, V23), succ(V45, V34), true_whiteScore(V45), not true_blackScore(V45), int(V0), int(V23), int(V34), int(V45).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- V0 = 9, int(V0).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), true_rounds(V0), int(V0).
+next_whiteScore(V0) :- succ(V100, V99), true_rounds(V99), V0 = 3, int(V0), int(V99), int(V100).
+next_whiteScore(V0) :- succ(V0, V12), succ(V56, V45), succ(V12, V98), true_whiteScore(V45), not true_rounds(V56), int(V0), int(V12), int(V45), int(V56), int(V98).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- true_whiteScore(V45), V45 = 6, int(V0), int(V45).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- true_rounds(V45), V45 = 6, int(V0), int(V45).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V56, V45), true_whiteScore(V45), V0 = 9, int(V0), int(V45), int(V56).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V0, V12), succ(V12, V98), true_whiteScore(V45), V45 = 6, int(V0), int(V12), int(V45), int(V98).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V0, V12), succ(V12, V98), true_rounds(V45), V45 = 6, int(V0), int(V12), int(V45), int(V98).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V56, V45), true_whiteScore(V45), not true_rounds(V56), V0 = 9, int(V0), int(V45), int(V56).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V0, V12), succ(V98, V97), succ(V12, V98), true_whiteScore(V45), V45 = 6, int(V0), int(V12), int(V45), int(V97), int(V98).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V0, V12), succ(V98, V97), succ(V12, V98), true_rounds(V45), V45 = 6, int(V0), int(V12), int(V45), int(V97), int(V98).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V23, V0), succ(V34, V23), succ(V45, V34), succ(V56, V45), true_rounds(V45), int(V0), int(V23), int(V34), int(V45), int(V56).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- succ(V23, V0), succ(V34, V23), succ(V45, V34), true_whiteScore(V45), V0 = 9, int(V0), int(V23), int(V34), int(V45).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+next_whiteScore(V0) :- succ(V0, V68), true_whiteScore(V0), not true_rounds(V68), int(V0), int(V68).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- true_rounds(V45), V0 = 9, V45 = 6, int(V0), int(V45).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+next_whiteScore(V0) :- true_whiteScore(V0), does(V102, V104), V104 = defect, int(V0), agent(V102), action(V104).
+next_whiteScore(V0) :- succ(V56, V0), succ(V67, V56), succ(V78, V67), true_whiteScore(V78), true_rounds(V67), int(V0), int(V56), int(V67), int(V78).
+next_whiteScore(V0) :- true_rounds(V45), V0 = 9, V45 = 6, int(V0), int(V45).
+}
+inc: 5; exc: 25

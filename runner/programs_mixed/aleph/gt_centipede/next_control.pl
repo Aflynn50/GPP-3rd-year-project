@@ -1,0 +1,10 @@
+next_control(1,black).
+next_control(2,black).
+next_control(3,white).
+next_control(4,black).
+next_control(5,white).
+next_control(6,black).
+next_control(97,black).
+next_control(98,black).
+next_control(99,black).
+next_control(100,black).

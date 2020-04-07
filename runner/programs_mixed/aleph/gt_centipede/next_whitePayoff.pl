@@ -1,0 +1,10 @@
+next_whitePayoff(1,5).
+next_whitePayoff(2,0).
+next_whitePayoff(3,0).
+next_whitePayoff(4,0).
+next_whitePayoff(5,0).
+next_whitePayoff(6,5).
+next_whitePayoff(97,5).
+next_whitePayoff(98,5).
+next_whitePayoff(99,5).
+next_whitePayoff(100,5).

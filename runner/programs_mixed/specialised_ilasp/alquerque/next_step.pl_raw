@@ -1,0 +1,48 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_step(V0) :- pos(V0), int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_step(V0) :- vertical(V1, V0, V1, V3), pos(V0), int(V0), pos(V1), int(V1), pos(V3), int(V3).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_step(V0) :- slash(V2, V0, V3, V3), pos(V0), int(V0), pos(V2), int(V2), pos(V3), int(V3).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_step(V0) :- V0 = 2, pos(V0), int(V0).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_step(V0) :- V0 = 2, pos(V0), int(V0).
+}
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_step(V0) :- V0 = 2, pos(V0), int(V0).
+}
+inc: 2; exc: 3

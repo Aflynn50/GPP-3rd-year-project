@@ -1,0 +1,50 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_owner(V0, V73), col(V0), int(V0), agent(V73).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_connected(V0, V69, V0), col(V0), int(V0), row(V69).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_step(V46), V46 = 24, int(V46).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_owner(V0, V73), V0 = 9, col(V0), int(V0), agent(V73).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- true_owner(V48, V71), V48 = 22, int(V48), agent(V71).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
