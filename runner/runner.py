@@ -32,9 +32,11 @@ def parmap(func,jobs):
     return p.map(func,jobs)
 
 def parse_(args):
-    (system,game,test_only) = args
-    if test_only:
+    (system,game,train_or_test) = args
+    if train_or_test=='test':
         stages = ['test']
+    elif train_or_test=='train':
+        stages = ['train']
     else:
         stages = ['train','test']
     try:
@@ -54,10 +56,13 @@ def parse_(args):
 
 
 def parse(system):
-    parmap(parse_,list((system,game,False) for game in game_names('data/train')))
+    parmap(parse_,list((system,game,"") for game in game_names('data/train')))
 
 def parse_test_only(system):
-    parmap(parse_,list((system,game,True) for game in game_names('data/test')))
+    parmap(parse_,list((system,game,"test") for game in game_names('data/test')))
+
+def parse_train_only(system):
+    parmap(parse_,list((system,game,"train") for game in game_names('data/train')))
 
 def train_(args):
     (system,game,target) = args
@@ -186,7 +191,7 @@ def print_nice(latex=False):
 systems = [aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
 
 def parse_and_train():
-    list(map(parse,systems))
+    list(map(parse_train_only,systems))
     list(map(train,systems))
     
 def parse_and_test():

@@ -1,0 +1,13 @@
+next_r(12,8).
+next_r(28,5).
+next_r(29,5).
+next_r(30,5).
+next_r(34,5).
+next_r(35,5).
+next_r(36,5).
+next_r(40,5).
+next_r(41,5).
+next_r(42,5).
+next_r(46,5).
+next_r(47,5).
+next_r(48,5).

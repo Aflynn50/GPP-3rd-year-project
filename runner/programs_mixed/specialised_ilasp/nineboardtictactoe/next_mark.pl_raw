@@ -1,0 +1,574 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- pos(V0), pos(V1), pos(V2), symbol(V3).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V4), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- V1 = 1, pos(V0), pos(V1), pos(V2), symbol(V3).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- V2 = 2, pos(V0), pos(V1), pos(V2), symbol(V3).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V1 = 1, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V2 = 2, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- V1 = 1, V2 = 2, pos(V0), pos(V1), pos(V2), symbol(V3).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V1 = 1, V2 = 2, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 2; exc: 9
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V1, V2) :- true_mark(V1, V6, V0, V0, V5), pos(V0), pos(V1), symbol(V2), symbol(V5), pos(V6).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V1, V2) :- does_play(V4, V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), agent(V4).
+}
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V1, V2) :- does_play(V4, V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), agent(V4).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), pos(V0), pos(V1), symbol(V2), pos(V5).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V1, V2) :- does_play(V4, V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), agent(V4).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+}
+inc: 4; exc: 11
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V1, V2) :- V2 = o, pos(V0), pos(V1), symbol(V2).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- does_play(V3, V0, V0, V1, V0, V2), pos(V0), pos(V1), symbol(V2), agent(V3).
+}
+inc: 5; exc: 13
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+}
+inc: 6; exc: 13
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), pos(V0), pos(V1), symbol(V2), symbol(V5).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+inc: 6; exc: 14
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+inc: 6; exc: 15
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V0, V1, V2) :- does_play(V4, V0, V1, V0, V1, V2), pos(V0), pos(V1), symbol(V2), agent(V4).
+}
+inc: 7; exc: 15
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V0, V1, V2) :- does_play(V4, V0, V1, V0, V1, V2), pos(V0), pos(V1), symbol(V2), agent(V4).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), pos(V0), pos(V1), symbol(V2).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+inc: 5; exc: 16
+inc: 6; exc: 16
+inc: 7; exc: 16
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V0, V1, V2) :- does_play(V4, V0, V1, V0, V1, V2), pos(V0), pos(V1), symbol(V2), agent(V4).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+}
+inc: 8; exc: 16
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+inc: 5; exc: 17
+inc: 6; exc: 17
+inc: 7; exc: 17
+inc: 8; exc: 17
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V1, V0, V2) :- does_play(V3, V0, V1, V1, V0, V2), pos(V0), pos(V1), symbol(V2), agent(V3).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+}
+inc: 9; exc: 17
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V5, V1, V1, V2), true_mark(V1, V1, V0, V0, V6), pos(V0), pos(V1), symbol(V2), pos(V5), symbol(V6).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+}
+inc: 10; exc: 17
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V1, V2) :- true_mark(V1, V6, V0, V0, V5), V2 = o, pos(V0), pos(V1), symbol(V2), symbol(V5), pos(V6).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V1, V1, V0, V0, V6), V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), symbol(V6).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+inc: 5; exc: 18
+inc: 6; exc: 18
+inc: 7; exc: 18
+inc: 8; exc: 18
+inc: 9; exc: 18
+inc: 10; exc: 18
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V1, V2) :- true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+inc: 5; exc: 19
+inc: 6; exc: 19
+inc: 7; exc: 19
+inc: 8; exc: 19
+inc: 9; exc: 19
+inc: 10; exc: 19
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V0, V1, V1, V2) :- true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V0, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+}
+inc: 11; exc: 19
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V0, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+}
+inc: 12; exc: 19
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+}
+inc: 13; exc: 19
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V0, V0, V2) :- true_mark(V0, V0, V1, V0, V5), pos(V0), pos(V1), symbol(V2), symbol(V5).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+inc: 5; exc: 20
+inc: 6; exc: 20
+inc: 7; exc: 20
+inc: 8; exc: 20
+inc: 9; exc: 20
+inc: 10; exc: 20
+inc: 11; exc: 20
+inc: 12; exc: 20
+inc: 13; exc: 20
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V0, V0, V2) :- true_mark(V1, V0, V0, V1, V5), pos(V0), pos(V1), symbol(V2), symbol(V5).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+inc: 5; exc: 21
+inc: 6; exc: 21
+inc: 7; exc: 21
+inc: 8; exc: 21
+inc: 9; exc: 21
+inc: 10; exc: 21
+inc: 11; exc: 21
+inc: 12; exc: 21
+inc: 13; exc: 21
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V1, V1, V0, V1, V2), true_mark(V0, V1, V0, V1, V6), pos(V0), pos(V1), symbol(V2), symbol(V6).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+}
+inc: 14; exc: 21
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V1, V0, V2) :- does_play(V3, V0, V1, V1, V0, V2), pos(V0), pos(V1), symbol(V2), agent(V3).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V2, V0, V3) :- true_mark(V0, V2, V2, V0, V6), pos(V0), pos(V1), pos(V2), symbol(V3), symbol(V6).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+inc: 5; exc: 22
+inc: 6; exc: 22
+inc: 7; exc: 22
+inc: 8; exc: 22
+inc: 9; exc: 22
+inc: 10; exc: 22
+inc: 11; exc: 22
+inc: 12; exc: 22
+inc: 13; exc: 22
+inc: 14; exc: 22
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V0, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V0, V1, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V1, V0, V0, V6), pos(V0), pos(V1), pos(V2), symbol(V3), symbol(V6).
+next_mark(V0, V1, V2, V0, V3) :- does_play(V5, V0, V1, V2, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+inc: 5; exc: 23
+inc: 6; exc: 23
+inc: 7; exc: 23
+inc: 8; exc: 23
+inc: 9; exc: 23
+inc: 10; exc: 23
+inc: 11; exc: 23
+inc: 12; exc: 23
+inc: 13; exc: 23
+inc: 14; exc: 23
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V0, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V0, V1, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V2, V1, V1, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V2, V0, V3) :- does_play(V5, V0, V1, V2, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+inc: 6; exc: 24
+inc: 7; exc: 24
+inc: 8; exc: 24
+inc: 9; exc: 24
+inc: 10; exc: 24
+inc: 11; exc: 24
+inc: 12; exc: 24
+inc: 13; exc: 24
+inc: 14; exc: 24
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V0, V1, V0, V2) :- true_mark(V0, V0, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V0, V1, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V1, V0, V0, V1, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V2, V0, V3) :- does_play(V5, V0, V1, V2, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+inc: 6; exc: 25
+inc: 7; exc: 25
+inc: 8; exc: 25
+inc: 9; exc: 25
+inc: 10; exc: 25
+inc: 11; exc: 25
+inc: 12; exc: 25
+inc: 13; exc: 25
+inc: 14; exc: 25
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- does_play(V4, V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V2, V3) :- true_mark(V0, V1, V2, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V1, V1, V0, V1, V5), true_mark(V0, V0, V1, V1, V2), pos(V0), pos(V1), symbol(V2), symbol(V5).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V0, V1, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V2, V0, V3) :- does_play(V5, V0, V1, V2, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+}
+inc: 15; exc: 25
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V0, V1, V0, V1, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V1, V0, V2) :- true_mark(V0, V1, V1, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V0, V0, V2) :- true_mark(V0, V1, V0, V0, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V1, V2, V0, V3) :- does_play(V5, V0, V1, V2, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V1, V2, V1, V3) :- does_play(V4, V0, V1, V2, V1, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+}
+inc: 16; exc: 25
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+next_mark(V0, V1, V2, V2, V3) :- true_control(V5), V0 = 3, V1 = 1, V2 = 2, V3 = x, pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V1, V0, V1, V2) :- true_mark(V0, V1, V0, V1, V2), pos(V0), pos(V1), symbol(V2).
+next_mark(V0, V0, V1, V2, V3) :- does_play(V4, V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V0, V1, V2, V3) :- true_mark(V0, V0, V1, V2, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+next_mark(V0, V1, V2, V0, V3) :- does_play(V5, V0, V1, V2, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V5).
+next_mark(V0, V1, V2, V1, V3) :- does_play(V4, V0, V1, V2, V1, V3), pos(V0), pos(V1), pos(V2), symbol(V3), agent(V4).
+next_mark(V0, V1, V2, V0, V3) :- true_mark(V0, V1, V2, V0, V3), pos(V0), pos(V1), pos(V2), symbol(V3).
+}
+inc: 17; exc: 25

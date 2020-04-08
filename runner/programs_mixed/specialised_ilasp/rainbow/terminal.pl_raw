@@ -1,0 +1,221 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_color(V1, V10), pos(V1), hue(V10).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_color(V2, V9), V2 = r5, pos(V2), hue(V9).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_color(V2, V9), V9 = green, pos(V2), hue(V9).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_color(V3, V10), V3 = r4, pos(V3), hue(V10).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- true_color(V2, V9), V2 = r5, V9 = green, pos(V2), hue(V9).
+}
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+terminal :- true_color(V1, V9), true_color(V2, V7), V1 = r6, V2 = r5, pos(V1), pos(V2), hue(V7), hue(V9).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+terminal :- true_color(V2, V7), true_color(V4, V8), V2 = r5, V4 = r3, pos(V2), pos(V4), hue(V7), hue(V8).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+terminal :- true_color(V2, V7), true_color(V5, V8), V2 = r5, V5 = r2, pos(V2), pos(V5), hue(V7), hue(V8).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V2 = r5, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V5, V8), V5 = r2, V8 = red, pos(V5), hue(V8).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+terminal :- true_color(V2, V9), true_color(V4, V9), V2 = r5, V4 = r3, pos(V2), pos(V4), hue(V9).
+terminal :- true_color(V5, V8), V5 = r2, V8 = red, pos(V5), hue(V8).
+}
+inc: 2; exc: 9
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+terminal :- true_color(V2, V9), true_color(V4, V9), V2 = r5, V4 = r3, pos(V2), pos(V4), hue(V9).
+terminal :- true_color(V3, V9), true_color(V5, V10), V3 = r4, V5 = r2, V9 = green, pos(V3), pos(V5), hue(V9), hue(V10).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V1 = r6, V2 = r5, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V3, V9), true_color(V5, V10), V3 = r4, V5 = r2, V9 = green, pos(V3), pos(V5), hue(V9), hue(V10).
+}
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V1 = r6, V2 = r5, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V5, V8), V5 = r2, V8 = red, pos(V5), hue(V8).
+terminal :- true_color(V5, V9), true_color(V6, V9), V5 = r2, V6 = r1, pos(V5), pos(V6), hue(V9).
+}
+inc: 4; exc: 10
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+terminal :- true_color(V5, V8), V5 = r2, V8 = red, pos(V5), hue(V8).
+terminal :- true_color(V5, V9), true_color(V6, V9), V5 = r2, V6 = r1, pos(V5), pos(V6), hue(V9).
+terminal :- true_color(V2, V7), true_color(V3, V10), V2 = r5, V3 = r4, V10 = blue, pos(V2), pos(V3), hue(V7), hue(V10).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V1 = r6, V2 = r5, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V5, V9), true_color(V6, V9), V5 = r2, V6 = r1, pos(V5), pos(V6), hue(V9).
+terminal :- true_color(V2, V7), true_color(V5, V9), V2 = r5, V5 = r2, V7 = yellow, pos(V2), pos(V5), hue(V7), hue(V9).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V2 = r5, V9 = green, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V5, V9), true_color(V6, V9), V5 = r2, V6 = r1, pos(V5), pos(V6), hue(V9).
+terminal :- true_color(V2, V7), true_color(V5, V9), V2 = r5, V5 = r2, V7 = yellow, pos(V2), pos(V5), hue(V7), hue(V9).
+}
+inc: 5; exc: 12
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V2 = r5, V9 = green, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V3, V9), true_color(V5, V10), V3 = r4, V5 = r2, V9 = green, pos(V3), pos(V5), hue(V9), hue(V10).
+terminal :- true_color(V5, V9), true_color(V6, V7), V5 = r2, V6 = r1, V9 = green, pos(V5), pos(V6), hue(V7), hue(V9).
+}
+inc: 6; exc: 12
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V2 = r5, V9 = green, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V5, V9), true_color(V6, V9), V5 = r2, V6 = r1, pos(V5), pos(V6), hue(V9).
+terminal :- true_color(V2, V7), true_color(V5, V9), V2 = r5, V5 = r2, V7 = yellow, pos(V2), pos(V5), hue(V7), hue(V9).
+terminal :- true_color(V5, V8), V5 = r2, V8 = red, pos(V5), hue(V8).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+inc: 5; exc: 13
+inc: 6; exc: 13
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V2 = r5, V9 = green, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V5, V9), true_color(V6, V9), V5 = r2, V6 = r1, pos(V5), pos(V6), hue(V9).
+terminal :- true_color(V5, V8), V5 = r2, V8 = red, pos(V5), hue(V8).
+terminal :- true_color(V1, V9), true_color(V5, V7), V1 = r6, V5 = r2, V9 = green, pos(V1), pos(V5), hue(V7), hue(V9).
+}
+inc: 7; exc: 13
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V2 = r5, V9 = green, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V3, V9), true_color(V5, V10), V3 = r4, V5 = r2, V9 = green, pos(V3), pos(V5), hue(V9), hue(V10).
+terminal :- true_color(V1, V9), true_color(V5, V7), V1 = r6, V5 = r2, V9 = green, pos(V1), pos(V5), hue(V7), hue(V9).
+terminal :- true_color(V3, V8), true_color(V6, V10), V3 = r4, V6 = r1, V8 = red, pos(V3), pos(V6), hue(V8), hue(V10).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+inc: 6; exc: 14
+inc: 7; exc: 14
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+terminal :- true_color(V1, V10), true_color(V2, V9), V2 = r5, V9 = green, V10 = blue, pos(V1), pos(V2), hue(V9), hue(V10).
+terminal :- true_color(V5, V9), true_color(V6, V9), V5 = r2, V6 = r1, pos(V5), pos(V6), hue(V9).
+terminal :- true_color(V1, V9), true_color(V5, V7), V1 = r6, V5 = r2, V9 = green, pos(V1), pos(V5), hue(V7), hue(V9).
+terminal :- true_color(V5, V7), true_color(V6, V10), V5 = r2, V6 = r1, V10 = blue, pos(V5), pos(V6), hue(V7), hue(V10).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+inc: 6; exc: 15
+inc: 7; exc: 15
+UNSATISFIABLE

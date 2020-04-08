@@ -1,0 +1,528 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_p(V0) :- index(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_p(V0) :- successor(V0, V3), index(V0), index(V3).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_p(V0) :- true_step(V0), index(V0).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_p(V0) :- does_a(V7, V0), index(V0), agent(V7).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_p(V0) :- V0 = 4, index(V0).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_p(V0) :- not true_step(V6), V6 = 1, index(V0), index(V6).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_p(V0) :- successor(V0, V3), not true_step(V6), V6 = 1, index(V0), index(V3), index(V6).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_p(V0) :- not true_step(V6), V0 = 4, V6 = 1, index(V0), index(V6).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_p(V0) :- does_a(V7, V0), index(V0), agent(V7).
+next_p(V0) :- true_p(V0), index(V0).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_p(V0) :- successor(V6, V5), not true_step(V6), not true_step(V5), V5 = 2, index(V0), index(V5), index(V6).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_p(V0) :- does_a(V7, V0), index(V0), agent(V7).
+next_p(V0) :- successor(V0, V3), true_step(V3), index(V0), index(V3).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_p(V0) :- successor(V0, V3), successor(V6, V5), not true_step(V6), not true_step(V5), V5 = 2, index(V0), index(V3), index(V5), index(V6).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_p(V0) :- successor(V6, V5), not true_step(V6), not true_step(V5), V0 = 4, V5 = 2, index(V0), index(V5), index(V6).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_p(V0) :- does_a(V7, V0), index(V0), agent(V7).
+next_p(V0) :- successor(V0, V3), true_p(V0), index(V0), index(V3).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_p(V0) :- successor(V0, V3), does_a(V7, V0), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V3), true_p(V0), index(V0), index(V3).
+}
+inc: 2; exc: 13
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_p(V0) :- successor(V0, V3), true_p(V0), index(V0), index(V3).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_p(V0) :- true_step(V3), V3 = 5, index(V0), index(V3).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_p(V0) :- successor(V0, V3), successor(V4, V0), true_step(V3), index(V0), index(V3), index(V4).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_p(V0) :- successor(V4, V0), true_step(V3), V3 = 5, index(V0), index(V3), index(V4).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_p(V0) :- true_step(V3), V0 = 4, V3 = 5, index(V0), index(V3).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+}
+inc: 3; exc: 17
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_p(V0) :- true_step(V3), V0 = 4, V3 = 5, index(V0), index(V3).
+next_p(V0) :- does_a(V7, V4), not true_p(V4), index(V0), index(V4), agent(V7).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V0, V3), true_p(V0), not true_p(V3), index(V0), index(V3).
+}
+inc: 4; exc: 18
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V0, V3), does_a(V7, V4), index(V0), index(V3), index(V4), agent(V7).
+next_p(V0) :- true_p(V0), does_c(V7, V9), index(V0), agent(V7), index(V9).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- does_a(V7, V4), V0 = 4, index(V0), index(V4), agent(V7).
+next_p(V0) :- true_p(V0), does_c(V7, V9), index(V0), agent(V7), index(V9).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V5, V4), does_a(V7, V4), V0 = 4, index(V0), index(V4), index(V5), agent(V7).
+next_p(V0) :- true_p(V0), does_c(V7, V9), index(V0), agent(V7), index(V9).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V3, V1), true_step(V1), does_a(V7, V4), V0 = 4, index(V0), index(V1), index(V3), index(V4), agent(V7).
+next_p(V0) :- true_p(V0), does_c(V7, V9), index(V0), agent(V7), index(V9).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V0, V3), true_p(V0), not true_p(V3), index(V0), index(V3).
+next_p(V0) :- true_p(V0), does_c(V7, V9), index(V0), agent(V7), index(V9).
+}
+inc: 5; exc: 22
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+next_p(V0) :- true_step(V3), V0 = 4, V3 = 5, index(V0), index(V3).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V3, V1), true_p(V3), not true_p(V1), not true_step(V1), index(V0), index(V1), index(V3).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+inc: 5; exc: 23
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V0, V3), true_p(V0), not true_p(V3), index(V0), index(V3).
+next_p(V0) :- true_step(V3), true_p(V3), index(V0), index(V3).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+next_p(V0) :- true_step(V3), V0 = 4, V3 = 5, index(V0), index(V3).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V3, V1), successor(V4, V0), true_p(V3), not true_p(V1), not true_step(V1), index(V0), index(V1), index(V3), index(V4).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+next_p(V0) :- true_step(V3), V0 = 4, V3 = 5, index(V0), index(V3).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V3, V1), true_p(V3), true_p(V0), not true_p(V1), not true_step(V1), index(V0), index(V1), index(V3).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+inc: 3; exc: 26
+inc: 4; exc: 26
+inc: 5; exc: 26
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), does_c(V7, V9), index(V0), agent(V7), index(V9).
+next_p(V0) :- successor(V3, V1), true_p(V3), true_p(V0), not true_p(V1), not true_step(V1), index(V0), index(V1), index(V3).
+}
+inc: 6; exc: 26
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V3, V1), successor(V0, V3), true_p(V0), not true_step(V1), index(V0), index(V1), index(V3).
+next_p(V0) :- successor(V0, V1), true_p(V0), not true_p(V1), index(V0), index(V1).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+inc: 2; exc: 27
+inc: 3; exc: 27
+inc: 4; exc: 27
+inc: 5; exc: 27
+inc: 6; exc: 27
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V0, V1), true_p(V3), not true_p(V1), V3 = 4, index(V0), index(V1), index(V3).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+inc: 2; exc: 28
+inc: 3; exc: 28
+inc: 4; exc: 28
+inc: 5; exc: 28
+inc: 6; exc: 28
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V1, V2), successor(V0, V1), true_p(V3), not true_p(V1), V3 = 4, index(V0), index(V1), index(V2), index(V3).
+}
+inc: 0; exc: 29
+inc: 1; exc: 29
+inc: 2; exc: 29
+inc: 3; exc: 29
+inc: 4; exc: 29
+inc: 5; exc: 29
+inc: 6; exc: 29
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V0, V1), true_p(V0), true_p(V3), not true_p(V1), V3 = 4, index(V0), index(V1), index(V3).
+}
+inc: 7; exc: 29
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V0, V3), true_p(V0), not true_p(V3), V0 = 4, index(V0), index(V3).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V3, V0), does_b(V7, V3), index(V0), index(V3), agent(V7).
+}
+inc: 8; exc: 29
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V3, V0), does_b(V7, V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V3, V0), does_a(V7, V3), index(V0), index(V3), agent(V7).
+}
+inc: 0; exc: 30
+inc: 1; exc: 30
+inc: 2; exc: 30
+inc: 3; exc: 30
+inc: 4; exc: 30
+inc: 5; exc: 30
+inc: 6; exc: 30
+inc: 7; exc: 30
+inc: 8; exc: 30
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_step(V0), V0 = 4, index(V0).
+next_p(V0) :- true_p(V0), does_b(V7, V3), not true_p(V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), true_p(V0), not true_p(V1), not true_step(V5), V5 = 2, index(V0), index(V1), index(V5).
+}
+inc: 0; exc: 31
+inc: 1; exc: 31
+inc: 2; exc: 31
+inc: 3; exc: 31
+inc: 4; exc: 31
+inc: 5; exc: 31
+inc: 6; exc: 31
+inc: 7; exc: 31
+inc: 8; exc: 31
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V3, V0), does_b(V7, V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), true_p(V0), not true_p(V1), not true_step(V5), V5 = 2, index(V0), index(V1), index(V5).
+}
+inc: 0; exc: 32
+inc: 1; exc: 32
+inc: 2; exc: 32
+inc: 3; exc: 32
+inc: 4; exc: 32
+inc: 5; exc: 32
+inc: 6; exc: 32
+inc: 7; exc: 32
+inc: 8; exc: 32
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), does_c(V7, V9), index(V0), agent(V7), index(V9).
+next_p(V0) :- true_p(V0), does_b(V7, V3), not true_p(V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), true_p(V0), not true_p(V1), not true_step(V5), V5 = 2, index(V0), index(V1), index(V5).
+}
+inc: 0; exc: 33
+inc: 1; exc: 33
+inc: 2; exc: 33
+inc: 3; exc: 33
+inc: 4; exc: 33
+inc: 5; exc: 33
+inc: 6; exc: 33
+inc: 7; exc: 33
+inc: 8; exc: 33
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V3, V0), true_p(V0), does_b(V7, V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), true_p(V0), does_a(V7, V3), index(V0), index(V1), index(V3), agent(V7).
+}
+inc: 9; exc: 33
+--------------------------------------------
+Iteration 43:
+solving
+H = {
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), not true_step(V1), V0 = 4, V1 = 6, index(V0), index(V1).
+next_p(V0) :- successor(V3, V0), true_p(V0), does_b(V7, V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), true_p(V0), does_a(V7, V3), index(V0), index(V1), index(V3), agent(V7).
+next_p(V0) :- true_p(V0), does_c(V7, V5), index(V0), index(V5), agent(V7).
+}
+inc: 10; exc: 33
+--------------------------------------------
+Iteration 44:
+solving
+H = {
+next_p(V0) :- true_p(V0), does_c(V7, V2), index(V0), index(V2), agent(V7).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V3, V0), true_p(V0), does_b(V7, V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), true_p(V0), does_a(V7, V3), index(V0), index(V1), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), does_b(V7, V9), V9 = 8, index(V0), index(V1), agent(V7), index(V9).
+}
+inc: 0; exc: 34
+inc: 1; exc: 34
+inc: 2; exc: 34
+inc: 3; exc: 34
+inc: 4; exc: 34
+inc: 5; exc: 34
+inc: 6; exc: 34
+inc: 7; exc: 34
+inc: 8; exc: 34
+inc: 9; exc: 34
+inc: 10; exc: 34
+--------------------------------------------
+Iteration 45:
+solving
+H = {
+next_p(V0) :- true_p(V0), does_c(V7, V2), index(V0), index(V2), agent(V7).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- true_p(V0), does_b(V7, V3), not true_p(V3), index(V0), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V1), true_p(V0), does_a(V7, V3), index(V0), index(V1), index(V3), agent(V7).
+next_p(V0) :- successor(V0, V3), true_step(V1), not true_p(V3), V1 = 6, index(V0), index(V1), index(V3).
+}
+inc: 0; exc: 35
+inc: 1; exc: 35
+inc: 2; exc: 35
+inc: 3; exc: 35
+inc: 4; exc: 35
+inc: 5; exc: 35
+inc: 6; exc: 35
+inc: 7; exc: 35
+inc: 8; exc: 35
+inc: 9; exc: 35
+inc: 10; exc: 35
+--------------------------------------------
+Iteration 46:
+solving
+H = {
+next_p(V0) :- true_p(V0), does_c(V7, V2), index(V0), index(V2), agent(V7).
+next_p(V0) :- does_a(V8, V0), not true_p(V0), index(V0), agent(V8).
+next_p(V0) :- successor(V0, V1), true_step(V1), true_p(V0), index(V0), index(V1).
+next_p(V0) :- successor(V0, V1), true_p(V0), does_a(V7, V3), index(V0), index(V1), index(V3), agent(V7).
+next_p(V0) :- true_p(V0), does_b(V7, V9), not true_p(V9), index(V0), agent(V7), index(V9).
+}
+Finished

@@ -1,0 +1,20 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_control(V0) :- agent(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_control(V0) :- does(V0, V105), agent(V0), action(V105).
+}
+Finished

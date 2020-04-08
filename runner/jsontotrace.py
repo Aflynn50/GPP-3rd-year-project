@@ -133,9 +133,8 @@ def convert(matches_dirs, runner_dir, train_or_test=""): # both should have endi
         pass
     os.makedirs(train_dir)
     os.makedirs(test_dir)
-    print("only doing 5 new traces")
     if train_or_test == 'test':
-        print("only doing test dir")
+        print("only doing test dir with 5")
     #for train_or_test_dir in [train_dir, test_dir]:
     if train_or_test == 'test':
         trace_dirs = [test_dir]
@@ -149,19 +148,18 @@ def convert(matches_dirs, runner_dir, train_or_test=""): # both should have endi
             print_preludes(prelude_dir, train_or_test_dir, hastocontain=game_name)
             init_game_count_dict[game_name] = 0
         for directory in matches_dirs:
-            game_count_dict = init_game_count_dict
+            game_count_dict = {**init_game_count_dict}
             for (root, dirs, files) in os.walk(directory):
                 for fname in files:
                     filename = os.path.join(root, fname)
                     if filename.endswith(".json") & (os.path.getmtime(filename) < 1585400000): # get old files
                         with open(filename) as f:
-                            raw_data = json.load(f) # raw_data is a dict
-                        
+                            raw_data = json.load(f) # raw_data is a dict 
                         game_name = raw_data['gameName'].lower().replace(" ", "_")
                         game_count_dict[game_name] = game_count_dict[game_name] + 1
-                        if (train_or_test == 'test') && (game_count_dict[game_name] > 5): # only use 5 examples for testing
+                        if (train_or_test == 'test') & (game_count_dict[game_name] > 4): # only use 5 examples for testing
                             break
-                        if (len(matches_dirs) > 1) && (game_count_dict[game_name] > 8): # put in 8 from rand and 8 from opt
+                        if (len(matches_dirs) > 1) & (game_count_dict[game_name] > 4): # put in 8 from rand and 8 from opt
                             break
 
                         states = list(map(parse_state,raw_data['states']))

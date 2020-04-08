@@ -1,0 +1,860 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_mark(V0, V1, V1) :- agent(V0), pos(V1).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_mark(V0, V1, V2) :- agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 1
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_control(V0), agent(V0), pos(V1), pos(V2).
+}
+inc: 2; exc: 1
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_control(V0), agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V1) :- V0 = white, agent(V0), pos(V1).
+}
+inc: 3; exc: 1
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+}
+inc: 4; exc: 1
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V1) :- true_cell(V1, V1, V6), V6 = o, agent(V0), pos(V1), mark(V6).
+}
+inc: 5; exc: 1
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+}
+inc: 6; exc: 1
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_mark(V0, V1, V1) :- V0 = white, agent(V0), pos(V1).
+legal_mark(V0, V1, V2) :- V2 = 2, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+}
+inc: 7; exc: 1
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V2 = 2, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+inc: 2; exc: 2
+inc: 3; exc: 2
+inc: 4; exc: 2
+inc: 5; exc: 2
+inc: 6; exc: 2
+inc: 7; exc: 2
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- V1 = 2, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+inc: 3; exc: 3
+inc: 4; exc: 3
+inc: 5; exc: 3
+inc: 6; exc: 3
+inc: 7; exc: 3
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+}
+inc: 8; exc: 3
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V2, V4, V8), V8 = x, agent(V0), pos(V1), pos(V2), pos(V4), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+inc: 3; exc: 4
+inc: 4; exc: 4
+inc: 5; exc: 4
+inc: 6; exc: 4
+inc: 7; exc: 4
+inc: 8; exc: 4
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V1) :- V1 = 2, agent(V0), pos(V1).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+inc: 3; exc: 5
+inc: 4; exc: 5
+inc: 5; exc: 5
+inc: 6; exc: 5
+inc: 7; exc: 5
+inc: 8; exc: 5
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V2, V4, V8), not true_control(V0), V8 = x, agent(V0), pos(V1), pos(V2), pos(V4), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+}
+inc: 9; exc: 5
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V6), V6 = o, agent(V0), pos(V1), pos(V3), mark(V6).
+}
+inc: 10; exc: 5
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+inc: 3; exc: 6
+inc: 4; exc: 6
+inc: 5; exc: 6
+inc: 6; exc: 6
+inc: 7; exc: 6
+inc: 8; exc: 6
+inc: 9; exc: 6
+inc: 10; exc: 6
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V0 = white, V6 = b, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+inc: 4; exc: 7
+inc: 5; exc: 7
+inc: 6; exc: 7
+inc: 7; exc: 7
+inc: 8; exc: 7
+inc: 9; exc: 7
+inc: 10; exc: 7
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V0 = white, V6 = b, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+inc: 4; exc: 8
+inc: 5; exc: 8
+inc: 6; exc: 8
+inc: 7; exc: 8
+inc: 8; exc: 8
+inc: 9; exc: 8
+inc: 10; exc: 8
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), true_cell(V1, V4, V6), V0 = white, V4 = 1, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 11; exc: 8
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V1, V1, V6), V0 = white, V6 = b, agent(V0), pos(V1), pos(V2), mark(V6).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+inc: 4; exc: 9
+inc: 5; exc: 9
+inc: 6; exc: 9
+inc: 7; exc: 9
+inc: 8; exc: 9
+inc: 9; exc: 9
+inc: 10; exc: 9
+inc: 11; exc: 9
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V0 = white, V1 = 3, V6 = b, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 12; exc: 9
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V0 = white, V1 = 3, V6 = b, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V4, V6), V0 = white, V4 = 1, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 13; exc: 9
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), true_cell(V1, V4, V6), V0 = white, V4 = 1, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+inc: 4; exc: 10
+inc: 5; exc: 10
+inc: 6; exc: 10
+inc: 7; exc: 10
+inc: 8; exc: 10
+inc: 9; exc: 10
+inc: 10; exc: 10
+inc: 11; exc: 10
+inc: 12; exc: 10
+inc: 13; exc: 10
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V4, V6), V0 = white, V4 = 1, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+inc: 5; exc: 11
+inc: 6; exc: 11
+inc: 7; exc: 11
+inc: 8; exc: 11
+inc: 9; exc: 11
+inc: 10; exc: 11
+inc: 11; exc: 11
+inc: 12; exc: 11
+inc: 13; exc: 11
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V0 = white, V1 = 3, V6 = b, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V0 = white, V2 = 3, V6 = b, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V6), V0 = white, V3 = 3, V6 = b, agent(V0), pos(V1), pos(V3), mark(V6).
+}
+inc: 14; exc: 11
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+inc: 5; exc: 12
+inc: 6; exc: 12
+inc: 7; exc: 12
+inc: 8; exc: 12
+inc: 9; exc: 12
+inc: 10; exc: 12
+inc: 11; exc: 12
+inc: 12; exc: 12
+inc: 13; exc: 12
+inc: 14; exc: 12
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V6), not true_control(V0), V6 = o, agent(V0), pos(V1), pos(V3), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+inc: 5; exc: 13
+inc: 6; exc: 13
+inc: 7; exc: 13
+inc: 8; exc: 13
+inc: 9; exc: 13
+inc: 10; exc: 13
+inc: 11; exc: 13
+inc: 12; exc: 13
+inc: 13; exc: 13
+inc: 14; exc: 13
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V1, V1, V6), V0 = black, V6 = o, agent(V0), pos(V1), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 15; exc: 13
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V4, V8), not true_control(V0), V8 = x, agent(V0), pos(V1), pos(V2), pos(V4), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 16; exc: 13
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V3), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V4, V1, V8), V8 = x, agent(V0), pos(V1), pos(V4), mark(V8).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+inc: 6; exc: 14
+inc: 7; exc: 14
+inc: 8; exc: 14
+inc: 9; exc: 14
+inc: 10; exc: 14
+inc: 11; exc: 14
+inc: 12; exc: 14
+inc: 13; exc: 14
+inc: 14; exc: 14
+inc: 15; exc: 14
+inc: 16; exc: 14
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V3), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V1, V8), V8 = x, agent(V0), pos(V1), pos(V2), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+inc: 6; exc: 15
+inc: 7; exc: 15
+inc: 8; exc: 15
+inc: 9; exc: 15
+inc: 10; exc: 15
+inc: 11; exc: 15
+inc: 12; exc: 15
+inc: 13; exc: 15
+inc: 14; exc: 15
+inc: 15; exc: 15
+inc: 16; exc: 15
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V4, V1, V7), true_cell(V1, V2, V7), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V1, V1, V8), V8 = x, agent(V0), pos(V1), mark(V8).
+}
+inc: 17; exc: 15
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V4, V2, V7), true_cell(V1, V2, V7), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V8), V8 = x, agent(V0), pos(V1), pos(V2), mark(V8).
+}
+inc: 18; exc: 15
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V1, V1, V6), V0 = black, V6 = o, agent(V0), pos(V1), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V8), V8 = x, agent(V0), pos(V1), pos(V2), mark(V8).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+inc: 5; exc: 16
+inc: 6; exc: 16
+inc: 7; exc: 16
+inc: 8; exc: 16
+inc: 9; exc: 16
+inc: 10; exc: 16
+inc: 11; exc: 16
+inc: 12; exc: 16
+inc: 13; exc: 16
+inc: 14; exc: 16
+inc: 15; exc: 16
+inc: 16; exc: 16
+inc: 17; exc: 16
+inc: 18; exc: 16
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V1, V3, V7), true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+}
+inc: 19; exc: 16
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V6), not true_control(V0), V0 = black, V6 = o, agent(V0), pos(V1), pos(V3), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V1, V1, V8), V8 = x, agent(V0), pos(V1), pos(V2), mark(V8).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+inc: 5; exc: 17
+inc: 6; exc: 17
+inc: 7; exc: 17
+inc: 8; exc: 17
+inc: 9; exc: 17
+inc: 10; exc: 17
+inc: 11; exc: 17
+inc: 12; exc: 17
+inc: 13; exc: 17
+inc: 14; exc: 17
+inc: 15; exc: 17
+inc: 16; exc: 17
+inc: 17; exc: 17
+inc: 18; exc: 17
+inc: 19; exc: 17
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), not true_control(V0), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V1, V1, V8), V8 = x, agent(V0), pos(V1), mark(V8).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+inc: 5; exc: 18
+inc: 6; exc: 18
+inc: 7; exc: 18
+inc: 8; exc: 18
+inc: 9; exc: 18
+inc: 10; exc: 18
+inc: 11; exc: 18
+inc: 12; exc: 18
+inc: 13; exc: 18
+inc: 14; exc: 18
+inc: 15; exc: 18
+inc: 16; exc: 18
+inc: 17; exc: 18
+inc: 18; exc: 18
+inc: 19; exc: 18
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V4, V8), not true_control(V0), V8 = x, agent(V0), pos(V1), pos(V2), pos(V4), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), not true_control(V0), V0 = black, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+inc: 5; exc: 19
+inc: 6; exc: 19
+inc: 7; exc: 19
+inc: 8; exc: 19
+inc: 9; exc: 19
+inc: 10; exc: 19
+inc: 11; exc: 19
+inc: 12; exc: 19
+inc: 13; exc: 19
+inc: 14; exc: 19
+inc: 15; exc: 19
+inc: 16; exc: 19
+inc: 17; exc: 19
+inc: 18; exc: 19
+inc: 19; exc: 19
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V1, V3, V7), true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V1, V4, V8), not true_control(V0), V2 = 3, V8 = x, agent(V0), pos(V1), pos(V2), pos(V4), mark(V8).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+inc: 5; exc: 20
+inc: 6; exc: 20
+inc: 7; exc: 20
+inc: 8; exc: 20
+inc: 9; exc: 20
+inc: 10; exc: 20
+inc: 11; exc: 20
+inc: 12; exc: 20
+inc: 13; exc: 20
+inc: 14; exc: 20
+inc: 15; exc: 20
+inc: 16; exc: 20
+inc: 17; exc: 20
+inc: 18; exc: 20
+inc: 19; exc: 20
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V1, V4, V7), not true_control(V0), V2 = 3, V7 = x, agent(V0), pos(V1), pos(V2), pos(V4), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, V2 = 2, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+inc: 5; exc: 21
+inc: 6; exc: 21
+inc: 7; exc: 21
+inc: 8; exc: 21
+inc: 9; exc: 21
+inc: 10; exc: 21
+inc: 11; exc: 21
+inc: 12; exc: 21
+inc: 13; exc: 21
+inc: 14; exc: 21
+inc: 15; exc: 21
+inc: 16; exc: 21
+inc: 17; exc: 21
+inc: 18; exc: 21
+inc: 19; exc: 21
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), not true_control(V0), V1 = 2, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, V2 = 2, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+inc: 5; exc: 22
+inc: 6; exc: 22
+inc: 7; exc: 22
+inc: 8; exc: 22
+inc: 9; exc: 22
+inc: 10; exc: 22
+inc: 11; exc: 22
+inc: 12; exc: 22
+inc: 13; exc: 22
+inc: 14; exc: 22
+inc: 15; exc: 22
+inc: 16; exc: 22
+inc: 17; exc: 22
+inc: 18; exc: 22
+inc: 19; exc: 22
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), V0 = black, V1 = 2, V6 = o, agent(V0), pos(V1), pos(V2), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, V2 = 2, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+inc: 5; exc: 23
+inc: 6; exc: 23
+inc: 7; exc: 23
+inc: 8; exc: 23
+inc: 9; exc: 23
+inc: 10; exc: 23
+inc: 11; exc: 23
+inc: 12; exc: 23
+inc: 13; exc: 23
+inc: 14; exc: 23
+inc: 15; exc: 23
+inc: 16; exc: 23
+inc: 17; exc: 23
+inc: 18; exc: 23
+inc: 19; exc: 23
+--------------------------------------------
+Iteration 43:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, V2 = 2, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V2, V1, V7), true_cell(V1, V2, V6), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), mark(V6), mark(V7).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+inc: 6; exc: 24
+inc: 7; exc: 24
+inc: 8; exc: 24
+inc: 9; exc: 24
+inc: 10; exc: 24
+inc: 11; exc: 24
+inc: 12; exc: 24
+inc: 13; exc: 24
+inc: 14; exc: 24
+inc: 15; exc: 24
+inc: 16; exc: 24
+inc: 17; exc: 24
+inc: 18; exc: 24
+inc: 19; exc: 24
+--------------------------------------------
+Iteration 44:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V1, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, V2 = 2, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+inc: 6; exc: 25
+inc: 7; exc: 25
+inc: 8; exc: 25
+inc: 9; exc: 25
+inc: 10; exc: 25
+inc: 11; exc: 25
+inc: 12; exc: 25
+inc: 13; exc: 25
+inc: 14; exc: 25
+inc: 15; exc: 25
+inc: 16; exc: 25
+inc: 17; exc: 25
+inc: 18; exc: 25
+inc: 19; exc: 25
+--------------------------------------------
+Iteration 45:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V1, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V1) :- true_cell(V3, V1, V7), not true_control(V0), V0 = white, V3 = 3, V7 = b, agent(V0), pos(V1), pos(V3), mark(V7).
+}
+inc: 20; exc: 25
+--------------------------------------------
+Iteration 46:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V1, V4, V7), not true_control(V0), V0 = white, V2 = 2, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V1, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), mark(V6), mark(V7).
+}
+inc: 21; exc: 25
+--------------------------------------------
+Iteration 47:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V1, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V7), true_cell(V1, V4, V8), not true_control(V0), V7 = x, V8 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V7), mark(V8).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+inc: 3; exc: 26
+inc: 4; exc: 26
+inc: 5; exc: 26
+inc: 6; exc: 26
+inc: 7; exc: 26
+inc: 8; exc: 26
+inc: 9; exc: 26
+inc: 10; exc: 26
+inc: 11; exc: 26
+inc: 12; exc: 26
+inc: 13; exc: 26
+inc: 14; exc: 26
+inc: 15; exc: 26
+inc: 16; exc: 26
+inc: 17; exc: 26
+inc: 18; exc: 26
+inc: 19; exc: 26
+inc: 20; exc: 26
+inc: 21; exc: 26
+--------------------------------------------
+Iteration 48:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V1, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V1, V4, V7), not true_control(V0), V0 = white, V2 = 2, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V7).
+legal_mark(V0, V1, V2) :- not true_control(V0), V1 = 1, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+inc: 2; exc: 27
+inc: 3; exc: 27
+inc: 4; exc: 27
+inc: 5; exc: 27
+inc: 6; exc: 27
+inc: 7; exc: 27
+inc: 8; exc: 27
+inc: 9; exc: 27
+inc: 10; exc: 27
+inc: 11; exc: 27
+inc: 12; exc: 27
+inc: 13; exc: 27
+inc: 14; exc: 27
+inc: 15; exc: 27
+inc: 16; exc: 27
+inc: 17; exc: 27
+inc: 18; exc: 27
+inc: 19; exc: 27
+inc: 20; exc: 27
+inc: 21; exc: 27
+--------------------------------------------
+Iteration 49:
+solving
+H = {
+legal_mark(V0, V1, V1) :- true_cell(V3, V3, V7), true_cell(V3, V4, V8), not true_control(V0), V7 = b, V8 = x, agent(V0), pos(V1), pos(V3), pos(V4), mark(V7), mark(V8).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), true_cell(V1, V2, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- true_cell(V4, V4, V6), V0 = white, V4 = 3, V6 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V6).
+legal_mark(V0, V1, V2) :- true_cell(V2, V2, V6), true_cell(V2, V1, V7), not true_control(V0), V6 = o, V7 = b, agent(V0), pos(V1), pos(V2), mark(V6), mark(V7).
+legal_mark(V0, V1, V2) :- not true_control(V0), V0 = white, V1 = 3, V2 = 2, agent(V0), pos(V1), pos(V2).
+legal_mark(V0, V1, V2) :- true_cell(V2, V1, V7), true_cell(V1, V4, V8), not true_control(V0), V7 = x, V8 = b, agent(V0), pos(V1), pos(V2), pos(V4), mark(V7), mark(V8).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+inc: 2; exc: 28
+inc: 3; exc: 28
+inc: 4; exc: 28
+UNSATISFIABLE

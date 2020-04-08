@@ -1,0 +1,34 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_moveCount(V32), pos(V32), int(V32).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- add(V49, V54, V49, V32), true_moveCount(V32), pos(V32), int(V32), pos(V49), int(V49), add_arg(V54).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_moveCount(V32), true_cell(V49, V49, V52), V52 = knight, pos(V32), int(V32), pos(V49), int(V49), mark(V52).
+}
+inc: 0; exc: 4

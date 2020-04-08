@@ -12,11 +12,11 @@ def call(prolog_version,action,load_files,outfile=None,timeout=None):
     cmd+=action
 
     if outfile == None:
-        p = subprocess.Popen([prolog_version,'-q'], stdin=subprocess.PIPE)
+        p = subprocess.Popen([prolog_version,'-q','--stack_limit=3g'], stdin=subprocess.PIPE)
         call_p(p,cmd,timeout)
     else:
         with open(outfile, 'w') as outf:
-            p = subprocess.Popen([prolog_version,'-q','-G8g'], stdin=subprocess.PIPE, stdout=outf)
+            p = subprocess.Popen([prolog_version,'-q','--stack_limit=3g','-G8g'], stdin=subprocess.PIPE, stdout=outf)
             call_p(p,cmd,timeout)
 
 def call_p(p,cmd,timeout):
