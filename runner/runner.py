@@ -181,20 +181,22 @@ def print_nice(latex=False):
     else: 
         print(tabulate(table,headers=headers))
 
+
+
+systems = [aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
+
 def parse_and_train():
-    systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse,systems))
     list(map(train,systems))
     
 def parse_and_test():
-    systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
     list(map(parse_test_only,systems))
     list(map(do_test,systems))
     
 
 
-systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
-#systems = [aleph.Aleph()]
+#systems = [metagol.Metagol(),aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
+
 
 if __name__ == "__main__":
     arg = sys.argv[1]

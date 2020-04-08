@@ -64,8 +64,15 @@ aleph 54 0
 metagol 51 0
 
 
+Mixed on Optimal
+specialised_ilasp 73 8
+metagol 51 0
+aleph 66 0
 
-
+Mixed on Random
+specialised_ilasp 73 7
+metagol 51 0
+aleph 80 7
 
 
 
