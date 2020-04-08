@@ -157,9 +157,9 @@ def convert(matches_dirs, runner_dir, train_or_test=""): # both should have endi
                             raw_data = json.load(f) # raw_data is a dict 
                         game_name = raw_data['gameName'].lower().replace(" ", "_")
                         game_count_dict[game_name] = game_count_dict[game_name] + 1
-                        if (train_or_test == 'test') & (game_count_dict[game_name] > 5): # only use 5 examples for testing
+                        if (train_or_test == 'test') & (game_count_dict[game_name] > 4): # only use 5 examples for testing
                             break
-                        if (len(matches_dirs) > 1) & (game_count_dict[game_name] > 8): # put in 8 from rand and 8 from opt
+                        if (len(matches_dirs) > 1) & (game_count_dict[game_name] > 4): # put in 8 from rand and 8 from opt
                             break
 
                         states = list(map(parse_state,raw_data['states']))
