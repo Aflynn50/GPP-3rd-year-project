@@ -1,0 +1,447 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- true_blackPayoff(V1), agent(V0), int(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- succ(V1, V13), succ(V13, V20), agent(V0), int(V1), int(V13), int(V20).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+goal(V0, V1) :- true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_whitePayoff(V1), agent(V0), int(V1).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+goal(V0, V1) :- true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_gameOver, agent(V0), int(V1).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+goal(V0, V1) :- true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- succ(V1, V13), succ(V13, V20), true_gameOver, agent(V0), int(V1), int(V13), int(V20).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+goal(V0, V1) :- true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, agent(V0), int(V1).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, agent(V0), int(V1).
+}
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, agent(V0), int(V1).
+goal(V0, V1) :- true_control(V22), true_blackPayoff(V1), V22 = white, agent(V0), int(V1), agent(V22).
+}
+inc: 3; exc: 6
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, agent(V0), int(V1).
+goal(V0, V1) :- V0 = black, agent(V0), int(V1).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+}
+inc: 4; exc: 9
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- V1 = 10, agent(V0), int(V1).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+inc: 4; exc: 10
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- succ(V20, V19), succ(V1, V20), not true_whitePayoff(V1), V0 = black, agent(V0), int(V1), int(V19), int(V20).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V22), true_blackPayoff(V1), V22 = white, agent(V0), int(V1), agent(V22).
+goal(V0, V1) :- not true_control(V22), not true_whitePayoff(V1), V0 = black, V22 = white, agent(V0), int(V1), agent(V22).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V21 = 0, agent(V0), int(V1), int(V21).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- succ(V19, V18), succ(V20, V19), succ(V1, V20), not true_whitePayoff(V1), V0 = black, agent(V0), int(V1), int(V18), int(V19), int(V20).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_control(V0), V1 = 10, agent(V0), int(V1).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V21 = 0, agent(V0), int(V1), int(V21).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- succ(V20, V19), succ(V1, V20), not true_blackPayoff(V21), V21 = 0, agent(V0), int(V1), int(V19), int(V20), int(V21).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- succ(V19, V18), succ(V20, V19), succ(V1, V20), not true_blackPayoff(V21), V21 = 0, agent(V0), int(V1), int(V18), int(V19), int(V20), int(V21).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- succ(V20, V19), succ(V1, V20), not true_blackPayoff(V21), V0 = black, V21 = 0, agent(V0), int(V1), int(V19), int(V20), int(V21).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- succ(V13, V1), not true_whitePayoff(V13), V1 = 10, agent(V0), int(V1), int(V13).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+}
+inc: 5; exc: 20
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- V1 = 100, agent(V0), int(V1).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+inc: 5; exc: 21
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- not true_control(V0), V1 = 100, agent(V0), int(V1).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+inc: 5; exc: 22
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- true_at(V12, V23, V24), V23 = 1, V24 = x, agent(V0), int(V1), int(V12).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+inc: 5; exc: 23
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- not true_blackPayoff(V21), V1 = 100, V21 = 0, agent(V0), int(V1), int(V21).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- true_at(V23, V25, V26), V23 = 1, V25 = 8, V26 = o, agent(V0), int(V1).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 100, V21 = 0, agent(V0), int(V1), int(V21).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+inc: 3; exc: 26
+inc: 4; exc: 26
+inc: 5; exc: 26
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- true_at(V23, V25, V26), V0 = black, V23 = 1, V25 = 8, V26 = o, agent(V0), int(V1).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+inc: 2; exc: 27
+inc: 3; exc: 27
+inc: 4; exc: 27
+inc: 5; exc: 27
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- true_at(V12, V23, V24), V1 = 100, V23 = 1, V24 = x, agent(V0), int(V1), int(V12).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+inc: 2; exc: 28
+inc: 3; exc: 28
+inc: 4; exc: 28
+inc: 5; exc: 28
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- true_at(V12, V23, V24), V0 = black, V1 = 100, V23 = 1, V24 = x, agent(V0), int(V1), int(V12).
+}
+inc: 0; exc: 29
+inc: 1; exc: 29
+inc: 2; exc: 29
+inc: 3; exc: 29
+inc: 4; exc: 29
+inc: 5; exc: 29
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+goal(V0, V1) :- true_whitePayoff(V1), true_gameOver, not true_control(V0), agent(V0), int(V1).
+goal(V0, V1) :- true_control(V0), true_blackPayoff(V1), agent(V0), int(V1).
+goal(V0, V1) :- true_blackPayoff(V1), V0 = black, agent(V0), int(V1).
+goal(V0, V1) :- not true_blackPayoff(V21), V0 = black, V1 = 10, V21 = 0, agent(V0), int(V1), int(V21).
+goal(V0, V1) :- true_at(V23, V25, V26), V1 = 100, V23 = 1, V25 = 8, V26 = o, agent(V0), int(V1).
+}
+inc: 0; exc: 30
+inc: 1; exc: 30
+inc: 2; exc: 30
+inc: 3; exc: 30
+inc: 4; exc: 30
+inc: 5; exc: 30
+UNSATISFIABLE

@@ -1,0 +1,27 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), score(V1), int(V1), word(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- succ(V1, V32), agent(V0), score(V1), int(V1), word(V1), int(V32), word(V32).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- minus(V2, V2, V1), agent(V0), score(V1), int(V1), word(V1), int(V2), word(V2).
+}
+Finished

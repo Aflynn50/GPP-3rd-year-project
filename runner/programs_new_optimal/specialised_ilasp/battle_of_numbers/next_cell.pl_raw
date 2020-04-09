@@ -1,0 +1,60 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V0, V1, V2) :- number(V0), step_int(V0), number(V1), step_int(V1), agent(V2).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V1, V2, V3) :- number(V0), step_int(V0), number(V1), step_int(V1), number(V2), step_int(V2), agent(V3).
+}
+inc: 0; exc: 1
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V1, V2, V3) :- succ(V2, V5), number(V0), step_int(V0), number(V1), step_int(V1), number(V2), step_int(V2), agent(V3), number(V5), step_int(V5).
+}
+inc: 2; exc: 1
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V1, V2, V3) :- succ(V2, V5), number(V0), step_int(V0), number(V1), step_int(V1), number(V2), step_int(V2), agent(V3), number(V5), step_int(V5).
+next_cell(V0, V1, V1, V2) :- succ(V0, V3), number(V0), step_int(V0), number(V1), step_int(V1), agent(V2), number(V3), step_int(V3).
+}
+inc: 3; exc: 1
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V1, V2, V3) :- succ(V2, V5), number(V0), step_int(V0), number(V1), step_int(V1), number(V2), step_int(V2), agent(V3), number(V5), step_int(V5).
+next_cell(V0, V1, V1, V2) :- succ(V0, V3), number(V0), step_int(V0), number(V1), step_int(V1), agent(V2), number(V3), step_int(V3).
+next_cell(V0, V0, V1, V2) :- forward(V1, V0, V1, V4, V2), number(V0), step_int(V0), number(V1), step_int(V1), agent(V2), number(V4), step_int(V4).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+inc: 2; exc: 2
+inc: 3; exc: 2
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V1, V2, V3) :- succ(V2, V5), number(V0), step_int(V0), number(V1), step_int(V1), number(V2), step_int(V2), agent(V3), number(V5), step_int(V5).
+next_cell(V0, V1, V1, V2) :- succ(V0, V3), number(V0), step_int(V0), number(V1), step_int(V1), agent(V2), number(V3), step_int(V3).
+next_cell(V0, V0, V1, V2) :- succ(V0, V4), number(V0), step_int(V0), number(V1), step_int(V1), agent(V2), number(V4), step_int(V4).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+inc: 3; exc: 3

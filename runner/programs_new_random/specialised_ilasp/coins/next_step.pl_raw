@@ -1,0 +1,119 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_step(V0) :- pos(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_step(V0) :- succ(V0, V6), pos(V0), pos(V6).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_step(V0) :- V0 = 2, pos(V0).
+(V0).
+}
+next_step(V0) :- V0 = 2, pos(V0).
+(V0).
+
+succ(7, 8).
+succ(6, 7).
+succ(5, 6).
+succ(4, 5).
+succ(3, 4).
+succ(2, 3).
+succ(1, 2).
+role(you).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type(agent, you).
+agent(you).
+
+type(pos, 1).
+pos(1).
+
+type(pos, 2).
+pos(2).
+
+type(pos, 3).
+pos(3).
+
+type(pos, 4).
+pos(4).
+
+type(pos, 5).
+pos(5).
+
+type(pos, 6).
+pos(6).
+
+type(pos, 7).
+pos(7).
+
+type(pos, 8).
+pos(8).
+
+type(score, 0).
+score(0).
+
+type(score, 100).
+score(100).
+
+type(cell_value, zerocoins).
+cell_value(zerocoins).
+
+type(cell_value, onecoin).
+cell_value(onecoin).
+
+type(cell_value, twocoins).
+cell_value(twocoins).
+
+true_step(1).
+true_cell(8, onecoin).
+true_cell(7, onecoin).
+true_cell(6, onecoin).
+true_cell(5, onecoin).
+true_cell(4, onecoin).
+true_cell(3, onecoin).
+true_cell(2, onecoin).
+true_cell(1, onecoin).
+does_jump(you, 8, 5).
+inc(0) :- not next_step(2).
+exc(0) :- next_step(8).
+exc(1) :- next_step(7).
+exc(2) :- next_step(6).
+exc(3) :- next_step(5).
+exc(4) :- next_step(4).
+exc(5) :- next_step(3).
+exc(6) :- next_step(1).
+#show inc/1.
+#show exc/1.
+

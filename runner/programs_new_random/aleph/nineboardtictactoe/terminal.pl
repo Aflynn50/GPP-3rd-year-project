@@ -1,0 +1,16 @@
+terminal(10).
+terminal(18).
+terminal(28).
+terminal(36).
+terminal(45).
+terminal(55).
+terminal(65).
+terminal(71).
+terminal(93).
+terminal(129).
+terminal(175).
+terminal(211).
+terminal(252).
+terminal(282).
+terminal(303).
+terminal(330).

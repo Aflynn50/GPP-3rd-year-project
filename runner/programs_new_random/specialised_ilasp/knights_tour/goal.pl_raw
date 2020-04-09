@@ -1,0 +1,629 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- agent(V0), int(V1).
+ int(V1).
+}
+goal(V0, V1) :- agent(V0), int(V1).
+ int(V1).
+
+scoreMap(9, 27).
+scoreMap(8, 24).
+scoreMap(7, 21).
+scoreMap(6, 18).
+scoreMap(5, 15).
+scoreMap(4, 12).
+scoreMap(30, 100).
+scoreMap(3, 9).
+scoreMap(29, 96).
+scoreMap(28, 90).
+scoreMap(27, 85).
+scoreMap(26, 80).
+scoreMap(25, 75).
+scoreMap(24, 72).
+scoreMap(23, 69).
+scoreMap(22, 66).
+scoreMap(21, 63).
+scoreMap(20, 60).
+scoreMap(2, 6).
+scoreMap(19, 57).
+scoreMap(18, 54).
+scoreMap(17, 51).
+scoreMap(16, 48).
+scoreMap(15, 45).
+scoreMap(14, 42).
+scoreMap(13, 39).
+scoreMap(12, 36).
+scoreMap(11, 33).
+scoreMap(10, 30).
+scoreMap(1, 3).
+scoreMap(0, 0).
+row(5).
+row(4).
+row(3).
+row(2).
+row(1).
+role(robot).
+piece(knight).
+piece(hole).
+knightMove(6, 5, 5, 3).
+knightMove(6, 5, 4, 4).
+knightMove(6, 4, 5, 2).
+knightMove(6, 4, 4, 5).
+knightMove(6, 4, 4, 3).
+knightMove(6, 3, 5, 5).
+knightMove(6, 3, 5, 1).
+knightMove(6, 3, 4, 4).
+knightMove(6, 3, 4, 2).
+knightMove(6, 2, 5, 4).
+knightMove(6, 2, 4, 3).
+knightMove(6, 2, 4, 1).
+knightMove(6, 1, 5, 3).
+knightMove(6, 1, 4, 2).
+knightMove(5, 5, 6, 3).
+knightMove(5, 5, 4, 3).
+knightMove(5, 5, 3, 4).
+knightMove(5, 4, 6, 2).
+knightMove(5, 4, 4, 2).
+knightMove(5, 4, 3, 5).
+knightMove(5, 4, 3, 3).
+knightMove(5, 3, 6, 5).
+knightMove(5, 3, 6, 1).
+knightMove(5, 3, 4, 5).
+knightMove(5, 3, 4, 1).
+knightMove(5, 3, 3, 4).
+knightMove(5, 3, 3, 2).
+knightMove(5, 2, 6, 4).
+knightMove(5, 2, 4, 4).
+knightMove(5, 2, 3, 3).
+knightMove(5, 2, 3, 1).
+knightMove(5, 1, 6, 3).
+knightMove(5, 1, 4, 3).
+knightMove(5, 1, 3, 2).
+knightMove(4, 5, 6, 4).
+knightMove(4, 5, 5, 3).
+knightMove(4, 5, 3, 3).
+knightMove(4, 5, 2, 4).
+knightMove(4, 4, 6, 5).
+knightMove(4, 4, 6, 3).
+knightMove(4, 4, 5, 2).
+knightMove(4, 4, 3, 2).
+knightMove(4, 4, 2, 5).
+knightMove(4, 4, 2, 3).
+knightMove(4, 3, 6, 4).
+knightMove(4, 3, 6, 2).
+knightMove(4, 3, 5, 5).
+knightMove(4, 3, 5, 1).
+knightMove(4, 3, 3, 5).
+knightMove(4, 3, 3, 1).
+knightMove(4, 3, 2, 4).
+knightMove(4, 3, 2, 2).
+knightMove(4, 2, 6, 3).
+knightMove(4, 2, 6, 1).
+knightMove(4, 2, 5, 4).
+knightMove(4, 2, 3, 4).
+knightMove(4, 2, 2, 3).
+knightMove(4, 2, 2, 1).
+knightMove(4, 1, 6, 2).
+knightMove(4, 1, 5, 3).
+knightMove(4, 1, 3, 3).
+knightMove(4, 1, 2, 2).
+knightMove(3, 5, 5, 4).
+knightMove(3, 5, 4, 3).
+knightMove(3, 5, 2, 3).
+knightMove(3, 5, 1, 4).
+knightMove(3, 4, 5, 5).
+knightMove(3, 4, 5, 3).
+knightMove(3, 4, 4, 2).
+knightMove(3, 4, 2, 2).
+knightMove(3, 4, 1, 5).
+knightMove(3, 4, 1, 3).
+knightMove(3, 3, 5, 4).
+knightMove(3, 3, 5, 2).
+knightMove(3, 3, 4, 5).
+knightMove(3, 3, 4, 1).
+knightMove(3, 3, 2, 5).
+knightMove(3, 3, 2, 1).
+knightMove(3, 3, 1, 4).
+knightMove(3, 3, 1, 2).
+knightMove(3, 2, 5, 3).
+knightMove(3, 2, 5, 1).
+knightMove(3, 2, 4, 4).
+knightMove(3, 2, 2, 4).
+knightMove(3, 2, 1, 3).
+knightMove(3, 2, 1, 1).
+knightMove(3, 1, 5, 2).
+knightMove(3, 1, 4, 3).
+knightMove(3, 1, 2, 3).
+knightMove(3, 1, 1, 2).
+knightMove(2, 5, 4, 4).
+knightMove(2, 5, 3, 3).
+knightMove(2, 5, 1, 3).
+knightMove(2, 4, 4, 5).
+knightMove(2, 4, 4, 3).
+knightMove(2, 4, 3, 2).
+knightMove(2, 4, 1, 2).
+knightMove(2, 3, 4, 4).
+knightMove(2, 3, 4, 2).
+knightMove(2, 3, 3, 5).
+knightMove(2, 3, 3, 1).
+knightMove(2, 3, 1, 5).
+knightMove(2, 3, 1, 1).
+knightMove(2, 2, 4, 3).
+knightMove(2, 2, 4, 1).
+knightMove(2, 2, 3, 4).
+knightMove(2, 2, 1, 4).
+knightMove(2, 1, 4, 2).
+knightMove(2, 1, 3, 3).
+knightMove(2, 1, 1, 3).
+knightMove(1, 5, 3, 4).
+knightMove(1, 5, 2, 3).
+knightMove(1, 4, 3, 5).
+knightMove(1, 4, 3, 3).
+knightMove(1, 4, 2, 2).
+knightMove(1, 3, 3, 4).
+knightMove(1, 3, 3, 2).
+knightMove(1, 3, 2, 5).
+knightMove(1, 3, 2, 1).
+knightMove(1, 2, 3, 3).
+knightMove(1, 2, 3, 1).
+knightMove(1, 2, 2, 4).
+knightMove(1, 1, 3, 2).
+knightMove(1, 1, 2, 3).
+input_move(robot, 6, 5, 5, 3).
+input_move(robot, 6, 5, 4, 4).
+input_move(robot, 6, 4, 5, 2).
+input_move(robot, 6, 4, 4, 5).
+input_move(robot, 6, 4, 4, 3).
+input_move(robot, 6, 3, 5, 5).
+input_move(robot, 6, 3, 5, 1).
+input_move(robot, 6, 3, 4, 4).
+input_move(robot, 6, 3, 4, 2).
+input_move(robot, 6, 2, 5, 4).
+input_move(robot, 6, 2, 4, 3).
+input_move(robot, 6, 2, 4, 1).
+input_move(robot, 6, 1, 5, 3).
+input_move(robot, 6, 1, 4, 2).
+input_move(robot, 5, 5, 6, 3).
+input_move(robot, 5, 5, 4, 3).
+input_move(robot, 5, 5, 3, 4).
+input_move(robot, 5, 4, 6, 2).
+input_move(robot, 5, 4, 4, 2).
+input_move(robot, 5, 4, 3, 5).
+input_move(robot, 5, 4, 3, 3).
+input_move(robot, 5, 3, 6, 5).
+input_move(robot, 5, 3, 6, 1).
+input_move(robot, 5, 3, 4, 5).
+input_move(robot, 5, 3, 4, 1).
+input_move(robot, 5, 3, 3, 4).
+input_move(robot, 5, 3, 3, 2).
+input_move(robot, 5, 2, 6, 4).
+input_move(robot, 5, 2, 4, 4).
+input_move(robot, 5, 2, 3, 3).
+input_move(robot, 5, 2, 3, 1).
+input_move(robot, 5, 1, 6, 3).
+input_move(robot, 5, 1, 4, 3).
+input_move(robot, 5, 1, 3, 2).
+input_move(robot, 4, 5, 6, 4).
+input_move(robot, 4, 5, 5, 3).
+input_move(robot, 4, 5, 3, 3).
+input_move(robot, 4, 5, 2, 4).
+input_move(robot, 4, 4, 6, 5).
+input_move(robot, 4, 4, 6, 3).
+input_move(robot, 4, 4, 5, 2).
+input_move(robot, 4, 4, 3, 2).
+input_move(robot, 4, 4, 2, 5).
+input_move(robot, 4, 4, 2, 3).
+input_move(robot, 4, 3, 6, 4).
+input_move(robot, 4, 3, 6, 2).
+input_move(robot, 4, 3, 5, 5).
+input_move(robot, 4, 3, 5, 1).
+input_move(robot, 4, 3, 3, 5).
+input_move(robot, 4, 3, 3, 1).
+input_move(robot, 4, 3, 2, 4).
+input_move(robot, 4, 3, 2, 2).
+input_move(robot, 4, 2, 6, 3).
+input_move(robot, 4, 2, 6, 1).
+input_move(robot, 4, 2, 5, 4).
+input_move(robot, 4, 2, 3, 4).
+input_move(robot, 4, 2, 2, 3).
+input_move(robot, 4, 2, 2, 1).
+input_move(robot, 4, 1, 6, 2).
+input_move(robot, 4, 1, 5, 3).
+input_move(robot, 4, 1, 3, 3).
+input_move(robot, 4, 1, 2, 2).
+input_move(robot, 3, 5, 5, 4).
+input_move(robot, 3, 5, 4, 3).
+input_move(robot, 3, 5, 2, 3).
+input_move(robot, 3, 5, 1, 4).
+input_move(robot, 3, 4, 5, 5).
+input_move(robot, 3, 4, 5, 3).
+input_move(robot, 3, 4, 4, 2).
+input_move(robot, 3, 4, 2, 2).
+input_move(robot, 3, 4, 1, 5).
+input_move(robot, 3, 4, 1, 3).
+input_move(robot, 3, 3, 5, 4).
+input_move(robot, 3, 3, 5, 2).
+input_move(robot, 3, 3, 4, 5).
+input_move(robot, 3, 3, 4, 1).
+input_move(robot, 3, 3, 2, 5).
+input_move(robot, 3, 3, 2, 1).
+input_move(robot, 3, 3, 1, 4).
+input_move(robot, 3, 3, 1, 2).
+input_move(robot, 3, 2, 5, 3).
+input_move(robot, 3, 2, 5, 1).
+input_move(robot, 3, 2, 4, 4).
+input_move(robot, 3, 2, 2, 4).
+input_move(robot, 3, 2, 1, 3).
+input_move(robot, 3, 2, 1, 1).
+input_move(robot, 3, 1, 5, 2).
+input_move(robot, 3, 1, 4, 3).
+input_move(robot, 3, 1, 2, 3).
+input_move(robot, 3, 1, 1, 2).
+input_move(robot, 2, 5, 4, 4).
+input_move(robot, 2, 5, 3, 3).
+input_move(robot, 2, 5, 1, 3).
+input_move(robot, 2, 4, 4, 5).
+input_move(robot, 2, 4, 4, 3).
+input_move(robot, 2, 4, 3, 2).
+input_move(robot, 2, 4, 1, 2).
+input_move(robot, 2, 3, 4, 4).
+input_move(robot, 2, 3, 4, 2).
+input_move(robot, 2, 3, 3, 5).
+input_move(robot, 2, 3, 3, 1).
+input_move(robot, 2, 3, 1, 5).
+input_move(robot, 2, 3, 1, 1).
+input_move(robot, 2, 2, 4, 3).
+input_move(robot, 2, 2, 4, 1).
+input_move(robot, 2, 2, 3, 4).
+input_move(robot, 2, 2, 1, 4).
+input_move(robot, 2, 1, 4, 2).
+input_move(robot, 2, 1, 3, 3).
+input_move(robot, 2, 1, 1, 3).
+input_move(robot, 1, 5, 3, 4).
+input_move(robot, 1, 5, 2, 3).
+input_move(robot, 1, 4, 3, 5).
+input_move(robot, 1, 4, 3, 3).
+input_move(robot, 1, 4, 2, 2).
+input_move(robot, 1, 3, 3, 4).
+input_move(robot, 1, 3, 3, 2).
+input_move(robot, 1, 3, 2, 5).
+input_move(robot, 1, 3, 2, 1).
+input_move(robot, 1, 2, 3, 3).
+input_move(robot, 1, 2, 3, 1).
+input_move(robot, 1, 2, 2, 4).
+input_move(robot, 1, 1, 3, 2).
+input_move(robot, 1, 1, 2, 3).
+col(6).
+col(5).
+col(4).
+col(3).
+col(2).
+col(1).
+add(2, y, 3, 5).
+add(2, y, 2, 4).
+add(2, y, 1, 3).
+add(2, x, 4, 6).
+add(2, x, 3, 5).
+add(2, x, 2, 4).
+add(2, x, 1, 3).
+add(1, y, 4, 5).
+add(1, y, 3, 4).
+add(1, y, 2, 3).
+add(1, y, 1, 2).
+add(1, x, 5, 6).
+add(1, x, 4, 5).
+add(1, x, 3, 4).
+add(1, x, 2, 3).
+add(1, x, 1, 2).
+add(1, count, 9, 10).
+add(1, count, 8, 9).
+add(1, count, 7, 8).
+add(1, count, 6, 7).
+add(1, count, 5, 6).
+add(1, count, 4, 5).
+add(1, count, 3, 4).
+add(1, count, 29, 30).
+add(1, count, 28, 29).
+add(1, count, 27, 28).
+add(1, count, 26, 27).
+add(1, count, 25, 26).
+add(1, count, 24, 25).
+add(1, count, 23, 24).
+add(1, count, 22, 23).
+add(1, count, 21, 22).
+add(1, count, 20, 21).
+add(1, count, 2, 3).
+add(1, count, 19, 20).
+add(1, count, 18, 19).
+add(1, count, 17, 18).
+add(1, count, 16, 17).
+add(1, count, 15, 16).
+add(1, count, 14, 15).
+add(1, count, 13, 14).
+add(1, count, 12, 13).
+add(1, count, 11, 12).
+add(1, count, 10, 11).
+add(1, count, 1, 2).
+add(1, count, 0, 1).
+
+
+
+
+
+
+
+
+
+
+type(agent, robot).
+agent(robot).
+
+type(pos, 1).
+pos(1).
+
+type(pos, 2).
+pos(2).
+
+type(pos, 3).
+pos(3).
+
+type(pos, 4).
+pos(4).
+
+type(pos, 5).
+pos(5).
+
+type(pos, 6).
+pos(6).
+
+type(int, 0).
+int(0).
+
+type(int, 7).
+int(7).
+
+type(int, 8).
+int(8).
+
+type(int, 9).
+int(9).
+
+type(int, 10).
+int(10).
+
+type(int, 11).
+int(11).
+
+type(int, 12).
+int(12).
+
+type(int, 13).
+int(13).
+
+type(int, 14).
+int(14).
+
+type(int, 15).
+int(15).
+
+type(int, 16).
+int(16).
+
+type(int, 17).
+int(17).
+
+type(int, 18).
+int(18).
+
+type(int, 19).
+int(19).
+
+type(int, 20).
+int(20).
+
+type(int, 21).
+int(21).
+
+type(int, 22).
+int(22).
+
+type(int, 23).
+int(23).
+
+type(int, 24).
+int(24).
+
+type(int, 25).
+int(25).
+
+type(int, 26).
+int(26).
+
+type(int, 27).
+int(27).
+
+type(int, 28).
+int(28).
+
+type(int, 29).
+int(29).
+
+type(int, 30).
+int(30).
+
+type(int, 33).
+int(33).
+
+type(int, 36).
+int(36).
+
+type(int, 39).
+int(39).
+
+type(int, 40).
+int(40).
+
+type(int, 42).
+int(42).
+
+type(int, 45).
+int(45).
+
+type(int, 48).
+int(48).
+
+type(int, 50).
+int(50).
+
+type(int, 51).
+int(51).
+
+type(int, 54).
+int(54).
+
+type(int, 57).
+int(57).
+
+type(int, 60).
+int(60).
+
+type(int, 63).
+int(63).
+
+type(int, 66).
+int(66).
+
+type(int, 69).
+int(69).
+
+type(int, 72).
+int(72).
+
+type(int, 75).
+int(75).
+
+type(int, 80).
+int(80).
+
+type(int, 85).
+int(85).
+
+type(int, 90).
+int(90).
+
+type(int, 96).
+int(96).
+
+type(int, 100).
+int(100).
+
+type(mark, knight).
+mark(knight).
+
+type(mark, hole).
+mark(hole).
+
+type(add_arg, count).
+add_arg(count).
+
+type(add_arg, x).
+add_arg(x).
+
+type(add_arg, y).
+add_arg(y).
+
+
+
+
+
+
+
+type(int, 1).
+int(1).
+
+type(int, 2).
+int(2).
+
+type(int, 3).
+int(3).
+
+type(int, 4).
+int(4).
+
+type(int, 5).
+int(5).
+
+type(int, 6).
+int(6).
+
+true_moveCount(0).
+true_cell(1, 1, knight).
+inc(0) :- not goal(robot, 0).
+exc(0) :- goal(robot, 96).
+exc(1) :- goal(robot, 90).
+exc(2) :- goal(robot, 9).
+exc(3) :- goal(robot, 85).
+exc(4) :- goal(robot, 80).
+exc(5) :- goal(robot, 8).
+exc(6) :- goal(robot, 75).
+exc(7) :- goal(robot, 72).
+exc(8) :- goal(robot, 7).
+exc(9) :- goal(robot, 69).
+exc(10) :- goal(robot, 66).
+exc(11) :- goal(robot, 63).
+exc(12) :- goal(robot, 60).
+exc(13) :- goal(robot, 6).
+exc(14) :- goal(robot, 57).
+exc(15) :- goal(robot, 54).
+exc(16) :- goal(robot, 51).
+exc(17) :- goal(robot, 50).
+exc(18) :- goal(robot, 5).
+exc(19) :- goal(robot, 48).
+exc(20) :- goal(robot, 45).
+exc(21) :- goal(robot, 42).
+exc(22) :- goal(robot, 40).
+exc(23) :- goal(robot, 4).
+exc(24) :- goal(robot, 39).
+exc(25) :- goal(robot, 36).
+exc(26) :- goal(robot, 33).
+exc(27) :- goal(robot, 30).
+exc(28) :- goal(robot, 3).
+exc(29) :- goal(robot, 29).
+exc(30) :- goal(robot, 28).
+exc(31) :- goal(robot, 27).
+exc(32) :- goal(robot, 26).
+exc(33) :- goal(robot, 25).
+exc(34) :- goal(robot, 24).
+exc(35) :- goal(robot, 23).
+exc(36) :- goal(robot, 22).
+exc(37) :- goal(robot, 21).
+exc(38) :- goal(robot, 20).
+exc(39) :- goal(robot, 2).
+exc(40) :- goal(robot, 19).
+exc(41) :- goal(robot, 18).
+exc(42) :- goal(robot, 17).
+exc(43) :- goal(robot, 16).
+exc(44) :- goal(robot, 15).
+exc(45) :- goal(robot, 14).
+exc(46) :- goal(robot, 13).
+exc(47) :- goal(robot, 12).
+exc(48) :- goal(robot, 11).
+exc(49) :- goal(robot, 10).
+exc(50) :- goal(robot, 1).
+#show inc/1.
+#show exc/1.
+

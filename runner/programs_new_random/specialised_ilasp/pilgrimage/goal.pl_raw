@@ -1,0 +1,41 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- succ(V1, V22), agent(V0), int(V1), pos(V22), int(V22).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- height_succ(V1, V22), agent(V0), int(V1), pos(V22), int(V22).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+goal(V0, V1) :- height_score(V7, V1), agent(V0), int(V1), pos(V7), int(V7).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+}
+Finished

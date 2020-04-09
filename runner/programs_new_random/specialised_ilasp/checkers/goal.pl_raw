@@ -1,0 +1,5674 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- scoremap(V1, V1), agent(V0), int(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- scoremap(V1, V1), agent(V0), int(V1).
+goal(V0, V1) :- agent(V0), pos(V1), int(V1).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+goal(V0, V1) :- scoremap(V1, V1), agent(V0), int(V1).
+goal(V0, V1) :- input_move(V0, V5, V5, V1, V1), agent(V0), pos(V1), int(V1), pos(V5), int(V5).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+goal(V0, V1) :- scoremap(V1, V1), agent(V0), int(V1).
+goal(V0, V1) :- input_jump(V0, V1, V7, V7, V1), agent(V0), pos(V1), int(V1), pos(V7), int(V7).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+goal(V0, V1) :- scoremap(V1, V1), agent(V0), int(V1).
+goal(V0, V1) :- true_capturecount(V0, V23), agent(V0), pos(V1), int(V1), pos(V23), int(V23).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+goal(V0, V1) :- scoremap(V1, V1), agent(V0), int(V1).
+goal(V0, V1) :- scoremap(V23, V1), input_move(V0, V1, V1, V5, V23), agent(V0), pos(V1), int(V1), pos(V5), int(V5), pos(V23), int(V23).
+_control(V0), V1 = 100, V4 = 3, agent(V0), score(V1), pos(V4), cell_type(V4), pos(V6), cell_type(V6).
+goal(V0, V1) :- true_cell(V3, V4, V8), true_cell(V4, V3, V8), V1 = 50, V4 = 3, V8 = b, agent(V0), score(V1), pos(V3), cell_type(V3), pos(V4), cell_type(V4), cell_type(V8).
+}
+goal(V0, V1) :- scoremap(V1, V1), agent(V0), int(V1).
+goal(V0, V1) :- scoremap(V23, V1), input_move(V0, V1, V1, V5, V23), agent(V0), pos(V1), int(V1), pos(V5), int(V5), pos(V23), int(V23).
+_control(V0), V1 = 100, V4 = 3, agent(V0), score(V1), pos(V4), cell_type(V4), pos(V6), cell_type(V6).
+goal(V0, V1) :- true_cell(V3, V4, V8), true_cell(V4, V3, V8), V1 = 50, V4 = 3, V8 = b, agent(V0), score(V1), pos(V3), cell_type(V3), pos(V4), cell_type(V4), cell_type(V8).
+
+scoremap(9, 72).
+scoremap(8, 64).
+scoremap(7, 56).
+scoremap(6, 48).
+scoremap(5, 40).
+scoremap(4, 32).
+scoremap(3, 24).
+scoremap(2, 16).
+scoremap(12, 100).
+scoremap(11, 90).
+scoremap(10, 80).
+scoremap(1, 8).
+scoremap(0, 0).
+role(red).
+role(black).
+redpawnmove(8, 8, 7, 7).
+redpawnmove(8, 7, 7, 6).
+redpawnmove(8, 6, 7, 5).
+redpawnmove(8, 5, 7, 4).
+redpawnmove(8, 4, 7, 3).
+redpawnmove(8, 3, 7, 2).
+redpawnmove(8, 2, 7, 1).
+redpawnmove(8, 1, 7, 8).
+redpawnmove(7, 8, 8, 7).
+redpawnmove(7, 8, 6, 7).
+redpawnmove(7, 7, 8, 6).
+redpawnmove(7, 7, 6, 6).
+redpawnmove(7, 6, 8, 5).
+redpawnmove(7, 6, 6, 5).
+redpawnmove(7, 5, 8, 4).
+redpawnmove(7, 5, 6, 4).
+redpawnmove(7, 4, 8, 3).
+redpawnmove(7, 4, 6, 3).
+redpawnmove(7, 3, 8, 2).
+redpawnmove(7, 3, 6, 2).
+redpawnmove(7, 2, 8, 1).
+redpawnmove(7, 2, 6, 1).
+redpawnmove(7, 1, 8, 8).
+redpawnmove(7, 1, 6, 8).
+redpawnmove(6, 8, 7, 7).
+redpawnmove(6, 8, 5, 7).
+redpawnmove(6, 7, 7, 6).
+redpawnmove(6, 7, 5, 6).
+redpawnmove(6, 6, 7, 5).
+redpawnmove(6, 6, 5, 5).
+redpawnmove(6, 5, 7, 4).
+redpawnmove(6, 5, 5, 4).
+redpawnmove(6, 4, 7, 3).
+redpawnmove(6, 4, 5, 3).
+redpawnmove(6, 3, 7, 2).
+redpawnmove(6, 3, 5, 2).
+redpawnmove(6, 2, 7, 1).
+redpawnmove(6, 2, 5, 1).
+redpawnmove(6, 1, 7, 8).
+redpawnmove(6, 1, 5, 8).
+redpawnmove(5, 8, 6, 7).
+redpawnmove(5, 8, 4, 7).
+redpawnmove(5, 7, 6, 6).
+redpawnmove(5, 7, 4, 6).
+redpawnmove(5, 6, 6, 5).
+redpawnmove(5, 6, 4, 5).
+redpawnmove(5, 5, 6, 4).
+redpawnmove(5, 5, 4, 4).
+redpawnmove(5, 4, 6, 3).
+redpawnmove(5, 4, 4, 3).
+redpawnmove(5, 3, 6, 2).
+redpawnmove(5, 3, 4, 2).
+redpawnmove(5, 2, 6, 1).
+redpawnmove(5, 2, 4, 1).
+redpawnmove(5, 1, 6, 8).
+redpawnmove(5, 1, 4, 8).
+redpawnmove(4, 8, 5, 7).
+redpawnmove(4, 8, 3, 7).
+redpawnmove(4, 7, 5, 6).
+redpawnmove(4, 7, 3, 6).
+redpawnmove(4, 6, 5, 5).
+redpawnmove(4, 6, 3, 5).
+redpawnmove(4, 5, 5, 4).
+redpawnmove(4, 5, 3, 4).
+redpawnmove(4, 4, 5, 3).
+redpawnmove(4, 4, 3, 3).
+redpawnmove(4, 3, 5, 2).
+redpawnmove(4, 3, 3, 2).
+redpawnmove(4, 2, 5, 1).
+redpawnmove(4, 2, 3, 1).
+redpawnmove(4, 1, 5, 8).
+redpawnmove(4, 1, 3, 8).
+redpawnmove(3, 8, 4, 7).
+redpawnmove(3, 8, 2, 7).
+redpawnmove(3, 7, 4, 6).
+redpawnmove(3, 7, 2, 6).
+redpawnmove(3, 6, 4, 5).
+redpawnmove(3, 6, 2, 5).
+redpawnmove(3, 5, 4, 4).
+redpawnmove(3, 5, 2, 4).
+redpawnmove(3, 4, 4, 3).
+redpawnmove(3, 4, 2, 3).
+redpawnmove(3, 3, 4, 2).
+redpawnmove(3, 3, 2, 2).
+redpawnmove(3, 2, 4, 1).
+redpawnmove(3, 2, 2, 1).
+redpawnmove(3, 1, 4, 8).
+redpawnmove(3, 1, 2, 8).
+redpawnmove(2, 8, 3, 7).
+redpawnmove(2, 8, 1, 7).
+redpawnmove(2, 7, 3, 6).
+redpawnmove(2, 7, 1, 6).
+redpawnmove(2, 6, 3, 5).
+redpawnmove(2, 6, 1, 5).
+redpawnmove(2, 5, 3, 4).
+redpawnmove(2, 5, 1, 4).
+redpawnmove(2, 4, 3, 3).
+redpawnmove(2, 4, 1, 3).
+redpawnmove(2, 3, 3, 2).
+redpawnmove(2, 3, 1, 2).
+redpawnmove(2, 2, 3, 1).
+redpawnmove(2, 2, 1, 1).
+redpawnmove(2, 1, 3, 8).
+redpawnmove(2, 1, 1, 8).
+redpawnmove(1, 8, 2, 7).
+redpawnmove(1, 7, 2, 6).
+redpawnmove(1, 6, 2, 5).
+redpawnmove(1, 5, 2, 4).
+redpawnmove(1, 4, 2, 3).
+redpawnmove(1, 3, 2, 2).
+redpawnmove(1, 2, 2, 1).
+redpawnmove(1, 1, 2, 8).
+pp(99, 100).
+pp(98, 99).
+pp(97, 98).
+pp(96, 97).
+pp(95, 96).
+pp(94, 95).
+pp(93, 94).
+pp(92, 93).
+pp(91, 92).
+pp(90, 91).
+pp(9, 10).
+pp(89, 90).
+pp(88, 89).
+pp(87, 88).
+pp(86, 87).
+pp(85, 86).
+pp(84, 85).
+pp(83, 84).
+pp(82, 83).
+pp(81, 82).
+pp(80, 81).
+pp(8, 9).
+pp(79, 80).
+pp(78, 79).
+pp(77, 78).
+pp(76, 77).
+pp(75, 76).
+pp(74, 75).
+pp(73, 74).
+pp(72, 73).
+pp(71, 72).
+pp(70, 71).
+pp(7, 8).
+pp(69, 70).
+pp(68, 69).
+pp(67, 68).
+pp(66, 67).
+pp(65, 66).
+pp(64, 65).
+pp(63, 64).
+pp(62, 63).
+pp(61, 62).
+pp(60, 61).
+pp(6, 7).
+pp(59, 60).
+pp(58, 59).
+pp(57, 58).
+pp(56, 57).
+pp(55, 56).
+pp(54, 55).
+pp(53, 54).
+pp(52, 53).
+pp(51, 52).
+pp(50, 51).
+pp(5, 6).
+pp(49, 50).
+pp(48, 49).
+pp(47, 48).
+pp(46, 47).
+pp(45, 46).
+pp(44, 45).
+pp(43, 44).
+pp(42, 43).
+pp(41, 42).
+pp(40, 41).
+pp(4, 5).
+pp(39, 40).
+pp(38, 39).
+pp(37, 38).
+pp(36, 37).
+pp(35, 36).
+pp(34, 35).
+pp(33, 34).
+pp(32, 33).
+pp(31, 32).
+pp(30, 31).
+pp(3, 4).
+pp(29, 30).
+pp(28, 29).
+pp(27, 28).
+pp(26, 27).
+pp(25, 26).
+pp(24, 25).
+pp(23, 24).
+pp(22, 23).
+pp(21, 22).
+pp(20, 21).
+pp(2, 3).
+pp(19, 20).
+pp(18, 19).
+pp(17, 18).
+pp(16, 17).
+pp(15, 16).
+pp(14, 15).
+pp(13, 14).
+pp(12, 13).
+pp(11, 12).
+pp(10, 11).
+pp(1, 2).
+plusy(1, 8, 1).
+plusy(1, 7, 8).
+plusy(1, 6, 7).
+plusy(1, 5, 6).
+plusy(1, 4, 5).
+plusy(1, 3, 4).
+plusy(1, 2, 3).
+plusy(1, 1, 2).
+plusx(1, 7, 8).
+plusx(1, 6, 7).
+plusx(1, 5, 6).
+plusx(1, 4, 5).
+plusx(1, 3, 4).
+plusx(1, 2, 3).
+plusx(1, 1, 2).
+owns(redpawn, red).
+owns(blackpawn, black).
+odd(7).
+odd(5).
+odd(3).
+odd(1).
+input_move(red, 8, 8, 7, 7).
+input_move(red, 8, 6, 7, 5).
+input_move(red, 8, 4, 7, 3).
+input_move(red, 8, 2, 7, 1).
+input_move(red, 7, 7, 8, 6).
+input_move(red, 7, 7, 6, 6).
+input_move(red, 7, 5, 8, 4).
+input_move(red, 7, 5, 6, 4).
+input_move(red, 7, 3, 8, 2).
+input_move(red, 7, 3, 6, 2).
+input_move(red, 7, 1, 8, 8).
+input_move(red, 7, 1, 6, 8).
+input_move(red, 6, 8, 7, 7).
+input_move(red, 6, 8, 5, 7).
+input_move(red, 6, 6, 7, 5).
+input_move(red, 6, 6, 5, 5).
+input_move(red, 6, 4, 7, 3).
+input_move(red, 6, 4, 5, 3).
+input_move(red, 6, 2, 7, 1).
+input_move(red, 6, 2, 5, 1).
+input_move(red, 5, 7, 6, 6).
+input_move(red, 5, 7, 4, 6).
+input_move(red, 5, 5, 6, 4).
+input_move(red, 5, 5, 4, 4).
+input_move(red, 5, 3, 6, 2).
+input_move(red, 5, 3, 4, 2).
+input_move(red, 5, 1, 6, 8).
+input_move(red, 5, 1, 4, 8).
+input_move(red, 4, 8, 5, 7).
+input_move(red, 4, 8, 3, 7).
+input_move(red, 4, 6, 5, 5).
+input_move(red, 4, 6, 3, 5).
+input_move(red, 4, 4, 5, 3).
+input_move(red, 4, 4, 3, 3).
+input_move(red, 4, 2, 5, 1).
+input_move(red, 4, 2, 3, 1).
+input_move(red, 3, 7, 4, 6).
+input_move(red, 3, 7, 2, 6).
+input_move(red, 3, 5, 4, 4).
+input_move(red, 3, 5, 2, 4).
+input_move(red, 3, 3, 4, 2).
+input_move(red, 3, 3, 2, 2).
+input_move(red, 3, 1, 4, 8).
+input_move(red, 3, 1, 2, 8).
+input_move(red, 2, 8, 3, 7).
+input_move(red, 2, 8, 1, 7).
+input_move(red, 2, 6, 3, 5).
+input_move(red, 2, 6, 1, 5).
+input_move(red, 2, 4, 3, 3).
+input_move(red, 2, 4, 1, 3).
+input_move(red, 2, 2, 3, 1).
+input_move(red, 2, 2, 1, 1).
+input_move(red, 1, 7, 2, 6).
+input_move(red, 1, 5, 2, 4).
+input_move(red, 1, 3, 2, 2).
+input_move(red, 1, 1, 2, 8).
+input_move(black, 8, 8, 7, 1).
+input_move(black, 8, 6, 7, 7).
+input_move(black, 8, 4, 7, 5).
+input_move(black, 8, 2, 7, 3).
+input_move(black, 7, 7, 8, 8).
+input_move(black, 7, 7, 6, 8).
+input_move(black, 7, 5, 8, 6).
+input_move(black, 7, 5, 6, 6).
+input_move(black, 7, 3, 8, 4).
+input_move(black, 7, 3, 6, 4).
+input_move(black, 7, 1, 8, 2).
+input_move(black, 7, 1, 6, 2).
+input_move(black, 6, 8, 7, 1).
+input_move(black, 6, 8, 5, 1).
+input_move(black, 6, 6, 7, 7).
+input_move(black, 6, 6, 5, 7).
+input_move(black, 6, 4, 7, 5).
+input_move(black, 6, 4, 5, 5).
+input_move(black, 6, 2, 7, 3).
+input_move(black, 6, 2, 5, 3).
+input_move(black, 5, 7, 6, 8).
+input_move(black, 5, 7, 4, 8).
+input_move(black, 5, 5, 6, 6).
+input_move(black, 5, 5, 4, 6).
+input_move(black, 5, 3, 6, 4).
+input_move(black, 5, 3, 4, 4).
+input_move(black, 5, 1, 6, 2).
+input_move(black, 5, 1, 4, 2).
+input_move(black, 4, 8, 5, 1).
+input_move(black, 4, 8, 3, 1).
+input_move(black, 4, 6, 5, 7).
+input_move(black, 4, 6, 3, 7).
+input_move(black, 4, 4, 5, 5).
+input_move(black, 4, 4, 3, 5).
+input_move(black, 4, 2, 5, 3).
+input_move(black, 4, 2, 3, 3).
+input_move(black, 3, 7, 4, 8).
+input_move(black, 3, 7, 2, 8).
+input_move(black, 3, 5, 4, 6).
+input_move(black, 3, 5, 2, 6).
+input_move(black, 3, 3, 4, 4).
+input_move(black, 3, 3, 2, 4).
+input_move(black, 3, 1, 4, 2).
+input_move(black, 3, 1, 2, 2).
+input_move(black, 2, 8, 3, 1).
+input_move(black, 2, 8, 1, 1).
+input_move(black, 2, 6, 3, 7).
+input_move(black, 2, 6, 1, 7).
+input_move(black, 2, 4, 3, 5).
+input_move(black, 2, 4, 1, 5).
+input_move(black, 2, 2, 3, 3).
+input_move(black, 2, 2, 1, 3).
+input_move(black, 1, 7, 2, 8).
+input_move(black, 1, 5, 2, 6).
+input_move(black, 1, 3, 2, 4).
+input_move(black, 1, 1, 2, 2).
+input_jump(red, 8, 8, 6, 6).
+input_jump(red, 8, 6, 6, 4).
+input_jump(red, 8, 4, 6, 2).
+input_jump(red, 8, 2, 6, 8).
+input_jump(red, 7, 7, 5, 5).
+input_jump(red, 7, 5, 5, 3).
+input_jump(red, 7, 3, 5, 1).
+input_jump(red, 7, 1, 5, 7).
+input_jump(red, 6, 8, 8, 6).
+input_jump(red, 6, 8, 4, 6).
+input_jump(red, 6, 6, 8, 4).
+input_jump(red, 6, 6, 4, 4).
+input_jump(red, 6, 4, 8, 2).
+input_jump(red, 6, 4, 4, 2).
+input_jump(red, 6, 2, 8, 8).
+input_jump(red, 6, 2, 4, 8).
+input_jump(red, 5, 7, 7, 5).
+input_jump(red, 5, 7, 3, 5).
+input_jump(red, 5, 5, 7, 3).
+input_jump(red, 5, 5, 3, 3).
+input_jump(red, 5, 3, 7, 1).
+input_jump(red, 5, 3, 3, 1).
+input_jump(red, 5, 1, 7, 7).
+input_jump(red, 5, 1, 3, 7).
+input_jump(red, 4, 8, 6, 6).
+input_jump(red, 4, 8, 2, 6).
+input_jump(red, 4, 6, 6, 4).
+input_jump(red, 4, 6, 2, 4).
+input_jump(red, 4, 4, 6, 2).
+input_jump(red, 4, 4, 2, 2).
+input_jump(red, 4, 2, 6, 8).
+input_jump(red, 4, 2, 2, 8).
+input_jump(red, 3, 7, 5, 5).
+input_jump(red, 3, 7, 1, 5).
+input_jump(red, 3, 5, 5, 3).
+input_jump(red, 3, 5, 1, 3).
+input_jump(red, 3, 3, 5, 1).
+input_jump(red, 3, 3, 1, 1).
+input_jump(red, 3, 1, 5, 7).
+input_jump(red, 3, 1, 1, 7).
+input_jump(red, 2, 8, 4, 6).
+input_jump(red, 2, 6, 4, 4).
+input_jump(red, 2, 4, 4, 2).
+input_jump(red, 2, 2, 4, 8).
+input_jump(red, 1, 7, 3, 5).
+input_jump(red, 1, 5, 3, 3).
+input_jump(red, 1, 3, 3, 1).
+input_jump(red, 1, 1, 3, 7).
+input_jump(black, 8, 8, 6, 2).
+input_jump(black, 8, 6, 6, 8).
+input_jump(black, 8, 4, 6, 6).
+input_jump(black, 8, 2, 6, 4).
+input_jump(black, 7, 7, 5, 1).
+input_jump(black, 7, 5, 5, 7).
+input_jump(black, 7, 3, 5, 5).
+input_jump(black, 7, 1, 5, 3).
+input_jump(black, 6, 8, 8, 2).
+input_jump(black, 6, 8, 4, 2).
+input_jump(black, 6, 6, 8, 8).
+input_jump(black, 6, 6, 4, 8).
+input_jump(black, 6, 4, 8, 6).
+input_jump(black, 6, 4, 4, 6).
+input_jump(black, 6, 2, 8, 4).
+input_jump(black, 6, 2, 4, 4).
+input_jump(black, 5, 7, 7, 1).
+input_jump(black, 5, 7, 3, 1).
+input_jump(black, 5, 5, 7, 7).
+input_jump(black, 5, 5, 3, 7).
+input_jump(black, 5, 3, 7, 5).
+input_jump(black, 5, 3, 3, 5).
+input_jump(black, 5, 1, 7, 3).
+input_jump(black, 5, 1, 3, 3).
+input_jump(black, 4, 8, 6, 2).
+input_jump(black, 4, 8, 2, 2).
+input_jump(black, 4, 6, 6, 8).
+input_jump(black, 4, 6, 2, 8).
+input_jump(black, 4, 4, 6, 6).
+input_jump(black, 4, 4, 2, 6).
+input_jump(black, 4, 2, 6, 4).
+input_jump(black, 4, 2, 2, 4).
+input_jump(black, 3, 7, 5, 1).
+input_jump(black, 3, 7, 1, 1).
+input_jump(black, 3, 5, 5, 7).
+input_jump(black, 3, 5, 1, 7).
+input_jump(black, 3, 3, 5, 5).
+input_jump(black, 3, 3, 1, 5).
+input_jump(black, 3, 1, 5, 3).
+input_jump(black, 3, 1, 1, 3).
+input_jump(black, 2, 8, 4, 2).
+input_jump(black, 2, 6, 4, 8).
+input_jump(black, 2, 4, 4, 6).
+input_jump(black, 2, 2, 4, 4).
+input_jump(black, 1, 7, 3, 1).
+input_jump(black, 1, 5, 3, 7).
+input_jump(black, 1, 3, 3, 5).
+input_jump(black, 1, 1, 3, 3).
+input(red, noop).
+input(black, noop).
+index(8).
+index(7).
+index(6).
+index(5).
+index(4).
+index(3).
+index(2).
+index(1).
+evensquare(8, 8).
+evensquare(8, 6).
+evensquare(8, 4).
+evensquare(8, 2).
+evensquare(7, 7).
+evensquare(7, 5).
+evensquare(7, 3).
+evensquare(7, 1).
+evensquare(6, 8).
+evensquare(6, 6).
+evensquare(6, 4).
+evensquare(6, 2).
+evensquare(5, 7).
+evensquare(5, 5).
+evensquare(5, 3).
+evensquare(5, 1).
+evensquare(4, 8).
+evensquare(4, 6).
+evensquare(4, 4).
+evensquare(4, 2).
+evensquare(3, 7).
+evensquare(3, 5).
+evensquare(3, 3).
+evensquare(3, 1).
+evensquare(2, 8).
+evensquare(2, 6).
+evensquare(2, 4).
+evensquare(2, 2).
+evensquare(1, 7).
+evensquare(1, 5).
+evensquare(1, 3).
+evensquare(1, 1).
+even(8).
+even(6).
+even(4).
+even(2).
+distinctcell(8, 8, 8, 7).
+distinctcell(8, 8, 8, 6).
+distinctcell(8, 8, 8, 5).
+distinctcell(8, 8, 8, 4).
+distinctcell(8, 8, 8, 3).
+distinctcell(8, 8, 8, 2).
+distinctcell(8, 8, 8, 1).
+distinctcell(8, 8, 7, 8).
+distinctcell(8, 8, 7, 7).
+distinctcell(8, 8, 7, 6).
+distinctcell(8, 8, 7, 5).
+distinctcell(8, 8, 7, 4).
+distinctcell(8, 8, 7, 3).
+distinctcell(8, 8, 7, 2).
+distinctcell(8, 8, 7, 1).
+distinctcell(8, 8, 6, 8).
+distinctcell(8, 8, 6, 7).
+distinctcell(8, 8, 6, 6).
+distinctcell(8, 8, 6, 5).
+distinctcell(8, 8, 6, 4).
+distinctcell(8, 8, 6, 3).
+distinctcell(8, 8, 6, 2).
+distinctcell(8, 8, 6, 1).
+distinctcell(8, 8, 5, 8).
+distinctcell(8, 8, 5, 7).
+distinctcell(8, 8, 5, 6).
+distinctcell(8, 8, 5, 5).
+distinctcell(8, 8, 5, 4).
+distinctcell(8, 8, 5, 3).
+distinctcell(8, 8, 5, 2).
+distinctcell(8, 8, 5, 1).
+distinctcell(8, 8, 4, 8).
+distinctcell(8, 8, 4, 7).
+distinctcell(8, 8, 4, 6).
+distinctcell(8, 8, 4, 5).
+distinctcell(8, 8, 4, 4).
+distinctcell(8, 8, 4, 3).
+distinctcell(8, 8, 4, 2).
+distinctcell(8, 8, 4, 1).
+distinctcell(8, 8, 3, 8).
+distinctcell(8, 8, 3, 7).
+distinctcell(8, 8, 3, 6).
+distinctcell(8, 8, 3, 5).
+distinctcell(8, 8, 3, 4).
+distinctcell(8, 8, 3, 3).
+distinctcell(8, 8, 3, 2).
+distinctcell(8, 8, 3, 1).
+distinctcell(8, 8, 2, 8).
+distinctcell(8, 8, 2, 7).
+distinctcell(8, 8, 2, 6).
+distinctcell(8, 8, 2, 5).
+distinctcell(8, 8, 2, 4).
+distinctcell(8, 8, 2, 3).
+distinctcell(8, 8, 2, 2).
+distinctcell(8, 8, 2, 1).
+distinctcell(8, 8, 1, 8).
+distinctcell(8, 8, 1, 7).
+distinctcell(8, 8, 1, 6).
+distinctcell(8, 8, 1, 5).
+distinctcell(8, 8, 1, 4).
+distinctcell(8, 8, 1, 3).
+distinctcell(8, 8, 1, 2).
+distinctcell(8, 8, 1, 1).
+distinctcell(8, 7, 8, 8).
+distinctcell(8, 7, 8, 6).
+distinctcell(8, 7, 8, 5).
+distinctcell(8, 7, 8, 4).
+distinctcell(8, 7, 8, 3).
+distinctcell(8, 7, 8, 2).
+distinctcell(8, 7, 8, 1).
+distinctcell(8, 7, 7, 8).
+distinctcell(8, 7, 7, 7).
+distinctcell(8, 7, 7, 6).
+distinctcell(8, 7, 7, 5).
+distinctcell(8, 7, 7, 4).
+distinctcell(8, 7, 7, 3).
+distinctcell(8, 7, 7, 2).
+distinctcell(8, 7, 7, 1).
+distinctcell(8, 7, 6, 8).
+distinctcell(8, 7, 6, 7).
+distinctcell(8, 7, 6, 6).
+distinctcell(8, 7, 6, 5).
+distinctcell(8, 7, 6, 4).
+distinctcell(8, 7, 6, 3).
+distinctcell(8, 7, 6, 2).
+distinctcell(8, 7, 6, 1).
+distinctcell(8, 7, 5, 8).
+distinctcell(8, 7, 5, 7).
+distinctcell(8, 7, 5, 6).
+distinctcell(8, 7, 5, 5).
+distinctcell(8, 7, 5, 4).
+distinctcell(8, 7, 5, 3).
+distinctcell(8, 7, 5, 2).
+distinctcell(8, 7, 5, 1).
+distinctcell(8, 7, 4, 8).
+distinctcell(8, 7, 4, 7).
+distinctcell(8, 7, 4, 6).
+distinctcell(8, 7, 4, 5).
+distinctcell(8, 7, 4, 4).
+distinctcell(8, 7, 4, 3).
+distinctcell(8, 7, 4, 2).
+distinctcell(8, 7, 4, 1).
+distinctcell(8, 7, 3, 8).
+distinctcell(8, 7, 3, 7).
+distinctcell(8, 7, 3, 6).
+distinctcell(8, 7, 3, 5).
+distinctcell(8, 7, 3, 4).
+distinctcell(8, 7, 3, 3).
+distinctcell(8, 7, 3, 2).
+distinctcell(8, 7, 3, 1).
+distinctcell(8, 7, 2, 8).
+distinctcell(8, 7, 2, 7).
+distinctcell(8, 7, 2, 6).
+distinctcell(8, 7, 2, 5).
+distinctcell(8, 7, 2, 4).
+distinctcell(8, 7, 2, 3).
+distinctcell(8, 7, 2, 2).
+distinctcell(8, 7, 2, 1).
+distinctcell(8, 7, 1, 8).
+distinctcell(8, 7, 1, 7).
+distinctcell(8, 7, 1, 6).
+distinctcell(8, 7, 1, 5).
+distinctcell(8, 7, 1, 4).
+distinctcell(8, 7, 1, 3).
+distinctcell(8, 7, 1, 2).
+distinctcell(8, 7, 1, 1).
+distinctcell(8, 6, 8, 8).
+distinctcell(8, 6, 8, 7).
+distinctcell(8, 6, 8, 5).
+distinctcell(8, 6, 8, 4).
+distinctcell(8, 6, 8, 3).
+distinctcell(8, 6, 8, 2).
+distinctcell(8, 6, 8, 1).
+distinctcell(8, 6, 7, 8).
+distinctcell(8, 6, 7, 7).
+distinctcell(8, 6, 7, 6).
+distinctcell(8, 6, 7, 5).
+distinctcell(8, 6, 7, 4).
+distinctcell(8, 6, 7, 3).
+distinctcell(8, 6, 7, 2).
+distinctcell(8, 6, 7, 1).
+distinctcell(8, 6, 6, 8).
+distinctcell(8, 6, 6, 7).
+distinctcell(8, 6, 6, 6).
+distinctcell(8, 6, 6, 5).
+distinctcell(8, 6, 6, 4).
+distinctcell(8, 6, 6, 3).
+distinctcell(8, 6, 6, 2).
+distinctcell(8, 6, 6, 1).
+distinctcell(8, 6, 5, 8).
+distinctcell(8, 6, 5, 7).
+distinctcell(8, 6, 5, 6).
+distinctcell(8, 6, 5, 5).
+distinctcell(8, 6, 5, 4).
+distinctcell(8, 6, 5, 3).
+distinctcell(8, 6, 5, 2).
+distinctcell(8, 6, 5, 1).
+distinctcell(8, 6, 4, 8).
+distinctcell(8, 6, 4, 7).
+distinctcell(8, 6, 4, 6).
+distinctcell(8, 6, 4, 5).
+distinctcell(8, 6, 4, 4).
+distinctcell(8, 6, 4, 3).
+distinctcell(8, 6, 4, 2).
+distinctcell(8, 6, 4, 1).
+distinctcell(8, 6, 3, 8).
+distinctcell(8, 6, 3, 7).
+distinctcell(8, 6, 3, 6).
+distinctcell(8, 6, 3, 5).
+distinctcell(8, 6, 3, 4).
+distinctcell(8, 6, 3, 3).
+distinctcell(8, 6, 3, 2).
+distinctcell(8, 6, 3, 1).
+distinctcell(8, 6, 2, 8).
+distinctcell(8, 6, 2, 7).
+distinctcell(8, 6, 2, 6).
+distinctcell(8, 6, 2, 5).
+distinctcell(8, 6, 2, 4).
+distinctcell(8, 6, 2, 3).
+distinctcell(8, 6, 2, 2).
+distinctcell(8, 6, 2, 1).
+distinctcell(8, 6, 1, 8).
+distinctcell(8, 6, 1, 7).
+distinctcell(8, 6, 1, 6).
+distinctcell(8, 6, 1, 5).
+distinctcell(8, 6, 1, 4).
+distinctcell(8, 6, 1, 3).
+distinctcell(8, 6, 1, 2).
+distinctcell(8, 6, 1, 1).
+distinctcell(8, 5, 8, 8).
+distinctcell(8, 5, 8, 7).
+distinctcell(8, 5, 8, 6).
+distinctcell(8, 5, 8, 4).
+distinctcell(8, 5, 8, 3).
+distinctcell(8, 5, 8, 2).
+distinctcell(8, 5, 8, 1).
+distinctcell(8, 5, 7, 8).
+distinctcell(8, 5, 7, 7).
+distinctcell(8, 5, 7, 6).
+distinctcell(8, 5, 7, 5).
+distinctcell(8, 5, 7, 4).
+distinctcell(8, 5, 7, 3).
+distinctcell(8, 5, 7, 2).
+distinctcell(8, 5, 7, 1).
+distinctcell(8, 5, 6, 8).
+distinctcell(8, 5, 6, 7).
+distinctcell(8, 5, 6, 6).
+distinctcell(8, 5, 6, 5).
+distinctcell(8, 5, 6, 4).
+distinctcell(8, 5, 6, 3).
+distinctcell(8, 5, 6, 2).
+distinctcell(8, 5, 6, 1).
+distinctcell(8, 5, 5, 8).
+distinctcell(8, 5, 5, 7).
+distinctcell(8, 5, 5, 6).
+distinctcell(8, 5, 5, 5).
+distinctcell(8, 5, 5, 4).
+distinctcell(8, 5, 5, 3).
+distinctcell(8, 5, 5, 2).
+distinctcell(8, 5, 5, 1).
+distinctcell(8, 5, 4, 8).
+distinctcell(8, 5, 4, 7).
+distinctcell(8, 5, 4, 6).
+distinctcell(8, 5, 4, 5).
+distinctcell(8, 5, 4, 4).
+distinctcell(8, 5, 4, 3).
+distinctcell(8, 5, 4, 2).
+distinctcell(8, 5, 4, 1).
+distinctcell(8, 5, 3, 8).
+distinctcell(8, 5, 3, 7).
+distinctcell(8, 5, 3, 6).
+distinctcell(8, 5, 3, 5).
+distinctcell(8, 5, 3, 4).
+distinctcell(8, 5, 3, 3).
+distinctcell(8, 5, 3, 2).
+distinctcell(8, 5, 3, 1).
+distinctcell(8, 5, 2, 8).
+distinctcell(8, 5, 2, 7).
+distinctcell(8, 5, 2, 6).
+distinctcell(8, 5, 2, 5).
+distinctcell(8, 5, 2, 4).
+distinctcell(8, 5, 2, 3).
+distinctcell(8, 5, 2, 2).
+distinctcell(8, 5, 2, 1).
+distinctcell(8, 5, 1, 8).
+distinctcell(8, 5, 1, 7).
+distinctcell(8, 5, 1, 6).
+distinctcell(8, 5, 1, 5).
+distinctcell(8, 5, 1, 4).
+distinctcell(8, 5, 1, 3).
+distinctcell(8, 5, 1, 2).
+distinctcell(8, 5, 1, 1).
+distinctcell(8, 4, 8, 8).
+distinctcell(8, 4, 8, 7).
+distinctcell(8, 4, 8, 6).
+distinctcell(8, 4, 8, 5).
+distinctcell(8, 4, 8, 3).
+distinctcell(8, 4, 8, 2).
+distinctcell(8, 4, 8, 1).
+distinctcell(8, 4, 7, 8).
+distinctcell(8, 4, 7, 7).
+distinctcell(8, 4, 7, 6).
+distinctcell(8, 4, 7, 5).
+distinctcell(8, 4, 7, 4).
+distinctcell(8, 4, 7, 3).
+distinctcell(8, 4, 7, 2).
+distinctcell(8, 4, 7, 1).
+distinctcell(8, 4, 6, 8).
+distinctcell(8, 4, 6, 7).
+distinctcell(8, 4, 6, 6).
+distinctcell(8, 4, 6, 5).
+distinctcell(8, 4, 6, 4).
+distinctcell(8, 4, 6, 3).
+distinctcell(8, 4, 6, 2).
+distinctcell(8, 4, 6, 1).
+distinctcell(8, 4, 5, 8).
+distinctcell(8, 4, 5, 7).
+distinctcell(8, 4, 5, 6).
+distinctcell(8, 4, 5, 5).
+distinctcell(8, 4, 5, 4).
+distinctcell(8, 4, 5, 3).
+distinctcell(8, 4, 5, 2).
+distinctcell(8, 4, 5, 1).
+distinctcell(8, 4, 4, 8).
+distinctcell(8, 4, 4, 7).
+distinctcell(8, 4, 4, 6).
+distinctcell(8, 4, 4, 5).
+distinctcell(8, 4, 4, 4).
+distinctcell(8, 4, 4, 3).
+distinctcell(8, 4, 4, 2).
+distinctcell(8, 4, 4, 1).
+distinctcell(8, 4, 3, 8).
+distinctcell(8, 4, 3, 7).
+distinctcell(8, 4, 3, 6).
+distinctcell(8, 4, 3, 5).
+distinctcell(8, 4, 3, 4).
+distinctcell(8, 4, 3, 3).
+distinctcell(8, 4, 3, 2).
+distinctcell(8, 4, 3, 1).
+distinctcell(8, 4, 2, 8).
+distinctcell(8, 4, 2, 7).
+distinctcell(8, 4, 2, 6).
+distinctcell(8, 4, 2, 5).
+distinctcell(8, 4, 2, 4).
+distinctcell(8, 4, 2, 3).
+distinctcell(8, 4, 2, 2).
+distinctcell(8, 4, 2, 1).
+distinctcell(8, 4, 1, 8).
+distinctcell(8, 4, 1, 7).
+distinctcell(8, 4, 1, 6).
+distinctcell(8, 4, 1, 5).
+distinctcell(8, 4, 1, 4).
+distinctcell(8, 4, 1, 3).
+distinctcell(8, 4, 1, 2).
+distinctcell(8, 4, 1, 1).
+distinctcell(8, 3, 8, 8).
+distinctcell(8, 3, 8, 7).
+distinctcell(8, 3, 8, 6).
+distinctcell(8, 3, 8, 5).
+distinctcell(8, 3, 8, 4).
+distinctcell(8, 3, 8, 2).
+distinctcell(8, 3, 8, 1).
+distinctcell(8, 3, 7, 8).
+distinctcell(8, 3, 7, 7).
+distinctcell(8, 3, 7, 6).
+distinctcell(8, 3, 7, 5).
+distinctcell(8, 3, 7, 4).
+distinctcell(8, 3, 7, 3).
+distinctcell(8, 3, 7, 2).
+distinctcell(8, 3, 7, 1).
+distinctcell(8, 3, 6, 8).
+distinctcell(8, 3, 6, 7).
+distinctcell(8, 3, 6, 6).
+distinctcell(8, 3, 6, 5).
+distinctcell(8, 3, 6, 4).
+distinctcell(8, 3, 6, 3).
+distinctcell(8, 3, 6, 2).
+distinctcell(8, 3, 6, 1).
+distinctcell(8, 3, 5, 8).
+distinctcell(8, 3, 5, 7).
+distinctcell(8, 3, 5, 6).
+distinctcell(8, 3, 5, 5).
+distinctcell(8, 3, 5, 4).
+distinctcell(8, 3, 5, 3).
+distinctcell(8, 3, 5, 2).
+distinctcell(8, 3, 5, 1).
+distinctcell(8, 3, 4, 8).
+distinctcell(8, 3, 4, 7).
+distinctcell(8, 3, 4, 6).
+distinctcell(8, 3, 4, 5).
+distinctcell(8, 3, 4, 4).
+distinctcell(8, 3, 4, 3).
+distinctcell(8, 3, 4, 2).
+distinctcell(8, 3, 4, 1).
+distinctcell(8, 3, 3, 8).
+distinctcell(8, 3, 3, 7).
+distinctcell(8, 3, 3, 6).
+distinctcell(8, 3, 3, 5).
+distinctcell(8, 3, 3, 4).
+distinctcell(8, 3, 3, 3).
+distinctcell(8, 3, 3, 2).
+distinctcell(8, 3, 3, 1).
+distinctcell(8, 3, 2, 8).
+distinctcell(8, 3, 2, 7).
+distinctcell(8, 3, 2, 6).
+distinctcell(8, 3, 2, 5).
+distinctcell(8, 3, 2, 4).
+distinctcell(8, 3, 2, 3).
+distinctcell(8, 3, 2, 2).
+distinctcell(8, 3, 2, 1).
+distinctcell(8, 3, 1, 8).
+distinctcell(8, 3, 1, 7).
+distinctcell(8, 3, 1, 6).
+distinctcell(8, 3, 1, 5).
+distinctcell(8, 3, 1, 4).
+distinctcell(8, 3, 1, 3).
+distinctcell(8, 3, 1, 2).
+distinctcell(8, 3, 1, 1).
+distinctcell(8, 2, 8, 8).
+distinctcell(8, 2, 8, 7).
+distinctcell(8, 2, 8, 6).
+distinctcell(8, 2, 8, 5).
+distinctcell(8, 2, 8, 4).
+distinctcell(8, 2, 8, 3).
+distinctcell(8, 2, 8, 1).
+distinctcell(8, 2, 7, 8).
+distinctcell(8, 2, 7, 7).
+distinctcell(8, 2, 7, 6).
+distinctcell(8, 2, 7, 5).
+distinctcell(8, 2, 7, 4).
+distinctcell(8, 2, 7, 3).
+distinctcell(8, 2, 7, 2).
+distinctcell(8, 2, 7, 1).
+distinctcell(8, 2, 6, 8).
+distinctcell(8, 2, 6, 7).
+distinctcell(8, 2, 6, 6).
+distinctcell(8, 2, 6, 5).
+distinctcell(8, 2, 6, 4).
+distinctcell(8, 2, 6, 3).
+distinctcell(8, 2, 6, 2).
+distinctcell(8, 2, 6, 1).
+distinctcell(8, 2, 5, 8).
+distinctcell(8, 2, 5, 7).
+distinctcell(8, 2, 5, 6).
+distinctcell(8, 2, 5, 5).
+distinctcell(8, 2, 5, 4).
+distinctcell(8, 2, 5, 3).
+distinctcell(8, 2, 5, 2).
+distinctcell(8, 2, 5, 1).
+distinctcell(8, 2, 4, 8).
+distinctcell(8, 2, 4, 7).
+distinctcell(8, 2, 4, 6).
+distinctcell(8, 2, 4, 5).
+distinctcell(8, 2, 4, 4).
+distinctcell(8, 2, 4, 3).
+distinctcell(8, 2, 4, 2).
+distinctcell(8, 2, 4, 1).
+distinctcell(8, 2, 3, 8).
+distinctcell(8, 2, 3, 7).
+distinctcell(8, 2, 3, 6).
+distinctcell(8, 2, 3, 5).
+distinctcell(8, 2, 3, 4).
+distinctcell(8, 2, 3, 3).
+distinctcell(8, 2, 3, 2).
+distinctcell(8, 2, 3, 1).
+distinctcell(8, 2, 2, 8).
+distinctcell(8, 2, 2, 7).
+distinctcell(8, 2, 2, 6).
+distinctcell(8, 2, 2, 5).
+distinctcell(8, 2, 2, 4).
+distinctcell(8, 2, 2, 3).
+distinctcell(8, 2, 2, 2).
+distinctcell(8, 2, 2, 1).
+distinctcell(8, 2, 1, 8).
+distinctcell(8, 2, 1, 7).
+distinctcell(8, 2, 1, 6).
+distinctcell(8, 2, 1, 5).
+distinctcell(8, 2, 1, 4).
+distinctcell(8, 2, 1, 3).
+distinctcell(8, 2, 1, 2).
+distinctcell(8, 2, 1, 1).
+distinctcell(8, 1, 8, 8).
+distinctcell(8, 1, 8, 7).
+distinctcell(8, 1, 8, 6).
+distinctcell(8, 1, 8, 5).
+distinctcell(8, 1, 8, 4).
+distinctcell(8, 1, 8, 3).
+distinctcell(8, 1, 8, 2).
+distinctcell(8, 1, 7, 8).
+distinctcell(8, 1, 7, 7).
+distinctcell(8, 1, 7, 6).
+distinctcell(8, 1, 7, 5).
+distinctcell(8, 1, 7, 4).
+distinctcell(8, 1, 7, 3).
+distinctcell(8, 1, 7, 2).
+distinctcell(8, 1, 7, 1).
+distinctcell(8, 1, 6, 8).
+distinctcell(8, 1, 6, 7).
+distinctcell(8, 1, 6, 6).
+distinctcell(8, 1, 6, 5).
+distinctcell(8, 1, 6, 4).
+distinctcell(8, 1, 6, 3).
+distinctcell(8, 1, 6, 2).
+distinctcell(8, 1, 6, 1).
+distinctcell(8, 1, 5, 8).
+distinctcell(8, 1, 5, 7).
+distinctcell(8, 1, 5, 6).
+distinctcell(8, 1, 5, 5).
+distinctcell(8, 1, 5, 4).
+distinctcell(8, 1, 5, 3).
+distinctcell(8, 1, 5, 2).
+distinctcell(8, 1, 5, 1).
+distinctcell(8, 1, 4, 8).
+distinctcell(8, 1, 4, 7).
+distinctcell(8, 1, 4, 6).
+distinctcell(8, 1, 4, 5).
+distinctcell(8, 1, 4, 4).
+distinctcell(8, 1, 4, 3).
+distinctcell(8, 1, 4, 2).
+distinctcell(8, 1, 4, 1).
+distinctcell(8, 1, 3, 8).
+distinctcell(8, 1, 3, 7).
+distinctcell(8, 1, 3, 6).
+distinctcell(8, 1, 3, 5).
+distinctcell(8, 1, 3, 4).
+distinctcell(8, 1, 3, 3).
+distinctcell(8, 1, 3, 2).
+distinctcell(8, 1, 3, 1).
+distinctcell(8, 1, 2, 8).
+distinctcell(8, 1, 2, 7).
+distinctcell(8, 1, 2, 6).
+distinctcell(8, 1, 2, 5).
+distinctcell(8, 1, 2, 4).
+distinctcell(8, 1, 2, 3).
+distinctcell(8, 1, 2, 2).
+distinctcell(8, 1, 2, 1).
+distinctcell(8, 1, 1, 8).
+distinctcell(8, 1, 1, 7).
+distinctcell(8, 1, 1, 6).
+distinctcell(8, 1, 1, 5).
+distinctcell(8, 1, 1, 4).
+distinctcell(8, 1, 1, 3).
+distinctcell(8, 1, 1, 2).
+distinctcell(8, 1, 1, 1).
+distinctcell(7, 8, 8, 8).
+distinctcell(7, 8, 8, 7).
+distinctcell(7, 8, 8, 6).
+distinctcell(7, 8, 8, 5).
+distinctcell(7, 8, 8, 4).
+distinctcell(7, 8, 8, 3).
+distinctcell(7, 8, 8, 2).
+distinctcell(7, 8, 8, 1).
+distinctcell(7, 8, 7, 7).
+distinctcell(7, 8, 7, 6).
+distinctcell(7, 8, 7, 5).
+distinctcell(7, 8, 7, 4).
+distinctcell(7, 8, 7, 3).
+distinctcell(7, 8, 7, 2).
+distinctcell(7, 8, 7, 1).
+distinctcell(7, 8, 6, 8).
+distinctcell(7, 8, 6, 7).
+distinctcell(7, 8, 6, 6).
+distinctcell(7, 8, 6, 5).
+distinctcell(7, 8, 6, 4).
+distinctcell(7, 8, 6, 3).
+distinctcell(7, 8, 6, 2).
+distinctcell(7, 8, 6, 1).
+distinctcell(7, 8, 5, 8).
+distinctcell(7, 8, 5, 7).
+distinctcell(7, 8, 5, 6).
+distinctcell(7, 8, 5, 5).
+distinctcell(7, 8, 5, 4).
+distinctcell(7, 8, 5, 3).
+distinctcell(7, 8, 5, 2).
+distinctcell(7, 8, 5, 1).
+distinctcell(7, 8, 4, 8).
+distinctcell(7, 8, 4, 7).
+distinctcell(7, 8, 4, 6).
+distinctcell(7, 8, 4, 5).
+distinctcell(7, 8, 4, 4).
+distinctcell(7, 8, 4, 3).
+distinctcell(7, 8, 4, 2).
+distinctcell(7, 8, 4, 1).
+distinctcell(7, 8, 3, 8).
+distinctcell(7, 8, 3, 7).
+distinctcell(7, 8, 3, 6).
+distinctcell(7, 8, 3, 5).
+distinctcell(7, 8, 3, 4).
+distinctcell(7, 8, 3, 3).
+distinctcell(7, 8, 3, 2).
+distinctcell(7, 8, 3, 1).
+distinctcell(7, 8, 2, 8).
+distinctcell(7, 8, 2, 7).
+distinctcell(7, 8, 2, 6).
+distinctcell(7, 8, 2, 5).
+distinctcell(7, 8, 2, 4).
+distinctcell(7, 8, 2, 3).
+distinctcell(7, 8, 2, 2).
+distinctcell(7, 8, 2, 1).
+distinctcell(7, 8, 1, 8).
+distinctcell(7, 8, 1, 7).
+distinctcell(7, 8, 1, 6).
+distinctcell(7, 8, 1, 5).
+distinctcell(7, 8, 1, 4).
+distinctcell(7, 8, 1, 3).
+distinctcell(7, 8, 1, 2).
+distinctcell(7, 8, 1, 1).
+distinctcell(7, 7, 8, 8).
+distinctcell(7, 7, 8, 7).
+distinctcell(7, 7, 8, 6).
+distinctcell(7, 7, 8, 5).
+distinctcell(7, 7, 8, 4).
+distinctcell(7, 7, 8, 3).
+distinctcell(7, 7, 8, 2).
+distinctcell(7, 7, 8, 1).
+distinctcell(7, 7, 7, 8).
+distinctcell(7, 7, 7, 6).
+distinctcell(7, 7, 7, 5).
+distinctcell(7, 7, 7, 4).
+distinctcell(7, 7, 7, 3).
+distinctcell(7, 7, 7, 2).
+distinctcell(7, 7, 7, 1).
+distinctcell(7, 7, 6, 8).
+distinctcell(7, 7, 6, 7).
+distinctcell(7, 7, 6, 6).
+distinctcell(7, 7, 6, 5).
+distinctcell(7, 7, 6, 4).
+distinctcell(7, 7, 6, 3).
+distinctcell(7, 7, 6, 2).
+distinctcell(7, 7, 6, 1).
+distinctcell(7, 7, 5, 8).
+distinctcell(7, 7, 5, 7).
+distinctcell(7, 7, 5, 6).
+distinctcell(7, 7, 5, 5).
+distinctcell(7, 7, 5, 4).
+distinctcell(7, 7, 5, 3).
+distinctcell(7, 7, 5, 2).
+distinctcell(7, 7, 5, 1).
+distinctcell(7, 7, 4, 8).
+distinctcell(7, 7, 4, 7).
+distinctcell(7, 7, 4, 6).
+distinctcell(7, 7, 4, 5).
+distinctcell(7, 7, 4, 4).
+distinctcell(7, 7, 4, 3).
+distinctcell(7, 7, 4, 2).
+distinctcell(7, 7, 4, 1).
+distinctcell(7, 7, 3, 8).
+distinctcell(7, 7, 3, 7).
+distinctcell(7, 7, 3, 6).
+distinctcell(7, 7, 3, 5).
+distinctcell(7, 7, 3, 4).
+distinctcell(7, 7, 3, 3).
+distinctcell(7, 7, 3, 2).
+distinctcell(7, 7, 3, 1).
+distinctcell(7, 7, 2, 8).
+distinctcell(7, 7, 2, 7).
+distinctcell(7, 7, 2, 6).
+distinctcell(7, 7, 2, 5).
+distinctcell(7, 7, 2, 4).
+distinctcell(7, 7, 2, 3).
+distinctcell(7, 7, 2, 2).
+distinctcell(7, 7, 2, 1).
+distinctcell(7, 7, 1, 8).
+distinctcell(7, 7, 1, 7).
+distinctcell(7, 7, 1, 6).
+distinctcell(7, 7, 1, 5).
+distinctcell(7, 7, 1, 4).
+distinctcell(7, 7, 1, 3).
+distinctcell(7, 7, 1, 2).
+distinctcell(7, 7, 1, 1).
+distinctcell(7, 6, 8, 8).
+distinctcell(7, 6, 8, 7).
+distinctcell(7, 6, 8, 6).
+distinctcell(7, 6, 8, 5).
+distinctcell(7, 6, 8, 4).
+distinctcell(7, 6, 8, 3).
+distinctcell(7, 6, 8, 2).
+distinctcell(7, 6, 8, 1).
+distinctcell(7, 6, 7, 8).
+distinctcell(7, 6, 7, 7).
+distinctcell(7, 6, 7, 5).
+distinctcell(7, 6, 7, 4).
+distinctcell(7, 6, 7, 3).
+distinctcell(7, 6, 7, 2).
+distinctcell(7, 6, 7, 1).
+distinctcell(7, 6, 6, 8).
+distinctcell(7, 6, 6, 7).
+distinctcell(7, 6, 6, 6).
+distinctcell(7, 6, 6, 5).
+distinctcell(7, 6, 6, 4).
+distinctcell(7, 6, 6, 3).
+distinctcell(7, 6, 6, 2).
+distinctcell(7, 6, 6, 1).
+distinctcell(7, 6, 5, 8).
+distinctcell(7, 6, 5, 7).
+distinctcell(7, 6, 5, 6).
+distinctcell(7, 6, 5, 5).
+distinctcell(7, 6, 5, 4).
+distinctcell(7, 6, 5, 3).
+distinctcell(7, 6, 5, 2).
+distinctcell(7, 6, 5, 1).
+distinctcell(7, 6, 4, 8).
+distinctcell(7, 6, 4, 7).
+distinctcell(7, 6, 4, 6).
+distinctcell(7, 6, 4, 5).
+distinctcell(7, 6, 4, 4).
+distinctcell(7, 6, 4, 3).
+distinctcell(7, 6, 4, 2).
+distinctcell(7, 6, 4, 1).
+distinctcell(7, 6, 3, 8).
+distinctcell(7, 6, 3, 7).
+distinctcell(7, 6, 3, 6).
+distinctcell(7, 6, 3, 5).
+distinctcell(7, 6, 3, 4).
+distinctcell(7, 6, 3, 3).
+distinctcell(7, 6, 3, 2).
+distinctcell(7, 6, 3, 1).
+distinctcell(7, 6, 2, 8).
+distinctcell(7, 6, 2, 7).
+distinctcell(7, 6, 2, 6).
+distinctcell(7, 6, 2, 5).
+distinctcell(7, 6, 2, 4).
+distinctcell(7, 6, 2, 3).
+distinctcell(7, 6, 2, 2).
+distinctcell(7, 6, 2, 1).
+distinctcell(7, 6, 1, 8).
+distinctcell(7, 6, 1, 7).
+distinctcell(7, 6, 1, 6).
+distinctcell(7, 6, 1, 5).
+distinctcell(7, 6, 1, 4).
+distinctcell(7, 6, 1, 3).
+distinctcell(7, 6, 1, 2).
+distinctcell(7, 6, 1, 1).
+distinctcell(7, 5, 8, 8).
+distinctcell(7, 5, 8, 7).
+distinctcell(7, 5, 8, 6).
+distinctcell(7, 5, 8, 5).
+distinctcell(7, 5, 8, 4).
+distinctcell(7, 5, 8, 3).
+distinctcell(7, 5, 8, 2).
+distinctcell(7, 5, 8, 1).
+distinctcell(7, 5, 7, 8).
+distinctcell(7, 5, 7, 7).
+distinctcell(7, 5, 7, 6).
+distinctcell(7, 5, 7, 4).
+distinctcell(7, 5, 7, 3).
+distinctcell(7, 5, 7, 2).
+distinctcell(7, 5, 7, 1).
+distinctcell(7, 5, 6, 8).
+distinctcell(7, 5, 6, 7).
+distinctcell(7, 5, 6, 6).
+distinctcell(7, 5, 6, 5).
+distinctcell(7, 5, 6, 4).
+distinctcell(7, 5, 6, 3).
+distinctcell(7, 5, 6, 2).
+distinctcell(7, 5, 6, 1).
+distinctcell(7, 5, 5, 8).
+distinctcell(7, 5, 5, 7).
+distinctcell(7, 5, 5, 6).
+distinctcell(7, 5, 5, 5).
+distinctcell(7, 5, 5, 4).
+distinctcell(7, 5, 5, 3).
+distinctcell(7, 5, 5, 2).
+distinctcell(7, 5, 5, 1).
+distinctcell(7, 5, 4, 8).
+distinctcell(7, 5, 4, 7).
+distinctcell(7, 5, 4, 6).
+distinctcell(7, 5, 4, 5).
+distinctcell(7, 5, 4, 4).
+distinctcell(7, 5, 4, 3).
+distinctcell(7, 5, 4, 2).
+distinctcell(7, 5, 4, 1).
+distinctcell(7, 5, 3, 8).
+distinctcell(7, 5, 3, 7).
+distinctcell(7, 5, 3, 6).
+distinctcell(7, 5, 3, 5).
+distinctcell(7, 5, 3, 4).
+distinctcell(7, 5, 3, 3).
+distinctcell(7, 5, 3, 2).
+distinctcell(7, 5, 3, 1).
+distinctcell(7, 5, 2, 8).
+distinctcell(7, 5, 2, 7).
+distinctcell(7, 5, 2, 6).
+distinctcell(7, 5, 2, 5).
+distinctcell(7, 5, 2, 4).
+distinctcell(7, 5, 2, 3).
+distinctcell(7, 5, 2, 2).
+distinctcell(7, 5, 2, 1).
+distinctcell(7, 5, 1, 8).
+distinctcell(7, 5, 1, 7).
+distinctcell(7, 5, 1, 6).
+distinctcell(7, 5, 1, 5).
+distinctcell(7, 5, 1, 4).
+distinctcell(7, 5, 1, 3).
+distinctcell(7, 5, 1, 2).
+distinctcell(7, 5, 1, 1).
+distinctcell(7, 4, 8, 8).
+distinctcell(7, 4, 8, 7).
+distinctcell(7, 4, 8, 6).
+distinctcell(7, 4, 8, 5).
+distinctcell(7, 4, 8, 4).
+distinctcell(7, 4, 8, 3).
+distinctcell(7, 4, 8, 2).
+distinctcell(7, 4, 8, 1).
+distinctcell(7, 4, 7, 8).
+distinctcell(7, 4, 7, 7).
+distinctcell(7, 4, 7, 6).
+distinctcell(7, 4, 7, 5).
+distinctcell(7, 4, 7, 3).
+distinctcell(7, 4, 7, 2).
+distinctcell(7, 4, 7, 1).
+distinctcell(7, 4, 6, 8).
+distinctcell(7, 4, 6, 7).
+distinctcell(7, 4, 6, 6).
+distinctcell(7, 4, 6, 5).
+distinctcell(7, 4, 6, 4).
+distinctcell(7, 4, 6, 3).
+distinctcell(7, 4, 6, 2).
+distinctcell(7, 4, 6, 1).
+distinctcell(7, 4, 5, 8).
+distinctcell(7, 4, 5, 7).
+distinctcell(7, 4, 5, 6).
+distinctcell(7, 4, 5, 5).
+distinctcell(7, 4, 5, 4).
+distinctcell(7, 4, 5, 3).
+distinctcell(7, 4, 5, 2).
+distinctcell(7, 4, 5, 1).
+distinctcell(7, 4, 4, 8).
+distinctcell(7, 4, 4, 7).
+distinctcell(7, 4, 4, 6).
+distinctcell(7, 4, 4, 5).
+distinctcell(7, 4, 4, 4).
+distinctcell(7, 4, 4, 3).
+distinctcell(7, 4, 4, 2).
+distinctcell(7, 4, 4, 1).
+distinctcell(7, 4, 3, 8).
+distinctcell(7, 4, 3, 7).
+distinctcell(7, 4, 3, 6).
+distinctcell(7, 4, 3, 5).
+distinctcell(7, 4, 3, 4).
+distinctcell(7, 4, 3, 3).
+distinctcell(7, 4, 3, 2).
+distinctcell(7, 4, 3, 1).
+distinctcell(7, 4, 2, 8).
+distinctcell(7, 4, 2, 7).
+distinctcell(7, 4, 2, 6).
+distinctcell(7, 4, 2, 5).
+distinctcell(7, 4, 2, 4).
+distinctcell(7, 4, 2, 3).
+distinctcell(7, 4, 2, 2).
+distinctcell(7, 4, 2, 1).
+distinctcell(7, 4, 1, 8).
+distinctcell(7, 4, 1, 7).
+distinctcell(7, 4, 1, 6).
+distinctcell(7, 4, 1, 5).
+distinctcell(7, 4, 1, 4).
+distinctcell(7, 4, 1, 3).
+distinctcell(7, 4, 1, 2).
+distinctcell(7, 4, 1, 1).
+distinctcell(7, 3, 8, 8).
+distinctcell(7, 3, 8, 7).
+distinctcell(7, 3, 8, 6).
+distinctcell(7, 3, 8, 5).
+distinctcell(7, 3, 8, 4).
+distinctcell(7, 3, 8, 3).
+distinctcell(7, 3, 8, 2).
+distinctcell(7, 3, 8, 1).
+distinctcell(7, 3, 7, 8).
+distinctcell(7, 3, 7, 7).
+distinctcell(7, 3, 7, 6).
+distinctcell(7, 3, 7, 5).
+distinctcell(7, 3, 7, 4).
+distinctcell(7, 3, 7, 2).
+distinctcell(7, 3, 7, 1).
+distinctcell(7, 3, 6, 8).
+distinctcell(7, 3, 6, 7).
+distinctcell(7, 3, 6, 6).
+distinctcell(7, 3, 6, 5).
+distinctcell(7, 3, 6, 4).
+distinctcell(7, 3, 6, 3).
+distinctcell(7, 3, 6, 2).
+distinctcell(7, 3, 6, 1).
+distinctcell(7, 3, 5, 8).
+distinctcell(7, 3, 5, 7).
+distinctcell(7, 3, 5, 6).
+distinctcell(7, 3, 5, 5).
+distinctcell(7, 3, 5, 4).
+distinctcell(7, 3, 5, 3).
+distinctcell(7, 3, 5, 2).
+distinctcell(7, 3, 5, 1).
+distinctcell(7, 3, 4, 8).
+distinctcell(7, 3, 4, 7).
+distinctcell(7, 3, 4, 6).
+distinctcell(7, 3, 4, 5).
+distinctcell(7, 3, 4, 4).
+distinctcell(7, 3, 4, 3).
+distinctcell(7, 3, 4, 2).
+distinctcell(7, 3, 4, 1).
+distinctcell(7, 3, 3, 8).
+distinctcell(7, 3, 3, 7).
+distinctcell(7, 3, 3, 6).
+distinctcell(7, 3, 3, 5).
+distinctcell(7, 3, 3, 4).
+distinctcell(7, 3, 3, 3).
+distinctcell(7, 3, 3, 2).
+distinctcell(7, 3, 3, 1).
+distinctcell(7, 3, 2, 8).
+distinctcell(7, 3, 2, 7).
+distinctcell(7, 3, 2, 6).
+distinctcell(7, 3, 2, 5).
+distinctcell(7, 3, 2, 4).
+distinctcell(7, 3, 2, 3).
+distinctcell(7, 3, 2, 2).
+distinctcell(7, 3, 2, 1).
+distinctcell(7, 3, 1, 8).
+distinctcell(7, 3, 1, 7).
+distinctcell(7, 3, 1, 6).
+distinctcell(7, 3, 1, 5).
+distinctcell(7, 3, 1, 4).
+distinctcell(7, 3, 1, 3).
+distinctcell(7, 3, 1, 2).
+distinctcell(7, 3, 1, 1).
+distinctcell(7, 2, 8, 8).
+distinctcell(7, 2, 8, 7).
+distinctcell(7, 2, 8, 6).
+distinctcell(7, 2, 8, 5).
+distinctcell(7, 2, 8, 4).
+distinctcell(7, 2, 8, 3).
+distinctcell(7, 2, 8, 2).
+distinctcell(7, 2, 8, 1).
+distinctcell(7, 2, 7, 8).
+distinctcell(7, 2, 7, 7).
+distinctcell(7, 2, 7, 6).
+distinctcell(7, 2, 7, 5).
+distinctcell(7, 2, 7, 4).
+distinctcell(7, 2, 7, 3).
+distinctcell(7, 2, 7, 1).
+distinctcell(7, 2, 6, 8).
+distinctcell(7, 2, 6, 7).
+distinctcell(7, 2, 6, 6).
+distinctcell(7, 2, 6, 5).
+distinctcell(7, 2, 6, 4).
+distinctcell(7, 2, 6, 3).
+distinctcell(7, 2, 6, 2).
+distinctcell(7, 2, 6, 1).
+distinctcell(7, 2, 5, 8).
+distinctcell(7, 2, 5, 7).
+distinctcell(7, 2, 5, 6).
+distinctcell(7, 2, 5, 5).
+distinctcell(7, 2, 5, 4).
+distinctcell(7, 2, 5, 3).
+distinctcell(7, 2, 5, 2).
+distinctcell(7, 2, 5, 1).
+distinctcell(7, 2, 4, 8).
+distinctcell(7, 2, 4, 7).
+distinctcell(7, 2, 4, 6).
+distinctcell(7, 2, 4, 5).
+distinctcell(7, 2, 4, 4).
+distinctcell(7, 2, 4, 3).
+distinctcell(7, 2, 4, 2).
+distinctcell(7, 2, 4, 1).
+distinctcell(7, 2, 3, 8).
+distinctcell(7, 2, 3, 7).
+distinctcell(7, 2, 3, 6).
+distinctcell(7, 2, 3, 5).
+distinctcell(7, 2, 3, 4).
+distinctcell(7, 2, 3, 3).
+distinctcell(7, 2, 3, 2).
+distinctcell(7, 2, 3, 1).
+distinctcell(7, 2, 2, 8).
+distinctcell(7, 2, 2, 7).
+distinctcell(7, 2, 2, 6).
+distinctcell(7, 2, 2, 5).
+distinctcell(7, 2, 2, 4).
+distinctcell(7, 2, 2, 3).
+distinctcell(7, 2, 2, 2).
+distinctcell(7, 2, 2, 1).
+distinctcell(7, 2, 1, 8).
+distinctcell(7, 2, 1, 7).
+distinctcell(7, 2, 1, 6).
+distinctcell(7, 2, 1, 5).
+distinctcell(7, 2, 1, 4).
+distinctcell(7, 2, 1, 3).
+distinctcell(7, 2, 1, 2).
+distinctcell(7, 2, 1, 1).
+distinctcell(7, 1, 8, 8).
+distinctcell(7, 1, 8, 7).
+distinctcell(7, 1, 8, 6).
+distinctcell(7, 1, 8, 5).
+distinctcell(7, 1, 8, 4).
+distinctcell(7, 1, 8, 3).
+distinctcell(7, 1, 8, 2).
+distinctcell(7, 1, 8, 1).
+distinctcell(7, 1, 7, 8).
+distinctcell(7, 1, 7, 7).
+distinctcell(7, 1, 7, 6).
+distinctcell(7, 1, 7, 5).
+distinctcell(7, 1, 7, 4).
+distinctcell(7, 1, 7, 3).
+distinctcell(7, 1, 7, 2).
+distinctcell(7, 1, 6, 8).
+distinctcell(7, 1, 6, 7).
+distinctcell(7, 1, 6, 6).
+distinctcell(7, 1, 6, 5).
+distinctcell(7, 1, 6, 4).
+distinctcell(7, 1, 6, 3).
+distinctcell(7, 1, 6, 2).
+distinctcell(7, 1, 6, 1).
+distinctcell(7, 1, 5, 8).
+distinctcell(7, 1, 5, 7).
+distinctcell(7, 1, 5, 6).
+distinctcell(7, 1, 5, 5).
+distinctcell(7, 1, 5, 4).
+distinctcell(7, 1, 5, 3).
+distinctcell(7, 1, 5, 2).
+distinctcell(7, 1, 5, 1).
+distinctcell(7, 1, 4, 8).
+distinctcell(7, 1, 4, 7).
+distinctcell(7, 1, 4, 6).
+distinctcell(7, 1, 4, 5).
+distinctcell(7, 1, 4, 4).
+distinctcell(7, 1, 4, 3).
+distinctcell(7, 1, 4, 2).
+distinctcell(7, 1, 4, 1).
+distinctcell(7, 1, 3, 8).
+distinctcell(7, 1, 3, 7).
+distinctcell(7, 1, 3, 6).
+distinctcell(7, 1, 3, 5).
+distinctcell(7, 1, 3, 4).
+distinctcell(7, 1, 3, 3).
+distinctcell(7, 1, 3, 2).
+distinctcell(7, 1, 3, 1).
+distinctcell(7, 1, 2, 8).
+distinctcell(7, 1, 2, 7).
+distinctcell(7, 1, 2, 6).
+distinctcell(7, 1, 2, 5).
+distinctcell(7, 1, 2, 4).
+distinctcell(7, 1, 2, 3).
+distinctcell(7, 1, 2, 2).
+distinctcell(7, 1, 2, 1).
+distinctcell(7, 1, 1, 8).
+distinctcell(7, 1, 1, 7).
+distinctcell(7, 1, 1, 6).
+distinctcell(7, 1, 1, 5).
+distinctcell(7, 1, 1, 4).
+distinctcell(7, 1, 1, 3).
+distinctcell(7, 1, 1, 2).
+distinctcell(7, 1, 1, 1).
+distinctcell(6, 8, 8, 8).
+distinctcell(6, 8, 8, 7).
+distinctcell(6, 8, 8, 6).
+distinctcell(6, 8, 8, 5).
+distinctcell(6, 8, 8, 4).
+distinctcell(6, 8, 8, 3).
+distinctcell(6, 8, 8, 2).
+distinctcell(6, 8, 8, 1).
+distinctcell(6, 8, 7, 8).
+distinctcell(6, 8, 7, 7).
+distinctcell(6, 8, 7, 6).
+distinctcell(6, 8, 7, 5).
+distinctcell(6, 8, 7, 4).
+distinctcell(6, 8, 7, 3).
+distinctcell(6, 8, 7, 2).
+distinctcell(6, 8, 7, 1).
+distinctcell(6, 8, 6, 7).
+distinctcell(6, 8, 6, 6).
+distinctcell(6, 8, 6, 5).
+distinctcell(6, 8, 6, 4).
+distinctcell(6, 8, 6, 3).
+distinctcell(6, 8, 6, 2).
+distinctcell(6, 8, 6, 1).
+distinctcell(6, 8, 5, 8).
+distinctcell(6, 8, 5, 7).
+distinctcell(6, 8, 5, 6).
+distinctcell(6, 8, 5, 5).
+distinctcell(6, 8, 5, 4).
+distinctcell(6, 8, 5, 3).
+distinctcell(6, 8, 5, 2).
+distinctcell(6, 8, 5, 1).
+distinctcell(6, 8, 4, 8).
+distinctcell(6, 8, 4, 7).
+distinctcell(6, 8, 4, 6).
+distinctcell(6, 8, 4, 5).
+distinctcell(6, 8, 4, 4).
+distinctcell(6, 8, 4, 3).
+distinctcell(6, 8, 4, 2).
+distinctcell(6, 8, 4, 1).
+distinctcell(6, 8, 3, 8).
+distinctcell(6, 8, 3, 7).
+distinctcell(6, 8, 3, 6).
+distinctcell(6, 8, 3, 5).
+distinctcell(6, 8, 3, 4).
+distinctcell(6, 8, 3, 3).
+distinctcell(6, 8, 3, 2).
+distinctcell(6, 8, 3, 1).
+distinctcell(6, 8, 2, 8).
+distinctcell(6, 8, 2, 7).
+distinctcell(6, 8, 2, 6).
+distinctcell(6, 8, 2, 5).
+distinctcell(6, 8, 2, 4).
+distinctcell(6, 8, 2, 3).
+distinctcell(6, 8, 2, 2).
+distinctcell(6, 8, 2, 1).
+distinctcell(6, 8, 1, 8).
+distinctcell(6, 8, 1, 7).
+distinctcell(6, 8, 1, 6).
+distinctcell(6, 8, 1, 5).
+distinctcell(6, 8, 1, 4).
+distinctcell(6, 8, 1, 3).
+distinctcell(6, 8, 1, 2).
+distinctcell(6, 8, 1, 1).
+distinctcell(6, 7, 8, 8).
+distinctcell(6, 7, 8, 7).
+distinctcell(6, 7, 8, 6).
+distinctcell(6, 7, 8, 5).
+distinctcell(6, 7, 8, 4).
+distinctcell(6, 7, 8, 3).
+distinctcell(6, 7, 8, 2).
+distinctcell(6, 7, 8, 1).
+distinctcell(6, 7, 7, 8).
+distinctcell(6, 7, 7, 7).
+distinctcell(6, 7, 7, 6).
+distinctcell(6, 7, 7, 5).
+distinctcell(6, 7, 7, 4).
+distinctcell(6, 7, 7, 3).
+distinctcell(6, 7, 7, 2).
+distinctcell(6, 7, 7, 1).
+distinctcell(6, 7, 6, 8).
+distinctcell(6, 7, 6, 6).
+distinctcell(6, 7, 6, 5).
+distinctcell(6, 7, 6, 4).
+distinctcell(6, 7, 6, 3).
+distinctcell(6, 7, 6, 2).
+distinctcell(6, 7, 6, 1).
+distinctcell(6, 7, 5, 8).
+distinctcell(6, 7, 5, 7).
+distinctcell(6, 7, 5, 6).
+distinctcell(6, 7, 5, 5).
+distinctcell(6, 7, 5, 4).
+distinctcell(6, 7, 5, 3).
+distinctcell(6, 7, 5, 2).
+distinctcell(6, 7, 5, 1).
+distinctcell(6, 7, 4, 8).
+distinctcell(6, 7, 4, 7).
+distinctcell(6, 7, 4, 6).
+distinctcell(6, 7, 4, 5).
+distinctcell(6, 7, 4, 4).
+distinctcell(6, 7, 4, 3).
+distinctcell(6, 7, 4, 2).
+distinctcell(6, 7, 4, 1).
+distinctcell(6, 7, 3, 8).
+distinctcell(6, 7, 3, 7).
+distinctcell(6, 7, 3, 6).
+distinctcell(6, 7, 3, 5).
+distinctcell(6, 7, 3, 4).
+distinctcell(6, 7, 3, 3).
+distinctcell(6, 7, 3, 2).
+distinctcell(6, 7, 3, 1).
+distinctcell(6, 7, 2, 8).
+distinctcell(6, 7, 2, 7).
+distinctcell(6, 7, 2, 6).
+distinctcell(6, 7, 2, 5).
+distinctcell(6, 7, 2, 4).
+distinctcell(6, 7, 2, 3).
+distinctcell(6, 7, 2, 2).
+distinctcell(6, 7, 2, 1).
+distinctcell(6, 7, 1, 8).
+distinctcell(6, 7, 1, 7).
+distinctcell(6, 7, 1, 6).
+distinctcell(6, 7, 1, 5).
+distinctcell(6, 7, 1, 4).
+distinctcell(6, 7, 1, 3).
+distinctcell(6, 7, 1, 2).
+distinctcell(6, 7, 1, 1).
+distinctcell(6, 6, 8, 8).
+distinctcell(6, 6, 8, 7).
+distinctcell(6, 6, 8, 6).
+distinctcell(6, 6, 8, 5).
+distinctcell(6, 6, 8, 4).
+distinctcell(6, 6, 8, 3).
+distinctcell(6, 6, 8, 2).
+distinctcell(6, 6, 8, 1).
+distinctcell(6, 6, 7, 8).
+distinctcell(6, 6, 7, 7).
+distinctcell(6, 6, 7, 6).
+distinctcell(6, 6, 7, 5).
+distinctcell(6, 6, 7, 4).
+distinctcell(6, 6, 7, 3).
+distinctcell(6, 6, 7, 2).
+distinctcell(6, 6, 7, 1).
+distinctcell(6, 6, 6, 8).
+distinctcell(6, 6, 6, 7).
+distinctcell(6, 6, 6, 5).
+distinctcell(6, 6, 6, 4).
+distinctcell(6, 6, 6, 3).
+distinctcell(6, 6, 6, 2).
+distinctcell(6, 6, 6, 1).
+distinctcell(6, 6, 5, 8).
+distinctcell(6, 6, 5, 7).
+distinctcell(6, 6, 5, 6).
+distinctcell(6, 6, 5, 5).
+distinctcell(6, 6, 5, 4).
+distinctcell(6, 6, 5, 3).
+distinctcell(6, 6, 5, 2).
+distinctcell(6, 6, 5, 1).
+distinctcell(6, 6, 4, 8).
+distinctcell(6, 6, 4, 7).
+distinctcell(6, 6, 4, 6).
+distinctcell(6, 6, 4, 5).
+distinctcell(6, 6, 4, 4).
+distinctcell(6, 6, 4, 3).
+distinctcell(6, 6, 4, 2).
+distinctcell(6, 6, 4, 1).
+distinctcell(6, 6, 3, 8).
+distinctcell(6, 6, 3, 7).
+distinctcell(6, 6, 3, 6).
+distinctcell(6, 6, 3, 5).
+distinctcell(6, 6, 3, 4).
+distinctcell(6, 6, 3, 3).
+distinctcell(6, 6, 3, 2).
+distinctcell(6, 6, 3, 1).
+distinctcell(6, 6, 2, 8).
+distinctcell(6, 6, 2, 7).
+distinctcell(6, 6, 2, 6).
+distinctcell(6, 6, 2, 5).
+distinctcell(6, 6, 2, 4).
+distinctcell(6, 6, 2, 3).
+distinctcell(6, 6, 2, 2).
+distinctcell(6, 6, 2, 1).
+distinctcell(6, 6, 1, 8).
+distinctcell(6, 6, 1, 7).
+distinctcell(6, 6, 1, 6).
+distinctcell(6, 6, 1, 5).
+distinctcell(6, 6, 1, 4).
+distinctcell(6, 6, 1, 3).
+distinctcell(6, 6, 1, 2).
+distinctcell(6, 6, 1, 1).
+distinctcell(6, 5, 8, 8).
+distinctcell(6, 5, 8, 7).
+distinctcell(6, 5, 8, 6).
+distinctcell(6, 5, 8, 5).
+distinctcell(6, 5, 8, 4).
+distinctcell(6, 5, 8, 3).
+distinctcell(6, 5, 8, 2).
+distinctcell(6, 5, 8, 1).
+distinctcell(6, 5, 7, 8).
+distinctcell(6, 5, 7, 7).
+distinctcell(6, 5, 7, 6).
+distinctcell(6, 5, 7, 5).
+distinctcell(6, 5, 7, 4).
+distinctcell(6, 5, 7, 3).
+distinctcell(6, 5, 7, 2).
+distinctcell(6, 5, 7, 1).
+distinctcell(6, 5, 6, 8).
+distinctcell(6, 5, 6, 7).
+distinctcell(6, 5, 6, 6).
+distinctcell(6, 5, 6, 4).
+distinctcell(6, 5, 6, 3).
+distinctcell(6, 5, 6, 2).
+distinctcell(6, 5, 6, 1).
+distinctcell(6, 5, 5, 8).
+distinctcell(6, 5, 5, 7).
+distinctcell(6, 5, 5, 6).
+distinctcell(6, 5, 5, 5).
+distinctcell(6, 5, 5, 4).
+distinctcell(6, 5, 5, 3).
+distinctcell(6, 5, 5, 2).
+distinctcell(6, 5, 5, 1).
+distinctcell(6, 5, 4, 8).
+distinctcell(6, 5, 4, 7).
+distinctcell(6, 5, 4, 6).
+distinctcell(6, 5, 4, 5).
+distinctcell(6, 5, 4, 4).
+distinctcell(6, 5, 4, 3).
+distinctcell(6, 5, 4, 2).
+distinctcell(6, 5, 4, 1).
+distinctcell(6, 5, 3, 8).
+distinctcell(6, 5, 3, 7).
+distinctcell(6, 5, 3, 6).
+distinctcell(6, 5, 3, 5).
+distinctcell(6, 5, 3, 4).
+distinctcell(6, 5, 3, 3).
+distinctcell(6, 5, 3, 2).
+distinctcell(6, 5, 3, 1).
+distinctcell(6, 5, 2, 8).
+distinctcell(6, 5, 2, 7).
+distinctcell(6, 5, 2, 6).
+distinctcell(6, 5, 2, 5).
+distinctcell(6, 5, 2, 4).
+distinctcell(6, 5, 2, 3).
+distinctcell(6, 5, 2, 2).
+distinctcell(6, 5, 2, 1).
+distinctcell(6, 5, 1, 8).
+distinctcell(6, 5, 1, 7).
+distinctcell(6, 5, 1, 6).
+distinctcell(6, 5, 1, 5).
+distinctcell(6, 5, 1, 4).
+distinctcell(6, 5, 1, 3).
+distinctcell(6, 5, 1, 2).
+distinctcell(6, 5, 1, 1).
+distinctcell(6, 4, 8, 8).
+distinctcell(6, 4, 8, 7).
+distinctcell(6, 4, 8, 6).
+distinctcell(6, 4, 8, 5).
+distinctcell(6, 4, 8, 4).
+distinctcell(6, 4, 8, 3).
+distinctcell(6, 4, 8, 2).
+distinctcell(6, 4, 8, 1).
+distinctcell(6, 4, 7, 8).
+distinctcell(6, 4, 7, 7).
+distinctcell(6, 4, 7, 6).
+distinctcell(6, 4, 7, 5).
+distinctcell(6, 4, 7, 4).
+distinctcell(6, 4, 7, 3).
+distinctcell(6, 4, 7, 2).
+distinctcell(6, 4, 7, 1).
+distinctcell(6, 4, 6, 8).
+distinctcell(6, 4, 6, 7).
+distinctcell(6, 4, 6, 6).
+distinctcell(6, 4, 6, 5).
+distinctcell(6, 4, 6, 3).
+distinctcell(6, 4, 6, 2).
+distinctcell(6, 4, 6, 1).
+distinctcell(6, 4, 5, 8).
+distinctcell(6, 4, 5, 7).
+distinctcell(6, 4, 5, 6).
+distinctcell(6, 4, 5, 5).
+distinctcell(6, 4, 5, 4).
+distinctcell(6, 4, 5, 3).
+distinctcell(6, 4, 5, 2).
+distinctcell(6, 4, 5, 1).
+distinctcell(6, 4, 4, 8).
+distinctcell(6, 4, 4, 7).
+distinctcell(6, 4, 4, 6).
+distinctcell(6, 4, 4, 5).
+distinctcell(6, 4, 4, 4).
+distinctcell(6, 4, 4, 3).
+distinctcell(6, 4, 4, 2).
+distinctcell(6, 4, 4, 1).
+distinctcell(6, 4, 3, 8).
+distinctcell(6, 4, 3, 7).
+distinctcell(6, 4, 3, 6).
+distinctcell(6, 4, 3, 5).
+distinctcell(6, 4, 3, 4).
+distinctcell(6, 4, 3, 3).
+distinctcell(6, 4, 3, 2).
+distinctcell(6, 4, 3, 1).
+distinctcell(6, 4, 2, 8).
+distinctcell(6, 4, 2, 7).
+distinctcell(6, 4, 2, 6).
+distinctcell(6, 4, 2, 5).
+distinctcell(6, 4, 2, 4).
+distinctcell(6, 4, 2, 3).
+distinctcell(6, 4, 2, 2).
+distinctcell(6, 4, 2, 1).
+distinctcell(6, 4, 1, 8).
+distinctcell(6, 4, 1, 7).
+distinctcell(6, 4, 1, 6).
+distinctcell(6, 4, 1, 5).
+distinctcell(6, 4, 1, 4).
+distinctcell(6, 4, 1, 3).
+distinctcell(6, 4, 1, 2).
+distinctcell(6, 4, 1, 1).
+distinctcell(6, 3, 8, 8).
+distinctcell(6, 3, 8, 7).
+distinctcell(6, 3, 8, 6).
+distinctcell(6, 3, 8, 5).
+distinctcell(6, 3, 8, 4).
+distinctcell(6, 3, 8, 3).
+distinctcell(6, 3, 8, 2).
+distinctcell(6, 3, 8, 1).
+distinctcell(6, 3, 7, 8).
+distinctcell(6, 3, 7, 7).
+distinctcell(6, 3, 7, 6).
+distinctcell(6, 3, 7, 5).
+distinctcell(6, 3, 7, 4).
+distinctcell(6, 3, 7, 3).
+distinctcell(6, 3, 7, 2).
+distinctcell(6, 3, 7, 1).
+distinctcell(6, 3, 6, 8).
+distinctcell(6, 3, 6, 7).
+distinctcell(6, 3, 6, 6).
+distinctcell(6, 3, 6, 5).
+distinctcell(6, 3, 6, 4).
+distinctcell(6, 3, 6, 2).
+distinctcell(6, 3, 6, 1).
+distinctcell(6, 3, 5, 8).
+distinctcell(6, 3, 5, 7).
+distinctcell(6, 3, 5, 6).
+distinctcell(6, 3, 5, 5).
+distinctcell(6, 3, 5, 4).
+distinctcell(6, 3, 5, 3).
+distinctcell(6, 3, 5, 2).
+distinctcell(6, 3, 5, 1).
+distinctcell(6, 3, 4, 8).
+distinctcell(6, 3, 4, 7).
+distinctcell(6, 3, 4, 6).
+distinctcell(6, 3, 4, 5).
+distinctcell(6, 3, 4, 4).
+distinctcell(6, 3, 4, 3).
+distinctcell(6, 3, 4, 2).
+distinctcell(6, 3, 4, 1).
+distinctcell(6, 3, 3, 8).
+distinctcell(6, 3, 3, 7).
+distinctcell(6, 3, 3, 6).
+distinctcell(6, 3, 3, 5).
+distinctcell(6, 3, 3, 4).
+distinctcell(6, 3, 3, 3).
+distinctcell(6, 3, 3, 2).
+distinctcell(6, 3, 3, 1).
+distinctcell(6, 3, 2, 8).
+distinctcell(6, 3, 2, 7).
+distinctcell(6, 3, 2, 6).
+distinctcell(6, 3, 2, 5).
+distinctcell(6, 3, 2, 4).
+distinctcell(6, 3, 2, 3).
+distinctcell(6, 3, 2, 2).
+distinctcell(6, 3, 2, 1).
+distinctcell(6, 3, 1, 8).
+distinctcell(6, 3, 1, 7).
+distinctcell(6, 3, 1, 6).
+distinctcell(6, 3, 1, 5).
+distinctcell(6, 3, 1, 4).
+distinctcell(6, 3, 1, 3).
+distinctcell(6, 3, 1, 2).
+distinctcell(6, 3, 1, 1).
+distinctcell(6, 2, 8, 8).
+distinctcell(6, 2, 8, 7).
+distinctcell(6, 2, 8, 6).
+distinctcell(6, 2, 8, 5).
+distinctcell(6, 2, 8, 4).
+distinctcell(6, 2, 8, 3).
+distinctcell(6, 2, 8, 2).
+distinctcell(6, 2, 8, 1).
+distinctcell(6, 2, 7, 8).
+distinctcell(6, 2, 7, 7).
+distinctcell(6, 2, 7, 6).
+distinctcell(6, 2, 7, 5).
+distinctcell(6, 2, 7, 4).
+distinctcell(6, 2, 7, 3).
+distinctcell(6, 2, 7, 2).
+distinctcell(6, 2, 7, 1).
+distinctcell(6, 2, 6, 8).
+distinctcell(6, 2, 6, 7).
+distinctcell(6, 2, 6, 6).
+distinctcell(6, 2, 6, 5).
+distinctcell(6, 2, 6, 4).
+distinctcell(6, 2, 6, 3).
+distinctcell(6, 2, 6, 1).
+distinctcell(6, 2, 5, 8).
+distinctcell(6, 2, 5, 7).
+distinctcell(6, 2, 5, 6).
+distinctcell(6, 2, 5, 5).
+distinctcell(6, 2, 5, 4).
+distinctcell(6, 2, 5, 3).
+distinctcell(6, 2, 5, 2).
+distinctcell(6, 2, 5, 1).
+distinctcell(6, 2, 4, 8).
+distinctcell(6, 2, 4, 7).
+distinctcell(6, 2, 4, 6).
+distinctcell(6, 2, 4, 5).
+distinctcell(6, 2, 4, 4).
+distinctcell(6, 2, 4, 3).
+distinctcell(6, 2, 4, 2).
+distinctcell(6, 2, 4, 1).
+distinctcell(6, 2, 3, 8).
+distinctcell(6, 2, 3, 7).
+distinctcell(6, 2, 3, 6).
+distinctcell(6, 2, 3, 5).
+distinctcell(6, 2, 3, 4).
+distinctcell(6, 2, 3, 3).
+distinctcell(6, 2, 3, 2).
+distinctcell(6, 2, 3, 1).
+distinctcell(6, 2, 2, 8).
+distinctcell(6, 2, 2, 7).
+distinctcell(6, 2, 2, 6).
+distinctcell(6, 2, 2, 5).
+distinctcell(6, 2, 2, 4).
+distinctcell(6, 2, 2, 3).
+distinctcell(6, 2, 2, 2).
+distinctcell(6, 2, 2, 1).
+distinctcell(6, 2, 1, 8).
+distinctcell(6, 2, 1, 7).
+distinctcell(6, 2, 1, 6).
+distinctcell(6, 2, 1, 5).
+distinctcell(6, 2, 1, 4).
+distinctcell(6, 2, 1, 3).
+distinctcell(6, 2, 1, 2).
+distinctcell(6, 2, 1, 1).
+distinctcell(6, 1, 8, 8).
+distinctcell(6, 1, 8, 7).
+distinctcell(6, 1, 8, 6).
+distinctcell(6, 1, 8, 5).
+distinctcell(6, 1, 8, 4).
+distinctcell(6, 1, 8, 3).
+distinctcell(6, 1, 8, 2).
+distinctcell(6, 1, 8, 1).
+distinctcell(6, 1, 7, 8).
+distinctcell(6, 1, 7, 7).
+distinctcell(6, 1, 7, 6).
+distinctcell(6, 1, 7, 5).
+distinctcell(6, 1, 7, 4).
+distinctcell(6, 1, 7, 3).
+distinctcell(6, 1, 7, 2).
+distinctcell(6, 1, 7, 1).
+distinctcell(6, 1, 6, 8).
+distinctcell(6, 1, 6, 7).
+distinctcell(6, 1, 6, 6).
+distinctcell(6, 1, 6, 5).
+distinctcell(6, 1, 6, 4).
+distinctcell(6, 1, 6, 3).
+distinctcell(6, 1, 6, 2).
+distinctcell(6, 1, 5, 8).
+distinctcell(6, 1, 5, 7).
+distinctcell(6, 1, 5, 6).
+distinctcell(6, 1, 5, 5).
+distinctcell(6, 1, 5, 4).
+distinctcell(6, 1, 5, 3).
+distinctcell(6, 1, 5, 2).
+distinctcell(6, 1, 5, 1).
+distinctcell(6, 1, 4, 8).
+distinctcell(6, 1, 4, 7).
+distinctcell(6, 1, 4, 6).
+distinctcell(6, 1, 4, 5).
+distinctcell(6, 1, 4, 4).
+distinctcell(6, 1, 4, 3).
+distinctcell(6, 1, 4, 2).
+distinctcell(6, 1, 4, 1).
+distinctcell(6, 1, 3, 8).
+distinctcell(6, 1, 3, 7).
+distinctcell(6, 1, 3, 6).
+distinctcell(6, 1, 3, 5).
+distinctcell(6, 1, 3, 4).
+distinctcell(6, 1, 3, 3).
+distinctcell(6, 1, 3, 2).
+distinctcell(6, 1, 3, 1).
+distinctcell(6, 1, 2, 8).
+distinctcell(6, 1, 2, 7).
+distinctcell(6, 1, 2, 6).
+distinctcell(6, 1, 2, 5).
+distinctcell(6, 1, 2, 4).
+distinctcell(6, 1, 2, 3).
+distinctcell(6, 1, 2, 2).
+distinctcell(6, 1, 2, 1).
+distinctcell(6, 1, 1, 8).
+distinctcell(6, 1, 1, 7).
+distinctcell(6, 1, 1, 6).
+distinctcell(6, 1, 1, 5).
+distinctcell(6, 1, 1, 4).
+distinctcell(6, 1, 1, 3).
+distinctcell(6, 1, 1, 2).
+distinctcell(6, 1, 1, 1).
+distinctcell(5, 8, 8, 8).
+distinctcell(5, 8, 8, 7).
+distinctcell(5, 8, 8, 6).
+distinctcell(5, 8, 8, 5).
+distinctcell(5, 8, 8, 4).
+distinctcell(5, 8, 8, 3).
+distinctcell(5, 8, 8, 2).
+distinctcell(5, 8, 8, 1).
+distinctcell(5, 8, 7, 8).
+distinctcell(5, 8, 7, 7).
+distinctcell(5, 8, 7, 6).
+distinctcell(5, 8, 7, 5).
+distinctcell(5, 8, 7, 4).
+distinctcell(5, 8, 7, 3).
+distinctcell(5, 8, 7, 2).
+distinctcell(5, 8, 7, 1).
+distinctcell(5, 8, 6, 8).
+distinctcell(5, 8, 6, 7).
+distinctcell(5, 8, 6, 6).
+distinctcell(5, 8, 6, 5).
+distinctcell(5, 8, 6, 4).
+distinctcell(5, 8, 6, 3).
+distinctcell(5, 8, 6, 2).
+distinctcell(5, 8, 6, 1).
+distinctcell(5, 8, 5, 7).
+distinctcell(5, 8, 5, 6).
+distinctcell(5, 8, 5, 5).
+distinctcell(5, 8, 5, 4).
+distinctcell(5, 8, 5, 3).
+distinctcell(5, 8, 5, 2).
+distinctcell(5, 8, 5, 1).
+distinctcell(5, 8, 4, 8).
+distinctcell(5, 8, 4, 7).
+distinctcell(5, 8, 4, 6).
+distinctcell(5, 8, 4, 5).
+distinctcell(5, 8, 4, 4).
+distinctcell(5, 8, 4, 3).
+distinctcell(5, 8, 4, 2).
+distinctcell(5, 8, 4, 1).
+distinctcell(5, 8, 3, 8).
+distinctcell(5, 8, 3, 7).
+distinctcell(5, 8, 3, 6).
+distinctcell(5, 8, 3, 5).
+distinctcell(5, 8, 3, 4).
+distinctcell(5, 8, 3, 3).
+distinctcell(5, 8, 3, 2).
+distinctcell(5, 8, 3, 1).
+distinctcell(5, 8, 2, 8).
+distinctcell(5, 8, 2, 7).
+distinctcell(5, 8, 2, 6).
+distinctcell(5, 8, 2, 5).
+distinctcell(5, 8, 2, 4).
+distinctcell(5, 8, 2, 3).
+distinctcell(5, 8, 2, 2).
+distinctcell(5, 8, 2, 1).
+distinctcell(5, 8, 1, 8).
+distinctcell(5, 8, 1, 7).
+distinctcell(5, 8, 1, 6).
+distinctcell(5, 8, 1, 5).
+distinctcell(5, 8, 1, 4).
+distinctcell(5, 8, 1, 3).
+distinctcell(5, 8, 1, 2).
+distinctcell(5, 8, 1, 1).
+distinctcell(5, 7, 8, 8).
+distinctcell(5, 7, 8, 7).
+distinctcell(5, 7, 8, 6).
+distinctcell(5, 7, 8, 5).
+distinctcell(5, 7, 8, 4).
+distinctcell(5, 7, 8, 3).
+distinctcell(5, 7, 8, 2).
+distinctcell(5, 7, 8, 1).
+distinctcell(5, 7, 7, 8).
+distinctcell(5, 7, 7, 7).
+distinctcell(5, 7, 7, 6).
+distinctcell(5, 7, 7, 5).
+distinctcell(5, 7, 7, 4).
+distinctcell(5, 7, 7, 3).
+distinctcell(5, 7, 7, 2).
+distinctcell(5, 7, 7, 1).
+distinctcell(5, 7, 6, 8).
+distinctcell(5, 7, 6, 7).
+distinctcell(5, 7, 6, 6).
+distinctcell(5, 7, 6, 5).
+distinctcell(5, 7, 6, 4).
+distinctcell(5, 7, 6, 3).
+distinctcell(5, 7, 6, 2).
+distinctcell(5, 7, 6, 1).
+distinctcell(5, 7, 5, 8).
+distinctcell(5, 7, 5, 6).
+distinctcell(5, 7, 5, 5).
+distinctcell(5, 7, 5, 4).
+distinctcell(5, 7, 5, 3).
+distinctcell(5, 7, 5, 2).
+distinctcell(5, 7, 5, 1).
+distinctcell(5, 7, 4, 8).
+distinctcell(5, 7, 4, 7).
+distinctcell(5, 7, 4, 6).
+distinctcell(5, 7, 4, 5).
+distinctcell(5, 7, 4, 4).
+distinctcell(5, 7, 4, 3).
+distinctcell(5, 7, 4, 2).
+distinctcell(5, 7, 4, 1).
+distinctcell(5, 7, 3, 8).
+distinctcell(5, 7, 3, 7).
+distinctcell(5, 7, 3, 6).
+distinctcell(5, 7, 3, 5).
+distinctcell(5, 7, 3, 4).
+distinctcell(5, 7, 3, 3).
+distinctcell(5, 7, 3, 2).
+distinctcell(5, 7, 3, 1).
+distinctcell(5, 7, 2, 8).
+distinctcell(5, 7, 2, 7).
+distinctcell(5, 7, 2, 6).
+distinctcell(5, 7, 2, 5).
+distinctcell(5, 7, 2, 4).
+distinctcell(5, 7, 2, 3).
+distinctcell(5, 7, 2, 2).
+distinctcell(5, 7, 2, 1).
+distinctcell(5, 7, 1, 8).
+distinctcell(5, 7, 1, 7).
+distinctcell(5, 7, 1, 6).
+distinctcell(5, 7, 1, 5).
+distinctcell(5, 7, 1, 4).
+distinctcell(5, 7, 1, 3).
+distinctcell(5, 7, 1, 2).
+distinctcell(5, 7, 1, 1).
+distinctcell(5, 6, 8, 8).
+distinctcell(5, 6, 8, 7).
+distinctcell(5, 6, 8, 6).
+distinctcell(5, 6, 8, 5).
+distinctcell(5, 6, 8, 4).
+distinctcell(5, 6, 8, 3).
+distinctcell(5, 6, 8, 2).
+distinctcell(5, 6, 8, 1).
+distinctcell(5, 6, 7, 8).
+distinctcell(5, 6, 7, 7).
+distinctcell(5, 6, 7, 6).
+distinctcell(5, 6, 7, 5).
+distinctcell(5, 6, 7, 4).
+distinctcell(5, 6, 7, 3).
+distinctcell(5, 6, 7, 2).
+distinctcell(5, 6, 7, 1).
+distinctcell(5, 6, 6, 8).
+distinctcell(5, 6, 6, 7).
+distinctcell(5, 6, 6, 6).
+distinctcell(5, 6, 6, 5).
+distinctcell(5, 6, 6, 4).
+distinctcell(5, 6, 6, 3).
+distinctcell(5, 6, 6, 2).
+distinctcell(5, 6, 6, 1).
+distinctcell(5, 6, 5, 8).
+distinctcell(5, 6, 5, 7).
+distinctcell(5, 6, 5, 5).
+distinctcell(5, 6, 5, 4).
+distinctcell(5, 6, 5, 3).
+distinctcell(5, 6, 5, 2).
+distinctcell(5, 6, 5, 1).
+distinctcell(5, 6, 4, 8).
+distinctcell(5, 6, 4, 7).
+distinctcell(5, 6, 4, 6).
+distinctcell(5, 6, 4, 5).
+distinctcell(5, 6, 4, 4).
+distinctcell(5, 6, 4, 3).
+distinctcell(5, 6, 4, 2).
+distinctcell(5, 6, 4, 1).
+distinctcell(5, 6, 3, 8).
+distinctcell(5, 6, 3, 7).
+distinctcell(5, 6, 3, 6).
+distinctcell(5, 6, 3, 5).
+distinctcell(5, 6, 3, 4).
+distinctcell(5, 6, 3, 3).
+distinctcell(5, 6, 3, 2).
+distinctcell(5, 6, 3, 1).
+distinctcell(5, 6, 2, 8).
+distinctcell(5, 6, 2, 7).
+distinctcell(5, 6, 2, 6).
+distinctcell(5, 6, 2, 5).
+distinctcell(5, 6, 2, 4).
+distinctcell(5, 6, 2, 3).
+distinctcell(5, 6, 2, 2).
+distinctcell(5, 6, 2, 1).
+distinctcell(5, 6, 1, 8).
+distinctcell(5, 6, 1, 7).
+distinctcell(5, 6, 1, 6).
+distinctcell(5, 6, 1, 5).
+distinctcell(5, 6, 1, 4).
+distinctcell(5, 6, 1, 3).
+distinctcell(5, 6, 1, 2).
+distinctcell(5, 6, 1, 1).
+distinctcell(5, 5, 8, 8).
+distinctcell(5, 5, 8, 7).
+distinctcell(5, 5, 8, 6).
+distinctcell(5, 5, 8, 5).
+distinctcell(5, 5, 8, 4).
+distinctcell(5, 5, 8, 3).
+distinctcell(5, 5, 8, 2).
+distinctcell(5, 5, 8, 1).
+distinctcell(5, 5, 7, 8).
+distinctcell(5, 5, 7, 7).
+distinctcell(5, 5, 7, 6).
+distinctcell(5, 5, 7, 5).
+distinctcell(5, 5, 7, 4).
+distinctcell(5, 5, 7, 3).
+distinctcell(5, 5, 7, 2).
+distinctcell(5, 5, 7, 1).
+distinctcell(5, 5, 6, 8).
+distinctcell(5, 5, 6, 7).
+distinctcell(5, 5, 6, 6).
+distinctcell(5, 5, 6, 5).
+distinctcell(5, 5, 6, 4).
+distinctcell(5, 5, 6, 3).
+distinctcell(5, 5, 6, 2).
+distinctcell(5, 5, 6, 1).
+distinctcell(5, 5, 5, 8).
+distinctcell(5, 5, 5, 7).
+distinctcell(5, 5, 5, 6).
+distinctcell(5, 5, 5, 4).
+distinctcell(5, 5, 5, 3).
+distinctcell(5, 5, 5, 2).
+distinctcell(5, 5, 5, 1).
+distinctcell(5, 5, 4, 8).
+distinctcell(5, 5, 4, 7).
+distinctcell(5, 5, 4, 6).
+distinctcell(5, 5, 4, 5).
+distinctcell(5, 5, 4, 4).
+distinctcell(5, 5, 4, 3).
+distinctcell(5, 5, 4, 2).
+distinctcell(5, 5, 4, 1).
+distinctcell(5, 5, 3, 8).
+distinctcell(5, 5, 3, 7).
+distinctcell(5, 5, 3, 6).
+distinctcell(5, 5, 3, 5).
+distinctcell(5, 5, 3, 4).
+distinctcell(5, 5, 3, 3).
+distinctcell(5, 5, 3, 2).
+distinctcell(5, 5, 3, 1).
+distinctcell(5, 5, 2, 8).
+distinctcell(5, 5, 2, 7).
+distinctcell(5, 5, 2, 6).
+distinctcell(5, 5, 2, 5).
+distinctcell(5, 5, 2, 4).
+distinctcell(5, 5, 2, 3).
+distinctcell(5, 5, 2, 2).
+distinctcell(5, 5, 2, 1).
+distinctcell(5, 5, 1, 8).
+distinctcell(5, 5, 1, 7).
+distinctcell(5, 5, 1, 6).
+distinctcell(5, 5, 1, 5).
+distinctcell(5, 5, 1, 4).
+distinctcell(5, 5, 1, 3).
+distinctcell(5, 5, 1, 2).
+distinctcell(5, 5, 1, 1).
+distinctcell(5, 4, 8, 8).
+distinctcell(5, 4, 8, 7).
+distinctcell(5, 4, 8, 6).
+distinctcell(5, 4, 8, 5).
+distinctcell(5, 4, 8, 4).
+distinctcell(5, 4, 8, 3).
+distinctcell(5, 4, 8, 2).
+distinctcell(5, 4, 8, 1).
+distinctcell(5, 4, 7, 8).
+distinctcell(5, 4, 7, 7).
+distinctcell(5, 4, 7, 6).
+distinctcell(5, 4, 7, 5).
+distinctcell(5, 4, 7, 4).
+distinctcell(5, 4, 7, 3).
+distinctcell(5, 4, 7, 2).
+distinctcell(5, 4, 7, 1).
+distinctcell(5, 4, 6, 8).
+distinctcell(5, 4, 6, 7).
+distinctcell(5, 4, 6, 6).
+distinctcell(5, 4, 6, 5).
+distinctcell(5, 4, 6, 4).
+distinctcell(5, 4, 6, 3).
+distinctcell(5, 4, 6, 2).
+distinctcell(5, 4, 6, 1).
+distinctcell(5, 4, 5, 8).
+distinctcell(5, 4, 5, 7).
+distinctcell(5, 4, 5, 6).
+distinctcell(5, 4, 5, 5).
+distinctcell(5, 4, 5, 3).
+distinctcell(5, 4, 5, 2).
+distinctcell(5, 4, 5, 1).
+distinctcell(5, 4, 4, 8).
+distinctcell(5, 4, 4, 7).
+distinctcell(5, 4, 4, 6).
+distinctcell(5, 4, 4, 5).
+distinctcell(5, 4, 4, 4).
+distinctcell(5, 4, 4, 3).
+distinctcell(5, 4, 4, 2).
+distinctcell(5, 4, 4, 1).
+distinctcell(5, 4, 3, 8).
+distinctcell(5, 4, 3, 7).
+distinctcell(5, 4, 3, 6).
+distinctcell(5, 4, 3, 5).
+distinctcell(5, 4, 3, 4).
+distinctcell(5, 4, 3, 3).
+distinctcell(5, 4, 3, 2).
+distinctcell(5, 4, 3, 1).
+distinctcell(5, 4, 2, 8).
+distinctcell(5, 4, 2, 7).
+distinctcell(5, 4, 2, 6).
+distinctcell(5, 4, 2, 5).
+distinctcell(5, 4, 2, 4).
+distinctcell(5, 4, 2, 3).
+distinctcell(5, 4, 2, 2).
+distinctcell(5, 4, 2, 1).
+distinctcell(5, 4, 1, 8).
+distinctcell(5, 4, 1, 7).
+distinctcell(5, 4, 1, 6).
+distinctcell(5, 4, 1, 5).
+distinctcell(5, 4, 1, 4).
+distinctcell(5, 4, 1, 3).
+distinctcell(5, 4, 1, 2).
+distinctcell(5, 4, 1, 1).
+distinctcell(5, 3, 8, 8).
+distinctcell(5, 3, 8, 7).
+distinctcell(5, 3, 8, 6).
+distinctcell(5, 3, 8, 5).
+distinctcell(5, 3, 8, 4).
+distinctcell(5, 3, 8, 3).
+distinctcell(5, 3, 8, 2).
+distinctcell(5, 3, 8, 1).
+distinctcell(5, 3, 7, 8).
+distinctcell(5, 3, 7, 7).
+distinctcell(5, 3, 7, 6).
+distinctcell(5, 3, 7, 5).
+distinctcell(5, 3, 7, 4).
+distinctcell(5, 3, 7, 3).
+distinctcell(5, 3, 7, 2).
+distinctcell(5, 3, 7, 1).
+distinctcell(5, 3, 6, 8).
+distinctcell(5, 3, 6, 7).
+distinctcell(5, 3, 6, 6).
+distinctcell(5, 3, 6, 5).
+distinctcell(5, 3, 6, 4).
+distinctcell(5, 3, 6, 3).
+distinctcell(5, 3, 6, 2).
+distinctcell(5, 3, 6, 1).
+distinctcell(5, 3, 5, 8).
+distinctcell(5, 3, 5, 7).
+distinctcell(5, 3, 5, 6).
+distinctcell(5, 3, 5, 5).
+distinctcell(5, 3, 5, 4).
+distinctcell(5, 3, 5, 2).
+distinctcell(5, 3, 5, 1).
+distinctcell(5, 3, 4, 8).
+distinctcell(5, 3, 4, 7).
+distinctcell(5, 3, 4, 6).
+distinctcell(5, 3, 4, 5).
+distinctcell(5, 3, 4, 4).
+distinctcell(5, 3, 4, 3).
+distinctcell(5, 3, 4, 2).
+distinctcell(5, 3, 4, 1).
+distinctcell(5, 3, 3, 8).
+distinctcell(5, 3, 3, 7).
+distinctcell(5, 3, 3, 6).
+distinctcell(5, 3, 3, 5).
+distinctcell(5, 3, 3, 4).
+distinctcell(5, 3, 3, 3).
+distinctcell(5, 3, 3, 2).
+distinctcell(5, 3, 3, 1).
+distinctcell(5, 3, 2, 8).
+distinctcell(5, 3, 2, 7).
+distinctcell(5, 3, 2, 6).
+distinctcell(5, 3, 2, 5).
+distinctcell(5, 3, 2, 4).
+distinctcell(5, 3, 2, 3).
+distinctcell(5, 3, 2, 2).
+distinctcell(5, 3, 2, 1).
+distinctcell(5, 3, 1, 8).
+distinctcell(5, 3, 1, 7).
+distinctcell(5, 3, 1, 6).
+distinctcell(5, 3, 1, 5).
+distinctcell(5, 3, 1, 4).
+distinctcell(5, 3, 1, 3).
+distinctcell(5, 3, 1, 2).
+distinctcell(5, 3, 1, 1).
+distinctcell(5, 2, 8, 8).
+distinctcell(5, 2, 8, 7).
+distinctcell(5, 2, 8, 6).
+distinctcell(5, 2, 8, 5).
+distinctcell(5, 2, 8, 4).
+distinctcell(5, 2, 8, 3).
+distinctcell(5, 2, 8, 2).
+distinctcell(5, 2, 8, 1).
+distinctcell(5, 2, 7, 8).
+distinctcell(5, 2, 7, 7).
+distinctcell(5, 2, 7, 6).
+distinctcell(5, 2, 7, 5).
+distinctcell(5, 2, 7, 4).
+distinctcell(5, 2, 7, 3).
+distinctcell(5, 2, 7, 2).
+distinctcell(5, 2, 7, 1).
+distinctcell(5, 2, 6, 8).
+distinctcell(5, 2, 6, 7).
+distinctcell(5, 2, 6, 6).
+distinctcell(5, 2, 6, 5).
+distinctcell(5, 2, 6, 4).
+distinctcell(5, 2, 6, 3).
+distinctcell(5, 2, 6, 2).
+distinctcell(5, 2, 6, 1).
+distinctcell(5, 2, 5, 8).
+distinctcell(5, 2, 5, 7).
+distinctcell(5, 2, 5, 6).
+distinctcell(5, 2, 5, 5).
+distinctcell(5, 2, 5, 4).
+distinctcell(5, 2, 5, 3).
+distinctcell(5, 2, 5, 1).
+distinctcell(5, 2, 4, 8).
+distinctcell(5, 2, 4, 7).
+distinctcell(5, 2, 4, 6).
+distinctcell(5, 2, 4, 5).
+distinctcell(5, 2, 4, 4).
+distinctcell(5, 2, 4, 3).
+distinctcell(5, 2, 4, 2).
+distinctcell(5, 2, 4, 1).
+distinctcell(5, 2, 3, 8).
+distinctcell(5, 2, 3, 7).
+distinctcell(5, 2, 3, 6).
+distinctcell(5, 2, 3, 5).
+distinctcell(5, 2, 3, 4).
+distinctcell(5, 2, 3, 3).
+distinctcell(5, 2, 3, 2).
+distinctcell(5, 2, 3, 1).
+distinctcell(5, 2, 2, 8).
+distinctcell(5, 2, 2, 7).
+distinctcell(5, 2, 2, 6).
+distinctcell(5, 2, 2, 5).
+distinctcell(5, 2, 2, 4).
+distinctcell(5, 2, 2, 3).
+distinctcell(5, 2, 2, 2).
+distinctcell(5, 2, 2, 1).
+distinctcell(5, 2, 1, 8).
+distinctcell(5, 2, 1, 7).
+distinctcell(5, 2, 1, 6).
+distinctcell(5, 2, 1, 5).
+distinctcell(5, 2, 1, 4).
+distinctcell(5, 2, 1, 3).
+distinctcell(5, 2, 1, 2).
+distinctcell(5, 2, 1, 1).
+distinctcell(5, 1, 8, 8).
+distinctcell(5, 1, 8, 7).
+distinctcell(5, 1, 8, 6).
+distinctcell(5, 1, 8, 5).
+distinctcell(5, 1, 8, 4).
+distinctcell(5, 1, 8, 3).
+distinctcell(5, 1, 8, 2).
+distinctcell(5, 1, 8, 1).
+distinctcell(5, 1, 7, 8).
+distinctcell(5, 1, 7, 7).
+distinctcell(5, 1, 7, 6).
+distinctcell(5, 1, 7, 5).
+distinctcell(5, 1, 7, 4).
+distinctcell(5, 1, 7, 3).
+distinctcell(5, 1, 7, 2).
+distinctcell(5, 1, 7, 1).
+distinctcell(5, 1, 6, 8).
+distinctcell(5, 1, 6, 7).
+distinctcell(5, 1, 6, 6).
+distinctcell(5, 1, 6, 5).
+distinctcell(5, 1, 6, 4).
+distinctcell(5, 1, 6, 3).
+distinctcell(5, 1, 6, 2).
+distinctcell(5, 1, 6, 1).
+distinctcell(5, 1, 5, 8).
+distinctcell(5, 1, 5, 7).
+distinctcell(5, 1, 5, 6).
+distinctcell(5, 1, 5, 5).
+distinctcell(5, 1, 5, 4).
+distinctcell(5, 1, 5, 3).
+distinctcell(5, 1, 5, 2).
+distinctcell(5, 1, 4, 8).
+distinctcell(5, 1, 4, 7).
+distinctcell(5, 1, 4, 6).
+distinctcell(5, 1, 4, 5).
+distinctcell(5, 1, 4, 4).
+distinctcell(5, 1, 4, 3).
+distinctcell(5, 1, 4, 2).
+distinctcell(5, 1, 4, 1).
+distinctcell(5, 1, 3, 8).
+distinctcell(5, 1, 3, 7).
+distinctcell(5, 1, 3, 6).
+distinctcell(5, 1, 3, 5).
+distinctcell(5, 1, 3, 4).
+distinctcell(5, 1, 3, 3).
+distinctcell(5, 1, 3, 2).
+distinctcell(5, 1, 3, 1).
+distinctcell(5, 1, 2, 8).
+distinctcell(5, 1, 2, 7).
+distinctcell(5, 1, 2, 6).
+distinctcell(5, 1, 2, 5).
+distinctcell(5, 1, 2, 4).
+distinctcell(5, 1, 2, 3).
+distinctcell(5, 1, 2, 2).
+distinctcell(5, 1, 2, 1).
+distinctcell(5, 1, 1, 8).
+distinctcell(5, 1, 1, 7).
+distinctcell(5, 1, 1, 6).
+distinctcell(5, 1, 1, 5).
+distinctcell(5, 1, 1, 4).
+distinctcell(5, 1, 1, 3).
+distinctcell(5, 1, 1, 2).
+distinctcell(5, 1, 1, 1).
+distinctcell(4, 8, 8, 8).
+distinctcell(4, 8, 8, 7).
+distinctcell(4, 8, 8, 6).
+distinctcell(4, 8, 8, 5).
+distinctcell(4, 8, 8, 4).
+distinctcell(4, 8, 8, 3).
+distinctcell(4, 8, 8, 2).
+distinctcell(4, 8, 8, 1).
+distinctcell(4, 8, 7, 8).
+distinctcell(4, 8, 7, 7).
+distinctcell(4, 8, 7, 6).
+distinctcell(4, 8, 7, 5).
+distinctcell(4, 8, 7, 4).
+distinctcell(4, 8, 7, 3).
+distinctcell(4, 8, 7, 2).
+distinctcell(4, 8, 7, 1).
+distinctcell(4, 8, 6, 8).
+distinctcell(4, 8, 6, 7).
+distinctcell(4, 8, 6, 6).
+distinctcell(4, 8, 6, 5).
+distinctcell(4, 8, 6, 4).
+distinctcell(4, 8, 6, 3).
+distinctcell(4, 8, 6, 2).
+distinctcell(4, 8, 6, 1).
+distinctcell(4, 8, 5, 8).
+distinctcell(4, 8, 5, 7).
+distinctcell(4, 8, 5, 6).
+distinctcell(4, 8, 5, 5).
+distinctcell(4, 8, 5, 4).
+distinctcell(4, 8, 5, 3).
+distinctcell(4, 8, 5, 2).
+distinctcell(4, 8, 5, 1).
+distinctcell(4, 8, 4, 7).
+distinctcell(4, 8, 4, 6).
+distinctcell(4, 8, 4, 5).
+distinctcell(4, 8, 4, 4).
+distinctcell(4, 8, 4, 3).
+distinctcell(4, 8, 4, 2).
+distinctcell(4, 8, 4, 1).
+distinctcell(4, 8, 3, 8).
+distinctcell(4, 8, 3, 7).
+distinctcell(4, 8, 3, 6).
+distinctcell(4, 8, 3, 5).
+distinctcell(4, 8, 3, 4).
+distinctcell(4, 8, 3, 3).
+distinctcell(4, 8, 3, 2).
+distinctcell(4, 8, 3, 1).
+distinctcell(4, 8, 2, 8).
+distinctcell(4, 8, 2, 7).
+distinctcell(4, 8, 2, 6).
+distinctcell(4, 8, 2, 5).
+distinctcell(4, 8, 2, 4).
+distinctcell(4, 8, 2, 3).
+distinctcell(4, 8, 2, 2).
+distinctcell(4, 8, 2, 1).
+distinctcell(4, 8, 1, 8).
+distinctcell(4, 8, 1, 7).
+distinctcell(4, 8, 1, 6).
+distinctcell(4, 8, 1, 5).
+distinctcell(4, 8, 1, 4).
+distinctcell(4, 8, 1, 3).
+distinctcell(4, 8, 1, 2).
+distinctcell(4, 8, 1, 1).
+distinctcell(4, 7, 8, 8).
+distinctcell(4, 7, 8, 7).
+distinctcell(4, 7, 8, 6).
+distinctcell(4, 7, 8, 5).
+distinctcell(4, 7, 8, 4).
+distinctcell(4, 7, 8, 3).
+distinctcell(4, 7, 8, 2).
+distinctcell(4, 7, 8, 1).
+distinctcell(4, 7, 7, 8).
+distinctcell(4, 7, 7, 7).
+distinctcell(4, 7, 7, 6).
+distinctcell(4, 7, 7, 5).
+distinctcell(4, 7, 7, 4).
+distinctcell(4, 7, 7, 3).
+distinctcell(4, 7, 7, 2).
+distinctcell(4, 7, 7, 1).
+distinctcell(4, 7, 6, 8).
+distinctcell(4, 7, 6, 7).
+distinctcell(4, 7, 6, 6).
+distinctcell(4, 7, 6, 5).
+distinctcell(4, 7, 6, 4).
+distinctcell(4, 7, 6, 3).
+distinctcell(4, 7, 6, 2).
+distinctcell(4, 7, 6, 1).
+distinctcell(4, 7, 5, 8).
+distinctcell(4, 7, 5, 7).
+distinctcell(4, 7, 5, 6).
+distinctcell(4, 7, 5, 5).
+distinctcell(4, 7, 5, 4).
+distinctcell(4, 7, 5, 3).
+distinctcell(4, 7, 5, 2).
+distinctcell(4, 7, 5, 1).
+distinctcell(4, 7, 4, 8).
+distinctcell(4, 7, 4, 6).
+distinctcell(4, 7, 4, 5).
+distinctcell(4, 7, 4, 4).
+distinctcell(4, 7, 4, 3).
+distinctcell(4, 7, 4, 2).
+distinctcell(4, 7, 4, 1).
+distinctcell(4, 7, 3, 8).
+distinctcell(4, 7, 3, 7).
+distinctcell(4, 7, 3, 6).
+distinctcell(4, 7, 3, 5).
+distinctcell(4, 7, 3, 4).
+distinctcell(4, 7, 3, 3).
+distinctcell(4, 7, 3, 2).
+distinctcell(4, 7, 3, 1).
+distinctcell(4, 7, 2, 8).
+distinctcell(4, 7, 2, 7).
+distinctcell(4, 7, 2, 6).
+distinctcell(4, 7, 2, 5).
+distinctcell(4, 7, 2, 4).
+distinctcell(4, 7, 2, 3).
+distinctcell(4, 7, 2, 2).
+distinctcell(4, 7, 2, 1).
+distinctcell(4, 7, 1, 8).
+distinctcell(4, 7, 1, 7).
+distinctcell(4, 7, 1, 6).
+distinctcell(4, 7, 1, 5).
+distinctcell(4, 7, 1, 4).
+distinctcell(4, 7, 1, 3).
+distinctcell(4, 7, 1, 2).
+distinctcell(4, 7, 1, 1).
+distinctcell(4, 6, 8, 8).
+distinctcell(4, 6, 8, 7).
+distinctcell(4, 6, 8, 6).
+distinctcell(4, 6, 8, 5).
+distinctcell(4, 6, 8, 4).
+distinctcell(4, 6, 8, 3).
+distinctcell(4, 6, 8, 2).
+distinctcell(4, 6, 8, 1).
+distinctcell(4, 6, 7, 8).
+distinctcell(4, 6, 7, 7).
+distinctcell(4, 6, 7, 6).
+distinctcell(4, 6, 7, 5).
+distinctcell(4, 6, 7, 4).
+distinctcell(4, 6, 7, 3).
+distinctcell(4, 6, 7, 2).
+distinctcell(4, 6, 7, 1).
+distinctcell(4, 6, 6, 8).
+distinctcell(4, 6, 6, 7).
+distinctcell(4, 6, 6, 6).
+distinctcell(4, 6, 6, 5).
+distinctcell(4, 6, 6, 4).
+distinctcell(4, 6, 6, 3).
+distinctcell(4, 6, 6, 2).
+distinctcell(4, 6, 6, 1).
+distinctcell(4, 6, 5, 8).
+distinctcell(4, 6, 5, 7).
+distinctcell(4, 6, 5, 6).
+distinctcell(4, 6, 5, 5).
+distinctcell(4, 6, 5, 4).
+distinctcell(4, 6, 5, 3).
+distinctcell(4, 6, 5, 2).
+distinctcell(4, 6, 5, 1).
+distinctcell(4, 6, 4, 8).
+distinctcell(4, 6, 4, 7).
+distinctcell(4, 6, 4, 5).
+distinctcell(4, 6, 4, 4).
+distinctcell(4, 6, 4, 3).
+distinctcell(4, 6, 4, 2).
+distinctcell(4, 6, 4, 1).
+distinctcell(4, 6, 3, 8).
+distinctcell(4, 6, 3, 7).
+distinctcell(4, 6, 3, 6).
+distinctcell(4, 6, 3, 5).
+distinctcell(4, 6, 3, 4).
+distinctcell(4, 6, 3, 3).
+distinctcell(4, 6, 3, 2).
+distinctcell(4, 6, 3, 1).
+distinctcell(4, 6, 2, 8).
+distinctcell(4, 6, 2, 7).
+distinctcell(4, 6, 2, 6).
+distinctcell(4, 6, 2, 5).
+distinctcell(4, 6, 2, 4).
+distinctcell(4, 6, 2, 3).
+distinctcell(4, 6, 2, 2).
+distinctcell(4, 6, 2, 1).
+distinctcell(4, 6, 1, 8).
+distinctcell(4, 6, 1, 7).
+distinctcell(4, 6, 1, 6).
+distinctcell(4, 6, 1, 5).
+distinctcell(4, 6, 1, 4).
+distinctcell(4, 6, 1, 3).
+distinctcell(4, 6, 1, 2).
+distinctcell(4, 6, 1, 1).
+distinctcell(4, 5, 8, 8).
+distinctcell(4, 5, 8, 7).
+distinctcell(4, 5, 8, 6).
+distinctcell(4, 5, 8, 5).
+distinctcell(4, 5, 8, 4).
+distinctcell(4, 5, 8, 3).
+distinctcell(4, 5, 8, 2).
+distinctcell(4, 5, 8, 1).
+distinctcell(4, 5, 7, 8).
+distinctcell(4, 5, 7, 7).
+distinctcell(4, 5, 7, 6).
+distinctcell(4, 5, 7, 5).
+distinctcell(4, 5, 7, 4).
+distinctcell(4, 5, 7, 3).
+distinctcell(4, 5, 7, 2).
+distinctcell(4, 5, 7, 1).
+distinctcell(4, 5, 6, 8).
+distinctcell(4, 5, 6, 7).
+distinctcell(4, 5, 6, 6).
+distinctcell(4, 5, 6, 5).
+distinctcell(4, 5, 6, 4).
+distinctcell(4, 5, 6, 3).
+distinctcell(4, 5, 6, 2).
+distinctcell(4, 5, 6, 1).
+distinctcell(4, 5, 5, 8).
+distinctcell(4, 5, 5, 7).
+distinctcell(4, 5, 5, 6).
+distinctcell(4, 5, 5, 5).
+distinctcell(4, 5, 5, 4).
+distinctcell(4, 5, 5, 3).
+distinctcell(4, 5, 5, 2).
+distinctcell(4, 5, 5, 1).
+distinctcell(4, 5, 4, 8).
+distinctcell(4, 5, 4, 7).
+distinctcell(4, 5, 4, 6).
+distinctcell(4, 5, 4, 4).
+distinctcell(4, 5, 4, 3).
+distinctcell(4, 5, 4, 2).
+distinctcell(4, 5, 4, 1).
+distinctcell(4, 5, 3, 8).
+distinctcell(4, 5, 3, 7).
+distinctcell(4, 5, 3, 6).
+distinctcell(4, 5, 3, 5).
+distinctcell(4, 5, 3, 4).
+distinctcell(4, 5, 3, 3).
+distinctcell(4, 5, 3, 2).
+distinctcell(4, 5, 3, 1).
+distinctcell(4, 5, 2, 8).
+distinctcell(4, 5, 2, 7).
+distinctcell(4, 5, 2, 6).
+distinctcell(4, 5, 2, 5).
+distinctcell(4, 5, 2, 4).
+distinctcell(4, 5, 2, 3).
+distinctcell(4, 5, 2, 2).
+distinctcell(4, 5, 2, 1).
+distinctcell(4, 5, 1, 8).
+distinctcell(4, 5, 1, 7).
+distinctcell(4, 5, 1, 6).
+distinctcell(4, 5, 1, 5).
+distinctcell(4, 5, 1, 4).
+distinctcell(4, 5, 1, 3).
+distinctcell(4, 5, 1, 2).
+distinctcell(4, 5, 1, 1).
+distinctcell(4, 4, 8, 8).
+distinctcell(4, 4, 8, 7).
+distinctcell(4, 4, 8, 6).
+distinctcell(4, 4, 8, 5).
+distinctcell(4, 4, 8, 4).
+distinctcell(4, 4, 8, 3).
+distinctcell(4, 4, 8, 2).
+distinctcell(4, 4, 8, 1).
+distinctcell(4, 4, 7, 8).
+distinctcell(4, 4, 7, 7).
+distinctcell(4, 4, 7, 6).
+distinctcell(4, 4, 7, 5).
+distinctcell(4, 4, 7, 4).
+distinctcell(4, 4, 7, 3).
+distinctcell(4, 4, 7, 2).
+distinctcell(4, 4, 7, 1).
+distinctcell(4, 4, 6, 8).
+distinctcell(4, 4, 6, 7).
+distinctcell(4, 4, 6, 6).
+distinctcell(4, 4, 6, 5).
+distinctcell(4, 4, 6, 4).
+distinctcell(4, 4, 6, 3).
+distinctcell(4, 4, 6, 2).
+distinctcell(4, 4, 6, 1).
+distinctcell(4, 4, 5, 8).
+distinctcell(4, 4, 5, 7).
+distinctcell(4, 4, 5, 6).
+distinctcell(4, 4, 5, 5).
+distinctcell(4, 4, 5, 4).
+distinctcell(4, 4, 5, 3).
+distinctcell(4, 4, 5, 2).
+distinctcell(4, 4, 5, 1).
+distinctcell(4, 4, 4, 8).
+distinctcell(4, 4, 4, 7).
+distinctcell(4, 4, 4, 6).
+distinctcell(4, 4, 4, 5).
+distinctcell(4, 4, 4, 3).
+distinctcell(4, 4, 4, 2).
+distinctcell(4, 4, 4, 1).
+distinctcell(4, 4, 3, 8).
+distinctcell(4, 4, 3, 7).
+distinctcell(4, 4, 3, 6).
+distinctcell(4, 4, 3, 5).
+distinctcell(4, 4, 3, 4).
+distinctcell(4, 4, 3, 3).
+distinctcell(4, 4, 3, 2).
+distinctcell(4, 4, 3, 1).
+distinctcell(4, 4, 2, 8).
+distinctcell(4, 4, 2, 7).
+distinctcell(4, 4, 2, 6).
+distinctcell(4, 4, 2, 5).
+distinctcell(4, 4, 2, 4).
+distinctcell(4, 4, 2, 3).
+distinctcell(4, 4, 2, 2).
+distinctcell(4, 4, 2, 1).
+distinctcell(4, 4, 1, 8).
+distinctcell(4, 4, 1, 7).
+distinctcell(4, 4, 1, 6).
+distinctcell(4, 4, 1, 5).
+distinctcell(4, 4, 1, 4).
+distinctcell(4, 4, 1, 3).
+distinctcell(4, 4, 1, 2).
+distinctcell(4, 4, 1, 1).
+distinctcell(4, 3, 8, 8).
+distinctcell(4, 3, 8, 7).
+distinctcell(4, 3, 8, 6).
+distinctcell(4, 3, 8, 5).
+distinctcell(4, 3, 8, 4).
+distinctcell(4, 3, 8, 3).
+distinctcell(4, 3, 8, 2).
+distinctcell(4, 3, 8, 1).
+distinctcell(4, 3, 7, 8).
+distinctcell(4, 3, 7, 7).
+distinctcell(4, 3, 7, 6).
+distinctcell(4, 3, 7, 5).
+distinctcell(4, 3, 7, 4).
+distinctcell(4, 3, 7, 3).
+distinctcell(4, 3, 7, 2).
+distinctcell(4, 3, 7, 1).
+distinctcell(4, 3, 6, 8).
+distinctcell(4, 3, 6, 7).
+distinctcell(4, 3, 6, 6).
+distinctcell(4, 3, 6, 5).
+distinctcell(4, 3, 6, 4).
+distinctcell(4, 3, 6, 3).
+distinctcell(4, 3, 6, 2).
+distinctcell(4, 3, 6, 1).
+distinctcell(4, 3, 5, 8).
+distinctcell(4, 3, 5, 7).
+distinctcell(4, 3, 5, 6).
+distinctcell(4, 3, 5, 5).
+distinctcell(4, 3, 5, 4).
+distinctcell(4, 3, 5, 3).
+distinctcell(4, 3, 5, 2).
+distinctcell(4, 3, 5, 1).
+distinctcell(4, 3, 4, 8).
+distinctcell(4, 3, 4, 7).
+distinctcell(4, 3, 4, 6).
+distinctcell(4, 3, 4, 5).
+distinctcell(4, 3, 4, 4).
+distinctcell(4, 3, 4, 2).
+distinctcell(4, 3, 4, 1).
+distinctcell(4, 3, 3, 8).
+distinctcell(4, 3, 3, 7).
+distinctcell(4, 3, 3, 6).
+distinctcell(4, 3, 3, 5).
+distinctcell(4, 3, 3, 4).
+distinctcell(4, 3, 3, 3).
+distinctcell(4, 3, 3, 2).
+distinctcell(4, 3, 3, 1).
+distinctcell(4, 3, 2, 8).
+distinctcell(4, 3, 2, 7).
+distinctcell(4, 3, 2, 6).
+distinctcell(4, 3, 2, 5).
+distinctcell(4, 3, 2, 4).
+distinctcell(4, 3, 2, 3).
+distinctcell(4, 3, 2, 2).
+distinctcell(4, 3, 2, 1).
+distinctcell(4, 3, 1, 8).
+distinctcell(4, 3, 1, 7).
+distinctcell(4, 3, 1, 6).
+distinctcell(4, 3, 1, 5).
+distinctcell(4, 3, 1, 4).
+distinctcell(4, 3, 1, 3).
+distinctcell(4, 3, 1, 2).
+distinctcell(4, 3, 1, 1).
+distinctcell(4, 2, 8, 8).
+distinctcell(4, 2, 8, 7).
+distinctcell(4, 2, 8, 6).
+distinctcell(4, 2, 8, 5).
+distinctcell(4, 2, 8, 4).
+distinctcell(4, 2, 8, 3).
+distinctcell(4, 2, 8, 2).
+distinctcell(4, 2, 8, 1).
+distinctcell(4, 2, 7, 8).
+distinctcell(4, 2, 7, 7).
+distinctcell(4, 2, 7, 6).
+distinctcell(4, 2, 7, 5).
+distinctcell(4, 2, 7, 4).
+distinctcell(4, 2, 7, 3).
+distinctcell(4, 2, 7, 2).
+distinctcell(4, 2, 7, 1).
+distinctcell(4, 2, 6, 8).
+distinctcell(4, 2, 6, 7).
+distinctcell(4, 2, 6, 6).
+distinctcell(4, 2, 6, 5).
+distinctcell(4, 2, 6, 4).
+distinctcell(4, 2, 6, 3).
+distinctcell(4, 2, 6, 2).
+distinctcell(4, 2, 6, 1).
+distinctcell(4, 2, 5, 8).
+distinctcell(4, 2, 5, 7).
+distinctcell(4, 2, 5, 6).
+distinctcell(4, 2, 5, 5).
+distinctcell(4, 2, 5, 4).
+distinctcell(4, 2, 5, 3).
+distinctcell(4, 2, 5, 2).
+distinctcell(4, 2, 5, 1).
+distinctcell(4, 2, 4, 8).
+distinctcell(4, 2, 4, 7).
+distinctcell(4, 2, 4, 6).
+distinctcell(4, 2, 4, 5).
+distinctcell(4, 2, 4, 4).
+distinctcell(4, 2, 4, 3).
+distinctcell(4, 2, 4, 1).
+distinctcell(4, 2, 3, 8).
+distinctcell(4, 2, 3, 7).
+distinctcell(4, 2, 3, 6).
+distinctcell(4, 2, 3, 5).
+distinctcell(4, 2, 3, 4).
+distinctcell(4, 2, 3, 3).
+distinctcell(4, 2, 3, 2).
+distinctcell(4, 2, 3, 1).
+distinctcell(4, 2, 2, 8).
+distinctcell(4, 2, 2, 7).
+distinctcell(4, 2, 2, 6).
+distinctcell(4, 2, 2, 5).
+distinctcell(4, 2, 2, 4).
+distinctcell(4, 2, 2, 3).
+distinctcell(4, 2, 2, 2).
+distinctcell(4, 2, 2, 1).
+distinctcell(4, 2, 1, 8).
+distinctcell(4, 2, 1, 7).
+distinctcell(4, 2, 1, 6).
+distinctcell(4, 2, 1, 5).
+distinctcell(4, 2, 1, 4).
+distinctcell(4, 2, 1, 3).
+distinctcell(4, 2, 1, 2).
+distinctcell(4, 2, 1, 1).
+distinctcell(4, 1, 8, 8).
+distinctcell(4, 1, 8, 7).
+distinctcell(4, 1, 8, 6).
+distinctcell(4, 1, 8, 5).
+distinctcell(4, 1, 8, 4).
+distinctcell(4, 1, 8, 3).
+distinctcell(4, 1, 8, 2).
+distinctcell(4, 1, 8, 1).
+distinctcell(4, 1, 7, 8).
+distinctcell(4, 1, 7, 7).
+distinctcell(4, 1, 7, 6).
+distinctcell(4, 1, 7, 5).
+distinctcell(4, 1, 7, 4).
+distinctcell(4, 1, 7, 3).
+distinctcell(4, 1, 7, 2).
+distinctcell(4, 1, 7, 1).
+distinctcell(4, 1, 6, 8).
+distinctcell(4, 1, 6, 7).
+distinctcell(4, 1, 6, 6).
+distinctcell(4, 1, 6, 5).
+distinctcell(4, 1, 6, 4).
+distinctcell(4, 1, 6, 3).
+distinctcell(4, 1, 6, 2).
+distinctcell(4, 1, 6, 1).
+distinctcell(4, 1, 5, 8).
+distinctcell(4, 1, 5, 7).
+distinctcell(4, 1, 5, 6).
+distinctcell(4, 1, 5, 5).
+distinctcell(4, 1, 5, 4).
+distinctcell(4, 1, 5, 3).
+distinctcell(4, 1, 5, 2).
+distinctcell(4, 1, 5, 1).
+distinctcell(4, 1, 4, 8).
+distinctcell(4, 1, 4, 7).
+distinctcell(4, 1, 4, 6).
+distinctcell(4, 1, 4, 5).
+distinctcell(4, 1, 4, 4).
+distinctcell(4, 1, 4, 3).
+distinctcell(4, 1, 4, 2).
+distinctcell(4, 1, 3, 8).
+distinctcell(4, 1, 3, 7).
+distinctcell(4, 1, 3, 6).
+distinctcell(4, 1, 3, 5).
+distinctcell(4, 1, 3, 4).
+distinctcell(4, 1, 3, 3).
+distinctcell(4, 1, 3, 2).
+distinctcell(4, 1, 3, 1).
+distinctcell(4, 1, 2, 8).
+distinctcell(4, 1, 2, 7).
+distinctcell(4, 1, 2, 6).
+distinctcell(4, 1, 2, 5).
+distinctcell(4, 1, 2, 4).
+distinctcell(4, 1, 2, 3).
+distinctcell(4, 1, 2, 2).
+distinctcell(4, 1, 2, 1).
+distinctcell(4, 1, 1, 8).
+distinctcell(4, 1, 1, 7).
+distinctcell(4, 1, 1, 6).
+distinctcell(4, 1, 1, 5).
+distinctcell(4, 1, 1, 4).
+distinctcell(4, 1, 1, 3).
+distinctcell(4, 1, 1, 2).
+distinctcell(4, 1, 1, 1).
+distinctcell(3, 8, 8, 8).
+distinctcell(3, 8, 8, 7).
+distinctcell(3, 8, 8, 6).
+distinctcell(3, 8, 8, 5).
+distinctcell(3, 8, 8, 4).
+distinctcell(3, 8, 8, 3).
+distinctcell(3, 8, 8, 2).
+distinctcell(3, 8, 8, 1).
+distinctcell(3, 8, 7, 8).
+distinctcell(3, 8, 7, 7).
+distinctcell(3, 8, 7, 6).
+distinctcell(3, 8, 7, 5).
+distinctcell(3, 8, 7, 4).
+distinctcell(3, 8, 7, 3).
+distinctcell(3, 8, 7, 2).
+distinctcell(3, 8, 7, 1).
+distinctcell(3, 8, 6, 8).
+distinctcell(3, 8, 6, 7).
+distinctcell(3, 8, 6, 6).
+distinctcell(3, 8, 6, 5).
+distinctcell(3, 8, 6, 4).
+distinctcell(3, 8, 6, 3).
+distinctcell(3, 8, 6, 2).
+distinctcell(3, 8, 6, 1).
+distinctcell(3, 8, 5, 8).
+distinctcell(3, 8, 5, 7).
+distinctcell(3, 8, 5, 6).
+distinctcell(3, 8, 5, 5).
+distinctcell(3, 8, 5, 4).
+distinctcell(3, 8, 5, 3).
+distinctcell(3, 8, 5, 2).
+distinctcell(3, 8, 5, 1).
+distinctcell(3, 8, 4, 8).
+distinctcell(3, 8, 4, 7).
+distinctcell(3, 8, 4, 6).
+distinctcell(3, 8, 4, 5).
+distinctcell(3, 8, 4, 4).
+distinctcell(3, 8, 4, 3).
+distinctcell(3, 8, 4, 2).
+distinctcell(3, 8, 4, 1).
+distinctcell(3, 8, 3, 7).
+distinctcell(3, 8, 3, 6).
+distinctcell(3, 8, 3, 5).
+distinctcell(3, 8, 3, 4).
+distinctcell(3, 8, 3, 3).
+distinctcell(3, 8, 3, 2).
+distinctcell(3, 8, 3, 1).
+distinctcell(3, 8, 2, 8).
+distinctcell(3, 8, 2, 7).
+distinctcell(3, 8, 2, 6).
+distinctcell(3, 8, 2, 5).
+distinctcell(3, 8, 2, 4).
+distinctcell(3, 8, 2, 3).
+distinctcell(3, 8, 2, 2).
+distinctcell(3, 8, 2, 1).
+distinctcell(3, 8, 1, 8).
+distinctcell(3, 8, 1, 7).
+distinctcell(3, 8, 1, 6).
+distinctcell(3, 8, 1, 5).
+distinctcell(3, 8, 1, 4).
+distinctcell(3, 8, 1, 3).
+distinctcell(3, 8, 1, 2).
+distinctcell(3, 8, 1, 1).
+distinctcell(3, 7, 8, 8).
+distinctcell(3, 7, 8, 7).
+distinctcell(3, 7, 8, 6).
+distinctcell(3, 7, 8, 5).
+distinctcell(3, 7, 8, 4).
+distinctcell(3, 7, 8, 3).
+distinctcell(3, 7, 8, 2).
+distinctcell(3, 7, 8, 1).
+distinctcell(3, 7, 7, 8).
+distinctcell(3, 7, 7, 7).
+distinctcell(3, 7, 7, 6).
+distinctcell(3, 7, 7, 5).
+distinctcell(3, 7, 7, 4).
+distinctcell(3, 7, 7, 3).
+distinctcell(3, 7, 7, 2).
+distinctcell(3, 7, 7, 1).
+distinctcell(3, 7, 6, 8).
+distinctcell(3, 7, 6, 7).
+distinctcell(3, 7, 6, 6).
+distinctcell(3, 7, 6, 5).
+distinctcell(3, 7, 6, 4).
+distinctcell(3, 7, 6, 3).
+distinctcell(3, 7, 6, 2).
+distinctcell(3, 7, 6, 1).
+distinctcell(3, 7, 5, 8).
+distinctcell(3, 7, 5, 7).
+distinctcell(3, 7, 5, 6).
+distinctcell(3, 7, 5, 5).
+distinctcell(3, 7, 5, 4).
+distinctcell(3, 7, 5, 3).
+distinctcell(3, 7, 5, 2).
+distinctcell(3, 7, 5, 1).
+distinctcell(3, 7, 4, 8).
+distinctcell(3, 7, 4, 7).
+distinctcell(3, 7, 4, 6).
+distinctcell(3, 7, 4, 5).
+distinctcell(3, 7, 4, 4).
+distinctcell(3, 7, 4, 3).
+distinctcell(3, 7, 4, 2).
+distinctcell(3, 7, 4, 1).
+distinctcell(3, 7, 3, 8).
+distinctcell(3, 7, 3, 6).
+distinctcell(3, 7, 3, 5).
+distinctcell(3, 7, 3, 4).
+distinctcell(3, 7, 3, 3).
+distinctcell(3, 7, 3, 2).
+distinctcell(3, 7, 3, 1).
+distinctcell(3, 7, 2, 8).
+distinctcell(3, 7, 2, 7).
+distinctcell(3, 7, 2, 6).
+distinctcell(3, 7, 2, 5).
+distinctcell(3, 7, 2, 4).
+distinctcell(3, 7, 2, 3).
+distinctcell(3, 7, 2, 2).
+distinctcell(3, 7, 2, 1).
+distinctcell(3, 7, 1, 8).
+distinctcell(3, 7, 1, 7).
+distinctcell(3, 7, 1, 6).
+distinctcell(3, 7, 1, 5).
+distinctcell(3, 7, 1, 4).
+distinctcell(3, 7, 1, 3).
+distinctcell(3, 7, 1, 2).
+distinctcell(3, 7, 1, 1).
+distinctcell(3, 6, 8, 8).
+distinctcell(3, 6, 8, 7).
+distinctcell(3, 6, 8, 6).
+distinctcell(3, 6, 8, 5).
+distinctcell(3, 6, 8, 4).
+distinctcell(3, 6, 8, 3).
+distinctcell(3, 6, 8, 2).
+distinctcell(3, 6, 8, 1).
+distinctcell(3, 6, 7, 8).
+distinctcell(3, 6, 7, 7).
+distinctcell(3, 6, 7, 6).
+distinctcell(3, 6, 7, 5).
+distinctcell(3, 6, 7, 4).
+distinctcell(3, 6, 7, 3).
+distinctcell(3, 6, 7, 2).
+distinctcell(3, 6, 7, 1).
+distinctcell(3, 6, 6, 8).
+distinctcell(3, 6, 6, 7).
+distinctcell(3, 6, 6, 6).
+distinctcell(3, 6, 6, 5).
+distinctcell(3, 6, 6, 4).
+distinctcell(3, 6, 6, 3).
+distinctcell(3, 6, 6, 2).
+distinctcell(3, 6, 6, 1).
+distinctcell(3, 6, 5, 8).
+distinctcell(3, 6, 5, 7).
+distinctcell(3, 6, 5, 6).
+distinctcell(3, 6, 5, 5).
+distinctcell(3, 6, 5, 4).
+distinctcell(3, 6, 5, 3).
+distinctcell(3, 6, 5, 2).
+distinctcell(3, 6, 5, 1).
+distinctcell(3, 6, 4, 8).
+distinctcell(3, 6, 4, 7).
+distinctcell(3, 6, 4, 6).
+distinctcell(3, 6, 4, 5).
+distinctcell(3, 6, 4, 4).
+distinctcell(3, 6, 4, 3).
+distinctcell(3, 6, 4, 2).
+distinctcell(3, 6, 4, 1).
+distinctcell(3, 6, 3, 8).
+distinctcell(3, 6, 3, 7).
+distinctcell(3, 6, 3, 5).
+distinctcell(3, 6, 3, 4).
+distinctcell(3, 6, 3, 3).
+distinctcell(3, 6, 3, 2).
+distinctcell(3, 6, 3, 1).
+distinctcell(3, 6, 2, 8).
+distinctcell(3, 6, 2, 7).
+distinctcell(3, 6, 2, 6).
+distinctcell(3, 6, 2, 5).
+distinctcell(3, 6, 2, 4).
+distinctcell(3, 6, 2, 3).
+distinctcell(3, 6, 2, 2).
+distinctcell(3, 6, 2, 1).
+distinctcell(3, 6, 1, 8).
+distinctcell(3, 6, 1, 7).
+distinctcell(3, 6, 1, 6).
+distinctcell(3, 6, 1, 5).
+distinctcell(3, 6, 1, 4).
+distinctcell(3, 6, 1, 3).
+distinctcell(3, 6, 1, 2).
+distinctcell(3, 6, 1, 1).
+distinctcell(3, 5, 8, 8).
+distinctcell(3, 5, 8, 7).
+distinctcell(3, 5, 8, 6).
+distinctcell(3, 5, 8, 5).
+distinctcell(3, 5, 8, 4).
+distinctcell(3, 5, 8, 3).
+distinctcell(3, 5, 8, 2).
+distinctcell(3, 5, 8, 1).
+distinctcell(3, 5, 7, 8).
+distinctcell(3, 5, 7, 7).
+distinctcell(3, 5, 7, 6).
+distinctcell(3, 5, 7, 5).
+distinctcell(3, 5, 7, 4).
+distinctcell(3, 5, 7, 3).
+distinctcell(3, 5, 7, 2).
+distinctcell(3, 5, 7, 1).
+distinctcell(3, 5, 6, 8).
+distinctcell(3, 5, 6, 7).
+distinctcell(3, 5, 6, 6).
+distinctcell(3, 5, 6, 5).
+distinctcell(3, 5, 6, 4).
+distinctcell(3, 5, 6, 3).
+distinctcell(3, 5, 6, 2).
+distinctcell(3, 5, 6, 1).
+distinctcell(3, 5, 5, 8).
+distinctcell(3, 5, 5, 7).
+distinctcell(3, 5, 5, 6).
+distinctcell(3, 5, 5, 5).
+distinctcell(3, 5, 5, 4).
+distinctcell(3, 5, 5, 3).
+distinctcell(3, 5, 5, 2).
+distinctcell(3, 5, 5, 1).
+distinctcell(3, 5, 4, 8).
+distinctcell(3, 5, 4, 7).
+distinctcell(3, 5, 4, 6).
+distinctcell(3, 5, 4, 5).
+distinctcell(3, 5, 4, 4).
+distinctcell(3, 5, 4, 3).
+distinctcell(3, 5, 4, 2).
+distinctcell(3, 5, 4, 1).
+distinctcell(3, 5, 3, 8).
+distinctcell(3, 5, 3, 7).
+distinctcell(3, 5, 3, 6).
+distinctcell(3, 5, 3, 4).
+distinctcell(3, 5, 3, 3).
+distinctcell(3, 5, 3, 2).
+distinctcell(3, 5, 3, 1).
+distinctcell(3, 5, 2, 8).
+distinctcell(3, 5, 2, 7).
+distinctcell(3, 5, 2, 6).
+distinctcell(3, 5, 2, 5).
+distinctcell(3, 5, 2, 4).
+distinctcell(3, 5, 2, 3).
+distinctcell(3, 5, 2, 2).
+distinctcell(3, 5, 2, 1).
+distinctcell(3, 5, 1, 8).
+distinctcell(3, 5, 1, 7).
+distinctcell(3, 5, 1, 6).
+distinctcell(3, 5, 1, 5).
+distinctcell(3, 5, 1, 4).
+distinctcell(3, 5, 1, 3).
+distinctcell(3, 5, 1, 2).
+distinctcell(3, 5, 1, 1).
+distinctcell(3, 4, 8, 8).
+distinctcell(3, 4, 8, 7).
+distinctcell(3, 4, 8, 6).
+distinctcell(3, 4, 8, 5).
+distinctcell(3, 4, 8, 4).
+distinctcell(3, 4, 8, 3).
+distinctcell(3, 4, 8, 2).
+distinctcell(3, 4, 8, 1).
+distinctcell(3, 4, 7, 8).
+distinctcell(3, 4, 7, 7).
+distinctcell(3, 4, 7, 6).
+distinctcell(3, 4, 7, 5).
+distinctcell(3, 4, 7, 4).
+distinctcell(3, 4, 7, 3).
+distinctcell(3, 4, 7, 2).
+distinctcell(3, 4, 7, 1).
+distinctcell(3, 4, 6, 8).
+distinctcell(3, 4, 6, 7).
+distinctcell(3, 4, 6, 6).
+distinctcell(3, 4, 6, 5).
+distinctcell(3, 4, 6, 4).
+distinctcell(3, 4, 6, 3).
+distinctcell(3, 4, 6, 2).
+distinctcell(3, 4, 6, 1).
+distinctcell(3, 4, 5, 8).
+distinctcell(3, 4, 5, 7).
+distinctcell(3, 4, 5, 6).
+distinctcell(3, 4, 5, 5).
+distinctcell(3, 4, 5, 4).
+distinctcell(3, 4, 5, 3).
+distinctcell(3, 4, 5, 2).
+distinctcell(3, 4, 5, 1).
+distinctcell(3, 4, 4, 8).
+distinctcell(3, 4, 4, 7).
+distinctcell(3, 4, 4, 6).
+distinctcell(3, 4, 4, 5).
+distinctcell(3, 4, 4, 4).
+distinctcell(3, 4, 4, 3).
+distinctcell(3, 4, 4, 2).
+distinctcell(3, 4, 4, 1).
+distinctcell(3, 4, 3, 8).
+distinctcell(3, 4, 3, 7).
+distinctcell(3, 4, 3, 6).
+distinctcell(3, 4, 3, 5).
+distinctcell(3, 4, 3, 3).
+distinctcell(3, 4, 3, 2).
+distinctcell(3, 4, 3, 1).
+distinctcell(3, 4, 2, 8).
+distinctcell(3, 4, 2, 7).
+distinctcell(3, 4, 2, 6).
+distinctcell(3, 4, 2, 5).
+distinctcell(3, 4, 2, 4).
+distinctcell(3, 4, 2, 3).
+distinctcell(3, 4, 2, 2).
+distinctcell(3, 4, 2, 1).
+distinctcell(3, 4, 1, 8).
+distinctcell(3, 4, 1, 7).
+distinctcell(3, 4, 1, 6).
+distinctcell(3, 4, 1, 5).
+distinctcell(3, 4, 1, 4).
+distinctcell(3, 4, 1, 3).
+distinctcell(3, 4, 1, 2).
+distinctcell(3, 4, 1, 1).
+distinctcell(3, 3, 8, 8).
+distinctcell(3, 3, 8, 7).
+distinctcell(3, 3, 8, 6).
+distinctcell(3, 3, 8, 5).
+distinctcell(3, 3, 8, 4).
+distinctcell(3, 3, 8, 3).
+distinctcell(3, 3, 8, 2).
+distinctcell(3, 3, 8, 1).
+distinctcell(3, 3, 7, 8).
+distinctcell(3, 3, 7, 7).
+distinctcell(3, 3, 7, 6).
+distinctcell(3, 3, 7, 5).
+distinctcell(3, 3, 7, 4).
+distinctcell(3, 3, 7, 3).
+distinctcell(3, 3, 7, 2).
+distinctcell(3, 3, 7, 1).
+distinctcell(3, 3, 6, 8).
+distinctcell(3, 3, 6, 7).
+distinctcell(3, 3, 6, 6).
+distinctcell(3, 3, 6, 5).
+distinctcell(3, 3, 6, 4).
+distinctcell(3, 3, 6, 3).
+distinctcell(3, 3, 6, 2).
+distinctcell(3, 3, 6, 1).
+distinctcell(3, 3, 5, 8).
+distinctcell(3, 3, 5, 7).
+distinctcell(3, 3, 5, 6).
+distinctcell(3, 3, 5, 5).
+distinctcell(3, 3, 5, 4).
+distinctcell(3, 3, 5, 3).
+distinctcell(3, 3, 5, 2).
+distinctcell(3, 3, 5, 1).
+distinctcell(3, 3, 4, 8).
+distinctcell(3, 3, 4, 7).
+distinctcell(3, 3, 4, 6).
+distinctcell(3, 3, 4, 5).
+distinctcell(3, 3, 4, 4).
+distinctcell(3, 3, 4, 3).
+distinctcell(3, 3, 4, 2).
+distinctcell(3, 3, 4, 1).
+distinctcell(3, 3, 3, 8).
+distinctcell(3, 3, 3, 7).
+distinctcell(3, 3, 3, 6).
+distinctcell(3, 3, 3, 5).
+distinctcell(3, 3, 3, 4).
+distinctcell(3, 3, 3, 2).
+distinctcell(3, 3, 3, 1).
+distinctcell(3, 3, 2, 8).
+distinctcell(3, 3, 2, 7).
+distinctcell(3, 3, 2, 6).
+distinctcell(3, 3, 2, 5).
+distinctcell(3, 3, 2, 4).
+distinctcell(3, 3, 2, 3).
+distinctcell(3, 3, 2, 2).
+distinctcell(3, 3, 2, 1).
+distinctcell(3, 3, 1, 8).
+distinctcell(3, 3, 1, 7).
+distinctcell(3, 3, 1, 6).
+distinctcell(3, 3, 1, 5).
+distinctcell(3, 3, 1, 4).
+distinctcell(3, 3, 1, 3).
+distinctcell(3, 3, 1, 2).
+distinctcell(3, 3, 1, 1).
+distinctcell(3, 2, 8, 8).
+distinctcell(3, 2, 8, 7).
+distinctcell(3, 2, 8, 6).
+distinctcell(3, 2, 8, 5).
+distinctcell(3, 2, 8, 4).
+distinctcell(3, 2, 8, 3).
+distinctcell(3, 2, 8, 2).
+distinctcell(3, 2, 8, 1).
+distinctcell(3, 2, 7, 8).
+distinctcell(3, 2, 7, 7).
+distinctcell(3, 2, 7, 6).
+distinctcell(3, 2, 7, 5).
+distinctcell(3, 2, 7, 4).
+distinctcell(3, 2, 7, 3).
+distinctcell(3, 2, 7, 2).
+distinctcell(3, 2, 7, 1).
+distinctcell(3, 2, 6, 8).
+distinctcell(3, 2, 6, 7).
+distinctcell(3, 2, 6, 6).
+distinctcell(3, 2, 6, 5).
+distinctcell(3, 2, 6, 4).
+distinctcell(3, 2, 6, 3).
+distinctcell(3, 2, 6, 2).
+distinctcell(3, 2, 6, 1).
+distinctcell(3, 2, 5, 8).
+distinctcell(3, 2, 5, 7).
+distinctcell(3, 2, 5, 6).
+distinctcell(3, 2, 5, 5).
+distinctcell(3, 2, 5, 4).
+distinctcell(3, 2, 5, 3).
+distinctcell(3, 2, 5, 2).
+distinctcell(3, 2, 5, 1).
+distinctcell(3, 2, 4, 8).
+distinctcell(3, 2, 4, 7).
+distinctcell(3, 2, 4, 6).
+distinctcell(3, 2, 4, 5).
+distinctcell(3, 2, 4, 4).
+distinctcell(3, 2, 4, 3).
+distinctcell(3, 2, 4, 2).
+distinctcell(3, 2, 4, 1).
+distinctcell(3, 2, 3, 8).
+distinctcell(3, 2, 3, 7).
+distinctcell(3, 2, 3, 6).
+distinctcell(3, 2, 3, 5).
+distinctcell(3, 2, 3, 4).
+distinctcell(3, 2, 3, 3).
+distinctcell(3, 2, 3, 1).
+distinctcell(3, 2, 2, 8).
+distinctcell(3, 2, 2, 7).
+distinctcell(3, 2, 2, 6).
+distinctcell(3, 2, 2, 5).
+distinctcell(3, 2, 2, 4).
+distinctcell(3, 2, 2, 3).
+distinctcell(3, 2, 2, 2).
+distinctcell(3, 2, 2, 1).
+distinctcell(3, 2, 1, 8).
+distinctcell(3, 2, 1, 7).
+distinctcell(3, 2, 1, 6).
+distinctcell(3, 2, 1, 5).
+distinctcell(3, 2, 1, 4).
+distinctcell(3, 2, 1, 3).
+distinctcell(3, 2, 1, 2).
+distinctcell(3, 2, 1, 1).
+distinctcell(3, 1, 8, 8).
+distinctcell(3, 1, 8, 7).
+distinctcell(3, 1, 8, 6).
+distinctcell(3, 1, 8, 5).
+distinctcell(3, 1, 8, 4).
+distinctcell(3, 1, 8, 3).
+distinctcell(3, 1, 8, 2).
+distinctcell(3, 1, 8, 1).
+distinctcell(3, 1, 7, 8).
+distinctcell(3, 1, 7, 7).
+distinctcell(3, 1, 7, 6).
+distinctcell(3, 1, 7, 5).
+distinctcell(3, 1, 7, 4).
+distinctcell(3, 1, 7, 3).
+distinctcell(3, 1, 7, 2).
+distinctcell(3, 1, 7, 1).
+distinctcell(3, 1, 6, 8).
+distinctcell(3, 1, 6, 7).
+distinctcell(3, 1, 6, 6).
+distinctcell(3, 1, 6, 5).
+distinctcell(3, 1, 6, 4).
+distinctcell(3, 1, 6, 3).
+distinctcell(3, 1, 6, 2).
+distinctcell(3, 1, 6, 1).
+distinctcell(3, 1, 5, 8).
+distinctcell(3, 1, 5, 7).
+distinctcell(3, 1, 5, 6).
+distinctcell(3, 1, 5, 5).
+distinctcell(3, 1, 5, 4).
+distinctcell(3, 1, 5, 3).
+distinctcell(3, 1, 5, 2).
+distinctcell(3, 1, 5, 1).
+distinctcell(3, 1, 4, 8).
+distinctcell(3, 1, 4, 7).
+distinctcell(3, 1, 4, 6).
+distinctcell(3, 1, 4, 5).
+distinctcell(3, 1, 4, 4).
+distinctcell(3, 1, 4, 3).
+distinctcell(3, 1, 4, 2).
+distinctcell(3, 1, 4, 1).
+distinctcell(3, 1, 3, 8).
+distinctcell(3, 1, 3, 7).
+distinctcell(3, 1, 3, 6).
+distinctcell(3, 1, 3, 5).
+distinctcell(3, 1, 3, 4).
+distinctcell(3, 1, 3, 3).
+distinctcell(3, 1, 3, 2).
+distinctcell(3, 1, 2, 8).
+distinctcell(3, 1, 2, 7).
+distinctcell(3, 1, 2, 6).
+distinctcell(3, 1, 2, 5).
+distinctcell(3, 1, 2, 4).
+distinctcell(3, 1, 2, 3).
+distinctcell(3, 1, 2, 2).
+distinctcell(3, 1, 2, 1).
+distinctcell(3, 1, 1, 8).
+distinctcell(3, 1, 1, 7).
+distinctcell(3, 1, 1, 6).
+distinctcell(3, 1, 1, 5).
+distinctcell(3, 1, 1, 4).
+distinctcell(3, 1, 1, 3).
+distinctcell(3, 1, 1, 2).
+distinctcell(3, 1, 1, 1).
+distinctcell(2, 8, 8, 8).
+distinctcell(2, 8, 8, 7).
+distinctcell(2, 8, 8, 6).
+distinctcell(2, 8, 8, 5).
+distinctcell(2, 8, 8, 4).
+distinctcell(2, 8, 8, 3).
+distinctcell(2, 8, 8, 2).
+distinctcell(2, 8, 8, 1).
+distinctcell(2, 8, 7, 8).
+distinctcell(2, 8, 7, 7).
+distinctcell(2, 8, 7, 6).
+distinctcell(2, 8, 7, 5).
+distinctcell(2, 8, 7, 4).
+distinctcell(2, 8, 7, 3).
+distinctcell(2, 8, 7, 2).
+distinctcell(2, 8, 7, 1).
+distinctcell(2, 8, 6, 8).
+distinctcell(2, 8, 6, 7).
+distinctcell(2, 8, 6, 6).
+distinctcell(2, 8, 6, 5).
+distinctcell(2, 8, 6, 4).
+distinctcell(2, 8, 6, 3).
+distinctcell(2, 8, 6, 2).
+distinctcell(2, 8, 6, 1).
+distinctcell(2, 8, 5, 8).
+distinctcell(2, 8, 5, 7).
+distinctcell(2, 8, 5, 6).
+distinctcell(2, 8, 5, 5).
+distinctcell(2, 8, 5, 4).
+distinctcell(2, 8, 5, 3).
+distinctcell(2, 8, 5, 2).
+distinctcell(2, 8, 5, 1).
+distinctcell(2, 8, 4, 8).
+distinctcell(2, 8, 4, 7).
+distinctcell(2, 8, 4, 6).
+distinctcell(2, 8, 4, 5).
+distinctcell(2, 8, 4, 4).
+distinctcell(2, 8, 4, 3).
+distinctcell(2, 8, 4, 2).
+distinctcell(2, 8, 4, 1).
+distinctcell(2, 8, 3, 8).
+distinctcell(2, 8, 3, 7).
+distinctcell(2, 8, 3, 6).
+distinctcell(2, 8, 3, 5).
+distinctcell(2, 8, 3, 4).
+distinctcell(2, 8, 3, 3).
+distinctcell(2, 8, 3, 2).
+distinctcell(2, 8, 3, 1).
+distinctcell(2, 8, 2, 7).
+distinctcell(2, 8, 2, 6).
+distinctcell(2, 8, 2, 5).
+distinctcell(2, 8, 2, 4).
+distinctcell(2, 8, 2, 3).
+distinctcell(2, 8, 2, 2).
+distinctcell(2, 8, 2, 1).
+distinctcell(2, 8, 1, 8).
+distinctcell(2, 8, 1, 7).
+distinctcell(2, 8, 1, 6).
+distinctcell(2, 8, 1, 5).
+distinctcell(2, 8, 1, 4).
+distinctcell(2, 8, 1, 3).
+distinctcell(2, 8, 1, 2).
+distinctcell(2, 8, 1, 1).
+distinctcell(2, 7, 8, 8).
+distinctcell(2, 7, 8, 7).
+distinctcell(2, 7, 8, 6).
+distinctcell(2, 7, 8, 5).
+distinctcell(2, 7, 8, 4).
+distinctcell(2, 7, 8, 3).
+distinctcell(2, 7, 8, 2).
+distinctcell(2, 7, 8, 1).
+distinctcell(2, 7, 7, 8).
+distinctcell(2, 7, 7, 7).
+distinctcell(2, 7, 7, 6).
+distinctcell(2, 7, 7, 5).
+distinctcell(2, 7, 7, 4).
+distinctcell(2, 7, 7, 3).
+distinctcell(2, 7, 7, 2).
+distinctcell(2, 7, 7, 1).
+distinctcell(2, 7, 6, 8).
+distinctcell(2, 7, 6, 7).
+distinctcell(2, 7, 6, 6).
+distinctcell(2, 7, 6, 5).
+distinctcell(2, 7, 6, 4).
+distinctcell(2, 7, 6, 3).
+distinctcell(2, 7, 6, 2).
+distinctcell(2, 7, 6, 1).
+distinctcell(2, 7, 5, 8).
+distinctcell(2, 7, 5, 7).
+distinctcell(2, 7, 5, 6).
+distinctcell(2, 7, 5, 5).
+distinctcell(2, 7, 5, 4).
+distinctcell(2, 7, 5, 3).
+distinctcell(2, 7, 5, 2).
+distinctcell(2, 7, 5, 1).
+distinctcell(2, 7, 4, 8).
+distinctcell(2, 7, 4, 7).
+distinctcell(2, 7, 4, 6).
+distinctcell(2, 7, 4, 5).
+distinctcell(2, 7, 4, 4).
+distinctcell(2, 7, 4, 3).
+distinctcell(2, 7, 4, 2).
+distinctcell(2, 7, 4, 1).
+distinctcell(2, 7, 3, 8).
+distinctcell(2, 7, 3, 7).
+distinctcell(2, 7, 3, 6).
+distinctcell(2, 7, 3, 5).
+distinctcell(2, 7, 3, 4).
+distinctcell(2, 7, 3, 3).
+distinctcell(2, 7, 3, 2).
+distinctcell(2, 7, 3, 1).
+distinctcell(2, 7, 2, 8).
+distinctcell(2, 7, 2, 6).
+distinctcell(2, 7, 2, 5).
+distinctcell(2, 7, 2, 4).
+distinctcell(2, 7, 2, 3).
+distinctcell(2, 7, 2, 2).
+distinctcell(2, 7, 2, 1).
+distinctcell(2, 7, 1, 8).
+distinctcell(2, 7, 1, 7).
+distinctcell(2, 7, 1, 6).
+distinctcell(2, 7, 1, 5).
+distinctcell(2, 7, 1, 4).
+distinctcell(2, 7, 1, 3).
+distinctcell(2, 7, 1, 2).
+distinctcell(2, 7, 1, 1).
+distinctcell(2, 6, 8, 8).
+distinctcell(2, 6, 8, 7).
+distinctcell(2, 6, 8, 6).
+distinctcell(2, 6, 8, 5).
+distinctcell(2, 6, 8, 4).
+distinctcell(2, 6, 8, 3).
+distinctcell(2, 6, 8, 2).
+distinctcell(2, 6, 8, 1).
+distinctcell(2, 6, 7, 8).
+distinctcell(2, 6, 7, 7).
+distinctcell(2, 6, 7, 6).
+distinctcell(2, 6, 7, 5).
+distinctcell(2, 6, 7, 4).
+distinctcell(2, 6, 7, 3).
+distinctcell(2, 6, 7, 2).
+distinctcell(2, 6, 7, 1).
+distinctcell(2, 6, 6, 8).
+distinctcell(2, 6, 6, 7).
+distinctcell(2, 6, 6, 6).
+distinctcell(2, 6, 6, 5).
+distinctcell(2, 6, 6, 4).
+distinctcell(2, 6, 6, 3).
+distinctcell(2, 6, 6, 2).
+distinctcell(2, 6, 6, 1).
+distinctcell(2, 6, 5, 8).
+distinctcell(2, 6, 5, 7).
+distinctcell(2, 6, 5, 6).
+distinctcell(2, 6, 5, 5).
+distinctcell(2, 6, 5, 4).
+distinctcell(2, 6, 5, 3).
+distinctcell(2, 6, 5, 2).
+distinctcell(2, 6, 5, 1).
+distinctcell(2, 6, 4, 8).
+distinctcell(2, 6, 4, 7).
+distinctcell(2, 6, 4, 6).
+distinctcell(2, 6, 4, 5).
+distinctcell(2, 6, 4, 4).
+distinctcell(2, 6, 4, 3).
+distinctcell(2, 6, 4, 2).
+distinctcell(2, 6, 4, 1).
+distinctcell(2, 6, 3, 8).
+distinctcell(2, 6, 3, 7).
+distinctcell(2, 6, 3, 6).
+distinctcell(2, 6, 3, 5).
+distinctcell(2, 6, 3, 4).
+distinctcell(2, 6, 3, 3).
+distinctcell(2, 6, 3, 2).
+distinctcell(2, 6, 3, 1).
+distinctcell(2, 6, 2, 8).
+distinctcell(2, 6, 2, 7).
+distinctcell(2, 6, 2, 5).
+distinctcell(2, 6, 2, 4).
+distinctcell(2, 6, 2, 3).
+distinctcell(2, 6, 2, 2).
+distinctcell(2, 6, 2, 1).
+distinctcell(2, 6, 1, 8).
+distinctcell(2, 6, 1, 7).
+distinctcell(2, 6, 1, 6).
+distinctcell(2, 6, 1, 5).
+distinctcell(2, 6, 1, 4).
+distinctcell(2, 6, 1, 3).
+distinctcell(2, 6, 1, 2).
+distinctcell(2, 6, 1, 1).
+distinctcell(2, 5, 8, 8).
+distinctcell(2, 5, 8, 7).
+distinctcell(2, 5, 8, 6).
+distinctcell(2, 5, 8, 5).
+distinctcell(2, 5, 8, 4).
+distinctcell(2, 5, 8, 3).
+distinctcell(2, 5, 8, 2).
+distinctcell(2, 5, 8, 1).
+distinctcell(2, 5, 7, 8).
+distinctcell(2, 5, 7, 7).
+distinctcell(2, 5, 7, 6).
+distinctcell(2, 5, 7, 5).
+distinctcell(2, 5, 7, 4).
+distinctcell(2, 5, 7, 3).
+distinctcell(2, 5, 7, 2).
+distinctcell(2, 5, 7, 1).
+distinctcell(2, 5, 6, 8).
+distinctcell(2, 5, 6, 7).
+distinctcell(2, 5, 6, 6).
+distinctcell(2, 5, 6, 5).
+distinctcell(2, 5, 6, 4).
+distinctcell(2, 5, 6, 3).
+distinctcell(2, 5, 6, 2).
+distinctcell(2, 5, 6, 1).
+distinctcell(2, 5, 5, 8).
+distinctcell(2, 5, 5, 7).
+distinctcell(2, 5, 5, 6).
+distinctcell(2, 5, 5, 5).
+distinctcell(2, 5, 5, 4).
+distinctcell(2, 5, 5, 3).
+distinctcell(2, 5, 5, 2).
+distinctcell(2, 5, 5, 1).
+distinctcell(2, 5, 4, 8).
+distinctcell(2, 5, 4, 7).
+distinctcell(2, 5, 4, 6).
+distinctcell(2, 5, 4, 5).
+distinctcell(2, 5, 4, 4).
+distinctcell(2, 5, 4, 3).
+distinctcell(2, 5, 4, 2).
+distinctcell(2, 5, 4, 1).
+distinctcell(2, 5, 3, 8).
+distinctcell(2, 5, 3, 7).
+distinctcell(2, 5, 3, 6).
+distinctcell(2, 5, 3, 5).
+distinctcell(2, 5, 3, 4).
+distinctcell(2, 5, 3, 3).
+distinctcell(2, 5, 3, 2).
+distinctcell(2, 5, 3, 1).
+distinctcell(2, 5, 2, 8).
+distinctcell(2, 5, 2, 7).
+distinctcell(2, 5, 2, 6).
+distinctcell(2, 5, 2, 4).
+distinctcell(2, 5, 2, 3).
+distinctcell(2, 5, 2, 2).
+distinctcell(2, 5, 2, 1).
+distinctcell(2, 5, 1, 8).
+distinctcell(2, 5, 1, 7).
+distinctcell(2, 5, 1, 6).
+distinctcell(2, 5, 1, 5).
+distinctcell(2, 5, 1, 4).
+distinctcell(2, 5, 1, 3).
+distinctcell(2, 5, 1, 2).
+distinctcell(2, 5, 1, 1).
+distinctcell(2, 4, 8, 8).
+distinctcell(2, 4, 8, 7).
+distinctcell(2, 4, 8, 6).
+distinctcell(2, 4, 8, 5).
+distinctcell(2, 4, 8, 4).
+distinctcell(2, 4, 8, 3).
+distinctcell(2, 4, 8, 2).
+distinctcell(2, 4, 8, 1).
+distinctcell(2, 4, 7, 8).
+distinctcell(2, 4, 7, 7).
+distinctcell(2, 4, 7, 6).
+distinctcell(2, 4, 7, 5).
+distinctcell(2, 4, 7, 4).
+distinctcell(2, 4, 7, 3).
+distinctcell(2, 4, 7, 2).
+distinctcell(2, 4, 7, 1).
+distinctcell(2, 4, 6, 8).
+distinctcell(2, 4, 6, 7).
+distinctcell(2, 4, 6, 6).
+distinctcell(2, 4, 6, 5).
+distinctcell(2, 4, 6, 4).
+distinctcell(2, 4, 6, 3).
+distinctcell(2, 4, 6, 2).
+distinctcell(2, 4, 6, 1).
+distinctcell(2, 4, 5, 8).
+distinctcell(2, 4, 5, 7).
+distinctcell(2, 4, 5, 6).
+distinctcell(2, 4, 5, 5).
+distinctcell(2, 4, 5, 4).
+distinctcell(2, 4, 5, 3).
+distinctcell(2, 4, 5, 2).
+distinctcell(2, 4, 5, 1).
+distinctcell(2, 4, 4, 8).
+distinctcell(2, 4, 4, 7).
+distinctcell(2, 4, 4, 6).
+distinctcell(2, 4, 4, 5).
+distinctcell(2, 4, 4, 4).
+distinctcell(2, 4, 4, 3).
+distinctcell(2, 4, 4, 2).
+distinctcell(2, 4, 4, 1).
+distinctcell(2, 4, 3, 8).
+distinctcell(2, 4, 3, 7).
+distinctcell(2, 4, 3, 6).
+distinctcell(2, 4, 3, 5).
+distinctcell(2, 4, 3, 4).
+distinctcell(2, 4, 3, 3).
+distinctcell(2, 4, 3, 2).
+distinctcell(2, 4, 3, 1).
+distinctcell(2, 4, 2, 8).
+distinctcell(2, 4, 2, 7).
+distinctcell(2, 4, 2, 6).
+distinctcell(2, 4, 2, 5).
+distinctcell(2, 4, 2, 3).
+distinctcell(2, 4, 2, 2).
+distinctcell(2, 4, 2, 1).
+distinctcell(2, 4, 1, 8).
+distinctcell(2, 4, 1, 7).
+distinctcell(2, 4, 1, 6).
+distinctcell(2, 4, 1, 5).
+distinctcell(2, 4, 1, 4).
+distinctcell(2, 4, 1, 3).
+distinctcell(2, 4, 1, 2).
+distinctcell(2, 4, 1, 1).
+distinctcell(2, 3, 8, 8).
+distinctcell(2, 3, 8, 7).
+distinctcell(2, 3, 8, 6).
+distinctcell(2, 3, 8, 5).
+distinctcell(2, 3, 8, 4).
+distinctcell(2, 3, 8, 3).
+distinctcell(2, 3, 8, 2).
+distinctcell(2, 3, 8, 1).
+distinctcell(2, 3, 7, 8).
+distinctcell(2, 3, 7, 7).
+distinctcell(2, 3, 7, 6).
+distinctcell(2, 3, 7, 5).
+distinctcell(2, 3, 7, 4).
+distinctcell(2, 3, 7, 3).
+distinctcell(2, 3, 7, 2).
+distinctcell(2, 3, 7, 1).
+distinctcell(2, 3, 6, 8).
+distinctcell(2, 3, 6, 7).
+distinctcell(2, 3, 6, 6).
+distinctcell(2, 3, 6, 5).
+distinctcell(2, 3, 6, 4).
+distinctcell(2, 3, 6, 3).
+distinctcell(2, 3, 6, 2).
+distinctcell(2, 3, 6, 1).
+distinctcell(2, 3, 5, 8).
+distinctcell(2, 3, 5, 7).
+distinctcell(2, 3, 5, 6).
+distinctcell(2, 3, 5, 5).
+distinctcell(2, 3, 5, 4).
+distinctcell(2, 3, 5, 3).
+distinctcell(2, 3, 5, 2).
+distinctcell(2, 3, 5, 1).
+distinctcell(2, 3, 4, 8).
+distinctcell(2, 3, 4, 7).
+distinctcell(2, 3, 4, 6).
+distinctcell(2, 3, 4, 5).
+distinctcell(2, 3, 4, 4).
+distinctcell(2, 3, 4, 3).
+distinctcell(2, 3, 4, 2).
+distinctcell(2, 3, 4, 1).
+distinctcell(2, 3, 3, 8).
+distinctcell(2, 3, 3, 7).
+distinctcell(2, 3, 3, 6).
+distinctcell(2, 3, 3, 5).
+distinctcell(2, 3, 3, 4).
+distinctcell(2, 3, 3, 3).
+distinctcell(2, 3, 3, 2).
+distinctcell(2, 3, 3, 1).
+distinctcell(2, 3, 2, 8).
+distinctcell(2, 3, 2, 7).
+distinctcell(2, 3, 2, 6).
+distinctcell(2, 3, 2, 5).
+distinctcell(2, 3, 2, 4).
+distinctcell(2, 3, 2, 2).
+distinctcell(2, 3, 2, 1).
+distinctcell(2, 3, 1, 8).
+distinctcell(2, 3, 1, 7).
+distinctcell(2, 3, 1, 6).
+distinctcell(2, 3, 1, 5).
+distinctcell(2, 3, 1, 4).
+distinctcell(2, 3, 1, 3).
+distinctcell(2, 3, 1, 2).
+distinctcell(2, 3, 1, 1).
+distinctcell(2, 2, 8, 8).
+distinctcell(2, 2, 8, 7).
+distinctcell(2, 2, 8, 6).
+distinctcell(2, 2, 8, 5).
+distinctcell(2, 2, 8, 4).
+distinctcell(2, 2, 8, 3).
+distinctcell(2, 2, 8, 2).
+distinctcell(2, 2, 8, 1).
+distinctcell(2, 2, 7, 8).
+distinctcell(2, 2, 7, 7).
+distinctcell(2, 2, 7, 6).
+distinctcell(2, 2, 7, 5).
+distinctcell(2, 2, 7, 4).
+distinctcell(2, 2, 7, 3).
+distinctcell(2, 2, 7, 2).
+distinctcell(2, 2, 7, 1).
+distinctcell(2, 2, 6, 8).
+distinctcell(2, 2, 6, 7).
+distinctcell(2, 2, 6, 6).
+distinctcell(2, 2, 6, 5).
+distinctcell(2, 2, 6, 4).
+distinctcell(2, 2, 6, 3).
+distinctcell(2, 2, 6, 2).
+distinctcell(2, 2, 6, 1).
+distinctcell(2, 2, 5, 8).
+distinctcell(2, 2, 5, 7).
+distinctcell(2, 2, 5, 6).
+distinctcell(2, 2, 5, 5).
+distinctcell(2, 2, 5, 4).
+distinctcell(2, 2, 5, 3).
+distinctcell(2, 2, 5, 2).
+distinctcell(2, 2, 5, 1).
+distinctcell(2, 2, 4, 8).
+distinctcell(2, 2, 4, 7).
+distinctcell(2, 2, 4, 6).
+distinctcell(2, 2, 4, 5).
+distinctcell(2, 2, 4, 4).
+distinctcell(2, 2, 4, 3).
+distinctcell(2, 2, 4, 2).
+distinctcell(2, 2, 4, 1).
+distinctcell(2, 2, 3, 8).
+distinctcell(2, 2, 3, 7).
+distinctcell(2, 2, 3, 6).
+distinctcell(2, 2, 3, 5).
+distinctcell(2, 2, 3, 4).
+distinctcell(2, 2, 3, 3).
+distinctcell(2, 2, 3, 2).
+distinctcell(2, 2, 3, 1).
+distinctcell(2, 2, 2, 8).
+distinctcell(2, 2, 2, 7).
+distinctcell(2, 2, 2, 6).
+distinctcell(2, 2, 2, 5).
+distinctcell(2, 2, 2, 4).
+distinctcell(2, 2, 2, 3).
+distinctcell(2, 2, 2, 1).
+distinctcell(2, 2, 1, 8).
+distinctcell(2, 2, 1, 7).
+distinctcell(2, 2, 1, 6).
+distinctcell(2, 2, 1, 5).
+distinctcell(2, 2, 1, 4).
+distinctcell(2, 2, 1, 3).
+distinctcell(2, 2, 1, 2).
+distinctcell(2, 2, 1, 1).
+distinctcell(2, 1, 8, 8).
+distinctcell(2, 1, 8, 7).
+distinctcell(2, 1, 8, 6).
+distinctcell(2, 1, 8, 5).
+distinctcell(2, 1, 8, 4).
+distinctcell(2, 1, 8, 3).
+distinctcell(2, 1, 8, 2).
+distinctcell(2, 1, 8, 1).
+distinctcell(2, 1, 7, 8).
+distinctcell(2, 1, 7, 7).
+distinctcell(2, 1, 7, 6).
+distinctcell(2, 1, 7, 5).
+distinctcell(2, 1, 7, 4).
+distinctcell(2, 1, 7, 3).
+distinctcell(2, 1, 7, 2).
+distinctcell(2, 1, 7, 1).
+distinctcell(2, 1, 6, 8).
+distinctcell(2, 1, 6, 7).
+distinctcell(2, 1, 6, 6).
+distinctcell(2, 1, 6, 5).
+distinctcell(2, 1, 6, 4).
+distinctcell(2, 1, 6, 3).
+distinctcell(2, 1, 6, 2).
+distinctcell(2, 1, 6, 1).
+distinctcell(2, 1, 5, 8).
+distinctcell(2, 1, 5, 7).
+distinctcell(2, 1, 5, 6).
+distinctcell(2, 1, 5, 5).
+distinctcell(2, 1, 5, 4).
+distinctcell(2, 1, 5, 3).
+distinctcell(2, 1, 5, 2).
+distinctcell(2, 1, 5, 1).
+distinctcell(2, 1, 4, 8).
+distinctcell(2, 1, 4, 7).
+distinctcell(2, 1, 4, 6).
+distinctcell(2, 1, 4, 5).
+distinctcell(2, 1, 4, 4).
+distinctcell(2, 1, 4, 3).
+distinctcell(2, 1, 4, 2).
+distinctcell(2, 1, 4, 1).
+distinctcell(2, 1, 3, 8).
+distinctcell(2, 1, 3, 7).
+distinctcell(2, 1, 3, 6).
+distinctcell(2, 1, 3, 5).
+distinctcell(2, 1, 3, 4).
+distinctcell(2, 1, 3, 3).
+distinctcell(2, 1, 3, 2).
+distinctcell(2, 1, 3, 1).
+distinctcell(2, 1, 2, 8).
+distinctcell(2, 1, 2, 7).
+distinctcell(2, 1, 2, 6).
+distinctcell(2, 1, 2, 5).
+distinctcell(2, 1, 2, 4).
+distinctcell(2, 1, 2, 3).
+distinctcell(2, 1, 2, 2).
+distinctcell(2, 1, 1, 8).
+distinctcell(2, 1, 1, 7).
+distinctcell(2, 1, 1, 6).
+distinctcell(2, 1, 1, 5).
+distinctcell(2, 1, 1, 4).
+distinctcell(2, 1, 1, 3).
+distinctcell(2, 1, 1, 2).
+distinctcell(2, 1, 1, 1).
+distinctcell(1, 8, 8, 8).
+distinctcell(1, 8, 8, 7).
+distinctcell(1, 8, 8, 6).
+distinctcell(1, 8, 8, 5).
+distinctcell(1, 8, 8, 4).
+distinctcell(1, 8, 8, 3).
+distinctcell(1, 8, 8, 2).
+distinctcell(1, 8, 8, 1).
+distinctcell(1, 8, 7, 8).
+distinctcell(1, 8, 7, 7).
+distinctcell(1, 8, 7, 6).
+distinctcell(1, 8, 7, 5).
+distinctcell(1, 8, 7, 4).
+distinctcell(1, 8, 7, 3).
+distinctcell(1, 8, 7, 2).
+distinctcell(1, 8, 7, 1).
+distinctcell(1, 8, 6, 8).
+distinctcell(1, 8, 6, 7).
+distinctcell(1, 8, 6, 6).
+distinctcell(1, 8, 6, 5).
+distinctcell(1, 8, 6, 4).
+distinctcell(1, 8, 6, 3).
+distinctcell(1, 8, 6, 2).
+distinctcell(1, 8, 6, 1).
+distinctcell(1, 8, 5, 8).
+distinctcell(1, 8, 5, 7).
+distinctcell(1, 8, 5, 6).
+distinctcell(1, 8, 5, 5).
+distinctcell(1, 8, 5, 4).
+distinctcell(1, 8, 5, 3).
+distinctcell(1, 8, 5, 2).
+distinctcell(1, 8, 5, 1).
+distinctcell(1, 8, 4, 8).
+distinctcell(1, 8, 4, 7).
+distinctcell(1, 8, 4, 6).
+distinctcell(1, 8, 4, 5).
+distinctcell(1, 8, 4, 4).
+distinctcell(1, 8, 4, 3).
+distinctcell(1, 8, 4, 2).
+distinctcell(1, 8, 4, 1).
+distinctcell(1, 8, 3, 8).
+distinctcell(1, 8, 3, 7).
+distinctcell(1, 8, 3, 6).
+distinctcell(1, 8, 3, 5).
+distinctcell(1, 8, 3, 4).
+distinctcell(1, 8, 3, 3).
+distinctcell(1, 8, 3, 2).
+distinctcell(1, 8, 3, 1).
+distinctcell(1, 8, 2, 8).
+distinctcell(1, 8, 2, 7).
+distinctcell(1, 8, 2, 6).
+distinctcell(1, 8, 2, 5).
+distinctcell(1, 8, 2, 4).
+distinctcell(1, 8, 2, 3).
+distinctcell(1, 8, 2, 2).
+distinctcell(1, 8, 2, 1).
+distinctcell(1, 8, 1, 7).
+distinctcell(1, 8, 1, 6).
+distinctcell(1, 8, 1, 5).
+distinctcell(1, 8, 1, 4).
+distinctcell(1, 8, 1, 3).
+distinctcell(1, 8, 1, 2).
+distinctcell(1, 8, 1, 1).
+distinctcell(1, 7, 8, 8).
+distinctcell(1, 7, 8, 7).
+distinctcell(1, 7, 8, 6).
+distinctcell(1, 7, 8, 5).
+distinctcell(1, 7, 8, 4).
+distinctcell(1, 7, 8, 3).
+distinctcell(1, 7, 8, 2).
+distinctcell(1, 7, 8, 1).
+distinctcell(1, 7, 7, 8).
+distinctcell(1, 7, 7, 7).
+distinctcell(1, 7, 7, 6).
+distinctcell(1, 7, 7, 5).
+distinctcell(1, 7, 7, 4).
+distinctcell(1, 7, 7, 3).
+distinctcell(1, 7, 7, 2).
+distinctcell(1, 7, 7, 1).
+distinctcell(1, 7, 6, 8).
+distinctcell(1, 7, 6, 7).
+distinctcell(1, 7, 6, 6).
+distinctcell(1, 7, 6, 5).
+distinctcell(1, 7, 6, 4).
+distinctcell(1, 7, 6, 3).
+distinctcell(1, 7, 6, 2).
+distinctcell(1, 7, 6, 1).
+distinctcell(1, 7, 5, 8).
+distinctcell(1, 7, 5, 7).
+distinctcell(1, 7, 5, 6).
+distinctcell(1, 7, 5, 5).
+distinctcell(1, 7, 5, 4).
+distinctcell(1, 7, 5, 3).
+distinctcell(1, 7, 5, 2).
+distinctcell(1, 7, 5, 1).
+distinctcell(1, 7, 4, 8).
+distinctcell(1, 7, 4, 7).
+distinctcell(1, 7, 4, 6).
+distinctcell(1, 7, 4, 5).
+distinctcell(1, 7, 4, 4).
+distinctcell(1, 7, 4, 3).
+distinctcell(1, 7, 4, 2).
+distinctcell(1, 7, 4, 1).
+distinctcell(1, 7, 3, 8).
+distinctcell(1, 7, 3, 7).
+distinctcell(1, 7, 3, 6).
+distinctcell(1, 7, 3, 5).
+distinctcell(1, 7, 3, 4).
+distinctcell(1, 7, 3, 3).
+distinctcell(1, 7, 3, 2).
+distinctcell(1, 7, 3, 1).
+distinctcell(1, 7, 2, 8).
+distinctcell(1, 7, 2, 7).
+distinctcell(1, 7, 2, 6).
+distinctcell(1, 7, 2, 5).
+distinctcell(1, 7, 2, 4).
+distinctcell(1, 7, 2, 3).
+distinctcell(1, 7, 2, 2).
+distinctcell(1, 7, 2, 1).
+distinctcell(1, 7, 1, 8).
+distinctcell(1, 7, 1, 6).
+distinctcell(1, 7, 1, 5).
+distinctcell(1, 7, 1, 4).
+distinctcell(1, 7, 1, 3).
+distinctcell(1, 7, 1, 2).
+distinctcell(1, 7, 1, 1).
+distinctcell(1, 6, 8, 8).
+distinctcell(1, 6, 8, 7).
+distinctcell(1, 6, 8, 6).
+distinctcell(1, 6, 8, 5).
+distinctcell(1, 6, 8, 4).
+distinctcell(1, 6, 8, 3).
+distinctcell(1, 6, 8, 2).
+distinctcell(1, 6, 8, 1).
+distinctcell(1, 6, 7, 8).
+distinctcell(1, 6, 7, 7).
+distinctcell(1, 6, 7, 6).
+distinctcell(1, 6, 7, 5).
+distinctcell(1, 6, 7, 4).
+distinctcell(1, 6, 7, 3).
+distinctcell(1, 6, 7, 2).
+distinctcell(1, 6, 7, 1).
+distinctcell(1, 6, 6, 8).
+distinctcell(1, 6, 6, 7).
+distinctcell(1, 6, 6, 6).
+distinctcell(1, 6, 6, 5).
+distinctcell(1, 6, 6, 4).
+distinctcell(1, 6, 6, 3).
+distinctcell(1, 6, 6, 2).
+distinctcell(1, 6, 6, 1).
+distinctcell(1, 6, 5, 8).
+distinctcell(1, 6, 5, 7).
+distinctcell(1, 6, 5, 6).
+distinctcell(1, 6, 5, 5).
+distinctcell(1, 6, 5, 4).
+distinctcell(1, 6, 5, 3).
+distinctcell(1, 6, 5, 2).
+distinctcell(1, 6, 5, 1).
+distinctcell(1, 6, 4, 8).
+distinctcell(1, 6, 4, 7).
+distinctcell(1, 6, 4, 6).
+distinctcell(1, 6, 4, 5).
+distinctcell(1, 6, 4, 4).
+distinctcell(1, 6, 4, 3).
+distinctcell(1, 6, 4, 2).
+distinctcell(1, 6, 4, 1).
+distinctcell(1, 6, 3, 8).
+distinctcell(1, 6, 3, 7).
+distinctcell(1, 6, 3, 6).
+distinctcell(1, 6, 3, 5).
+distinctcell(1, 6, 3, 4).
+distinctcell(1, 6, 3, 3).
+distinctcell(1, 6, 3, 2).
+distinctcell(1, 6, 3, 1).
+distinctcell(1, 6, 2, 8).
+distinctcell(1, 6, 2, 7).
+distinctcell(1, 6, 2, 6).
+distinctcell(1, 6, 2, 5).
+distinctcell(1, 6, 2, 4).
+distinctcell(1, 6, 2, 3).
+distinctcell(1, 6, 2, 2).
+distinctcell(1, 6, 2, 1).
+distinctcell(1, 6, 1, 8).
+distinctcell(1, 6, 1, 7).
+distinctcell(1, 6, 1, 5).
+distinctcell(1, 6, 1, 4).
+distinctcell(1, 6, 1, 3).
+distinctcell(1, 6, 1, 2).
+distinctcell(1, 6, 1, 1).
+distinctcell(1, 5, 8, 8).
+distinctcell(1, 5, 8, 7).
+distinctcell(1, 5, 8, 6).
+distinctcell(1, 5, 8, 5).
+distinctcell(1, 5, 8, 4).
+distinctcell(1, 5, 8, 3).
+distinctcell(1, 5, 8, 2).
+distinctcell(1, 5, 8, 1).
+distinctcell(1, 5, 7, 8).
+distinctcell(1, 5, 7, 7).
+distinctcell(1, 5, 7, 6).
+distinctcell(1, 5, 7, 5).
+distinctcell(1, 5, 7, 4).
+distinctcell(1, 5, 7, 3).
+distinctcell(1, 5, 7, 2).
+distinctcell(1, 5, 7, 1).
+distinctcell(1, 5, 6, 8).
+distinctcell(1, 5, 6, 7).
+distinctcell(1, 5, 6, 6).
+distinctcell(1, 5, 6, 5).
+distinctcell(1, 5, 6, 4).
+distinctcell(1, 5, 6, 3).
+distinctcell(1, 5, 6, 2).
+distinctcell(1, 5, 6, 1).
+distinctcell(1, 5, 5, 8).
+distinctcell(1, 5, 5, 7).
+distinctcell(1, 5, 5, 6).
+distinctcell(1, 5, 5, 5).
+distinctcell(1, 5, 5, 4).
+distinctcell(1, 5, 5, 3).
+distinctcell(1, 5, 5, 2).
+distinctcell(1, 5, 5, 1).
+distinctcell(1, 5, 4, 8).
+distinctcell(1, 5, 4, 7).
+distinctcell(1, 5, 4, 6).
+distinctcell(1, 5, 4, 5).
+distinctcell(1, 5, 4, 4).
+distinctcell(1, 5, 4, 3).
+distinctcell(1, 5, 4, 2).
+distinctcell(1, 5, 4, 1).
+distinctcell(1, 5, 3, 8).
+distinctcell(1, 5, 3, 7).
+distinctcell(1, 5, 3, 6).
+distinctcell(1, 5, 3, 5).
+distinctcell(1, 5, 3, 4).
+distinctcell(1, 5, 3, 3).
+distinctcell(1, 5, 3, 2).
+distinctcell(1, 5, 3, 1).
+distinctcell(1, 5, 2, 8).
+distinctcell(1, 5, 2, 7).
+distinctcell(1, 5, 2, 6).
+distinctcell(1, 5, 2, 5).
+distinctcell(1, 5, 2, 4).
+distinctcell(1, 5, 2, 3).
+distinctcell(1, 5, 2, 2).
+distinctcell(1, 5, 2, 1).
+distinctcell(1, 5, 1, 8).
+distinctcell(1, 5, 1, 7).
+distinctcell(1, 5, 1, 6).
+distinctcell(1, 5, 1, 4).
+distinctcell(1, 5, 1, 3).
+distinctcell(1, 5, 1, 2).
+distinctcell(1, 5, 1, 1).
+distinctcell(1, 4, 8, 8).
+distinctcell(1, 4, 8, 7).
+distinctcell(1, 4, 8, 6).
+distinctcell(1, 4, 8, 5).
+distinctcell(1, 4, 8, 4).
+distinctcell(1, 4, 8, 3).
+distinctcell(1, 4, 8, 2).
+distinctcell(1, 4, 8, 1).
+distinctcell(1, 4, 7, 8).
+distinctcell(1, 4, 7, 7).
+distinctcell(1, 4, 7, 6).
+distinctcell(1, 4, 7, 5).
+distinctcell(1, 4, 7, 4).
+distinctcell(1, 4, 7, 3).
+distinctcell(1, 4, 7, 2).
+distinctcell(1, 4, 7, 1).
+distinctcell(1, 4, 6, 8).
+distinctcell(1, 4, 6, 7).
+distinctcell(1, 4, 6, 6).
+distinctcell(1, 4, 6, 5).
+distinctcell(1, 4, 6, 4).
+distinctcell(1, 4, 6, 3).
+distinctcell(1, 4, 6, 2).
+distinctcell(1, 4, 6, 1).
+distinctcell(1, 4, 5, 8).
+distinctcell(1, 4, 5, 7).
+distinctcell(1, 4, 5, 6).
+distinctcell(1, 4, 5, 5).
+distinctcell(1, 4, 5, 4).
+distinctcell(1, 4, 5, 3).
+distinctcell(1, 4, 5, 2).
+distinctcell(1, 4, 5, 1).
+distinctcell(1, 4, 4, 8).
+distinctcell(1, 4, 4, 7).
+distinctcell(1, 4, 4, 6).
+distinctcell(1, 4, 4, 5).
+distinctcell(1, 4, 4, 4).
+distinctcell(1, 4, 4, 3).
+distinctcell(1, 4, 4, 2).
+distinctcell(1, 4, 4, 1).
+distinctcell(1, 4, 3, 8).
+distinctcell(1, 4, 3, 7).
+distinctcell(1, 4, 3, 6).
+distinctcell(1, 4, 3, 5).
+distinctcell(1, 4, 3, 4).
+distinctcell(1, 4, 3, 3).
+distinctcell(1, 4, 3, 2).
+distinctcell(1, 4, 3, 1).
+distinctcell(1, 4, 2, 8).
+distinctcell(1, 4, 2, 7).
+distinctcell(1, 4, 2, 6).
+distinctcell(1, 4, 2, 5).
+distinctcell(1, 4, 2, 4).
+distinctcell(1, 4, 2, 3).
+distinctcell(1, 4, 2, 2).
+distinctcell(1, 4, 2, 1).
+distinctcell(1, 4, 1, 8).
+distinctcell(1, 4, 1, 7).
+distinctcell(1, 4, 1, 6).
+distinctcell(1, 4, 1, 5).
+distinctcell(1, 4, 1, 3).
+distinctcell(1, 4, 1, 2).
+distinctcell(1, 4, 1, 1).
+distinctcell(1, 3, 8, 8).
+distinctcell(1, 3, 8, 7).
+distinctcell(1, 3, 8, 6).
+distinctcell(1, 3, 8, 5).
+distinctcell(1, 3, 8, 4).
+distinctcell(1, 3, 8, 3).
+distinctcell(1, 3, 8, 2).
+distinctcell(1, 3, 8, 1).
+distinctcell(1, 3, 7, 8).
+distinctcell(1, 3, 7, 7).
+distinctcell(1, 3, 7, 6).
+distinctcell(1, 3, 7, 5).
+distinctcell(1, 3, 7, 4).
+distinctcell(1, 3, 7, 3).
+distinctcell(1, 3, 7, 2).
+distinctcell(1, 3, 7, 1).
+distinctcell(1, 3, 6, 8).
+distinctcell(1, 3, 6, 7).
+distinctcell(1, 3, 6, 6).
+distinctcell(1, 3, 6, 5).
+distinctcell(1, 3, 6, 4).
+distinctcell(1, 3, 6, 3).
+distinctcell(1, 3, 6, 2).
+distinctcell(1, 3, 6, 1).
+distinctcell(1, 3, 5, 8).
+distinctcell(1, 3, 5, 7).
+distinctcell(1, 3, 5, 6).
+distinctcell(1, 3, 5, 5).
+distinctcell(1, 3, 5, 4).
+distinctcell(1, 3, 5, 3).
+distinctcell(1, 3, 5, 2).
+distinctcell(1, 3, 5, 1).
+distinctcell(1, 3, 4, 8).
+distinctcell(1, 3, 4, 7).
+distinctcell(1, 3, 4, 6).
+distinctcell(1, 3, 4, 5).
+distinctcell(1, 3, 4, 4).
+distinctcell(1, 3, 4, 3).
+distinctcell(1, 3, 4, 2).
+distinctcell(1, 3, 4, 1).
+distinctcell(1, 3, 3, 8).
+distinctcell(1, 3, 3, 7).
+distinctcell(1, 3, 3, 6).
+distinctcell(1, 3, 3, 5).
+distinctcell(1, 3, 3, 4).
+distinctcell(1, 3, 3, 3).
+distinctcell(1, 3, 3, 2).
+distinctcell(1, 3, 3, 1).
+distinctcell(1, 3, 2, 8).
+distinctcell(1, 3, 2, 7).
+distinctcell(1, 3, 2, 6).
+distinctcell(1, 3, 2, 5).
+distinctcell(1, 3, 2, 4).
+distinctcell(1, 3, 2, 3).
+distinctcell(1, 3, 2, 2).
+distinctcell(1, 3, 2, 1).
+distinctcell(1, 3, 1, 8).
+distinctcell(1, 3, 1, 7).
+distinctcell(1, 3, 1, 6).
+distinctcell(1, 3, 1, 5).
+distinctcell(1, 3, 1, 4).
+distinctcell(1, 3, 1, 2).
+distinctcell(1, 3, 1, 1).
+distinctcell(1, 2, 8, 8).
+distinctcell(1, 2, 8, 7).
+distinctcell(1, 2, 8, 6).
+distinctcell(1, 2, 8, 5).
+distinctcell(1, 2, 8, 4).
+distinctcell(1, 2, 8, 3).
+distinctcell(1, 2, 8, 2).
+distinctcell(1, 2, 8, 1).
+distinctcell(1, 2, 7, 8).
+distinctcell(1, 2, 7, 7).
+distinctcell(1, 2, 7, 6).
+distinctcell(1, 2, 7, 5).
+distinctcell(1, 2, 7, 4).
+distinctcell(1, 2, 7, 3).
+distinctcell(1, 2, 7, 2).
+distinctcell(1, 2, 7, 1).
+distinctcell(1, 2, 6, 8).
+distinctcell(1, 2, 6, 7).
+distinctcell(1, 2, 6, 6).
+distinctcell(1, 2, 6, 5).
+distinctcell(1, 2, 6, 4).
+distinctcell(1, 2, 6, 3).
+distinctcell(1, 2, 6, 2).
+distinctcell(1, 2, 6, 1).
+distinctcell(1, 2, 5, 8).
+distinctcell(1, 2, 5, 7).
+distinctcell(1, 2, 5, 6).
+distinctcell(1, 2, 5, 5).
+distinctcell(1, 2, 5, 4).
+distinctcell(1, 2, 5, 3).
+distinctcell(1, 2, 5, 2).
+distinctcell(1, 2, 5, 1).
+distinctcell(1, 2, 4, 8).
+distinctcell(1, 2, 4, 7).
+distinctcell(1, 2, 4, 6).
+distinctcell(1, 2, 4, 5).
+distinctcell(1, 2, 4, 4).
+distinctcell(1, 2, 4, 3).
+distinctcell(1, 2, 4, 2).
+distinctcell(1, 2, 4, 1).
+distinctcell(1, 2, 3, 8).
+distinctcell(1, 2, 3, 7).
+distinctcell(1, 2, 3, 6).
+distinctcell(1, 2, 3, 5).
+distinctcell(1, 2, 3, 4).
+distinctcell(1, 2, 3, 3).
+distinctcell(1, 2, 3, 2).
+distinctcell(1, 2, 3, 1).
+distinctcell(1, 2, 2, 8).
+distinctcell(1, 2, 2, 7).
+distinctcell(1, 2, 2, 6).
+distinctcell(1, 2, 2, 5).
+distinctcell(1, 2, 2, 4).
+distinctcell(1, 2, 2, 3).
+distinctcell(1, 2, 2, 2).
+distinctcell(1, 2, 2, 1).
+distinctcell(1, 2, 1, 8).
+distinctcell(1, 2, 1, 7).
+distinctcell(1, 2, 1, 6).
+distinctcell(1, 2, 1, 5).
+distinctcell(1, 2, 1, 4).
+distinctcell(1, 2, 1, 3).
+distinctcell(1, 2, 1, 1).
+distinctcell(1, 1, 8, 8).
+distinctcell(1, 1, 8, 7).
+distinctcell(1, 1, 8, 6).
+distinctcell(1, 1, 8, 5).
+distinctcell(1, 1, 8, 4).
+distinctcell(1, 1, 8, 3).
+distinctcell(1, 1, 8, 2).
+distinctcell(1, 1, 8, 1).
+distinctcell(1, 1, 7, 8).
+distinctcell(1, 1, 7, 7).
+distinctcell(1, 1, 7, 6).
+distinctcell(1, 1, 7, 5).
+distinctcell(1, 1, 7, 4).
+distinctcell(1, 1, 7, 3).
+distinctcell(1, 1, 7, 2).
+distinctcell(1, 1, 7, 1).
+distinctcell(1, 1, 6, 8).
+distinctcell(1, 1, 6, 7).
+distinctcell(1, 1, 6, 6).
+distinctcell(1, 1, 6, 5).
+distinctcell(1, 1, 6, 4).
+distinctcell(1, 1, 6, 3).
+distinctcell(1, 1, 6, 2).
+distinctcell(1, 1, 6, 1).
+distinctcell(1, 1, 5, 8).
+distinctcell(1, 1, 5, 7).
+distinctcell(1, 1, 5, 6).
+distinctcell(1, 1, 5, 5).
+distinctcell(1, 1, 5, 4).
+distinctcell(1, 1, 5, 3).
+distinctcell(1, 1, 5, 2).
+distinctcell(1, 1, 5, 1).
+distinctcell(1, 1, 4, 8).
+distinctcell(1, 1, 4, 7).
+distinctcell(1, 1, 4, 6).
+distinctcell(1, 1, 4, 5).
+distinctcell(1, 1, 4, 4).
+distinctcell(1, 1, 4, 3).
+distinctcell(1, 1, 4, 2).
+distinctcell(1, 1, 4, 1).
+distinctcell(1, 1, 3, 8).
+distinctcell(1, 1, 3, 7).
+distinctcell(1, 1, 3, 6).
+distinctcell(1, 1, 3, 5).
+distinctcell(1, 1, 3, 4).
+distinctcell(1, 1, 3, 3).
+distinctcell(1, 1, 3, 2).
+distinctcell(1, 1, 3, 1).
+distinctcell(1, 1, 2, 8).
+distinctcell(1, 1, 2, 7).
+distinctcell(1, 1, 2, 6).
+distinctcell(1, 1, 2, 5).
+distinctcell(1, 1, 2, 4).
+distinctcell(1, 1, 2, 3).
+distinctcell(1, 1, 2, 2).
+distinctcell(1, 1, 2, 1).
+distinctcell(1, 1, 1, 8).
+distinctcell(1, 1, 1, 7).
+distinctcell(1, 1, 1, 6).
+distinctcell(1, 1, 1, 5).
+distinctcell(1, 1, 1, 4).
+distinctcell(1, 1, 1, 3).
+distinctcell(1, 1, 1, 2).
+countplus(9, 10).
+countplus(8, 9).
+countplus(7, 8).
+countplus(6, 7).
+countplus(5, 6).
+countplus(4, 5).
+countplus(3, 4).
+countplus(2, 3).
+countplus(11, 12).
+countplus(10, 11).
+countplus(1, 2).
+countplus(0, 1).
+cellbetween(8, 8, 6, 6, 7, 7).
+cellbetween(8, 8, 6, 2, 7, 1).
+cellbetween(8, 8, 2, 6, 1, 7).
+cellbetween(8, 8, 2, 2, 1, 1).
+cellbetween(8, 7, 6, 5, 7, 6).
+cellbetween(8, 7, 6, 1, 7, 8).
+cellbetween(8, 7, 2, 5, 1, 6).
+cellbetween(8, 7, 2, 1, 1, 8).
+cellbetween(8, 6, 6, 8, 7, 7).
+cellbetween(8, 6, 6, 4, 7, 5).
+cellbetween(8, 6, 2, 8, 1, 7).
+cellbetween(8, 6, 2, 4, 1, 5).
+cellbetween(8, 5, 6, 7, 7, 6).
+cellbetween(8, 5, 6, 3, 7, 4).
+cellbetween(8, 5, 2, 7, 1, 6).
+cellbetween(8, 5, 2, 3, 1, 4).
+cellbetween(8, 4, 6, 6, 7, 5).
+cellbetween(8, 4, 6, 2, 7, 3).
+cellbetween(8, 4, 2, 6, 1, 5).
+cellbetween(8, 4, 2, 2, 1, 3).
+cellbetween(8, 3, 6, 5, 7, 4).
+cellbetween(8, 3, 6, 1, 7, 2).
+cellbetween(8, 3, 2, 5, 1, 4).
+cellbetween(8, 3, 2, 1, 1, 2).
+cellbetween(8, 2, 6, 8, 7, 1).
+cellbetween(8, 2, 6, 4, 7, 3).
+cellbetween(8, 2, 2, 8, 1, 1).
+cellbetween(8, 2, 2, 4, 1, 3).
+cellbetween(8, 1, 6, 7, 7, 8).
+cellbetween(8, 1, 6, 3, 7, 2).
+cellbetween(8, 1, 2, 7, 1, 8).
+cellbetween(8, 1, 2, 3, 1, 2).
+cellbetween(7, 8, 5, 6, 6, 7).
+cellbetween(7, 8, 5, 2, 6, 1).
+cellbetween(7, 8, 1, 6, 8, 7).
+cellbetween(7, 8, 1, 2, 8, 1).
+cellbetween(7, 7, 5, 5, 6, 6).
+cellbetween(7, 7, 5, 1, 6, 8).
+cellbetween(7, 7, 1, 5, 8, 6).
+cellbetween(7, 7, 1, 1, 8, 8).
+cellbetween(7, 6, 5, 8, 6, 7).
+cellbetween(7, 6, 5, 4, 6, 5).
+cellbetween(7, 6, 1, 8, 8, 7).
+cellbetween(7, 6, 1, 4, 8, 5).
+cellbetween(7, 5, 5, 7, 6, 6).
+cellbetween(7, 5, 5, 3, 6, 4).
+cellbetween(7, 5, 1, 7, 8, 6).
+cellbetween(7, 5, 1, 3, 8, 4).
+cellbetween(7, 4, 5, 6, 6, 5).
+cellbetween(7, 4, 5, 2, 6, 3).
+cellbetween(7, 4, 1, 6, 8, 5).
+cellbetween(7, 4, 1, 2, 8, 3).
+cellbetween(7, 3, 5, 5, 6, 4).
+cellbetween(7, 3, 5, 1, 6, 2).
+cellbetween(7, 3, 1, 5, 8, 4).
+cellbetween(7, 3, 1, 1, 8, 2).
+cellbetween(7, 2, 5, 8, 6, 1).
+cellbetween(7, 2, 5, 4, 6, 3).
+cellbetween(7, 2, 1, 8, 8, 1).
+cellbetween(7, 2, 1, 4, 8, 3).
+cellbetween(7, 1, 5, 7, 6, 8).
+cellbetween(7, 1, 5, 3, 6, 2).
+cellbetween(7, 1, 1, 7, 8, 8).
+cellbetween(7, 1, 1, 3, 8, 2).
+cellbetween(6, 8, 8, 6, 7, 7).
+cellbetween(6, 8, 8, 2, 7, 1).
+cellbetween(6, 8, 4, 6, 5, 7).
+cellbetween(6, 8, 4, 2, 5, 1).
+cellbetween(6, 7, 8, 5, 7, 6).
+cellbetween(6, 7, 8, 1, 7, 8).
+cellbetween(6, 7, 4, 5, 5, 6).
+cellbetween(6, 7, 4, 1, 5, 8).
+cellbetween(6, 6, 8, 8, 7, 7).
+cellbetween(6, 6, 8, 4, 7, 5).
+cellbetween(6, 6, 4, 8, 5, 7).
+cellbetween(6, 6, 4, 4, 5, 5).
+cellbetween(6, 5, 8, 7, 7, 6).
+cellbetween(6, 5, 8, 3, 7, 4).
+cellbetween(6, 5, 4, 7, 5, 6).
+cellbetween(6, 5, 4, 3, 5, 4).
+cellbetween(6, 4, 8, 6, 7, 5).
+cellbetween(6, 4, 8, 2, 7, 3).
+cellbetween(6, 4, 4, 6, 5, 5).
+cellbetween(6, 4, 4, 2, 5, 3).
+cellbetween(6, 3, 8, 5, 7, 4).
+cellbetween(6, 3, 8, 1, 7, 2).
+cellbetween(6, 3, 4, 5, 5, 4).
+cellbetween(6, 3, 4, 1, 5, 2).
+cellbetween(6, 2, 8, 8, 7, 1).
+cellbetween(6, 2, 8, 4, 7, 3).
+cellbetween(6, 2, 4, 8, 5, 1).
+cellbetween(6, 2, 4, 4, 5, 3).
+cellbetween(6, 1, 8, 7, 7, 8).
+cellbetween(6, 1, 8, 3, 7, 2).
+cellbetween(6, 1, 4, 7, 5, 8).
+cellbetween(6, 1, 4, 3, 5, 2).
+cellbetween(5, 8, 7, 6, 6, 7).
+cellbetween(5, 8, 7, 2, 6, 1).
+cellbetween(5, 8, 3, 6, 4, 7).
+cellbetween(5, 8, 3, 2, 4, 1).
+cellbetween(5, 7, 7, 5, 6, 6).
+cellbetween(5, 7, 7, 1, 6, 8).
+cellbetween(5, 7, 3, 5, 4, 6).
+cellbetween(5, 7, 3, 1, 4, 8).
+cellbetween(5, 6, 7, 8, 6, 7).
+cellbetween(5, 6, 7, 4, 6, 5).
+cellbetween(5, 6, 3, 8, 4, 7).
+cellbetween(5, 6, 3, 4, 4, 5).
+cellbetween(5, 5, 7, 7, 6, 6).
+cellbetween(5, 5, 7, 3, 6, 4).
+cellbetween(5, 5, 3, 7, 4, 6).
+cellbetween(5, 5, 3, 3, 4, 4).
+cellbetween(5, 4, 7, 6, 6, 5).
+cellbetween(5, 4, 7, 2, 6, 3).
+cellbetween(5, 4, 3, 6, 4, 5).
+cellbetween(5, 4, 3, 2, 4, 3).
+cellbetween(5, 3, 7, 5, 6, 4).
+cellbetween(5, 3, 7, 1, 6, 2).
+cellbetween(5, 3, 3, 5, 4, 4).
+cellbetween(5, 3, 3, 1, 4, 2).
+cellbetween(5, 2, 7, 8, 6, 1).
+cellbetween(5, 2, 7, 4, 6, 3).
+cellbetween(5, 2, 3, 8, 4, 1).
+cellbetween(5, 2, 3, 4, 4, 3).
+cellbetween(5, 1, 7, 7, 6, 8).
+cellbetween(5, 1, 7, 3, 6, 2).
+cellbetween(5, 1, 3, 7, 4, 8).
+cellbetween(5, 1, 3, 3, 4, 2).
+cellbetween(4, 8, 6, 6, 5, 7).
+cellbetween(4, 8, 6, 2, 5, 1).
+cellbetween(4, 8, 2, 6, 3, 7).
+cellbetween(4, 8, 2, 2, 3, 1).
+cellbetween(4, 7, 6, 5, 5, 6).
+cellbetween(4, 7, 6, 1, 5, 8).
+cellbetween(4, 7, 2, 5, 3, 6).
+cellbetween(4, 7, 2, 1, 3, 8).
+cellbetween(4, 6, 6, 8, 5, 7).
+cellbetween(4, 6, 6, 4, 5, 5).
+cellbetween(4, 6, 2, 8, 3, 7).
+cellbetween(4, 6, 2, 4, 3, 5).
+cellbetween(4, 5, 6, 7, 5, 6).
+cellbetween(4, 5, 6, 3, 5, 4).
+cellbetween(4, 5, 2, 7, 3, 6).
+cellbetween(4, 5, 2, 3, 3, 4).
+cellbetween(4, 4, 6, 6, 5, 5).
+cellbetween(4, 4, 6, 2, 5, 3).
+cellbetween(4, 4, 2, 6, 3, 5).
+cellbetween(4, 4, 2, 2, 3, 3).
+cellbetween(4, 3, 6, 5, 5, 4).
+cellbetween(4, 3, 6, 1, 5, 2).
+cellbetween(4, 3, 2, 5, 3, 4).
+cellbetween(4, 3, 2, 1, 3, 2).
+cellbetween(4, 2, 6, 8, 5, 1).
+cellbetween(4, 2, 6, 4, 5, 3).
+cellbetween(4, 2, 2, 8, 3, 1).
+cellbetween(4, 2, 2, 4, 3, 3).
+cellbetween(4, 1, 6, 7, 5, 8).
+cellbetween(4, 1, 6, 3, 5, 2).
+cellbetween(4, 1, 2, 7, 3, 8).
+cellbetween(4, 1, 2, 3, 3, 2).
+cellbetween(3, 8, 5, 6, 4, 7).
+cellbetween(3, 8, 5, 2, 4, 1).
+cellbetween(3, 8, 1, 6, 2, 7).
+cellbetween(3, 8, 1, 2, 2, 1).
+cellbetween(3, 7, 5, 5, 4, 6).
+cellbetween(3, 7, 5, 1, 4, 8).
+cellbetween(3, 7, 1, 5, 2, 6).
+cellbetween(3, 7, 1, 1, 2, 8).
+cellbetween(3, 6, 5, 8, 4, 7).
+cellbetween(3, 6, 5, 4, 4, 5).
+cellbetween(3, 6, 1, 8, 2, 7).
+cellbetween(3, 6, 1, 4, 2, 5).
+cellbetween(3, 5, 5, 7, 4, 6).
+cellbetween(3, 5, 5, 3, 4, 4).
+cellbetween(3, 5, 1, 7, 2, 6).
+cellbetween(3, 5, 1, 3, 2, 4).
+cellbetween(3, 4, 5, 6, 4, 5).
+cellbetween(3, 4, 5, 2, 4, 3).
+cellbetween(3, 4, 1, 6, 2, 5).
+cellbetween(3, 4, 1, 2, 2, 3).
+cellbetween(3, 3, 5, 5, 4, 4).
+cellbetween(3, 3, 5, 1, 4, 2).
+cellbetween(3, 3, 1, 5, 2, 4).
+cellbetween(3, 3, 1, 1, 2, 2).
+cellbetween(3, 2, 5, 8, 4, 1).
+cellbetween(3, 2, 5, 4, 4, 3).
+cellbetween(3, 2, 1, 8, 2, 1).
+cellbetween(3, 2, 1, 4, 2, 3).
+cellbetween(3, 1, 5, 7, 4, 8).
+cellbetween(3, 1, 5, 3, 4, 2).
+cellbetween(3, 1, 1, 7, 2, 8).
+cellbetween(3, 1, 1, 3, 2, 2).
+cellbetween(2, 8, 8, 6, 1, 7).
+cellbetween(2, 8, 8, 2, 1, 1).
+cellbetween(2, 8, 4, 6, 3, 7).
+cellbetween(2, 8, 4, 2, 3, 1).
+cellbetween(2, 7, 8, 5, 1, 6).
+cellbetween(2, 7, 8, 1, 1, 8).
+cellbetween(2, 7, 4, 5, 3, 6).
+cellbetween(2, 7, 4, 1, 3, 8).
+cellbetween(2, 6, 8, 8, 1, 7).
+cellbetween(2, 6, 8, 4, 1, 5).
+cellbetween(2, 6, 4, 8, 3, 7).
+cellbetween(2, 6, 4, 4, 3, 5).
+cellbetween(2, 5, 8, 7, 1, 6).
+cellbetween(2, 5, 8, 3, 1, 4).
+cellbetween(2, 5, 4, 7, 3, 6).
+cellbetween(2, 5, 4, 3, 3, 4).
+cellbetween(2, 4, 8, 6, 1, 5).
+cellbetween(2, 4, 8, 2, 1, 3).
+cellbetween(2, 4, 4, 6, 3, 5).
+cellbetween(2, 4, 4, 2, 3, 3).
+cellbetween(2, 3, 8, 5, 1, 4).
+cellbetween(2, 3, 8, 1, 1, 2).
+cellbetween(2, 3, 4, 5, 3, 4).
+cellbetween(2, 3, 4, 1, 3, 2).
+cellbetween(2, 2, 8, 8, 1, 1).
+cellbetween(2, 2, 8, 4, 1, 3).
+cellbetween(2, 2, 4, 8, 3, 1).
+cellbetween(2, 2, 4, 4, 3, 3).
+cellbetween(2, 1, 8, 7, 1, 8).
+cellbetween(2, 1, 8, 3, 1, 2).
+cellbetween(2, 1, 4, 7, 3, 8).
+cellbetween(2, 1, 4, 3, 3, 2).
+cellbetween(1, 8, 7, 6, 8, 7).
+cellbetween(1, 8, 7, 2, 8, 1).
+cellbetween(1, 8, 3, 6, 2, 7).
+cellbetween(1, 8, 3, 2, 2, 1).
+cellbetween(1, 7, 7, 5, 8, 6).
+cellbetween(1, 7, 7, 1, 8, 8).
+cellbetween(1, 7, 3, 5, 2, 6).
+cellbetween(1, 7, 3, 1, 2, 8).
+cellbetween(1, 6, 7, 8, 8, 7).
+cellbetween(1, 6, 7, 4, 8, 5).
+cellbetween(1, 6, 3, 8, 2, 7).
+cellbetween(1, 6, 3, 4, 2, 5).
+cellbetween(1, 5, 7, 7, 8, 6).
+cellbetween(1, 5, 7, 3, 8, 4).
+cellbetween(1, 5, 3, 7, 2, 6).
+cellbetween(1, 5, 3, 3, 2, 4).
+cellbetween(1, 4, 7, 6, 8, 5).
+cellbetween(1, 4, 7, 2, 8, 3).
+cellbetween(1, 4, 3, 6, 2, 5).
+cellbetween(1, 4, 3, 2, 2, 3).
+cellbetween(1, 3, 7, 5, 8, 4).
+cellbetween(1, 3, 7, 1, 8, 2).
+cellbetween(1, 3, 3, 5, 2, 4).
+cellbetween(1, 3, 3, 1, 2, 2).
+cellbetween(1, 2, 7, 8, 8, 1).
+cellbetween(1, 2, 7, 4, 8, 3).
+cellbetween(1, 2, 3, 8, 2, 1).
+cellbetween(1, 2, 3, 4, 2, 3).
+cellbetween(1, 1, 7, 7, 8, 8).
+cellbetween(1, 1, 7, 3, 8, 2).
+cellbetween(1, 1, 3, 7, 2, 8).
+cellbetween(1, 1, 3, 3, 2, 2).
+cell(8, 8).
+cell(8, 7).
+cell(8, 6).
+cell(8, 5).
+cell(8, 4).
+cell(8, 3).
+cell(8, 2).
+cell(8, 1).
+cell(7, 8).
+cell(7, 7).
+cell(7, 6).
+cell(7, 5).
+cell(7, 4).
+cell(7, 3).
+cell(7, 2).
+cell(7, 1).
+cell(6, 8).
+cell(6, 7).
+cell(6, 6).
+cell(6, 5).
+cell(6, 4).
+cell(6, 3).
+cell(6, 2).
+cell(6, 1).
+cell(5, 8).
+cell(5, 7).
+cell(5, 6).
+cell(5, 5).
+cell(5, 4).
+cell(5, 3).
+cell(5, 2).
+cell(5, 1).
+cell(4, 8).
+cell(4, 7).
+cell(4, 6).
+cell(4, 5).
+cell(4, 4).
+cell(4, 3).
+cell(4, 2).
+cell(4, 1).
+cell(3, 8).
+cell(3, 7).
+cell(3, 6).
+cell(3, 5).
+cell(3, 4).
+cell(3, 3).
+cell(3, 2).
+cell(3, 1).
+cell(2, 8).
+cell(2, 7).
+cell(2, 6).
+cell(2, 5).
+cell(2, 4).
+cell(2, 3).
+cell(2, 2).
+cell(2, 1).
+cell(1, 8).
+cell(1, 7).
+cell(1, 6).
+cell(1, 5).
+cell(1, 4).
+cell(1, 3).
+cell(1, 2).
+cell(1, 1).
+blackpawnmove(8, 8, 7, 1).
+blackpawnmove(8, 7, 7, 8).
+blackpawnmove(8, 6, 7, 7).
+blackpawnmove(8, 5, 7, 6).
+blackpawnmove(8, 4, 7, 5).
+blackpawnmove(8, 3, 7, 4).
+blackpawnmove(8, 2, 7, 3).
+blackpawnmove(8, 1, 7, 2).
+blackpawnmove(7, 8, 8, 1).
+blackpawnmove(7, 8, 6, 1).
+blackpawnmove(7, 7, 8, 8).
+blackpawnmove(7, 7, 6, 8).
+blackpawnmove(7, 6, 8, 7).
+blackpawnmove(7, 6, 6, 7).
+blackpawnmove(7, 5, 8, 6).
+blackpawnmove(7, 5, 6, 6).
+blackpawnmove(7, 4, 8, 5).
+blackpawnmove(7, 4, 6, 5).
+blackpawnmove(7, 3, 8, 4).
+blackpawnmove(7, 3, 6, 4).
+blackpawnmove(7, 2, 8, 3).
+blackpawnmove(7, 2, 6, 3).
+blackpawnmove(7, 1, 8, 2).
+blackpawnmove(7, 1, 6, 2).
+blackpawnmove(6, 8, 7, 1).
+blackpawnmove(6, 8, 5, 1).
+blackpawnmove(6, 7, 7, 8).
+blackpawnmove(6, 7, 5, 8).
+blackpawnmove(6, 6, 7, 7).
+blackpawnmove(6, 6, 5, 7).
+blackpawnmove(6, 5, 7, 6).
+blackpawnmove(6, 5, 5, 6).
+blackpawnmove(6, 4, 7, 5).
+blackpawnmove(6, 4, 5, 5).
+blackpawnmove(6, 3, 7, 4).
+blackpawnmove(6, 3, 5, 4).
+blackpawnmove(6, 2, 7, 3).
+blackpawnmove(6, 2, 5, 3).
+blackpawnmove(6, 1, 7, 2).
+blackpawnmove(6, 1, 5, 2).
+blackpawnmove(5, 8, 6, 1).
+blackpawnmove(5, 8, 4, 1).
+blackpawnmove(5, 7, 6, 8).
+blackpawnmove(5, 7, 4, 8).
+blackpawnmove(5, 6, 6, 7).
+blackpawnmove(5, 6, 4, 7).
+blackpawnmove(5, 5, 6, 6).
+blackpawnmove(5, 5, 4, 6).
+blackpawnmove(5, 4, 6, 5).
+blackpawnmove(5, 4, 4, 5).
+blackpawnmove(5, 3, 6, 4).
+blackpawnmove(5, 3, 4, 4).
+blackpawnmove(5, 2, 6, 3).
+blackpawnmove(5, 2, 4, 3).
+blackpawnmove(5, 1, 6, 2).
+blackpawnmove(5, 1, 4, 2).
+blackpawnmove(4, 8, 5, 1).
+blackpawnmove(4, 8, 3, 1).
+blackpawnmove(4, 7, 5, 8).
+blackpawnmove(4, 7, 3, 8).
+blackpawnmove(4, 6, 5, 7).
+blackpawnmove(4, 6, 3, 7).
+blackpawnmove(4, 5, 5, 6).
+blackpawnmove(4, 5, 3, 6).
+blackpawnmove(4, 4, 5, 5).
+blackpawnmove(4, 4, 3, 5).
+blackpawnmove(4, 3, 5, 4).
+blackpawnmove(4, 3, 3, 4).
+blackpawnmove(4, 2, 5, 3).
+blackpawnmove(4, 2, 3, 3).
+blackpawnmove(4, 1, 5, 2).
+blackpawnmove(4, 1, 3, 2).
+blackpawnmove(3, 8, 4, 1).
+blackpawnmove(3, 8, 2, 1).
+blackpawnmove(3, 7, 4, 8).
+blackpawnmove(3, 7, 2, 8).
+blackpawnmove(3, 6, 4, 7).
+blackpawnmove(3, 6, 2, 7).
+blackpawnmove(3, 5, 4, 6).
+blackpawnmove(3, 5, 2, 6).
+blackpawnmove(3, 4, 4, 5).
+blackpawnmove(3, 4, 2, 5).
+blackpawnmove(3, 3, 4, 4).
+blackpawnmove(3, 3, 2, 4).
+blackpawnmove(3, 2, 4, 3).
+blackpawnmove(3, 2, 2, 3).
+blackpawnmove(3, 1, 4, 2).
+blackpawnmove(3, 1, 2, 2).
+blackpawnmove(2, 8, 3, 1).
+blackpawnmove(2, 8, 1, 1).
+blackpawnmove(2, 7, 3, 8).
+blackpawnmove(2, 7, 1, 8).
+blackpawnmove(2, 6, 3, 7).
+blackpawnmove(2, 6, 1, 7).
+blackpawnmove(2, 5, 3, 6).
+blackpawnmove(2, 5, 1, 6).
+blackpawnmove(2, 4, 3, 5).
+blackpawnmove(2, 4, 1, 5).
+blackpawnmove(2, 3, 3, 4).
+blackpawnmove(2, 3, 1, 4).
+blackpawnmove(2, 2, 3, 3).
+blackpawnmove(2, 2, 1, 3).
+blackpawnmove(2, 1, 3, 2).
+blackpawnmove(2, 1, 1, 2).
+blackpawnmove(1, 8, 2, 1).
+blackpawnmove(1, 7, 2, 8).
+blackpawnmove(1, 6, 2, 7).
+blackpawnmove(1, 5, 2, 6).
+blackpawnmove(1, 4, 2, 5).
+blackpawnmove(1, 3, 2, 4).
+blackpawnmove(1, 2, 2, 3).
+blackpawnmove(1, 1, 2, 2).
+between(8, 7, 6).
+between(8, 1, 2).
+between(7, 8, 1).
+between(7, 6, 5).
+between(6, 7, 8).
+between(6, 5, 4).
+between(5, 6, 7).
+between(5, 4, 3).
+between(4, 5, 6).
+between(4, 3, 2).
+between(3, 4, 5).
+between(3, 2, 1).
+between(2, 3, 4).
+between(2, 1, 8).
+between(1, 8, 7).
+between(1, 2, 3).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type(agent, red).
+agent(red).
+
+type(agent, black).
+agent(black).
+
+type(pos, 1).
+pos(1).
+
+type(pos, 2).
+pos(2).
+
+type(pos, 3).
+pos(3).
+
+type(pos, 4).
+pos(4).
+
+type(pos, 5).
+pos(5).
+
+type(pos, 6).
+pos(6).
+
+type(pos, 7).
+pos(7).
+
+type(pos, 8).
+pos(8).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type(int, 0).
+int(0).
+
+type(int, 9).
+int(9).
+
+type(int, 10).
+int(10).
+
+type(int, 11).
+int(11).
+
+type(int, 12).
+int(12).
+
+type(int, 13).
+int(13).
+
+type(int, 14).
+int(14).
+
+type(int, 15).
+int(15).
+
+type(int, 16).
+int(16).
+
+type(int, 17).
+int(17).
+
+type(int, 18).
+int(18).
+
+type(int, 19).
+int(19).
+
+type(int, 20).
+int(20).
+
+type(int, 21).
+int(21).
+
+type(int, 22).
+int(22).
+
+type(int, 23).
+int(23).
+
+type(int, 24).
+int(24).
+
+type(int, 25).
+int(25).
+
+type(int, 26).
+int(26).
+
+type(int, 27).
+int(27).
+
+type(int, 28).
+int(28).
+
+type(int, 29).
+int(29).
+
+type(int, 30).
+int(30).
+
+type(int, 31).
+int(31).
+
+type(int, 32).
+int(32).
+
+type(int, 33).
+int(33).
+
+type(int, 34).
+int(34).
+
+type(int, 35).
+int(35).
+
+type(int, 36).
+int(36).
+
+type(int, 37).
+int(37).
+
+type(int, 38).
+int(38).
+
+type(int, 39).
+int(39).
+
+type(int, 40).
+int(40).
+
+type(int, 41).
+int(41).
+
+type(int, 42).
+int(42).
+
+type(int, 43).
+int(43).
+
+type(int, 44).
+int(44).
+
+type(int, 45).
+int(45).
+
+type(int, 46).
+int(46).
+
+type(int, 47).
+int(47).
+
+type(int, 48).
+int(48).
+
+type(int, 49).
+int(49).
+
+type(int, 50).
+int(50).
+
+type(int, 51).
+int(51).
+
+type(int, 52).
+int(52).
+
+type(int, 53).
+int(53).
+
+type(int, 54).
+int(54).
+
+type(int, 55).
+int(55).
+
+type(int, 56).
+int(56).
+
+type(int, 57).
+int(57).
+
+type(int, 58).
+int(58).
+
+type(int, 59).
+int(59).
+
+type(int, 60).
+int(60).
+
+type(int, 61).
+int(61).
+
+type(int, 62).
+int(62).
+
+type(int, 63).
+int(63).
+
+type(int, 64).
+int(64).
+
+type(int, 65).
+int(65).
+
+type(int, 66).
+int(66).
+
+type(int, 67).
+int(67).
+
+type(int, 68).
+int(68).
+
+type(int, 69).
+int(69).
+
+type(int, 70).
+int(70).
+
+type(int, 71).
+int(71).
+
+type(int, 72).
+int(72).
+
+type(int, 73).
+int(73).
+
+type(int, 74).
+int(74).
+
+type(int, 75).
+int(75).
+
+type(int, 76).
+int(76).
+
+type(int, 77).
+int(77).
+
+type(int, 78).
+int(78).
+
+type(int, 79).
+int(79).
+
+type(int, 80).
+int(80).
+
+type(int, 81).
+int(81).
+
+type(int, 82).
+int(82).
+
+type(int, 83).
+int(83).
+
+type(int, 84).
+int(84).
+
+type(int, 85).
+int(85).
+
+type(int, 86).
+int(86).
+
+type(int, 87).
+int(87).
+
+type(int, 88).
+int(88).
+
+type(int, 89).
+int(89).
+
+type(int, 90).
+int(90).
+
+type(int, 91).
+int(91).
+
+type(int, 92).
+int(92).
+
+type(int, 93).
+int(93).
+
+type(int, 94).
+int(94).
+
+type(int, 95).
+int(95).
+
+type(int, 96).
+int(96).
+
+type(int, 97).
+int(97).
+
+type(int, 98).
+int(98).
+
+type(int, 99).
+int(99).
+
+type(int, 100).
+int(100).
+
+type(pawn, blackpawn).
+pawn(blackpawn).
+
+type(pawn, redpawn).
+pawn(redpawn).
+
+
+type(action, noop).
+action(noop).
+
+type(int, 1).
+int(1).
+
+type(int, 2).
+int(2).
+
+type(int, 3).
+int(3).
+
+type(int, 4).
+int(4).
+
+type(int, 5).
+int(5).
+
+type(int, 6).
+int(6).
+
+type(int, 7).
+int(7).
+
+type(int, 8).
+int(8).
+
+true_step(1).
+true_location(8, 8, redpawn).
+true_location(8, 6, redpawn).
+true_location(8, 2, blackpawn).
+true_location(7, 7, redpawn).
+true_location(7, 3, blackpawn).
+true_location(7, 1, blackpawn).
+true_location(6, 8, redpawn).
+true_location(6, 6, redpawn).
+true_location(6, 2, blackpawn).
+true_location(5, 7, redpawn).
+true_location(5, 3, blackpawn).
+true_location(5, 1, blackpawn).
+true_location(4, 8, redpawn).
+true_location(4, 6, redpawn).
+true_location(4, 2, blackpawn).
+true_location(3, 7, redpawn).
+true_location(3, 3, blackpawn).
+true_location(3, 1, blackpawn).
+true_location(2, 8, redpawn).
+true_location(2, 6, redpawn).
+true_location(2, 2, blackpawn).
+true_location(1, 7, redpawn).
+true_location(1, 3, blackpawn).
+true_location(1, 1, blackpawn).
+true_control(black).
+true_capturecount(red, 0).
+true_capturecount(black, 0).
+inc(0) :- not goal(red, 0).
+inc(1) :- not goal(black, 0).
+exc(0) :- goal(red, 99).
+exc(1) :- goal(red, 98).
+exc(2) :- goal(red, 97).
+exc(3) :- goal(red, 96).
+exc(4) :- goal(red, 95).
+exc(5) :- goal(red, 94).
+exc(6) :- goal(red, 93).
+exc(7) :- goal(red, 92).
+exc(8) :- goal(red, 91).
+exc(9) :- goal(red, 90).
+exc(10) :- goal(red, 9).
+exc(11) :- goal(red, 89).
+exc(12) :- goal(red, 88).
+exc(13) :- goal(red, 87).
+exc(14) :- goal(red, 86).
+exc(15) :- goal(red, 85).
+exc(16) :- goal(red, 84).
+exc(17) :- goal(red, 83).
+exc(18) :- goal(red, 82).
+exc(19) :- goal(red, 81).
+exc(20) :- goal(red, 80).
+exc(21) :- goal(red, 8).
+exc(22) :- goal(red, 79).
+exc(23) :- goal(red, 78).
+exc(24) :- goal(red, 77).
+exc(25) :- goal(red, 76).
+exc(26) :- goal(red, 75).
+exc(27) :- goal(red, 74).
+exc(28) :- goal(red, 73).
+exc(29) :- goal(red, 72).
+exc(30) :- goal(red, 71).
+exc(31) :- goal(red, 70).
+exc(32) :- goal(red, 7).
+exc(33) :- goal(red, 69).
+exc(34) :- goal(red, 68).
+exc(35) :- goal(red, 67).
+exc(36) :- goal(red, 66).
+exc(37) :- goal(red, 65).
+exc(38) :- goal(red, 64).
+exc(39) :- goal(red, 63).
+exc(40) :- goal(red, 62).
+exc(41) :- goal(red, 61).
+exc(42) :- goal(red, 60).
+exc(43) :- goal(red, 6).
+exc(44) :- goal(red, 59).
+exc(45) :- goal(red, 58).
+exc(46) :- goal(red, 57).
+exc(47) :- goal(red, 56).
+exc(48) :- goal(red, 55).
+exc(49) :- goal(red, 54).
+exc(50) :- goal(red, 53).
+exc(51) :- goal(red, 52).
+exc(52) :- goal(red, 51).
+exc(53) :- goal(red, 50).
+exc(54) :- goal(red, 5).
+exc(55) :- goal(red, 49).
+exc(56) :- goal(red, 48).
+exc(57) :- goal(red, 47).
+exc(58) :- goal(red, 46).
+exc(59) :- goal(red, 45).
+exc(60) :- goal(red, 44).
+exc(61) :- goal(red, 43).
+exc(62) :- goal(red, 42).
+exc(63) :- goal(red, 41).
+exc(64) :- goal(red, 40).
+exc(65) :- goal(red, 4).
+exc(66) :- goal(red, 39).
+exc(67) :- goal(red, 38).
+exc(68) :- goal(red, 37).
+exc(69) :- goal(red, 36).
+exc(70) :- goal(red, 35).
+exc(71) :- goal(red, 34).
+exc(72) :- goal(red, 33).
+exc(73) :- goal(red, 32).
+exc(74) :- goal(red, 31).
+exc(75) :- goal(red, 30).
+exc(76) :- goal(red, 3).
+exc(77) :- goal(red, 29).
+exc(78) :- goal(red, 28).
+exc(79) :- goal(red, 27).
+exc(80) :- goal(red, 26).
+exc(81) :- goal(red, 25).
+exc(82) :- goal(red, 24).
+exc(83) :- goal(red, 23).
+exc(84) :- goal(red, 22).
+exc(85) :- goal(red, 21).
+exc(86) :- goal(red, 20).
+exc(87) :- goal(red, 2).
+exc(88) :- goal(red, 19).
+exc(89) :- goal(red, 18).
+exc(90) :- goal(red, 17).
+exc(91) :- goal(red, 16).
+exc(92) :- goal(red, 15).
+exc(93) :- goal(red, 14).
+exc(94) :- goal(red, 13).
+exc(95) :- goal(red, 12).
+exc(96) :- goal(red, 11).
+exc(97) :- goal(red, 100).
+exc(98) :- goal(red, 10).
+exc(99) :- goal(red, 1).
+exc(100) :- goal(black, 99).
+exc(101) :- goal(black, 98).
+exc(102) :- goal(black, 97).
+exc(103) :- goal(black, 96).
+exc(104) :- goal(black, 95).
+exc(105) :- goal(black, 94).
+exc(106) :- goal(black, 93).
+exc(107) :- goal(black, 92).
+exc(108) :- goal(black, 91).
+exc(109) :- goal(black, 90).
+exc(110) :- goal(black, 9).
+exc(111) :- goal(black, 89).
+exc(112) :- goal(black, 88).
+exc(113) :- goal(black, 87).
+exc(114) :- goal(black, 86).
+exc(115) :- goal(black, 85).
+exc(116) :- goal(black, 84).
+exc(117) :- goal(black, 83).
+exc(118) :- goal(black, 82).
+exc(119) :- goal(black, 81).
+exc(120) :- goal(black, 80).
+exc(121) :- goal(black, 8).
+exc(122) :- goal(black, 79).
+exc(123) :- goal(black, 78).
+exc(124) :- goal(black, 77).
+exc(125) :- goal(black, 76).
+exc(126) :- goal(black, 75).
+exc(127) :- goal(black, 74).
+exc(128) :- goal(black, 73).
+exc(129) :- goal(black, 72).
+exc(130) :- goal(black, 71).
+exc(131) :- goal(black, 70).
+exc(132) :- goal(black, 7).
+exc(133) :- goal(black, 69).
+exc(134) :- goal(black, 68).
+exc(135) :- goal(black, 67).
+exc(136) :- goal(black, 66).
+exc(137) :- goal(black, 65).
+exc(138) :- goal(black, 64).
+exc(139) :- goal(black, 63).
+exc(140) :- goal(black, 62).
+exc(141) :- goal(black, 61).
+exc(142) :- goal(black, 60).
+exc(143) :- goal(black, 6).
+exc(144) :- goal(black, 59).
+exc(145) :- goal(black, 58).
+exc(146) :- goal(black, 57).
+exc(147) :- goal(black, 56).
+exc(148) :- goal(black, 55).
+exc(149) :- goal(black, 54).
+exc(150) :- goal(black, 53).
+exc(151) :- goal(black, 52).
+exc(152) :- goal(black, 51).
+exc(153) :- goal(black, 50).
+exc(154) :- goal(black, 5).
+exc(155) :- goal(black, 49).
+exc(156) :- goal(black, 48).
+exc(157) :- goal(black, 47).
+exc(158) :- goal(black, 46).
+exc(159) :- goal(black, 45).
+exc(160) :- goal(black, 44).
+exc(161) :- goal(black, 43).
+exc(162) :- goal(black, 42).
+exc(163) :- goal(black, 41).
+exc(164) :- goal(black, 40).
+exc(165) :- goal(black, 4).
+exc(166) :- goal(black, 39).
+exc(167) :- goal(black, 38).
+exc(168) :- goal(black, 37).
+exc(169) :- goal(black, 36).
+exc(170) :- goal(black, 35).
+exc(171) :- goal(black, 34).
+exc(172) :- goal(black, 33).
+exc(173) :- goal(black, 32).
+exc(174) :- goal(black, 31).
+exc(175) :- goal(black, 30).
+exc(176) :- goal(black, 3).
+exc(177) :- goal(black, 29).
+exc(178) :- goal(black, 28).
+exc(179) :- goal(black, 27).
+exc(180) :- goal(black, 26).
+exc(181) :- goal(black, 25).
+exc(182) :- goal(black, 24).
+exc(183) :- goal(black, 23).
+exc(184) :- goal(black, 22).
+exc(185) :- goal(black, 21).
+exc(186) :- goal(black, 20).
+exc(187) :- goal(black, 2).
+exc(188) :- goal(black, 19).
+exc(189) :- goal(black, 18).
+exc(190) :- goal(black, 17).
+exc(191) :- goal(black, 16).
+exc(192) :- goal(black, 15).
+exc(193) :- goal(black, 14).
+exc(194) :- goal(black, 13).
+exc(195) :- goal(black, 12).
+exc(196) :- goal(black, 11).
+exc(197) :- goal(black, 100).
+exc(198) :- goal(black, 10).
+exc(199) :- goal(black, 1).
+#show inc/1.
+#show exc/1.
+

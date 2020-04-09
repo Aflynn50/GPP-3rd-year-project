@@ -1,0 +1,1767 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V0, V0, V0, V1) :- pos(V0), mark(V0), mark(V1).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 2; exc: 0
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 3; exc: 0
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+}
+inc: 4; exc: 0
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V2, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2).
+(V0), pos(V1), mark(V2), pos(V5).
+next_cell(V0, V1, V2) :- true_cell(V1, V1, V8), V0 = 3, V2 = x, V8 = o, pos(V0), pos(V1), mark(V2), mark(V8).
+next_cell(V0, V1, V2) :- true_cell(V1, V0, V8), true_cell(V5, V5, V8), true_cell(V0, V0, V2), V0 = 1, V5 = 2, pos(V0), pos(V1), mark(V2), pos(V5), mark(V8).
+next_cell(V0, V1, V2) :- true_cell(V1, V1, V2), V1 = 3, pos(V0), pos(V1), mark(V2).
+next_cell(V0, V0, V1) :- true_cell(V5, V5, V8), V0 = 1, V1 = o, V8 = x, pos(V0), mark(V1), pos(V5), mark(V8).
+}
+next_cell(V0, V0, V0, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V0, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V1, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), mark(V2).
+next_cell(V0, V0, V1, V2, V2) :- pos(V0), mark(V0), pos(V1), mark(V1), pos(V2), mark(V2).
+(V0), pos(V1), mark(V2), pos(V5).
+next_cell(V0, V1, V2) :- true_cell(V1, V1, V8), V0 = 3, V2 = x, V8 = o, pos(V0), pos(V1), mark(V2), mark(V8).
+next_cell(V0, V1, V2) :- true_cell(V1, V0, V8), true_cell(V5, V5, V8), true_cell(V0, V0, V2), V0 = 1, V5 = 2, pos(V0), pos(V1), mark(V2), pos(V5), mark(V8).
+next_cell(V0, V1, V2) :- true_cell(V1, V1, V2), V1 = 3, pos(V0), pos(V1), mark(V2).
+next_cell(V0, V0, V1) :- true_cell(V5, V5, V8), V0 = 1, V1 = o, V8 = x, pos(V0), mark(V1), pos(V5), mark(V8).
+
+role(robot).
+input_mark(robot, 3, 3, 3, 3, 9).
+input_mark(robot, 3, 3, 3, 3, 8).
+input_mark(robot, 3, 3, 3, 3, 7).
+input_mark(robot, 3, 3, 3, 3, 6).
+input_mark(robot, 3, 3, 3, 3, 5).
+input_mark(robot, 3, 3, 3, 3, 4).
+input_mark(robot, 3, 3, 3, 3, 3).
+input_mark(robot, 3, 3, 3, 3, 2).
+input_mark(robot, 3, 3, 3, 3, 1).
+input_mark(robot, 3, 3, 3, 2, 9).
+input_mark(robot, 3, 3, 3, 2, 8).
+input_mark(robot, 3, 3, 3, 2, 7).
+input_mark(robot, 3, 3, 3, 2, 6).
+input_mark(robot, 3, 3, 3, 2, 5).
+input_mark(robot, 3, 3, 3, 2, 4).
+input_mark(robot, 3, 3, 3, 2, 3).
+input_mark(robot, 3, 3, 3, 2, 2).
+input_mark(robot, 3, 3, 3, 2, 1).
+input_mark(robot, 3, 3, 3, 1, 9).
+input_mark(robot, 3, 3, 3, 1, 8).
+input_mark(robot, 3, 3, 3, 1, 7).
+input_mark(robot, 3, 3, 3, 1, 6).
+input_mark(robot, 3, 3, 3, 1, 5).
+input_mark(robot, 3, 3, 3, 1, 4).
+input_mark(robot, 3, 3, 3, 1, 3).
+input_mark(robot, 3, 3, 3, 1, 2).
+input_mark(robot, 3, 3, 3, 1, 1).
+input_mark(robot, 3, 3, 2, 3, 9).
+input_mark(robot, 3, 3, 2, 3, 8).
+input_mark(robot, 3, 3, 2, 3, 7).
+input_mark(robot, 3, 3, 2, 3, 6).
+input_mark(robot, 3, 3, 2, 3, 5).
+input_mark(robot, 3, 3, 2, 3, 4).
+input_mark(robot, 3, 3, 2, 3, 3).
+input_mark(robot, 3, 3, 2, 3, 2).
+input_mark(robot, 3, 3, 2, 3, 1).
+input_mark(robot, 3, 3, 2, 2, 9).
+input_mark(robot, 3, 3, 2, 2, 8).
+input_mark(robot, 3, 3, 2, 2, 7).
+input_mark(robot, 3, 3, 2, 2, 6).
+input_mark(robot, 3, 3, 2, 2, 5).
+input_mark(robot, 3, 3, 2, 2, 4).
+input_mark(robot, 3, 3, 2, 2, 3).
+input_mark(robot, 3, 3, 2, 2, 2).
+input_mark(robot, 3, 3, 2, 2, 1).
+input_mark(robot, 3, 3, 2, 1, 9).
+input_mark(robot, 3, 3, 2, 1, 8).
+input_mark(robot, 3, 3, 2, 1, 7).
+input_mark(robot, 3, 3, 2, 1, 6).
+input_mark(robot, 3, 3, 2, 1, 5).
+input_mark(robot, 3, 3, 2, 1, 4).
+input_mark(robot, 3, 3, 2, 1, 3).
+input_mark(robot, 3, 3, 2, 1, 2).
+input_mark(robot, 3, 3, 2, 1, 1).
+input_mark(robot, 3, 3, 1, 3, 9).
+input_mark(robot, 3, 3, 1, 3, 8).
+input_mark(robot, 3, 3, 1, 3, 7).
+input_mark(robot, 3, 3, 1, 3, 6).
+input_mark(robot, 3, 3, 1, 3, 5).
+input_mark(robot, 3, 3, 1, 3, 4).
+input_mark(robot, 3, 3, 1, 3, 3).
+input_mark(robot, 3, 3, 1, 3, 2).
+input_mark(robot, 3, 3, 1, 3, 1).
+input_mark(robot, 3, 3, 1, 2, 9).
+input_mark(robot, 3, 3, 1, 2, 8).
+input_mark(robot, 3, 3, 1, 2, 7).
+input_mark(robot, 3, 3, 1, 2, 6).
+input_mark(robot, 3, 3, 1, 2, 5).
+input_mark(robot, 3, 3, 1, 2, 4).
+input_mark(robot, 3, 3, 1, 2, 3).
+input_mark(robot, 3, 3, 1, 2, 2).
+input_mark(robot, 3, 3, 1, 2, 1).
+input_mark(robot, 3, 3, 1, 1, 9).
+input_mark(robot, 3, 3, 1, 1, 8).
+input_mark(robot, 3, 3, 1, 1, 7).
+input_mark(robot, 3, 3, 1, 1, 6).
+input_mark(robot, 3, 3, 1, 1, 5).
+input_mark(robot, 3, 3, 1, 1, 4).
+input_mark(robot, 3, 3, 1, 1, 3).
+input_mark(robot, 3, 3, 1, 1, 2).
+input_mark(robot, 3, 3, 1, 1, 1).
+input_mark(robot, 3, 2, 3, 3, 9).
+input_mark(robot, 3, 2, 3, 3, 8).
+input_mark(robot, 3, 2, 3, 3, 7).
+input_mark(robot, 3, 2, 3, 3, 6).
+input_mark(robot, 3, 2, 3, 3, 5).
+input_mark(robot, 3, 2, 3, 3, 4).
+input_mark(robot, 3, 2, 3, 3, 3).
+input_mark(robot, 3, 2, 3, 3, 2).
+input_mark(robot, 3, 2, 3, 3, 1).
+input_mark(robot, 3, 2, 3, 2, 9).
+input_mark(robot, 3, 2, 3, 2, 8).
+input_mark(robot, 3, 2, 3, 2, 7).
+input_mark(robot, 3, 2, 3, 2, 6).
+input_mark(robot, 3, 2, 3, 2, 5).
+input_mark(robot, 3, 2, 3, 2, 4).
+input_mark(robot, 3, 2, 3, 2, 3).
+input_mark(robot, 3, 2, 3, 2, 2).
+input_mark(robot, 3, 2, 3, 2, 1).
+input_mark(robot, 3, 2, 3, 1, 9).
+input_mark(robot, 3, 2, 3, 1, 8).
+input_mark(robot, 3, 2, 3, 1, 7).
+input_mark(robot, 3, 2, 3, 1, 6).
+input_mark(robot, 3, 2, 3, 1, 5).
+input_mark(robot, 3, 2, 3, 1, 4).
+input_mark(robot, 3, 2, 3, 1, 3).
+input_mark(robot, 3, 2, 3, 1, 2).
+input_mark(robot, 3, 2, 3, 1, 1).
+input_mark(robot, 3, 2, 2, 3, 9).
+input_mark(robot, 3, 2, 2, 3, 8).
+input_mark(robot, 3, 2, 2, 3, 7).
+input_mark(robot, 3, 2, 2, 3, 6).
+input_mark(robot, 3, 2, 2, 3, 5).
+input_mark(robot, 3, 2, 2, 3, 4).
+input_mark(robot, 3, 2, 2, 3, 3).
+input_mark(robot, 3, 2, 2, 3, 2).
+input_mark(robot, 3, 2, 2, 3, 1).
+input_mark(robot, 3, 2, 2, 2, 9).
+input_mark(robot, 3, 2, 2, 2, 8).
+input_mark(robot, 3, 2, 2, 2, 7).
+input_mark(robot, 3, 2, 2, 2, 6).
+input_mark(robot, 3, 2, 2, 2, 5).
+input_mark(robot, 3, 2, 2, 2, 4).
+input_mark(robot, 3, 2, 2, 2, 3).
+input_mark(robot, 3, 2, 2, 2, 2).
+input_mark(robot, 3, 2, 2, 2, 1).
+input_mark(robot, 3, 2, 2, 1, 9).
+input_mark(robot, 3, 2, 2, 1, 8).
+input_mark(robot, 3, 2, 2, 1, 7).
+input_mark(robot, 3, 2, 2, 1, 6).
+input_mark(robot, 3, 2, 2, 1, 5).
+input_mark(robot, 3, 2, 2, 1, 4).
+input_mark(robot, 3, 2, 2, 1, 3).
+input_mark(robot, 3, 2, 2, 1, 2).
+input_mark(robot, 3, 2, 2, 1, 1).
+input_mark(robot, 3, 2, 1, 3, 9).
+input_mark(robot, 3, 2, 1, 3, 8).
+input_mark(robot, 3, 2, 1, 3, 7).
+input_mark(robot, 3, 2, 1, 3, 6).
+input_mark(robot, 3, 2, 1, 3, 5).
+input_mark(robot, 3, 2, 1, 3, 4).
+input_mark(robot, 3, 2, 1, 3, 3).
+input_mark(robot, 3, 2, 1, 3, 2).
+input_mark(robot, 3, 2, 1, 3, 1).
+input_mark(robot, 3, 2, 1, 2, 9).
+input_mark(robot, 3, 2, 1, 2, 8).
+input_mark(robot, 3, 2, 1, 2, 7).
+input_mark(robot, 3, 2, 1, 2, 6).
+input_mark(robot, 3, 2, 1, 2, 5).
+input_mark(robot, 3, 2, 1, 2, 4).
+input_mark(robot, 3, 2, 1, 2, 3).
+input_mark(robot, 3, 2, 1, 2, 2).
+input_mark(robot, 3, 2, 1, 2, 1).
+input_mark(robot, 3, 2, 1, 1, 9).
+input_mark(robot, 3, 2, 1, 1, 8).
+input_mark(robot, 3, 2, 1, 1, 7).
+input_mark(robot, 3, 2, 1, 1, 6).
+input_mark(robot, 3, 2, 1, 1, 5).
+input_mark(robot, 3, 2, 1, 1, 4).
+input_mark(robot, 3, 2, 1, 1, 3).
+input_mark(robot, 3, 2, 1, 1, 2).
+input_mark(robot, 3, 2, 1, 1, 1).
+input_mark(robot, 3, 1, 3, 3, 9).
+input_mark(robot, 3, 1, 3, 3, 8).
+input_mark(robot, 3, 1, 3, 3, 7).
+input_mark(robot, 3, 1, 3, 3, 6).
+input_mark(robot, 3, 1, 3, 3, 5).
+input_mark(robot, 3, 1, 3, 3, 4).
+input_mark(robot, 3, 1, 3, 3, 3).
+input_mark(robot, 3, 1, 3, 3, 2).
+input_mark(robot, 3, 1, 3, 3, 1).
+input_mark(robot, 3, 1, 3, 2, 9).
+input_mark(robot, 3, 1, 3, 2, 8).
+input_mark(robot, 3, 1, 3, 2, 7).
+input_mark(robot, 3, 1, 3, 2, 6).
+input_mark(robot, 3, 1, 3, 2, 5).
+input_mark(robot, 3, 1, 3, 2, 4).
+input_mark(robot, 3, 1, 3, 2, 3).
+input_mark(robot, 3, 1, 3, 2, 2).
+input_mark(robot, 3, 1, 3, 2, 1).
+input_mark(robot, 3, 1, 3, 1, 9).
+input_mark(robot, 3, 1, 3, 1, 8).
+input_mark(robot, 3, 1, 3, 1, 7).
+input_mark(robot, 3, 1, 3, 1, 6).
+input_mark(robot, 3, 1, 3, 1, 5).
+input_mark(robot, 3, 1, 3, 1, 4).
+input_mark(robot, 3, 1, 3, 1, 3).
+input_mark(robot, 3, 1, 3, 1, 2).
+input_mark(robot, 3, 1, 3, 1, 1).
+input_mark(robot, 3, 1, 2, 3, 9).
+input_mark(robot, 3, 1, 2, 3, 8).
+input_mark(robot, 3, 1, 2, 3, 7).
+input_mark(robot, 3, 1, 2, 3, 6).
+input_mark(robot, 3, 1, 2, 3, 5).
+input_mark(robot, 3, 1, 2, 3, 4).
+input_mark(robot, 3, 1, 2, 3, 3).
+input_mark(robot, 3, 1, 2, 3, 2).
+input_mark(robot, 3, 1, 2, 3, 1).
+input_mark(robot, 3, 1, 2, 2, 9).
+input_mark(robot, 3, 1, 2, 2, 8).
+input_mark(robot, 3, 1, 2, 2, 7).
+input_mark(robot, 3, 1, 2, 2, 6).
+input_mark(robot, 3, 1, 2, 2, 5).
+input_mark(robot, 3, 1, 2, 2, 4).
+input_mark(robot, 3, 1, 2, 2, 3).
+input_mark(robot, 3, 1, 2, 2, 2).
+input_mark(robot, 3, 1, 2, 2, 1).
+input_mark(robot, 3, 1, 2, 1, 9).
+input_mark(robot, 3, 1, 2, 1, 8).
+input_mark(robot, 3, 1, 2, 1, 7).
+input_mark(robot, 3, 1, 2, 1, 6).
+input_mark(robot, 3, 1, 2, 1, 5).
+input_mark(robot, 3, 1, 2, 1, 4).
+input_mark(robot, 3, 1, 2, 1, 3).
+input_mark(robot, 3, 1, 2, 1, 2).
+input_mark(robot, 3, 1, 2, 1, 1).
+input_mark(robot, 3, 1, 1, 3, 9).
+input_mark(robot, 3, 1, 1, 3, 8).
+input_mark(robot, 3, 1, 1, 3, 7).
+input_mark(robot, 3, 1, 1, 3, 6).
+input_mark(robot, 3, 1, 1, 3, 5).
+input_mark(robot, 3, 1, 1, 3, 4).
+input_mark(robot, 3, 1, 1, 3, 3).
+input_mark(robot, 3, 1, 1, 3, 2).
+input_mark(robot, 3, 1, 1, 3, 1).
+input_mark(robot, 3, 1, 1, 2, 9).
+input_mark(robot, 3, 1, 1, 2, 8).
+input_mark(robot, 3, 1, 1, 2, 7).
+input_mark(robot, 3, 1, 1, 2, 6).
+input_mark(robot, 3, 1, 1, 2, 5).
+input_mark(robot, 3, 1, 1, 2, 4).
+input_mark(robot, 3, 1, 1, 2, 3).
+input_mark(robot, 3, 1, 1, 2, 2).
+input_mark(robot, 3, 1, 1, 2, 1).
+input_mark(robot, 3, 1, 1, 1, 9).
+input_mark(robot, 3, 1, 1, 1, 8).
+input_mark(robot, 3, 1, 1, 1, 7).
+input_mark(robot, 3, 1, 1, 1, 6).
+input_mark(robot, 3, 1, 1, 1, 5).
+input_mark(robot, 3, 1, 1, 1, 4).
+input_mark(robot, 3, 1, 1, 1, 3).
+input_mark(robot, 3, 1, 1, 1, 2).
+input_mark(robot, 3, 1, 1, 1, 1).
+input_mark(robot, 2, 3, 3, 3, 9).
+input_mark(robot, 2, 3, 3, 3, 8).
+input_mark(robot, 2, 3, 3, 3, 7).
+input_mark(robot, 2, 3, 3, 3, 6).
+input_mark(robot, 2, 3, 3, 3, 5).
+input_mark(robot, 2, 3, 3, 3, 4).
+input_mark(robot, 2, 3, 3, 3, 3).
+input_mark(robot, 2, 3, 3, 3, 2).
+input_mark(robot, 2, 3, 3, 3, 1).
+input_mark(robot, 2, 3, 3, 2, 9).
+input_mark(robot, 2, 3, 3, 2, 8).
+input_mark(robot, 2, 3, 3, 2, 7).
+input_mark(robot, 2, 3, 3, 2, 6).
+input_mark(robot, 2, 3, 3, 2, 5).
+input_mark(robot, 2, 3, 3, 2, 4).
+input_mark(robot, 2, 3, 3, 2, 3).
+input_mark(robot, 2, 3, 3, 2, 2).
+input_mark(robot, 2, 3, 3, 2, 1).
+input_mark(robot, 2, 3, 3, 1, 9).
+input_mark(robot, 2, 3, 3, 1, 8).
+input_mark(robot, 2, 3, 3, 1, 7).
+input_mark(robot, 2, 3, 3, 1, 6).
+input_mark(robot, 2, 3, 3, 1, 5).
+input_mark(robot, 2, 3, 3, 1, 4).
+input_mark(robot, 2, 3, 3, 1, 3).
+input_mark(robot, 2, 3, 3, 1, 2).
+input_mark(robot, 2, 3, 3, 1, 1).
+input_mark(robot, 2, 3, 2, 3, 9).
+input_mark(robot, 2, 3, 2, 3, 8).
+input_mark(robot, 2, 3, 2, 3, 7).
+input_mark(robot, 2, 3, 2, 3, 6).
+input_mark(robot, 2, 3, 2, 3, 5).
+input_mark(robot, 2, 3, 2, 3, 4).
+input_mark(robot, 2, 3, 2, 3, 3).
+input_mark(robot, 2, 3, 2, 3, 2).
+input_mark(robot, 2, 3, 2, 3, 1).
+input_mark(robot, 2, 3, 2, 2, 9).
+input_mark(robot, 2, 3, 2, 2, 8).
+input_mark(robot, 2, 3, 2, 2, 7).
+input_mark(robot, 2, 3, 2, 2, 6).
+input_mark(robot, 2, 3, 2, 2, 5).
+input_mark(robot, 2, 3, 2, 2, 4).
+input_mark(robot, 2, 3, 2, 2, 3).
+input_mark(robot, 2, 3, 2, 2, 2).
+input_mark(robot, 2, 3, 2, 2, 1).
+input_mark(robot, 2, 3, 2, 1, 9).
+input_mark(robot, 2, 3, 2, 1, 8).
+input_mark(robot, 2, 3, 2, 1, 7).
+input_mark(robot, 2, 3, 2, 1, 6).
+input_mark(robot, 2, 3, 2, 1, 5).
+input_mark(robot, 2, 3, 2, 1, 4).
+input_mark(robot, 2, 3, 2, 1, 3).
+input_mark(robot, 2, 3, 2, 1, 2).
+input_mark(robot, 2, 3, 2, 1, 1).
+input_mark(robot, 2, 3, 1, 3, 9).
+input_mark(robot, 2, 3, 1, 3, 8).
+input_mark(robot, 2, 3, 1, 3, 7).
+input_mark(robot, 2, 3, 1, 3, 6).
+input_mark(robot, 2, 3, 1, 3, 5).
+input_mark(robot, 2, 3, 1, 3, 4).
+input_mark(robot, 2, 3, 1, 3, 3).
+input_mark(robot, 2, 3, 1, 3, 2).
+input_mark(robot, 2, 3, 1, 3, 1).
+input_mark(robot, 2, 3, 1, 2, 9).
+input_mark(robot, 2, 3, 1, 2, 8).
+input_mark(robot, 2, 3, 1, 2, 7).
+input_mark(robot, 2, 3, 1, 2, 6).
+input_mark(robot, 2, 3, 1, 2, 5).
+input_mark(robot, 2, 3, 1, 2, 4).
+input_mark(robot, 2, 3, 1, 2, 3).
+input_mark(robot, 2, 3, 1, 2, 2).
+input_mark(robot, 2, 3, 1, 2, 1).
+input_mark(robot, 2, 3, 1, 1, 9).
+input_mark(robot, 2, 3, 1, 1, 8).
+input_mark(robot, 2, 3, 1, 1, 7).
+input_mark(robot, 2, 3, 1, 1, 6).
+input_mark(robot, 2, 3, 1, 1, 5).
+input_mark(robot, 2, 3, 1, 1, 4).
+input_mark(robot, 2, 3, 1, 1, 3).
+input_mark(robot, 2, 3, 1, 1, 2).
+input_mark(robot, 2, 3, 1, 1, 1).
+input_mark(robot, 2, 2, 3, 3, 9).
+input_mark(robot, 2, 2, 3, 3, 8).
+input_mark(robot, 2, 2, 3, 3, 7).
+input_mark(robot, 2, 2, 3, 3, 6).
+input_mark(robot, 2, 2, 3, 3, 5).
+input_mark(robot, 2, 2, 3, 3, 4).
+input_mark(robot, 2, 2, 3, 3, 3).
+input_mark(robot, 2, 2, 3, 3, 2).
+input_mark(robot, 2, 2, 3, 3, 1).
+input_mark(robot, 2, 2, 3, 2, 9).
+input_mark(robot, 2, 2, 3, 2, 8).
+input_mark(robot, 2, 2, 3, 2, 7).
+input_mark(robot, 2, 2, 3, 2, 6).
+input_mark(robot, 2, 2, 3, 2, 5).
+input_mark(robot, 2, 2, 3, 2, 4).
+input_mark(robot, 2, 2, 3, 2, 3).
+input_mark(robot, 2, 2, 3, 2, 2).
+input_mark(robot, 2, 2, 3, 2, 1).
+input_mark(robot, 2, 2, 3, 1, 9).
+input_mark(robot, 2, 2, 3, 1, 8).
+input_mark(robot, 2, 2, 3, 1, 7).
+input_mark(robot, 2, 2, 3, 1, 6).
+input_mark(robot, 2, 2, 3, 1, 5).
+input_mark(robot, 2, 2, 3, 1, 4).
+input_mark(robot, 2, 2, 3, 1, 3).
+input_mark(robot, 2, 2, 3, 1, 2).
+input_mark(robot, 2, 2, 3, 1, 1).
+input_mark(robot, 2, 2, 2, 3, 9).
+input_mark(robot, 2, 2, 2, 3, 8).
+input_mark(robot, 2, 2, 2, 3, 7).
+input_mark(robot, 2, 2, 2, 3, 6).
+input_mark(robot, 2, 2, 2, 3, 5).
+input_mark(robot, 2, 2, 2, 3, 4).
+input_mark(robot, 2, 2, 2, 3, 3).
+input_mark(robot, 2, 2, 2, 3, 2).
+input_mark(robot, 2, 2, 2, 3, 1).
+input_mark(robot, 2, 2, 2, 2, 9).
+input_mark(robot, 2, 2, 2, 2, 8).
+input_mark(robot, 2, 2, 2, 2, 7).
+input_mark(robot, 2, 2, 2, 2, 6).
+input_mark(robot, 2, 2, 2, 2, 5).
+input_mark(robot, 2, 2, 2, 2, 4).
+input_mark(robot, 2, 2, 2, 2, 3).
+input_mark(robot, 2, 2, 2, 2, 2).
+input_mark(robot, 2, 2, 2, 2, 1).
+input_mark(robot, 2, 2, 2, 1, 9).
+input_mark(robot, 2, 2, 2, 1, 8).
+input_mark(robot, 2, 2, 2, 1, 7).
+input_mark(robot, 2, 2, 2, 1, 6).
+input_mark(robot, 2, 2, 2, 1, 5).
+input_mark(robot, 2, 2, 2, 1, 4).
+input_mark(robot, 2, 2, 2, 1, 3).
+input_mark(robot, 2, 2, 2, 1, 2).
+input_mark(robot, 2, 2, 2, 1, 1).
+input_mark(robot, 2, 2, 1, 3, 9).
+input_mark(robot, 2, 2, 1, 3, 8).
+input_mark(robot, 2, 2, 1, 3, 7).
+input_mark(robot, 2, 2, 1, 3, 6).
+input_mark(robot, 2, 2, 1, 3, 5).
+input_mark(robot, 2, 2, 1, 3, 4).
+input_mark(robot, 2, 2, 1, 3, 3).
+input_mark(robot, 2, 2, 1, 3, 2).
+input_mark(robot, 2, 2, 1, 3, 1).
+input_mark(robot, 2, 2, 1, 2, 9).
+input_mark(robot, 2, 2, 1, 2, 8).
+input_mark(robot, 2, 2, 1, 2, 7).
+input_mark(robot, 2, 2, 1, 2, 6).
+input_mark(robot, 2, 2, 1, 2, 5).
+input_mark(robot, 2, 2, 1, 2, 4).
+input_mark(robot, 2, 2, 1, 2, 3).
+input_mark(robot, 2, 2, 1, 2, 2).
+input_mark(robot, 2, 2, 1, 2, 1).
+input_mark(robot, 2, 2, 1, 1, 9).
+input_mark(robot, 2, 2, 1, 1, 8).
+input_mark(robot, 2, 2, 1, 1, 7).
+input_mark(robot, 2, 2, 1, 1, 6).
+input_mark(robot, 2, 2, 1, 1, 5).
+input_mark(robot, 2, 2, 1, 1, 4).
+input_mark(robot, 2, 2, 1, 1, 3).
+input_mark(robot, 2, 2, 1, 1, 2).
+input_mark(robot, 2, 2, 1, 1, 1).
+input_mark(robot, 2, 1, 3, 3, 9).
+input_mark(robot, 2, 1, 3, 3, 8).
+input_mark(robot, 2, 1, 3, 3, 7).
+input_mark(robot, 2, 1, 3, 3, 6).
+input_mark(robot, 2, 1, 3, 3, 5).
+input_mark(robot, 2, 1, 3, 3, 4).
+input_mark(robot, 2, 1, 3, 3, 3).
+input_mark(robot, 2, 1, 3, 3, 2).
+input_mark(robot, 2, 1, 3, 3, 1).
+input_mark(robot, 2, 1, 3, 2, 9).
+input_mark(robot, 2, 1, 3, 2, 8).
+input_mark(robot, 2, 1, 3, 2, 7).
+input_mark(robot, 2, 1, 3, 2, 6).
+input_mark(robot, 2, 1, 3, 2, 5).
+input_mark(robot, 2, 1, 3, 2, 4).
+input_mark(robot, 2, 1, 3, 2, 3).
+input_mark(robot, 2, 1, 3, 2, 2).
+input_mark(robot, 2, 1, 3, 2, 1).
+input_mark(robot, 2, 1, 3, 1, 9).
+input_mark(robot, 2, 1, 3, 1, 8).
+input_mark(robot, 2, 1, 3, 1, 7).
+input_mark(robot, 2, 1, 3, 1, 6).
+input_mark(robot, 2, 1, 3, 1, 5).
+input_mark(robot, 2, 1, 3, 1, 4).
+input_mark(robot, 2, 1, 3, 1, 3).
+input_mark(robot, 2, 1, 3, 1, 2).
+input_mark(robot, 2, 1, 3, 1, 1).
+input_mark(robot, 2, 1, 2, 3, 9).
+input_mark(robot, 2, 1, 2, 3, 8).
+input_mark(robot, 2, 1, 2, 3, 7).
+input_mark(robot, 2, 1, 2, 3, 6).
+input_mark(robot, 2, 1, 2, 3, 5).
+input_mark(robot, 2, 1, 2, 3, 4).
+input_mark(robot, 2, 1, 2, 3, 3).
+input_mark(robot, 2, 1, 2, 3, 2).
+input_mark(robot, 2, 1, 2, 3, 1).
+input_mark(robot, 2, 1, 2, 2, 9).
+input_mark(robot, 2, 1, 2, 2, 8).
+input_mark(robot, 2, 1, 2, 2, 7).
+input_mark(robot, 2, 1, 2, 2, 6).
+input_mark(robot, 2, 1, 2, 2, 5).
+input_mark(robot, 2, 1, 2, 2, 4).
+input_mark(robot, 2, 1, 2, 2, 3).
+input_mark(robot, 2, 1, 2, 2, 2).
+input_mark(robot, 2, 1, 2, 2, 1).
+input_mark(robot, 2, 1, 2, 1, 9).
+input_mark(robot, 2, 1, 2, 1, 8).
+input_mark(robot, 2, 1, 2, 1, 7).
+input_mark(robot, 2, 1, 2, 1, 6).
+input_mark(robot, 2, 1, 2, 1, 5).
+input_mark(robot, 2, 1, 2, 1, 4).
+input_mark(robot, 2, 1, 2, 1, 3).
+input_mark(robot, 2, 1, 2, 1, 2).
+input_mark(robot, 2, 1, 2, 1, 1).
+input_mark(robot, 2, 1, 1, 3, 9).
+input_mark(robot, 2, 1, 1, 3, 8).
+input_mark(robot, 2, 1, 1, 3, 7).
+input_mark(robot, 2, 1, 1, 3, 6).
+input_mark(robot, 2, 1, 1, 3, 5).
+input_mark(robot, 2, 1, 1, 3, 4).
+input_mark(robot, 2, 1, 1, 3, 3).
+input_mark(robot, 2, 1, 1, 3, 2).
+input_mark(robot, 2, 1, 1, 3, 1).
+input_mark(robot, 2, 1, 1, 2, 9).
+input_mark(robot, 2, 1, 1, 2, 8).
+input_mark(robot, 2, 1, 1, 2, 7).
+input_mark(robot, 2, 1, 1, 2, 6).
+input_mark(robot, 2, 1, 1, 2, 5).
+input_mark(robot, 2, 1, 1, 2, 4).
+input_mark(robot, 2, 1, 1, 2, 3).
+input_mark(robot, 2, 1, 1, 2, 2).
+input_mark(robot, 2, 1, 1, 2, 1).
+input_mark(robot, 2, 1, 1, 1, 9).
+input_mark(robot, 2, 1, 1, 1, 8).
+input_mark(robot, 2, 1, 1, 1, 7).
+input_mark(robot, 2, 1, 1, 1, 6).
+input_mark(robot, 2, 1, 1, 1, 5).
+input_mark(robot, 2, 1, 1, 1, 4).
+input_mark(robot, 2, 1, 1, 1, 3).
+input_mark(robot, 2, 1, 1, 1, 2).
+input_mark(robot, 2, 1, 1, 1, 1).
+input_mark(robot, 1, 3, 3, 3, 9).
+input_mark(robot, 1, 3, 3, 3, 8).
+input_mark(robot, 1, 3, 3, 3, 7).
+input_mark(robot, 1, 3, 3, 3, 6).
+input_mark(robot, 1, 3, 3, 3, 5).
+input_mark(robot, 1, 3, 3, 3, 4).
+input_mark(robot, 1, 3, 3, 3, 3).
+input_mark(robot, 1, 3, 3, 3, 2).
+input_mark(robot, 1, 3, 3, 3, 1).
+input_mark(robot, 1, 3, 3, 2, 9).
+input_mark(robot, 1, 3, 3, 2, 8).
+input_mark(robot, 1, 3, 3, 2, 7).
+input_mark(robot, 1, 3, 3, 2, 6).
+input_mark(robot, 1, 3, 3, 2, 5).
+input_mark(robot, 1, 3, 3, 2, 4).
+input_mark(robot, 1, 3, 3, 2, 3).
+input_mark(robot, 1, 3, 3, 2, 2).
+input_mark(robot, 1, 3, 3, 2, 1).
+input_mark(robot, 1, 3, 3, 1, 9).
+input_mark(robot, 1, 3, 3, 1, 8).
+input_mark(robot, 1, 3, 3, 1, 7).
+input_mark(robot, 1, 3, 3, 1, 6).
+input_mark(robot, 1, 3, 3, 1, 5).
+input_mark(robot, 1, 3, 3, 1, 4).
+input_mark(robot, 1, 3, 3, 1, 3).
+input_mark(robot, 1, 3, 3, 1, 2).
+input_mark(robot, 1, 3, 3, 1, 1).
+input_mark(robot, 1, 3, 2, 3, 9).
+input_mark(robot, 1, 3, 2, 3, 8).
+input_mark(robot, 1, 3, 2, 3, 7).
+input_mark(robot, 1, 3, 2, 3, 6).
+input_mark(robot, 1, 3, 2, 3, 5).
+input_mark(robot, 1, 3, 2, 3, 4).
+input_mark(robot, 1, 3, 2, 3, 3).
+input_mark(robot, 1, 3, 2, 3, 2).
+input_mark(robot, 1, 3, 2, 3, 1).
+input_mark(robot, 1, 3, 2, 2, 9).
+input_mark(robot, 1, 3, 2, 2, 8).
+input_mark(robot, 1, 3, 2, 2, 7).
+input_mark(robot, 1, 3, 2, 2, 6).
+input_mark(robot, 1, 3, 2, 2, 5).
+input_mark(robot, 1, 3, 2, 2, 4).
+input_mark(robot, 1, 3, 2, 2, 3).
+input_mark(robot, 1, 3, 2, 2, 2).
+input_mark(robot, 1, 3, 2, 2, 1).
+input_mark(robot, 1, 3, 2, 1, 9).
+input_mark(robot, 1, 3, 2, 1, 8).
+input_mark(robot, 1, 3, 2, 1, 7).
+input_mark(robot, 1, 3, 2, 1, 6).
+input_mark(robot, 1, 3, 2, 1, 5).
+input_mark(robot, 1, 3, 2, 1, 4).
+input_mark(robot, 1, 3, 2, 1, 3).
+input_mark(robot, 1, 3, 2, 1, 2).
+input_mark(robot, 1, 3, 2, 1, 1).
+input_mark(robot, 1, 3, 1, 3, 9).
+input_mark(robot, 1, 3, 1, 3, 8).
+input_mark(robot, 1, 3, 1, 3, 7).
+input_mark(robot, 1, 3, 1, 3, 6).
+input_mark(robot, 1, 3, 1, 3, 5).
+input_mark(robot, 1, 3, 1, 3, 4).
+input_mark(robot, 1, 3, 1, 3, 3).
+input_mark(robot, 1, 3, 1, 3, 2).
+input_mark(robot, 1, 3, 1, 3, 1).
+input_mark(robot, 1, 3, 1, 2, 9).
+input_mark(robot, 1, 3, 1, 2, 8).
+input_mark(robot, 1, 3, 1, 2, 7).
+input_mark(robot, 1, 3, 1, 2, 6).
+input_mark(robot, 1, 3, 1, 2, 5).
+input_mark(robot, 1, 3, 1, 2, 4).
+input_mark(robot, 1, 3, 1, 2, 3).
+input_mark(robot, 1, 3, 1, 2, 2).
+input_mark(robot, 1, 3, 1, 2, 1).
+input_mark(robot, 1, 3, 1, 1, 9).
+input_mark(robot, 1, 3, 1, 1, 8).
+input_mark(robot, 1, 3, 1, 1, 7).
+input_mark(robot, 1, 3, 1, 1, 6).
+input_mark(robot, 1, 3, 1, 1, 5).
+input_mark(robot, 1, 3, 1, 1, 4).
+input_mark(robot, 1, 3, 1, 1, 3).
+input_mark(robot, 1, 3, 1, 1, 2).
+input_mark(robot, 1, 3, 1, 1, 1).
+input_mark(robot, 1, 2, 3, 3, 9).
+input_mark(robot, 1, 2, 3, 3, 8).
+input_mark(robot, 1, 2, 3, 3, 7).
+input_mark(robot, 1, 2, 3, 3, 6).
+input_mark(robot, 1, 2, 3, 3, 5).
+input_mark(robot, 1, 2, 3, 3, 4).
+input_mark(robot, 1, 2, 3, 3, 3).
+input_mark(robot, 1, 2, 3, 3, 2).
+input_mark(robot, 1, 2, 3, 3, 1).
+input_mark(robot, 1, 2, 3, 2, 9).
+input_mark(robot, 1, 2, 3, 2, 8).
+input_mark(robot, 1, 2, 3, 2, 7).
+input_mark(robot, 1, 2, 3, 2, 6).
+input_mark(robot, 1, 2, 3, 2, 5).
+input_mark(robot, 1, 2, 3, 2, 4).
+input_mark(robot, 1, 2, 3, 2, 3).
+input_mark(robot, 1, 2, 3, 2, 2).
+input_mark(robot, 1, 2, 3, 2, 1).
+input_mark(robot, 1, 2, 3, 1, 9).
+input_mark(robot, 1, 2, 3, 1, 8).
+input_mark(robot, 1, 2, 3, 1, 7).
+input_mark(robot, 1, 2, 3, 1, 6).
+input_mark(robot, 1, 2, 3, 1, 5).
+input_mark(robot, 1, 2, 3, 1, 4).
+input_mark(robot, 1, 2, 3, 1, 3).
+input_mark(robot, 1, 2, 3, 1, 2).
+input_mark(robot, 1, 2, 3, 1, 1).
+input_mark(robot, 1, 2, 2, 3, 9).
+input_mark(robot, 1, 2, 2, 3, 8).
+input_mark(robot, 1, 2, 2, 3, 7).
+input_mark(robot, 1, 2, 2, 3, 6).
+input_mark(robot, 1, 2, 2, 3, 5).
+input_mark(robot, 1, 2, 2, 3, 4).
+input_mark(robot, 1, 2, 2, 3, 3).
+input_mark(robot, 1, 2, 2, 3, 2).
+input_mark(robot, 1, 2, 2, 3, 1).
+input_mark(robot, 1, 2, 2, 2, 9).
+input_mark(robot, 1, 2, 2, 2, 8).
+input_mark(robot, 1, 2, 2, 2, 7).
+input_mark(robot, 1, 2, 2, 2, 6).
+input_mark(robot, 1, 2, 2, 2, 5).
+input_mark(robot, 1, 2, 2, 2, 4).
+input_mark(robot, 1, 2, 2, 2, 3).
+input_mark(robot, 1, 2, 2, 2, 2).
+input_mark(robot, 1, 2, 2, 2, 1).
+input_mark(robot, 1, 2, 2, 1, 9).
+input_mark(robot, 1, 2, 2, 1, 8).
+input_mark(robot, 1, 2, 2, 1, 7).
+input_mark(robot, 1, 2, 2, 1, 6).
+input_mark(robot, 1, 2, 2, 1, 5).
+input_mark(robot, 1, 2, 2, 1, 4).
+input_mark(robot, 1, 2, 2, 1, 3).
+input_mark(robot, 1, 2, 2, 1, 2).
+input_mark(robot, 1, 2, 2, 1, 1).
+input_mark(robot, 1, 2, 1, 3, 9).
+input_mark(robot, 1, 2, 1, 3, 8).
+input_mark(robot, 1, 2, 1, 3, 7).
+input_mark(robot, 1, 2, 1, 3, 6).
+input_mark(robot, 1, 2, 1, 3, 5).
+input_mark(robot, 1, 2, 1, 3, 4).
+input_mark(robot, 1, 2, 1, 3, 3).
+input_mark(robot, 1, 2, 1, 3, 2).
+input_mark(robot, 1, 2, 1, 3, 1).
+input_mark(robot, 1, 2, 1, 2, 9).
+input_mark(robot, 1, 2, 1, 2, 8).
+input_mark(robot, 1, 2, 1, 2, 7).
+input_mark(robot, 1, 2, 1, 2, 6).
+input_mark(robot, 1, 2, 1, 2, 5).
+input_mark(robot, 1, 2, 1, 2, 4).
+input_mark(robot, 1, 2, 1, 2, 3).
+input_mark(robot, 1, 2, 1, 2, 2).
+input_mark(robot, 1, 2, 1, 2, 1).
+input_mark(robot, 1, 2, 1, 1, 9).
+input_mark(robot, 1, 2, 1, 1, 8).
+input_mark(robot, 1, 2, 1, 1, 7).
+input_mark(robot, 1, 2, 1, 1, 6).
+input_mark(robot, 1, 2, 1, 1, 5).
+input_mark(robot, 1, 2, 1, 1, 4).
+input_mark(robot, 1, 2, 1, 1, 3).
+input_mark(robot, 1, 2, 1, 1, 2).
+input_mark(robot, 1, 2, 1, 1, 1).
+input_mark(robot, 1, 1, 3, 3, 9).
+input_mark(robot, 1, 1, 3, 3, 8).
+input_mark(robot, 1, 1, 3, 3, 7).
+input_mark(robot, 1, 1, 3, 3, 6).
+input_mark(robot, 1, 1, 3, 3, 5).
+input_mark(robot, 1, 1, 3, 3, 4).
+input_mark(robot, 1, 1, 3, 3, 3).
+input_mark(robot, 1, 1, 3, 3, 2).
+input_mark(robot, 1, 1, 3, 3, 1).
+input_mark(robot, 1, 1, 3, 2, 9).
+input_mark(robot, 1, 1, 3, 2, 8).
+input_mark(robot, 1, 1, 3, 2, 7).
+input_mark(robot, 1, 1, 3, 2, 6).
+input_mark(robot, 1, 1, 3, 2, 5).
+input_mark(robot, 1, 1, 3, 2, 4).
+input_mark(robot, 1, 1, 3, 2, 3).
+input_mark(robot, 1, 1, 3, 2, 2).
+input_mark(robot, 1, 1, 3, 2, 1).
+input_mark(robot, 1, 1, 3, 1, 9).
+input_mark(robot, 1, 1, 3, 1, 8).
+input_mark(robot, 1, 1, 3, 1, 7).
+input_mark(robot, 1, 1, 3, 1, 6).
+input_mark(robot, 1, 1, 3, 1, 5).
+input_mark(robot, 1, 1, 3, 1, 4).
+input_mark(robot, 1, 1, 3, 1, 3).
+input_mark(robot, 1, 1, 3, 1, 2).
+input_mark(robot, 1, 1, 3, 1, 1).
+input_mark(robot, 1, 1, 2, 3, 9).
+input_mark(robot, 1, 1, 2, 3, 8).
+input_mark(robot, 1, 1, 2, 3, 7).
+input_mark(robot, 1, 1, 2, 3, 6).
+input_mark(robot, 1, 1, 2, 3, 5).
+input_mark(robot, 1, 1, 2, 3, 4).
+input_mark(robot, 1, 1, 2, 3, 3).
+input_mark(robot, 1, 1, 2, 3, 2).
+input_mark(robot, 1, 1, 2, 3, 1).
+input_mark(robot, 1, 1, 2, 2, 9).
+input_mark(robot, 1, 1, 2, 2, 8).
+input_mark(robot, 1, 1, 2, 2, 7).
+input_mark(robot, 1, 1, 2, 2, 6).
+input_mark(robot, 1, 1, 2, 2, 5).
+input_mark(robot, 1, 1, 2, 2, 4).
+input_mark(robot, 1, 1, 2, 2, 3).
+input_mark(robot, 1, 1, 2, 2, 2).
+input_mark(robot, 1, 1, 2, 2, 1).
+input_mark(robot, 1, 1, 2, 1, 9).
+input_mark(robot, 1, 1, 2, 1, 8).
+input_mark(robot, 1, 1, 2, 1, 7).
+input_mark(robot, 1, 1, 2, 1, 6).
+input_mark(robot, 1, 1, 2, 1, 5).
+input_mark(robot, 1, 1, 2, 1, 4).
+input_mark(robot, 1, 1, 2, 1, 3).
+input_mark(robot, 1, 1, 2, 1, 2).
+input_mark(robot, 1, 1, 2, 1, 1).
+input_mark(robot, 1, 1, 1, 3, 9).
+input_mark(robot, 1, 1, 1, 3, 8).
+input_mark(robot, 1, 1, 1, 3, 7).
+input_mark(robot, 1, 1, 1, 3, 6).
+input_mark(robot, 1, 1, 1, 3, 5).
+input_mark(robot, 1, 1, 1, 3, 4).
+input_mark(robot, 1, 1, 1, 3, 3).
+input_mark(robot, 1, 1, 1, 3, 2).
+input_mark(robot, 1, 1, 1, 3, 1).
+input_mark(robot, 1, 1, 1, 2, 9).
+input_mark(robot, 1, 1, 1, 2, 8).
+input_mark(robot, 1, 1, 1, 2, 7).
+input_mark(robot, 1, 1, 1, 2, 6).
+input_mark(robot, 1, 1, 1, 2, 5).
+input_mark(robot, 1, 1, 1, 2, 4).
+input_mark(robot, 1, 1, 1, 2, 3).
+input_mark(robot, 1, 1, 1, 2, 2).
+input_mark(robot, 1, 1, 1, 2, 1).
+input_mark(robot, 1, 1, 1, 1, 9).
+input_mark(robot, 1, 1, 1, 1, 8).
+input_mark(robot, 1, 1, 1, 1, 7).
+input_mark(robot, 1, 1, 1, 1, 6).
+input_mark(robot, 1, 1, 1, 1, 5).
+input_mark(robot, 1, 1, 1, 1, 4).
+input_mark(robot, 1, 1, 1, 1, 3).
+input_mark(robot, 1, 1, 1, 1, 2).
+input_mark(robot, 1, 1, 1, 1, 1).
+index(3).
+index(2).
+index(1).
+filler(b).
+filler(9).
+filler(8).
+filler(7).
+filler(6).
+filler(5).
+filler(4).
+filler(3).
+filler(2).
+filler(1).
+digit(9).
+digit(8).
+digit(7).
+digit(6).
+digit(5).
+digit(4).
+digit(3).
+digit(2).
+digit(1).
+
+
+
+
+
+
+
+
+type(agent, robot).
+agent(robot).
+
+type(pos, 1).
+pos(1).
+
+type(pos, 2).
+pos(2).
+
+type(pos, 3).
+pos(3).
+
+type(mark, 4).
+mark(4).
+
+type(mark, 5).
+mark(5).
+
+type(mark, 6).
+mark(6).
+
+type(mark, 7).
+mark(7).
+
+type(mark, 8).
+mark(8).
+
+type(mark, 9).
+mark(9).
+
+type(mark, b).
+mark(b).
+
+type(score, 0).
+score(0).
+
+type(score, 100).
+score(100).
+
+
+
+
+type(mark, 1).
+mark(1).
+
+type(mark, 2).
+mark(2).
+
+type(mark, 3).
+mark(3).
+
+true_cell(3, 3, 3, 3, b).
+true_cell(3, 3, 3, 2, b).
+true_cell(3, 3, 3, 1, b).
+true_cell(3, 3, 2, 3, b).
+true_cell(3, 3, 2, 2, b).
+true_cell(3, 3, 2, 1, 1).
+true_cell(3, 3, 1, 3, b).
+true_cell(3, 3, 1, 2, 5).
+true_cell(3, 3, 1, 1, b).
+true_cell(3, 2, 3, 3, b).
+true_cell(3, 2, 3, 2, 1).
+true_cell(3, 2, 3, 1, 5).
+true_cell(3, 2, 2, 3, b).
+true_cell(3, 2, 2, 2, b).
+true_cell(3, 2, 2, 1, b).
+true_cell(3, 2, 1, 3, 4).
+true_cell(3, 2, 1, 2, b).
+true_cell(3, 2, 1, 1, b).
+true_cell(3, 1, 3, 3, 8).
+true_cell(3, 1, 3, 2, 2).
+true_cell(3, 1, 3, 1, b).
+true_cell(3, 1, 2, 3, b).
+true_cell(3, 1, 2, 2, b).
+true_cell(3, 1, 2, 1, b).
+true_cell(3, 1, 1, 3, b).
+true_cell(3, 1, 1, 2, b).
+true_cell(3, 1, 1, 1, 9).
+true_cell(2, 3, 3, 3, 1).
+true_cell(2, 3, 3, 2, 7).
+true_cell(2, 3, 3, 1, b).
+true_cell(2, 3, 2, 3, b).
+true_cell(2, 3, 2, 2, b).
+true_cell(2, 3, 2, 1, b).
+true_cell(2, 3, 1, 3, 3).
+true_cell(2, 3, 1, 2, b).
+true_cell(2, 3, 1, 1, b).
+true_cell(2, 2, 3, 3, b).
+true_cell(2, 2, 3, 2, b).
+true_cell(2, 2, 3, 1, b).
+true_cell(2, 2, 2, 3, 6).
+true_cell(2, 2, 2, 2, b).
+true_cell(2, 2, 2, 1, 2).
+true_cell(2, 2, 1, 3, b).
+true_cell(2, 2, 1, 2, b).
+true_cell(2, 2, 1, 1, b).
+true_cell(2, 1, 3, 3, b).
+true_cell(2, 1, 3, 2, b).
+true_cell(2, 1, 3, 1, 3).
+true_cell(2, 1, 2, 3, b).
+true_cell(2, 1, 2, 2, b).
+true_cell(2, 1, 2, 1, b).
+true_cell(2, 1, 1, 3, b).
+true_cell(2, 1, 1, 2, 9).
+true_cell(2, 1, 1, 1, 2).
+true_cell(1, 3, 3, 3, 2).
+true_cell(1, 3, 3, 2, b).
+true_cell(1, 3, 3, 1, b).
+true_cell(1, 3, 2, 3, b).
+true_cell(1, 3, 2, 2, b).
+true_cell(1, 3, 2, 1, b).
+true_cell(1, 3, 1, 3, b).
+true_cell(1, 3, 1, 2, 3).
+true_cell(1, 3, 1, 1, 6).
+true_cell(1, 2, 3, 3, b).
+true_cell(1, 2, 3, 2, b).
+true_cell(1, 2, 3, 1, 6).
+true_cell(1, 2, 2, 3, b).
+true_cell(1, 2, 2, 2, b).
+true_cell(1, 2, 2, 1, b).
+true_cell(1, 2, 1, 3, 5).
+true_cell(1, 2, 1, 2, 7).
+true_cell(1, 2, 1, 1, b).
+true_cell(1, 1, 3, 3, b).
+true_cell(1, 1, 3, 2, 8).
+true_cell(1, 1, 3, 1, b).
+true_cell(1, 1, 2, 3, 3).
+true_cell(1, 1, 2, 2, b).
+true_cell(1, 1, 2, 1, b).
+true_cell(1, 1, 1, 3, b).
+true_cell(1, 1, 1, 2, b).
+true_cell(1, 1, 1, 1, b).
+does_mark(robot, 2, 2, 3, 3, 9).
+inc(0) :- not next_cell(3, 3, 3, 3, b).
+inc(1) :- not next_cell(3, 3, 3, 2, b).
+inc(2) :- not next_cell(3, 3, 3, 1, b).
+inc(3) :- not next_cell(3, 3, 2, 3, b).
+inc(4) :- not next_cell(3, 3, 2, 2, b).
+inc(5) :- not next_cell(3, 3, 2, 1, 1).
+inc(6) :- not next_cell(3, 3, 1, 3, b).
+inc(7) :- not next_cell(3, 3, 1, 2, 5).
+inc(8) :- not next_cell(3, 3, 1, 1, b).
+inc(9) :- not next_cell(3, 2, 3, 3, b).
+inc(10) :- not next_cell(3, 2, 3, 2, 1).
+inc(11) :- not next_cell(3, 2, 3, 1, 5).
+inc(12) :- not next_cell(3, 2, 2, 3, b).
+inc(13) :- not next_cell(3, 2, 2, 2, b).
+inc(14) :- not next_cell(3, 2, 2, 1, b).
+inc(15) :- not next_cell(3, 2, 1, 3, 4).
+inc(16) :- not next_cell(3, 2, 1, 2, b).
+inc(17) :- not next_cell(3, 2, 1, 1, b).
+inc(18) :- not next_cell(3, 1, 3, 3, 8).
+inc(19) :- not next_cell(3, 1, 3, 2, 2).
+inc(20) :- not next_cell(3, 1, 3, 1, b).
+inc(21) :- not next_cell(3, 1, 2, 3, b).
+inc(22) :- not next_cell(3, 1, 2, 2, b).
+inc(23) :- not next_cell(3, 1, 2, 1, b).
+inc(24) :- not next_cell(3, 1, 1, 3, b).
+inc(25) :- not next_cell(3, 1, 1, 2, b).
+inc(26) :- not next_cell(3, 1, 1, 1, 9).
+inc(27) :- not next_cell(2, 3, 3, 3, 1).
+inc(28) :- not next_cell(2, 3, 3, 2, 7).
+inc(29) :- not next_cell(2, 3, 3, 1, b).
+inc(30) :- not next_cell(2, 3, 2, 3, b).
+inc(31) :- not next_cell(2, 3, 2, 2, b).
+inc(32) :- not next_cell(2, 3, 2, 1, b).
+inc(33) :- not next_cell(2, 3, 1, 3, 3).
+inc(34) :- not next_cell(2, 3, 1, 2, b).
+inc(35) :- not next_cell(2, 3, 1, 1, b).
+inc(36) :- not next_cell(2, 2, 3, 3, 9).
+inc(37) :- not next_cell(2, 2, 3, 2, b).
+inc(38) :- not next_cell(2, 2, 3, 1, b).
+inc(39) :- not next_cell(2, 2, 2, 3, 6).
+inc(40) :- not next_cell(2, 2, 2, 2, b).
+inc(41) :- not next_cell(2, 2, 2, 1, 2).
+inc(42) :- not next_cell(2, 2, 1, 3, b).
+inc(43) :- not next_cell(2, 2, 1, 2, b).
+inc(44) :- not next_cell(2, 2, 1, 1, b).
+inc(45) :- not next_cell(2, 1, 3, 3, b).
+inc(46) :- not next_cell(2, 1, 3, 2, b).
+inc(47) :- not next_cell(2, 1, 3, 1, 3).
+inc(48) :- not next_cell(2, 1, 2, 3, b).
+inc(49) :- not next_cell(2, 1, 2, 2, b).
+inc(50) :- not next_cell(2, 1, 2, 1, b).
+inc(51) :- not next_cell(2, 1, 1, 3, b).
+inc(52) :- not next_cell(2, 1, 1, 2, 9).
+inc(53) :- not next_cell(2, 1, 1, 1, 2).
+inc(54) :- not next_cell(1, 3, 3, 3, 2).
+inc(55) :- not next_cell(1, 3, 3, 2, b).
+inc(56) :- not next_cell(1, 3, 3, 1, b).
+inc(57) :- not next_cell(1, 3, 2, 3, b).
+inc(58) :- not next_cell(1, 3, 2, 2, b).
+inc(59) :- not next_cell(1, 3, 2, 1, b).
+inc(60) :- not next_cell(1, 3, 1, 3, b).
+inc(61) :- not next_cell(1, 3, 1, 2, 3).
+inc(62) :- not next_cell(1, 3, 1, 1, 6).
+inc(63) :- not next_cell(1, 2, 3, 3, b).
+inc(64) :- not next_cell(1, 2, 3, 2, b).
+inc(65) :- not next_cell(1, 2, 3, 1, 6).
+inc(66) :- not next_cell(1, 2, 2, 3, b).
+inc(67) :- not next_cell(1, 2, 2, 2, b).
+inc(68) :- not next_cell(1, 2, 2, 1, b).
+inc(69) :- not next_cell(1, 2, 1, 3, 5).
+inc(70) :- not next_cell(1, 2, 1, 2, 7).
+inc(71) :- not next_cell(1, 2, 1, 1, b).
+inc(72) :- not next_cell(1, 1, 3, 3, b).
+inc(73) :- not next_cell(1, 1, 3, 2, 8).
+inc(74) :- not next_cell(1, 1, 3, 1, b).
+inc(75) :- not next_cell(1, 1, 2, 3, 3).
+inc(76) :- not next_cell(1, 1, 2, 2, b).
+inc(77) :- not next_cell(1, 1, 2, 1, b).
+inc(78) :- not next_cell(1, 1, 1, 3, b).
+inc(79) :- not next_cell(1, 1, 1, 2, b).
+inc(80) :- not next_cell(1, 1, 1, 1, b).
+exc(0) :- next_cell(3, 3, 3, 3, 9).
+exc(1) :- next_cell(3, 3, 3, 3, 8).
+exc(2) :- next_cell(3, 3, 3, 3, 7).
+exc(3) :- next_cell(3, 3, 3, 3, 6).
+exc(4) :- next_cell(3, 3, 3, 3, 5).
+exc(5) :- next_cell(3, 3, 3, 3, 4).
+exc(6) :- next_cell(3, 3, 3, 3, 3).
+exc(7) :- next_cell(3, 3, 3, 3, 2).
+exc(8) :- next_cell(3, 3, 3, 3, 1).
+exc(9) :- next_cell(3, 3, 3, 2, 9).
+exc(10) :- next_cell(3, 3, 3, 2, 8).
+exc(11) :- next_cell(3, 3, 3, 2, 7).
+exc(12) :- next_cell(3, 3, 3, 2, 6).
+exc(13) :- next_cell(3, 3, 3, 2, 5).
+exc(14) :- next_cell(3, 3, 3, 2, 4).
+exc(15) :- next_cell(3, 3, 3, 2, 3).
+exc(16) :- next_cell(3, 3, 3, 2, 2).
+exc(17) :- next_cell(3, 3, 3, 2, 1).
+exc(18) :- next_cell(3, 3, 3, 1, 9).
+exc(19) :- next_cell(3, 3, 3, 1, 8).
+exc(20) :- next_cell(3, 3, 3, 1, 7).
+exc(21) :- next_cell(3, 3, 3, 1, 6).
+exc(22) :- next_cell(3, 3, 3, 1, 5).
+exc(23) :- next_cell(3, 3, 3, 1, 4).
+exc(24) :- next_cell(3, 3, 3, 1, 3).
+exc(25) :- next_cell(3, 3, 3, 1, 2).
+exc(26) :- next_cell(3, 3, 3, 1, 1).
+exc(27) :- next_cell(3, 3, 2, 3, 9).
+exc(28) :- next_cell(3, 3, 2, 3, 8).
+exc(29) :- next_cell(3, 3, 2, 3, 7).
+exc(30) :- next_cell(3, 3, 2, 3, 6).
+exc(31) :- next_cell(3, 3, 2, 3, 5).
+exc(32) :- next_cell(3, 3, 2, 3, 4).
+exc(33) :- next_cell(3, 3, 2, 3, 3).
+exc(34) :- next_cell(3, 3, 2, 3, 2).
+exc(35) :- next_cell(3, 3, 2, 3, 1).
+exc(36) :- next_cell(3, 3, 2, 2, 9).
+exc(37) :- next_cell(3, 3, 2, 2, 8).
+exc(38) :- next_cell(3, 3, 2, 2, 7).
+exc(39) :- next_cell(3, 3, 2, 2, 6).
+exc(40) :- next_cell(3, 3, 2, 2, 5).
+exc(41) :- next_cell(3, 3, 2, 2, 4).
+exc(42) :- next_cell(3, 3, 2, 2, 3).
+exc(43) :- next_cell(3, 3, 2, 2, 2).
+exc(44) :- next_cell(3, 3, 2, 2, 1).
+exc(45) :- next_cell(3, 3, 2, 1, b).
+exc(46) :- next_cell(3, 3, 2, 1, 9).
+exc(47) :- next_cell(3, 3, 2, 1, 8).
+exc(48) :- next_cell(3, 3, 2, 1, 7).
+exc(49) :- next_cell(3, 3, 2, 1, 6).
+exc(50) :- next_cell(3, 3, 2, 1, 5).
+exc(51) :- next_cell(3, 3, 2, 1, 4).
+exc(52) :- next_cell(3, 3, 2, 1, 3).
+exc(53) :- next_cell(3, 3, 2, 1, 2).
+exc(54) :- next_cell(3, 3, 1, 3, 9).
+exc(55) :- next_cell(3, 3, 1, 3, 8).
+exc(56) :- next_cell(3, 3, 1, 3, 7).
+exc(57) :- next_cell(3, 3, 1, 3, 6).
+exc(58) :- next_cell(3, 3, 1, 3, 5).
+exc(59) :- next_cell(3, 3, 1, 3, 4).
+exc(60) :- next_cell(3, 3, 1, 3, 3).
+exc(61) :- next_cell(3, 3, 1, 3, 2).
+exc(62) :- next_cell(3, 3, 1, 3, 1).
+exc(63) :- next_cell(3, 3, 1, 2, b).
+exc(64) :- next_cell(3, 3, 1, 2, 9).
+exc(65) :- next_cell(3, 3, 1, 2, 8).
+exc(66) :- next_cell(3, 3, 1, 2, 7).
+exc(67) :- next_cell(3, 3, 1, 2, 6).
+exc(68) :- next_cell(3, 3, 1, 2, 4).
+exc(69) :- next_cell(3, 3, 1, 2, 3).
+exc(70) :- next_cell(3, 3, 1, 2, 2).
+exc(71) :- next_cell(3, 3, 1, 2, 1).
+exc(72) :- next_cell(3, 3, 1, 1, 9).
+exc(73) :- next_cell(3, 3, 1, 1, 8).
+exc(74) :- next_cell(3, 3, 1, 1, 7).
+exc(75) :- next_cell(3, 3, 1, 1, 6).
+exc(76) :- next_cell(3, 3, 1, 1, 5).
+exc(77) :- next_cell(3, 3, 1, 1, 4).
+exc(78) :- next_cell(3, 3, 1, 1, 3).
+exc(79) :- next_cell(3, 3, 1, 1, 2).
+exc(80) :- next_cell(3, 3, 1, 1, 1).
+exc(81) :- next_cell(3, 2, 3, 3, 9).
+exc(82) :- next_cell(3, 2, 3, 3, 8).
+exc(83) :- next_cell(3, 2, 3, 3, 7).
+exc(84) :- next_cell(3, 2, 3, 3, 6).
+exc(85) :- next_cell(3, 2, 3, 3, 5).
+exc(86) :- next_cell(3, 2, 3, 3, 4).
+exc(87) :- next_cell(3, 2, 3, 3, 3).
+exc(88) :- next_cell(3, 2, 3, 3, 2).
+exc(89) :- next_cell(3, 2, 3, 3, 1).
+exc(90) :- next_cell(3, 2, 3, 2, b).
+exc(91) :- next_cell(3, 2, 3, 2, 9).
+exc(92) :- next_cell(3, 2, 3, 2, 8).
+exc(93) :- next_cell(3, 2, 3, 2, 7).
+exc(94) :- next_cell(3, 2, 3, 2, 6).
+exc(95) :- next_cell(3, 2, 3, 2, 5).
+exc(96) :- next_cell(3, 2, 3, 2, 4).
+exc(97) :- next_cell(3, 2, 3, 2, 3).
+exc(98) :- next_cell(3, 2, 3, 2, 2).
+exc(99) :- next_cell(3, 2, 3, 1, b).
+exc(100) :- next_cell(3, 2, 3, 1, 9).
+exc(101) :- next_cell(3, 2, 3, 1, 8).
+exc(102) :- next_cell(3, 2, 3, 1, 7).
+exc(103) :- next_cell(3, 2, 3, 1, 6).
+exc(104) :- next_cell(3, 2, 3, 1, 4).
+exc(105) :- next_cell(3, 2, 3, 1, 3).
+exc(106) :- next_cell(3, 2, 3, 1, 2).
+exc(107) :- next_cell(3, 2, 3, 1, 1).
+exc(108) :- next_cell(3, 2, 2, 3, 9).
+exc(109) :- next_cell(3, 2, 2, 3, 8).
+exc(110) :- next_cell(3, 2, 2, 3, 7).
+exc(111) :- next_cell(3, 2, 2, 3, 6).
+exc(112) :- next_cell(3, 2, 2, 3, 5).
+exc(113) :- next_cell(3, 2, 2, 3, 4).
+exc(114) :- next_cell(3, 2, 2, 3, 3).
+exc(115) :- next_cell(3, 2, 2, 3, 2).
+exc(116) :- next_cell(3, 2, 2, 3, 1).
+exc(117) :- next_cell(3, 2, 2, 2, 9).
+exc(118) :- next_cell(3, 2, 2, 2, 8).
+exc(119) :- next_cell(3, 2, 2, 2, 7).
+exc(120) :- next_cell(3, 2, 2, 2, 6).
+exc(121) :- next_cell(3, 2, 2, 2, 5).
+exc(122) :- next_cell(3, 2, 2, 2, 4).
+exc(123) :- next_cell(3, 2, 2, 2, 3).
+exc(124) :- next_cell(3, 2, 2, 2, 2).
+exc(125) :- next_cell(3, 2, 2, 2, 1).
+exc(126) :- next_cell(3, 2, 2, 1, 9).
+exc(127) :- next_cell(3, 2, 2, 1, 8).
+exc(128) :- next_cell(3, 2, 2, 1, 7).
+exc(129) :- next_cell(3, 2, 2, 1, 6).
+exc(130) :- next_cell(3, 2, 2, 1, 5).
+exc(131) :- next_cell(3, 2, 2, 1, 4).
+exc(132) :- next_cell(3, 2, 2, 1, 3).
+exc(133) :- next_cell(3, 2, 2, 1, 2).
+exc(134) :- next_cell(3, 2, 2, 1, 1).
+exc(135) :- next_cell(3, 2, 1, 3, b).
+exc(136) :- next_cell(3, 2, 1, 3, 9).
+exc(137) :- next_cell(3, 2, 1, 3, 8).
+exc(138) :- next_cell(3, 2, 1, 3, 7).
+exc(139) :- next_cell(3, 2, 1, 3, 6).
+exc(140) :- next_cell(3, 2, 1, 3, 5).
+exc(141) :- next_cell(3, 2, 1, 3, 3).
+exc(142) :- next_cell(3, 2, 1, 3, 2).
+exc(143) :- next_cell(3, 2, 1, 3, 1).
+exc(144) :- next_cell(3, 2, 1, 2, 9).
+exc(145) :- next_cell(3, 2, 1, 2, 8).
+exc(146) :- next_cell(3, 2, 1, 2, 7).
+exc(147) :- next_cell(3, 2, 1, 2, 6).
+exc(148) :- next_cell(3, 2, 1, 2, 5).
+exc(149) :- next_cell(3, 2, 1, 2, 4).
+exc(150) :- next_cell(3, 2, 1, 2, 3).
+exc(151) :- next_cell(3, 2, 1, 2, 2).
+exc(152) :- next_cell(3, 2, 1, 2, 1).
+exc(153) :- next_cell(3, 2, 1, 1, 9).
+exc(154) :- next_cell(3, 2, 1, 1, 8).
+exc(155) :- next_cell(3, 2, 1, 1, 7).
+exc(156) :- next_cell(3, 2, 1, 1, 6).
+exc(157) :- next_cell(3, 2, 1, 1, 5).
+exc(158) :- next_cell(3, 2, 1, 1, 4).
+exc(159) :- next_cell(3, 2, 1, 1, 3).
+exc(160) :- next_cell(3, 2, 1, 1, 2).
+exc(161) :- next_cell(3, 2, 1, 1, 1).
+exc(162) :- next_cell(3, 1, 3, 3, b).
+exc(163) :- next_cell(3, 1, 3, 3, 9).
+exc(164) :- next_cell(3, 1, 3, 3, 7).
+exc(165) :- next_cell(3, 1, 3, 3, 6).
+exc(166) :- next_cell(3, 1, 3, 3, 5).
+exc(167) :- next_cell(3, 1, 3, 3, 4).
+exc(168) :- next_cell(3, 1, 3, 3, 3).
+exc(169) :- next_cell(3, 1, 3, 3, 2).
+exc(170) :- next_cell(3, 1, 3, 3, 1).
+exc(171) :- next_cell(3, 1, 3, 2, b).
+exc(172) :- next_cell(3, 1, 3, 2, 9).
+exc(173) :- next_cell(3, 1, 3, 2, 8).
+exc(174) :- next_cell(3, 1, 3, 2, 7).
+exc(175) :- next_cell(3, 1, 3, 2, 6).
+exc(176) :- next_cell(3, 1, 3, 2, 5).
+exc(177) :- next_cell(3, 1, 3, 2, 4).
+exc(178) :- next_cell(3, 1, 3, 2, 3).
+exc(179) :- next_cell(3, 1, 3, 2, 1).
+exc(180) :- next_cell(3, 1, 3, 1, 9).
+exc(181) :- next_cell(3, 1, 3, 1, 8).
+exc(182) :- next_cell(3, 1, 3, 1, 7).
+exc(183) :- next_cell(3, 1, 3, 1, 6).
+exc(184) :- next_cell(3, 1, 3, 1, 5).
+exc(185) :- next_cell(3, 1, 3, 1, 4).
+exc(186) :- next_cell(3, 1, 3, 1, 3).
+exc(187) :- next_cell(3, 1, 3, 1, 2).
+exc(188) :- next_cell(3, 1, 3, 1, 1).
+exc(189) :- next_cell(3, 1, 2, 3, 9).
+exc(190) :- next_cell(3, 1, 2, 3, 8).
+exc(191) :- next_cell(3, 1, 2, 3, 7).
+exc(192) :- next_cell(3, 1, 2, 3, 6).
+exc(193) :- next_cell(3, 1, 2, 3, 5).
+exc(194) :- next_cell(3, 1, 2, 3, 4).
+exc(195) :- next_cell(3, 1, 2, 3, 3).
+exc(196) :- next_cell(3, 1, 2, 3, 2).
+exc(197) :- next_cell(3, 1, 2, 3, 1).
+exc(198) :- next_cell(3, 1, 2, 2, 9).
+exc(199) :- next_cell(3, 1, 2, 2, 8).
+exc(200) :- next_cell(3, 1, 2, 2, 7).
+exc(201) :- next_cell(3, 1, 2, 2, 6).
+exc(202) :- next_cell(3, 1, 2, 2, 5).
+exc(203) :- next_cell(3, 1, 2, 2, 4).
+exc(204) :- next_cell(3, 1, 2, 2, 3).
+exc(205) :- next_cell(3, 1, 2, 2, 2).
+exc(206) :- next_cell(3, 1, 2, 2, 1).
+exc(207) :- next_cell(3, 1, 2, 1, 9).
+exc(208) :- next_cell(3, 1, 2, 1, 8).
+exc(209) :- next_cell(3, 1, 2, 1, 7).
+exc(210) :- next_cell(3, 1, 2, 1, 6).
+exc(211) :- next_cell(3, 1, 2, 1, 5).
+exc(212) :- next_cell(3, 1, 2, 1, 4).
+exc(213) :- next_cell(3, 1, 2, 1, 3).
+exc(214) :- next_cell(3, 1, 2, 1, 2).
+exc(215) :- next_cell(3, 1, 2, 1, 1).
+exc(216) :- next_cell(3, 1, 1, 3, 9).
+exc(217) :- next_cell(3, 1, 1, 3, 8).
+exc(218) :- next_cell(3, 1, 1, 3, 7).
+exc(219) :- next_cell(3, 1, 1, 3, 6).
+exc(220) :- next_cell(3, 1, 1, 3, 5).
+exc(221) :- next_cell(3, 1, 1, 3, 4).
+exc(222) :- next_cell(3, 1, 1, 3, 3).
+exc(223) :- next_cell(3, 1, 1, 3, 2).
+exc(224) :- next_cell(3, 1, 1, 3, 1).
+exc(225) :- next_cell(3, 1, 1, 2, 9).
+exc(226) :- next_cell(3, 1, 1, 2, 8).
+exc(227) :- next_cell(3, 1, 1, 2, 7).
+exc(228) :- next_cell(3, 1, 1, 2, 6).
+exc(229) :- next_cell(3, 1, 1, 2, 5).
+exc(230) :- next_cell(3, 1, 1, 2, 4).
+exc(231) :- next_cell(3, 1, 1, 2, 3).
+exc(232) :- next_cell(3, 1, 1, 2, 2).
+exc(233) :- next_cell(3, 1, 1, 2, 1).
+exc(234) :- next_cell(3, 1, 1, 1, b).
+exc(235) :- next_cell(3, 1, 1, 1, 8).
+exc(236) :- next_cell(3, 1, 1, 1, 7).
+exc(237) :- next_cell(3, 1, 1, 1, 6).
+exc(238) :- next_cell(3, 1, 1, 1, 5).
+exc(239) :- next_cell(3, 1, 1, 1, 4).
+exc(240) :- next_cell(3, 1, 1, 1, 3).
+exc(241) :- next_cell(3, 1, 1, 1, 2).
+exc(242) :- next_cell(3, 1, 1, 1, 1).
+exc(243) :- next_cell(2, 3, 3, 3, b).
+exc(244) :- next_cell(2, 3, 3, 3, 9).
+exc(245) :- next_cell(2, 3, 3, 3, 8).
+exc(246) :- next_cell(2, 3, 3, 3, 7).
+exc(247) :- next_cell(2, 3, 3, 3, 6).
+exc(248) :- next_cell(2, 3, 3, 3, 5).
+exc(249) :- next_cell(2, 3, 3, 3, 4).
+exc(250) :- next_cell(2, 3, 3, 3, 3).
+exc(251) :- next_cell(2, 3, 3, 3, 2).
+exc(252) :- next_cell(2, 3, 3, 2, b).
+exc(253) :- next_cell(2, 3, 3, 2, 9).
+exc(254) :- next_cell(2, 3, 3, 2, 8).
+exc(255) :- next_cell(2, 3, 3, 2, 6).
+exc(256) :- next_cell(2, 3, 3, 2, 5).
+exc(257) :- next_cell(2, 3, 3, 2, 4).
+exc(258) :- next_cell(2, 3, 3, 2, 3).
+exc(259) :- next_cell(2, 3, 3, 2, 2).
+exc(260) :- next_cell(2, 3, 3, 2, 1).
+exc(261) :- next_cell(2, 3, 3, 1, 9).
+exc(262) :- next_cell(2, 3, 3, 1, 8).
+exc(263) :- next_cell(2, 3, 3, 1, 7).
+exc(264) :- next_cell(2, 3, 3, 1, 6).
+exc(265) :- next_cell(2, 3, 3, 1, 5).
+exc(266) :- next_cell(2, 3, 3, 1, 4).
+exc(267) :- next_cell(2, 3, 3, 1, 3).
+exc(268) :- next_cell(2, 3, 3, 1, 2).
+exc(269) :- next_cell(2, 3, 3, 1, 1).
+exc(270) :- next_cell(2, 3, 2, 3, 9).
+exc(271) :- next_cell(2, 3, 2, 3, 8).
+exc(272) :- next_cell(2, 3, 2, 3, 7).
+exc(273) :- next_cell(2, 3, 2, 3, 6).
+exc(274) :- next_cell(2, 3, 2, 3, 5).
+exc(275) :- next_cell(2, 3, 2, 3, 4).
+exc(276) :- next_cell(2, 3, 2, 3, 3).
+exc(277) :- next_cell(2, 3, 2, 3, 2).
+exc(278) :- next_cell(2, 3, 2, 3, 1).
+exc(279) :- next_cell(2, 3, 2, 2, 9).
+exc(280) :- next_cell(2, 3, 2, 2, 8).
+exc(281) :- next_cell(2, 3, 2, 2, 7).
+exc(282) :- next_cell(2, 3, 2, 2, 6).
+exc(283) :- next_cell(2, 3, 2, 2, 5).
+exc(284) :- next_cell(2, 3, 2, 2, 4).
+exc(285) :- next_cell(2, 3, 2, 2, 3).
+exc(286) :- next_cell(2, 3, 2, 2, 2).
+exc(287) :- next_cell(2, 3, 2, 2, 1).
+exc(288) :- next_cell(2, 3, 2, 1, 9).
+exc(289) :- next_cell(2, 3, 2, 1, 8).
+exc(290) :- next_cell(2, 3, 2, 1, 7).
+exc(291) :- next_cell(2, 3, 2, 1, 6).
+exc(292) :- next_cell(2, 3, 2, 1, 5).
+exc(293) :- next_cell(2, 3, 2, 1, 4).
+exc(294) :- next_cell(2, 3, 2, 1, 3).
+exc(295) :- next_cell(2, 3, 2, 1, 2).
+exc(296) :- next_cell(2, 3, 2, 1, 1).
+exc(297) :- next_cell(2, 3, 1, 3, b).
+exc(298) :- next_cell(2, 3, 1, 3, 9).
+exc(299) :- next_cell(2, 3, 1, 3, 8).
+exc(300) :- next_cell(2, 3, 1, 3, 7).
+exc(301) :- next_cell(2, 3, 1, 3, 6).
+exc(302) :- next_cell(2, 3, 1, 3, 5).
+exc(303) :- next_cell(2, 3, 1, 3, 4).
+exc(304) :- next_cell(2, 3, 1, 3, 2).
+exc(305) :- next_cell(2, 3, 1, 3, 1).
+exc(306) :- next_cell(2, 3, 1, 2, 9).
+exc(307) :- next_cell(2, 3, 1, 2, 8).
+exc(308) :- next_cell(2, 3, 1, 2, 7).
+exc(309) :- next_cell(2, 3, 1, 2, 6).
+exc(310) :- next_cell(2, 3, 1, 2, 5).
+exc(311) :- next_cell(2, 3, 1, 2, 4).
+exc(312) :- next_cell(2, 3, 1, 2, 3).
+exc(313) :- next_cell(2, 3, 1, 2, 2).
+exc(314) :- next_cell(2, 3, 1, 2, 1).
+exc(315) :- next_cell(2, 3, 1, 1, 9).
+exc(316) :- next_cell(2, 3, 1, 1, 8).
+exc(317) :- next_cell(2, 3, 1, 1, 7).
+exc(318) :- next_cell(2, 3, 1, 1, 6).
+exc(319) :- next_cell(2, 3, 1, 1, 5).
+exc(320) :- next_cell(2, 3, 1, 1, 4).
+exc(321) :- next_cell(2, 3, 1, 1, 3).
+exc(322) :- next_cell(2, 3, 1, 1, 2).
+exc(323) :- next_cell(2, 3, 1, 1, 1).
+exc(324) :- next_cell(2, 2, 3, 3, b).
+exc(325) :- next_cell(2, 2, 3, 3, 8).
+exc(326) :- next_cell(2, 2, 3, 3, 7).
+exc(327) :- next_cell(2, 2, 3, 3, 6).
+exc(328) :- next_cell(2, 2, 3, 3, 5).
+exc(329) :- next_cell(2, 2, 3, 3, 4).
+exc(330) :- next_cell(2, 2, 3, 3, 3).
+exc(331) :- next_cell(2, 2, 3, 3, 2).
+exc(332) :- next_cell(2, 2, 3, 3, 1).
+exc(333) :- next_cell(2, 2, 3, 2, 9).
+exc(334) :- next_cell(2, 2, 3, 2, 8).
+exc(335) :- next_cell(2, 2, 3, 2, 7).
+exc(336) :- next_cell(2, 2, 3, 2, 6).
+exc(337) :- next_cell(2, 2, 3, 2, 5).
+exc(338) :- next_cell(2, 2, 3, 2, 4).
+exc(339) :- next_cell(2, 2, 3, 2, 3).
+exc(340) :- next_cell(2, 2, 3, 2, 2).
+exc(341) :- next_cell(2, 2, 3, 2, 1).
+exc(342) :- next_cell(2, 2, 3, 1, 9).
+exc(343) :- next_cell(2, 2, 3, 1, 8).
+exc(344) :- next_cell(2, 2, 3, 1, 7).
+exc(345) :- next_cell(2, 2, 3, 1, 6).
+exc(346) :- next_cell(2, 2, 3, 1, 5).
+exc(347) :- next_cell(2, 2, 3, 1, 4).
+exc(348) :- next_cell(2, 2, 3, 1, 3).
+exc(349) :- next_cell(2, 2, 3, 1, 2).
+exc(350) :- next_cell(2, 2, 3, 1, 1).
+exc(351) :- next_cell(2, 2, 2, 3, b).
+exc(352) :- next_cell(2, 2, 2, 3, 9).
+exc(353) :- next_cell(2, 2, 2, 3, 8).
+exc(354) :- next_cell(2, 2, 2, 3, 7).
+exc(355) :- next_cell(2, 2, 2, 3, 5).
+exc(356) :- next_cell(2, 2, 2, 3, 4).
+exc(357) :- next_cell(2, 2, 2, 3, 3).
+exc(358) :- next_cell(2, 2, 2, 3, 2).
+exc(359) :- next_cell(2, 2, 2, 3, 1).
+exc(360) :- next_cell(2, 2, 2, 2, 9).
+exc(361) :- next_cell(2, 2, 2, 2, 8).
+exc(362) :- next_cell(2, 2, 2, 2, 7).
+exc(363) :- next_cell(2, 2, 2, 2, 6).
+exc(364) :- next_cell(2, 2, 2, 2, 5).
+exc(365) :- next_cell(2, 2, 2, 2, 4).
+exc(366) :- next_cell(2, 2, 2, 2, 3).
+exc(367) :- next_cell(2, 2, 2, 2, 2).
+exc(368) :- next_cell(2, 2, 2, 2, 1).
+exc(369) :- next_cell(2, 2, 2, 1, b).
+exc(370) :- next_cell(2, 2, 2, 1, 9).
+exc(371) :- next_cell(2, 2, 2, 1, 8).
+exc(372) :- next_cell(2, 2, 2, 1, 7).
+exc(373) :- next_cell(2, 2, 2, 1, 6).
+exc(374) :- next_cell(2, 2, 2, 1, 5).
+exc(375) :- next_cell(2, 2, 2, 1, 4).
+exc(376) :- next_cell(2, 2, 2, 1, 3).
+exc(377) :- next_cell(2, 2, 2, 1, 1).
+exc(378) :- next_cell(2, 2, 1, 3, 9).
+exc(379) :- next_cell(2, 2, 1, 3, 8).
+exc(380) :- next_cell(2, 2, 1, 3, 7).
+exc(381) :- next_cell(2, 2, 1, 3, 6).
+exc(382) :- next_cell(2, 2, 1, 3, 5).
+exc(383) :- next_cell(2, 2, 1, 3, 4).
+exc(384) :- next_cell(2, 2, 1, 3, 3).
+exc(385) :- next_cell(2, 2, 1, 3, 2).
+exc(386) :- next_cell(2, 2, 1, 3, 1).
+exc(387) :- next_cell(2, 2, 1, 2, 9).
+exc(388) :- next_cell(2, 2, 1, 2, 8).
+exc(389) :- next_cell(2, 2, 1, 2, 7).
+exc(390) :- next_cell(2, 2, 1, 2, 6).
+exc(391) :- next_cell(2, 2, 1, 2, 5).
+exc(392) :- next_cell(2, 2, 1, 2, 4).
+exc(393) :- next_cell(2, 2, 1, 2, 3).
+exc(394) :- next_cell(2, 2, 1, 2, 2).
+exc(395) :- next_cell(2, 2, 1, 2, 1).
+exc(396) :- next_cell(2, 2, 1, 1, 9).
+exc(397) :- next_cell(2, 2, 1, 1, 8).
+exc(398) :- next_cell(2, 2, 1, 1, 7).
+exc(399) :- next_cell(2, 2, 1, 1, 6).
+exc(400) :- next_cell(2, 2, 1, 1, 5).
+exc(401) :- next_cell(2, 2, 1, 1, 4).
+exc(402) :- next_cell(2, 2, 1, 1, 3).
+exc(403) :- next_cell(2, 2, 1, 1, 2).
+exc(404) :- next_cell(2, 2, 1, 1, 1).
+exc(405) :- next_cell(2, 1, 3, 3, 9).
+exc(406) :- next_cell(2, 1, 3, 3, 8).
+exc(407) :- next_cell(2, 1, 3, 3, 7).
+exc(408) :- next_cell(2, 1, 3, 3, 6).
+exc(409) :- next_cell(2, 1, 3, 3, 5).
+exc(410) :- next_cell(2, 1, 3, 3, 4).
+exc(411) :- next_cell(2, 1, 3, 3, 3).
+exc(412) :- next_cell(2, 1, 3, 3, 2).
+exc(413) :- next_cell(2, 1, 3, 3, 1).
+exc(414) :- next_cell(2, 1, 3, 2, 9).
+exc(415) :- next_cell(2, 1, 3, 2, 8).
+exc(416) :- next_cell(2, 1, 3, 2, 7).
+exc(417) :- next_cell(2, 1, 3, 2, 6).
+exc(418) :- next_cell(2, 1, 3, 2, 5).
+exc(419) :- next_cell(2, 1, 3, 2, 4).
+exc(420) :- next_cell(2, 1, 3, 2, 3).
+exc(421) :- next_cell(2, 1, 3, 2, 2).
+exc(422) :- next_cell(2, 1, 3, 2, 1).
+exc(423) :- next_cell(2, 1, 3, 1, b).
+exc(424) :- next_cell(2, 1, 3, 1, 9).
+exc(425) :- next_cell(2, 1, 3, 1, 8).
+exc(426) :- next_cell(2, 1, 3, 1, 7).
+exc(427) :- next_cell(2, 1, 3, 1, 6).
+exc(428) :- next_cell(2, 1, 3, 1, 5).
+exc(429) :- next_cell(2, 1, 3, 1, 4).
+exc(430) :- next_cell(2, 1, 3, 1, 2).
+exc(431) :- next_cell(2, 1, 3, 1, 1).
+exc(432) :- next_cell(2, 1, 2, 3, 9).
+exc(433) :- next_cell(2, 1, 2, 3, 8).
+exc(434) :- next_cell(2, 1, 2, 3, 7).
+exc(435) :- next_cell(2, 1, 2, 3, 6).
+exc(436) :- next_cell(2, 1, 2, 3, 5).
+exc(437) :- next_cell(2, 1, 2, 3, 4).
+exc(438) :- next_cell(2, 1, 2, 3, 3).
+exc(439) :- next_cell(2, 1, 2, 3, 2).
+exc(440) :- next_cell(2, 1, 2, 3, 1).
+exc(441) :- next_cell(2, 1, 2, 2, 9).
+exc(442) :- next_cell(2, 1, 2, 2, 8).
+exc(443) :- next_cell(2, 1, 2, 2, 7).
+exc(444) :- next_cell(2, 1, 2, 2, 6).
+exc(445) :- next_cell(2, 1, 2, 2, 5).
+exc(446) :- next_cell(2, 1, 2, 2, 4).
+exc(447) :- next_cell(2, 1, 2, 2, 3).
+exc(448) :- next_cell(2, 1, 2, 2, 2).
+exc(449) :- next_cell(2, 1, 2, 2, 1).
+exc(450) :- next_cell(2, 1, 2, 1, 9).
+exc(451) :- next_cell(2, 1, 2, 1, 8).
+exc(452) :- next_cell(2, 1, 2, 1, 7).
+exc(453) :- next_cell(2, 1, 2, 1, 6).
+exc(454) :- next_cell(2, 1, 2, 1, 5).
+exc(455) :- next_cell(2, 1, 2, 1, 4).
+exc(456) :- next_cell(2, 1, 2, 1, 3).
+exc(457) :- next_cell(2, 1, 2, 1, 2).
+exc(458) :- next_cell(2, 1, 2, 1, 1).
+exc(459) :- next_cell(2, 1, 1, 3, 9).
+exc(460) :- next_cell(2, 1, 1, 3, 8).
+exc(461) :- next_cell(2, 1, 1, 3, 7).
+exc(462) :- next_cell(2, 1, 1, 3, 6).
+exc(463) :- next_cell(2, 1, 1, 3, 5).
+exc(464) :- next_cell(2, 1, 1, 3, 4).
+exc(465) :- next_cell(2, 1, 1, 3, 3).
+exc(466) :- next_cell(2, 1, 1, 3, 2).
+exc(467) :- next_cell(2, 1, 1, 3, 1).
+exc(468) :- next_cell(2, 1, 1, 2, b).
+exc(469) :- next_cell(2, 1, 1, 2, 8).
+exc(470) :- next_cell(2, 1, 1, 2, 7).
+exc(471) :- next_cell(2, 1, 1, 2, 6).
+exc(472) :- next_cell(2, 1, 1, 2, 5).
+exc(473) :- next_cell(2, 1, 1, 2, 4).
+exc(474) :- next_cell(2, 1, 1, 2, 3).
+exc(475) :- next_cell(2, 1, 1, 2, 2).
+exc(476) :- next_cell(2, 1, 1, 2, 1).
+exc(477) :- next_cell(2, 1, 1, 1, b).
+exc(478) :- next_cell(2, 1, 1, 1, 9).
+exc(479) :- next_cell(2, 1, 1, 1, 8).
+exc(480) :- next_cell(2, 1, 1, 1, 7).
+exc(481) :- next_cell(2, 1, 1, 1, 6).
+exc(482) :- next_cell(2, 1, 1, 1, 5).
+exc(483) :- next_cell(2, 1, 1, 1, 4).
+exc(484) :- next_cell(2, 1, 1, 1, 3).
+exc(485) :- next_cell(2, 1, 1, 1, 1).
+exc(486) :- next_cell(1, 3, 3, 3, b).
+exc(487) :- next_cell(1, 3, 3, 3, 9).
+exc(488) :- next_cell(1, 3, 3, 3, 8).
+exc(489) :- next_cell(1, 3, 3, 3, 7).
+exc(490) :- next_cell(1, 3, 3, 3, 6).
+exc(491) :- next_cell(1, 3, 3, 3, 5).
+exc(492) :- next_cell(1, 3, 3, 3, 4).
+exc(493) :- next_cell(1, 3, 3, 3, 3).
+exc(494) :- next_cell(1, 3, 3, 3, 1).
+exc(495) :- next_cell(1, 3, 3, 2, 9).
+exc(496) :- next_cell(1, 3, 3, 2, 8).
+exc(497) :- next_cell(1, 3, 3, 2, 7).
+exc(498) :- next_cell(1, 3, 3, 2, 6).
+exc(499) :- next_cell(1, 3, 3, 2, 5).
+exc(500) :- next_cell(1, 3, 3, 2, 4).
+exc(501) :- next_cell(1, 3, 3, 2, 3).
+exc(502) :- next_cell(1, 3, 3, 2, 2).
+exc(503) :- next_cell(1, 3, 3, 2, 1).
+exc(504) :- next_cell(1, 3, 3, 1, 9).
+exc(505) :- next_cell(1, 3, 3, 1, 8).
+exc(506) :- next_cell(1, 3, 3, 1, 7).
+exc(507) :- next_cell(1, 3, 3, 1, 6).
+exc(508) :- next_cell(1, 3, 3, 1, 5).
+exc(509) :- next_cell(1, 3, 3, 1, 4).
+exc(510) :- next_cell(1, 3, 3, 1, 3).
+exc(511) :- next_cell(1, 3, 3, 1, 2).
+exc(512) :- next_cell(1, 3, 3, 1, 1).
+exc(513) :- next_cell(1, 3, 2, 3, 9).
+exc(514) :- next_cell(1, 3, 2, 3, 8).
+exc(515) :- next_cell(1, 3, 2, 3, 7).
+exc(516) :- next_cell(1, 3, 2, 3, 6).
+exc(517) :- next_cell(1, 3, 2, 3, 5).
+exc(518) :- next_cell(1, 3, 2, 3, 4).
+exc(519) :- next_cell(1, 3, 2, 3, 3).
+exc(520) :- next_cell(1, 3, 2, 3, 2).
+exc(521) :- next_cell(1, 3, 2, 3, 1).
+exc(522) :- next_cell(1, 3, 2, 2, 9).
+exc(523) :- next_cell(1, 3, 2, 2, 8).
+exc(524) :- next_cell(1, 3, 2, 2, 7).
+exc(525) :- next_cell(1, 3, 2, 2, 6).
+exc(526) :- next_cell(1, 3, 2, 2, 5).
+exc(527) :- next_cell(1, 3, 2, 2, 4).
+exc(528) :- next_cell(1, 3, 2, 2, 3).
+exc(529) :- next_cell(1, 3, 2, 2, 2).
+exc(530) :- next_cell(1, 3, 2, 2, 1).
+exc(531) :- next_cell(1, 3, 2, 1, 9).
+exc(532) :- next_cell(1, 3, 2, 1, 8).
+exc(533) :- next_cell(1, 3, 2, 1, 7).
+exc(534) :- next_cell(1, 3, 2, 1, 6).
+exc(535) :- next_cell(1, 3, 2, 1, 5).
+exc(536) :- next_cell(1, 3, 2, 1, 4).
+exc(537) :- next_cell(1, 3, 2, 1, 3).
+exc(538) :- next_cell(1, 3, 2, 1, 2).
+exc(539) :- next_cell(1, 3, 2, 1, 1).
+exc(540) :- next_cell(1, 3, 1, 3, 9).
+exc(541) :- next_cell(1, 3, 1, 3, 8).
+exc(542) :- next_cell(1, 3, 1, 3, 7).
+exc(543) :- next_cell(1, 3, 1, 3, 6).
+exc(544) :- next_cell(1, 3, 1, 3, 5).
+exc(545) :- next_cell(1, 3, 1, 3, 4).
+exc(546) :- next_cell(1, 3, 1, 3, 3).
+exc(547) :- next_cell(1, 3, 1, 3, 2).
+exc(548) :- next_cell(1, 3, 1, 3, 1).
+exc(549) :- next_cell(1, 3, 1, 2, b).
+exc(550) :- next_cell(1, 3, 1, 2, 9).
+exc(551) :- next_cell(1, 3, 1, 2, 8).
+exc(552) :- next_cell(1, 3, 1, 2, 7).
+exc(553) :- next_cell(1, 3, 1, 2, 6).
+exc(554) :- next_cell(1, 3, 1, 2, 5).
+exc(555) :- next_cell(1, 3, 1, 2, 4).
+exc(556) :- next_cell(1, 3, 1, 2, 2).
+exc(557) :- next_cell(1, 3, 1, 2, 1).
+exc(558) :- next_cell(1, 3, 1, 1, b).
+exc(559) :- next_cell(1, 3, 1, 1, 9).
+exc(560) :- next_cell(1, 3, 1, 1, 8).
+exc(561) :- next_cell(1, 3, 1, 1, 7).
+exc(562) :- next_cell(1, 3, 1, 1, 5).
+exc(563) :- next_cell(1, 3, 1, 1, 4).
+exc(564) :- next_cell(1, 3, 1, 1, 3).
+exc(565) :- next_cell(1, 3, 1, 1, 2).
+exc(566) :- next_cell(1, 3, 1, 1, 1).
+exc(567) :- next_cell(1, 2, 3, 3, 9).
+exc(568) :- next_cell(1, 2, 3, 3, 8).
+exc(569) :- next_cell(1, 2, 3, 3, 7).
+exc(570) :- next_cell(1, 2, 3, 3, 6).
+exc(571) :- next_cell(1, 2, 3, 3, 5).
+exc(572) :- next_cell(1, 2, 3, 3, 4).
+exc(573) :- next_cell(1, 2, 3, 3, 3).
+exc(574) :- next_cell(1, 2, 3, 3, 2).
+exc(575) :- next_cell(1, 2, 3, 3, 1).
+exc(576) :- next_cell(1, 2, 3, 2, 9).
+exc(577) :- next_cell(1, 2, 3, 2, 8).
+exc(578) :- next_cell(1, 2, 3, 2, 7).
+exc(579) :- next_cell(1, 2, 3, 2, 6).
+exc(580) :- next_cell(1, 2, 3, 2, 5).
+exc(581) :- next_cell(1, 2, 3, 2, 4).
+exc(582) :- next_cell(1, 2, 3, 2, 3).
+exc(583) :- next_cell(1, 2, 3, 2, 2).
+exc(584) :- next_cell(1, 2, 3, 2, 1).
+exc(585) :- next_cell(1, 2, 3, 1, b).
+exc(586) :- next_cell(1, 2, 3, 1, 9).
+exc(587) :- next_cell(1, 2, 3, 1, 8).
+exc(588) :- next_cell(1, 2, 3, 1, 7).
+exc(589) :- next_cell(1, 2, 3, 1, 5).
+exc(590) :- next_cell(1, 2, 3, 1, 4).
+exc(591) :- next_cell(1, 2, 3, 1, 3).
+exc(592) :- next_cell(1, 2, 3, 1, 2).
+exc(593) :- next_cell(1, 2, 3, 1, 1).
+exc(594) :- next_cell(1, 2, 2, 3, 9).
+exc(595) :- next_cell(1, 2, 2, 3, 8).
+exc(596) :- next_cell(1, 2, 2, 3, 7).
+exc(597) :- next_cell(1, 2, 2, 3, 6).
+exc(598) :- next_cell(1, 2, 2, 3, 5).
+exc(599) :- next_cell(1, 2, 2, 3, 4).
+exc(600) :- next_cell(1, 2, 2, 3, 3).
+exc(601) :- next_cell(1, 2, 2, 3, 2).
+exc(602) :- next_cell(1, 2, 2, 3, 1).
+exc(603) :- next_cell(1, 2, 2, 2, 9).
+exc(604) :- next_cell(1, 2, 2, 2, 8).
+exc(605) :- next_cell(1, 2, 2, 2, 7).
+exc(606) :- next_cell(1, 2, 2, 2, 6).
+exc(607) :- next_cell(1, 2, 2, 2, 5).
+exc(608) :- next_cell(1, 2, 2, 2, 4).
+exc(609) :- next_cell(1, 2, 2, 2, 3).
+exc(610) :- next_cell(1, 2, 2, 2, 2).
+exc(611) :- next_cell(1, 2, 2, 2, 1).
+exc(612) :- next_cell(1, 2, 2, 1, 9).
+exc(613) :- next_cell(1, 2, 2, 1, 8).
+exc(614) :- next_cell(1, 2, 2, 1, 7).
+exc(615) :- next_cell(1, 2, 2, 1, 6).
+exc(616) :- next_cell(1, 2, 2, 1, 5).
+exc(617) :- next_cell(1, 2, 2, 1, 4).
+exc(618) :- next_cell(1, 2, 2, 1, 3).
+exc(619) :- next_cell(1, 2, 2, 1, 2).
+exc(620) :- next_cell(1, 2, 2, 1, 1).
+exc(621) :- next_cell(1, 2, 1, 3, b).
+exc(622) :- next_cell(1, 2, 1, 3, 9).
+exc(623) :- next_cell(1, 2, 1, 3, 8).
+exc(624) :- next_cell(1, 2, 1, 3, 7).
+exc(625) :- next_cell(1, 2, 1, 3, 6).
+exc(626) :- next_cell(1, 2, 1, 3, 4).
+exc(627) :- next_cell(1, 2, 1, 3, 3).
+exc(628) :- next_cell(1, 2, 1, 3, 2).
+exc(629) :- next_cell(1, 2, 1, 3, 1).
+exc(630) :- next_cell(1, 2, 1, 2, b).
+exc(631) :- next_cell(1, 2, 1, 2, 9).
+exc(632) :- next_cell(1, 2, 1, 2, 8).
+exc(633) :- next_cell(1, 2, 1, 2, 6).
+exc(634) :- next_cell(1, 2, 1, 2, 5).
+exc(635) :- next_cell(1, 2, 1, 2, 4).
+exc(636) :- next_cell(1, 2, 1, 2, 3).
+exc(637) :- next_cell(1, 2, 1, 2, 2).
+exc(638) :- next_cell(1, 2, 1, 2, 1).
+exc(639) :- next_cell(1, 2, 1, 1, 9).
+exc(640) :- next_cell(1, 2, 1, 1, 8).
+exc(641) :- next_cell(1, 2, 1, 1, 7).
+exc(642) :- next_cell(1, 2, 1, 1, 6).
+exc(643) :- next_cell(1, 2, 1, 1, 5).
+exc(644) :- next_cell(1, 2, 1, 1, 4).
+exc(645) :- next_cell(1, 2, 1, 1, 3).
+exc(646) :- next_cell(1, 2, 1, 1, 2).
+exc(647) :- next_cell(1, 2, 1, 1, 1).
+exc(648) :- next_cell(1, 1, 3, 3, 9).
+exc(649) :- next_cell(1, 1, 3, 3, 8).
+exc(650) :- next_cell(1, 1, 3, 3, 7).
+exc(651) :- next_cell(1, 1, 3, 3, 6).
+exc(652) :- next_cell(1, 1, 3, 3, 5).
+exc(653) :- next_cell(1, 1, 3, 3, 4).
+exc(654) :- next_cell(1, 1, 3, 3, 3).
+exc(655) :- next_cell(1, 1, 3, 3, 2).
+exc(656) :- next_cell(1, 1, 3, 3, 1).
+exc(657) :- next_cell(1, 1, 3, 2, b).
+exc(658) :- next_cell(1, 1, 3, 2, 9).
+exc(659) :- next_cell(1, 1, 3, 2, 7).
+exc(660) :- next_cell(1, 1, 3, 2, 6).
+exc(661) :- next_cell(1, 1, 3, 2, 5).
+exc(662) :- next_cell(1, 1, 3, 2, 4).
+exc(663) :- next_cell(1, 1, 3, 2, 3).
+exc(664) :- next_cell(1, 1, 3, 2, 2).
+exc(665) :- next_cell(1, 1, 3, 2, 1).
+exc(666) :- next_cell(1, 1, 3, 1, 9).
+exc(667) :- next_cell(1, 1, 3, 1, 8).
+exc(668) :- next_cell(1, 1, 3, 1, 7).
+exc(669) :- next_cell(1, 1, 3, 1, 6).
+exc(670) :- next_cell(1, 1, 3, 1, 5).
+exc(671) :- next_cell(1, 1, 3, 1, 4).
+exc(672) :- next_cell(1, 1, 3, 1, 3).
+exc(673) :- next_cell(1, 1, 3, 1, 2).
+exc(674) :- next_cell(1, 1, 3, 1, 1).
+exc(675) :- next_cell(1, 1, 2, 3, b).
+exc(676) :- next_cell(1, 1, 2, 3, 9).
+exc(677) :- next_cell(1, 1, 2, 3, 8).
+exc(678) :- next_cell(1, 1, 2, 3, 7).
+exc(679) :- next_cell(1, 1, 2, 3, 6).
+exc(680) :- next_cell(1, 1, 2, 3, 5).
+exc(681) :- next_cell(1, 1, 2, 3, 4).
+exc(682) :- next_cell(1, 1, 2, 3, 2).
+exc(683) :- next_cell(1, 1, 2, 3, 1).
+exc(684) :- next_cell(1, 1, 2, 2, 9).
+exc(685) :- next_cell(1, 1, 2, 2, 8).
+exc(686) :- next_cell(1, 1, 2, 2, 7).
+exc(687) :- next_cell(1, 1, 2, 2, 6).
+exc(688) :- next_cell(1, 1, 2, 2, 5).
+exc(689) :- next_cell(1, 1, 2, 2, 4).
+exc(690) :- next_cell(1, 1, 2, 2, 3).
+exc(691) :- next_cell(1, 1, 2, 2, 2).
+exc(692) :- next_cell(1, 1, 2, 2, 1).
+exc(693) :- next_cell(1, 1, 2, 1, 9).
+exc(694) :- next_cell(1, 1, 2, 1, 8).
+exc(695) :- next_cell(1, 1, 2, 1, 7).
+exc(696) :- next_cell(1, 1, 2, 1, 6).
+exc(697) :- next_cell(1, 1, 2, 1, 5).
+exc(698) :- next_cell(1, 1, 2, 1, 4).
+exc(699) :- next_cell(1, 1, 2, 1, 3).
+exc(700) :- next_cell(1, 1, 2, 1, 2).
+exc(701) :- next_cell(1, 1, 2, 1, 1).
+exc(702) :- next_cell(1, 1, 1, 3, 9).
+exc(703) :- next_cell(1, 1, 1, 3, 8).
+exc(704) :- next_cell(1, 1, 1, 3, 7).
+exc(705) :- next_cell(1, 1, 1, 3, 6).
+exc(706) :- next_cell(1, 1, 1, 3, 5).
+exc(707) :- next_cell(1, 1, 1, 3, 4).
+exc(708) :- next_cell(1, 1, 1, 3, 3).
+exc(709) :- next_cell(1, 1, 1, 3, 2).
+exc(710) :- next_cell(1, 1, 1, 3, 1).
+exc(711) :- next_cell(1, 1, 1, 2, 9).
+exc(712) :- next_cell(1, 1, 1, 2, 8).
+exc(713) :- next_cell(1, 1, 1, 2, 7).
+exc(714) :- next_cell(1, 1, 1, 2, 6).
+exc(715) :- next_cell(1, 1, 1, 2, 5).
+exc(716) :- next_cell(1, 1, 1, 2, 4).
+exc(717) :- next_cell(1, 1, 1, 2, 3).
+exc(718) :- next_cell(1, 1, 1, 2, 2).
+exc(719) :- next_cell(1, 1, 1, 2, 1).
+exc(720) :- next_cell(1, 1, 1, 1, 9).
+exc(721) :- next_cell(1, 1, 1, 1, 8).
+exc(722) :- next_cell(1, 1, 1, 1, 7).
+exc(723) :- next_cell(1, 1, 1, 1, 6).
+exc(724) :- next_cell(1, 1, 1, 1, 5).
+exc(725) :- next_cell(1, 1, 1, 1, 4).
+exc(726) :- next_cell(1, 1, 1, 1, 3).
+exc(727) :- next_cell(1, 1, 1, 1, 2).
+exc(728) :- next_cell(1, 1, 1, 1, 1).
+#show inc/1.
+#show exc/1.
+

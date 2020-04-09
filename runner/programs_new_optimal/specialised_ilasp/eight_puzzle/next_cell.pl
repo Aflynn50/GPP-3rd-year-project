@@ -1,0 +1,6 @@
+
+next_cell(V0, V0, V0) :- true_cell(V7, V0, V0), pos(V0), cell_type(V0), time_step(V0), score_int(V0), pos(V7), cell_type(V7), time_step(V7), score_int(V7).
+next_cell(V0, V1, V2) :- true_cell(V1, V1, V2), true_cell(V0, V1, V1), pos(V0), cell_type(V0), time_step(V0), score_int(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2).
+next_cell(V0, V1, V2) :- successor(V6, V5), true_cell(V0, V1, V2), true_cell(V1, V0, V5), pos(V0), cell_type(V0), time_step(V0), score_int(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), cell_type(V5), time_step(V5), score_int(V5), cell_type(V6), time_step(V6), score_int(V6).
+next_cell(V0, V1, V2) :- successor(V2, V7), successor(V51, V8), true_cell(V0, V8, V7), not true_step(V51), V8 = 1, pos(V0), cell_type(V0), time_step(V0), score_int(V0), pos(V1), cell_type(V1), time_step(V1), score_int(V1), cell_type(V2), time_step(V2), score_int(V2), cell_type(V7), time_step(V7), score_int(V7), pos(V8), cell_type(V8), time_step(V8), score_int(V8), time_step(V51), score_int(V51).
+next_cell(V0, V0, V1) :- does_move(V73, V0, V0), pos(V0), cell_type(V0), time_step(V0), score_int(V0), cell_type(V1), time_step(V1), score_int(V1), agent(V73).

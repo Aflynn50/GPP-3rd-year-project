@@ -1,0 +1,143 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_control(V0) :- agent(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_control(V0) :- true_year_second_player(V0), agent(V0).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_control(V0) :- does(V0, V90), agent(V0), action(V90).
+}
+inc: 2; exc: 1
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_control(V0) :- true_year_second_player(V0), agent(V0).
+next_control(V0) :- true_step(V81), agent(V0), pos(V81), int(V81).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_control(V0) :- does(V0, V90), agent(V0), action(V90).
+next_control(V0) :- true_sown(V0, V49, V81), agent(V0), pos(V49), int(V49), pos(V81), int(V81).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_control(V0) :- does(V0, V90), agent(V0), action(V90).
+next_control(V0) :- true_ripe(V87, V71, V81), agent(V0), pos(V71), int(V71), pos(V81), int(V81), agent(V87).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_control(V0) :- does(V0, V90), agent(V0), action(V90).
+next_control(V0) :- true_year_second_player(V0), not true_season(V85), not true_step(V81), V81 = 1, V85 = spring, agent(V0), pos(V81), int(V81), season_type(V85).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_control(V0) :- does(V0, V90), agent(V0), action(V90).
+next_control(V0) :- does_harvest_row(V0, V49), agent(V0), pos(V49), int(V49).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_control(V0) :- true_season(V83), does(V0, V90), V83 = winter, agent(V0), season_type(V83), action(V90).
+next_control(V0) :- does_harvest_row(V0, V49), agent(V0), pos(V49), int(V49).
+}
+inc: 3; exc: 6
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_control(V0) :- does_harvest_row(V0, V49), agent(V0), pos(V49), int(V49).
+next_control(V0) :- does(V0, V90), not true_season(V86), V86 = fall, agent(V0), season_type(V86), action(V90).
+}
+inc: 4; exc: 6
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_control(V0) :- does_harvest_row(V0, V49), agent(V0), pos(V49), int(V49).
+next_control(V0) :- does(V0, V90), not true_step(V16), V16 = 7, agent(V0), int(V16), action(V90).
+}
+inc: 5; exc: 6
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_control(V0) :- does(V0, V90), not true_step(V16), V16 = 7, agent(V0), int(V16), action(V90).
+next_control(V0) :- true_year_second_player(V0), true_ripe(V87, V49, V81), agent(V0), pos(V49), int(V49), pos(V81), int(V81), agent(V87).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+inc: 4; exc: 7
+inc: 5; exc: 7
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_control(V0) :- does(V0, V90), not true_step(V16), V16 = 7, agent(V0), int(V16), action(V90).
+next_control(V0) :- true_year_second_player(V0), true_season(V86), V86 = fall, agent(V0), season_type(V86).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+inc: 4; exc: 8
+inc: 5; exc: 8
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_control(V0) :- does(V0, V90), not true_season(V86), V86 = fall, agent(V0), season_type(V86), action(V90).
+next_control(V0) :- true_year_second_player(V0), true_season(V86), V86 = fall, agent(V0), season_type(V86).
+}
+inc: 6; exc: 8
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_control(V0) :- true_year_second_player(V0), true_season(V86), V86 = fall, agent(V0), season_type(V86).
+next_control(V0) :- not true_control(V0), not true_season(V86), V86 = fall, agent(V0), season_type(V86).
+}
+Finished

@@ -1,0 +1,41 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- succ(V4, V3), true_cell(V0, V3, V11), V11 = s, pos(V0), pos(V3), pos(V4), mark(V11).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_cell(V0, V3, V11), V3 = c5, V11 = s, pos(V0), pos(V3), mark(V11).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_cell(V4, V1, V11), V1 = c8, V11 = s, pos(V1), pos(V4), mark(V11).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_cell(V7, V0, V12), V7 = c1, V12 = w, pos(V0), pos(V7), mark(V12).
+}
+inc: 0; exc: 5

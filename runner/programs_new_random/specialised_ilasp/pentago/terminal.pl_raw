@@ -1,0 +1,392 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_cellholds(V5, V0, V0, V8), pos(V0), pos(V5), agent(V8).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_cellholds(V0, V0, V0, V8), pos(V0), agent(V8).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_placecontrol(V9), true_cellholds(V5, V0, V0, V8), pos(V0), pos(V5), agent(V8), agent(V9).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_placecontrol(V9), true_cellholds(V5, V1, V1, V9), pos(V1), pos(V5), agent(V9).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- true_placecontrol(V9), true_cellholds(V0, V0, V0, V8), pos(V0), agent(V8), agent(V9).
+}
+inc: 0; exc: 6
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+terminal :- true_placecontrol(V9), true_cellholds(V2, V2, V2, V9), pos(V2), agent(V9).
+}
+inc: 0; exc: 7
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V0, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 8
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+terminal :- add(V0, V1, V5), true_cellholds(V5, V1, V0, V8), pos(V0), pos(V1), pos(V5), agent(V8).
+}
+inc: 0; exc: 9
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+terminal :- succ(V2, V0), true_cellholds(V0, V0, V2, V9), pos(V0), pos(V2), agent(V9).
+}
+inc: 0; exc: 10
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+terminal :- succ(V2, V0), true_cellholds(V0, V2, V0, V9), pos(V0), pos(V2), agent(V9).
+}
+inc: 0; exc: 11
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+terminal :- succ(V2, V0), true_cellholds(V2, V0, V0, V8), pos(V0), pos(V2), agent(V8).
+}
+inc: 0; exc: 12
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+terminal :- verticalflip(V2, V0, V2, V0), true_cellholds(V2, V2, V2, V9), pos(V0), pos(V2), agent(V9).
+.
+}
+terminal :- verticalflip(V2, V0, V2, V0), true_cellholds(V2, V2, V2, V9), pos(V0), pos(V2), agent(V9).
+.
+
+verticalflip(3, 3, 1, 3).
+verticalflip(3, 2, 1, 2).
+verticalflip(3, 1, 1, 1).
+verticalflip(2, 3, 2, 3).
+verticalflip(2, 2, 2, 2).
+verticalflip(2, 1, 2, 1).
+verticalflip(1, 3, 3, 3).
+verticalflip(1, 2, 3, 2).
+verticalflip(1, 1, 3, 1).
+succ(5, 6).
+succ(4, 5).
+succ(3, 4).
+succ(2, 3).
+succ(1, 2).
+rotation(counterclockwise, 3, 3, 1, 3).
+rotation(counterclockwise, 3, 2, 2, 3).
+rotation(counterclockwise, 3, 1, 3, 3).
+rotation(counterclockwise, 2, 3, 1, 2).
+rotation(counterclockwise, 2, 2, 2, 2).
+rotation(counterclockwise, 2, 1, 3, 2).
+rotation(counterclockwise, 1, 3, 1, 1).
+rotation(counterclockwise, 1, 2, 2, 1).
+rotation(counterclockwise, 1, 1, 3, 1).
+rotation(clockwise, 3, 3, 3, 1).
+rotation(clockwise, 3, 2, 2, 1).
+rotation(clockwise, 3, 1, 1, 1).
+rotation(clockwise, 2, 3, 3, 2).
+rotation(clockwise, 2, 2, 2, 2).
+rotation(clockwise, 2, 1, 1, 2).
+rotation(clockwise, 1, 3, 3, 3).
+rotation(clockwise, 1, 2, 2, 3).
+rotation(clockwise, 1, 1, 1, 3).
+role(red).
+role(black).
+quadrant(4).
+quadrant(3).
+quadrant(2).
+quadrant(1).
+input_rotate(red, 4, counterclockwise).
+input_rotate(red, 4, clockwise).
+input_rotate(red, 3, counterclockwise).
+input_rotate(red, 3, clockwise).
+input_rotate(red, 2, counterclockwise).
+input_rotate(red, 2, clockwise).
+input_rotate(red, 1, counterclockwise).
+input_rotate(red, 1, clockwise).
+input_rotate(black, 4, counterclockwise).
+input_rotate(black, 4, clockwise).
+input_rotate(black, 3, counterclockwise).
+input_rotate(black, 3, clockwise).
+input_rotate(black, 2, counterclockwise).
+input_rotate(black, 2, clockwise).
+input_rotate(black, 1, counterclockwise).
+input_rotate(black, 1, clockwise).
+input_place(red, 4, 3, 3).
+input_place(red, 4, 3, 2).
+input_place(red, 4, 3, 1).
+input_place(red, 4, 2, 3).
+input_place(red, 4, 2, 2).
+input_place(red, 4, 2, 1).
+input_place(red, 4, 1, 3).
+input_place(red, 4, 1, 2).
+input_place(red, 4, 1, 1).
+input_place(red, 3, 3, 3).
+input_place(red, 3, 3, 2).
+input_place(red, 3, 3, 1).
+input_place(red, 3, 2, 3).
+input_place(red, 3, 2, 2).
+input_place(red, 3, 2, 1).
+input_place(red, 3, 1, 3).
+input_place(red, 3, 1, 2).
+input_place(red, 3, 1, 1).
+input_place(red, 2, 3, 3).
+input_place(red, 2, 3, 2).
+input_place(red, 2, 3, 1).
+input_place(red, 2, 2, 3).
+input_place(red, 2, 2, 2).
+input_place(red, 2, 2, 1).
+input_place(red, 2, 1, 3).
+input_place(red, 2, 1, 2).
+input_place(red, 2, 1, 1).
+input_place(red, 1, 3, 3).
+input_place(red, 1, 3, 2).
+input_place(red, 1, 3, 1).
+input_place(red, 1, 2, 3).
+input_place(red, 1, 2, 2).
+input_place(red, 1, 2, 1).
+input_place(red, 1, 1, 3).
+input_place(red, 1, 1, 2).
+input_place(red, 1, 1, 1).
+input_place(black, 4, 3, 3).
+input_place(black, 4, 3, 2).
+input_place(black, 4, 3, 1).
+input_place(black, 4, 2, 3).
+input_place(black, 4, 2, 2).
+input_place(black, 4, 2, 1).
+input_place(black, 4, 1, 3).
+input_place(black, 4, 1, 2).
+input_place(black, 4, 1, 1).
+input_place(black, 3, 3, 3).
+input_place(black, 3, 3, 2).
+input_place(black, 3, 3, 1).
+input_place(black, 3, 2, 3).
+input_place(black, 3, 2, 2).
+input_place(black, 3, 2, 1).
+input_place(black, 3, 1, 3).
+input_place(black, 3, 1, 2).
+input_place(black, 3, 1, 1).
+input_place(black, 2, 3, 3).
+input_place(black, 2, 3, 2).
+input_place(black, 2, 3, 1).
+input_place(black, 2, 2, 3).
+input_place(black, 2, 2, 2).
+input_place(black, 2, 2, 1).
+input_place(black, 2, 1, 3).
+input_place(black, 2, 1, 2).
+input_place(black, 2, 1, 1).
+input_place(black, 1, 3, 3).
+input_place(black, 1, 3, 2).
+input_place(black, 1, 3, 1).
+input_place(black, 1, 2, 3).
+input_place(black, 1, 2, 2).
+input_place(black, 1, 2, 1).
+input_place(black, 1, 1, 3).
+input_place(black, 1, 1, 2).
+input_place(black, 1, 1, 1).
+input(red, noop).
+input(black, noop).
+index(3).
+index(2).
+index(1).
+horizontalflip(3, 3, 3, 1).
+horizontalflip(3, 2, 3, 2).
+horizontalflip(3, 1, 3, 3).
+horizontalflip(2, 3, 2, 1).
+horizontalflip(2, 2, 2, 2).
+horizontalflip(2, 1, 2, 3).
+horizontalflip(1, 3, 1, 1).
+horizontalflip(1, 2, 1, 2).
+horizontalflip(1, 1, 1, 3).
+globalindex(4, 3, 3, 6, 3).
+globalindex(4, 3, 2, 6, 2).
+globalindex(4, 3, 1, 6, 1).
+globalindex(4, 2, 3, 5, 3).
+globalindex(4, 2, 2, 5, 2).
+globalindex(4, 2, 1, 5, 1).
+globalindex(4, 1, 3, 4, 3).
+globalindex(4, 1, 2, 4, 2).
+globalindex(4, 1, 1, 4, 1).
+globalindex(3, 3, 3, 6, 6).
+globalindex(3, 3, 2, 6, 5).
+globalindex(3, 3, 1, 6, 4).
+globalindex(3, 2, 3, 5, 6).
+globalindex(3, 2, 2, 5, 5).
+globalindex(3, 2, 1, 5, 4).
+globalindex(3, 1, 3, 4, 6).
+globalindex(3, 1, 2, 4, 5).
+globalindex(3, 1, 1, 4, 4).
+globalindex(2, 3, 3, 3, 6).
+globalindex(2, 3, 2, 3, 5).
+globalindex(2, 3, 1, 3, 4).
+globalindex(2, 2, 3, 2, 6).
+globalindex(2, 2, 2, 2, 5).
+globalindex(2, 2, 1, 2, 4).
+globalindex(2, 1, 3, 1, 6).
+globalindex(2, 1, 2, 1, 5).
+globalindex(2, 1, 1, 1, 4).
+globalindex(1, 3, 3, 3, 3).
+globalindex(1, 3, 2, 3, 2).
+globalindex(1, 3, 1, 3, 1).
+globalindex(1, 2, 3, 2, 3).
+globalindex(1, 2, 2, 2, 2).
+globalindex(1, 2, 1, 2, 1).
+globalindex(1, 1, 3, 1, 3).
+globalindex(1, 1, 2, 1, 2).
+globalindex(1, 1, 1, 1, 1).
+direction(counterclockwise).
+direction(clockwise).
+cell(4, 3, 3).
+cell(4, 3, 2).
+cell(4, 3, 1).
+cell(4, 2, 3).
+cell(4, 2, 2).
+cell(4, 2, 1).
+cell(4, 1, 3).
+cell(4, 1, 2).
+cell(4, 1, 1).
+cell(3, 3, 3).
+cell(3, 3, 2).
+cell(3, 3, 1).
+cell(3, 2, 3).
+cell(3, 2, 2).
+cell(3, 2, 1).
+cell(3, 1, 3).
+cell(3, 1, 2).
+cell(3, 1, 1).
+cell(2, 3, 3).
+cell(2, 3, 2).
+cell(2, 3, 1).
+cell(2, 2, 3).
+cell(2, 2, 2).
+cell(2, 2, 1).
+cell(2, 1, 3).
+cell(2, 1, 2).
+cell(2, 1, 1).
+cell(1, 3, 3).
+cell(1, 3, 2).
+cell(1, 3, 1).
+cell(1, 2, 3).
+cell(1, 2, 2).
+cell(1, 2, 1).
+cell(1, 1, 3).
+cell(1, 1, 2).
+cell(1, 1, 1).
+add(3, 3, 6).
+add(3, 2, 5).
+add(3, 1, 4).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type(agent, red).
+agent(red).
+
+type(agent, black).
+agent(black).
+
+type(pos, 1).
+pos(1).
+
+type(pos, 2).
+pos(2).
+
+type(pos, 3).
+pos(3).
+
+type(pos, 4).
+pos(4).
+
+type(pos, 5).
+pos(5).
+
+type(pos, 6).
+pos(6).
+
+type(int, 0).
+int(0).
+
+type(int, 50).
+int(50).
+
+type(int, 100).
+int(100).
+
+type(dir, clockwise).
+dir(clockwise).
+
+type(dir, counterclockwise).
+dir(counterclockwise).
+
+type(action, noop).
+action(noop).
+
+
+
+
+
+
+
+
+
+
+
+true_placecontrol(red).
+exc(0) :- terminal.
+#show inc/1.
+#show exc/1.
+

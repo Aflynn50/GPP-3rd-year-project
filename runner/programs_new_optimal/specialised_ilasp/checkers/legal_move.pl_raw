@@ -1,0 +1,49 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- agent(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- redpawnmove(V3, V3, V1, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- redpawnmove(V7, V7, V1, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V3), int(V3), pos(V4), int(V4), pos(V7), int(V7).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- skiprank(V4, V8), agent(V0), file_type(V1), rank_type(V2), int(V2), file_type(V3), rank_type(V4), int(V4), rank_type(V8), int(V8).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- skiprank(V4, V8), agent(V0), file_type(V1), rank_type(V2), int(V2), file_type(V3), rank_type(V4), int(V4), rank_type(V8), int(V8).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- skiprank(V4, V8), agent(V0), file_type(V1), rank_type(V2), int(V2), file_type(V3), rank_type(V4), int(V4), rank_type(V8), int(V8).
+}
+inc: 2; exc: 2

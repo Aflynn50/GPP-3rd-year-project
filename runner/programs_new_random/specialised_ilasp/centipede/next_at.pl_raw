@@ -1,0 +1,3071 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_at(V0, V1, V2) :- int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), int(V0), int(V1), obj(V2).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V8), int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_at(V0, V1, V2) :- true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V8), true_at(V1, V1, V2), int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), centipede(V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V1, V0), int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), centipede(V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- V0 = 2, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- V0 = 2, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V8), succ(V1, V0), int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- true_at(V1, V1, V2), V0 = 2, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+}
+inc: 2; exc: 9
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+}
+inc: 3; exc: 9
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), true_at(V8, V1, V2), int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- V0 = 3, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V1), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V7, V6), succ(V0, V7), has_succ(V8), true_at(V8, V1, V2), int(V0), int(V1), obj(V2), int(V6), int(V7), int(V8).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), true_at(V8, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), succ(V4, V0), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3), int(V4).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), true_at(V8, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), succ(V4, V0), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3), int(V4).
+next_at(V0, V1, V2) :- succ(V8, V0), has_succ(V1), true_at(V8, V1, V2), int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), has_succ(V1), true_at(V8, V1, V2), int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 4; exc: 15
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V8, V0), has_succ(V1), true_at(V8, V1, V2), int(V0), int(V1), obj(V2), int(V8).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), succ(V1, V8), int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V1, V8), V0 = 3, int(V0), int(V1), obj(V2), int(V8).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- true_at(V7, V1, V2), V0 = 3, int(V0), int(V1), obj(V2), int(V7).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- not has_pred(V1), V0 = 3, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- V0 = 3, V1 = 1, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V3, V4), succ(V6, V5), true_at(V6, V4, V11), V0 = 3, int(V0), int(V1), obj(V2), int(V3), int(V4), int(V5), int(V6), obj(V11).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V6), has_pred(V7), true_at(V7, V1, V2), V0 = 3, int(V0), int(V1), obj(V2), int(V6), int(V7).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V1, V8), has_pred(V7), true_at(V7, V1, V2), V0 = 3, int(V0), int(V1), obj(V2), int(V7), int(V8).
+}
+inc: 5; exc: 23
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+}
+inc: 6; exc: 23
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V1, V0), true_at(V1, V1, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V1, V8), has_pred(V7), true_at(V7, V1, V2), V0 = 3, int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- V0 = 4, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+inc: 6; exc: 24
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), true_at(V7, V4, V11), V0 = 3, int(V0), int(V1), obj(V2), int(V4), int(V7), obj(V11).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+inc: 6; exc: 25
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V8), has_pred(V7), true_at(V7, V1, V2), V0 = 3, int(V0), int(V1), obj(V2), int(V7), int(V8).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+inc: 3; exc: 26
+inc: 4; exc: 26
+inc: 5; exc: 26
+inc: 6; exc: 26
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), succ(V1, V8), true_at(V7, V4, V11), int(V0), int(V1), obj(V2), int(V4), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+inc: 2; exc: 27
+inc: 3; exc: 27
+inc: 4; exc: 27
+inc: 5; exc: 27
+inc: 6; exc: 27
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V1, V8), true_at(V7, V4, V11), V0 = 3, int(V0), int(V1), obj(V2), int(V4), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+inc: 2; exc: 28
+inc: 3; exc: 28
+inc: 4; exc: 28
+inc: 5; exc: 28
+inc: 6; exc: 28
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), true_at(V7, V4, V11), not has_pred(V1), V0 = 3, int(V0), int(V1), obj(V2), int(V4), int(V7), obj(V11).
+}
+inc: 0; exc: 29
+inc: 1; exc: 29
+inc: 2; exc: 29
+inc: 3; exc: 29
+inc: 4; exc: 29
+inc: 5; exc: 29
+inc: 6; exc: 29
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), obj(V11).
+}
+inc: 0; exc: 30
+inc: 1; exc: 30
+inc: 2; exc: 30
+inc: 3; exc: 30
+inc: 4; exc: 30
+inc: 5; exc: 30
+inc: 6; exc: 30
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+}
+inc: 7; exc: 30
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 31
+inc: 1; exc: 31
+inc: 2; exc: 31
+inc: 3; exc: 31
+inc: 4; exc: 31
+inc: 5; exc: 31
+inc: 6; exc: 31
+inc: 7; exc: 31
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- V1 = 2, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 32
+inc: 1; exc: 32
+inc: 2; exc: 32
+inc: 3; exc: 32
+inc: 4; exc: 32
+inc: 5; exc: 32
+inc: 6; exc: 32
+inc: 7; exc: 32
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+}
+inc: 0; exc: 33
+inc: 1; exc: 33
+inc: 2; exc: 33
+inc: 3; exc: 33
+inc: 4; exc: 33
+inc: 5; exc: 33
+inc: 6; exc: 33
+inc: 7; exc: 33
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- has_succ(V1), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 34
+inc: 1; exc: 34
+inc: 2; exc: 34
+inc: 3; exc: 34
+inc: 4; exc: 34
+inc: 5; exc: 34
+inc: 6; exc: 34
+inc: 7; exc: 34
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- true_at(V0, V8, V10), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), int(V8), agent(V9), obj(V10), action(V15).
+}
+inc: 0; exc: 35
+inc: 1; exc: 35
+inc: 2; exc: 35
+inc: 3; exc: 35
+inc: 4; exc: 35
+inc: 5; exc: 35
+inc: 6; exc: 35
+inc: 7; exc: 35
+--------------------------------------------
+Iteration 43:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V0, V7), V1 = 2, int(V0), int(V1), obj(V2), int(V7).
+}
+inc: 0; exc: 36
+inc: 1; exc: 36
+inc: 2; exc: 36
+inc: 3; exc: 36
+inc: 4; exc: 36
+inc: 5; exc: 36
+inc: 6; exc: 36
+inc: 7; exc: 36
+--------------------------------------------
+Iteration 44:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), has_succ(V1), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+}
+inc: 0; exc: 37
+inc: 1; exc: 37
+inc: 2; exc: 37
+inc: 3; exc: 37
+inc: 4; exc: 37
+inc: 5; exc: 37
+inc: 6; exc: 37
+inc: 7; exc: 37
+--------------------------------------------
+Iteration 45:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V4, V11), does(V9, V15), not is_right(V15), V0 = 3, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+}
+inc: 0; exc: 38
+inc: 1; exc: 38
+inc: 2; exc: 38
+inc: 3; exc: 38
+inc: 4; exc: 38
+inc: 5; exc: 38
+inc: 6; exc: 38
+inc: 7; exc: 38
+--------------------------------------------
+Iteration 46:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V1, V0), bullet(V2), int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 39
+inc: 1; exc: 39
+inc: 2; exc: 39
+inc: 3; exc: 39
+inc: 4; exc: 39
+inc: 5; exc: 39
+inc: 6; exc: 39
+inc: 7; exc: 39
+--------------------------------------------
+Iteration 47:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V6), succ(V0, V7), has_succ(V1), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), int(V6), int(V7), agent(V9), action(V15).
+}
+inc: 0; exc: 40
+inc: 1; exc: 40
+inc: 2; exc: 40
+inc: 3; exc: 40
+inc: 4; exc: 40
+inc: 5; exc: 40
+inc: 6; exc: 40
+inc: 7; exc: 40
+--------------------------------------------
+Iteration 48:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V1, V0), V0 = 3, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 41
+inc: 1; exc: 41
+inc: 2; exc: 41
+inc: 3; exc: 41
+inc: 4; exc: 41
+inc: 5; exc: 41
+inc: 6; exc: 41
+inc: 7; exc: 41
+--------------------------------------------
+Iteration 49:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- has_succ(V1), true_at(V0, V4, V11), does(V9, V15), not is_right(V15), V0 = 3, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+}
+inc: 0; exc: 42
+inc: 1; exc: 42
+inc: 2; exc: 42
+inc: 3; exc: 42
+inc: 4; exc: 42
+inc: 5; exc: 42
+inc: 6; exc: 42
+inc: 7; exc: 42
+--------------------------------------------
+Iteration 50:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V8, V1), true_at(V0, V8, V10), int(V0), int(V1), obj(V2), int(V8), obj(V10).
+}
+inc: 0; exc: 43
+inc: 1; exc: 43
+inc: 2; exc: 43
+inc: 3; exc: 43
+inc: 4; exc: 43
+inc: 5; exc: 43
+inc: 6; exc: 43
+inc: 7; exc: 43
+--------------------------------------------
+Iteration 51:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- bullet(V2), V1 = 2, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 44
+inc: 1; exc: 44
+inc: 2; exc: 44
+inc: 3; exc: 44
+inc: 4; exc: 44
+inc: 5; exc: 44
+inc: 6; exc: 44
+inc: 7; exc: 44
+--------------------------------------------
+Iteration 52:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- is_fire(V15), does(V9, V15), int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 45
+inc: 1; exc: 45
+inc: 2; exc: 45
+inc: 3; exc: 45
+inc: 4; exc: 45
+inc: 5; exc: 45
+inc: 6; exc: 45
+inc: 7; exc: 45
+--------------------------------------------
+Iteration 53:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V1, V0), bullet(V2), int(V0), int(V1), obj(V2), int(V7).
+}
+inc: 0; exc: 46
+inc: 1; exc: 46
+inc: 2; exc: 46
+inc: 3; exc: 46
+inc: 4; exc: 46
+inc: 5; exc: 46
+inc: 6; exc: 46
+inc: 7; exc: 46
+--------------------------------------------
+Iteration 54:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V1, V0), true_at(V0, V4, V11), int(V0), int(V1), obj(V2), int(V4), int(V7), obj(V11).
+}
+inc: 0; exc: 47
+inc: 1; exc: 47
+inc: 2; exc: 47
+inc: 3; exc: 47
+inc: 4; exc: 47
+inc: 5; exc: 47
+inc: 6; exc: 47
+inc: 7; exc: 47
+--------------------------------------------
+Iteration 55:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V0, V7), true_at(V0, V4, V11), V2 = o, int(V0), int(V1), obj(V2), int(V4), int(V7), obj(V11).
+}
+inc: 0; exc: 48
+inc: 1; exc: 48
+inc: 2; exc: 48
+inc: 3; exc: 48
+inc: 4; exc: 48
+inc: 5; exc: 48
+inc: 6; exc: 48
+inc: 7; exc: 48
+--------------------------------------------
+Iteration 56:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V0, V7), is_fire(V15), does(V9, V15), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+}
+inc: 0; exc: 49
+inc: 1; exc: 49
+inc: 2; exc: 49
+inc: 3; exc: 49
+inc: 4; exc: 49
+inc: 5; exc: 49
+inc: 6; exc: 49
+inc: 7; exc: 49
+--------------------------------------------
+Iteration 57:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), does(V9, V15), int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 8; exc: 49
+--------------------------------------------
+Iteration 58:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V8), has_succ(V8), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V15).
+}
+inc: 0; exc: 50
+inc: 1; exc: 50
+inc: 2; exc: 50
+inc: 3; exc: 50
+inc: 4; exc: 50
+inc: 5; exc: 50
+inc: 6; exc: 50
+inc: 7; exc: 50
+inc: 8; exc: 50
+--------------------------------------------
+Iteration 59:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V1, V8), has_succ(V8), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V15).
+}
+inc: 0; exc: 51
+inc: 1; exc: 51
+inc: 2; exc: 51
+inc: 3; exc: 51
+inc: 4; exc: 51
+inc: 5; exc: 51
+inc: 6; exc: 51
+inc: 7; exc: 51
+inc: 8; exc: 51
+--------------------------------------------
+Iteration 60:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V8), has_succ(V8), true_at(V0, V4, V11), does(V9, V15), not is_dir(V15), int(V0), int(V1), obj(V2), int(V4), int(V8), agent(V9), obj(V11), action(V15).
+}
+inc: 0; exc: 52
+inc: 1; exc: 52
+inc: 2; exc: 52
+inc: 3; exc: 52
+inc: 4; exc: 52
+inc: 5; exc: 52
+inc: 6; exc: 52
+inc: 7; exc: 52
+inc: 8; exc: 52
+--------------------------------------------
+Iteration 61:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V8, V0), has_pred(V8), true_at(V7, V1, V2), int(V0), int(V1), obj(V2), int(V7), int(V8).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V8), has_succ(V8), does(V9, V15), not is_dir(V15), V0 = 3, int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V15).
+}
+inc: 0; exc: 53
+inc: 1; exc: 53
+inc: 2; exc: 53
+inc: 3; exc: 53
+inc: 4; exc: 53
+inc: 5; exc: 53
+inc: 6; exc: 53
+inc: 7; exc: 53
+inc: 8; exc: 53
+--------------------------------------------
+Iteration 62:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), does(V9, V15), int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 54
+inc: 1; exc: 54
+inc: 2; exc: 54
+inc: 3; exc: 54
+inc: 4; exc: 54
+inc: 5; exc: 54
+inc: 6; exc: 54
+inc: 7; exc: 54
+inc: 8; exc: 54
+--------------------------------------------
+Iteration 63:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- is_fire(V15), true_at(V0, V4, V11), does(V9, V15), int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+}
+inc: 0; exc: 55
+inc: 1; exc: 55
+inc: 2; exc: 55
+inc: 3; exc: 55
+inc: 4; exc: 55
+inc: 5; exc: 55
+inc: 6; exc: 55
+inc: 7; exc: 55
+inc: 8; exc: 55
+--------------------------------------------
+Iteration 64:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V8, V10), V0 = 3, V1 = 2, int(V0), int(V1), obj(V2), int(V8), obj(V10).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 56
+inc: 1; exc: 56
+inc: 2; exc: 56
+inc: 3; exc: 56
+inc: 4; exc: 56
+inc: 5; exc: 56
+inc: 6; exc: 56
+inc: 7; exc: 56
+inc: 8; exc: 56
+--------------------------------------------
+Iteration 65:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V8, V10), V0 = 3, V2 = o, int(V0), int(V1), obj(V2), int(V8), obj(V10).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 57
+inc: 1; exc: 57
+inc: 2; exc: 57
+inc: 3; exc: 57
+inc: 4; exc: 57
+inc: 5; exc: 57
+inc: 6; exc: 57
+inc: 7; exc: 57
+inc: 8; exc: 57
+--------------------------------------------
+Iteration 66:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_right(V15), V1 = 2, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 58
+inc: 1; exc: 58
+inc: 2; exc: 58
+inc: 3; exc: 58
+inc: 4; exc: 58
+inc: 5; exc: 58
+inc: 6; exc: 58
+inc: 7; exc: 58
+inc: 8; exc: 58
+--------------------------------------------
+Iteration 67:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V7, V6), succ(V0, V7), succ(V1, V0), bullet(V2), int(V0), int(V1), obj(V2), int(V6), int(V7).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 59
+inc: 1; exc: 59
+inc: 2; exc: 59
+inc: 3; exc: 59
+inc: 4; exc: 59
+inc: 5; exc: 59
+inc: 6; exc: 59
+inc: 7; exc: 59
+inc: 8; exc: 59
+--------------------------------------------
+Iteration 68:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V1, V0), is_fire(V15), does(V9, V15), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 60
+inc: 1; exc: 60
+inc: 2; exc: 60
+inc: 3; exc: 60
+inc: 4; exc: 60
+inc: 5; exc: 60
+inc: 6; exc: 60
+inc: 7; exc: 60
+inc: 8; exc: 60
+--------------------------------------------
+Iteration 69:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V8), does(V9, V15), V0 = 3, V15 = fire, int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 61
+inc: 1; exc: 61
+inc: 2; exc: 61
+inc: 3; exc: 61
+inc: 4; exc: 61
+inc: 5; exc: 61
+inc: 6; exc: 61
+inc: 7; exc: 61
+inc: 8; exc: 61
+--------------------------------------------
+Iteration 70:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), does(V9, V15), not is_right(V15), V1 = 2, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 62
+inc: 1; exc: 62
+inc: 2; exc: 62
+inc: 3; exc: 62
+inc: 4; exc: 62
+inc: 5; exc: 62
+inc: 6; exc: 62
+inc: 7; exc: 62
+inc: 8; exc: 62
+--------------------------------------------
+Iteration 71:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_right(V15), V0 = 3, V1 = 2, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 63
+inc: 1; exc: 63
+inc: 2; exc: 63
+inc: 3; exc: 63
+inc: 4; exc: 63
+inc: 5; exc: 63
+inc: 6; exc: 63
+inc: 7; exc: 63
+inc: 8; exc: 63
+--------------------------------------------
+Iteration 72:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), controls(V9, V2), true_at(V7, V4, V11), V1 = 1, V7 = 4, int(V0), int(V1), obj(V2), int(V4), int(V7), agent(V9), obj(V11).
+next_at(V0, V1, V2) :- succ(V1, V8), is_fire(V15), has_succ(V8), true_at(V0, V4, V11), does(V9, V15), int(V0), int(V1), obj(V2), int(V4), int(V8), agent(V9), obj(V11), action(V15).
+}
+inc: 0; exc: 64
+inc: 1; exc: 64
+inc: 2; exc: 64
+inc: 3; exc: 64
+inc: 4; exc: 64
+inc: 5; exc: 64
+inc: 6; exc: 64
+inc: 7; exc: 64
+inc: 8; exc: 64
+--------------------------------------------
+Iteration 73:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V6, V5), succ(V7, V6), succ(V0, V7), succ(V1, V0), bullet(V2), int(V0), int(V1), obj(V2), int(V5), int(V6), int(V7).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 65
+inc: 1; exc: 65
+inc: 2; exc: 65
+inc: 3; exc: 65
+inc: 4; exc: 65
+inc: 5; exc: 65
+inc: 6; exc: 65
+inc: 7; exc: 65
+inc: 8; exc: 65
+--------------------------------------------
+Iteration 74:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V7, V6), succ(V0, V7), succ(V1, V0), is_fire(V15), does(V9, V15), int(V0), int(V1), obj(V2), int(V6), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 66
+inc: 1; exc: 66
+inc: 2; exc: 66
+inc: 3; exc: 66
+inc: 4; exc: 66
+inc: 5; exc: 66
+inc: 6; exc: 66
+inc: 7; exc: 66
+inc: 8; exc: 66
+--------------------------------------------
+Iteration 75:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_dir(V15), V1 = 2, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 67
+inc: 1; exc: 67
+inc: 2; exc: 67
+inc: 3; exc: 67
+inc: 4; exc: 67
+inc: 5; exc: 67
+inc: 6; exc: 67
+inc: 7; exc: 67
+inc: 8; exc: 67
+--------------------------------------------
+Iteration 76:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_dir(V15), V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 68
+inc: 1; exc: 68
+inc: 2; exc: 68
+inc: 3; exc: 68
+inc: 4; exc: 68
+inc: 5; exc: 68
+inc: 6; exc: 68
+inc: 7; exc: 68
+inc: 8; exc: 68
+--------------------------------------------
+Iteration 77:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), has_succ(V1), bullet(V2), true_at(V0, V4, V11), int(V0), int(V1), obj(V2), int(V4), int(V7), obj(V11).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 69
+inc: 1; exc: 69
+inc: 2; exc: 69
+inc: 3; exc: 69
+inc: 4; exc: 69
+inc: 5; exc: 69
+inc: 6; exc: 69
+inc: 7; exc: 69
+inc: 8; exc: 69
+--------------------------------------------
+Iteration 78:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), does(V9, V15), not is_dir(V15), V1 = 2, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 70
+inc: 1; exc: 70
+inc: 2; exc: 70
+inc: 3; exc: 70
+inc: 4; exc: 70
+inc: 5; exc: 70
+inc: 6; exc: 70
+inc: 7; exc: 70
+inc: 8; exc: 70
+--------------------------------------------
+Iteration 79:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), does(V9, V15), not is_dir(V15), V2 = o, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 71
+inc: 1; exc: 71
+inc: 2; exc: 71
+inc: 3; exc: 71
+inc: 4; exc: 71
+inc: 5; exc: 71
+inc: 6; exc: 71
+inc: 7; exc: 71
+inc: 8; exc: 71
+--------------------------------------------
+Iteration 80:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), bullet(V2), V1 = 2, int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 72
+inc: 1; exc: 72
+inc: 2; exc: 72
+inc: 3; exc: 72
+inc: 4; exc: 72
+inc: 5; exc: 72
+inc: 6; exc: 72
+inc: 7; exc: 72
+inc: 8; exc: 72
+--------------------------------------------
+Iteration 81:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- has_succ(V1), does(V9, V15), not is_dir(V15), V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 73
+inc: 1; exc: 73
+inc: 2; exc: 73
+inc: 3; exc: 73
+inc: 4; exc: 73
+inc: 5; exc: 73
+inc: 6; exc: 73
+inc: 7; exc: 73
+inc: 8; exc: 73
+--------------------------------------------
+Iteration 82:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- has_succ(V1), true_at(V0, V4, V11), V0 = 3, V2 = o, int(V0), int(V1), obj(V2), int(V4), obj(V11).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 74
+inc: 1; exc: 74
+inc: 2; exc: 74
+inc: 3; exc: 74
+inc: 4; exc: 74
+inc: 5; exc: 74
+inc: 6; exc: 74
+inc: 7; exc: 74
+inc: 8; exc: 74
+--------------------------------------------
+Iteration 83:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V8, V10), does(V9, V15), not is_dir(V15), V1 = 2, int(V0), int(V1), obj(V2), int(V8), agent(V9), obj(V10), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 75
+inc: 1; exc: 75
+inc: 2; exc: 75
+inc: 3; exc: 75
+inc: 4; exc: 75
+inc: 5; exc: 75
+inc: 6; exc: 75
+inc: 7; exc: 75
+inc: 8; exc: 75
+--------------------------------------------
+Iteration 84:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V8, V10), does(V9, V15), not is_dir(V15), V2 = o, int(V0), int(V1), obj(V2), int(V8), agent(V9), obj(V10), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 76
+inc: 1; exc: 76
+inc: 2; exc: 76
+inc: 3; exc: 76
+inc: 4; exc: 76
+inc: 5; exc: 76
+inc: 6; exc: 76
+inc: 7; exc: 76
+inc: 8; exc: 76
+--------------------------------------------
+Iteration 85:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), has_succ(V1), does(V9, V15), not is_dir(V15), V2 = o, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 77
+inc: 1; exc: 77
+inc: 2; exc: 77
+inc: 3; exc: 77
+inc: 4; exc: 77
+inc: 5; exc: 77
+inc: 6; exc: 77
+inc: 7; exc: 77
+inc: 8; exc: 77
+--------------------------------------------
+Iteration 86:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V4, V11), does(V9, V15), not is_right(V15), V0 = 3, V1 = 2, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 78
+inc: 1; exc: 78
+inc: 2; exc: 78
+inc: 3; exc: 78
+inc: 4; exc: 78
+inc: 5; exc: 78
+inc: 6; exc: 78
+inc: 7; exc: 78
+inc: 8; exc: 78
+--------------------------------------------
+Iteration 87:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V4, V11), does(V9, V15), not is_right(V15), V0 = 3, V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 79
+inc: 1; exc: 79
+inc: 2; exc: 79
+inc: 3; exc: 79
+inc: 4; exc: 79
+inc: 5; exc: 79
+inc: 6; exc: 79
+inc: 7; exc: 79
+inc: 8; exc: 79
+--------------------------------------------
+Iteration 88:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), bullet(V2), V0 = 3, int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 80
+inc: 1; exc: 80
+inc: 2; exc: 80
+inc: 3; exc: 80
+inc: 4; exc: 80
+inc: 5; exc: 80
+inc: 6; exc: 80
+inc: 7; exc: 80
+inc: 8; exc: 80
+--------------------------------------------
+Iteration 89:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V8, V1), bullet(V2), true_at(V0, V8, V10), int(V0), int(V1), obj(V2), int(V8), obj(V10).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 81
+inc: 1; exc: 81
+inc: 2; exc: 81
+inc: 3; exc: 81
+inc: 4; exc: 81
+inc: 5; exc: 81
+inc: 6; exc: 81
+inc: 7; exc: 81
+inc: 8; exc: 81
+--------------------------------------------
+Iteration 90:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- has_succ(V1), true_at(V0, V8, V10), does(V9, V15), not is_dir(V15), V2 = o, int(V0), int(V1), obj(V2), int(V8), agent(V9), obj(V10), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 82
+inc: 1; exc: 82
+inc: 2; exc: 82
+inc: 3; exc: 82
+inc: 4; exc: 82
+inc: 5; exc: 82
+inc: 6; exc: 82
+inc: 7; exc: 82
+inc: 8; exc: 82
+--------------------------------------------
+Iteration 91:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- has_succ(V1), does(V9, V15), not is_dir(V15), V0 = 3, V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 83
+inc: 1; exc: 83
+inc: 2; exc: 83
+inc: 3; exc: 83
+inc: 4; exc: 83
+inc: 5; exc: 83
+inc: 6; exc: 83
+inc: 7; exc: 83
+inc: 8; exc: 83
+--------------------------------------------
+Iteration 92:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- is_fire(V15), bullet(V2), does(V9, V15), int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 84
+inc: 1; exc: 84
+inc: 2; exc: 84
+inc: 3; exc: 84
+inc: 4; exc: 84
+inc: 5; exc: 84
+inc: 6; exc: 84
+inc: 7; exc: 84
+inc: 8; exc: 84
+--------------------------------------------
+Iteration 93:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- is_fire(V15), does(V9, V15), V1 = 2, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 85
+inc: 1; exc: 85
+inc: 2; exc: 85
+inc: 3; exc: 85
+inc: 4; exc: 85
+inc: 5; exc: 85
+inc: 6; exc: 85
+inc: 7; exc: 85
+inc: 8; exc: 85
+--------------------------------------------
+Iteration 94:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V1, V0), bullet(V2), true_at(V0, V4, V11), int(V0), int(V1), obj(V2), int(V4), int(V7), obj(V11).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 86
+inc: 1; exc: 86
+inc: 2; exc: 86
+inc: 3; exc: 86
+inc: 4; exc: 86
+inc: 5; exc: 86
+inc: 6; exc: 86
+inc: 7; exc: 86
+inc: 8; exc: 86
+--------------------------------------------
+Iteration 95:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), is_fire(V15), does(V9, V15), V1 = 2, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 87
+inc: 1; exc: 87
+inc: 2; exc: 87
+inc: 3; exc: 87
+inc: 4; exc: 87
+inc: 5; exc: 87
+inc: 6; exc: 87
+inc: 7; exc: 87
+inc: 8; exc: 87
+--------------------------------------------
+Iteration 96:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), is_fire(V15), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 88
+inc: 1; exc: 88
+inc: 2; exc: 88
+inc: 3; exc: 88
+inc: 4; exc: 88
+inc: 5; exc: 88
+inc: 6; exc: 88
+inc: 7; exc: 88
+inc: 8; exc: 88
+--------------------------------------------
+Iteration 97:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 89
+inc: 1; exc: 89
+inc: 2; exc: 89
+inc: 3; exc: 89
+inc: 4; exc: 89
+inc: 5; exc: 89
+inc: 6; exc: 89
+inc: 7; exc: 89
+inc: 8; exc: 89
+--------------------------------------------
+Iteration 98:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 90
+inc: 1; exc: 90
+inc: 2; exc: 90
+inc: 3; exc: 90
+inc: 4; exc: 90
+inc: 5; exc: 90
+inc: 6; exc: 90
+inc: 7; exc: 90
+inc: 8; exc: 90
+--------------------------------------------
+Iteration 99:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- is_fire(V15), true_at(V0, V8, V10), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V8), agent(V9), obj(V10), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 91
+inc: 1; exc: 91
+inc: 2; exc: 91
+inc: 3; exc: 91
+inc: 4; exc: 91
+inc: 5; exc: 91
+inc: 6; exc: 91
+inc: 7; exc: 91
+inc: 8; exc: 91
+--------------------------------------------
+Iteration 100:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V8, V10), V0 = 3, V1 = 2, V2 = o, int(V0), int(V1), obj(V2), int(V8), obj(V10).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 92
+inc: 1; exc: 92
+inc: 2; exc: 92
+inc: 3; exc: 92
+inc: 4; exc: 92
+inc: 5; exc: 92
+inc: 6; exc: 92
+inc: 7; exc: 92
+inc: 8; exc: 92
+--------------------------------------------
+Iteration 101:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_right(V15), V1 = 2, V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 93
+inc: 1; exc: 93
+inc: 2; exc: 93
+inc: 3; exc: 93
+inc: 4; exc: 93
+inc: 5; exc: 93
+inc: 6; exc: 93
+inc: 7; exc: 93
+inc: 8; exc: 93
+--------------------------------------------
+Iteration 102:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), succ(V1, V0), is_fire(V15), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 94
+inc: 1; exc: 94
+inc: 2; exc: 94
+inc: 3; exc: 94
+inc: 4; exc: 94
+inc: 5; exc: 94
+inc: 6; exc: 94
+inc: 7; exc: 94
+inc: 8; exc: 94
+--------------------------------------------
+Iteration 103:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), does(V9, V15), not is_right(V15), V1 = 2, V2 = o, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 95
+inc: 1; exc: 95
+inc: 2; exc: 95
+inc: 3; exc: 95
+inc: 4; exc: 95
+inc: 5; exc: 95
+inc: 6; exc: 95
+inc: 7; exc: 95
+inc: 8; exc: 95
+--------------------------------------------
+Iteration 104:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- has_succ(V1), does(V9, V15), V0 = 3, V2 = o, V15 = fire, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 96
+inc: 1; exc: 96
+inc: 2; exc: 96
+inc: 3; exc: 96
+inc: 4; exc: 96
+inc: 5; exc: 96
+inc: 6; exc: 96
+inc: 7; exc: 96
+inc: 8; exc: 96
+--------------------------------------------
+Iteration 105:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_right(V15), V0 = 3, V1 = 2, V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 97
+inc: 1; exc: 97
+inc: 2; exc: 97
+inc: 3; exc: 97
+inc: 4; exc: 97
+inc: 5; exc: 97
+inc: 6; exc: 97
+inc: 7; exc: 97
+inc: 8; exc: 97
+--------------------------------------------
+Iteration 106:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_dir(V15), V1 = 2, V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 98
+inc: 1; exc: 98
+inc: 2; exc: 98
+inc: 3; exc: 98
+inc: 4; exc: 98
+inc: 5; exc: 98
+inc: 6; exc: 98
+inc: 7; exc: 98
+inc: 8; exc: 98
+--------------------------------------------
+Iteration 107:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), does(V9, V15), not is_dir(V15), V1 = 2, V2 = o, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 99
+inc: 1; exc: 99
+inc: 2; exc: 99
+inc: 3; exc: 99
+inc: 4; exc: 99
+inc: 5; exc: 99
+inc: 6; exc: 99
+inc: 7; exc: 99
+inc: 8; exc: 99
+--------------------------------------------
+Iteration 108:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- true_at(V0, V8, V10), does(V9, V15), not is_dir(V15), V1 = 2, V2 = o, int(V0), int(V1), obj(V2), int(V8), agent(V9), obj(V10), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 100
+inc: 1; exc: 100
+inc: 2; exc: 100
+inc: 3; exc: 100
+inc: 4; exc: 100
+inc: 5; exc: 100
+inc: 6; exc: 100
+inc: 7; exc: 100
+inc: 8; exc: 100
+--------------------------------------------
+Iteration 109:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- does(V9, V15), not is_dir(V15), V0 = 3, V1 = 2, V2 = o, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 101
+inc: 1; exc: 101
+inc: 2; exc: 101
+inc: 3; exc: 101
+inc: 4; exc: 101
+inc: 5; exc: 101
+inc: 6; exc: 101
+inc: 7; exc: 101
+inc: 8; exc: 101
+--------------------------------------------
+Iteration 110:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- is_fire(V15), bullet(V2), does(V9, V15), V1 = 2, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 102
+inc: 1; exc: 102
+inc: 2; exc: 102
+inc: 3; exc: 102
+inc: 4; exc: 102
+inc: 5; exc: 102
+inc: 6; exc: 102
+inc: 7; exc: 102
+inc: 8; exc: 102
+--------------------------------------------
+Iteration 111:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V0, V7), is_fire(V15), does(V9, V15), V1 = 2, V2 = o, int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 0; exc: 103
+inc: 1; exc: 103
+inc: 2; exc: 103
+inc: 3; exc: 103
+inc: 4; exc: 103
+inc: 5; exc: 103
+inc: 6; exc: 103
+inc: 7; exc: 103
+inc: 8; exc: 103
+--------------------------------------------
+Iteration 112:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), has_succ(V1), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+}
+inc: 9; exc: 103
+--------------------------------------------
+Iteration 113:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- V0 = 3, int(V0), obj(V1).
+}
+inc: 0; exc: 104
+inc: 1; exc: 104
+inc: 2; exc: 104
+inc: 3; exc: 104
+inc: 4; exc: 104
+inc: 5; exc: 104
+inc: 6; exc: 104
+inc: 7; exc: 104
+inc: 8; exc: 104
+inc: 9; exc: 104
+--------------------------------------------
+Iteration 114:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- succ(V0, V6), true_at(V0, V7, V1), int(V0), obj(V1), int(V6), int(V7).
+}
+inc: 0; exc: 105
+inc: 1; exc: 105
+inc: 2; exc: 105
+inc: 3; exc: 105
+inc: 4; exc: 105
+inc: 5; exc: 105
+inc: 6; exc: 105
+inc: 7; exc: 105
+inc: 8; exc: 105
+inc: 9; exc: 105
+--------------------------------------------
+Iteration 115:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- succ(V7, V0), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+}
+inc: 0; exc: 106
+inc: 1; exc: 106
+inc: 2; exc: 106
+inc: 3; exc: 106
+inc: 4; exc: 106
+inc: 5; exc: 106
+inc: 6; exc: 106
+inc: 7; exc: 106
+inc: 8; exc: 106
+inc: 9; exc: 106
+--------------------------------------------
+Iteration 116:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V1, V8), is_right(V12), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+}
+inc: 0; exc: 107
+inc: 1; exc: 107
+inc: 2; exc: 107
+inc: 3; exc: 107
+inc: 4; exc: 107
+inc: 5; exc: 107
+inc: 6; exc: 107
+inc: 7; exc: 107
+inc: 8; exc: 107
+inc: 9; exc: 107
+--------------------------------------------
+Iteration 117:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+}
+inc: 10; exc: 107
+--------------------------------------------
+Iteration 118:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V8, V7), bullet(V2), true_at(V1, V8, V10), int(V0), int(V1), obj(V2), int(V7), int(V8), obj(V10).
+}
+inc: 0; exc: 108
+inc: 1; exc: 108
+inc: 2; exc: 108
+inc: 3; exc: 108
+inc: 4; exc: 108
+inc: 5; exc: 108
+inc: 6; exc: 108
+inc: 7; exc: 108
+inc: 8; exc: 108
+inc: 9; exc: 108
+inc: 10; exc: 108
+--------------------------------------------
+Iteration 119:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- bullet(V2), true_at(V1, V8, V10), V0 = 3, int(V0), int(V1), obj(V2), int(V8), obj(V10).
+}
+inc: 0; exc: 109
+inc: 1; exc: 109
+inc: 2; exc: 109
+inc: 3; exc: 109
+inc: 4; exc: 109
+inc: 5; exc: 109
+inc: 6; exc: 109
+inc: 7; exc: 109
+inc: 8; exc: 109
+inc: 9; exc: 109
+inc: 10; exc: 109
+--------------------------------------------
+Iteration 120:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V1, V6), bullet(V2), true_at(V1, V8, V10), V0 = 3, int(V0), int(V1), obj(V2), int(V6), int(V8), obj(V10).
+}
+inc: 0; exc: 110
+inc: 1; exc: 110
+inc: 2; exc: 110
+inc: 3; exc: 110
+inc: 4; exc: 110
+inc: 5; exc: 110
+inc: 6; exc: 110
+inc: 7; exc: 110
+inc: 8; exc: 110
+inc: 9; exc: 110
+inc: 10; exc: 110
+--------------------------------------------
+Iteration 121:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), V0 = 3, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 111
+inc: 1; exc: 111
+inc: 2; exc: 111
+inc: 3; exc: 111
+inc: 4; exc: 111
+inc: 5; exc: 111
+inc: 6; exc: 111
+inc: 7; exc: 111
+inc: 8; exc: 111
+inc: 9; exc: 111
+inc: 10; exc: 111
+--------------------------------------------
+Iteration 122:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V1, V6), has_pred(V1), true_at(V1, V8, V10), true_at(V8, V4, V11), int(V0), int(V1), obj(V2), int(V4), int(V6), int(V8), obj(V10), obj(V11).
+}
+inc: 0; exc: 112
+inc: 1; exc: 112
+inc: 2; exc: 112
+inc: 3; exc: 112
+inc: 4; exc: 112
+inc: 5; exc: 112
+inc: 6; exc: 112
+inc: 7; exc: 112
+inc: 8; exc: 112
+inc: 9; exc: 112
+inc: 10; exc: 112
+--------------------------------------------
+Iteration 123:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V1, V6), has_pred(V1), true_at(V1, V8, V10), V0 = 3, int(V0), int(V1), obj(V2), int(V6), int(V8), obj(V10).
+}
+inc: 0; exc: 113
+inc: 1; exc: 113
+inc: 2; exc: 113
+inc: 3; exc: 113
+inc: 4; exc: 113
+inc: 5; exc: 113
+inc: 6; exc: 113
+inc: 7; exc: 113
+inc: 8; exc: 113
+inc: 9; exc: 113
+inc: 10; exc: 113
+--------------------------------------------
+Iteration 124:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V8, V7), has_pred(V1), true_at(V1, V8, V10), int(V0), int(V1), obj(V2), int(V7), int(V8), obj(V10).
+}
+inc: 0; exc: 114
+inc: 1; exc: 114
+inc: 2; exc: 114
+inc: 3; exc: 114
+inc: 4; exc: 114
+inc: 5; exc: 114
+inc: 6; exc: 114
+inc: 7; exc: 114
+inc: 8; exc: 114
+inc: 9; exc: 114
+inc: 10; exc: 114
+--------------------------------------------
+Iteration 125:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- bullet(V2), true_at(V0, V0, V2), int(V0), int(V1), obj(V2).
+}
+inc: 11; exc: 114
+--------------------------------------------
+Iteration 126:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V0, V8), has_pred(V3), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V8).
+}
+inc: 0; exc: 115
+inc: 1; exc: 115
+inc: 2; exc: 115
+inc: 3; exc: 115
+inc: 4; exc: 115
+inc: 5; exc: 115
+inc: 6; exc: 115
+inc: 7; exc: 115
+inc: 8; exc: 115
+inc: 9; exc: 115
+inc: 10; exc: 115
+inc: 11; exc: 115
+--------------------------------------------
+Iteration 127:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- has_succ(V1), has_pred(V3), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3).
+}
+inc: 0; exc: 116
+inc: 1; exc: 116
+inc: 2; exc: 116
+inc: 3; exc: 116
+inc: 4; exc: 116
+inc: 5; exc: 116
+inc: 6; exc: 116
+inc: 7; exc: 116
+inc: 8; exc: 116
+inc: 9; exc: 116
+inc: 10; exc: 116
+inc: 11; exc: 116
+--------------------------------------------
+Iteration 128:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V8, V7), succ(V0, V8), has_pred(V3), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V7), int(V8).
+}
+inc: 0; exc: 117
+inc: 1; exc: 117
+inc: 2; exc: 117
+inc: 3; exc: 117
+inc: 4; exc: 117
+inc: 5; exc: 117
+inc: 6; exc: 117
+inc: 7; exc: 117
+inc: 8; exc: 117
+inc: 9; exc: 117
+inc: 10; exc: 117
+inc: 11; exc: 117
+--------------------------------------------
+Iteration 129:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V0, V8), has_succ(V1), has_pred(V3), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V8).
+}
+inc: 0; exc: 118
+inc: 1; exc: 118
+inc: 2; exc: 118
+inc: 3; exc: 118
+inc: 4; exc: 118
+inc: 5; exc: 118
+inc: 6; exc: 118
+inc: 7; exc: 118
+inc: 8; exc: 118
+inc: 9; exc: 118
+inc: 10; exc: 118
+inc: 11; exc: 118
+--------------------------------------------
+Iteration 130:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V8, V7), succ(V0, V8), has_succ(V1), has_pred(V3), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V7), int(V8).
+}
+inc: 0; exc: 119
+inc: 1; exc: 119
+inc: 2; exc: 119
+inc: 3; exc: 119
+inc: 4; exc: 119
+inc: 5; exc: 119
+inc: 6; exc: 119
+inc: 7; exc: 119
+inc: 8; exc: 119
+inc: 9; exc: 119
+inc: 10; exc: 119
+inc: 11; exc: 119
+--------------------------------------------
+Iteration 131:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V7, V6), succ(V8, V7), succ(V0, V8), has_pred(V3), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V6), int(V7), int(V8).
+}
+inc: 0; exc: 120
+inc: 1; exc: 120
+inc: 2; exc: 120
+inc: 3; exc: 120
+inc: 4; exc: 120
+inc: 5; exc: 120
+inc: 6; exc: 120
+inc: 7; exc: 120
+inc: 8; exc: 120
+inc: 9; exc: 120
+inc: 10; exc: 120
+inc: 11; exc: 120
+--------------------------------------------
+Iteration 132:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 121
+inc: 1; exc: 121
+inc: 2; exc: 121
+inc: 3; exc: 121
+inc: 4; exc: 121
+inc: 5; exc: 121
+inc: 6; exc: 121
+inc: 7; exc: 121
+inc: 8; exc: 121
+inc: 9; exc: 121
+inc: 10; exc: 121
+inc: 11; exc: 121
+--------------------------------------------
+Iteration 133:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V3), int(V7), obj(V11).
+}
+inc: 0; exc: 122
+inc: 1; exc: 122
+inc: 2; exc: 122
+inc: 3; exc: 122
+inc: 4; exc: 122
+inc: 5; exc: 122
+inc: 6; exc: 122
+inc: 7; exc: 122
+inc: 8; exc: 122
+inc: 9; exc: 122
+inc: 10; exc: 122
+inc: 11; exc: 122
+--------------------------------------------
+Iteration 134:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V8), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 123
+inc: 1; exc: 123
+inc: 2; exc: 123
+inc: 3; exc: 123
+inc: 4; exc: 123
+inc: 5; exc: 123
+inc: 6; exc: 123
+inc: 7; exc: 123
+inc: 8; exc: 123
+inc: 9; exc: 123
+inc: 10; exc: 123
+inc: 11; exc: 123
+--------------------------------------------
+Iteration 135:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), succ(V0, V8), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V3), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 124
+inc: 1; exc: 124
+inc: 2; exc: 124
+inc: 3; exc: 124
+inc: 4; exc: 124
+inc: 5; exc: 124
+inc: 6; exc: 124
+inc: 7; exc: 124
+inc: 8; exc: 124
+inc: 9; exc: 124
+inc: 10; exc: 124
+inc: 11; exc: 124
+--------------------------------------------
+Iteration 136:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V8), has_succ(V8), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 125
+inc: 1; exc: 125
+inc: 2; exc: 125
+inc: 3; exc: 125
+inc: 4; exc: 125
+inc: 5; exc: 125
+inc: 6; exc: 125
+inc: 7; exc: 125
+inc: 8; exc: 125
+inc: 9; exc: 125
+inc: 10; exc: 125
+inc: 11; exc: 125
+--------------------------------------------
+Iteration 137:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- is_left(V14), has_succ(V1), true_at(V0, V3, V2), does(V9, V14), int(V0), int(V1), obj(V2), int(V3), agent(V9), action(V14).
+}
+inc: 0; exc: 126
+inc: 1; exc: 126
+inc: 2; exc: 126
+inc: 3; exc: 126
+inc: 4; exc: 126
+inc: 5; exc: 126
+inc: 6; exc: 126
+inc: 7; exc: 126
+inc: 8; exc: 126
+inc: 9; exc: 126
+inc: 10; exc: 126
+inc: 11; exc: 126
+--------------------------------------------
+Iteration 138:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- bullet(V2), true_at(V0, V0, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- centipede(V2), not has_pred(V0), int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 127
+inc: 1; exc: 127
+inc: 2; exc: 127
+inc: 3; exc: 127
+inc: 4; exc: 127
+inc: 5; exc: 127
+inc: 6; exc: 127
+inc: 7; exc: 127
+inc: 8; exc: 127
+inc: 9; exc: 127
+inc: 10; exc: 127
+inc: 11; exc: 127
+--------------------------------------------
+Iteration 139:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), succ(V0, V8), has_succ(V8), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V3), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 128
+inc: 1; exc: 128
+inc: 2; exc: 128
+inc: 3; exc: 128
+inc: 4; exc: 128
+inc: 5; exc: 128
+inc: 6; exc: 128
+inc: 7; exc: 128
+inc: 8; exc: 128
+inc: 9; exc: 128
+inc: 10; exc: 128
+inc: 11; exc: 128
+--------------------------------------------
+Iteration 140:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- bullet(V2), true_at(V0, V0, V2), int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- centipede(V2), V0 = 1, int(V0), int(V1), obj(V2).
+}
+inc: 0; exc: 129
+inc: 1; exc: 129
+inc: 2; exc: 129
+inc: 3; exc: 129
+inc: 4; exc: 129
+inc: 5; exc: 129
+inc: 6; exc: 129
+inc: 7; exc: 129
+inc: 8; exc: 129
+inc: 9; exc: 129
+inc: 10; exc: 129
+inc: 11; exc: 129
+--------------------------------------------
+Iteration 141:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V4, V1), succ(V5, V4), succ(V0, V8), true_at(V7, V7, V11), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V4), int(V5), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 130
+inc: 1; exc: 130
+inc: 2; exc: 130
+inc: 3; exc: 130
+inc: 4; exc: 130
+inc: 5; exc: 130
+inc: 6; exc: 130
+inc: 7; exc: 130
+inc: 8; exc: 130
+inc: 9; exc: 130
+inc: 10; exc: 130
+inc: 11; exc: 130
+--------------------------------------------
+Iteration 142:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- bullet(V11), true_at(V7, V7, V11), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V7), obj(V11).
+}
+inc: 0; exc: 131
+inc: 1; exc: 131
+inc: 2; exc: 131
+inc: 3; exc: 131
+inc: 4; exc: 131
+inc: 5; exc: 131
+inc: 6; exc: 131
+inc: 7; exc: 131
+inc: 8; exc: 131
+inc: 9; exc: 131
+inc: 10; exc: 131
+inc: 11; exc: 131
+--------------------------------------------
+Iteration 143:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V4, V1), succ(V7, V6), succ(V0, V8), true_at(V6, V0, V10), int(V0), int(V1), obj(V2), int(V4), int(V6), int(V7), int(V8), obj(V10).
+}
+inc: 0; exc: 132
+inc: 1; exc: 132
+inc: 2; exc: 132
+inc: 3; exc: 132
+inc: 4; exc: 132
+inc: 5; exc: 132
+inc: 6; exc: 132
+inc: 7; exc: 132
+inc: 8; exc: 132
+inc: 9; exc: 132
+inc: 10; exc: 132
+inc: 11; exc: 132
+--------------------------------------------
+Iteration 144:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V7, V6), succ(V0, V8), has_pred(V7), true_at(V6, V0, V10), int(V0), int(V1), obj(V2), int(V6), int(V7), int(V8), obj(V10).
+}
+inc: 0; exc: 133
+inc: 1; exc: 133
+inc: 2; exc: 133
+inc: 3; exc: 133
+inc: 4; exc: 133
+inc: 5; exc: 133
+inc: 6; exc: 133
+inc: 7; exc: 133
+inc: 8; exc: 133
+inc: 9; exc: 133
+inc: 10; exc: 133
+inc: 11; exc: 133
+--------------------------------------------
+Iteration 145:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V7, V6), succ(V0, V8), true_at(V6, V0, V10), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V6), int(V7), int(V8), obj(V10).
+}
+inc: 0; exc: 134
+inc: 1; exc: 134
+inc: 2; exc: 134
+inc: 3; exc: 134
+inc: 4; exc: 134
+inc: 5; exc: 134
+inc: 6; exc: 134
+inc: 7; exc: 134
+inc: 8; exc: 134
+inc: 9; exc: 134
+inc: 10; exc: 134
+inc: 11; exc: 134
+--------------------------------------------
+Iteration 146:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V8), has_pred(V6), true_at(V6, V0, V10), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V6), int(V7), int(V8), obj(V10), obj(V11).
+}
+inc: 0; exc: 135
+inc: 1; exc: 135
+inc: 2; exc: 135
+inc: 3; exc: 135
+inc: 4; exc: 135
+inc: 5; exc: 135
+inc: 6; exc: 135
+inc: 7; exc: 135
+inc: 8; exc: 135
+inc: 9; exc: 135
+inc: 10; exc: 135
+inc: 11; exc: 135
+--------------------------------------------
+Iteration 147:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V8), has_pred(V3), true_at(V7, V7, V11), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 136
+inc: 1; exc: 136
+inc: 2; exc: 136
+inc: 3; exc: 136
+inc: 4; exc: 136
+inc: 5; exc: 136
+inc: 6; exc: 136
+inc: 7; exc: 136
+inc: 8; exc: 136
+inc: 9; exc: 136
+inc: 10; exc: 136
+inc: 11; exc: 136
+--------------------------------------------
+Iteration 148:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- has_succ(V1), bullet(V11), true_at(V7, V7, V11), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V7), obj(V11).
+}
+inc: 0; exc: 137
+inc: 1; exc: 137
+inc: 2; exc: 137
+inc: 3; exc: 137
+inc: 4; exc: 137
+inc: 5; exc: 137
+inc: 6; exc: 137
+inc: 7; exc: 137
+inc: 8; exc: 137
+inc: 9; exc: 137
+inc: 10; exc: 137
+inc: 11; exc: 137
+--------------------------------------------
+Iteration 149:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), succ(V4, V1), succ(V7, V6), succ(V0, V8), true_at(V6, V0, V10), int(V0), int(V1), obj(V2), int(V3), int(V4), int(V6), int(V7), int(V8), obj(V10).
+}
+inc: 0; exc: 138
+inc: 1; exc: 138
+inc: 2; exc: 138
+inc: 3; exc: 138
+inc: 4; exc: 138
+inc: 5; exc: 138
+inc: 6; exc: 138
+inc: 7; exc: 138
+inc: 8; exc: 138
+inc: 9; exc: 138
+inc: 10; exc: 138
+inc: 11; exc: 138
+--------------------------------------------
+Iteration 150:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), succ(V7, V6), succ(V8, V7), has_succ(V0), true_at(V6, V0, V10), int(V0), int(V1), obj(V2), int(V3), int(V6), int(V7), int(V8), obj(V10).
+}
+inc: 0; exc: 139
+inc: 1; exc: 139
+inc: 2; exc: 139
+inc: 3; exc: 139
+inc: 4; exc: 139
+inc: 5; exc: 139
+inc: 6; exc: 139
+inc: 7; exc: 139
+inc: 8; exc: 139
+inc: 9; exc: 139
+inc: 10; exc: 139
+inc: 11; exc: 139
+--------------------------------------------
+Iteration 151:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V8), has_succ(V1), has_pred(V3), true_at(V7, V7, V11), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 140
+inc: 1; exc: 140
+inc: 2; exc: 140
+inc: 3; exc: 140
+inc: 4; exc: 140
+inc: 5; exc: 140
+inc: 6; exc: 140
+inc: 7; exc: 140
+inc: 8; exc: 140
+inc: 9; exc: 140
+inc: 10; exc: 140
+inc: 11; exc: 140
+--------------------------------------------
+Iteration 152:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V3, V4), succ(V1, V6), has_succ(V0), true_at(V1, V8, V10), true_at(V8, V4, V11), int(V0), int(V1), obj(V2), int(V3), int(V4), int(V6), int(V8), obj(V10), obj(V11).
+next_at(V0, V1, V2) :- succ(V1, V3), centipede(V2), not has_pred(V0), int(V0), int(V1), obj(V2), int(V3).
+}
+inc: 0; exc: 141
+inc: 1; exc: 141
+inc: 2; exc: 141
+inc: 3; exc: 141
+inc: 4; exc: 141
+inc: 5; exc: 141
+inc: 6; exc: 141
+inc: 7; exc: 141
+inc: 8; exc: 141
+inc: 9; exc: 141
+inc: 10; exc: 141
+inc: 11; exc: 141
+--------------------------------------------
+Iteration 153:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V3, V4), succ(V1, V6), has_succ(V0), true_at(V1, V8, V10), true_at(V8, V4, V11), int(V0), int(V1), obj(V2), int(V3), int(V4), int(V6), int(V8), obj(V10), obj(V11).
+next_at(V0, V1, V2) :- succ(V1, V3), centipede(V2), V0 = 1, int(V0), int(V1), obj(V2), int(V3).
+}
+inc: 0; exc: 142
+inc: 1; exc: 142
+inc: 2; exc: 142
+inc: 3; exc: 142
+inc: 4; exc: 142
+inc: 5; exc: 142
+inc: 6; exc: 142
+inc: 7; exc: 142
+inc: 8; exc: 142
+inc: 9; exc: 142
+inc: 10; exc: 142
+inc: 11; exc: 142
+--------------------------------------------
+Iteration 154:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V3, V4), succ(V1, V6), has_succ(V0), true_at(V1, V8, V10), true_at(V8, V4, V11), int(V0), int(V1), obj(V2), int(V3), int(V4), int(V6), int(V8), obj(V10), obj(V11).
+next_at(V0, V1, V2) :- succ(V0, V8), true_at(V6, V0, V10), V6 = 4, int(V0), int(V1), obj(V2), int(V6), int(V8), obj(V10).
+}
+inc: 0; exc: 143
+inc: 1; exc: 143
+inc: 2; exc: 143
+inc: 3; exc: 143
+inc: 4; exc: 143
+inc: 5; exc: 143
+inc: 6; exc: 143
+inc: 7; exc: 143
+inc: 8; exc: 143
+inc: 9; exc: 143
+inc: 10; exc: 143
+inc: 11; exc: 143
+--------------------------------------------
+Iteration 155:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V3, V4), succ(V1, V6), has_succ(V0), true_at(V1, V8, V10), true_at(V8, V4, V11), int(V0), int(V1), obj(V2), int(V3), int(V4), int(V6), int(V8), obj(V10), obj(V11).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 144
+inc: 1; exc: 144
+inc: 2; exc: 144
+inc: 3; exc: 144
+inc: 4; exc: 144
+inc: 5; exc: 144
+inc: 6; exc: 144
+inc: 7; exc: 144
+inc: 8; exc: 144
+inc: 9; exc: 144
+inc: 10; exc: 144
+inc: 11; exc: 144
+--------------------------------------------
+Iteration 156:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- true_at(V1, V8, V10), V1 = 4, int(V0), int(V1), obj(V2), int(V8), obj(V10).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 145
+inc: 1; exc: 145
+inc: 2; exc: 145
+inc: 3; exc: 145
+inc: 4; exc: 145
+inc: 5; exc: 145
+inc: 6; exc: 145
+inc: 7; exc: 145
+inc: 8; exc: 145
+inc: 9; exc: 145
+inc: 10; exc: 145
+inc: 11; exc: 145
+--------------------------------------------
+Iteration 157:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V8, V7), has_pred(V1), bullet(V2), true_at(V1, V8, V10), int(V0), int(V1), obj(V2), int(V7), int(V8), obj(V10).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 146
+inc: 1; exc: 146
+inc: 2; exc: 146
+inc: 3; exc: 146
+inc: 4; exc: 146
+inc: 5; exc: 146
+inc: 6; exc: 146
+inc: 7; exc: 146
+inc: 8; exc: 146
+inc: 9; exc: 146
+inc: 10; exc: 146
+inc: 11; exc: 146
+--------------------------------------------
+Iteration 158:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- true_at(V0, V0, V2), V1 = 4, int(V0), int(V1), obj(V2).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 147
+inc: 1; exc: 147
+inc: 2; exc: 147
+inc: 3; exc: 147
+inc: 4; exc: 147
+inc: 5; exc: 147
+inc: 6; exc: 147
+inc: 7; exc: 147
+inc: 8; exc: 147
+inc: 9; exc: 147
+inc: 10; exc: 147
+inc: 11; exc: 147
+--------------------------------------------
+Iteration 159:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V3, V4), succ(V1, V6), bullet(V2), true_at(V1, V8, V10), true_at(V8, V4, V11), int(V0), int(V1), obj(V2), int(V3), int(V4), int(V6), int(V8), obj(V10), obj(V11).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 148
+inc: 1; exc: 148
+inc: 2; exc: 148
+inc: 3; exc: 148
+inc: 4; exc: 148
+inc: 5; exc: 148
+inc: 6; exc: 148
+inc: 7; exc: 148
+inc: 8; exc: 148
+inc: 9; exc: 148
+inc: 10; exc: 148
+inc: 11; exc: 148
+--------------------------------------------
+Iteration 160:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V1, V6), has_pred(V1), bullet(V2), true_at(V1, V8, V10), V0 = 3, int(V0), int(V1), obj(V2), int(V6), int(V8), obj(V10).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 149
+inc: 1; exc: 149
+inc: 2; exc: 149
+inc: 3; exc: 149
+inc: 4; exc: 149
+inc: 5; exc: 149
+inc: 6; exc: 149
+inc: 7; exc: 149
+inc: 8; exc: 149
+inc: 9; exc: 149
+inc: 10; exc: 149
+inc: 11; exc: 149
+--------------------------------------------
+Iteration 161:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V1, V6), has_pred(V1), true_at(V1, V8, V10), true_at(V8, V4, V11), V0 = 3, int(V0), int(V1), obj(V2), int(V4), int(V6), int(V8), obj(V10), obj(V11).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 150
+inc: 1; exc: 150
+inc: 2; exc: 150
+inc: 3; exc: 150
+inc: 4; exc: 150
+inc: 5; exc: 150
+inc: 6; exc: 150
+inc: 7; exc: 150
+inc: 8; exc: 150
+inc: 9; exc: 150
+inc: 10; exc: 150
+inc: 11; exc: 150
+--------------------------------------------
+Iteration 162:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V1, V2) :- succ(V7, V0), succ(V8, V7), has_pred(V1), bullet(V2), true_at(V1, V8, V10), int(V0), int(V1), obj(V2), int(V7), int(V8), obj(V10).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 151
+inc: 1; exc: 151
+inc: 2; exc: 151
+inc: 3; exc: 151
+inc: 4; exc: 151
+inc: 5; exc: 151
+inc: 6; exc: 151
+inc: 7; exc: 151
+inc: 8; exc: 151
+inc: 9; exc: 151
+inc: 10; exc: 151
+inc: 11; exc: 151
+--------------------------------------------
+Iteration 163:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V6), succ(V0, V1), true_at(V1, V8, V10), int(V0), int(V1), obj(V2), int(V6), int(V8), obj(V10).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 152
+inc: 1; exc: 152
+inc: 2; exc: 152
+inc: 3; exc: 152
+inc: 4; exc: 152
+inc: 5; exc: 152
+inc: 6; exc: 152
+inc: 7; exc: 152
+inc: 8; exc: 152
+inc: 9; exc: 152
+inc: 10; exc: 152
+inc: 11; exc: 152
+--------------------------------------------
+Iteration 164:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- centipede(V2), bullet(V11), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V7), obj(V11).
+}
+inc: 0; exc: 153
+inc: 1; exc: 153
+inc: 2; exc: 153
+inc: 3; exc: 153
+inc: 4; exc: 153
+inc: 5; exc: 153
+inc: 6; exc: 153
+inc: 7; exc: 153
+inc: 8; exc: 153
+inc: 9; exc: 153
+inc: 10; exc: 153
+inc: 11; exc: 153
+--------------------------------------------
+Iteration 165:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- bullet(V1), true_at(V0, V7, V1), int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- succ(V7, V6), true_at(V6, V0, V10), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V6), int(V7), obj(V10), obj(V11).
+}
+inc: 0; exc: 154
+inc: 1; exc: 154
+inc: 2; exc: 154
+inc: 3; exc: 154
+inc: 4; exc: 154
+inc: 5; exc: 154
+inc: 6; exc: 154
+inc: 7; exc: 154
+inc: 8; exc: 154
+inc: 9; exc: 154
+inc: 10; exc: 154
+inc: 11; exc: 154
+--------------------------------------------
+Iteration 166:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- succ(V7, V6), true_at(V6, V0, V10), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V6), int(V7), obj(V10), obj(V11).
+}
+inc: 0; exc: 155
+inc: 1; exc: 155
+inc: 2; exc: 155
+inc: 3; exc: 155
+inc: 4; exc: 155
+inc: 5; exc: 155
+inc: 6; exc: 155
+inc: 7; exc: 155
+inc: 8; exc: 155
+inc: 9; exc: 155
+inc: 10; exc: 155
+inc: 11; exc: 155
+--------------------------------------------
+Iteration 167:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- true_at(V6, V0, V10), true_at(V0, V3, V2), V6 = 4, int(V0), int(V1), obj(V2), int(V3), int(V6), obj(V10).
+}
+inc: 0; exc: 156
+inc: 1; exc: 156
+inc: 2; exc: 156
+inc: 3; exc: 156
+inc: 4; exc: 156
+inc: 5; exc: 156
+inc: 6; exc: 156
+inc: 7; exc: 156
+inc: 8; exc: 156
+inc: 9; exc: 156
+inc: 10; exc: 156
+inc: 11; exc: 156
+--------------------------------------------
+Iteration 168:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), succ(V0, V8), true_at(V7, V7, V11), true_at(V0, V3, V2), int(V0), int(V1), obj(V2), int(V3), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 157
+inc: 1; exc: 157
+inc: 2; exc: 157
+inc: 3; exc: 157
+inc: 4; exc: 157
+inc: 5; exc: 157
+inc: 6; exc: 157
+inc: 7; exc: 157
+inc: 8; exc: 157
+inc: 9; exc: 157
+inc: 10; exc: 157
+inc: 11; exc: 157
+--------------------------------------------
+Iteration 169:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), is_left(V14), does(V9, V14), not has_pred(V0), int(V0), int(V1), obj(V2), int(V3), agent(V9), action(V14).
+}
+inc: 0; exc: 158
+inc: 1; exc: 158
+inc: 2; exc: 158
+inc: 3; exc: 158
+inc: 4; exc: 158
+inc: 5; exc: 158
+inc: 6; exc: 158
+inc: 7; exc: 158
+inc: 8; exc: 158
+inc: 9; exc: 158
+inc: 10; exc: 158
+inc: 11; exc: 158
+--------------------------------------------
+Iteration 170:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), is_left(V14), does(V9, V14), V0 = 1, int(V0), int(V1), obj(V2), int(V3), agent(V9), action(V14).
+}
+inc: 0; exc: 159
+inc: 1; exc: 159
+inc: 2; exc: 159
+inc: 3; exc: 159
+inc: 4; exc: 159
+inc: 5; exc: 159
+inc: 6; exc: 159
+inc: 7; exc: 159
+inc: 8; exc: 159
+inc: 9; exc: 159
+inc: 10; exc: 159
+inc: 11; exc: 159
+--------------------------------------------
+Iteration 171:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V7, V0), is_right(V12), controls(V9, V2), true_at(V7, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V7), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), succ(V7, V6), succ(V8, V7), succ(V0, V8), true_at(V7, V7, V11), int(V0), int(V1), obj(V2), int(V3), int(V6), int(V7), int(V8), obj(V11).
+}
+inc: 0; exc: 160
+inc: 1; exc: 160
+inc: 2; exc: 160
+inc: 3; exc: 160
+inc: 4; exc: 160
+inc: 5; exc: 160
+inc: 6; exc: 160
+inc: 7; exc: 160
+inc: 8; exc: 160
+inc: 9; exc: 160
+inc: 10; exc: 160
+inc: 11; exc: 160
+--------------------------------------------
+Iteration 172:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- has_succ(V1), true_at(V0, V3, V2), does(V9, V14), not has_pred(V0), not is_right(V14), int(V0), int(V1), obj(V2), int(V3), agent(V9), action(V14).
+}
+inc: 0; exc: 161
+inc: 1; exc: 161
+inc: 2; exc: 161
+inc: 3; exc: 161
+inc: 4; exc: 161
+inc: 5; exc: 161
+inc: 6; exc: 161
+inc: 7; exc: 161
+inc: 8; exc: 161
+inc: 9; exc: 161
+inc: 10; exc: 161
+inc: 11; exc: 161
+--------------------------------------------
+Iteration 173:
+solving
+H = {
+next_at(V0, V1, V2) :- succ(V0, V3), centipede(V2), true_at(V3, V1, V2), int(V0), int(V1), obj(V2), int(V3).
+next_at(V0, V1, V2) :- succ(V8, V0), is_right(V12), controls(V9, V2), true_at(V8, V1, V2), does(V9, V12), int(V0), int(V1), obj(V2), int(V8), agent(V9), action(V12).
+next_at(V0, V1, V2) :- succ(V1, V0), is_fire(V15), true_at(V0, V4, V11), does(V9, V15), V2 = o, int(V0), int(V1), obj(V2), int(V4), agent(V9), obj(V11), action(V15).
+next_at(V0, V1, V2) :- controls(V9, V2), does(V9, V15), not is_right(V15), V0 = 3, V1 = 1, int(V0), int(V1), obj(V2), agent(V9), action(V15).
+next_at(V0, V0, V1) :- true_at(V0, V7, V1), V7 = 2, int(V0), obj(V1), int(V7).
+next_at(V0, V1, V2) :- succ(V0, V1), succ(V7, V0), true_at(V0, V0, V2), int(V0), int(V1), obj(V2), int(V7).
+next_at(V0, V1, V2) :- succ(V1, V3), true_at(V0, V3, V2), not has_pred(V0), int(V0), int(V1), obj(V2), int(V3).
+}
+inc: 12; exc: 161

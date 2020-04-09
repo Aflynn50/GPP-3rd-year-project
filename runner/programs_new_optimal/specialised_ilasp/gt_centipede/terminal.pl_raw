@@ -1,0 +1,45 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_gameOver.
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- not true_control(V21), V21 = white, agent(V21).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_gameOver.
+terminal :- true_at(V11, V23, V24), V23 = 1, V24 = x, int(V11).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_gameOver.
+terminal :- true_at(V23, V25, V26), V23 = 1, V25 = 8, V26 = o.
+}
+Finished

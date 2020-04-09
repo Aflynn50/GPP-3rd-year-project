@@ -1,0 +1,50 @@
+%parsed
+Iteration 0:
+solving
+H = {
+erminal :- true_cell(V4, V11), V4 = 4, V11 = twocoins, pos(V4), cell_value(V11).
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_capturecount(V25, V2), pos(V2), int(V2), agent(V25).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_step(V70), not index(V70), int(V70).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_step(V70), V70 = 50, int(V70).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- scoremap(V22, V2), true_capturecount(V24, V2), pos(V2), int(V2), pos(V22), int(V22), agent(V24).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 1; exc: 4

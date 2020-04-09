@@ -1,0 +1,34 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_ripe(V86, V70, V48), pos(V48), int(V48), pos(V70), int(V70), agent(V86).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- point_succ_two(V14, V2), true_step(V2), int(V2), int(V14).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- game_end(V2), true_step(V2), int(V2).
+}
+Finished

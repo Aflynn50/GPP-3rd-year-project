@@ -1,0 +1,16 @@
+goal(1,black,50).
+goal(1,white,50).
+goal(2,black,50).
+goal(2,white,50).
+goal(3,black,50).
+goal(3,white,50).
+goal(4,black,50).
+goal(4,white,50).
+goal(5,black,50).
+goal(5,white,50).
+goal(6,black,50).
+goal(6,white,50).
+goal(7,black,50).
+goal(7,white,50).
+goal(8,black,50).
+goal(8,white,50).

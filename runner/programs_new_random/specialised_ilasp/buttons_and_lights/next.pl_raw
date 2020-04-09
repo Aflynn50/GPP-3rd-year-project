@@ -1,0 +1,562 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next(V0) :- prop(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next(V0) :- V0 = p, prop(V0).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next(V0) :- V0 = p, prop(V0).
+next(V0) :- successor(V0, V5), prop(V0), prop(V5).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next(V0) :- V0 = p, prop(V0).
+next(V0) :- V0 = 2, prop(V0).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next(V0) :- V0 = p, prop(V0).
+next(V0) :- V0 = 2, prop(V0).
+next(V0) :- V0 = 3, prop(V0).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next(V0) :- V0 = p, prop(V0).
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next(V0) :- not true(V0), V0 = p, prop(V0).
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next(V0) :- true(V7), V0 = p, V7 = 1, prop(V0), prop(V7).
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+}
+inc: 3; exc: 5
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+}
+inc: 4; exc: 5
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- V0 = q, prop(V0).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+inc: 3; exc: 6
+inc: 4; exc: 6
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next(V0) :- V0 = 2, prop(V0).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), not true(V0), V12 = p, prop(V0), prop(V12).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+inc: 4; exc: 7
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next(V0) :- true(V7), V0 = p, V7 = 1, prop(V0), prop(V7).
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- successor(V4, V3), successor(V5, V4), successor(V6, V5), true(V3), prop(V0), prop(V3), prop(V4), prop(V5), prop(V6).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+inc: 4; exc: 8
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V3), V3 = 5, prop(V0), prop(V3).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+inc: 4; exc: 9
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- successor(V4, V3), true(V3), V0 = q, prop(V0), prop(V3), prop(V4).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+inc: 4; exc: 10
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- successor(V4, V3), successor(V5, V4), true(V3), V0 = q, prop(V0), prop(V3), prop(V4), prop(V5).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- successor(V4, V3), successor(V5, V4), successor(V6, V5), true(V3), V0 = q, prop(V0), prop(V3), prop(V4), prop(V5), prop(V6).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V3), V0 = q, V3 = 5, prop(V0), prop(V3).
+}
+inc: 5; exc: 12
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V3), V0 = q, V3 = 5, prop(V0), prop(V3).
+next(V0) :- true(V12), V12 = q, prop(V0), prop(V12).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+inc: 5; exc: 13
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V3), V0 = q, V3 = 5, prop(V0), prop(V3).
+next(V0) :- true(V12), not true(V0), V12 = q, prop(V0), prop(V12).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V3), V0 = q, V3 = 5, prop(V0), prop(V3).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- does(V8, V10), V0 = q, V10 = b, prop(V0), agent(V8), action(V10).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+inc: 5; exc: 16
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- successor(V4, V3), true(V3), does(V8, V10), V0 = q, V10 = b, prop(V0), prop(V3), prop(V4), agent(V8), action(V10).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+}
+inc: 6; exc: 16
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- successor(V4, V3), true(V3), does(V8, V10), V0 = q, V10 = b, prop(V0), prop(V3), prop(V4), agent(V8), action(V10).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+next(V0) :- true(V0), V0 = r, prop(V0).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+inc: 5; exc: 17
+inc: 6; exc: 17
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), true(V3), V0 = q, V3 = 5, V12 = p, prop(V0), prop(V3), prop(V12).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+next(V0) :- true(V0), V0 = r, prop(V0).
+}
+inc: 7; exc: 17
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+}
+inc: 8; exc: 17
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), true(V3), V3 = 5, prop(V0), prop(V3).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+inc: 5; exc: 18
+inc: 6; exc: 18
+inc: 7; exc: 18
+inc: 8; exc: 18
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+}
+inc: 9; exc: 18
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), V0 = r, V12 = q, prop(V0), prop(V12).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), true(V3), V3 = 5, V12 = q, prop(V0), prop(V3), prop(V12).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+inc: 5; exc: 19
+inc: 6; exc: 19
+inc: 7; exc: 19
+inc: 8; exc: 19
+inc: 9; exc: 19
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V1), V0 = r, V1 = 6, prop(V0), prop(V1).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V3), not true(V0), V0 = p, V3 = 5, prop(V0), prop(V3).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+inc: 5; exc: 20
+inc: 6; exc: 20
+inc: 7; exc: 20
+inc: 8; exc: 20
+inc: 9; exc: 20
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V1), V0 = r, V1 = 6, prop(V0), prop(V1).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- does(V8, V10), not true(V0), V0 = p, V10 = b, prop(V0), agent(V8), action(V10).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+inc: 5; exc: 21
+inc: 6; exc: 21
+inc: 7; exc: 21
+inc: 8; exc: 21
+inc: 9; exc: 21
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- does(V8, V9), V0 = r, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- does(V8, V10), not true(V0), V0 = p, V10 = b, prop(V0), agent(V8), action(V10).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+inc: 5; exc: 22
+inc: 6; exc: 22
+inc: 7; exc: 22
+inc: 8; exc: 22
+inc: 9; exc: 22
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), true(V1), V0 = r, V1 = 6, V12 = q, prop(V0), prop(V1), prop(V12).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- does(V8, V10), not true(V0), V0 = p, V10 = b, prop(V0), agent(V8), action(V10).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+inc: 5; exc: 23
+inc: 6; exc: 23
+inc: 7; exc: 23
+inc: 8; exc: 23
+inc: 9; exc: 23
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), true(V1), V0 = r, V1 = 6, V12 = q, prop(V0), prop(V1), prop(V12).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), true(V3), V0 = p, V3 = 5, V12 = q, prop(V0), prop(V3), prop(V12).
+}
+inc: 10; exc: 23
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), true(V3), V0 = p, V3 = 5, V12 = q, prop(V0), prop(V3), prop(V12).
+next(V0) :- true(V12), does(V8, V9), V0 = r, V9 = c, V12 = q, prop(V0), agent(V8), action(V9), prop(V12).
+}
+inc: 11; exc: 23
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), true(V3), V0 = p, V3 = 5, V12 = q, prop(V0), prop(V3), prop(V12).
+next(V0) :- true(V12), does(V8, V9), V0 = r, V9 = c, V12 = q, prop(V0), agent(V8), action(V9), prop(V12).
+next(V0) :- true(V0), does(V8, V11), not true(V6), V6 = 2, V11 = a, prop(V0), prop(V6), agent(V8), action(V11).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+inc: 6; exc: 24
+inc: 7; exc: 24
+inc: 8; exc: 24
+inc: 9; exc: 24
+inc: 10; exc: 24
+inc: 11; exc: 24
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), true(V3), V0 = p, V3 = 5, V12 = q, prop(V0), prop(V3), prop(V12).
+next(V0) :- true(V12), does(V8, V9), V0 = r, V9 = c, V12 = q, prop(V0), agent(V8), action(V9), prop(V12).
+next(V0) :- true(V0), true(V4), V4 = 4, prop(V0), prop(V4).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+inc: 6; exc: 25
+inc: 7; exc: 25
+inc: 8; exc: 25
+inc: 9; exc: 25
+inc: 10; exc: 25
+inc: 11; exc: 25
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), true(V3), V0 = p, V3 = 5, V12 = q, prop(V0), prop(V3), prop(V12).
+next(V0) :- true(V12), does(V8, V9), V0 = r, V9 = c, V12 = q, prop(V0), agent(V8), action(V9), prop(V12).
+next(V0) :- true(V0), true(V4), V0 = q, V4 = 4, prop(V0), prop(V4).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+inc: 3; exc: 26
+inc: 4; exc: 26
+inc: 5; exc: 26
+inc: 6; exc: 26
+inc: 7; exc: 26
+inc: 8; exc: 26
+inc: 9; exc: 26
+inc: 10; exc: 26
+inc: 11; exc: 26
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), true(V3), V0 = p, V3 = 5, V12 = q, prop(V0), prop(V3), prop(V12).
+next(V0) :- true(V12), does(V8, V9), V0 = r, V9 = c, V12 = q, prop(V0), agent(V8), action(V9), prop(V12).
+next(V0) :- true(V0), does(V8, V11), V0 = q, V11 = a, prop(V0), agent(V8), action(V11).
+}
+inc: 12; exc: 26
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+next(V0) :- successor(V5, V0), true(V5), prop(V0), prop(V5).
+next(V0) :- does(V8, V11), not true(V0), V0 = p, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V0), V0 = r, prop(V0).
+next(V0) :- true(V12), does(V8, V10), V0 = q, V10 = b, V12 = p, prop(V0), agent(V8), action(V10), prop(V12).
+next(V0) :- true(V0), does(V8, V9), V0 = p, V9 = c, prop(V0), agent(V8), action(V9).
+next(V0) :- true(V12), does(V8, V9), V0 = r, V9 = c, V12 = q, prop(V0), agent(V8), action(V9), prop(V12).
+next(V0) :- true(V0), does(V8, V11), V0 = q, V11 = a, prop(V0), agent(V8), action(V11).
+next(V0) :- true(V12), does(V8, V10), V0 = p, V10 = b, V12 = q, prop(V0), agent(V8), action(V10), prop(V12).
+}
+Finished

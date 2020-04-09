@@ -1,0 +1,53 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V0, V1) :- int(V0), agent(V1).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V1, V2) :- int(V0), int(V1), agent(V2).
+}
+inc: 0; exc: 1
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V1, V2) :- input_move(V2, V0, V1, V0, V3), int(V0), int(V1), agent(V2), int(V3).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V0, V2), int(V0), int(V1), agent(V2).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), int(V0), int(V1), agent(V2).
+}
+inc: 3; exc: 2
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V1, V2) :- succ(V7, V6), input_move(V2, V4, V1, V4, V7), int(V0), int(V1), agent(V2), int(V4), int(V6), int(V7).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+inc: 3; exc: 3

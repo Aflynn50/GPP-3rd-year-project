@@ -1,0 +1,43 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_step(V0) :- int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_step(V0) :- successor(V0, V6), int(V0), int(V6).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_step(V0) :- V0 = 2, int(V0).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_step(V0) :- V0 = 2, int(V0).
+next_step(V0) :- V0 = 3, int(V0).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_step(V0) :- successor(V6, V0), true_step(V6), int(V0), int(V6).
+}
+Finished

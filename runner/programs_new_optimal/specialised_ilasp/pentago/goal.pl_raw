@@ -1,0 +1,299 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+goal(V0, V1) :- agent(V0), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- true_cellholds(V7, V2, V2, V0), agent(V0), int(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- V1 = 100, agent(V0), int(V1).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- true_placecontrol(V10), true_cellholds(V7, V2, V2, V0), agent(V0), int(V1), pos(V2), pos(V7), agent(V10).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- true_placecontrol(V10), true_cellholds(V7, V2, V4, V10), agent(V0), int(V1), pos(V2), pos(V4), pos(V7), agent(V10).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- succ(V2, V7), true_cellholds(V7, V2, V2, V0), agent(V0), int(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- true_cellholds(V7, V2, V2, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V2, V2, V3, V6, V7), true_cellholds(V7, V2, V3, V10), agent(V0), int(V1), pos(V2), pos(V3), pos(V6), pos(V7), agent(V10).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- add(V2, V3, V7), true_cellholds(V7, V2, V3, V10), agent(V0), int(V1), pos(V2), pos(V3), pos(V7), agent(V10).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- succ(V4, V2), true_cellholds(V7, V4, V2, V0), agent(V0), int(V1), pos(V2), pos(V4), pos(V7).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- succ(V3, V4), true_cellholds(V7, V4, V3, V0), agent(V0), int(V1), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V7, V3, V2, V7, V2), true_cellholds(V7, V4, V3, V0), agent(V0), int(V1), pos(V2), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V4, V2, V3, V2, V7), true_cellholds(V7, V4, V3, V0), agent(V0), int(V1), pos(V2), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V2, V2, V2, V6, V6), true_cellholds(V2, V2, V2, V10), agent(V0), int(V1), pos(V2), pos(V6), agent(V10).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V2, V2, V2, V6, V6), true_cellholds(V2, V4, V2, V0), agent(V0), int(V1), pos(V2), pos(V4), pos(V6).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V7, V3, V2, V7, V2), true_cellholds(V3, V4, V3, V0), agent(V0), int(V1), pos(V2), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- true_placecontrol(V10), true_cellholds(V7, V2, V2, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V7), agent(V10).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- true_placecontrol(V10), true_cellholds(V7, V2, V4, V10), V1 = 100, agent(V0), int(V1), pos(V2), pos(V4), pos(V7), agent(V10).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V7, V3, V2, V7, V2), true_placecontrol(V10), true_cellholds(V7, V3, V3, V10), agent(V0), int(V1), pos(V2), pos(V3), pos(V7), agent(V10).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V2, V2, V2, V6, V6), true_placecontrol(V10), true_cellholds(V2, V2, V2, V10), agent(V0), int(V1), pos(V2), pos(V6), agent(V10).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- succ(V3, V4), true_placecontrol(V10), true_cellholds(V3, V4, V3, V0), agent(V0), int(V1), pos(V3), pos(V4), agent(V10).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V7, V3, V2, V7, V2), true_placecontrol(V10), true_cellholds(V3, V4, V3, V0), agent(V0), int(V1), pos(V2), pos(V3), pos(V4), pos(V7), agent(V10).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- succ(V2, V7), true_cellholds(V7, V2, V2, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V2, V2, V3, V6, V7), true_cellholds(V7, V2, V3, V10), V1 = 100, agent(V0), int(V1), pos(V2), pos(V3), pos(V6), pos(V7), agent(V10).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- add(V2, V3, V7), true_cellholds(V7, V2, V3, V10), V1 = 100, agent(V0), int(V1), pos(V2), pos(V3), pos(V7), agent(V10).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- succ(V4, V2), true_cellholds(V7, V4, V2, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V4), pos(V7).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- succ(V3, V4), true_cellholds(V7, V4, V3, V0), V1 = 100, agent(V0), int(V1), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V7, V3, V2, V7, V2), true_cellholds(V7, V4, V3, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V4, V2, V3, V2, V7), true_cellholds(V7, V4, V3, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 29
+inc: 1; exc: 29
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V2, V2, V2, V6, V6), true_cellholds(V2, V2, V2, V10), V1 = 100, agent(V0), int(V1), pos(V2), pos(V6), agent(V10).
+}
+inc: 0; exc: 30
+inc: 1; exc: 30
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V2, V2, V2, V6, V6), true_cellholds(V2, V4, V2, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V4), pos(V6).
+}
+inc: 0; exc: 31
+inc: 1; exc: 31
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+goal(V0, V1) :- V1 = 0, agent(V0), int(V1).
+goal(V0, V1) :- globalindex(V7, V3, V2, V7, V2), true_cellholds(V3, V4, V3, V0), V1 = 100, agent(V0), int(V1), pos(V2), pos(V3), pos(V4), pos(V7).
+}
+inc: 0; exc: 32
+inc: 1; exc: 32

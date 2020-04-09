@@ -1,0 +1,49 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V0, V1) :- pos(V0), mark(V1).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V1, V2) :- pos(V0), pos(V1), mark(V2).
+}
+inc: 0; exc: 1
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V0, V2), pos(V0), pos(V1), mark(V2).
+}
+inc: 2; exc: 1
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V1, V2), pos(V0), pos(V1), mark(V2).
+}
+inc: 3; exc: 1
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V1, V1, V2), pos(V0), pos(V1), mark(V2).
+}
+inc: 4; exc: 1
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V1, V2) :- true_cell(V0, V3, V2), pos(V0), pos(V1), mark(V2), pos(V3).
+}
+inc: 5; exc: 1

@@ -1,0 +1,34 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_place(V0, V1, V2) :- agent(V0), row(V1), col(V2), int(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_place(V0, V1, V2) :- succ(V2, V10), agent(V0), row(V1), col(V2), int(V2), col(V10), int(V10).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_place(V0, V1, V2) :- redend(V1, V2), agent(V0), row(V1), col(V2), int(V2).
+}
+inc: 2; exc: 1
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_place(V0, V1, V2) :- redend(V1, V21), adjacent(V1, V2, V64, V21), agent(V0), row(V1), col(V2), int(V2), col(V21), int(V21), row(V64).
+}
+inc: 3; exc: 1

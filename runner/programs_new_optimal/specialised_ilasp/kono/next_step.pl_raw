@@ -1,0 +1,48 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_step(V0) :- pos(V0), int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_step(V0) :- vertical(V1, V0, V1, V2), pos(V0), int(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_step(V0) :- does_jump(V30, V1, V1, V2, V1, V0, V1), pos(V0), int(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V30), mark(V30).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_step(V0) :- vertical(V0, V1, V0, V0), true_step(V1), pos(V0), int(V0), pos(V1), int(V1).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_step(V0) :- succ(V1, V0), true_step(V1), int(V0), pos(V1), int(V1).
+}
+inc: 3; exc: 2
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_step(V0) :- succ(V9, V0), true_step(V9), int(V0), int(V9).
+}
+Finished

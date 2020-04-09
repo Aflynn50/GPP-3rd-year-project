@@ -1,0 +1,250 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_ripe(V0, V1, V2) :- agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_ripe(V0, V1, V2) :- succ(V1, V2), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_step(V2), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_sown(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_ripe(V0, V1, V2) :- does_water_row(V0, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_ripe(V0, V1, V2) :- succ(V1, V2), true_sown(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_year_second_player(V87), true_sown(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+}
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_ripe(V0, V1, V2) :- does_water_row(V0, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- true_ripe(V0, V1, V2), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 3; exc: 6
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_season(V84), V84 = summer, agent(V0), pos(V1), int(V1), pos(V2), int(V2), season_type(V84).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_season(V84), not true_step(V1), V84 = summer, agent(V0), pos(V1), int(V1), pos(V2), int(V2), season_type(V84).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_ripe(V0, V1, V2) :- does_water_row(V0, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- true_step(V40), V40 = 5, agent(V0), pos(V1), int(V1), pos(V2), int(V2), int(V40).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_ripe(V0, V1, V2), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_year_second_player(V87), true_sown(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_ripe(V0, V1, V2) :- does_water_col(V87, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_year_second_player(V87), true_year_first_player(V0), true_sown(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 4; exc: 12
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_year_second_player(V87), true_year_first_player(V0), true_sown(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V1) :- succ(V1, V50), agent(V0), pos(V1), int(V1), pos(V50), int(V50).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_year_second_player(V87), true_year_first_player(V0), true_sown(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), agent(V87).
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V1) :- true_ripe(V0, V1, V50), agent(V0), pos(V1), int(V1), pos(V50), int(V50).
+}
+inc: 5; exc: 13
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- true_year_first_player(V0), true_ripe(V0, V1, V2), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 6; exc: 13
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- succ(V82, V81), true_score(V87, V82), true_ripe(V0, V1, V2), agent(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V81), int(V81), int(V82), agent(V87).
+}
+inc: 7; exc: 13
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- true_ripe(V0, V1, V2), not true_season(V83), V83 = winter, agent(V0), pos(V1), int(V1), pos(V2), int(V2), season_type(V83).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+inc: 6; exc: 14
+inc: 7; exc: 14
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_ripe(V0, V1, V2) :- not true_season(V83), not true_step(V1), V0 = red, V1 = 3, V83 = winter, agent(V0), pos(V1), int(V1), pos(V2), int(V2), season_type(V83).
+next_ripe(V0, V1, V2) :- V0 = blue, V1 = 4, agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+inc: 6; exc: 15
+inc: 7; exc: 15
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- not true_season(V83), not true_step(V1), V0 = red, V1 = 3, V83 = winter, agent(V0), pos(V1), int(V1), pos(V2), int(V2), season_type(V83).
+next_ripe(V0, V1, V2) :- true_ripe(V0, V1, V2), V1 = 4, agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+inc: 5; exc: 16
+inc: 6; exc: 16
+inc: 7; exc: 16
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_ripe(V0, V1, V2) :- succ(V82, V81), true_score(V87, V82), true_ripe(V87, V2, V1), agent(V0), pos(V1), int(V1), pos(V2), int(V2), pos(V81), int(V81), int(V82), agent(V87).
+next_ripe(V0, V1, V2) :- true_year_first_player(V0), true_sown(V87, V2, V1), true_season(V84), V84 = summer, agent(V0), pos(V1), int(V1), pos(V2), int(V2), season_type(V84), agent(V87).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+inc: 5; exc: 17
+inc: 6; exc: 17
+inc: 7; exc: 17
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+next_ripe(V0, V1, V2) :- true_sown(V0, V1, V2), true_control(V0), agent(V0), pos(V1), int(V1), pos(V2), int(V2).
+next_ripe(V0, V1, V2) :- succ(V4, V80), true_score(V87, V4), true_ripe(V0, V1, V2), not true_season(V83), V83 = winter, agent(V0), pos(V1), int(V1), pos(V2), int(V2), int(V4), int(V80), season_type(V83), agent(V87).
+}
+inc: 8; exc: 17

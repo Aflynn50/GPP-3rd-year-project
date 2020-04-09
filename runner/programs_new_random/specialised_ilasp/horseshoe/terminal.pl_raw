@@ -1,0 +1,160 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- succ(V9, V10), true_step(V10), int(V9), int(V10).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_step(V3), V3 = 7, int(V3).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_cell(V25, V20), V20 = red, V25 = b, agent(V20), mark(V20), pos(V25).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- true_control(V20), true_cell(V25, V20), not true_step(V8), V8 = 2, V25 = b, int(V8), agent(V20), mark(V20), pos(V25).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_step(V3), true_cell(V25, V20), V3 = 7, V25 = b, int(V3), agent(V20), mark(V20), pos(V25).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_cell(V25, V20), true_cell(V26, V20), V25 = b, V26 = a, agent(V20), mark(V20), pos(V25), pos(V26).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_control(V20), true_cell(V25, V20), true_cell(V26, V20), V25 = b, V26 = a, agent(V20), mark(V20), pos(V25), pos(V26).
+}
+inc: 2; exc: 7
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_control(V20), true_cell(V25, V20), true_cell(V26, V20), V25 = b, V26 = a, agent(V20), mark(V20), pos(V25), pos(V26).
+terminal :- true_cell(V22, V20), true_cell(V23, V20), V22 = e, V23 = d, agent(V20), mark(V20), pos(V22), pos(V23).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_control(V20), true_cell(V25, V20), true_cell(V26, V20), V25 = b, V26 = a, agent(V20), mark(V20), pos(V25), pos(V26).
+terminal :- true_cell(V24, V21), true_cell(V25, V21), V24 = c, V25 = b, agent(V21), mark(V21), pos(V24), pos(V25).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_control(V20), true_cell(V25, V20), true_cell(V26, V20), V25 = b, V26 = a, agent(V20), mark(V20), pos(V25), pos(V26).
+terminal :- true_step(V3), true_cell(V26, V27), V3 = 7, V26 = a, V27 = blank, int(V3), pos(V26), mark(V27).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_step(V3), true_cell(V23, V27), V3 = 7, V23 = d, V27 = blank, int(V3), pos(V23), mark(V27).
+terminal :- true_step(V3), true_cell(V26, V27), V3 = 7, V26 = a, V27 = blank, int(V3), pos(V26), mark(V27).
+}
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_step(V3), true_cell(V23, V27), V3 = 7, V23 = d, V27 = blank, int(V3), pos(V23), mark(V27).
+terminal :- true_control(V21), true_cell(V22, V21), true_cell(V23, V21), V22 = e, V23 = d, agent(V21), mark(V21), pos(V22), pos(V23).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_step(V3), true_cell(V23, V27), V3 = 7, V23 = d, V27 = blank, int(V3), pos(V23), mark(V27).
+terminal :- true_step(V3), true_cell(V26, V27), V3 = 7, V26 = a, V27 = blank, int(V3), pos(V26), mark(V27).
+terminal :- true_step(V2), true_control(V21), true_cell(V23, V21), V2 = 8, V23 = d, int(V2), agent(V21), mark(V21), pos(V23).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+terminal :- true_step(V10), V10 = 20, int(V10).
+terminal :- true_step(V3), true_cell(V23, V27), V3 = 7, V23 = d, V27 = blank, int(V3), pos(V23), mark(V27).
+terminal :- true_step(V3), true_cell(V26, V27), V3 = 7, V26 = a, V27 = blank, int(V3), pos(V26), mark(V27).
+terminal :- true_cell(V24, V20), true_cell(V25, V20), V20 = red, V24 = c, V25 = b, agent(V20), mark(V20), pos(V24), pos(V25).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+UNSATISFIABLE

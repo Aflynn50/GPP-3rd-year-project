@@ -1,0 +1,621 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_move(V0, V1, V2, V1, V3) :- agent(V0), int(V1), int(V2), int(V3).
+}
+inc: 1; exc: 0
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 1
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V4, V7), agent(V0), int(V1), int(V2), int(V3), int(V4), int(V7).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 29
+inc: 1; exc: 29
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 30
+inc: 1; exc: 30
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 31
+inc: 1; exc: 31
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 32
+inc: 1; exc: 32
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 33
+inc: 1; exc: 33
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 34
+inc: 1; exc: 34
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 35
+inc: 1; exc: 35
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 36
+inc: 1; exc: 36
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 37
+inc: 1; exc: 37
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 38
+inc: 1; exc: 38
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 39
+inc: 1; exc: 39
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 40
+inc: 1; exc: 40
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 41
+inc: 1; exc: 41
+--------------------------------------------
+Iteration 43:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 42
+inc: 1; exc: 42
+--------------------------------------------
+Iteration 44:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 43
+inc: 1; exc: 43
+--------------------------------------------
+Iteration 45:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 44
+inc: 1; exc: 44
+--------------------------------------------
+Iteration 46:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 45
+inc: 1; exc: 45
+--------------------------------------------
+Iteration 47:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 46
+inc: 1; exc: 46
+--------------------------------------------
+Iteration 48:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 47
+inc: 1; exc: 47
+--------------------------------------------
+Iteration 49:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 48
+inc: 1; exc: 48
+--------------------------------------------
+Iteration 50:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 49
+inc: 1; exc: 49
+--------------------------------------------
+Iteration 51:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 50
+inc: 1; exc: 50
+--------------------------------------------
+Iteration 52:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 51
+inc: 1; exc: 51
+--------------------------------------------
+Iteration 53:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 52
+inc: 1; exc: 52
+--------------------------------------------
+Iteration 54:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 53
+inc: 1; exc: 53
+--------------------------------------------
+Iteration 55:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 54
+inc: 1; exc: 54
+--------------------------------------------
+Iteration 56:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 55
+inc: 1; exc: 55
+--------------------------------------------
+Iteration 57:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 56
+inc: 1; exc: 56
+--------------------------------------------
+Iteration 58:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 57
+inc: 1; exc: 57
+--------------------------------------------
+Iteration 59:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 58
+inc: 1; exc: 58
+--------------------------------------------
+Iteration 60:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 59
+inc: 1; exc: 59
+--------------------------------------------
+Iteration 61:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 60
+inc: 1; exc: 60
+--------------------------------------------
+Iteration 62:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 61
+inc: 1; exc: 61
+--------------------------------------------
+Iteration 63:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 62
+inc: 1; exc: 62
+--------------------------------------------
+Iteration 64:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 63
+inc: 1; exc: 63
+--------------------------------------------
+Iteration 65:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 64
+inc: 1; exc: 64
+--------------------------------------------
+Iteration 66:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 65
+inc: 1; exc: 65
+--------------------------------------------
+Iteration 67:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 66
+inc: 1; exc: 66
+--------------------------------------------
+Iteration 68:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 67
+inc: 1; exc: 67
+--------------------------------------------
+Iteration 69:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 68
+inc: 1; exc: 68
+--------------------------------------------
+Iteration 70:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 69
+inc: 1; exc: 69
+--------------------------------------------
+Iteration 71:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 70
+inc: 1; exc: 70
+--------------------------------------------
+Iteration 72:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 71
+inc: 1; exc: 71
+--------------------------------------------
+Iteration 73:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 72
+inc: 1; exc: 72
+--------------------------------------------
+Iteration 74:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 73
+inc: 1; exc: 73
+--------------------------------------------
+Iteration 75:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- true_cell(V1, V2, V0), agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 74
+inc: 1; exc: 74
+--------------------------------------------
+Iteration 76:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- V4 = 3, agent(V0), int(V1), int(V2), int(V3), int(V4).
+}
+inc: 0; exc: 75
+inc: 1; exc: 75
+--------------------------------------------
+Iteration 77:
+solving
+H = {
+legal_move(V0, V1, V2, V3, V4) :- succ(V4, V7), succ(V2, V4), agent(V0), int(V1), int(V2), int(V3), int(V4), int(V7).
+}
+inc: 0; exc: 76
+inc: 1; exc: 76

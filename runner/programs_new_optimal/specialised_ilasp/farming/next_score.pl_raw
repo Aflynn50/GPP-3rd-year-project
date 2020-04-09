@@ -1,0 +1,223 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_score(V0, V1) :- agent(V0), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_score(V0, V1) :- succ(V1, V82), agent(V0), int(V1), pos(V82), int(V82).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_score(V0, V1) :- point_succ_two(V1, V3), agent(V0), int(V1), int(V3).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_score(V0, V1) :- true_step(V1), agent(V0), int(V1).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+}
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_score(V0, V1) :- succ(V1, V80), point_succ_two(V1, V70), agent(V0), int(V1), int(V70), int(V80).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_score(V0, V1) :- succ(V70, V69), point_succ_two(V1, V70), agent(V0), int(V1), int(V69), int(V70).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- true_ripe(V0, V60, V49), agent(V0), int(V1), pos(V49), int(V49), pos(V60), int(V60).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_score(V0, V1) :- succ(V69, V68), succ(V70, V69), point_succ_two(V1, V70), agent(V0), int(V1), int(V68), int(V69), int(V70).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- does_harvest_row(V0, V60), agent(V0), int(V1), pos(V60), int(V60).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_score(V0, V1) :- succ(V69, V68), succ(V70, V69), point_succ_two(V1, V70), not get_arson(V70), agent(V0), int(V1), int(V68), int(V69), int(V70).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V38, V27), succ(V1, V80), true_step(V27), agent(V0), int(V1), int(V27), int(V38), int(V80).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_score(V0, V1) :- succ(V58, V57), succ(V59, V58), point_succ_two(V70, V59), point_succ_two(V1, V70), not get_arson(V59), agent(V0), int(V1), int(V57), int(V58), int(V59), int(V70).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- V1 = 10, agent(V0), int(V1).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V38, V27), point_succ_two(V1, V70), true_step(V27), agent(V0), int(V1), int(V27), int(V38), int(V70).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V2, V1), true_ripe(V0, V60, V49), agent(V0), int(V1), int(V2), pos(V49), int(V49), pos(V60), int(V60).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V38, V27), succ(V1, V80), point_succ_two(V1, V70), true_step(V27), agent(V0), int(V1), int(V27), int(V38), int(V70), int(V80).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V2, V1), does_harvest_row(V0, V60), agent(V0), int(V1), int(V2), pos(V60), int(V60).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V38, V27), succ(V70, V69), point_succ_two(V1, V70), true_step(V27), agent(V0), int(V1), int(V27), int(V38), int(V69), int(V70).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- point_succ_two(V1, V70), true_ripe(V0, V60, V49), agent(V0), int(V1), pos(V49), int(V49), pos(V60), int(V60), int(V70).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V38, V27), succ(V69, V68), succ(V70, V69), point_succ_two(V1, V70), true_step(V27), agent(V0), int(V1), int(V27), int(V38), int(V68), int(V69), int(V70).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- point_succ_two(V1, V70), does_harvest_row(V0, V60), agent(V0), int(V1), pos(V60), int(V60), int(V70).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V1, V80), point_succ_two(V1, V70), true_ripe(V0, V60, V49), agent(V0), int(V1), pos(V49), int(V49), pos(V60), int(V60), int(V70), int(V80).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+next_score(V0, V1) :- true_score(V0, V1), agent(V0), int(V1).
+next_score(V0, V1) :- succ(V1, V80), point_succ_two(V1, V70), does_harvest_row(V0, V60), agent(V0), int(V1), pos(V60), int(V60), int(V70), int(V80).
+}

@@ -1,0 +1,15 @@
+next_blackPayoff(1,0).
+next_blackPayoff(2,15).
+next_blackPayoff(3,15).
+next_blackPayoff(4,15).
+next_blackPayoff(5,15).
+next_blackPayoff(6,0).
+next_blackPayoff(7,15).
+next_blackPayoff(8,15).
+next_blackPayoff(9,0).
+next_blackPayoff(10,0).
+next_blackPayoff(11,15).
+next_blackPayoff(12,10).
+next_blackPayoff(13,25).
+next_blackPayoff(14,20).
+next_blackPayoff(15,20).

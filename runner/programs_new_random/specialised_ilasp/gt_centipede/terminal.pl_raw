@@ -1,0 +1,75 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_gameOver.
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- not true_control(V21), V21 = white, agent(V21).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- not true_blackPayoff(V19), not true_control(V21), V19 = 15, V21 = white, int(V19), agent(V21).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- not true_blackPayoff(V20), not true_whitePayoff(V20), V20 = 0, int(V20).
+terminal :- true_gameOver.
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- not true_blackPayoff(V19), not true_control(V21), V19 = 15, V21 = white, int(V19), agent(V21).
+terminal :- true_gameOver.
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+terminal :- true_at(V23, V24, V25), V23 = 3, V24 = 7, V25 = o.
+terminal :- true_gameOver.
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+terminal :- true_at(V26, V27, V28), V26 = 2, V27 = 1, V28 = x.
+terminal :- true_gameOver.
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+UNSATISFIABLE

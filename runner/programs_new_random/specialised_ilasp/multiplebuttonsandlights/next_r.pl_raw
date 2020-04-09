@@ -1,0 +1,41 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_r(V0) :- index(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_r(V0) :- true_q(V0), index(V0).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_r(V0) :- does_c(V8, V0), index(V0), agent(V8).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_r(V0) :- true_step(V1), V1 = 6, index(V0), index(V1).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_r(V0) :- true_q(V0), does_c(V8, V0), index(V0), agent(V8).
+}
+Finished

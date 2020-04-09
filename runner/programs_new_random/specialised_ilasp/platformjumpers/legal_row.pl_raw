@@ -1,0 +1,13 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_row(V0, V1) :- agent(V0), pos(V1).
+}
+inc: 0; exc: 1

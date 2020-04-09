@@ -1,0 +1,27 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_drop(V0, V1) :- agent(V0), pos(V1), score(V1), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_drop(V0, V1) :- succ(V1, V38), agent(V0), pos(V1), score(V1), int(V1), pos(V38), score(V38), int(V38).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_drop(V0, V1) :- start(V92, V1, V91), agent(V0), pos(V1), score(V1), int(V1), pos(V91), score(V91), int(V91), piece(V92).
+}
+inc: 0; exc: 3

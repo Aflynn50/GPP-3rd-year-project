@@ -1,0 +1,171 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_water_col(V0, V1) :- agent(V0), pos(V1), int(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_water_col(V0, V1) :- true_sown(V87, V1, V60), agent(V0), pos(V1), int(V1), pos(V60), int(V60), agent(V87).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V0, V60, V1), agent(V0), pos(V1), int(V1), pos(V60), int(V60).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V87, V60, V1), agent(V0), pos(V1), int(V1), pos(V60), int(V60), agent(V87).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V0, V71, V60), agent(V0), pos(V1), int(V1), pos(V60), int(V60), pos(V71), int(V71).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V87, V60, V1), not true_control(V0), agent(V0), pos(V1), int(V1), pos(V60), int(V60), agent(V87).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_water_col(V0, V1) :- true_sown(V87, V1, V60), true_ripe(V0, V60, V1), agent(V0), pos(V1), int(V1), pos(V60), int(V60), agent(V87).
+legal_water_col(V0, V1) :- true_ripe(V0, V1, V60), agent(V0), pos(V1), int(V1), pos(V60), int(V60).
+}
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_water_col(V0, V1) :- succ(V82, V81), true_score(V87, V82), true_ripe(V87, V60, V1), not true_control(V0), agent(V0), pos(V1), int(V1), pos(V60), int(V60), pos(V81), int(V81), int(V82), agent(V87).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+legal_water_col(V0, V1) :- succ(V82, V81), true_score(V0, V82), true_ripe(V87, V60, V1), not true_control(V0), agent(V0), pos(V1), int(V1), pos(V60), int(V60), pos(V81), int(V81), int(V82), agent(V87).
+}
+inc: 3; exc: 6
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V0, V81, V71), not true_control(V0), not true_step(V17), V17 = 7, agent(V0), pos(V1), int(V1), int(V17), pos(V71), int(V71), pos(V81), int(V81).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+legal_water_col(V0, V1) :- true_sown(V87, V1, V60), true_ripe(V0, V60, V1), agent(V0), pos(V1), int(V1), pos(V60), int(V60), agent(V87).
+legal_water_col(V0, V1) :- true_ripe(V0, V81, V71), V0 = blue, agent(V0), pos(V1), int(V1), pos(V71), int(V71), pos(V81), int(V81).
+}
+inc: 4; exc: 7
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V0, V81, V71), V0 = blue, agent(V0), pos(V1), int(V1), pos(V71), int(V71), pos(V81), int(V81).
+legal_water_col(V0, V1) :- true_season(V84), not true_control(V0), V84 = summer, agent(V0), pos(V1), int(V1), season_type(V84).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+inc: 4; exc: 8
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V0, V81, V71), V0 = blue, agent(V0), pos(V1), int(V1), pos(V71), int(V71), pos(V81), int(V81).
+legal_water_col(V0, V1) :- true_step(V39), not true_control(V0), V39 = 5, agent(V0), pos(V1), int(V1), int(V39).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+inc: 4; exc: 9
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+legal_water_col(V0, V1) :- true_ripe(V0, V81, V71), not true_control(V0), V0 = blue, agent(V0), pos(V1), int(V1), pos(V71), int(V71), pos(V81), int(V81).
+legal_water_col(V0, V1) :- true_step(V39), not true_control(V0), V39 = 5, agent(V0), pos(V1), int(V1), int(V39).
+}
+inc: 5; exc: 9
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+legal_water_col(V0, V1) :- true_year_first_player(V87), true_ripe(V87, V71, V71), not true_control(V0), not true_step(V17), V17 = 7, agent(V0), pos(V1), int(V1), int(V17), pos(V71), int(V71), agent(V87).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+inc: 4; exc: 10
+inc: 5; exc: 10
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+legal_water_col(V0, V1) :- true_year_first_player(V0), true_season(V84), V84 = summer, agent(V0), pos(V1), int(V1), season_type(V84).
+legal_water_col(V0, V1) :- true_ripe(V0, V71, V60), not true_control(V0), not true_step(V76), V71 = 2, V76 = 15, agent(V0), pos(V1), int(V1), pos(V60), int(V60), pos(V71), int(V71), int(V76).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+inc: 5; exc: 11
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+legal_water_col(V0, V1) :- true_sown(V87, V71, V60), true_ripe(V0, V81, V71), agent(V0), pos(V1), int(V1), pos(V60), int(V60), pos(V71), int(V71), pos(V81), int(V81), agent(V87).
+legal_water_col(V0, V1) :- true_ripe(V0, V71, V60), not true_control(V0), not true_step(V76), V71 = 2, V76 = 15, agent(V0), pos(V1), int(V1), pos(V60), int(V60), pos(V71), int(V71), int(V76).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+inc: 5; exc: 12
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+legal_water_col(V0, V1) :- true_sown(V87, V71, V60), true_ripe(V0, V81, V71), agent(V0), pos(V1), int(V1), pos(V60), int(V60), pos(V71), int(V71), pos(V81), int(V81), agent(V87).
+legal_water_col(V0, V1) :- true_year_second_player(V0), true_ripe(V87, V71, V71), true_control(V87), agent(V0), pos(V1), int(V1), pos(V71), int(V71), agent(V87).
+}
+inc: 6; exc: 12

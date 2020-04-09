@@ -1,0 +1,72 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_mark(V0, V1, V2) :- agent(V0), pos(V1), hue(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_mark(V0, V1, V2) :- true, agent(V0), pos(V1), hue(V2).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V1 = r6, agent(V0), pos(V1), hue(V2).
+}
+inc: 2; exc: 1
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V1 = r6, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- true, agent(V0), pos(V1), hue(V2).
+}
+inc: 3; exc: 1
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V1 = r6, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- V1 = r5, agent(V0), pos(V1), hue(V2).
+}
+inc: 4; exc: 1
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V1 = r6, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- V1 = r5, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- true, agent(V0), pos(V1), hue(V2).
+}
+inc: 5; exc: 1
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V1 = r6, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- V1 = r5, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- V1 = r4, agent(V0), pos(V1), hue(V2).
+}
+inc: 6; exc: 1
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_mark(V0, V1, V2) :- V1 = r6, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- V1 = r5, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- true, agent(V0), pos(V1), hue(V2).
+legal_mark(V0, V1, V2) :- V1 = r4, agent(V0), pos(V1), hue(V2).
+}
+inc: 7; exc: 1
+UNSATISFIABLE

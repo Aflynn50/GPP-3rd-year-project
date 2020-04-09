@@ -1,0 +1,91 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- succ(V3, V41), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4), pos(V41), score(V41), int(V41).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- succ(V1, V62), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4), pos(V62), score(V62), int(V62).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- succ(V4, V1), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4).
+}
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- succ(V4, V1), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4).
+legal_knightmove(V0, V1, V2, V3, V1) :- succ(V1, V3), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3).
+}
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- succ(V4, V1), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4).
+legal_knightmove(V0, V1, V2, V3, V1) :- succ(V1, V62), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V62), score(V62), int(V62).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- succ(V2, V4), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4).
+legal_knightmove(V0, V1, V2, V3, V1) :- succ(V1, V62), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V62), score(V62), int(V62).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- start(V92, V3, V2), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4), piece(V92).
+legal_knightmove(V0, V1, V2, V3, V1) :- succ(V1, V62), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V62), score(V62), int(V62).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- start(V93, V1, V2), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4), piece(V93).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+legal_knightmove(V0, V1, V2, V3, V4) :- plus2(V1, V3), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V4), score(V4), int(V4).
+legal_knightmove(V0, V1, V2, V3, V1) :- succ(V1, V62), agent(V0), pos(V1), score(V1), int(V1), pos(V2), score(V2), int(V2), pos(V3), score(V3), int(V3), pos(V62), score(V62), int(V62).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8

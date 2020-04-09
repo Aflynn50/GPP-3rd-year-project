@@ -1,0 +1,194 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_cell(V0, V1) :- pos(V0), cell_value(V1).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- succ(V0, V2), pos(V0), cell_value(V1), pos(V2).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+next_cell(V0, V1) :- V1 = twocoins, pos(V0), cell_value(V1).
+}
+inc: 2; exc: 2
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+}
+inc: 3; exc: 2
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_cell(V0, V1) :- V1 = twocoins, pos(V0), cell_value(V1).
+next_cell(V0, V1) :- does_jump(V9, V0, V2), pos(V0), cell_value(V1), pos(V2), agent(V9).
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+inc: 2; exc: 3
+inc: 3; exc: 3
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_cell(V0, V1) :- succ(V0, V2), V1 = twocoins, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- does_jump(V9, V0, V2), pos(V0), cell_value(V1), pos(V2), agent(V9).
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+os(V5), cell_type(V5).
+next_cell(V0, V1, V2) :- true_cell(V5, V5, V2), does_mark(V3, V1, V1, V0), pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), agent(V3), pos(V5), cell_type(V5).
+next_cell(V0, V0, V1) :- V0 = 2, V1 = 1, pos(V0), cell_type(V0), pos(V1), cell_type(V1).
+next_cell(V0, V1, V1) :- does_mark(V2, V0, V1, V1), pos(V0), cell_type(V0), pos(V1), cell_type(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V0, V2), V0 = 4, V1 = 2, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2).
+next_cell(V0, V1, V2) :- true_cell(V5, V1, V2), V1 = 3, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), pos(V5), cell_type(V5).
+next_cell(V0, V1, V2) :- true_cell(V5, V5, V2), true_cell(V5, V1, V2), V0 = 2, V1 = 1, V5 = 4, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), pos(V5), cell_type(V5).
+next_cell(V0, V1, V2) :- true_cell(V0, V0, V2), true_cell(V1, V6, V2), V1 = 1, V6 = 2, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), pos(V6), cell_type(V6).
+next_cell(V0, V0, V1) :- true_cell(V4, V0, V1), V0 = 1, pos(V0), cell_type(V0), cell_type(V1), pos(V4), cell_type(V4).
+next_cell(V0, V1, V1) :- true_cell(V0, V1, V1), pos(V0), cell_type(V0), pos(V1), cell_type(V1).
+next_cell(V0, V1, V0) :- does_mark(V3, V0, V1, V0), pos(V0), cell_type(V0), pos(V1), cell_type(V1), agent(V3).
+}
+next_cell(V0, V1) :- succ(V0, V2), V1 = twocoins, pos(V0), cell_value(V1), pos(V2).
+next_cell(V0, V1) :- does_jump(V9, V0, V2), pos(V0), cell_value(V1), pos(V2), agent(V9).
+next_cell(V0, V1) :- true_cell(V0, V1), pos(V0), cell_value(V1).
+os(V5), cell_type(V5).
+next_cell(V0, V1, V2) :- true_cell(V5, V5, V2), does_mark(V3, V1, V1, V0), pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), agent(V3), pos(V5), cell_type(V5).
+next_cell(V0, V0, V1) :- V0 = 2, V1 = 1, pos(V0), cell_type(V0), pos(V1), cell_type(V1).
+next_cell(V0, V1, V1) :- does_mark(V2, V0, V1, V1), pos(V0), cell_type(V0), pos(V1), cell_type(V1), agent(V2).
+next_cell(V0, V1, V2) :- true_cell(V0, V0, V2), V0 = 4, V1 = 2, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2).
+next_cell(V0, V1, V2) :- true_cell(V5, V1, V2), V1 = 3, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), pos(V5), cell_type(V5).
+next_cell(V0, V1, V2) :- true_cell(V5, V5, V2), true_cell(V5, V1, V2), V0 = 2, V1 = 1, V5 = 4, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), pos(V5), cell_type(V5).
+next_cell(V0, V1, V2) :- true_cell(V0, V0, V2), true_cell(V1, V6, V2), V1 = 1, V6 = 2, pos(V0), cell_type(V0), pos(V1), cell_type(V1), cell_type(V2), pos(V6), cell_type(V6).
+next_cell(V0, V0, V1) :- true_cell(V4, V0, V1), V0 = 1, pos(V0), cell_type(V0), cell_type(V1), pos(V4), cell_type(V4).
+next_cell(V0, V1, V1) :- true_cell(V0, V1, V1), pos(V0), cell_type(V0), pos(V1), cell_type(V1).
+next_cell(V0, V1, V0) :- does_mark(V3, V0, V1, V0), pos(V0), cell_type(V0), pos(V1), cell_type(V1), agent(V3).
+
+succ(7, 8).
+succ(6, 7).
+succ(5, 6).
+succ(4, 5).
+succ(3, 4).
+succ(2, 3).
+succ(1, 2).
+role(you).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type(agent, you).
+agent(you).
+
+type(pos, 1).
+pos(1).
+
+type(pos, 2).
+pos(2).
+
+type(pos, 3).
+pos(3).
+
+type(pos, 4).
+pos(4).
+
+type(pos, 5).
+pos(5).
+
+type(pos, 6).
+pos(6).
+
+type(pos, 7).
+pos(7).
+
+type(pos, 8).
+pos(8).
+
+type(score, 0).
+score(0).
+
+type(score, 100).
+score(100).
+
+type(cell_value, zerocoins).
+cell_value(zerocoins).
+
+type(cell_value, onecoin).
+cell_value(onecoin).
+
+type(cell_value, twocoins).
+cell_value(twocoins).
+
+true_step(1).
+true_cell(8, onecoin).
+true_cell(7, onecoin).
+true_cell(6, onecoin).
+true_cell(5, onecoin).
+true_cell(4, onecoin).
+true_cell(3, onecoin).
+true_cell(2, onecoin).
+true_cell(1, onecoin).
+does_jump(you, 4, 7).
+inc(0) :- not next_cell(8, onecoin).
+inc(1) :- not next_cell(7, twocoins).
+inc(2) :- not next_cell(6, onecoin).
+inc(3) :- not next_cell(5, onecoin).
+inc(4) :- not next_cell(4, zerocoins).
+inc(5) :- not next_cell(3, onecoin).
+inc(6) :- not next_cell(2, onecoin).
+inc(7) :- not next_cell(1, onecoin).
+exc(0) :- next_cell(8, zerocoins).
+exc(1) :- next_cell(8, twocoins).
+exc(2) :- next_cell(7, zerocoins).
+exc(3) :- next_cell(7, onecoin).
+exc(4) :- next_cell(6, zerocoins).
+exc(5) :- next_cell(6, twocoins).
+exc(6) :- next_cell(5, zerocoins).
+exc(7) :- next_cell(5, twocoins).
+exc(8) :- next_cell(4, twocoins).
+exc(9) :- next_cell(4, onecoin).
+exc(10) :- next_cell(3, zerocoins).
+exc(11) :- next_cell(3, twocoins).
+exc(12) :- next_cell(2, zerocoins).
+exc(13) :- next_cell(2, twocoins).
+exc(14) :- next_cell(1, zerocoins).
+exc(15) :- next_cell(1, twocoins).
+#show inc/1.
+#show exc/1.
+

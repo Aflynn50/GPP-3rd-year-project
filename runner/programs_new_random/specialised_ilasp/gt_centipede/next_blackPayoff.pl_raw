@@ -1,0 +1,95 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_blackPayoff(V0) :- int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), int(V0).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), int(V0).
+next_blackPayoff(V0) :- V0 = 15, int(V0).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), int(V0).
+next_blackPayoff(V0) :- does(V21, V23), V23 = continue, int(V0), agent(V21), action(V23).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), int(V0).
+next_blackPayoff(V0) :- does(V21, V23), V0 = 15, V23 = continue, int(V0), agent(V21), action(V23).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), does(V21, V23), V23 = finish, int(V0), agent(V21), action(V23).
+next_blackPayoff(V0) :- does(V21, V23), V0 = 15, V23 = continue, int(V0), agent(V21), action(V23).
+}
+inc: 2; exc: 4
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), does(V21, V23), V23 = finish, int(V0), agent(V21), action(V23).
+next_blackPayoff(V0) :- does(V21, V23), V0 = 15, V23 = continue, int(V0), agent(V21), action(V23).
+next_blackPayoff(V0) :- V0 = 10, int(V0).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), does(V21, V23), V23 = finish, int(V0), agent(V21), action(V23).
+next_blackPayoff(V0) :- succ(V12, V0), succ(V19, V18), succ(V0, V19), does(V22, V24), V24 = continue, int(V0), int(V12), int(V18), int(V19), agent(V22), action(V24).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), does(V21, V23), V23 = finish, int(V0), agent(V21), action(V23).
+next_blackPayoff(V0) :- does(V21, V23), V0 = 15, V23 = continue, int(V0), agent(V21), action(V23).
+next_blackPayoff(V0) :- succ(V0, V19), true_blackPayoff(V19), int(V0), int(V19).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_blackPayoff(V0) :- true_blackPayoff(V0), does(V21, V23), V23 = finish, int(V0), agent(V21), action(V23).
+next_blackPayoff(V0) :- succ(V12, V0), succ(V20, V12), true_whitePayoff(V20), does(V22, V24), V24 = continue, int(V0), int(V12), int(V20), agent(V22), action(V24).
+}
+Finished

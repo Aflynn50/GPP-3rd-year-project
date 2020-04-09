@@ -144,4 +144,5 @@
  untwisty\_corridor        & legal       &        50 &      50 &                   0 \\
  untwisty\_corridor        & terminal    &       100 &     100 &                 100 \\
 \hline
-\end{tabular}
+\end{tabular}08 Apr 17:10:42
+game    predicate    aleph    specialised_ilasp

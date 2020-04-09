@@ -1,0 +1,34 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- succ(V87, V86), true_whiteScore(V86), int(V86), int(V87).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- true_whiteScore(V86), V86 = 34, int(V86).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- maxRounds(V21), true_rounds(V21), index(V21), int(V21).
+}
+Finished

@@ -1,0 +1,2061 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+legal_jump(V0, V1, V2) :- agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V2, V4), agent(V0), pos(V1), pos(V2), pos(V4).
+}
+inc: 1; exc: 1
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V2, V4), agent(V0), pos(V1), pos(V2), pos(V4).
+legal_jump(V0, V1, V2) :- succ(V1, V4), agent(V0), pos(V1), pos(V2), pos(V4).
+}
+inc: 0; exc: 2
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V1, V4), agent(V0), pos(V1), pos(V2), pos(V4).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+}
+inc: 2; exc: 3
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V2 = 4, agent(V0), pos(V1), pos(V2).
+}
+inc: 3; exc: 3
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V2 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 6, agent(V0), pos(V1), pos(V2).
+}
+inc: 4; exc: 3
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V2 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 6, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 4, agent(V0), pos(V1), pos(V2).
+}
+inc: 5; exc: 3
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V2 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V1, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+inc: 2; exc: 4
+inc: 3; exc: 4
+inc: 4; exc: 4
+inc: 5; exc: 4
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V1, V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+inc: 2; exc: 5
+inc: 3; exc: 5
+inc: 4; exc: 5
+inc: 5; exc: 5
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V4, V1), succ(V5, V4), succ(V2, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- V1 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 3, agent(V0), pos(V1), pos(V2).
+}
+inc: 6; exc: 5
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V5, V3), succ(V2, V5), succ(V1, V7), agent(V0), pos(V1), pos(V2), pos(V3), pos(V5), pos(V7).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+inc: 2; exc: 6
+inc: 3; exc: 6
+inc: 4; exc: 6
+inc: 5; exc: 6
+inc: 6; exc: 6
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V5, V1), succ(V6, V5), succ(V2, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V1, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+inc: 3; exc: 7
+inc: 4; exc: 7
+inc: 5; exc: 7
+inc: 6; exc: 7
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V5, V1), succ(V6, V5), succ(V2, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+}
+inc: 7; exc: 7
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), V2 = 4, agent(V0), pos(V1), pos(V2), pos(V3).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+inc: 3; exc: 8
+inc: 4; exc: 8
+inc: 5; exc: 8
+inc: 6; exc: 8
+inc: 7; exc: 8
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V1 = 8, V2 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), V2 = 4, agent(V0), pos(V1), pos(V2), pos(V3).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+inc: 4; exc: 9
+inc: 5; exc: 9
+inc: 6; exc: 9
+inc: 7; exc: 9
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V1), succ(V5, V4), succ(V2, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), V2 = 4, agent(V0), pos(V1), pos(V2), pos(V3).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+inc: 4; exc: 10
+inc: 5; exc: 10
+inc: 6; exc: 10
+inc: 7; exc: 10
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+legal_jump(V0, V1, V2) :- V1 = 5, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V5, V1), succ(V6, V5), succ(V2, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- V1 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 3, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V1 = 2, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 8; exc: 10
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V5, V1), succ(V6, V5), succ(V2, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V5, V2), succ(V6, V5), succ(V1, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+inc: 4; exc: 11
+inc: 5; exc: 11
+inc: 6; exc: 11
+inc: 7; exc: 11
+inc: 8; exc: 11
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V5, V1), succ(V6, V5), succ(V2, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V5, V2), succ(V6, V5), succ(V1, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V7, V6), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+inc: 4; exc: 12
+inc: 5; exc: 12
+inc: 6; exc: 12
+inc: 7; exc: 12
+inc: 8; exc: 12
+--------------------------------------------
+Iteration 21:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V1), succ(V5, V4), succ(V2, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V5, V2), succ(V6, V5), succ(V1, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+inc: 4; exc: 13
+inc: 5; exc: 13
+inc: 6; exc: 13
+inc: 7; exc: 13
+inc: 8; exc: 13
+--------------------------------------------
+Iteration 22:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V5, V1), succ(V6, V5), succ(V2, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- true_cell(V2, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+inc: 4; exc: 14
+inc: 5; exc: 14
+inc: 6; exc: 14
+inc: 7; exc: 14
+inc: 8; exc: 14
+--------------------------------------------
+Iteration 23:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V5, V1), succ(V6, V5), succ(V2, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+inc: 4; exc: 15
+inc: 5; exc: 15
+inc: 6; exc: 15
+inc: 7; exc: 15
+inc: 8; exc: 15
+--------------------------------------------
+Iteration 24:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V1), succ(V5, V4), succ(V2, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V5, V2), succ(V6, V5), succ(V1, V6), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V3), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+}
+inc: 0; exc: 16
+inc: 1; exc: 16
+inc: 2; exc: 16
+inc: 3; exc: 16
+inc: 4; exc: 16
+inc: 5; exc: 16
+inc: 6; exc: 16
+inc: 7; exc: 16
+inc: 8; exc: 16
+--------------------------------------------
+Iteration 25:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_step(V8), V1 = 8, V2 = 5, V8 = 1, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 7, V2 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V2 = 3, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V1, V3), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+}
+inc: 9; exc: 16
+--------------------------------------------
+Iteration 26:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_step(V8), V1 = 8, V2 = 5, V8 = 1, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 7, V2 = 4, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- V2 = 3, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V1, V3), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V5, V3), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5).
+}
+inc: 0; exc: 17
+inc: 1; exc: 17
+inc: 2; exc: 17
+inc: 3; exc: 17
+inc: 4; exc: 17
+inc: 5; exc: 17
+inc: 6; exc: 17
+inc: 7; exc: 17
+inc: 8; exc: 17
+inc: 9; exc: 17
+--------------------------------------------
+Iteration 27:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V1), succ(V5, V4), succ(V2, V5), true_step(V8), V8 = 1, agent(V0), pos(V1), pos(V2), pos(V4), pos(V5), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V1, V3), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+}
+inc: 10; exc: 17
+--------------------------------------------
+Iteration 28:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V1, V3), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 18
+inc: 1; exc: 18
+inc: 2; exc: 18
+inc: 3; exc: 18
+inc: 4; exc: 18
+inc: 5; exc: 18
+inc: 6; exc: 18
+inc: 7; exc: 18
+inc: 8; exc: 18
+inc: 9; exc: 18
+inc: 10; exc: 18
+--------------------------------------------
+Iteration 29:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V5, V1), true_cell(V5, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 19
+inc: 1; exc: 19
+inc: 2; exc: 19
+inc: 3; exc: 19
+inc: 4; exc: 19
+inc: 5; exc: 19
+inc: 6; exc: 19
+inc: 7; exc: 19
+inc: 8; exc: 19
+inc: 9; exc: 19
+inc: 10; exc: 19
+--------------------------------------------
+Iteration 30:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V2, V5), true_cell(V5, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 20
+inc: 1; exc: 20
+inc: 2; exc: 20
+inc: 3; exc: 20
+inc: 4; exc: 20
+inc: 5; exc: 20
+inc: 6; exc: 20
+inc: 7; exc: 20
+inc: 8; exc: 20
+inc: 9; exc: 20
+inc: 10; exc: 20
+--------------------------------------------
+Iteration 31:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 21
+inc: 1; exc: 21
+inc: 2; exc: 21
+inc: 3; exc: 21
+inc: 4; exc: 21
+inc: 5; exc: 21
+inc: 6; exc: 21
+inc: 7; exc: 21
+inc: 8; exc: 21
+inc: 9; exc: 21
+inc: 10; exc: 21
+--------------------------------------------
+Iteration 32:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V5, V3), succ(V1, V5), succ(V8, V2), true_step(V8), agent(V0), pos(V1), pos(V2), pos(V3), pos(V5), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 22
+inc: 1; exc: 22
+inc: 2; exc: 22
+inc: 3; exc: 22
+inc: 4; exc: 22
+inc: 5; exc: 22
+inc: 6; exc: 22
+inc: 7; exc: 22
+inc: 8; exc: 22
+inc: 9; exc: 22
+inc: 10; exc: 22
+--------------------------------------------
+Iteration 33:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V1, V3), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 23
+inc: 1; exc: 23
+inc: 2; exc: 23
+inc: 3; exc: 23
+inc: 4; exc: 23
+inc: 5; exc: 23
+inc: 6; exc: 23
+inc: 7; exc: 23
+inc: 8; exc: 23
+inc: 9; exc: 23
+inc: 10; exc: 23
+--------------------------------------------
+Iteration 34:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V1, V3), true_cell(V2, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 24
+inc: 1; exc: 24
+inc: 2; exc: 24
+inc: 3; exc: 24
+inc: 4; exc: 24
+inc: 5; exc: 24
+inc: 6; exc: 24
+inc: 7; exc: 24
+inc: 8; exc: 24
+inc: 9; exc: 24
+inc: 10; exc: 24
+--------------------------------------------
+Iteration 35:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V2, V5), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 25
+inc: 1; exc: 25
+inc: 2; exc: 25
+inc: 3; exc: 25
+inc: 4; exc: 25
+inc: 5; exc: 25
+inc: 6; exc: 25
+inc: 7; exc: 25
+inc: 8; exc: 25
+inc: 9; exc: 25
+inc: 10; exc: 25
+--------------------------------------------
+Iteration 36:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V2, V5), true_cell(V5, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V3), pos(V5), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 26
+inc: 1; exc: 26
+inc: 2; exc: 26
+inc: 3; exc: 26
+inc: 4; exc: 26
+inc: 5; exc: 26
+inc: 6; exc: 26
+inc: 7; exc: 26
+inc: 8; exc: 26
+inc: 9; exc: 26
+inc: 10; exc: 26
+--------------------------------------------
+Iteration 37:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 27
+inc: 1; exc: 27
+inc: 2; exc: 27
+inc: 3; exc: 27
+inc: 4; exc: 27
+inc: 5; exc: 27
+inc: 6; exc: 27
+inc: 7; exc: 27
+inc: 8; exc: 27
+inc: 9; exc: 27
+inc: 10; exc: 27
+--------------------------------------------
+Iteration 38:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V1, V3), succ(V6, V2), succ(V7, V6), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 28
+inc: 1; exc: 28
+inc: 2; exc: 28
+inc: 3; exc: 28
+inc: 4; exc: 28
+inc: 5; exc: 28
+inc: 6; exc: 28
+inc: 7; exc: 28
+inc: 8; exc: 28
+inc: 9; exc: 28
+inc: 10; exc: 28
+--------------------------------------------
+Iteration 39:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 11; exc: 28
+--------------------------------------------
+Iteration 40:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V2, V3), succ(V1, V5), true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5), pos(V6).
+}
+inc: 0; exc: 29
+inc: 1; exc: 29
+inc: 2; exc: 29
+inc: 3; exc: 29
+inc: 4; exc: 29
+inc: 5; exc: 29
+inc: 6; exc: 29
+inc: 7; exc: 29
+inc: 8; exc: 29
+inc: 9; exc: 29
+inc: 10; exc: 29
+inc: 11; exc: 29
+--------------------------------------------
+Iteration 41:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- V1 = 4, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 30
+inc: 1; exc: 30
+inc: 2; exc: 30
+inc: 3; exc: 30
+inc: 4; exc: 30
+inc: 5; exc: 30
+inc: 6; exc: 30
+inc: 7; exc: 30
+inc: 8; exc: 30
+inc: 9; exc: 30
+inc: 10; exc: 30
+inc: 11; exc: 30
+--------------------------------------------
+Iteration 42:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V2, V3), V1 = 4, agent(V0), pos(V1), pos(V2), pos(V3).
+}
+inc: 0; exc: 31
+inc: 1; exc: 31
+inc: 2; exc: 31
+inc: 3; exc: 31
+inc: 4; exc: 31
+inc: 5; exc: 31
+inc: 6; exc: 31
+inc: 7; exc: 31
+inc: 8; exc: 31
+inc: 9; exc: 31
+inc: 10; exc: 31
+inc: 11; exc: 31
+--------------------------------------------
+Iteration 43:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 32
+inc: 1; exc: 32
+inc: 2; exc: 32
+inc: 3; exc: 32
+inc: 4; exc: 32
+inc: 5; exc: 32
+inc: 6; exc: 32
+inc: 7; exc: 32
+inc: 8; exc: 32
+inc: 9; exc: 32
+inc: 10; exc: 32
+inc: 11; exc: 32
+--------------------------------------------
+Iteration 44:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V6, V1), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6).
+}
+inc: 0; exc: 33
+inc: 1; exc: 33
+inc: 2; exc: 33
+inc: 3; exc: 33
+inc: 4; exc: 33
+inc: 5; exc: 33
+inc: 6; exc: 33
+inc: 7; exc: 33
+inc: 8; exc: 33
+inc: 9; exc: 33
+inc: 10; exc: 33
+inc: 11; exc: 33
+--------------------------------------------
+Iteration 45:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V5), true_cell(V5, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), cell_value(V11).
+}
+inc: 0; exc: 34
+inc: 1; exc: 34
+inc: 2; exc: 34
+inc: 3; exc: 34
+inc: 4; exc: 34
+inc: 5; exc: 34
+inc: 6; exc: 34
+inc: 7; exc: 34
+inc: 8; exc: 34
+inc: 9; exc: 34
+inc: 10; exc: 34
+inc: 11; exc: 34
+--------------------------------------------
+Iteration 46:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V2, V3), succ(V6, V1), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 35
+inc: 1; exc: 35
+inc: 2; exc: 35
+inc: 3; exc: 35
+inc: 4; exc: 35
+inc: 5; exc: 35
+inc: 6; exc: 35
+inc: 7; exc: 35
+inc: 8; exc: 35
+inc: 9; exc: 35
+inc: 10; exc: 35
+inc: 11; exc: 35
+--------------------------------------------
+Iteration 47:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+}
+inc: 0; exc: 36
+inc: 1; exc: 36
+inc: 2; exc: 36
+inc: 3; exc: 36
+inc: 4; exc: 36
+inc: 5; exc: 36
+inc: 6; exc: 36
+inc: 7; exc: 36
+inc: 8; exc: 36
+inc: 9; exc: 36
+inc: 10; exc: 36
+inc: 11; exc: 36
+--------------------------------------------
+Iteration 48:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- true_cell(V1, V11), V2 = 6, V11 = twocoins, agent(V0), pos(V1), pos(V2), cell_value(V11).
+}
+inc: 0; exc: 37
+inc: 1; exc: 37
+inc: 2; exc: 37
+inc: 3; exc: 37
+inc: 4; exc: 37
+inc: 5; exc: 37
+inc: 6; exc: 37
+inc: 7; exc: 37
+inc: 8; exc: 37
+inc: 9; exc: 37
+inc: 10; exc: 37
+inc: 11; exc: 37
+--------------------------------------------
+Iteration 49:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V1, V5), true_cell(V5, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V3), pos(V5), cell_value(V11).
+}
+inc: 0; exc: 38
+inc: 1; exc: 38
+inc: 2; exc: 38
+inc: 3; exc: 38
+inc: 4; exc: 38
+inc: 5; exc: 38
+inc: 6; exc: 38
+inc: 7; exc: 38
+inc: 8; exc: 38
+inc: 9; exc: 38
+inc: 10; exc: 38
+inc: 11; exc: 38
+--------------------------------------------
+Iteration 50:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V6, V1), succ(V7, V6), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7).
+}
+inc: 0; exc: 39
+inc: 1; exc: 39
+inc: 2; exc: 39
+inc: 3; exc: 39
+inc: 4; exc: 39
+inc: 5; exc: 39
+inc: 6; exc: 39
+inc: 7; exc: 39
+inc: 8; exc: 39
+inc: 9; exc: 39
+inc: 10; exc: 39
+inc: 11; exc: 39
+--------------------------------------------
+Iteration 51:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V1, V3), succ(V6, V2), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+}
+inc: 0; exc: 40
+inc: 1; exc: 40
+inc: 2; exc: 40
+inc: 3; exc: 40
+inc: 4; exc: 40
+inc: 5; exc: 40
+inc: 6; exc: 40
+inc: 7; exc: 40
+inc: 8; exc: 40
+inc: 9; exc: 40
+inc: 10; exc: 40
+inc: 11; exc: 40
+--------------------------------------------
+Iteration 52:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), succ(V1, V7), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V2, V5), true_step(V6), V1 = 6, V6 = 3, agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+}
+inc: 0; exc: 41
+inc: 1; exc: 41
+inc: 2; exc: 41
+inc: 3; exc: 41
+inc: 4; exc: 41
+inc: 5; exc: 41
+inc: 6; exc: 41
+inc: 7; exc: 41
+inc: 8; exc: 41
+inc: 9; exc: 41
+inc: 10; exc: 41
+inc: 11; exc: 41
+--------------------------------------------
+Iteration 53:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), succ(V1, V7), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+}
+inc: 0; exc: 42
+inc: 1; exc: 42
+inc: 2; exc: 42
+inc: 3; exc: 42
+inc: 4; exc: 42
+inc: 5; exc: 42
+inc: 6; exc: 42
+inc: 7; exc: 42
+inc: 8; exc: 42
+inc: 9; exc: 42
+inc: 10; exc: 42
+inc: 11; exc: 42
+--------------------------------------------
+Iteration 54:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V4, V2), succ(V5, V4), succ(V1, V5), true_step(V8), V8 = 1, agent(V0), pos(V1), pos(V2), pos(V4), pos(V5), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+}
+inc: 12; exc: 42
+--------------------------------------------
+Iteration 55:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 13; exc: 42
+--------------------------------------------
+Iteration 56:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V8, V7), succ(V1, V8), true_cell(V2, V11), V2 = 4, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), pos(V8), cell_value(V11).
+}
+inc: 0; exc: 43
+inc: 1; exc: 43
+inc: 2; exc: 43
+inc: 3; exc: 43
+inc: 4; exc: 43
+inc: 5; exc: 43
+inc: 6; exc: 43
+inc: 7; exc: 43
+inc: 8; exc: 43
+inc: 9; exc: 43
+inc: 10; exc: 43
+inc: 11; exc: 43
+inc: 12; exc: 43
+inc: 13; exc: 43
+--------------------------------------------
+Iteration 57:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- V1 = 1, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 44
+inc: 1; exc: 44
+inc: 2; exc: 44
+inc: 3; exc: 44
+inc: 4; exc: 44
+inc: 5; exc: 44
+inc: 6; exc: 44
+inc: 7; exc: 44
+inc: 8; exc: 44
+inc: 9; exc: 44
+inc: 10; exc: 44
+inc: 11; exc: 44
+inc: 12; exc: 44
+inc: 13; exc: 44
+--------------------------------------------
+Iteration 58:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- not true_step(V6), V1 = 5, V2 = 8, V6 = 3, agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 45
+inc: 1; exc: 45
+inc: 2; exc: 45
+inc: 3; exc: 45
+inc: 4; exc: 45
+inc: 5; exc: 45
+inc: 6; exc: 45
+inc: 7; exc: 45
+inc: 8; exc: 45
+inc: 9; exc: 45
+inc: 10; exc: 45
+inc: 11; exc: 45
+inc: 12; exc: 45
+inc: 13; exc: 45
+--------------------------------------------
+Iteration 59:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V2, V3), succ(V6, V1), succ(V7, V6), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- not true_step(V6), V1 = 5, V2 = 8, V6 = 3, agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 46
+inc: 1; exc: 46
+inc: 2; exc: 46
+inc: 3; exc: 46
+inc: 4; exc: 46
+inc: 5; exc: 46
+inc: 6; exc: 46
+inc: 7; exc: 46
+inc: 8; exc: 46
+inc: 9; exc: 46
+inc: 10; exc: 46
+inc: 11; exc: 46
+inc: 12; exc: 46
+inc: 13; exc: 46
+--------------------------------------------
+Iteration 60:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V4, V2), succ(V5, V4), succ(V1, V5), agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V2, V3), succ(V6, V1), succ(V7, V6), succ(V8, V7), true_step(V6), agent(V0), pos(V1), pos(V2), pos(V3), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- not true_step(V6), V1 = 5, V2 = 8, V6 = 3, agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 47
+inc: 1; exc: 47
+inc: 2; exc: 47
+inc: 3; exc: 47
+inc: 4; exc: 47
+inc: 5; exc: 47
+inc: 6; exc: 47
+inc: 7; exc: 47
+inc: 8; exc: 47
+inc: 9; exc: 47
+inc: 10; exc: 47
+inc: 11; exc: 47
+inc: 12; exc: 47
+inc: 13; exc: 47
+--------------------------------------------
+Iteration 61:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V2, V3), succ(V6, V1), true_step(V6), V1 = 4, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V2, V6), V1 = 1, agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 48
+inc: 1; exc: 48
+inc: 2; exc: 48
+inc: 3; exc: 48
+inc: 4; exc: 48
+inc: 5; exc: 48
+inc: 6; exc: 48
+inc: 7; exc: 48
+inc: 8; exc: 48
+inc: 9; exc: 48
+inc: 10; exc: 48
+inc: 11; exc: 48
+inc: 12; exc: 48
+inc: 13; exc: 48
+--------------------------------------------
+Iteration 62:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V2, V6), succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V2, V3), succ(V6, V1), true_step(V6), V1 = 4, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+}
+inc: 0; exc: 49
+inc: 1; exc: 49
+inc: 2; exc: 49
+inc: 3; exc: 49
+inc: 4; exc: 49
+inc: 5; exc: 49
+inc: 6; exc: 49
+inc: 7; exc: 49
+inc: 8; exc: 49
+inc: 9; exc: 49
+inc: 10; exc: 49
+inc: 11; exc: 49
+inc: 12; exc: 49
+inc: 13; exc: 49
+--------------------------------------------
+Iteration 63:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V2, V6), succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), pos(V7), pos(V8).
+}
+inc: 14; exc: 49
+--------------------------------------------
+Iteration 64:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V2, V6), succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- V2 = 1, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 50
+inc: 1; exc: 50
+inc: 2; exc: 50
+inc: 3; exc: 50
+inc: 4; exc: 50
+inc: 5; exc: 50
+inc: 6; exc: 50
+inc: 7; exc: 50
+inc: 8; exc: 50
+inc: 9; exc: 50
+inc: 10; exc: 50
+inc: 11; exc: 50
+inc: 12; exc: 50
+inc: 13; exc: 50
+inc: 14; exc: 50
+--------------------------------------------
+Iteration 65:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V2, V6), succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V1, V6), succ(V7, V1), succ(V8, V7), succ(V2, V8), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), pos(V7), pos(V8).
+}
+inc: 0; exc: 51
+inc: 1; exc: 51
+inc: 2; exc: 51
+inc: 3; exc: 51
+inc: 4; exc: 51
+inc: 5; exc: 51
+inc: 6; exc: 51
+inc: 7; exc: 51
+inc: 8; exc: 51
+inc: 9; exc: 51
+inc: 10; exc: 51
+inc: 11; exc: 51
+inc: 12; exc: 51
+inc: 13; exc: 51
+inc: 14; exc: 51
+--------------------------------------------
+Iteration 66:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V2, V6), succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- succ(V1, V6), V2 = 1, agent(V0), pos(V1), pos(V2), pos(V6).
+}
+inc: 0; exc: 52
+inc: 1; exc: 52
+inc: 2; exc: 52
+inc: 3; exc: 52
+inc: 4; exc: 52
+inc: 5; exc: 52
+inc: 6; exc: 52
+inc: 7; exc: 52
+inc: 8; exc: 52
+inc: 9; exc: 52
+inc: 10; exc: 52
+inc: 11; exc: 52
+inc: 12; exc: 52
+inc: 13; exc: 52
+inc: 14; exc: 52
+--------------------------------------------
+Iteration 67:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V2, V6), succ(V7, V2), succ(V8, V7), succ(V1, V8), agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), pos(V7), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 53
+inc: 1; exc: 53
+inc: 2; exc: 53
+inc: 3; exc: 53
+inc: 4; exc: 53
+inc: 5; exc: 53
+inc: 6; exc: 53
+inc: 7; exc: 53
+inc: 8; exc: 53
+inc: 9; exc: 53
+inc: 10; exc: 53
+inc: 11; exc: 53
+inc: 12; exc: 53
+inc: 13; exc: 53
+inc: 14; exc: 53
+--------------------------------------------
+Iteration 68:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V5), succ(V2, V6), V1 = 1, agent(V0), pos(V1), pos(V2), pos(V5), pos(V6).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+}
+inc: 0; exc: 54
+inc: 1; exc: 54
+inc: 2; exc: 54
+inc: 3; exc: 54
+inc: 4; exc: 54
+inc: 5; exc: 54
+inc: 6; exc: 54
+inc: 7; exc: 54
+inc: 8; exc: 54
+inc: 9; exc: 54
+inc: 10; exc: 54
+inc: 11; exc: 54
+inc: 12; exc: 54
+inc: 13; exc: 54
+inc: 14; exc: 54
+--------------------------------------------
+Iteration 69:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+}
+inc: 15; exc: 54
+--------------------------------------------
+Iteration 70:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V1, V9), V2 = 4, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V9).
+}
+inc: 0; exc: 55
+inc: 1; exc: 55
+inc: 2; exc: 55
+inc: 3; exc: 55
+inc: 4; exc: 55
+inc: 5; exc: 55
+inc: 6; exc: 55
+inc: 7; exc: 55
+inc: 8; exc: 55
+inc: 9; exc: 55
+inc: 10; exc: 55
+inc: 11; exc: 55
+inc: 12; exc: 55
+inc: 13; exc: 55
+inc: 14; exc: 55
+inc: 15; exc: 55
+--------------------------------------------
+Iteration 71:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 56
+inc: 1; exc: 56
+inc: 2; exc: 56
+inc: 3; exc: 56
+inc: 4; exc: 56
+inc: 5; exc: 56
+inc: 6; exc: 56
+inc: 7; exc: 56
+inc: 8; exc: 56
+inc: 9; exc: 56
+inc: 10; exc: 56
+inc: 11; exc: 56
+inc: 12; exc: 56
+inc: 13; exc: 56
+inc: 14; exc: 56
+inc: 15; exc: 56
+--------------------------------------------
+Iteration 72:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V2, V5), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), cell_value(V11).
+}
+inc: 16; exc: 56
+--------------------------------------------
+Iteration 73:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V2, V5), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V1, V5), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 57
+inc: 1; exc: 57
+inc: 2; exc: 57
+inc: 3; exc: 57
+inc: 4; exc: 57
+inc: 5; exc: 57
+inc: 6; exc: 57
+inc: 7; exc: 57
+inc: 8; exc: 57
+inc: 9; exc: 57
+inc: 10; exc: 57
+inc: 11; exc: 57
+inc: 12; exc: 57
+inc: 13; exc: 57
+inc: 14; exc: 57
+inc: 15; exc: 57
+inc: 16; exc: 57
+--------------------------------------------
+Iteration 74:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V1, V5), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 58
+inc: 1; exc: 58
+inc: 2; exc: 58
+inc: 3; exc: 58
+inc: 4; exc: 58
+inc: 5; exc: 58
+inc: 6; exc: 58
+inc: 7; exc: 58
+inc: 8; exc: 58
+inc: 9; exc: 58
+inc: 10; exc: 58
+inc: 11; exc: 58
+inc: 12; exc: 58
+inc: 13; exc: 58
+inc: 14; exc: 58
+inc: 15; exc: 58
+inc: 16; exc: 58
+--------------------------------------------
+Iteration 75:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 59
+inc: 1; exc: 59
+inc: 2; exc: 59
+inc: 3; exc: 59
+inc: 4; exc: 59
+inc: 5; exc: 59
+inc: 6; exc: 59
+inc: 7; exc: 59
+inc: 8; exc: 59
+inc: 9; exc: 59
+inc: 10; exc: 59
+inc: 11; exc: 59
+inc: 12; exc: 59
+inc: 13; exc: 59
+inc: 14; exc: 59
+inc: 15; exc: 59
+inc: 16; exc: 59
+--------------------------------------------
+Iteration 76:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V5, V4), succ(V2, V5), true_cell(V1, V9), true_cell(V4, V9), V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V4), pos(V5), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 60
+inc: 1; exc: 60
+inc: 2; exc: 60
+inc: 3; exc: 60
+inc: 4; exc: 60
+inc: 5; exc: 60
+inc: 6; exc: 60
+inc: 7; exc: 60
+inc: 8; exc: 60
+inc: 9; exc: 60
+inc: 10; exc: 60
+inc: 11; exc: 60
+inc: 12; exc: 60
+inc: 13; exc: 60
+inc: 14; exc: 60
+inc: 15; exc: 60
+inc: 16; exc: 60
+--------------------------------------------
+Iteration 77:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- true_step(V6), true_cell(V2, V11), true_cell(V6, V11), V1 = 8, V6 = 3, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 61
+inc: 1; exc: 61
+inc: 2; exc: 61
+inc: 3; exc: 61
+inc: 4; exc: 61
+inc: 5; exc: 61
+inc: 6; exc: 61
+inc: 7; exc: 61
+inc: 8; exc: 61
+inc: 9; exc: 61
+inc: 10; exc: 61
+inc: 11; exc: 61
+inc: 12; exc: 61
+inc: 13; exc: 61
+inc: 14; exc: 61
+inc: 15; exc: 61
+inc: 16; exc: 61
+--------------------------------------------
+Iteration 78:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- true_cell(V1, V9), true_cell(V4, V9), V2 = 4, V4 = 6, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V4), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 62
+inc: 1; exc: 62
+inc: 2; exc: 62
+inc: 3; exc: 62
+inc: 4; exc: 62
+inc: 5; exc: 62
+inc: 6; exc: 62
+inc: 7; exc: 62
+inc: 8; exc: 62
+inc: 9; exc: 62
+inc: 10; exc: 62
+inc: 11; exc: 62
+inc: 12; exc: 62
+inc: 13; exc: 62
+inc: 14; exc: 62
+inc: 15; exc: 62
+inc: 16; exc: 62
+--------------------------------------------
+Iteration 79:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), true_cell(V4, V9), V2 = 4, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 63
+inc: 1; exc: 63
+inc: 2; exc: 63
+inc: 3; exc: 63
+inc: 4; exc: 63
+inc: 5; exc: 63
+inc: 6; exc: 63
+inc: 7; exc: 63
+inc: 8; exc: 63
+inc: 9; exc: 63
+inc: 10; exc: 63
+inc: 11; exc: 63
+inc: 12; exc: 63
+inc: 13; exc: 63
+inc: 14; exc: 63
+inc: 15; exc: 63
+inc: 16; exc: 63
+--------------------------------------------
+Iteration 80:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- true_cell(V2, V11), true_cell(V6, V11), V1 = 8, V6 = 3, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 64
+inc: 1; exc: 64
+inc: 2; exc: 64
+inc: 3; exc: 64
+inc: 4; exc: 64
+inc: 5; exc: 64
+inc: 6; exc: 64
+inc: 7; exc: 64
+inc: 8; exc: 64
+inc: 9; exc: 64
+inc: 10; exc: 64
+inc: 11; exc: 64
+inc: 12; exc: 64
+inc: 13; exc: 64
+inc: 14; exc: 64
+inc: 15; exc: 64
+inc: 16; exc: 64
+--------------------------------------------
+Iteration 81:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 17; exc: 64
+--------------------------------------------
+Iteration 82:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V1, V7), true_step(V7), agent(V0), pos(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 65
+inc: 1; exc: 65
+inc: 2; exc: 65
+inc: 3; exc: 65
+inc: 4; exc: 65
+inc: 5; exc: 65
+inc: 6; exc: 65
+inc: 7; exc: 65
+inc: 8; exc: 65
+inc: 9; exc: 65
+inc: 10; exc: 65
+inc: 11; exc: 65
+inc: 12; exc: 65
+inc: 13; exc: 65
+inc: 14; exc: 65
+inc: 15; exc: 65
+inc: 16; exc: 65
+inc: 17; exc: 65
+--------------------------------------------
+Iteration 83:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V3, V4), succ(V5, V3), succ(V2, V5), V1 = 2, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V5).
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+}
+inc: 0; exc: 66
+inc: 1; exc: 66
+inc: 2; exc: 66
+inc: 3; exc: 66
+inc: 4; exc: 66
+inc: 5; exc: 66
+inc: 6; exc: 66
+inc: 7; exc: 66
+inc: 8; exc: 66
+inc: 9; exc: 66
+inc: 10; exc: 66
+inc: 11; exc: 66
+inc: 12; exc: 66
+inc: 13; exc: 66
+inc: 14; exc: 66
+inc: 15; exc: 66
+inc: 16; exc: 66
+inc: 17; exc: 66
+--------------------------------------------
+Iteration 84:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V2, V6), succ(V1, V7), true_step(V7), agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+}
+inc: 0; exc: 67
+inc: 1; exc: 67
+inc: 2; exc: 67
+inc: 3; exc: 67
+inc: 4; exc: 67
+inc: 5; exc: 67
+inc: 6; exc: 67
+inc: 7; exc: 67
+inc: 8; exc: 67
+inc: 9; exc: 67
+inc: 10; exc: 67
+inc: 11; exc: 67
+inc: 12; exc: 67
+inc: 13; exc: 67
+inc: 14; exc: 67
+inc: 15; exc: 67
+inc: 16; exc: 67
+inc: 17; exc: 67
+--------------------------------------------
+Iteration 85:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V1, V7), true_step(V7), agent(V0), pos(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 68
+inc: 1; exc: 68
+inc: 2; exc: 68
+inc: 3; exc: 68
+inc: 4; exc: 68
+inc: 5; exc: 68
+inc: 6; exc: 68
+inc: 7; exc: 68
+inc: 8; exc: 68
+inc: 9; exc: 68
+inc: 10; exc: 68
+inc: 11; exc: 68
+inc: 12; exc: 68
+inc: 13; exc: 68
+inc: 14; exc: 68
+inc: 15; exc: 68
+inc: 16; exc: 68
+inc: 17; exc: 68
+--------------------------------------------
+Iteration 86:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V7, V2), true_step(V7), V1 = 2, agent(V0), pos(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 69
+inc: 1; exc: 69
+inc: 2; exc: 69
+inc: 3; exc: 69
+inc: 4; exc: 69
+inc: 5; exc: 69
+inc: 6; exc: 69
+inc: 7; exc: 69
+inc: 8; exc: 69
+inc: 9; exc: 69
+inc: 10; exc: 69
+inc: 11; exc: 69
+inc: 12; exc: 69
+inc: 13; exc: 69
+inc: 14; exc: 69
+inc: 15; exc: 69
+inc: 16; exc: 69
+inc: 17; exc: 69
+--------------------------------------------
+Iteration 87:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V1, V7), succ(V8, V1), true_step(V7), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+}
+inc: 0; exc: 70
+inc: 1; exc: 70
+inc: 2; exc: 70
+inc: 3; exc: 70
+inc: 4; exc: 70
+inc: 5; exc: 70
+inc: 6; exc: 70
+inc: 7; exc: 70
+inc: 8; exc: 70
+inc: 9; exc: 70
+inc: 10; exc: 70
+inc: 11; exc: 70
+inc: 12; exc: 70
+inc: 13; exc: 70
+inc: 14; exc: 70
+inc: 15; exc: 70
+inc: 16; exc: 70
+inc: 17; exc: 70
+--------------------------------------------
+Iteration 88:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_cell(V2, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), cell_value(V11).
+}
+inc: 0; exc: 71
+inc: 1; exc: 71
+inc: 2; exc: 71
+inc: 3; exc: 71
+inc: 4; exc: 71
+inc: 5; exc: 71
+inc: 6; exc: 71
+inc: 7; exc: 71
+inc: 8; exc: 71
+inc: 9; exc: 71
+inc: 10; exc: 71
+inc: 11; exc: 71
+inc: 12; exc: 71
+inc: 13; exc: 71
+inc: 14; exc: 71
+inc: 15; exc: 71
+inc: 16; exc: 71
+inc: 17; exc: 71
+--------------------------------------------
+Iteration 89:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V7, V2), succ(V1, V7), succ(V8, V1), true_step(V7), agent(V0), pos(V1), pos(V2), pos(V7), pos(V8).
+}
+inc: 0; exc: 72
+inc: 1; exc: 72
+inc: 2; exc: 72
+inc: 3; exc: 72
+inc: 4; exc: 72
+inc: 5; exc: 72
+inc: 6; exc: 72
+inc: 7; exc: 72
+inc: 8; exc: 72
+inc: 9; exc: 72
+inc: 10; exc: 72
+inc: 11; exc: 72
+inc: 12; exc: 72
+inc: 13; exc: 72
+inc: 14; exc: 72
+inc: 15; exc: 72
+inc: 16; exc: 72
+inc: 17; exc: 72
+--------------------------------------------
+Iteration 90:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V1, V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 0; exc: 73
+inc: 1; exc: 73
+inc: 2; exc: 73
+inc: 3; exc: 73
+inc: 4; exc: 73
+inc: 5; exc: 73
+inc: 6; exc: 73
+inc: 7; exc: 73
+inc: 8; exc: 73
+inc: 9; exc: 73
+inc: 10; exc: 73
+inc: 11; exc: 73
+inc: 12; exc: 73
+inc: 13; exc: 73
+inc: 14; exc: 73
+inc: 15; exc: 73
+inc: 16; exc: 73
+inc: 17; exc: 73
+--------------------------------------------
+Iteration 91:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V6, V2), succ(V7, V6), true_step(V6), V1 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 0; exc: 74
+inc: 1; exc: 74
+inc: 2; exc: 74
+inc: 3; exc: 74
+inc: 4; exc: 74
+inc: 5; exc: 74
+inc: 6; exc: 74
+inc: 7; exc: 74
+inc: 8; exc: 74
+inc: 9; exc: 74
+inc: 10; exc: 74
+inc: 11; exc: 74
+inc: 12; exc: 74
+inc: 13; exc: 74
+inc: 14; exc: 74
+inc: 15; exc: 74
+inc: 16; exc: 74
+inc: 17; exc: 74
+--------------------------------------------
+Iteration 92:
+solving
+H = {
+legal_jump(V0, V1, V2) :- succ(V2, V5), true_cell(V5, V11), true_cell(V2, V11), V1 = 6, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V5), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 0; exc: 75
+inc: 1; exc: 75
+inc: 2; exc: 75
+inc: 3; exc: 75
+inc: 4; exc: 75
+inc: 5; exc: 75
+inc: 6; exc: 75
+inc: 7; exc: 75
+inc: 8; exc: 75
+inc: 9; exc: 75
+inc: 10; exc: 75
+inc: 11; exc: 75
+inc: 12; exc: 75
+inc: 13; exc: 75
+inc: 14; exc: 75
+inc: 15; exc: 75
+inc: 16; exc: 75
+inc: 17; exc: 75
+--------------------------------------------
+Iteration 93:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_cell(V8, V9), V1 = 6, V2 = 4, V8 = 1, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V8), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 0; exc: 76
+inc: 1; exc: 76
+inc: 2; exc: 76
+inc: 3; exc: 76
+inc: 4; exc: 76
+inc: 5; exc: 76
+inc: 6; exc: 76
+inc: 7; exc: 76
+inc: 8; exc: 76
+inc: 9; exc: 76
+inc: 10; exc: 76
+inc: 11; exc: 76
+inc: 12; exc: 76
+inc: 13; exc: 76
+inc: 14; exc: 76
+inc: 15; exc: 76
+inc: 16; exc: 76
+inc: 17; exc: 76
+--------------------------------------------
+Iteration 94:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_cell(V8, V9), V1 = 6, V2 = 4, V8 = 1, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V8), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_cell(V2, V9), true_cell(V4, V9), V1 = 4, V4 = 6, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V4), cell_value(V9).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 0; exc: 77
+inc: 1; exc: 77
+inc: 2; exc: 77
+inc: 3; exc: 77
+inc: 4; exc: 77
+inc: 5; exc: 77
+inc: 6; exc: 77
+inc: 7; exc: 77
+inc: 8; exc: 77
+inc: 9; exc: 77
+inc: 10; exc: 77
+inc: 11; exc: 77
+inc: 12; exc: 77
+inc: 13; exc: 77
+inc: 14; exc: 77
+inc: 15; exc: 77
+inc: 16; exc: 77
+inc: 17; exc: 77
+--------------------------------------------
+Iteration 95:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_cell(V8, V9), V1 = 6, V2 = 4, V8 = 1, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V8), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), true_cell(V4, V9), V1 = 4, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), cell_value(V9).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 0; exc: 78
+inc: 1; exc: 78
+inc: 2; exc: 78
+inc: 3; exc: 78
+inc: 4; exc: 78
+inc: 5; exc: 78
+inc: 6; exc: 78
+inc: 7; exc: 78
+inc: 8; exc: 78
+inc: 9; exc: 78
+inc: 10; exc: 78
+inc: 11; exc: 78
+inc: 12; exc: 78
+inc: 13; exc: 78
+inc: 14; exc: 78
+inc: 15; exc: 78
+inc: 16; exc: 78
+inc: 17; exc: 78
+--------------------------------------------
+Iteration 96:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_cell(V8, V9), V1 = 6, V2 = 4, V8 = 1, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V8), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_cell(V1, V11), true_cell(V6, V11), V2 = 8, V6 = 3, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 0; exc: 79
+inc: 1; exc: 79
+inc: 2; exc: 79
+inc: 3; exc: 79
+inc: 4; exc: 79
+inc: 5; exc: 79
+inc: 6; exc: 79
+inc: 7; exc: 79
+inc: 8; exc: 79
+inc: 9; exc: 79
+inc: 10; exc: 79
+inc: 11; exc: 79
+inc: 12; exc: 79
+inc: 13; exc: 79
+inc: 14; exc: 79
+inc: 15; exc: 79
+inc: 16; exc: 79
+inc: 17; exc: 79
+--------------------------------------------
+Iteration 97:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_cell(V8, V9), V1 = 6, V2 = 4, V8 = 1, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V8), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V2 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+}
+inc: 18; exc: 79
+--------------------------------------------
+Iteration 98:
+solving
+H = {
+legal_jump(V0, V1, V2) :- true_cell(V8, V9), V1 = 6, V2 = 4, V8 = 1, V9 = zerocoins, agent(V0), pos(V1), pos(V2), pos(V8), cell_value(V9).
+legal_jump(V0, V1, V2) :- succ(V3, V1), succ(V4, V3), succ(V2, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V6, V1), succ(V7, V6), true_step(V6), V2 = 6, agent(V0), pos(V1), pos(V2), pos(V6), pos(V7).
+legal_jump(V0, V1, V2) :- succ(V3, V2), succ(V4, V3), succ(V1, V4), not true_step(V6), V6 = 3, agent(V0), pos(V1), pos(V2), pos(V3), pos(V4), pos(V6).
+legal_jump(V0, V1, V2) :- succ(V1, V8), V2 = 4, V8 = 2, agent(V0), pos(V1), pos(V2), pos(V8).
+legal_jump(V0, V1, V2) :- V1 = 4, V2 = 1, agent(V0), pos(V1), pos(V2).
+legal_jump(V0, V1, V2) :- succ(V6, V2), true_step(V6), true_cell(V6, V11), V1 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V6, V1), true_step(V6), true_cell(V6, V11), V2 = 8, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V6), cell_value(V11).
+legal_jump(V0, V1, V2) :- true_step(V7), true_cell(V7, V11), V1 = 2, V11 = twocoins, agent(V0), pos(V1), pos(V2), pos(V7), cell_value(V11).
+legal_jump(V0, V1, V2) :- succ(V2, V7), true_step(V7), agent(V0), pos(V1), pos(V2), pos(V7).
+}
+inc: 0; exc: 80
+inc: 1; exc: 80
+inc: 2; exc: 80
+inc: 3; exc: 80
+inc: 4; exc: 80
+inc: 5; exc: 80
+inc: 6; exc: 80
+inc: 7; exc: 80
+inc: 8; exc: 80
+inc: 9; exc: 80
+inc: 10; exc: 80
+inc: 11; exc: 80
+inc: 12; exc: 80
+inc: 13; exc: 80
+inc: 14; exc: 80
+inc: 15; exc: 80
+inc: 16; exc: 80
+inc: 17; exc: 80
+inc: 18; exc: 80
+--------------------------------------------
+Iteration 99:
+solving

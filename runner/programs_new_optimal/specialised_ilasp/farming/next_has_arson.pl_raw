@@ -1,0 +1,187 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_has_arson(V0) :- agent(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_has_arson(V0) :- true_ripe(V0, V71, V49), agent(V0), pos(V49), int(V49), pos(V71), int(V71).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+}
+inc: 1; exc: 2
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_has_arson(V0) :- succ(V72, V70), true_score(V87, V70), agent(V0), int(V70), int(V72), agent(V87).
+}
+inc: 0; exc: 3
+inc: 1; exc: 3
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_has_arson(V0) :- true_score(V87, V70), V70 = 20, agent(V0), int(V70), agent(V87).
+}
+inc: 0; exc: 4
+inc: 1; exc: 4
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+next_has_arson(V0) :- true_score(V0, V70), V70 = 20, agent(V0), int(V70).
+}
+inc: 0; exc: 5
+inc: 1; exc: 5
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+next_has_arson(V0) :- succ(V75, V74), true_step(V74), does_plow_row(V0, V81), agent(V0), int(V74), int(V75), pos(V81), int(V81).
+}
+inc: 0; exc: 6
+inc: 1; exc: 6
+--------------------------------------------
+Iteration 8:
+solving
+H = {
+next_has_arson(V0) :- true_score(V87, V70), does_plow_row(V0, V81), V70 = 20, agent(V0), int(V70), pos(V81), int(V81), agent(V87).
+}
+inc: 2; exc: 6
+--------------------------------------------
+Iteration 9:
+solving
+H = {
+next_has_arson(V0) :- true_score(V87, V70), true_control(V87), V70 = 20, agent(V0), int(V70), agent(V87).
+}
+inc: 0; exc: 7
+inc: 1; exc: 7
+inc: 2; exc: 7
+--------------------------------------------
+Iteration 10:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- true_year_second_player(V0), V0 = blue, agent(V0).
+}
+inc: 0; exc: 8
+inc: 1; exc: 8
+inc: 2; exc: 8
+--------------------------------------------
+Iteration 11:
+solving
+H = {
+next_has_arson(V0) :- true_score(V87, V70), does_plow_row(V0, V81), V70 = 20, agent(V0), int(V70), pos(V81), int(V81), agent(V87).
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+}
+inc: 3; exc: 8
+--------------------------------------------
+Iteration 12:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- true_year_second_player(V0), true_has_arson(V87), agent(V0), agent(V87).
+}
+inc: 0; exc: 9
+inc: 1; exc: 9
+inc: 2; exc: 9
+inc: 3; exc: 9
+--------------------------------------------
+Iteration 13:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- succ(V57, V56), true_step(V56), true_season(V83), V0 = blue, V83 = winter, agent(V0), int(V56), int(V57), season_type(V83).
+}
+inc: 0; exc: 10
+inc: 1; exc: 10
+inc: 2; exc: 10
+inc: 3; exc: 10
+--------------------------------------------
+Iteration 14:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- succ(V50, V48), true_season(V83), true_score(V87, V48), V0 = blue, V83 = winter, agent(V0), int(V48), int(V50), season_type(V83), agent(V87).
+}
+inc: 0; exc: 11
+inc: 1; exc: 11
+inc: 2; exc: 11
+inc: 3; exc: 11
+--------------------------------------------
+Iteration 15:
+solving
+H = {
+next_has_arson(V0) :- succ(V76, V75), true_step(V75), does_plow_row(V87, V60), V0 = blue, agent(V0), pos(V60), int(V60), int(V75), int(V76), agent(V87).
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+}
+inc: 0; exc: 12
+inc: 1; exc: 12
+inc: 2; exc: 12
+inc: 3; exc: 12
+--------------------------------------------
+Iteration 16:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- succ(V50, V48), true_score(V87, V48), does_plow_row(V0, V81), not true_step(V50), agent(V0), int(V48), int(V50), pos(V81), int(V81), agent(V87).
+}
+inc: 0; exc: 13
+inc: 1; exc: 13
+inc: 2; exc: 13
+inc: 3; exc: 13
+--------------------------------------------
+Iteration 17:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- true_has_arson(V87), true_control(V0), agent(V0), agent(V87).
+}
+inc: 0; exc: 14
+inc: 1; exc: 14
+inc: 2; exc: 14
+inc: 3; exc: 14
+--------------------------------------------
+Iteration 18:
+solving
+H = {
+next_has_arson(V0) :- true_score(V87, V70), does_plow_row(V0, V81), V70 = 20, agent(V0), int(V70), pos(V81), int(V81), agent(V87).
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- true_step(V56), V56 = 33, agent(V0), int(V56).
+}
+inc: 0; exc: 15
+inc: 1; exc: 15
+inc: 2; exc: 15
+inc: 3; exc: 15
+--------------------------------------------
+Iteration 19:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- succ(V57, V56), true_year_first_player(V87), true_step(V56), does_plow_row(V0, V81), V87 = red, agent(V0), int(V56), int(V57), pos(V81), int(V81), agent(V87).
+}
+inc: 4; exc: 15
+--------------------------------------------
+Iteration 20:
+solving
+H = {
+next_has_arson(V0) :- get_arson(V75), true_step(V75), agent(V0), int(V75).
+next_has_arson(V0) :- true_has_arson(V0), true_control(V0), agent(V0).
+}
+inc: 5; exc: 15

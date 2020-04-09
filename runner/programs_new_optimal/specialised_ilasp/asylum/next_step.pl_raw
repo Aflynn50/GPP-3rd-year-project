@@ -1,0 +1,41 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+next_step(V0) :- rank_type(V0), int(V0).
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+next_step(V0) :- vertical(V1, V0, V1, V3), rank_type(V0), int(V0), file_type(V1), rank_type(V3), int(V3).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+next_step(V0) :- skiprank(V0, V6), rank_type(V0), int(V0), rank_type(V6), int(V6).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+next_step(V0) :- scoremap(V0, V4), rank_type(V0), int(V0), rank_type(V4), int(V4).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+next_step(V0) :- does_move(V101, V14, V0, V14, V7), rank_type(V0), int(V0), rank_type(V7), int(V7), file_type(V14), agent(V101).
+}
+inc: 1; exc: 4
