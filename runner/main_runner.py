@@ -10,8 +10,8 @@ import os
 import runner
 
 tourney_names = ["optimaltraces_iggp","randomtraces_iggp"]
-git_root = "/home/alastairflynn50_gmail_com/GPP-3rd-year-project/"
-java = "/home/alastairflynn50_gmail_com/jdk1.8.0_202/bin/java"
+git_root = "/home/aflynn50/GPP-3rd-year-project/"
+java = "/home/aflynn50/jdk1.8.0_202/bin/java"
 #git_root = "/home/aflynn50/Documents/Uni/Third-year-project/GPP-3rd-year-project/"
 #java = "/home/aflynn50/Downloads/jdk-8u202-linux-x64/jdk1.8.0_202/bin/java"
 optimal = True
