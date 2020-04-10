@@ -243,59 +243,7 @@ h(B,H) :-
 
 
 \input{06-results.tex}
-\section{Noughts and crosses}
-\chapter{Experiments}\label{sec:experiments}
-\section{Optimal Play vs Random with fixed sample size}
-\section{Mixed datasets (50/50 random and optimal)}
-\subsection{Results}
-\begin{center}
-\begin{tabular}{| l | l | l | l | l |}
-\hline
-Training Data & Testing Data & Predicate & Metagol & Aleph \\ \hline
-\end{tabular}
-\end{center}
-\subsubsection{Random training and testing}
-\subsubsection{Balanced Accuracy}
-\begin{tikzpicture}
-\begin{axis}[
-	%xtick = data,
-	ylabel=Year,
-	enlargelimits=0.05,
-	legend style={at={(0.5,-0.1)},
-	anchor=north,
-	legend columns=-1},
-	ybar interval=0.5,
-	symbolic x coords={specialised ilasp,metagol,aleph, poog}
-]
-\addplot 
-	coordinates {(specialised ilasp,74) (metagol,60) (aleph,89) (poog, 80)};
-\addplot 
-	coordinates {(specialised ilasp,78) (metagol,60) (aleph,89) (poog,80)};
-\legend{Random,Optimal}
-\end{axis}
-\end{tikzpicture}
 
-\subsubsection{Number of perfect games}
-\begin{tikzpicture}
-\begin{axis}[
-	%xtick = data,
-	ylabel=Year,
-	enlargelimits=0.05,
-	legend style={at={(0.5,-0.1)},
-	anchor=north,
-	legend columns=-1},
-	ybar interval=0.5,
-	symbolic x coords={specialised ilasp,metagol,aleph, poog}
-]
-\addplot 
-	coordinates {(specialised ilasp,36) (metagol,29) (aleph,42) (poog, 40)};
-\addplot 
-	coordinates {(specialised ilasp,42) (metagol,32) (aleph,43) (poog,40)};
-\legend{Random,Optimal}
-\end{axis}
-\end{tikzpicture}
-\section{Optimal Play vs Random with varying sample size}
-\chapter{Results}
 \bibliography{project}
 \bibliographystyle{plain}
 \end{document}
