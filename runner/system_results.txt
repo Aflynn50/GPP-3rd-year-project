@@ -79,6 +79,25 @@ Random on Random
 aleph 66 1
 specialised_ilasp 71 7
 
+Optimal on Optimal
+aleph 72 4
+specialised_ilasp 72 10
+
+Optimal on Random
+aleph 65 0
+specialised_ilasp 71 5
+
+Random on Optimal
+aleph 65 0
+specialised_ilasp 72 8
+
+Mixed on random with 16 traces
+specialised_ilasp 85 76
+aleph 67 0
+metagol 51 0
+
+
+
 
 
 

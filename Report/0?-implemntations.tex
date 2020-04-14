@@ -1,0 +1,102 @@
+\chapter{Implementations}
+\section{Eight Puzzle}
+To write an optimal player for Eight Puzzle I decide to use an approach based on best first search.
+\subsection{Best first search}
+Best first search generates a graph of the game states, expanding the most promising nodes first according to a heuristic for how close to the goal state the current state is. When the goal node is reached the search gives the path from the root node to it, i.e. the list of moves made to get to the goal.
+Since Best first search is a well know and often used algorithm in Prolog we decided to use a standard implmentation from Bratko\cite{Bratko}. This decision was made to avoid needless mistakes and inefficiency that would have come with a new independent implementation of this algorithm.
+
+Best First search is a generic algorithm that needs certain problem specific predicates to be implemented for it to function. These predicates are:
+\begin{itemize}
+\item \textbf{The successor predicate - }\mintinline{Prolog}{s(Node,Node1,Cost)}: This predicate is true if there is an arc costing \mintinline{Prolog}{Cost} between state \mintinline{Prolog}{Node} and state \mintinline{Prolog}{Node1}. In Eight Puzzle we set the cost of all arcs to be 1.
+\item \textbf{The Goal predicate - }\mintinline{Prolog}{goal(Node)}: This is true if the state \mintinline{Prolog}{Node} is a goal state.
+\item \textbf{The heuristic - }\mintinline{Prolog}{h(Node,H)}: This is a relation that relates a state \mintinline{Prolog}{Node} to a value \mintinline{Prolog}{H} that is a heuristic for how close to the state is to the goal state.
+\end{itemize}
+To represent the board I decided to use a 9 element list with \mintinline{Prolog}{b} representing the blank tile INSERT IMAGE OF GOAL BOARD \mint{Prolog}{[1,2,3,4,5,6,7,8,b]}.
+I defined some useful helper predicates to start with. The Manhatten distance between two tiles between two tiles is the difference in X coordinates plus the difference in Y coordinates, I wrote a predicate to calculate this relation:
+\begin{minted}{Prolog}
+mandist(X1-Y1,X2-Y2,D) :-
+    diff(X1,X2,Dx),
+    diff(Y1,Y2,Dy),
+    D is Dx+Dy.
+\end{minted}
+I also wrote predicates to calculate the coordinates of a tile from its position in the list, one that relates two tiles if they are next to each other on the grid and one that gives the position in the list of the blank tile.
+\subsubsection{Successor}
+To define the successor predicate I decided the best way to do it was to relate two boards by swapping the blank tile with its neighbours. I first wrote a function swap:
+\begin{minted}{Prolog}
+swap(I,J,L1,L3) :-
+   same_length(L1,L3),
+   append(BeforeI,[AtI|PastI],L1),
+   append(BeforeI,[AtJ|PastI],L2),
+   append(BeforeJ,[AtJ|PastJ],L2),
+   append(BeforeJ,[AtI|PastJ],L3),
+   length(BeforeI,I),
+   length(BeforeJ,J).
+\end{minted}
+This function only uses built in predicates that all do the obvious thing. In the first two appends this rule takes L1 and replaces the element I with the element J to make list L2 then in the second two takes list L2 and replaces J with I to make list L3. The variable AtI and AtJ will be instantiated with the elements at index I and J because of the restriction on the length of the sublist before them at the end of the rule.
+The successor function is defined as:
+\begin{minted}{Prolog}
+s(B1,B2,1) :-
+    member(N,B1),
+    nth0(NI,B1,N),
+    blank_pos(B1,BI),
+    neighbor(BI,NI),
+    swap(BI,NI,B1,B2).
+\end{minted}
+Since all arc (move) costs in my version of Eight Puzzle are 1 the predicate is only true when Cost is 1. \mintinline{Prolog}{member(N,B1)} is true when N is a member of B1. Here it restricts N to values on the board. \mintinline{Prolog}{nth0(NI,B1,N)} sets NI to the index of the value N in the list B1, i.e. it tells us the position on the board of the value we are considering. \mintinline{Prolog}{blank_pos(B1,BI)} sets BI to the position on the board of the blank. \mintinline{Prolog}{neighbor(BI,NI)} is true if the positions BI and NI are next to each other on the board. If all of these are true we then instantiate B2 with the new board by swapping the blank and its neighbour.
+\subsubsection{Goal}
+Defining the goal was actually very simple, I added the predicate: \mint{Prolog}{goal([1,2,3,4,5,6,7,8,b])}
+\noindent This is all that is needed to define the goal state.
+\subsubsection{Heuristic}
+A good heuristic for Eight Puzzle needs to capture an estimate of the distance of the current state from the goal. I initially decided to use the sum of the Manhattan distances of each tile from its position in the goal state. To calculate this I wrote a predicate \mintinline{Prolog}{totdist(L,Goal,N)} which relates a board L, a goal Goal and the sum of the Manhattan distances N.
+\begin{minted}{Prolog}
+totdist(L,Goal,N) :-
+    totdist1(L,Goal,N,0).
+
+totdist1([],_Goal,0,_Pos).
+
+totdist1([b|T],Goal,N,Pos) :-
+    !,Pos1 is Pos + 1,
+    totdist1(T,Goal,N,Pos1).
+
+totdist1([V|T],Goal,N,Pos) :-
+    nth0(I,Goal,V),
+    coord(Pos,X1-Y1),
+    coord(I,X2-Y2),
+    mandist(X1-Y1,X2-Y2,D),
+    Pos1 is Pos + 1,
+    totdist1(T,Goal,N1,Pos1),
+    N is N1 + D.
+\end{minted}
+My implementation of this predicate iterates through the list working out the Manhattan distance for each tile. When iterating through the list the way to keep track of how far through it you are (the position on the board you are currently looking at) is use a separate variable as a counter. Here I used Pos.
+After testing my program with this heuristic I found that it took about 6 seconds to come up with the first solution. I decided that I could probably do better if I had another heuristic that I combined with the Manhattan distance. I decided to use the number of tiles that were out of the row and/or column they were in. I wrote a predicate \mintinline{Prolog}{outofpos(B,Goal,N,Pos)} that relates the board and the goal to the number of tiles out column plus the number of tiles out of row.
+\begin{minted}{Prolog}
+outofpos([],_Goal,0,_Pos).
+
+outofpos([b|T],Goal,N,Pos) :- !,
+    Pos1 is Pos + 1,
+    outofpos(T,Goal,N,Pos1).
+
+outofpos([V|T],Goal,N,Pos) :-
+    coord(Pos,X1-Y1),
+    nth0(PosG,Goal,V),
+    coord(PosG,X2-Y2),
+    Pos1 is Pos + 1,
+    outofpos(T,Goal,N1,Pos1),
+    (   xandy(X1 = X2, Y1 = Y2) ->
+        N is N1
+    ;   xory(X1 = X2, Y1 = Y2) ->
+        N is N1 + 1
+    ;   N is N1 + 2
+    ).
+
+xandy(X,Y) :- X,Y.
+xory(X,Y) :- X;Y.
+\end{minted}
+This predicate iterates through the board and for each tile looks at the place it is on the goal board and checks which coordinates match. If both match then it is the right column and row so the total remains the same, otherwise it is incremented. I eventually found that the heuristic the worked the fastest was Manhattan distance total + 2 * number of tiles out of position. I wrote this predicate for the heuristic:
+\begin{minted}{Prolog}
+h(B,H) :-
+    goal(Goal),
+    totdist(B,Goal,D),
+    outofpos(B,Goal,N,0),
+    H is D + (2*N).
+\end{minted}

@@ -121,9 +121,9 @@ def terminal(output_file,states):
 
 def train_or_test_file(train_or_test,file):
     if (train_or_test == 'train'):
-        return os.path.getmtime(file) < 1585400000
+        return int(file[-18:-5]) < 1585400000000
     if (train_or_test == 'test'):
-        return os.path.getmtime(file) > 1585400000
+        return int(file[-18:-5]) > 1585400000000
 
 def convert(matches_dirs, runner_dir, train_or_test=""): # both should have ending slash
     train_dir = runner_dir + "data/train/"
