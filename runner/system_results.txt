@@ -63,7 +63,7 @@ specialised_ilasp 72 4
 aleph 54 0
 metagol 51 0
 
-WITH PROPER AMOUTN FO TRACES:
+WITH PROPER AMOUTN OF TRACES:
 
 Mixed on Optimal
 specialised_ilasp 73 8
@@ -95,6 +95,21 @@ Mixed on random with 16 traces
 specialised_ilasp 85 76
 aleph 67 0
 metagol 51 0
+
+Mixed on optimal with 16 traces
+specialised_ilasp 85 76
+aleph 65 0
+metagol 51 0 prolly 
+
+Mixed on random with 24 traces
+specialised_ilasp 85 76
+aleph 67 0
+metagol 51 0 prolly 
+
+Mixed on random with 24 traces
+specialised_ilasp 85 76
+aleph 65 0
+metagol 51 0 prolly
 
 
 
