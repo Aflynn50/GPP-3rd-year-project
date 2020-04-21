@@ -1,0 +1,5 @@
+12 Apr 10:50:16
+game    predicate    metagol    aleph    specialised_ilasp14 Apr 04:46:32
+game    predicate    metagol15 Apr 14:06:20
+game    predicate    aleph    specialised_ilasp18 Apr 01:43:30
+game    predicate    aleph    specialised_ilasp

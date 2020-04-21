@@ -187,8 +187,8 @@ def print_nice(latex=False):
         print(tabulate(table,headers=headers))
 
 
-
-systems = [aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
+systems = [metagol.Metagol()]
+#systems = [aleph.Aleph(),specialised_ilasp.SPECIALISED_ILASP()]
 
 def parse_and_train():
     list(map(parse_train_only,systems))
