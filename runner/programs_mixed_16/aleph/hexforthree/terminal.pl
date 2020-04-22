@@ -1,0 +1,15 @@
+terminal(15).
+terminal(52).
+terminal(75).
+terminal(93).
+terminal(110).
+terminal(134).
+terminal(154).
+terminal(167).
+terminal(182).
+terminal(194).
+terminal(215).
+terminal(228).
+terminal(244).
+terminal(268).
+terminal(281).

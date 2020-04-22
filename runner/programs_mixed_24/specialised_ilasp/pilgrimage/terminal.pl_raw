@@ -1,0 +1,55 @@
+%parsed
+Iteration 0:
+solving
+H = {
+}
+inc: 0; exc: 0
+--------------------------------------------
+Iteration 1:
+solving
+H = {
+terminal.
+}
+inc: 0; exc: 1
+--------------------------------------------
+Iteration 2:
+solving
+H = {
+terminal :- true_pilgrim(V22, V20, V7), pos(V7), int(V7), pos(V20), int(V20), agent(V22).
+}
+inc: 0; exc: 2
+--------------------------------------------
+Iteration 3:
+solving
+H = {
+terminal :- succ(V10, V7), true_pilgrim(V22, V20, V7), pos(V7), int(V7), pos(V10), int(V10), pos(V20), int(V20), agent(V22).
+}
+inc: 0; exc: 3
+--------------------------------------------
+Iteration 4:
+solving
+H = {
+terminal :- succ(V21, V20), true_moves(V22, V21), pos(V20), int(V20), int(V21), agent(V22).
+}
+inc: 0; exc: 4
+--------------------------------------------
+Iteration 5:
+solving
+H = {
+terminal :- height_succ(V21, V20), true_moves(V22, V21), pos(V20), int(V20), int(V21), agent(V22).
+}
+inc: 0; exc: 5
+--------------------------------------------
+Iteration 6:
+solving
+H = {
+terminal :- true_moves(V22, V21), V21 = 0, int(V21), agent(V22).
+}
+inc: 0; exc: 6
+--------------------------------------------
+Iteration 7:
+solving
+H = {
+terminal :- height_succ(V21, V20), true_pilgrim(V22, V20, V7), true_moves(V22, V21), pos(V7), int(V7), pos(V20), int(V20), int(V21), agent(V22).
+}
+Finished

@@ -1,0 +1,14 @@
+legal_pawnmove(1,white,5,1,5,2).
+legal_pawnmove(2,white,5,1,5,2).
+legal_pawnmove(3,black,3,7,3,6).
+legal_pawnmove(4,white,5,2,5,3).
+legal_pawnmove(4,white,5,2,6,2).
+legal_pawnmove(4,white,5,2,4,2).
+legal_pawnmove(5,black,3,7,3,6).
+legal_pawnmove(6,white,5,3,5,2).
+legal_pawnmove(6,white,5,3,6,3).
+legal_pawnmove(6,white,5,3,5,4).
+legal_pawnmove(7,black,3,7,3,6).
+legal_pawnmove(8,white,5,3,5,2).
+legal_pawnmove(8,white,5,3,6,3).
+legal_pawnmove(8,white,5,3,5,4).

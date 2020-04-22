@@ -1,0 +1,32 @@
+terminal(A) :-
+   my_true_gameOver(A).
+terminal(99).
+terminal(143).
+terminal(200).
+terminal(209).
+terminal(218).
+terminal(227).
+terminal(284).
+terminal(341).
+terminal(353).
+terminal(410).
+terminal(439).
+terminal(475).
+terminal(532).
+terminal(589).
+terminal(598).
+terminal(637).
+terminal(646).
+terminal(655).
+terminal(664).
+terminal(673).
+terminal(682).
+terminal(692).
+terminal(701).
+terminal(710).
+terminal(719).
+terminal(729).
+terminal(738).
+terminal(747).
+terminal(756).
+terminal(765).
