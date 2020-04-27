@@ -13,8 +13,11 @@
 \usepackage[lined,boxruled]{algorithm2e}\usepackage{color}
 \usepackage[english]{babel}
 
+% for strikeout
+\usepackage[normalem]{ulem}
 \newcommand{\ac}[1]{\textcolor{red}{AC: #1}}
 \newcommand{\af}[1]{\textcolor{blue}{AF: #1}}
+\newcommand\aco[2]{{\color{red}AC: \sout{#1} #2}} % second argument is documentation for why the strikeout
 
 \pgfplotsset{width=10cm,compat=1.9}
 \usemintedstyle{friendly}
@@ -30,7 +33,7 @@
 \input{01-intro}
 \input{02-related}
 \input{03-logical-setting}
-\input{04-systems}
+\input{04-traces}
 \input{05-methodology}
 \input{06-results}
 \input{07-conclusions}
