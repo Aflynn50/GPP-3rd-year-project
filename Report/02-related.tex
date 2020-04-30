@@ -9,9 +9,9 @@ The agents play games selected at random. They are send a listing of the rules d
 In 2005 an annual International General Game Playing Competition (IGGPC) was set up which still runs to this day\cite{Kowalski/GGP}. Each year hopeful participants pit GGP agents against one another to determine the most effective system. The competitors take part in a series of rounds of increasing complexity. The agent that wins the most games in these rounds is declared victorious. The 2014 winner Sancho is used in this paper to generate optimal game traces for the IGGP task. The game descriptions written in GDL used in the GGP competition can be used as ideal rule sets for systems in Inductive General Game Playing (IGGP) to generate. The descriptions of the games used in GGP are not necessarily minimal so it is possible that an ILP system could generate a more concise ruleset the the GGP descriptions.
 
 \subsection{GDL}\label{sec:GDL}
-Game definition language is the formal language used in the GGP competition to specify the rules of the games.\cite{GDL_Spec} The language is based off logical programming languages such as Prolog and is in fact a logical programming language itself.
+Game definition language is the formal language used in the GGP competition to specify the rules of the games\cite{GDL_Spec}. The language is based off a logical programming language \textit{datalog}, a subset of Prolog, with some additions.
 \subsubsection{Logical Programming}
-Logic programming is a programming paradigm based on formal logic. Programs are made up of facts and rules. Rules are made up of two parts: the head and the body. They can be read as logical implications where the conjunction of all the elements in the body imply the head. The syntax is different for different logical programming languages but the head is usually written before the body. A fact is simply a rule without a body, that is, a statement that is taken as true. The compiler takes queries and returns weather they are true of false. If there are free variables in the query the compiler assigns them values for which the query is true. Logical programming is good for symbolic non-numeric computation. It is well suited to solving problems that involve well defined objects and relations between them, such as a GGP game.
+Logic programming is a programming paradigm based on formal logic. Programs are made up of facts and rules. Rules are made up of two parts: the head and the body. They can be read as logical implications where the conjunction of all the elements in the body imply the head. The syntax is different for different logical programming languages but the head is usually written before the body. A fact is simply a rule without a body, that is, a statement that is taken as true. The compiler takes queries and returns weather they are true of false. If there are free variables in the query the compiler assigns them values for which the query is true. Logical programming is good for symbolic non-numeric computation. Prolog is one of the most well know logical programming languages\cite{SWIPL} and provides a good introduction to the field. It is discussed in section \ref{sec:prolog}. Logical programming is well suited to solving problems that involve well defined objects and relations between them, such as a GGP game.
 \subsubsection{Usefulness of GDL}
 The game description language was designed specifically to represent finite, discrete, deterministic multi-player games of complete information. It is suited to specifying game rules because:
 \begin{itemize}
@@ -31,41 +31,25 @@ In addition, logical rules are used to describe the following:
 \item The next state for a given player state and move
 \item The termination and goal conditions
 \end{itemize}
-In the IGGP problem the given task is to generate the rules for the goal, the next state, the legal states and the terminal state.
-%more examples?
 
-\section{Prolog}
-Prolog is one of the most popular and well used logical programming languages. The syntax in Prolog for rules and facts is fairly intuitive. A simple fact might be \mintinline{Prolog}{son(bob,alice).}. This tells us that the atom \mintinline{Prolog}{alice} relates the atom \mintinline{Prolog}{bob} in the \mintinline{Prolog}{son} relation. A rule is written \mintinline{Prolog}{parent(X,Y) :- son(Y,X)} which means if we have the relation son of Y and X then X relates Y in parent. The symbol :- is the same as reverse implication ($\Leftarrow$). We can query a program in the Prolog environment. If we typed in "\mintinline{Prolog}{parent(alice,bob).}" then it would return true because we have \mintinline{Prolog}{son(bob,alice)} and the rule which tells us that if X is a son of Y else then Y is a parent of X so \mintinline{Prolog}{alice} is a parent of \mintinline{Prolog}{bob}. Predicates can be conjoined with the comma "," (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y), c(Z,Y)}). Disjunction is expressed with the semicolon ";" (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y) ; c(Z,Y)}.
+The GDL language is an extension of \textit{datalog$^{\neg}$}\cite{GDL_Spec}, that is datalog with stratified negation. \textit{datalog} allows only rules consisting of a conjunction of positive atoms that imply a single atom. \textit{datalog$^{\neg}$} allows for negative as well as positive atoms\cite{Alice/Foundations}. GDL also allows for some functional symbols, that is predicates containing other predicates however it restricts to keep the finite model property that is inherent to \textit{datalog}\cite{GDL_Spec}.
 
-Prolog answers queries using a process know as proof seach and unification. The unification process is similar to logical unification, two terms unify if they are the same term or if they contain variables that can be instantiated with terms in such a way that the new terms are equal. For example the terms \mintinline{Prolog}{name(bob).} and \mintinline{Prolog}{name(X).} will unify with \mintinline{Prolog}{X = bob}. The Prolog ISO defines the Herbrand Algorithm for unification \cite{PrologISO}. A Prolog query is a set of goals. The Prolog System decides weather they are satisfiable or not. When a query is asked the of the Prolog system it executes something similar to the following algorithm. The exact implementations vary among Prolog systems however they are all roughly this algorithm.
-\begin{algorithm}
-\SetKwInOut{Input}{Input}
-\SetKwProg{Fn}{Function}{}{}
-\Input{A list of goals $GoalList = G_1,G_2,...,G_M$}
-\Fn{\textbf{execute} (Program, GoalList, Success):}{
-    \If{$empty(GoalList)$}{$Success \leftarrow true$}{
-        \While{\textbf{not} empty($GoalList$)}{
-            $\textit{Goal} \leftarrow head(GoalList)$\;
-            $OtherGoals \leftarrow tail(GoalList)$\;
-            $Satisfied \leftarrow false$\;
-            \While{\textbf{not} Satisfied and there are more clauses in the program}{
-                Let next clause in the program be $H \vdash B_1,...,B_n$\;
-                Construct a variant of this clause $H' \vdash B_1',...,B_n'$\;
-                $match(Goal,H',MatchOK,Instant)$\;
-                \If{$MatchOK$}{
-                    $NewGoals \leftarrow append([B_1',...,B_n'],OtherGoals)$\;
-                    $NewGoals \leftarrow substitue(Instant,NewGoals)$\;
-                    $execute(Program,NewGoals,$\textit{Satisfied}$)$\;
-                }
-            }
-        $Success \leftarrow$ \textit{Satisfied};\;
-        }
-    }
-}
-\caption{Execute Prolog Goals}
-\end{algorithm}
+In GDL variables are written with the symbol \texttt{?} before them and rules are written starting with \verb|=>| followed by the head followed by the body predicates which are interpreted as a conjunction. For example \[\texttt{(<= (next (cell ?x ?y ?player)) (does ?player (mark ?x ?y)))}\] in first order logic this would be written \[does(player,(mark(x,y))) \rightarrow cell(x,y,player)\]
+GDL also reserves certain words which are interpreted in special ways:
+\begin{itemize}
+	\item \texttt{true(?f)} - Atom \texttt{?f} is true in the current game state
+	\item \texttt{does(?r,?m)} - Player \texttt{?r} performs action \texttt{?m} in the current state
+	\item \texttt{next(?f)} - Atom \texttt{?f} will be true in the next game state
+	\item \texttt{legal(?r,?m)} - Action \texttt{?m} is a legal move for player \texttt{?r} in the current game state
+	\item \texttt{goal(?r,?n)} - Player \texttt{?r} performs action \texttt{?m} in the current game state
+	\item \texttt{terminal} - The current state is terminal
+	\item \texttt{init(?f)} - Atom \texttt{?f} is true in the initial game state
+	\item \texttt{role(?n)} - The Constant \texttt{?n} denotes a player
+	\item \texttt{distinct(?x,?y)} - \texttt{?x} and \texttt{?y} are syntactically different
+\end{itemize}
 
-the program listing is wearched for a term to unify with. The listing is searched in the order it is written in. When Prolog finds a matching rule it then attempts to sequentially unify the terms of the body using the same method. If the rule has no body then the variables are assigned and the terms unify. If Prolog fails to unify two terms then it backtracks, assignes the last variable a differnt values. This continues until a proof is found or all possibilities have been exauseted\cite{Bratko}.
+In the IGGP problem the given task is to generate the rules to predict the values for the goal, the next state, the legal states and the terminal predicates.
+
 
 
 \section{IGGP}
@@ -83,38 +67,85 @@ Inductive logic programming is a form of machine learning that uses logic progra
 The general inductive problem is as follows: given a consistent set of examples or observations $O \subseteq \mathcal{L}_O$ and consistent background knowledge $B \subseteq \mathcal{L}_B$ find an hypothesis $H \in \mathcal{L}_H$ such that \[B \wedge H \vDash O\] \cite{Muggleton/ILP}
 That is that the generated hypothesis and the background knowledge imply the positive examples and not imply the negative examples.
 
-\af{Example task (grandparent relation)}
+\subsubsection{Grandparent example}
+A classic illustration of the problem is the learning of the grandparent relation. Here we want to derive a logical program that given information about who is a parent of whom will be able to tell us the all the people each person is a grandparent of. It needs to capture the idea that if $Y$ is a parent of $X$ and $Z$ a parent of $Y$ then $Z$ is a grandparent of $X$. We are given the following background knowledge.
+
+\[
+B=
+\begin{cases}
+mother(alice,jane)\\
+mother(jane,dave)\\
+mother(alice,henry)\\
+father(henry,bob)
+\end{cases}
+\]
+Here we are not directly given the parent relation. This will have to be induced by the learner. The positive and negative examples are given by $E^+ \cap \neg E^- = O$.
+\[
+E^+=
+\begin{cases}
+grandparent(alice,bob)\\
+grandparent(alice,dave)
+\end{cases}
+E^-=
+\begin{cases}
+grandparent(alice,jane)\\
+grandparent(henry,bob)\\
+grandparent(dave,henry)
+\end{cases}
+\]
+The program we induce would hopefully look something like this:
+\[H=\begin{cases}
+grandparent(X,Y) \leftarrow parent(X,Z) \wedge parent(Z,Y)\\
+parent(X,Y) \leftarrow mother(X,Y)\\
+parent(X,Y) \leftarrow father(X,Y)
+\end{cases}\]
+It should hopefully be clear that this program satisfies $B \wedge H \vDash O$
 
 ILP systems generally regard ILP as a search problem. The search space is the set of well formed hypothesis. Often a set of inference rules are applied to the starting hypothesis, the new hypothesise are then pruned and expanded according to how often $B \wedge H \vDash O$ in the observations $O$. When all the observations are implied then a correct program has been found.
 
 \subsection{Back to IGGP}
 
-In IGGP we also have the idea of background knowledge and positive or negative observations. The task is given as a triple $\{(B,E^+,E^-)\}$. The positive examples $E^+$, the negative examples  $E^-$ and the background knowledge $B$. Similar to the Inductive logic programming problem the learner \ref{sec:ILP} has to come up with a hypothesis $H$ such that $H$ and the background knowledge imply all the positive examples but none of the negative examples, that is $H \cup B \models E^+$ and $H \cup B \not\models E_i^-$. All three are given in the form of a set of ground atoms, that is they do not contain any free variables.The background knowledge of a task consists of all the rules of the GDL game description that do not concern the predicate being learned. For example in Rock Paper Scissors this would be the facts that give which item beats which (i.e. that scissors beat paper). An example of a typical IGGP problem is given below
-
-%Show example IGGP task
-
-The IGGP problem itself is described in section \ref{sec:LogicalSetting}.
+In IGGP we also have the idea of background knowledge and positive or negative observations. The task is given as a triple $\{(B,E^+,E^-)\}$. The positive examples $E^+$, the negative examples  $E^-$ and the background knowledge $B$. Similar to the Inductive logic programming problem the learner \ref{sec:ILP} has to come up with a hypothesis $H$ such that $H$ and the background knowledge imply all the positive examples but none of the negative examples, that is $H \cup B \models E^+$ and $H \cup B \not\models E_i^-$. All three are given in the form of a set of ground atoms, that is they do not contain any free variables.The background knowledge of a task consists of all the rules of the GDL game description that do not concern the predicate being learned. For example in Rock Paper Scissors this would be the facts that give which item beats which (i.e. that scissors beat paper) as can be seen in \ref{tab:IGGPTask}. The IGGP problem itself is described in section \ref{ch:IGGP}.
 
 The IGGP dataset, also given in the same paper as the definition of the problem. It is a collection of 50 games, specified in GDL. The purpose of this database is to standardises the set of games used in the IGGP problem to allow for results to be easily compared. It is in fact the set of games that this paper is based on.
 A mechanism is also provided by the authors to turn these GDL game descriptions in the set into new IGGP tasks. This method plays the games randomly to generate the observations. In this paper we modify the mechanism to generate optimal game traces.
 
+To better understand the IGGP problem and the methods of solving it we first need to understand Prolog. The language is used as the basis for a large number of ILP systems.
 
 
+\section{Prolog}\label{sec:prolog}
+Prolog is one of the most popular and well used logical programming languages. The syntax in Prolog for rules and facts are fairly intuitive. A simple fact might be \mintinline{Prolog}{son(bob,alice).}. This tells us that the atom \mintinline{Prolog}{alice} relates the atom \mintinline{Prolog}{bob} in the \mintinline{Prolog}{son} relation. A rule is written \mintinline{Prolog}{parent(X,Y) :- son(Y,X)} which means if we have the relation son of Y and X then X relates Y in parent. The symbol :- is the same as reverse implication ($\Leftarrow$). We can query a program in the Prolog environment. If we typed in "\mintinline{Prolog}{parent(alice,bob).}" then it would return true because we have \mintinline{Prolog}{son(bob,alice)} and the rule which tells us that if X is a son of Y else then Y is a parent of X so \mintinline{Prolog}{alice} is a parent of \mintinline{Prolog}{bob}. Predicates can be conjoined with the comma "," (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y), c(Z,Y)}). Disjunction is expressed with the semicolon ";" (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y) ; c(Z,Y)}.
 
+Prolog answers queries using a process know as proof seach and unification. The unification process is similar to logical unification, two terms unify if they are the same term or if they contain variables that can be instantiated with terms in such a way that the new terms are equal. For example the terms \mintinline{Prolog}{name(bob).} and \mintinline{Prolog}{name(X).} will unify with \mintinline{Prolog}{X = bob}. The Prolog ISO defines the Herbrand Algorithm for unification \cite{PrologISO}. A Prolog query is a set of goals. The Prolog System decides weather they are satisfiable or not. When a query is asked the of the Prolog system it executes something similar to the following algorithm. The exact implementations vary among Prolog systems however they are all roughly this algorithm.
+\begin{algorithm}
+	\SetKwInOut{Input}{Input}
+	\SetKwProg{Fn}{Function}{}{}
+	\Input{A list of goals $GoalList = G_1,G_2,...,G_M$}
+	\Fn{\textbf{execute} (Program, GoalList, Success):}{
+		\If{$empty(GoalList)$}{$Success \leftarrow true$}{
+			\While{\textbf{not} empty($GoalList$)}{
+				$\textit{Goal} \leftarrow head(GoalList)$\;
+				$OtherGoals \leftarrow tail(GoalList)$\;
+				$Satisfied \leftarrow false$\;
+				\While{\textbf{not} Satisfied and there are more clauses in the program}{
+					Let next clause in the program be $H \vdash B_1,...,B_n$\;
+					Construct a variant of this clause $H' \vdash B_1',...,B_n'$\;
+					$match(Goal,H',MatchOK,Instant)$\;
+					\If{$MatchOK$}{
+						$NewGoals \leftarrow append([B_1',...,B_n'],OtherGoals)$\;
+						$NewGoals \leftarrow substitue(Instant,NewGoals)$\;
+						$execute(Program,NewGoals,$\textit{Satisfied}$)$\;
+					}
+				}
+				$Success \leftarrow$ \textit{Satisfied};\;
+			}
+		}
+	}
+	\caption{Execute Prolog Goals}
+\end{algorithm}
 
+the program listing is wearched for a term to unify with. The listing is searched in the order it is written in. When Prolog finds a matching rule it then attempts to sequentially unify the terms of the body using the same method. If the rule has no body then the variables are assigned and the terms unify. If Prolog fails to unify two terms then it backtracks, assignes the last variable a differnt values. This continues until a proof is found or all possibilities have been exauseted\cite{Bratko}. Prolog forms the basis of two of the ILP systems the we test.
 
-
-
-
-
-
-%To evaluate ILP systems the learning tasks they are given need to be small enough that it is feasible for them to learn the programs, but also diverse enough that we test the full capability of the system. The Inductive general game playing framework provides this. To understand IGGP we first need to explain the General game playing framework.
-
-
-
-
-
-% \chapter{ILP systems}
 \section{ILP systems used}
 We use three ILP systems to compare the effects of different learning data, Metagol, Aleph and ILASP. All three systems use different approaches the ILP problem.
 \subsection{Metagol}

@@ -1,12 +1,13 @@
-\chapter{Generating Traces}
-% \section{}
-\subsection{Sancho}
-To generate optimal gameplay we decided that the best approach was to use a previous winner of the GGP competition. Since the aim of the competition is to find the program that performs best at the set of games used in the IGGP problem we conclude that there is no better way to generate a comprehensive set of game traces. The winner of the 2014 GGP competition 'Sancho' was selected \footnote{http://ggp.stanford.edu/iggpc/winners.php accessed on 12/03/2020} since they are the most recent winner to have published their code \footnote{http://sanchoggp.github.io/sancho-ggp/ access 12/03/2020}. Some small modifications to the information logged by the game server are made but otherwise the code is unchanged.
+\chapter{Generating Traces}\label{ch:traces}
+In this section we describe the process of generating and transforming game traces to IGGP tasks. The first step is to generate the intelligent and random play. To do this we used the Sancho system. 
+
+\section{Sancho}
+To generate optimal gameplay we decided that the best approach was to use a previous winner of the GGP competition. Since the aim of the competition is to find the program that performs best at the set of games used in the IGGP problem we conclude that there is no better way to generate a comprehensive set of game traces. The winner of the 2014 GGP competition 'Sancho' was selected \footnote{http://ggp.stanford.edu/iggpc/winners.php accessed on 12/03/2020} since they are the most recent winner to have published their code\cite{Sancho/Github}. Some small modifications to the information logged by the game server are made but otherwise the code is unchanged.
 
 The core of Sancho is the Monte Carlo tree search (MCTS) algorithm.
 
-\subsubsection{Monte Carlo Tree Search}
-Given a game state the basic MCTS will return the most promising next move. The algorithm achives this by simulating random playouts of the game many times. The technique was developed for computer Go but has since been applied to play a wide range of games effectively including board games and video games\cite{Silver/MCTS}\cite{Chaslot/MCTS}.
+\subsection{Monte Carlo Tree Search}
+Given a game state the basic MCTS will return the most promising next move. The algorithm achieves this by simulating random playouts of the game many times. The technique was developed for computer Go but has since been applied to play a wide range of games effectively including board games and video games\cite{Silver/MCTS}\cite{Chaslot/MCTS}.
 
 The use of random simulation to evaluate game states is a powerful tool. Information about the game such as heuristics for evaluating non terminal states are not needed at all, the rules of the game are enough on their own. In the case of the GGP problem this is ideal. The rules of the game are only revealed shortly before the game is played meaning deriving effective heuristics is a hard problem.
 
@@ -24,30 +25,32 @@ Exactly how the tree search algorithm chooses new nodes to simulate is where the
 \end{itemize}
 The function is the sum of two components. $\frac{Q(v_i)}{N(v_i)}$ is called the exploitation component. It is a ratio of winning to loosing simulation that resulted from making this move. This encourages traversal of promising nodes that have a high win rate. However, if only this factor was used the algorithm would quickly find a winning node and only explore that hence we need a second component: the exploration factor. $c\sqrt{\frac{ln(N(v_i))}{N(v_i)}}$ favours nodes that have not yet been explored. The value $c$ is a constant that balances the two components, it can be adjusted depending on the use case.
 
+\subsubsection{Use of MCTS in Sancho}
+
 Sancho makes a few modifications to MCTS\footnote{https://sanchoggp.blogspot.com/2014/05/what-is-sancho.html accessed on 15/03/2020}, the main one being adding of heuristics. The tree is also replaced with a more general graph which allows for transitions between lines of play without duplication of states. There are other modifications to increase efficiency.
 
 In GGP matches a period of time before the match is given in which to do pre match calculations. Sancho uses this period to derive basic heuristics and optimise the value of $c$ in the formulae. A heuristic should take a game state or move and return a value based on how promising that state or move is in relation to the goal state. To take the heuristics into account when choosing the next state to explore each node (state) $v$ is seeded with a heuristic value on creation.
 
 The identification of possible heuristics takes place in two stages. The first of these is static analysis of the game rules. This static analysis identifies possible heuristics that can be applied to the current game. These include things like piece capture: if certain rules indicate capture of a piece these can be selected against, or numeric quantity detection: a number in the state acts as a heuristic (like number of coins a player has). The second stage is simulation of the game. Many (possibly tens of thousands) of full simulations of the game are run. After the simulations are complete a correlation coefficient is calculated between each candidate heuristic's observed values and the eventual score achieved in the game. Those heuristics that show correlation above a fixed threshold are then enabled, and will be used during play.
 
-%\subsection{Other aspects of Sancho}
-Monte carlo simulations are used for a large number of the games available however Sancho identifies games that can be solved more efficiently in other ways. Any single player game in the GGP dataset can be analyised using puzzle solving techniques.
+\subsection{Other aspects of Sancho}
+
+Monte Carlo simulations are used for a large number of the games available however Sancho identifies games that can be solved more efficiently in other ways. Any single player game in the GGP dataset can be analysed using puzzle solving techniques.
 \subsubsection{Puzzle Solving}
-A single player game in the GGP dataset is neciserally a deterministic game of complete information. This is due to the constraints of the Game Description Language, it is not possible to express anything more. This gives the constraint that any solution found in a playout of the game will always remain valid since the game is completely deterministic. Sancho identifies these single player games and attempts to derive huristics. Where an obviouse goal state exsists a distance metric such as the hamming distance between two states can be applied. A* search can then be used to find optimal solutions. For some games, such as eight puzzle the hamming distance is an admisable huristic so sancho finds an optimal solution.
+A single player game in the GGP dataset is necessarily a deterministic game of complete information. This is due to the constraints of the Game Description Language, it is not possible to express anything more. This gives the constraint that any solution found in a playout of the game will always remain valid since the game is completely deterministic. Sancho identifies these single player games and attempts to derive heuristics. Where an obvious goal state exists a distance metric such as the hamming distance between two states can be applied. A* search can then be used to find optimal solutions. For some games, such as eight puzzle the hamming distance is an admissible heuristic so Sancho finds an optimal solution.
 
-Sancho also does static analysis of the game rules. It determins game predicates that if true mean the goal will never be true in any proceding state as well as predicates that garentee that the goal will be true in a future state. An example of this is a game such as untwisty corridor (the game is effecitvly a maze where if you immidiatly lose if you step off a 'safe' path). If the safe path is left then the goal can never be reached so any state not on the safe path is avoided.
+\subsubsection{Static analysis}
 
-\af{Talk about why this makes sancho good for this task}
+Sancho also does static analysis of the game rules. It determines game predicates that if true imply the goal will never be true in any proceeding state as well as predicates that guarantee that the goal will be true in a future state. An example of this is a game such as untwisty corridor (the game is effectively a maze where if you immediately lose if you step off a 'safe' path). If the safe path is left then the goal can never be reached so any state not on the safe path is avoided.
+
+\subsection{Sancho and IGGP}
+Sancho represents the best available automated player of the games in the IGGP dataset. Its level of play for most games is above that of an amateur human as has been shown in the Carbon versus Silicone matches at the GGP competition\cite{Genesereth/GGPOverview}. We hope that Sancho will provide a good distribution of intelligent game play traces. 
 
 
-
-\section{Generating the traces}
-\ac{break this section down a bit}
-To determine the influence of the quality of training data upon the ability of learners to solve the IGGP problem we initially generated the gameplay.
+\section{Generating and transforming the traces}
+To determine the influence of the quality of training data upon the ability of learners to solve the IGGP problem we initially generate the game traces.
 
 The general game playing community have a codebase that provides the basic functionality for hosting a match between GGP agents\footnote{https://github.com/ggp-org/ggp-base}. This codebase along with the GGP agent Sancho were used to generate the datasets. The codebase includes a very basic random GGP player that will, given a GDL game description, play a random legal move every turn. It uses the GDL description to generate all possible legal moves given the current game state then chooses one uniformly at random. To generate the random traces for a game of $x$ players $x$ random gamers were pitted against one another. The same method was used with Sancho instead of the random gamers to generate the high quality traces.
-
-For each game written in GDL is represented by a set of ground atoms
 
 Information about games is represented as sets of ground atoms. There exists a set $S$ that represents all atoms that can change from one state to the other. Examples of elements of this set $S$ might be the state of the board in \textit{tic tac toe} along with which player is to take their turn next:
 \begin{verbatim}
@@ -60,6 +63,8 @@ This set of state atoms includes all that can change throughout the game.
 
 There is also the set of ground atoms representing the actions that can be taken $A$. The moves that each player makes are taken from this set. For a game such as \textit{eight puzzle} these would consist or the atoms \verb|( move i j )| for $0<i\leq 9$ and $0<j\leq 9$ which represent sliding the tile at $(i,j)$ into the space. For \textit{tic tac toe} they would be \verb|( mark i j )| for $0<i\leq 3$ and $0<j\leq 3$ to represent marking a square with the players symbol. To represent a player not making a move we also always have $noop \in A$.
 
+\subsubsection{Game traces}
+
 We modified the GGP matchmaker to log the following information:
 \begin{itemize}
 	\item \textbf{Game state trace} - The sequence of game states: $states = (s_1,...,s_n)$ where each $s_i \subseteq S$ is the set of ground atoms true in the $i^{th}$ state.
@@ -70,6 +75,8 @@ We modified the GGP matchmaker to log the following information:
 
 \end{itemize}
 This represents all the data needed from the match to generate IGGP tasks. In each state all the positive atoms in $S$ (that is the atoms ture in the current state) are arguments of the \texttt{true} predicate. For example if at the start of the game the first cell is blank on the board then we would have $\texttt{( true ( cell 1 1 b ) )} \in s_1$.
+
+\subsection{Transforming game traces into IGGP tasks}
 
 We define a function that transforms the sequences into four separate induction tasks. An induction task is the set of triples $(B,E^+,E^-)$. We first define a function trace that translates the sequences given in the log of the match into a set of pairs $(B,E^+)$ . We then define a function \textit{triple} which gives the the set of triples  $(B,E^+,E^-)$ from the pairs $(B,E^+)$.
 
@@ -120,4 +127,4 @@ tri&ple_2(\Lambda_p) = \text{map } f\ \Lambda \\
 \end{align*}
 We generate the IGGP task with $triples_1$ and $triples_2$ as below:
 \[\Delta = triples_1(\Lambda_{goal}) \cup triples_1(\Lambda_{terminal}) \cup triples_2(\Lambda_{next}) \cup triples_2(\Lambda_{legal})\]
-
+The IGGP task $\Delta$ is set to the ILP systems as described in chapter \ref{ch:methodology}
