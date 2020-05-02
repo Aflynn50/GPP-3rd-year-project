@@ -178,13 +178,17 @@ def print_nice(latex=False):
     for game in game_names('data/test'):
         args = [(system, game, False) for system in systems]
         scores_per_sys = [list(map(lambda y:  int(y * 100), print_results_(arg))) for arg in args]
-
         scores_per_pred = list(zip(*([[game,game,game,game],['next','goal','legal','terminal']]+ scores_per_sys)))
         table += scores_per_pred
+    average_ba = [sum(x)/len(x) for x in list(zip(*table))[2:]]
+    perfect = [sum([1 for y in x if y == 100]) for x in list(zip(*table))[2:]]
+    totals = zip(*[[s.name for s in systems],average_ba,perfect])
+
     if latex:
         return tabulate(table,headers=headers,tablefmt="plain")
     else: 
         print(tabulate(table,headers=headers))
+        print(tabulate(totals))
 
 
 #systems = [aleph.Aleph()]

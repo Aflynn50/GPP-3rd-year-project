@@ -1,9 +1,0 @@
-goal(1,black,10).
-goal(2,black,10).
-goal(3,black,10).
-goal(4,black,10).
-goal(5,black,10).
-goal(6,black,10).
-goal(7,black,10).
-goal(8,black,10).
-goal(9,black,100).
