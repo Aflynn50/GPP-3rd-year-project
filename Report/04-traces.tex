@@ -1,7 +1,7 @@
 \chapter{Generating Traces}\label{ch:traces}
 In this section we describe the process of generating and transforming game traces to IGGP tasks. The first step is to generate the intelligent and random play. To do this we used the Sancho system. 
 
-\section{Sancho}
+\section{Sancho}\label{sec:sancho}
 To generate optimal gameplay we decided that the best approach was to use a previous winner of the GGP competition. Since the aim of the competition is to find the program that performs best at the set of games used in the IGGP problem we conclude that there is no better way to generate a comprehensive set of game traces. The winner of the 2014 GGP competition 'Sancho' was selected \footnote{http://ggp.stanford.edu/iggpc/winners.php accessed on 12/03/2020} since they are the most recent winner to have published their code\cite{Sancho/Github}. Some small modifications to the information logged by the game server are made but otherwise the code is unchanged.
 
 The core of Sancho is the Monte Carlo tree search (MCTS) algorithm.
