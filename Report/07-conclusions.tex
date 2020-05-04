@@ -3,9 +3,10 @@ In this paper we have compared the ability of ILP systems to learn the rules of 
 
 To test the significance of the size of the training dataset on the ability of the ILP systems to learn the systems were trained on varying numbers of game playouts. It was a training dataset of above 16 game traces had little effect on the ability to learn of the systems tested. 
 
-\subsubsection{Future work}
+\subsubsection{Limitations}
 
-\textbf{What is intelligence?} In this paper we use the concept of intelligence in relation to game traces without formally defining it. Future work could supply a framework with which we can define the intelligence of gameplay generated.
+%\textbf{What is intelligence?} In this paper we use the concept of intelligence in relation to game traces without formally defining it. Future work could supply a framework with which we can define the intelligence of gameplay generated.
+
 
 \textbf{ILP systems} In this paper we only test on three ILP systems, it is clear a more representative result could be obtained by testing on more systems. Techniques such as probabilistic\cite{Bellodi/Probablistic,Raedt/Probabalistic} and interactive\cite{Raedt/Interactive} learning are not used by any of the systems tested here. ILASP is the only system designed to handle noisy data\cite{MarkLaw/ILASP2i}, it would be interesting to try others with this approach\cite{Oblak/Noise,Evans/Noise}. The systems used also have many customisable settings for example Metagols metarules which have major implications for the programs learnt\cite{Cropper/Metarules}. Aleph has many different search methods on the hypothesis space many of which may yield better results than the default algorithm used in this paper.
 
@@ -14,5 +15,7 @@ To test the significance of the size of the training dataset on the ability of t
 \textbf{Other machine learning systems} There exists a huge variety of machine learning systems other than ILP. It is possible some of these may exhibit more of a bias toward one of the training sets. Testing a neural network or genetic algorithm based approach may provide insightful results.
 
 \textbf{Intelligent verses random in other contexts} There are plenty of other domains other than game playing in which datasets can be considered intelligent or random. An example of this might be training a car to drive where you could train it on different quality levels of driving or training a facial recognition system on poor or high quality photos. These would prove an interesting area to study.
+
+\textbf{How do humans compare} We have spent a lot of this paper investigating whether machines learn better on intelligent gameplay or random gameplay with the assumption that a human would learn better from watching another human play than random legal moves. Whilst in reality we might generally choose to watch a human playing when trying to learn a game rather than observing random legal moves it may not be the most effective way. Any real world example of this is almost always accompanied by additional information. For example humans would often have access to some description of the rules or someone explaining the edge cases that may not occur. It is hard to compare the how humans learn to how machines learn since the extra context a human is given around a game is so much greater than that of a machine which gets very little. It would be interesting to see how humans would fare in similar experiments to those in this paper. The experiment would have to include games unknown to the participant which preferably would not share too many common features with know games. Looking into this question would give new insights into the results of this paper. As with the similar question posed in this paper the experiment does not have clear predicted outcome.
 
 
