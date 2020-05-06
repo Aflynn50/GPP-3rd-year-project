@@ -1,110 +1,115 @@
-game                      predicate      aleph    specialised_ilasp
-------------------------  -----------  -------  -------------------
-alquerque                 next              67                   50
-alquerque                 goal              58                  100
-alquerque                 legal             54                  100
-asylum                    next              56                   50
-asylum                    goal              67                  100
-asylum                    legal             50                  100
-battle_of_numbers         next              61                   50
-battle_of_numbers         goal              79                  100
-battle_of_numbers         legal             53                  100
-breakthrough              next              56                   50
-breakthrough              goal              74                  100
-breakthrough              legal             51                  100
-buttons_and_lights        next              74                   50
-buttons_and_lights        goal              67                  100
-buttons_and_lights        legal             50                  100
-centipede                 next              60                  100
-centipede                 goal              89                  100
-centipede                 legal             57                  100
-checkers                  next              64                   50
-checkers                  goal              63                  100
-checkers                  legal             53                  100
-coins                     next              65                   50
-coins                     goal              65                  100
-coins                     legal             68                  100
-connect4team              next              54                   50
-connect4team              goal              81                  100
-connect4team              legal             56                  100
-dont_touch                next              50                   50
-dont_touch                goal              83                  100
-dont_touch                legal             75                  100
-duikoshi                  next              62                   50
-duikoshi                  goal              76                  100
-duikoshi                  legal             56                  100
-eight_puzzle              next              56                   50
-eight_puzzle              goal              97                  100
-eight_puzzle              legal             47                  100
-farming                   next              72                   50
-farming                   goal              62                  100
-farming                   legal             91                  100
-fizzbuzz                  next              75                   50
-fizzbuzz                  goal              64                  100
-fizzbuzz                  legal             94                  100
-forager2                  next              85                   50
-forager2                  goal              53                  100
-forager2                  legal             50                  100
-gt_centipede              next              94                   50
-gt_centipede              goal              70                  100
-gt_centipede              legal             58                  100
-gt_chicken                next              70                   50
-gt_chicken                goal              57                  100
-gt_chicken                legal             50                  100
-gt_prisoner               next              75                   50
-gt_prisoner               goal              52                  100
-gt_prisoner               legal             50                  100
-gt_ultimatum              next              74                   50
-gt_ultimatum              goal              54                  100
-gt_ultimatum              legal             86                  100
-hexforthree               next              66                   50
-hexforthree               goal              97                  100
-hexforthree               legal             52                  100
-horseshoe                 next              64                   50
-horseshoe                 goal              97                  100
-horseshoe                 legal             57                  100
-hunter                    next              72                   50
-hunter                    goal              60                  100
-hunter                    legal             64                  100
-knights_tour              next              65                   50
-knights_tour              goal              51                  100
-knights_tour              legal             54                  100
-kono                      next              65                   50
-kono                      goal              61                  100
-kono                      legal             55                  100
-lightboard                next              60                   50
-lightboard                goal              95                  100
-lightboard                legal             50                  100
-multiplebuttonsandlights  next              65                   50
-multiplebuttonsandlights  goal              67                  100
-multiplebuttonsandlights  legal             50                  100
-nineboardtictactoe        next              56                   50
-nineboardtictactoe        goal              74                  100
-nineboardtictactoe        legal             54                  100
-pentago                   next              57                   50
-pentago                   goal              82                  100
-pentago                   legal             67                  100
-platformjumpers           next              60                   50
-platformjumpers           goal              80                  100
-platformjumpers           legal             57                  100
-rainbow                   next              55                  100
-rainbow                   goal              67                  100
-rainbow                   legal             56                  100
-sheep_and_wolf            next              57                   50
-sheep_and_wolf            goal              56                  100
-sheep_and_wolf            legal             53                  100
-sudoku                    next              59                  100
-sudoku                    goal              74                  100
-sudoku                    legal             58                  100
-sukoshi                   next              63                  100
-sukoshi                   goal              71                  100
-sukoshi                   legal             71                  100
-tictactoe                 next              56                   50
-tictactoe                 goal              80                  100
-tictactoe                 legal             56                  100
-ttcc4                     next              59                   50
-ttcc4                     goal              85                  100
-ttcc4                     legal             54                  100
-untwisty_corridor         next              74                   50
-untwisty_corridor         goal              68                  100
-untwisty_corridor         legal             50                  100
+game                      predicate      metagol    aleph    specialised_ilasp
+------------------------  -----------  ---------  -------  -------------------
+alquerque                 next                51       67                   50
+alquerque                 goal                50       58                  100
+alquerque                 legal               50       54                  100
+asylum                    next                50       56                   50
+asylum                    goal                50       62                  100
+asylum                    legal               50       50                  100
+battle_of_numbers         next                53       61                   50
+battle_of_numbers         goal                50       77                  100
+battle_of_numbers         legal               50       53                  100
+breakthrough              next                50       57                   50
+breakthrough              goal                50       74                  100
+breakthrough              legal               50       51                  100
+buttons_and_lights        next                50       77                   50
+buttons_and_lights        goal                50       67                  100
+buttons_and_lights        legal               50       50                  100
+centipede                 next                50       59                  100
+centipede                 goal                50       89                  100
+centipede                 legal               50       56                  100
+checkers                  next                53       64                   50
+checkers                  goal                50       62                  100
+checkers                  legal               50       53                  100
+coins                     next                55       67                   50
+coins                     goal                50       65                  100
+coins                     legal               50       69                  100
+connect4team              next                50       55                   50
+connect4team              goal                50       81                  100
+connect4team              legal               50       53                  100
+dont_touch                next                50       50                   50
+dont_touch                goal                50       83                  100
+dont_touch                legal               50       75                  100
+duikoshi                  next                50       61                   50
+duikoshi                  goal                50       78                  100
+duikoshi                  legal               50       59                  100
+eight_puzzle              next                55       54                   50
+eight_puzzle              goal                50       97                  100
+eight_puzzle              legal               50       47                  100
+farming                   next                50       73                   50
+farming                   goal                50       62                  100
+farming                   legal               50       91                  100
+fizzbuzz                  next                50       75                   50
+fizzbuzz                  goal                50       64                  100
+fizzbuzz                  legal               50       94                  100
+forager2                  next                54       85                   50
+forager2                  goal                50       53                  100
+forager2                  legal               50       50                  100
+gt_centipede              next                51       94                   50
+gt_centipede              goal                50       70                  100
+gt_centipede              legal               50       57                  100
+gt_chicken                next                66       68                   50
+gt_chicken                goal                50       54                  100
+gt_chicken                legal               50       50                  100
+gt_prisoner               next                75       75                   50
+gt_prisoner               goal                50       52                  100
+gt_prisoner               legal               50       50                  100
+gt_ultimatum              next                50       75                   50
+gt_ultimatum              goal                50       57                  100
+gt_ultimatum              legal               50       86                  100
+hexforthree               next                51       65                   50
+hexforthree               goal                50       98                  100
+hexforthree               legal               50       62                  100
+horseshoe                 next                57       65                   50
+horseshoe                 goal                50       97                  100
+horseshoe                 legal               50       57                  100
+hunter                    next                52       72                   50
+hunter                    goal                50       62                  100
+hunter                    legal               50       64                  100
+knights_tour              next                50       64                   50
+knights_tour              goal                50       51                  100
+knights_tour              legal               50       51                  100
+kono                      next                52       65                   50
+kono                      goal                50       61                  100
+kono                      legal               50       55                  100
+lightboard                next                59       59                   50
+lightboard                goal                50       95                  100
+lightboard                legal               50       50                  100
+multiplebuttonsandlights  next                82       65                   50
+multiplebuttonsandlights  goal                50       67                  100
+multiplebuttonsandlights  legal               50       50                  100
+nineboardtictactoe        next                52       58                   50
+nineboardtictactoe        goal                50       74                  100
+nineboardtictactoe        legal               50       54                  100
+pentago                   next                51       55                   50
+pentago                   goal                50       82                  100
+pentago                   legal               50       66                  100
+platformjumpers           next                50       60                   50
+platformjumpers           goal                50       80                  100
+platformjumpers           legal               50       57                  100
+rainbow                   next                50       54                  100
+rainbow                   goal                50       67                  100
+rainbow                   legal               50       54                  100
+sheep_and_wolf            next                50       57                   50
+sheep_and_wolf            goal                50       56                  100
+sheep_and_wolf            legal               50       55                  100
+sudoku                    next                50       59                  100
+sudoku                    goal                50       74                  100
+sudoku                    legal               50       58                  100
+sukoshi                   next                50       65                  100
+sukoshi                   goal                50       72                  100
+sukoshi                   legal               50       71                  100
+tictactoe                 next                50       58                   50
+tictactoe                 goal                50       80                  100
+tictactoe                 legal               50       57                  100
+ttcc4                     next                50       59                   50
+ttcc4                     goal                50       86                  100
+ttcc4                     legal               50       53                  100
+untwisty_corridor         next                57       74                   50
+untwisty_corridor         goal                50       68                  100
+untwisty_corridor         legal               50       50                  100
+-----------------  -------  --
+metagol            51.1667   0
+aleph              64.9444   0
+specialised_ilasp  85.1852  76
+-----------------  -------  --
