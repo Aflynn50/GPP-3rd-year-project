@@ -10,7 +10,7 @@ metagol 51 0
 aleph 66 0
 
 Mixed on Random
-specialised_ilasp 73 7
+specialised_ilasp 73 5
 metagol 51 0
 aleph 67 1
 

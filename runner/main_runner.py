@@ -112,34 +112,19 @@ def run_train(game_type):
 
 def auto_tester():
     subprocess.run(['rm','-r',git_root + "runner/programs"])
-    subprocess.run(['cp','-r',git_root + "runner/programs_mixed",git_root + 'runner/programs'] )
-    move_json_files('optimal',train_or_test='test')
-    runner.parse_and_test()
-    os.system('python3 runner.py nice_results > ' + git_root + 'runner/mixed_on_optimal.txt')
-    print("results for mixed on optimal")
-    runner.print_nice()
-
-    subprocess.run(['rm','-r',git_root + "runner/programs"])
-    subprocess.run(['cp','-r',git_root + "runner/programs_mixed_16",git_root + 'runner/programs'] )
+    subprocess.run(['cp','-r',git_root + "runner/programs_mixed_24",git_root + 'runner/programs'] )
     move_json_files('random',train_or_test='test')
     runner.parse_and_test()
-    os.system('python3 runner.py nice_results > ' + git_root + 'runner/mixed_on_random_16.txt')
-    print("results for mixed on random 16")
+    os.system('python3 runner.py nice_results > ' + git_root + 'runner/mixed_on_random_24.txt')
+    print("results for mixed on random 24")
     runner.print_nice()
 
     move_json_files('optimal',train_or_test='test')
     runner.parse_and_test()
-    os.system('python3 runner.py nice_results > ' + git_root + 'runner/mixed_on_optimal_16.txt')
-    print("results for mixed on optimal 16")
+    os.system('python3 runner.py nice_results > ' + git_root + 'runner/mixed_on_optimal_24.txt')
+    print("results for mixed on optimal 24")
     runner.print_nice()
 
-    subprocess.run(['rm','-r',git_root + "runner/programs"])
-    subprocess.run(['cp','-r',git_root + "runner/programs_new_optimal",git_root + 'runner/programs'] )
-    move_json_files('random',train_or_test='test')
-    runner.parse_and_test()
-    os.system('python3 runner.py nice_results > ' + git_root + 'runner/optimal_on_random.txt')
-    print("results for optimal on random")
-    runner.print_nice()
 
 # arg 1 = action e.g. gen_games
 # arg 2 = game type, optimal or random

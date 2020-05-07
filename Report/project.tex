@@ -4,10 +4,11 @@
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amstext}
 \usepackage{wrapfig}
 \usepackage{minted}
 \usepackage{mathrsfs}
-
+\usepackage[inline]{enumitem}
 \usepackage{fancyvrb}
 
 \usepackage{pgfplots}
@@ -15,6 +16,13 @@
 \usepackage{multirow}
 \usepackage[lined,boxruled]{algorithm2e}\usepackage{color}
 \usepackage[english]{babel}
+
+\newcommand*{\LongestText}{fermentum fringilla mauris }%
+\newlength{\LargestSize}%
+\settowidth{\LargestSize}{\LongestText}%
+\newcommand*{\MakeBox}[1]{\makebox[\LargestSize][l]{#1}}%
+\newcommand*{\MakeBoxText}[1]{\text{\MakeBox{#1}}}%
+
 
 % for strikeout
 \usepackage[normalem]{ulem}

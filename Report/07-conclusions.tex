@@ -4,9 +4,11 @@ In this paper we have compared the ability of ILP systems to learn the rules of 
 To test the significance of the size of the training dataset on the ability of the ILP systems to learn the systems were trained on varying numbers of game playouts. It was a training dataset of above 16 game traces had little effect on the ability to learn of the systems tested. 
 
 \subsubsection{Limitations}
+There are several things that could be improved on in this paper.
+\\
 
-%\textbf{What is intelligence?} In this paper we use the concept of intelligence in relation to game traces without formally defining it. Future work could supply a framework with which we can define the intelligence of gameplay generated.
-
+\textbf{Computational resources}
+The computational resources and thus the time given for each system to learn the rules were severely limited for the experiments in this paper. If they were to be conducted again with greater computational resource with more time given to each system more significant results may be achieved
 
 \textbf{ILP systems} In this paper we only test on three ILP systems, it is clear a more representative result could be obtained by testing on more systems. Techniques such as probabilistic\cite{Bellodi/Probablistic,Raedt/Probabalistic} and interactive\cite{Raedt/Interactive} learning are not used by any of the systems tested here. ILASP is the only system designed to handle noisy data\cite{MarkLaw/ILASP2i}, it would be interesting to try others with this approach\cite{Oblak/Noise,Evans/Noise}. The systems used also have many customisable settings for example Metagols metarules which have major implications for the programs learnt\cite{Cropper/Metarules}. Aleph has many different search methods on the hypothesis space many of which may yield better results than the default algorithm used in this paper.
 
