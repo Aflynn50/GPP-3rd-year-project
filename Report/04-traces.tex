@@ -1,8 +1,17 @@
 \chapter{Generating Traces}\label{ch:traces}
-In this section we describe the process of generating and transforming game traces to IGGP tasks. The first step is to generate the intelligent and random play. To do this we used the Sancho system\cite{Sancho/Github}. 
+In this section we describe the process of generating and transforming game traces to IGGP tasks. The first step is to generate the intelligent and random play. To do this we used the Sancho system\cite{Sancho/Github}.
 
 \section{Sancho}\label{sec:sancho}
-To generate optimal gameplay we decided that the best approach was to use a previous winner of the GGP competition. Since the aim of the competition is to find the program that performs best at the set of games used in the IGGP problem we conclude that there is no better way to generate a comprehensive set of game traces. The winner of the 2014 GGP competition 'Sancho' was selected \footnote{http://ggp.stanford.edu/iggpc/winners.php accessed on 12/03/2020} since they are the most recent winner to have published their code\cite{Sancho/Github}. Some small modifications to the information logged by the game server are made but otherwise the code is unchanged.
+To generate optimal gameplay we decided that the best approach was to use a previous winner of the GGP competition. Since the aim of the competition is to find the program that performs best at the set of games used in the IGGP problem we conclude that there is no better way to generate a comprehensive set of game traces.
+\ac{
+I think this part is weak.
+You need to be much clearer.
+Some of the games can be solved \emph{optimally} using minimax or A* search with a heuristic function.
+However, they would take a lot of effort to do that, and it may be computationally expensive.
+Therefore, you use something that is not necessarily optimal, but which can be applied to all the games and which (according to your earlier claim) should be better than an amateur human player.
+}
+
+The winner of the 2014 GGP competition 'Sancho' was selected \footnote{http://ggp.stanford.edu/iggpc/winners.php accessed on 12/03/2020} since they are the most recent winner to have published their code\cite{Sancho/Github}. Some small modifications to the information logged by the game server are made but otherwise the code is unchanged.
 
 The core of algorithm used by Sancho is the Monte Carlo tree search (MCTS).
 
@@ -53,7 +62,7 @@ Sancho also does static analysis of the game rules. It determines game predicate
 \subsection{Sancho and IGGP}
 Sancho represents the best available automated player of the games in the IGGP dataset. Its level of play for most games is above that of an amateur human as has been shown in the Carbon versus Silicone matches at the GGP competition\cite{Genesereth/GGPOverview}. Sancho generally provides good quality intelligent play however in some cases it has struggled.
 
-The IGGP dataset used for the experiments contains several games based on game theory. Games such as the Prisoner Dilemma where player can choose to either \textit{cooperate} or \textit{defect}. If both player cooperate then they both get 3 point. If one defects and the other tried to cooperate the cooperator gets 0 points and the defector gets 5. If they both defect both get 0. There are several rounds of this in one game playout. A human playing this might choose to try and cooperate, hoping that that the other player will too however Sancho has been observed to always defect. This result is predictable since this is the only strong Nash equilibrium for this game however it is hard to justify this as ``human quality play''. 
+The IGGP dataset used for the experiments contains several games based on game theory. Games such as the Prisoner Dilemma where player can choose to either \textit{cooperate} or \textit{defect}. If both player cooperate then they both get 3 point. If one defects and the other tried to cooperate the cooperator gets 0 points and the defector gets 5. If they both defect both get 0. There are several rounds of this in one game playout. A human playing this might choose to try and cooperate, hoping that that the other player will too however Sancho has been observed to always defect. This result is predictable since this is the only strong Nash equilibrium for this game however it is hard to justify this as ``human quality play''.
 
 
 \section{Generating and transforming the traces}
@@ -88,14 +97,14 @@ We modified the GGP matchmaker to log the following information:
 	\item \textbf{Goal value trace} - The sequence of goal value for each player on every state: $goals = ((g_{1,r_1},...,g_{1,r_k}),...,(g_{n,r_1},...,g_{n,r_k}))$. $g_{i,r_j} \in [0,100]$ represents how well player $r_j$ has achieved the goal in state $s_i$. For some games such as eight puzzle this is 0 on every state until the winning state where it becomes 100
 
 \end{itemize}
-This represents all the data needed from the match to generate IGGP tasks. In each state all the positive atoms in $S$ (that is the atoms true in the current state) are arguments of the \texttt{true} predicate. For example if at the start of the game the first cell is blank on the board then we would have $\texttt{( true ( cell 1 1 b ) )} \in s_1$. All the positive atoms in $A$ are arguments of the \texttt{does} predicate in a similar fashion. 
+This represents all the data needed from the match to generate IGGP tasks. In each state all the positive atoms in $S$ (that is the atoms true in the current state) are arguments of the \texttt{true} predicate. For example if at the start of the game the first cell is blank on the board then we would have $\texttt{( true ( cell 1 1 b ) )} \in s_1$. All the positive atoms in $A$ are arguments of the \texttt{does} predicate in a similar fashion.
 
 \subsection{Transforming game traces into IGGP tasks}
 
 We define a function that transforms the sequences into four separate induction tasks. An induction task is the set of triples $\{(B_i,E_i^+,E_i^-)\}_n^{i=0}$. We first define a function trace that translates the sequences given in the log of the match into a set of pairs $\{(B_i,E_i^+)\}_n^{i=0}$ . We then define a function \textit{triple} which gives the the set of triples  $\{(B_i,E_i^+,E_i^-)\}_n^{i=0}$ from the set of pairs $\{(B_i,E_i^+)\}_n^{i=0}$.
 \\
 
-We flatten the sequences of $(m_{i,r_1},...,m_{i,r_k})$ in \textit{moves}, $(l_{1,r_1},...,l_{1,r_k})$ in \textit{legals} and $(g_{1,r_1},...,g_{1,r_k})$ in \textit{goals} to a set that includes the role name as an extra argument of the predicate (the arity is increased by 1). For example if 
+We flatten the sequences of $(m_{i,r_1},...,m_{i,r_k})$ in \textit{moves}, $(l_{1,r_1},...,l_{1,r_k})$ in \textit{legals} and $(g_{1,r_1},...,g_{1,r_k})$ in \textit{goals} to a set that includes the role name as an extra argument of the predicate (the arity is increased by 1). For example if
 \[(m_{i,r_1},m_{i,r_2}) = \texttt{[( move 2 2 ), ( move 2 3 )]}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \]
 and $r_1 = black$ and $r_2 = white$ then it would be replaced by $m_i$
 \[m_i = \texttt{\{( move black 2 2 ), ( move white 2 3 )\}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \]
@@ -108,9 +117,9 @@ and $r_1 = black$ and $r_2 = white$ then it would be replaced by $l_i$
 \begin{align*}
 l_i = \{&\texttt{( move black 2 2 ), ( move black 1 3 ),}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\ &\texttt{( move white 2 3 ), ( move white 1 2 )}\}
 \end{align*}
-Again we now have that legals is a sequence $(l_1,...,l_n)$. The same procedure is also applied to \textit{goals} giving us a single flat list with the roles included in each predicate. Since terminal does not contain any extra information no processing at this stage is needed. 
+Again we now have that legals is a sequence $(l_1,...,l_n)$. The same procedure is also applied to \textit{goals} giving us a single flat list with the roles included in each predicate. Since terminal does not contain any extra information no processing at this stage is needed.
 \subsubsection{Building the traces}
-The trace function is defined for \textit{legal}, \textit{goal}, \textit{next} and \textit{terminal}. We treat the output of the zip function as a set. We define $S[p/q]$ on a set $S$ for predicates $p$ and $q$ to be the substitution of all instances of $q$ in $S$ for $p$.
+The trace function is defined for \textit{legal}, \textit{goal}, \textit{next} and \textit{terminal}. We treat the output of the zip function \ac{what is the zip function?} as a set. We define $S[p/q]$ on a set $S$ for predicates $p$ and $q$ to be the substitution of all instances of $q$ in $S$ for $p$.
 \begin{align*}
 &\Lambda_{legal} &&= trace_{legal}(states,legal) &&= \text{zip } states\ legal[\texttt{legal}/\texttt{true}] \\
 &\Lambda_{goal} &&= trace_{goal}(states,goals) &&= \text{zip \textit{states goal}} \\
@@ -125,7 +134,7 @@ The substitutions $[\texttt{legal}/\texttt{true}]$ and $[\texttt{next}/\texttt{t
 Since the predicates are already in the \texttt{true} predicate we only need to substitute one out for the other.
 
 Some of the ILP systems being tested cannot work with function symbols of arity greater than 0. To allow them to operate we merge the function and their arguments into one predicate. For example \texttt{( legal ( move 1 1 ) )} becomes \verb|( legal_move 1 1 )| where \verb|legal_move| is a newly formed predicate.
- 
+
 To generate the triples we use the two functions $triples_1$ and $triples_2$. Let $pred\ X\ p$ be the subset of atoms in the set $X$ that use the predicate $p$.
 \begin{align*}
 tri&ple_1(\Lambda_p) = \text{map } f\ \Lambda\\

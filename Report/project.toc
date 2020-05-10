@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {subsubsection}{Contributions}{5}
 \contentsline {chapter}{\numberline {2}Related work}{6}
@@ -6,12 +6,12 @@
 \contentsline {subsection}{\numberline {2.1.1}GDL}{7}
 \contentsline {subsubsection}{Logic Programming}{7}
 \contentsline {subsubsection}{Usefulness of GDL}{7}
-\contentsline {section}{\numberline {2.2}IGGP}{8}
+\contentsline {section}{\numberline {2.2}IGGP}{9}
 \contentsline {subsection}{\numberline {2.2.1}ILP}{9}
 \contentsline {subsubsection}{Grandparent example}{9}
 \contentsline {subsection}{\numberline {2.2.2}Back to IGGP}{10}
 \contentsline {section}{\numberline {2.3}Prolog}{10}
-\contentsline {section}{\numberline {2.4}ILP systems used}{11}
+\contentsline {section}{\numberline {2.4}ILP systems used}{12}
 \contentsline {subsection}{\numberline {2.4.1}Metagol}{12}
 \contentsline {subsection}{\numberline {2.4.2}ALEPH}{13}
 \contentsline {subsection}{\numberline {2.4.3}ILASP}{14}
@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {4.1.1}Monte Carlo Tree Search}{17}
 \contentsline {subsubsection}{Use of MCTS in Sancho}{19}
 \contentsline {subsection}{\numberline {4.1.2}Other aspects of Sancho}{19}
-\contentsline {subsubsection}{Puzzle Solving}{19}
+\contentsline {subsubsection}{Puzzle Solving}{20}
 \contentsline {subsubsection}{Static analysis}{20}
 \contentsline {subsection}{\numberline {4.1.3}Sancho and IGGP}{20}
 \contentsline {section}{\numberline {4.2}Generating and transforming the traces}{20}
