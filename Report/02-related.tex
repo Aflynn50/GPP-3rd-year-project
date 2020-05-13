@@ -4,11 +4,9 @@
 
 General Game Playing (GGP) is a framework for evaluating an agent's general intelligence across a wide range of tasks \cite{Cropper/IGGP,Genesereth/GGPOverview}. The agents accept declarative descriptions of arbitrary games at run time and use the descriptions to play those games effectively. All the games are finite, discrete, deterministic multi-player games of complete information \cite{GDL_Spec}. The games in the GGP competition game set vary in number of players, dimensions and complexity. For example games such as \textit{rock paper scissors} have 0 dimensions and only 10 rules in the given GGP rule set, more complex games such as \textit{checkers} has 52 rules and are 2 dimensional. There are also single player games such as \textit{eight puzzle} or \textit{fizz buzz}.
 
-The agents play games selected at random. They are sent a listing of the rules described in the Game Description Language (GDL). GDL is a language based on first order logic (section \ref{sec:GDL}). Matches take place through an online framework called the Gamemaster which arbitrates the competition  \cite{Genesereth/GGPOverview}.
-
 In 2005 an annual International General Game Playing Competition (IGGPC) was set up \cite{Kowalski/GGP}. Each year hopeful participants pit GGP agents against one another to determine the most effective system. The competitors take part in a series of rounds of increasing complexity. The agent that wins the most games in these rounds is declared victorious. The 2014 winner Sancho is used in this paper to generate traces of intelligent game play for the IGGP task.
 
-The game descriptions written in GDL used in the GGP competition can be used as example rule sets for systems in Inductive General Game Playing (IGGP) as the output the learners would ideally generate. The descriptions of the games used in GGP are not necessarily minimal so it is possible that an ILP system could generate a more concise rule set than the GGP descriptions.
+The game descriptions written in are written in the Game Description Language (GDL). These are used as example rule sets  in the Inductive General Game Playing (IGGP) problem as the output the learners would ideally generate. The descriptions of the games used in GGP are not necessarily minimal so it is possible that an ILP system could generate a more concise rule set than the GGP descriptions.
 
 \subsection{Game Description Language}\label{sec:GDL}
 Game Description Language (GDL) is the formal language used in the GGP competition to specify the rules of the games \cite{GDL_Spec}. The language is based off a logical programming language \textit{datalog}, a subset of Prolog. To understand the semantics of GDL it helps to first cover logic programming as a field of study.
@@ -114,10 +112,10 @@ The choice of metarules determines the structure of the hypothesis. Different ch
 
 \subsection{Aleph}\label{sec:aleph}
 
-Aleph is a Prolog variant of the ILP system Progol  \cite{Muggleton/Aleph}. As input, like any other ILP system, Aleph takes positive and negative examples represented as a set of facts along with the background knowledge. It also requires \textit{mode declarations} and \textit{determinations} which are specific to Aleph. Mode declarations specify the type of the inputs and outputs of each predicate used e.g. \texttt{plus(+integer,+integer,-integer)} where \texttt{+} signifies an input and \texttt{-} an output.
+Aleph is a Prolog variant of the ILP system Progol  \cite{Muggleton/Aleph}. As input Aleph takes positive and negative examples represented as a set of facts along with the background knowledge. It also requires \textit{mode declarations} and \textit{determinations} which are specific to Aleph. Mode declarations specify the type of the inputs and outputs of each predicate used e.g. \texttt{plus(+integer,+integer,-integer)} where \texttt{+} signifies an input and \texttt{-} an output.
 Determinations specify which predicates can go in the body of a hypothesis. These determinations take the form of pairs of predicates, the first being the head of the clause and the second a predicate that can appear in its body.
 
-For each predicate we would like to learn in the IGGP problem we give Aleph the determinations consisting of every target predicate (next,goal and legal) paired with every background predicate (which are specific to each game). Luckily there has been some work to induce mode declarations from the determinations  \cite{McCreath/Meta-extraction} so we do not need to come up with our own mode declarations.
+For each predicate we would like to learn in the IGGP problem we give Aleph the determinations consisting of every target predicate (next, goal and legal) paired with every background predicate (which are specific to each game). Luckily there has been some work to induce mode declarations from the determinations  \cite{McCreath/Meta-extraction} so we do not need to come up with our own mode declarations.
 
 A basic outline of the Aleph algorithm is taken from the aleph website \footnote{http://www.cs.ox.ac.uk/activities/programinduction/Aleph/aleph.html accessed 26/03/2020}:
 \begin{enumerate}
@@ -130,9 +128,9 @@ the example selected and is within language restrictions provided.
 made redundant are removed. Return to step 1.
 \end{enumerate}
 
-Mode declarations and determinations are used in step 2 of this procedure to bound the hypothesis space. Only predicates that are mentioned in the determinations of the hypothesis and are of the correct type are tried. The bottom clause constructed is the most specific clause that entails the example. Therefore a clause with the same head and any subset of the predicates of the body will be more general than the bottom clause. Aleph only considers these generalisations of this bottom clause.
+Mode declarations and determinations are used in step 2 of this procedure to bound the hypothesis space. Only predicates that are in the determinations of the hypothesis and are of the correct type are tried. The bottom clause constructed is the most specific clause that entails the example. Therefore a clause with the same head and any subset of the predicates of the body will be more general than the bottom clause. Aleph only considers these generalisations of this bottom clause.
 
-The search space is therefore bounded by $2^n$ with $n$ being the number of predicates in the bottom clause. By default Aleph preforms a bounded breath first search on all the possible rules, enumerating shorter clauses before longer clauses. The search is bounded by several parameters such as maximum clause size and maximum proof depth. For this paper we will use Aleph with the default settings.
+By default Aleph preforms a bounded breath first search on all the possible rules, enumerating shorter clauses before longer clauses. The search is bounded by several parameters such as maximum clause size and maximum proof depth.
 
 \subsection{ILASP}
 
