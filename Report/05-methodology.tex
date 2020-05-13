@@ -3,15 +3,15 @@
 In this section we describe the exact methods used to run the experiments. Multiple experiments were run. To answer questions Q1 and Q3 experiment E1 was carried out in which three systems were trained on a set of random, intelligent and mixed quality traces. To answer Q2 experiment E2 was carried out in which the systems were trained on a varying number of mixed quality traces.
 \section{Materials}
 \subsubsection{Generating training data}
-The training data was generated according to the methods described in chapter \ref{ch:traces}. To generate the game traces the Sancho version 1.61 was used\cite{Sancho/Github}. The only modifications made to this were the changes to the logging system. Extra code was added to record the legal moves, the goal values at each state and the names of the players. Sancho was run through the GGP-base framework, a codebase developed by the general game playing community for hosting matches between GGP agents\footnote{https://github.com/ggp-org/ggp-base}.
+The training data was generated according to the methods described in chapter \ref{ch:traces}. To generate the game traces the Sancho version 1.61 was used \cite{Sancho/Github}. The only modifications made to this were the changes to the logging system as described in \ref{sec:gen}.
 
-To generate traces matches between multiple random players or multiple instances of Sancho were conducted. Each match was run with 30 seconds pre game warm up time and a maximum of 15 seconds per move. The games used are listed in table \ref{tab:Games}. Due to issues of compatibility we were not able to use all the games from the IGGP dataset. Some games caused issues with Sanchos simulations and thus is was not possible to run experiments with them. A total of 36 out of the 50 games in the dataset were used. All games used from the IGGP dataset has a limit on the number of number of moves that can be taken however it varied from game to game. The games always terminate weather they are in the goal state or not.
+To generate traces matches between multiple random players or multiple instances of Sancho were conducted. Each match was run with 30 seconds pre game warm up time and a maximum of 15 seconds per move. The games used are listed in table \ref{tab:Games}. Due to issues of compatibility we were not able to use all the games from the IGGP dataset. Some games caused issues with Sanchos simulations and thus is was not possible to run experiments with them. A total of 36 out of the 50 games in the dataset were used. All games used from the IGGP dataset have a limit on the number of moves that can be taken however it varied from game to game.
 
 Due to restraints on computational power 30 random traces and 30 Sancho generated traces were generated. The traces were generated on a machine with 20GB of RAM and an 8 core processor. 
 
 \subsubsection{The ILP systems}
 
-The three ILP systems were trained on the random, intelligent and mixed game traces using the same settings as were used in the IGGP paper\cite{Cropper/IGGP}. These settings are:
+The three ILP systems were trained on the random, intelligent and mixed game traces using the same settings as were used in the IGGP paper \cite{Cropper/IGGP}. These settings are:
 \begin{itemize}
 	\item Metagol - Metagol 2.2.3 with YAP 6.2.2. The metarules used can be found in the IGGP code repository.
 	\item Aleph - Aleph 5 with YAP 6.2.2. The default Aleph parameters were used.
@@ -34,7 +34,7 @@ The systems were run concurrently in both training and testing.
 	coins               & gt chicken    & multiple buttons and lights  & ttcc4 \\ \hline
 	connect4team        & gt prisoner   & nine board tic tac toe        & untwisty corridor \\ \hline
 \end{tabular}
-\caption{Games used in the experiments}
+\caption{Games used in the experiments. \texttt{gt} stands for ``game theory''}
 \label{tab:Games}
 \end{table}
 
@@ -48,15 +48,16 @@ In \textbf{E1} The ILP systems were trained on 8 full game traces. They were eac
 
 In \textbf{E2} we trained each system on 8, 16 and 24 mixed traces where each set was made up of a 50/50 mix of random and intelligent traces. It was found that the results for 16 and 24 traces were very similar across all systems so no larger training sets were tested.
 
-In the IGGP paper\cite{Cropper/IGGP} the IGGP task was defined across four predicates for each game: \textit{goal}, \textit{next}, \textit{terminal} and \textit{legal}. After testing the systems on all four predicates it was found that the terminal predicates did not give an accurate picture into the ability to learn of each system. Each game had a maximum number of moves, these varied from game to game. Generally the randomly generated game traces did not complete the game before the move limit was reached. Since the terminal predicate is true on the last game state in each game and the game state includes a move counter this allowed the systems to simply learn the correlation between the maximum move and the terminal predicate. They would learn the program: \verb|terminal :- true_step(MAX)| where \verb|MAX| is the maximum number of moves for the game. Since when a game is played randomly the max move count is almost always hit the predicate is often perfectly solved. However if when Sancho plays then game it solves it before the maximum move count is hit it is less likely to induce a correct rule. For this reason the \textit{terminal} predicate was not included in training data.
+In the IGGP paper \cite{Cropper/IGGP} the IGGP task was defined across four predicates for each game: \textit{goal}, \textit{next}, \textit{terminal} and \textit{legal}. After testing the systems on all four predicates it was found that the score for the terminal predicates accurately represent the ability of each system. Generally the randomly generated game traces did not complete the game before the move limit was reached. Since the terminal predicate is true on the last game state in each game and the game state includes a move counter this allowed the systems to simply learn the correlation between the maximum move and the terminal predicate. They would learn the program: \verb|terminal :- true_step(MAX)| where \verb|MAX| is the maximum number of moves for the game. Since when a game is played randomly the max move count is almost always hit the predicate is often perfectly solved. However if when Sancho plays the game it solves it before the maximum move count is hit it is less likely to induce a correct rule. For this reason the \textit{terminal} predicate was not included in training data.
 
 \subsection{Testing}
 
 Each system was tested on 4 randomly generated and 4 intelligently generated traces. To evaluate the performance of the ILP systems on the training dataset we use two metrics: balanced accuracy and perfectly solved.
+\\
 
 \textbf{Balanced accuracy} In the datasets used for testing the ILP systems the vast majority of examples are negative. Balanced accuracy takes this into account when evaluating approaches. The system to be tested is the generated logical hypothesis $H$ which, along with the background knowledge $B$ for the relevant game. The test data is the set of combined positive and negative testing examples $E^+ \cup E^-$. We define the number of positive examples $p = |E^+|$, the number of negative examples $n = |E^-|$, the number of correctly predicted positives as $tp = |\{e\in E^+|B\cup H \models e\}|$ and the number of correctly predicted negatives as $tn = |\{e\in E^-|B\cup H \not\models e\}|$. The balanced accuracy is subsequently defined as $ba = 100 \cdot (tp/p + tn/n)/2$.
 
-\textbf{Perfectly solved} This metric considers the number of predicates for which the ILP system correctly classified all examples. It is equivalent to the number of games with a balanced accuracy score of 100. This metric is important since for all predicates there exists an exact solution (the rules that were used to generate the examples). A system that has correctly predicated 99\% of the results is no where near as useful as one that predicts 100\%.
+\textbf{Perfectly solved} This metric considers the number of predicates for which the ILP system correctly classified all examples. It is equivalent to the number of games with a balanced accuracy score of 100. This metric is important since for all predicates there exists an exact solution (the rules that were used to generate the examples). A system that has correctly predicated 99\% of the results is not as useful as one that predicts 100\%.
 \\
 
 In the results section (chapter \ref{ch:results}) we present only the aggregate scores in the results since the full results are too large for this paper. To evaluate the systems we compare the average balanced accuracy and the number of perfectly solved games when tested on optimal and random traces.

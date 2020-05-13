@@ -1,0 +1,203 @@
+The Game Description Language is a specialised example of a logic programming language. To understand the concepts used in GDL it is easier when first one understands the concepts of logic programming. Prolog is the ancestor for huge number of logical programming languages including datalog, the parent of GDL.
+
+\section{Prolog}\label{sec:prolog}
+Prolog is one of the most popular and well used logical programming languages. The syntax in Prolog for rules and facts are fairly intuitive. A simple fact might be \mintinline{Prolog}{son(bob,alice).}. This tells us that the atom \mintinline{Prolog}{alice} relates the atom \mintinline{Prolog}{bob} in the \mintinline{Prolog}{son} relation. A rule is written \mintinline{Prolog}{parent(X,Y) :- son(Y,X)} which means if we have the relation son of Y and X then X relates Y in parent. The symbol :- is the same as reverse implication. We can query a program in the Prolog environment. If we typed in ``\mintinline{Prolog}{parent(alice,bob).}'' then it would return true because we have \mintinline{Prolog}{son(bob,alice)} and the rule which tells us that if X is a son of Y else then Y is a parent of X so \mintinline{Prolog}{alice} is a parent of \mintinline{Prolog}{bob}. Predicates can be conjoined with the comma `,' (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y), c(Z,Y)}). Disjunction is expressed with the semicolon `;' (e.g. \mintinline{Prolog}{a(X,Y,Z) :- b(X,Y) ; c(Z,Y)} \cite{Bratko}.
+
+Prolog answers queries using a process know as proof search and unification. The unification process is similar to logical unification, two terms unify if they are the same term or if they contain variables that can be instantiated with terms in such a way that the new terms are equal. For example the terms \mintinline{Prolog}{name(bob).} and \mintinline{Prolog}{name(X).} will unify with \mintinline{Prolog}{X = bob}. The Prolog ISO defines the Herbrand Algorithm for unification  \cite{PrologISO}. A Prolog query is a set of goals. The Prolog System decides whether they are satisfiable or not. When a query is asked the of the Prolog system it executes something similar to the following algorithm. The exact implementations vary among Prolog systems however they generally follow this procedure.
+\begin{algorithm}
+	\SetKwInOut{Input}{Input}
+	\SetKwProg{Fn}{Function}{}{}
+	\Input{A list of goals $GoalList = G_1,G_2,...,G_M$}
+	\Fn{\textbf{execute} (Program, GoalList, Success):}{
+		\If{$empty(GoalList)$}{$Success \leftarrow true$}{
+			\While{\textbf{not} empty($GoalList$)}{
+				$\textit{Goal} \leftarrow head(GoalList)$\;
+				$OtherGoals \leftarrow tail(GoalList)$\;
+				$Satisfied \leftarrow false$\;
+				\While{\textbf{not} Satisfied and there are more clauses in the program}{
+					Let next clause in the program be $H \vdash B_1,...,B_n$\;
+					Construct a variant of this clause $H' \vdash B_1',...,B_n'$\;
+					$match(Goal,H',MatchOK,Instant)$\;
+					\If{$MatchOK$}{
+						$NewGoals \leftarrow append([B_1',...,B_n'],OtherGoals)$\;
+						$NewGoals \leftarrow substitue(Instant,NewGoals)$\;
+						$execute(Program,NewGoals,$\textit{Satisfied}$)$\;
+					}
+				}
+				$Success \leftarrow$ \textit{Satisfied}\;
+			}
+		}
+	}
+	\caption{Execute Prolog Goals}
+\end{algorithm}
+
+The program listing is searched for a term to unify with. The listing is searched in the order it is written in. When Prolog finds a matching rule it then attempts to sequentially unify the terms of the body using the same method. If the rule has no body then the variables are assigned and the terms unify. If Prolog fails to unify two terms then it backtracks, assigns the last variable a different values. This continues until a proof is found or all possibilities have been exhausted \cite{Bratko}. Prolog forms the basis of two of the ILP systems the we test.
+
+
+
+\section{MCTS}
+Exactly how the tree search algorithm chooses new nodes to simulate is where the complexity lies. The node chosen by traversal of the tree should strike a balance between exploiting promising nodes and exploring nodes with few simulations. The Upper Confidence Bound for trees algorithm was designed to do exactly this \cite{Kocsis/UCT}. The algorithm chooses a child node for each state based on the UTC formula. The formulae can be written as: \[UTC(v_i) = \frac{Q(v_i)}{N(v_i)} + c\sqrt{\frac{ln(N(v_i))}{N(v_i)}}\] Where we have:
+\begin{itemize}
+	\item $v_i$ is node $v$ after move $i$
+	\item $Q(v)$ is the number of winning simulations that have taken place below it
+	\item $N(v)$ is the number of simulations that have taken place below it
+\end{itemize}
+The function is the sum of two components. The first part $\frac{Q(v_i)}{N(v_i)}$ is called the exploitation component. It is a ratio of winning to losing simulation that resulted from making this move. This encourages traversal of promising nodes that have a high win rate. However, if only this factor was used the algorithm would quickly find a winning node and only explore that hence we need a second component: the exploration factor. This part $c\sqrt{\frac{ln(N(v_i))}{N(v_i)}}$ favours nodes that have not yet been explored. The value $c$ is a constant that balances the two components, it can be adjusted depending on the use case.
+
+
+
+\section{GGP}
+ After the players have established a HTTP connection to the Game Manager one of the players takes the role of game director. The game director then broadcasts the following information to the game manger: \begin{enumerate*}[label={\arabic*)}]
+	\item the name of a game that is known to the manager
+	\item the required number of players
+	\item the amount of time to be given for each turn
+\end{enumerate*}. The match can then be started by pressing a start button, when pressed the agents will receive a \textit{Start} message including the role of the player (e.g. black or white in chess) and a description of the game in GDL. The Game Manger communicates all instructions to the players through HTTP
+
+
+\section{GDL}
+
+It is suited to specifying game rules because:
+\begin{itemize}
+	\item It is a purely declarative language
+	\item It has restrictions to ensure that all questions of logical entailment are decidable
+	\item There are some reserved words (such as \textit{terminal} or \textit{goal}), which tailor the language to the task of defining games
+\end{itemize}
+
+
+
+
+\subsubsection{Grandparent example}
+A classic illustration of the problem is the learning of the grandparent relation. Here we want to derive a logical program that given information about who is a parent of whom will be able to tell us all the people each person is a grandparent of. It needs to capture the idea that if $Y$ is a parent of $X$ and $Z$ a parent of $Y$ then $Z$ is a grandparent of $X$. We are given the following background knowledge.
+
+\[
+B=
+\begin{cases}
+mother(alice,jane)\\
+mother(jane,dave)\\
+mother(alice,henry)\\
+father(henry,bob)
+\end{cases}
+\]
+Here we are not directly given the parent relation. This will have to be induced by the learner. The positive and negative observations are given by $O^+ \cup \neg O^- = O$.
+\[
+O^+=
+\begin{cases}
+grandparent(alice,bob)\\
+grandparent(alice,dave)
+\end{cases}
+O^-=
+\begin{cases}
+grandparent(alice,jane)\\
+grandparent(henry,bob)\\
+grandparent(dave,henry)
+\end{cases}
+\]
+The program we induce would hopefully look something like this:
+\[H=\begin{cases}
+grandparent(X,Y) \leftarrow parent(X,Z) \wedge parent(Z,Y)\\
+parent(X,Y) \leftarrow mother(X,Y)\\
+parent(X,Y) \leftarrow father(X,Y)
+\end{cases}\]
+It should hopefully be clear that this program satisfies $B \wedge H \vDash O$
+
+ILP systems generally regard ILP as a search problem. The search space is the set of well formed hypothesis. Often a set of inference rules are applied to the starting hypothesis, the new hypotheses are then pruned and expanded according to how large $E\subseteq O$ is in $B \wedge H \vDash E$. When all the observations are implied then a correct program has been found.
+
+%\begin{table}[]
+%	\begin{tabular}{|c|c|c|c|c|c|c|}
+%		\hline
+%		\multicolumn{7}{|c|}{Balanced Accuracy}                                                                                       \\ \hline
+%		\multirow{2}{*}{Systems} & \multicolumn{2}{c|}{Mixed - 8} & \multicolumn{2}{c|}{Mixed - 16} & \multicolumn{2}{c|}{Mixed - 24} \\ \cline{2-7}
+%		& Random         & Sancho        & Random         & Sancho         & Random         & Sancho         \\ \hline
+%		Metagol                  & 51             & 51            & 51             & 51             & 51             & 51             \\ \hline
+%		Aleph                    & 67             & 66            & 67             & 65             & 67             & 65             \\ \hline
+%		ILASP                    & 73             & 73            & 85             & 85             & 85             & 85             \\ \hline
+%	\end{tabular}
+%	\caption{The average balanced accuracy for each system trained and tested as described in E2}
+%	\label{tab:E2-BA}
+%\end{table}
+%
+%\begin{table}[]
+%	\begin{tabular}{|c|c|c|c|c|c|c|}
+%		\hline
+%		\multicolumn{7}{|c|}{Perfectly Solved}                                                                                        \\ \hline
+%		\multirow{2}{*}{Systems} & \multicolumn{2}{c|}{Mixed - 8} & \multicolumn{2}{c|}{Mixed - 16} & \multicolumn{2}{c|}{Mixed - 24} \\ \cline{2-7}
+%		& Random         & Sancho        & Random         & Sancho         & Random         & Sancho         \\ \hline
+%		Metagol                  & 0              & 0             & 0              & 0              & 0              & 0              \\ \hline
+%		Aleph                    & 1              & 0             & 0              & 0              & 0              & 0              \\ \hline
+%		ILASP                    & 5              & 8             & 76             & 76             & 76             & 76             \\ \hline
+%	\end{tabular}
+%	\caption{The number of perfectly solved scores for each system trained and tested as described in E2}
+%	\label{tab:E2-P}
+%\end{table}
+%
+
+
+%\subsubsection{Random training}
+%\begin{tikzpicture}
+%\begin{axis}[
+%	ylabel=Balanced Accuracy,
+%	width=6cm,
+%	enlargelimits=0.05,
+%	legend style={at={(0.5,1.3)},
+%	anchor=north,
+%	legend columns=-1},
+%	ybar interval=0.5,
+%	symbolic x coords={ilasp,metagol,aleph, poog}
+%]
+%\addplot
+%	coordinates {(ilasp,71) (metagol,51) (aleph,66) (poog, 65)};
+%\addplot
+%	coordinates {(ilasp,72) (metagol,51) (aleph,65) (poog,65)};
+%\legend{Tested on random,Tested on optimal}
+%\end{axis}
+%\end{tikzpicture}
+%~
+%\begin{tikzpicture}
+%\begin{axis}[
+%	width=6cm,
+%	ylabel=Number of perfect games,
+%	enlargelimits=0.05,
+%	ybar interval=0.5,
+%	symbolic x coords={ilasp,metagol,aleph, poog}
+%]
+%\addplot
+%	coordinates {(ilasp,7) (metagol,0) (aleph,1) (poog, 0)};
+%\addplot
+%	coordinates {(ilasp,8) (metagol,0) (aleph,0) (poog,0)};
+%\end{axis}
+%\end{tikzpicture}
+%\subsubsection{Optimal training}
+%\begin{tikzpicture}
+%\begin{axis}[
+%ylabel=Balanced Accuracy,
+%width=6cm,
+%enlargelimits=0.05,
+%legend style={at={(0.5,1.3)},
+%	anchor=north,
+%	legend columns=-1},
+%ybar interval=0.5,
+%symbolic x coords={ilasp,metagol,aleph, poog}
+%]
+%\addplot
+%coordinates {(ilasp,71) (metagol,51) (aleph,65) (poog, 65)};
+%\addplot
+%coordinates {(ilasp,72) (metagol,51) (aleph,72) (poog,65)};
+%\legend{Tested on random,Tested on optimal}
+%\end{axis}
+%\end{tikzpicture}
+%~
+%\begin{tikzpicture}
+%\begin{axis}[
+%width=6cm,
+%ylabel=Number of perfect games,
+%enlargelimits=0.05,
+%ybar interval=0.5,
+%symbolic x coords={ilasp,metagol,aleph, poog}
+%]
+%\addplot
+%coordinates {(ilasp,5) (metagol,0) (aleph,0) (poog, 0)};
+%\addplot
+%coordinates {(ilasp,10) (metagol,0) (aleph,4) (poog,0)};
+%\end{axis}
+%\end{tikzpicture}
+
