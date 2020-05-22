@@ -15,7 +15,8 @@
 % \usepackage[square]{natbib}
 \usepackage{natbib}
 
-
+\usepackage{caption}
+\captionsetup{format=hang,labelfont={bf}}
 
 \usepackage{pgfplots}
 \usepackage{mdframed}
@@ -40,10 +41,15 @@
 \usemintedstyle{friendly}
 \BeforeBeginEnvironment{minted}{\begin{mdframed}}
 \AfterEndEnvironment{minted}{\end{mdframed}}
-\begin{document}
+
 \title{\Large{\textbf{Inducing game rules from varying quality game play}}}
-% \title{\Large{\textbf{Inductive general game playing with varying quality game play}}}
-\author{Alastair Flynn}
+\date{Hilary, 2020}
+\author{Candidate Number: 1024586\\\\
+\textit{3rd Year Computer Science Project}}
+
+
+\begin{document}
+
 \maketitle
 
 \tableofcontents
