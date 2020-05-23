@@ -1,15 +1,15 @@
 \chapter{IGGP problem}
 \label{ch:IGGP}
 
-The IGGP problem is defined in the 2019 paper Inductive General Game Playing \cite{Cropper/IGGP}. Much like the problem of ILP described in section \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a formula $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
+The IGGP problem is defined in the 2019 paper Inductive General Game Playing \cite{Cropper/IGGP}. Much like the problem of ILP described in section \ref{sec:ILP} the problem setting consists of examples about the truth or falsity of a predicate $F$ and a hypothesis $H$ which covers $F$ if $H$ entails $F$. We assume the languages of:
 \begin{itemize}
 \item $\mathscr{E}$ the language of examples (observations)
 \item $\mathscr{B}$ the language of background knowledge
 \item $\mathscr{H}$ the language of hypotheses
 \end{itemize}
-Each of these languages can be seen as a subset of those defined for the ILP task. In our experiments we transform data generated from the GDL descriptions of games in the IGGP dataset and transform it into the languages of $\mathscr{B}$ and $\mathscr{E}$. GDL allows for functions (predicates nested in one another) in rules albeit in a restricted form. For example any atom appearing inside a \texttt{true} predicate such as \texttt{true(count(9))}. We flatten all of these to single, non nested predicates, i.e. \verb|true_count(9)|. This is needed as not all ILP systems support function symbols. We can therefore assume that both $\mathscr{E}$ and $\mathscr{B}$ are made up of function-free ground atoms. The language of hypotheses $\mathscr{H}$ can be assumed to consist of datalog programs with stratified negation as described here \cite{Kenneth}. Stratified negation is not necessary but in practice allows significantly more concise programs, and thus often makes the learning task computationally easier. We first define an IGGP \textit{input} then use it to define the IGGP \textit{problem}. The input is based on the general input for the Logical induction problem.
+Each of these languages can be seen as a subset of those defined for the ILP task. In our experiments we transform data generated from the GDL descriptions of games in the IGGP dataset and transform it into the languages of $\mathscr{B}$ and $\mathscr{E}$. GDL allows for functional symbols in rules albeit in a restricted form. For example any atom appearing inside a \texttt{true} predicate such as \texttt{true(count(9))}. We flatten all of these to single, non nested predicates, i.e. \verb|true_count(9)|. This is needed as not all ILP systems support function symbols. We can therefore assume that both $\mathscr{E}$ and $\mathscr{B}$ are made up of function-free ground atoms. The language of hypotheses $\mathscr{H}$ can be assumed to consist of datalog programs with stratified negation as described here \cite{Kenneth}. Stratified negation is not necessary but in practice allows significantly more concise programs, and thus often makes the learning task computationally easier. We first define an IGGP \textit{input} then use it to define the IGGP \textit{problem}. The input is based on the general input for the Logical induction problem.
 
-\textbf{The IGGP Input:} An input $\Delta$ is a set of triples $\{(B_i,E_i^+,E_i^-)\}_m^{i=0}$ where
+\textbf{The IGGP Input:} An input $\Delta$ is a set of triples $\{(B_i,E_i^+,E_i^-)\}_{i=0}^m$ where
 \begin{itemize}
 \item $B_i \subset \mathscr{B}$ represents background knowledge
 \item $E_i^+ \subseteq \mathscr{E}$ and $E_i^- \subseteq \mathscr{E}$ represent positive and negative examples respectively

@@ -47,7 +47,7 @@ In experiment E1 we train and test each system on random and intelligent traces 
 \end{table}
 
 \subsubsection{Aleph}
-Throughout all experiments conducted the programs learned by Aleph consisted almost entirely of a disjunction of all cases seen in testing. It appears that the most general clause (see section \ref{sec:aleph}) that could be found for a lot of the examples was also the most specific clause. This simplistic method resulted in programs that performed better when the training and testing data was closely matched. This can be seen in the results for Aleph when trained and tested on Sancho generated traces. For some games all Sancho generated traces were the same, in \textit{fizz buzz} Sancho always says the correct thing and in the \textit{prisoner dilemma} both Sancho players always defect. This allowed Aleph to achieve a perfect score on the \textit{next} predicate. In cases where the training data is diverse Aleph learns a program that over-approximates the solution doing well on the tests with positive examples and badly on the tests with negative examples.
+Throughout all experiments conducted the programs learned by Aleph consisted almost entirely of a disjunction of cases seen in testing. It appears that the most general clause (see section \ref{sec:aleph}) that could be found for a lot of the examples was also the most specific clause. This simplistic method resulted in programs that performed better when the training and testing data was closely matched. This can be seen in the results for Aleph when trained and tested on Sancho generated traces. For some games all Sancho generated traces were the same, in \textit{fizz buzz} Sancho always says the correct thing and in the \textit{prisoner dilemma} both Sancho players always defect. This allowed Aleph to achieve a perfect score on the \textit{next} predicate. In cases where the training data is diverse Aleph learns a program that over-approximates the solution doing well on the tests with positive examples and badly on the tests with negative examples.
 
 Generally Aleph was best at learning the \textit{goal} predicate. Unlike \textit{next} which takes a game state and player moves as input the \textit{goal} predicate often only takes the player role. The limited number of output values, 0 to 100, also meant the output space was smaller than the other predicates. The program Aleph produced would often simply associate each role to all the different goal values it had at any point in the training data. This is a subsection of the goal values it learned for \textit{checkers}:
 \begin{verbatim}
@@ -87,7 +87,7 @@ In experiment E2 each system was trained three times on mixed traces. The first 
 legend style={at={(1.35,0.7)},
 	anchor=north},
 xtick=data,
-ylabel={Balenced Accuracy},
+ylabel={Balanced Accuracy},
 xlabel={Number of traces}]
 \addplot[scatter,only marks,
 scatter src=explicit symbolic] coordinates {
@@ -114,7 +114,7 @@ scatter src=explicit symbolic] coordinates {
 \end{axis}
 \end{tikzpicture}
 \\\\
-When ILASP and Metagol have not had enough time to learn a predicate they output nothing. Both systems scale exponentially in time taken according to the size of the input. Whilst for Metagol it didn't have time even for the 8 traces ILASP ran out of time only on the 16 and 24 traces training sets. This had the effect for ILASP of a large drop in effectiveness. For 16 and 24 the default program consisting of just \textit{true} was used. This gave the balanced accuracy of 50 for each predicate. Metagol still managed to learn the simple predicates that it had managed on the 8 trace training set however did not increase at all in effectiveness over the rest of the experiment.
+When ILASP and Metagol have not been given enough time to fully learn a predicate they output nothing. Both systems scale exponentially in time taken according to the size of the input. Whilst for Metagol it didn't have time even for the 8 traces ILASP ran out of time only on the 16 and 24 traces training sets. This had the effect for ILASP of a large drop in effectiveness. For 16 and 24 the default program consisting of just \textit{true} was used. This gave the balanced accuracy of 50 for each predicate. Metagol still managed to learn the simple predicates that it had managed on the 8 trace training set however did not increase at all in effectiveness over the rest of the experiment.
 
 Unlike the other systems Aleph was consistently able to process the entire input since its method of learning is less computationally intense. When tested on the random traces Aleph did better with the increased number of traces. This was most likely due to the fact that more cases were encountered in the training data. Since Aleph usually ends up putting the cases it encounters straight into the program this simply meant there was a greater number of situations in the testing set that Aleph had seen before and was thus correctly able to classify. When tested on the intelligent traces Alephs score was lower. This is possibly due to the maximum size of Aleph programs taking effect. The clauses relevant to the intelligent traces may be pushed out of the program by the vast number of clauses taken from the random gameplay examples.
 

@@ -6,26 +6,22 @@ General Game Playing (GGP) is a framework for evaluating an agent's general inte
 
 In 2005 an annual International General Game Playing Competition (IGGPC) was set up \cite{Kowalski/GGP}. Each year hopeful participants pit GGP agents against one another to determine the most effective system. The competitors take part in a series of rounds of increasing complexity. The agent that wins the most games in these rounds is declared victorious. The 2014 winner Sancho is used in this paper to generate traces of intelligent game play for the IGGP task.
 
-The game descriptions written in are written in the Game Description Language (GDL). These are used as example rule sets  in the Inductive General Game Playing (IGGP) problem as the output the learners would ideally generate. The descriptions of the games used in GGP are not necessarily minimal so it is possible that an ILP system could generate a more concise rule set than the GGP descriptions.
+The game are specified in the Game Description Language (GDL). These descriptions are used as example rule sets in the Inductive General Game Playing (IGGP) problem as the output that the learners would ideally generate. The descriptions of the games used in GGP are not necessarily minimal so it is possible that an ILP system could generate a more concise rule set than the GGP descriptions.
 
 \subsection{Game Description Language}\label{sec:GDL}
-Game Description Language (GDL) is the formal language used in the GGP competition to specify the rules of the games \cite{GDL_Spec}. The language is based on a logical programming language \textit{datalog}, a subset of Prolog. To understand the semantics of GDL it helps to first cover logic programming as a field of study.
+Game Description Language (GDL) is the formal language used in the GGP competition to specify the rules of the games \cite{GDL_Spec}. The language is based on a logical programming language \textit{Datalog}, a subset of Prolog. To understand the semantics of GDL it helps to first cover logic programming as a field of study.
 \subsubsection{Logic Programming}
-Logic programming is a programming paradigm based on formal logic. Programs are made up of facts and rules. Rules are made up of two parts: the head and the body. They can be read as logical implications where the conjunction of all the elements in the body imply the head. The syntax is different for different logical programming languages but the head is usually written before the body in reverse implication. For example \texttt{a :- b,c}. A fact is simply a rule without a body, that is, a statement that is taken as true. The interpreter takes logical statements as queries and returns whether they are true or false. If there are free variables in the query the interpreter assigns them values for which the query is true. Logical programming is good for symbolic non-numeric computation \cite{Bratko}. It is well suited to solving problems that involve well defined objects and relations between them, such as a GGP game.
+Logic programming is a programming paradigm based on formal logic. Programs are made up of facts and rules. Rules are made up of two parts: the head and the body. They can be read as logical implications where the conjunction of all the elements in the body imply the head. The syntax is different for different logical programming languages but the head is usually written before the body in reverse implication. For example \texttt{a :- b,c}. A fact is simply a rule without a body, that is, a statement that is taken as true. The language interpreter takes logical statements as queries and returns whether they are true or false. If there are free variables in the query the interpreter assigns them values for which the query is true. Logical programming is good for symbolic non-numeric computation \cite{Bratko}. It is well suited to solving problems that involve well defined objects and relations between them, such as a GGP game.
 \subsubsection{Usefulness of GDL}
 The game description language was designed specifically to represent finite, discrete, deterministic multi-player games of complete information. The language is based on \textit{Datalog} and the property of any question of logical entailment being decidable is retained.
 
-The games are defined in terms of a set of true facts capturing the information needed to give the following predicates:
+The games are defined in terms of a set of true facts and logical rules that capture the information needed to give the following predicates:
 \begin{itemize}
 \item The initial game state
-\item The goal state
-\item The terminal state
-\end{itemize}
-In addition, logical rules are used to describe the following:
-\begin{itemize}
-\item The legal moves for a given player and state
-\item The next state for a given player state and move
-\item The termination and goal conditions
+\item The goal states
+\item The terminal states
+\item The legal moves for a given player from a given state
+\item The next state for a given player, state and move
 \end{itemize}
 
 The GDL language is an extension of \textit{Datalog$^{\neg}$}, that is \textit{Datalog} with stratified negation \cite{GDL_Spec}. \textit{Datalog} allows only universally quantified rules consisting of a conjunction of positive atoms that imply a single atom. \textit{Datalog$^{\neg}$} allows for negative as well as positive atoms \cite{Alice/Foundations}. GDL also allows for some functional symbols, that is predicates containing other predicates however it restricts to keep the finite model property that is inherent to \textit{Datalog} \cite{GDL_Spec}.
@@ -58,31 +54,31 @@ GDL also reserves certain words as listed in table \ref{tab:GDL}
 \end{center}
 
 
-In the IGGP problem (section \ref{sec:IGGP}) the given task is to generate the rules to predict the values for the goal, the next state, the legal states and the terminal predicates.
+In the IGGP problem (section \ref{sec:IGGP}) the given task is to generate the rules to predict the goal, next, legal and terminal predicates.
 
 
 \section{Inductive General Game Playing}\label{sec:IGGP}
-The Inductive General Game Playing (IGGP) problem is an inversion of the GGP problem. Rather than using game rules to generate gameplay the learner must learn the rules of the game from observations of game play. The learner is given a set of game traces and is tasked with using them to induce (learn) the rules of the game that could have produced the traces \cite{Cropper/IGGP}. IGGP was designed as a way of benchmarking machine learning systems.
+The Inductive General Game Playing (IGGP) problem is an inversion of the GGP problem. Rather than using game rules to generate gameplay the learner must learn the rules of the game from observations of game play. The learner is given a set of game traces and is tasked with using them to induce (learn) the rules of the game that produced the traces \cite{Cropper/IGGP}. IGGP was designed as a way of benchmarking machine learning systems.
 
 The definition of task itself is based on the Inductive Logic Programming problem.
 
 \subsection{Inductive Logic Programming}\label{sec:ILP}
-Inductive Logic Programming (ILP) is a form of machine learning that uses logic programming to represent examples, background knowledge, and learned programs \cite{Cropper/EfficientLearning}. To learn the program is supplied with positive examples, negative examples and the background knowledge. In the general inductive setting we are provided with three languages.
+Inductive Logic Programming (ILP) is a form of machine learning that uses logic programming to represent examples, background knowledge, and learned programs \cite{Cropper/EfficientLearning}. To learn the ML system is supplied with positive examples, negative examples and the background knowledge. In the general inductive setting we are provided with three languages.
 \begin{itemize}
 \item $\mathcal{L}_O$: the language of observations (positive and negative examples)
 \item $\mathcal{L}_B$: the language of background knowledge
 \item $\mathcal{L}_H$: the language of hypotheses
 \end{itemize}
 The general inductive problem is as follows: given a set of positive examples $E^+ \subseteq \mathcal{L}_O$, negative examples $E^- \subseteq \mathcal{L}_O$ and  background knowledge $B \subseteq \mathcal{L}_B$ find an hypothesis $H \in \mathcal{L}_H$ such that 
-\[B \cup H \models E^+ \wedge B \cup H \not\models E^-\]
+\[B \cup H \models E^+ \text{ and } B \cup H \not\models E^-\]
 \cite{Muggleton/ILP}
 That is that the generated hypothesis and the background knowledge imply the positive examples and do not imply the negative examples.
 
 
 \subsection{Back to IGGP}
 
-In IGGP we also have the idea of background knowledge and positive or negative observations. The task itself is closely based on the ILP problem and is described in chapter \ref{ch:IGGP}. The games used for the IGGP problem are taken from the IGGP dataset. It is a collection of 50 games, specified in GDL. The purpose of this database is to standardise the set of games used in the IGGP problem to allow for results to be easily compared. It is the set of games that this paper is based on.
-A mechanism is also provided by the authors to turn these GDL game descriptions in the set into new IGGP tasks. This method plays the games randomly to generate the observations. In this paper we modify the mechanism to generate optimal game traces.
+In IGGP we also have the idea of background knowledge and positive or negative observations. The task itself is closely based on the ILP problem and is described in chapter \ref{ch:IGGP}. The games used for the IGGP problem are taken from the IGGP dataset. It is a collection of 50 games, specified in GDL. The purpose of this database is to standardise the set of games used in the IGGP problem to allow for results to be easily compared. It is the set of games used in this paper.
+A mechanism is also provided by the authors to turn these GDL game descriptions in the set into new IGGP tasks. This mechanism simulates random play of the games to generate the observations. In this paper we modify it to generate optimal game traces.
 
 
 \section{ILP systems used}
@@ -133,7 +129,7 @@ By default Aleph preforms a bounded breath first search on all the possible rule
 
 \subsection{ILASP}
 
-ILASP is an ILP system based on Answer Set Programming (ASP). An introduction to ASP can be found here  \cite{Corapi/ASP}. ILASP uses a subset of ASP that is defined in these papers  \cite{ILASP-Manuel,MarkLaw/OG-ILASP,MarkLaw/Thesis} The ILASP process effectively generates all possible rules of a certain length, turns the problem into an ASP problem that adds a predicate to each rule allowing it to be active or inactive. It then uses the ASP solver \textit{clingo}  \cite{Clingo}  to check which rules should be active if the program is to be consistent with the positive and the negation of the negative examples  \cite{MarkLaw/OG-ILASP,MarkLaw/Thesis}. In this paper we use a version of ILASP based on ILASP2i  \cite{MarkLaw/ILASP2i} which was developed with the IGGP problem in mind \cite{Cropper/IGGP}. As one input ILASP takes a hypothesis search space, i.e. the set of all hypotheses to be considered. This is constructed using the type signatures given for each problem that are provided in the IGGP dataset.
+ILASP is an ILP system based on Answer Set Programming (ASP). An introduction to ASP can be found here  \cite{Corapi/ASP}. ILASP uses a subset of ASP that is defined in these papers  \cite{ILASP-Manuel,MarkLaw/OG-ILASP,MarkLaw/Thesis} The ILASP process effectively generates all possible rules of a certain length, turns the problem into an ASP problem that adds a predicate to each rule allowing it to be active or inactive. It then uses the ASP solver Clingo \cite{Clingo}  to check which rules should be active if the program is to be consistent with the positive and the negation of the negative examples  \cite{MarkLaw/OG-ILASP,MarkLaw/Thesis}. In this paper we use a version of ILASP based on ILASP2i  \cite{MarkLaw/ILASP2i} which was developed with the IGGP problem in mind \cite{Cropper/IGGP}. As one input ILASP takes a hypothesis search space, i.e. the set of all hypotheses to be considered. This is constructed using the type signatures given for each problem that are provided in the IGGP dataset.
 
 An ILASP task is defined as a tuple $T = \langle B,S_M,E^+E^-\rangle$ where $B$ is the background knowledge, $S_M$ is the hypothesis space, and $E^+$ and $E^-$ are the positive and negative examples. The ILASP procedure is given in algorithm \ref{alg:ILASP}.
 \begin{algorithm}[H]\label{alg:ILASP}

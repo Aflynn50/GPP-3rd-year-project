@@ -1,6 +1,6 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {subsubsection}{Contributions}{5}
+\contentsline {subsubsection}{Contributions}{6}
 \contentsline {chapter}{\numberline {2}Related work}{7}
 \contentsline {section}{\numberline {2.1}General Game Playing}{7}
 \contentsline {subsection}{\numberline {2.1.1}Game Description Language}{7}
@@ -11,34 +11,34 @@
 \contentsline {subsection}{\numberline {2.2.2}Back to IGGP}{10}
 \contentsline {section}{\numberline {2.3}ILP systems used}{10}
 \contentsline {subsection}{\numberline {2.3.1}Metagol}{10}
-\contentsline {subsection}{\numberline {2.3.2}Aleph}{11}
-\contentsline {subsection}{\numberline {2.3.3}ILASP}{12}
-\contentsline {chapter}{\numberline {3}IGGP problem}{13}
-\contentsline {chapter}{\numberline {4}Generating Traces}{15}
-\contentsline {section}{\numberline {4.1}Sancho}{15}
-\contentsline {subsection}{\numberline {4.1.1}Monte Carlo Tree Search}{16}
-\contentsline {subsubsection}{Use of MCTS in Sancho}{17}
-\contentsline {subsection}{\numberline {4.1.2}Other aspects of Sancho}{17}
-\contentsline {subsubsection}{Puzzle Solving}{17}
-\contentsline {subsubsection}{Static analysis}{17}
-\contentsline {subsection}{\numberline {4.1.3}Sancho and IGGP}{18}
-\contentsline {section}{\numberline {4.2}Generating and transforming the traces}{18}
-\contentsline {subsubsection}{Game traces}{18}
-\contentsline {subsection}{\numberline {4.2.1}Transforming game traces into IGGP tasks}{19}
-\contentsline {subsubsection}{Building the traces}{19}
-\contentsline {chapter}{\numberline {5}Experimental methodology}{21}
-\contentsline {section}{\numberline {5.1}Materials}{21}
-\contentsline {subsubsection}{Generating training data}{21}
-\contentsline {subsubsection}{The ILP systems}{21}
-\contentsline {section}{\numberline {5.2}Methods}{22}
-\contentsline {subsection}{\numberline {5.2.1}Training}{22}
-\contentsline {subsection}{\numberline {5.2.2}Testing}{22}
-\contentsline {chapter}{\numberline {6}Results}{24}
-\contentsline {section}{\numberline {6.1}Results summary}{24}
-\contentsline {subsection}{\numberline {6.1.1}E1: Varying the quality of game traces}{24}
-\contentsline {subsubsection}{Aleph}{25}
-\contentsline {subsubsection}{Metagol}{26}
-\contentsline {subsubsection}{ILASP}{26}
-\contentsline {subsection}{\numberline {6.1.2}E2: Varying the amount of game traces}{27}
-\contentsline {chapter}{\numberline {7}Conclusions}{29}
-\contentsline {subsubsection}{Limitations}{29}
+\contentsline {subsection}{\numberline {2.3.2}Aleph}{12}
+\contentsline {subsection}{\numberline {2.3.3}ILASP}{13}
+\contentsline {chapter}{\numberline {3}IGGP problem}{14}
+\contentsline {chapter}{\numberline {4}Generating Traces}{16}
+\contentsline {section}{\numberline {4.1}Sancho}{16}
+\contentsline {subsection}{\numberline {4.1.1}Monte Carlo Tree Search}{17}
+\contentsline {subsubsection}{Use of MCTS in Sancho}{18}
+\contentsline {subsection}{\numberline {4.1.2}Other aspects of Sancho}{18}
+\contentsline {subsubsection}{Puzzle Solving}{18}
+\contentsline {subsubsection}{Static analysis}{19}
+\contentsline {subsection}{\numberline {4.1.3}Sancho and IGGP}{19}
+\contentsline {section}{\numberline {4.2}Generating and transforming the traces}{19}
+\contentsline {subsubsection}{Game traces}{20}
+\contentsline {subsection}{\numberline {4.2.1}Transforming game traces into IGGP tasks}{21}
+\contentsline {subsubsection}{Building the traces}{21}
+\contentsline {chapter}{\numberline {5}Experimental methodology}{23}
+\contentsline {section}{\numberline {5.1}Materials}{23}
+\contentsline {subsubsection}{Generating training data}{23}
+\contentsline {subsubsection}{The ILP systems}{23}
+\contentsline {section}{\numberline {5.2}Methods}{24}
+\contentsline {subsection}{\numberline {5.2.1}Training}{24}
+\contentsline {subsection}{\numberline {5.2.2}Testing}{25}
+\contentsline {chapter}{\numberline {6}Results}{26}
+\contentsline {section}{\numberline {6.1}Results summary}{26}
+\contentsline {subsection}{\numberline {6.1.1}E1: Varying the quality of game traces}{26}
+\contentsline {subsubsection}{Aleph}{27}
+\contentsline {subsubsection}{Metagol}{28}
+\contentsline {subsubsection}{ILASP}{29}
+\contentsline {subsection}{\numberline {6.1.2}E2: Varying the amount of game traces}{29}
+\contentsline {chapter}{\numberline {7}Conclusions}{32}
+\contentsline {subsubsection}{Limitations}{32}
